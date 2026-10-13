@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Manenti Pittura · Locarno</title>
+<meta name="description" content="Tinteggiature, facciate, stucchi e resine decorative a Locarno e dintorni. Andy Manenti, impresa di pittura.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --calce:#F4EFE7; --calce2:#EAE2D5; --sabbia:#D9CAB3; --terra:#B4603C; --terra-d:#93492A;
+  --ink:#27221F; --ink2:#6A6058; --salvia:#8B9A7C; --line:#DDD3C4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:76px}
+body{background:var(--calce);color:var(--ink);font:400 17px/1.65 'Albert Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.35;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.55 0 0 0 0 0.48 0 0 0 0 0.4 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+main,header,footer,.draft{position:relative;z-index:1}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Gloock',Georgia,serif;font-weight:400;line-height:1.04;letter-spacing:-.01em}
+.lbl{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--terra)}
+
+.draft{background:var(--ink);color:#E9E1D5;font-size:13px;text-align:center;padding:8px 16px}
+.draft b{color:#fff}
+
+header{position:sticky;top:0;z-index:30;background:rgba(244,239,231,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{text-decoration:none;line-height:1}
+.brand b{font-family:'Gloock',serif;font-weight:400;font-size:25px;display:block}
+.brand small{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2);display:block;margin-top:5px}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:15px;font-weight:500}
+.nav ul a{text-decoration:none}.nav ul a:hover{color:var(--terra)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--terra);color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:13px 22px;border-radius:3px;border:0;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--terra-d)}
+.btn.dark{background:var(--ink)}.btn.dark:hover{background:#000}
+.btn.line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.line:hover{background:var(--ink);color:var(--calce)}
+
+/* hero */
+.hero{padding:56px 0 80px}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(46px,6.4vw,88px);margin:18px 0 24px}
+.hero h1 span{color:var(--terra)}
+.hero p.lead{font-size:19px;color:var(--ink2);max-width:28em}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0 28px}
+.proof{display:flex;gap:26px;flex-wrap:wrap;font-size:14px;color:var(--ink2)}
+.proof b{display:block;font-family:'Gloock',serif;font-weight:400;font-size:28px;color:var(--ink);line-height:1.1}
+.hero-pic{position:relative}
+.hero-pic .a{aspect-ratio:4/5;overflow:hidden;border-radius:2px}
+.hero-pic .a img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero-pic figcaption{position:absolute;left:-18px;bottom:28px;background:var(--calce);padding:12px 16px;font-size:13px;color:var(--ink2);box-shadow:0 12px 30px -16px rgba(0,0,0,.35);max-width:15em}
+.hero-pic figcaption b{display:block;color:var(--ink);font-size:15px}
+
+/* mestieri */
+.mestieri{padding:20px 0 100px}
+.m-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px;border-top:1px solid var(--line);padding-top:34px}
+.m-head h2{font-size:clamp(34px,4.4vw,56px)}
+.m-head p{max-width:27em;color:var(--ink2)}
+.m-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px}
+.mc .ph{aspect-ratio:3/4;overflow:hidden;border-radius:2px;background:var(--calce2)}
+.mc .ph img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.mc:hover .ph img{transform:scale(1.04)}
+.mc h3{font-size:28px;margin:18px 0 8px}
+.mc p{font-size:15.5px;color:var(--ink2)}
+.mc .n{font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--terra);margin-top:16px}
+
+/* finiture */
+.finiture{background:var(--ink);color:#EDE6DB;padding:100px 0}
+.finiture h2{font-size:clamp(36px,4.8vw,62px);color:#fff;max-width:14em}
+.finiture .lbl{color:#E0A07F}
+.fin-intro{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:end;margin-bottom:46px}
+.fin-intro p{color:#C9BFB2}
+.swatches{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:auto auto;gap:14px}
+.sw{position:relative;overflow:hidden;border-radius:2px}
+.sw img{width:100%;height:100%;object-fit:cover}
+.sw.big{grid-row:span 2}
+.sw.big img{aspect-ratio:auto;min-height:100%}
+.sw:not(.big){aspect-ratio:1}
+.sw span{position:absolute;left:12px;bottom:12px;background:rgba(39,34,31,.82);color:#fff;font-size:12.5px;font-weight:600;letter-spacing:.04em;padding:6px 10px;border-radius:2px}
+
+/* metodo */
+.metodo{padding:100px 0}
+.met-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--ink);margin-top:38px}
+.st{padding:28px 28px 0 0}
+.st+.st{padding-left:28px;border-left:1px solid var(--line)}
+.st .num{font-family:'Gloock',serif;font-size:46px;color:var(--terra);line-height:1}
+.st h3{font-size:26px;margin:14px 0 10px}
+.st p{color:var(--ink2);font-size:15.5px}
+.st q{display:block;margin-top:16px;font-size:14.5px;font-style:italic;color:var(--ink);quotes:"«" "»"}
+.st q::after{content:"» · recensione";font-style:normal;color:var(--ink2);font-size:12.5px}
+.st q::before{content:"«"}
+
+/* lavori */
+.lavori{padding:0 0 100px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;grid-auto-flow:dense;gap:12px;margin-top:34px}
+.gal figure{overflow:hidden;border-radius:2px;cursor:zoom-in;background:var(--calce2)}
+.gal figure.t{grid-row:span 2}
+.gal figure.w{grid-column:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.04)}
+.lb{position:fixed;inset:0;background:rgba(20,17,15,.93);z-index:60;display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lb.on{display:flex}.lb img{max-height:90vh;max-width:100%}
+
+/* andy */
+.andy{background:var(--calce2);padding:96px 0}
+.andy-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}
+.andy .ph{aspect-ratio:4/5;overflow:hidden;border-radius:2px}
+.andy .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.andy h2{font-size:clamp(34px,4.4vw,56px);margin:14px 0 20px}
+.andy p{color:var(--ink2);margin-bottom:16px;max-width:32em}
+.todo{background:var(--calce);border:1.5px dashed var(--terra);border-radius:3px;padding:14px 16px;color:var(--ink2);font-size:15px;margin-top:6px}
+.todo b{color:var(--terra)}
+
+/* recensioni */
+.rev{padding:100px 0}
+.rev-top{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:38px}
+.rev-top h2{font-size:clamp(34px,4.4vw,56px)}
+.score{text-align:right}
+.score b{font-family:'Gloock',serif;font-weight:400;font-size:54px;line-height:1}
+.score small{display:block;color:var(--ink2);font-size:14px}
+.stars{color:var(--terra);letter-spacing:2px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rv{background:#fff;border:1px solid var(--line);border-radius:3px;padding:26px}
+.rv p{font-family:'Gloock',serif;font-size:21px;line-height:1.35;margin:12px 0 16px}
+.rv small{color:var(--ink2);font-size:13px}
+
+/* preventivo */
+.prev{background:var(--ink);color:#EDE6DB;padding:100px 0}
+.prev-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.prev h2{font-size:clamp(34px,4.4vw,56px);color:#fff;margin:14px 0 18px}
+.prev .lbl{color:#E0A07F}
+.prev p.l{color:#C9BFB2}
+form.f{background:var(--calce);color:var(--ink);border-radius:3px;padding:30px}
+.demo{display:inline-block;background:var(--terra);color:#fff;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;margin-bottom:14px}
+form.f h3{font-size:30px;margin-bottom:18px}
+.fld{margin-bottom:16px}
+.fld>label{display:block;font-weight:600;font-size:14px;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips label{border:1.5px solid var(--line);border-radius:3px;padding:8px 13px;font-size:14px;cursor:pointer;background:#fff;user-select:none}
+.chips input:checked+label{background:var(--ink);color:#fff;border-color:var(--ink)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+input[type=text],input[type=tel],select,textarea{width:100%;font:inherit;font-size:15px;padding:12px 14px;border:1.5px solid var(--line);border-radius:3px;background:#fff;color:var(--ink)}
+textarea{min-height:90px;resize:vertical}
+.up{display:flex;align-items:center;gap:10px;border:1.5px dashed var(--sabbia);border-radius:3px;padding:12px 14px;font-size:14px;color:var(--ink2);cursor:pointer;background:#fff}
+.up input{display:none}
+.done{display:none;text-align:center;padding:40px 10px}
+.done p{color:var(--ink2);margin-top:10px}
+
+/* contatti */
+.cont{padding:96px 0}
+.cont-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:48px}
+.cont h2{font-size:clamp(34px,4.2vw,52px);margin:14px 0 22px}
+.hours{list-style:none;margin:0 0 24px}
+.hours li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dashed var(--line);font-size:15.5px}
+.hours li.now{font-weight:700}
+.map{border-radius:3px;overflow:hidden;min-height:400px;position:relative;background:#ddd}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+footer{background:var(--ink);color:#B7ADA1;padding:44px 0 110px;font-size:15px}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:end}
+footer strong{font-family:'Gloock',serif;font-weight:400;font-size:26px;color:#fff;display:block;margin-bottom:6px}
+footer a{color:#fff}
+.foot .sm{font-size:13px;opacity:.7}
+
+.mbar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;gap:8px}
+.mbar a{flex:1;box-shadow:0 0 0 1.5px rgba(255,255,255,.5),0 10px 24px -8px rgba(0,0,0,.45)}
+.wa{background:#2E7D4F}.wa:hover{background:#256B42}
+
+@media (max-width:980px){
+  .gal{grid-template-columns:repeat(3,1fr)}
+  .swatches{grid-template-columns:1fr 1fr}
+  .sw.big{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}
+}
+@media (max-width:860px){
+  .nav ul,.nav .btn{display:none}
+  .hero{padding:34px 0 60px}
+  .hero-grid,.fin-intro,.andy-grid,.prev-grid,.cont-grid{grid-template-columns:1fr;gap:36px}
+  .hero-pic{max-width:460px}
+  .hero-pic figcaption{left:12px}
+  .m-grid,.rv-grid{grid-template-columns:1fr}
+  .m-grid{gap:34px}
+  .mc .ph{aspect-ratio:4/3}
+  .met-grid{grid-template-columns:1fr}
+  .st,.st+.st{padding:26px 0;border-left:0;border-bottom:1px solid var(--line)}
+  .finiture,.metodo,.andy,.rev,.prev,.cont{padding:66px 0}.lavori{padding-bottom:66px}.mestieri{padding-bottom:66px}
+  .score{text-align:left}
+  .mbar{display:flex}
+}
+@media (max-width:600px){
+  .wrap{padding:0 16px}
+  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:170px;gap:8px}
+  .gal figure.w{grid-column:span 2}
+  .row2{grid-template-columns:1fr}
+  form.f{padding:22px}
+  .proof{gap:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="draft"><b>Anteprima</b> di sito preparata per Manenti Pittura · foto dalla scheda Google, testi da completare insieme</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand"><b>Manenti Pittura</b><small>Impresa di pittura · Locarno</small></a>
+    <ul>
+      <li><a href="#lavori">Lavori</a></li>
+      <li><a href="#finiture">Stucchi e resine</a></li>
+      <li><a href="#andy">Chi sono</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+    </ul>
+    <a class="btn" href="#preventivo">Chiedi un preventivo</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="lbl">Tinteggiature · facciate · stucchi e resine</div>
+      <h1>Pareti fatte a mano, <span>e casa lasciata pulita.</span></h1>
+      <p class="lead">Sono Andy Manenti, pittore a Locarno. Dalla tinteggiatura di una stanza alla facciata di casa, fino alle finiture decorative in stucco e resina: ogni lavoro con precisione e il cantiere in ordine.</p>
+      <div class="ctas">
+        <a class="btn" href="#preventivo">Chiedi un preventivo</a>
+        <a class="btn line" href="#lavori">Guarda i lavori</a>
+      </div>
+      <div class="proof">
+        <div><b>★ 5,0</b>36 recensioni su Google</div>
+        <div><b>Interni</b>e facciate</div>
+        <div><b>Stucchi</b>e resine decorative</div>
+      </div>
+    </div>
+    <figure class="hero-pic">
+      <div class="a"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGccv3T6DlgYZn82P2r523Ttr5bZBl9eeYcJ_PiMMjpd5DaoOxtjmeoBVy6bUvqkqh4GizaFSqX4YzUrraMAOpeZOhFjybaFCo0n-Z0ogJKYsDFMV1ZP1JKnsmz4zj8gNOlDwwBh9hE_o=s1600" alt="Stucco decorativo steso a spatola"></div>
+      <figcaption><b>Stucco decorativo</b>steso a spatola, una passata alla volta</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="mestieri" id="servizi">
+  <div class="wrap">
+    <div class="m-head">
+      <h2>Cosa faccio</h2>
+      <p>Tre lavori diversi, lo stesso modo di lavorare: prima un consiglio onesto, poi un preventivo rispettato.</p>
+    </div>
+    <div class="m-grid">
+      <div class="mc"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QcUtdPFewFYkMdLVHZ-q1pd18D1F4aPxaijJqyMOxNTp3dVDB3Yv3g4pmKpn-4FO2I4f-cDuQaQC9K-C-oRyj8Tk4LxLpWJN7iM6AxwS7e44EwThUo9y7Q70w8pT3czXzs57WpVw=s1000" alt="Sala da pranzo con parete color salvia"></div><div class="n">01</div><h3>Tinteggiature interne</h3><p>Stanze, appartamenti e case intere, con la scelta del colore giusto per ogni ambiente.</p></div>
+      <div class="mc"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S18_nYZStQWf0KoY_ZOQiy2Mm2hq4J56J0Qkq3QYqGUqbFa6TKmv7X5mS1wDSqPbSdsOeM1TqeRJnCC1TqEstxwZx5TviUlKzGH0FlOXU92mEafUVeK_o2Rh1mAihBd1ETGWZyDf59lpM=s1000" alt="Facciata con ponteggio"></div><div class="n">02</div><h3>Facciate</h3><p>Case unifamiliari e palazzine: preparazione, ponteggi e una facciata che torna come nuova.</p></div>
+      <div class="mc"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ta3FU_uwcSlcjMfIYC8dM-_6IFcYqJycGdU05C51JkVSc3HmRFdp9CZDkxS88y9hxDVkeZanT6Zs3UkoFaHNO1ooNx_Pm8bAlWIY9LSNXYj5FEuSDmJX06MU1ZvO4zkqW4yG-cmyuMRXmn=s1000" alt="Bagno con finitura decorativa"></div><div class="n">03</div><h3>Stucchi e resine</h3><p>Finiture decorative per bagni, camere e ingressi: superfici uniche, che si vedono e si toccano.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="finiture" id="finiture">
+  <div class="wrap">
+    <div class="fin-intro">
+      <div><div class="lbl">Finiture decorative</div><h2 style="margin-top:14px">Una parete può essere molto più di un colore.</h2></div>
+      <p>Stucchi e resine sono la parte del lavoro che richiede più mano ed esperienza. Ogni superficie viene costruita a strati, a spatola, e non ne esistono due uguali.</p>
+    </div>
+    <div class="swatches">
+      <div class="sw big"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RV401k8IsITVe1jBETz7C3DUAvp0TUXNa1lXQ_dkH6Bxnoc3PYXjcW9pjMHMFduyhYuntVtzJ3hnvsipLH7TU1o2VNKiWofoUBaB84J5iqSIJ-3w-EfG-s5swH9Qil6ACLpCFBPCogKXU=s1400" alt="Parete color terracotta in una doccia in pietra"><span>Doccia nella roccia · colore terra</span></div>
+      <div class="sw"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGccv3T6DlgYZn82P2r523Ttr5bZBl9eeYcJ_PiMMjpd5DaoOxtjmeoBVy6bUvqkqh4GizaFSqX4YzUrraMAOpeZOhFjybaFCo0n-Z0ogJKYsDFMV1ZP1JKnsmz4zj8gNOlDwwBh9hE_o=s800" alt="Stucco decorativo venato" style="object-position:50% 30%"><span>Stucco decorativo</span></div>
+      <div class="sw"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ROi5tdjLWI6ca9EX2YuBpT5JC0qUykzH1ZcKedlkwlz9UYltEqQwtchXqjYMAmVP7BRlYw9P3pDhkLQcXD0rUHdq0ReQ5xqdhIyQwkEs6cAgLAb5o4_VujBnW-06lLBnMP01XvRifYZrus=s800" alt="Parete decorativa in camera da letto" style="object-position:50% 20%"><span>Camera da letto</span></div>
+      <div class="sw"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ta3FU_uwcSlcjMfIYC8dM-_6IFcYqJycGdU05C51JkVSc3HmRFdp9CZDkxS88y9hxDVkeZanT6Zs3UkoFaHNO1ooNx_Pm8bAlWIY9LSNXYj5FEuSDmJX06MU1ZvO4zkqW4yG-cmyuMRXmn=s800" alt="Bagno con finitura in resina"><span>Bagno</span></div>
+      <div class="sw"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RHKhQUrOHRGvL6cJE8Ykg8EbX_N0R0aWqKIUz9mPT5zK4tSK4Txe11ejsnze4Oa-De_JKjmC1B33GUvZ9Aa_2quyXSxU-D3fU0Az_gaeDi9oANak8yEe0rM36V_pD1QdKuFe31blKtPgbM=s800" alt="Corridoio con finitura decorativa"><span>Ingresso</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo">
+  <div class="wrap">
+    <div class="lbl">Come lavoro</div>
+    <h2 style="font-size:clamp(34px,4.4vw,56px);margin-top:14px">Tre cose che i clienti notano.</h2>
+    <div class="met-grid">
+      <div class="st"><div class="num">01</div><h3>Prima il consiglio</h3><p>Vengo a vedere, ascolto cosa avete in mente e vi dico con sincerità cosa conviene fare.</p><q>Ci ha dato una consulenza molto esperta su cosa fare</q></div>
+      <div class="st"><div class="num">02</div><h3>Il preventivo si rispetta</h3><p>Un prezzo chiaro prima di iniziare, e alla fine si paga quello.</p><q>Veloce e preciso, ha rispettato il preventivo</q></div>
+      <div class="st"><div class="num">03</div><h3>Pulizia</h3><p>Pavimenti e mobili protetti, e a fine lavoro la casa torna in ordine.</p><q>Grande cura, precisione e soprattutto pulizia, che non è mai scontata</q></div>
+    </div>
+  </div>
+</section>
+
+<section class="lavori" id="lavori">
+  <div class="wrap">
+    <div class="m-head">
+      <h2>Lavori recenti</h2>
+      <p>Case e appartamenti nel Locarnese. Toccate una foto per ingrandirla.</p>
+    </div>
+    <div class="gal" id="gal">
+      <figure class="t"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RV401k8IsITVe1jBETz7C3DUAvp0TUXNa1lXQ_dkH6Bxnoc3PYXjcW9pjMHMFduyhYuntVtzJ3hnvsipLH7TU1o2VNKiWofoUBaB84J5iqSIJ-3w-EfG-s5swH9Qil6ACLpCFBPCogKXU=s1000" alt="Doccia con parete terracotta"></figure>
+      <figure class="w"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SutyDvV_FCBZsIrzVR0551tS2x8wCZM7jsxuyqioaNhlnxeI9WO-Szk9cWfh6fJYq8TD07A62LAB92yCA8iWM78CE47F1FxVMxTaAQ9VBPCXkETfHTac3ntFCdx7yxzNJQKITAdqyxmmE=s1200" alt="Facciata color albicocca"></figure>
+      <figure class="t"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ROi5tdjLWI6ca9EX2YuBpT5JC0qUykzH1ZcKedlkwlz9UYltEqQwtchXqjYMAmVP7BRlYw9P3pDhkLQcXD0rUHdq0ReQ5xqdhIyQwkEs6cAgLAb5o4_VujBnW-06lLBnMP01XvRifYZrus=s1000" alt="Parete decorativa in camera"></figure>
+      <figure><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QcUtdPFewFYkMdLVHZ-q1pd18D1F4aPxaijJqyMOxNTp3dVDB3Yv3g4pmKpn-4FO2I4f-cDuQaQC9K-C-oRyj8Tk4LxLpWJN7iM6AxwS7e44EwThUo9y7Q70w8pT3czXzs57WpVw=s1000" alt="Sala da pranzo color salvia"></figure>
+      <figure><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S18_nYZStQWf0KoY_ZOQiy2Mm2hq4J56J0Qkq3QYqGUqbFa6TKmv7X5mS1wDSqPbSdsOeM1TqeRJnCC1TqEstxwZx5TviUlKzGH0FlOXU92mEafUVeK_o2Rh1mAihBd1ETGWZyDf59lpM=s1000" alt="Palazzina con ponteggio"></figure>
+      <figure class="t"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ta3FU_uwcSlcjMfIYC8dM-_6IFcYqJycGdU05C51JkVSc3HmRFdp9CZDkxS88y9hxDVkeZanT6Zs3UkoFaHNO1ooNx_Pm8bAlWIY9LSNXYj5FEuSDmJX06MU1ZvO4zkqW4yG-cmyuMRXmn=s1000" alt="Bagno con finitura decorativa"></figure>
+      <figure class="t"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RHKhQUrOHRGvL6cJE8Ykg8EbX_N0R0aWqKIUz9mPT5zK4tSK4Txe11ejsnze4Oa-De_JKjmC1B33GUvZ9Aa_2quyXSxU-D3fU0Az_gaeDi9oANak8yEe0rM36V_pD1QdKuFe31blKtPgbM=s1000" alt="Corridoio con finitura"></figure>
+      <figure class="w"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGccv3T6DlgYZn82P2r523Ttr5bZBl9eeYcJ_PiMMjpd5DaoOxtjmeoBVy6bUvqkqh4GizaFSqX4YzUrraMAOpeZOhFjybaFCo0n-Z0ogJKYsDFMV1ZP1JKnsmz4zj8gNOlDwwBh9hE_o=s1200" alt="Stucco decorativo in lavorazione" style="object-position:50% 25%"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="andy" id="andy">
+  <div class="wrap andy-grid">
+    <div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SweMac3wsM3TwUaXUIDdR6w0xBsavx1WPdvnix_hc_I36IJuSiz93VYb05ZhSlGcviZf_AxP_Hbr_dsA4PHaePiV6iWuoZU17RhKytZe4J0DjGOUKAB-wE3T9b_BJmy4TfGeC65wRY4yc7=s1200" alt="Andy Manenti al lavoro"></div>
+    <div>
+      <div class="lbl">Chi sono</div>
+      <h2>Andy Manenti, pittore.</h2>
+      <p>I clienti mi descrivono come un giovane artigiano preciso, puntuale e disponibile. Lavoro nel Locarnese su case, appartamenti e facciate, e mi appassionano le tecniche speciali: stucchi e resine.</p>
+      <div class="todo"><b>Da completare insieme:</b> la tua storia in due righe: dove hai imparato il mestiere, da quanti anni lavori, cosa ti piace di più fare.</div>
+    </div>
+  </div>
+</section>
+
+<section class="rev" id="recensioni">
+  <div class="wrap">
+    <div class="rev-top">
+      <h2>Cosa dicono i clienti</h2>
+      <div class="score"><b>5,0</b><small><span class="stars">★★★★★</span> 36 recensioni su Google</small></div>
+    </div>
+    <div class="rv-grid">
+      <div class="rv"><span class="stars">★★★★★</span><p>«Oltre a essere bravo nel suo lavoro è onesto, puntuale e umile. Se volete un lavoro fatto bene, chiamate Andy!»</p><small>Recensione Google</small></div>
+      <div class="rv"><span class="stars">★★★★★</span><p>«Ha dipinto la nostra casa unifamiliare con precisione, sempre attento ai dettagli. Veloce, preciso, e ha rispettato il preventivo.»</p><small>Wilma e Jean Bernard · recensione Google</small></div>
+      <div class="rv"><span class="stars">★★★★★</span><p>«Un giovane artigiano con talento per le tecniche speciali come resine e stucchi. Siamo stati molto soddisfatti.»</p><small>Recensione Google</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="prev" id="preventivo">
+  <div class="wrap prev-grid">
+    <div>
+      <div class="lbl">Preventivo</div>
+      <h2>Raccontami il lavoro.</h2>
+      <p class="l">Due righe e, se vuoi, una foto della parete o della facciata. Ti ricontatto per fissare un sopralluogo e ricevi il preventivo prima di iniziare.</p>
+    </div>
+    <form class="f" id="f" novalidate>
+      <div id="fb">
+        <span class="demo">Dimostrazione</span>
+        <h3>Richiesta di preventivo</h3>
+        <div class="fld"><label>Che lavoro?</label>
+          <div class="chips">
+            <input type="checkbox" id="c1" value="Tinteggiatura interni"><label for="c1">Interni</label>
+            <input type="checkbox" id="c2" value="Facciata"><label for="c2">Facciata</label>
+            <input type="checkbox" id="c3" value="Stucchi e resine"><label for="c3">Stucchi e resine</label>
+            <input type="checkbox" id="c4" value="Altro"><label for="c4">Altro</label>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="fld"><label for="zn">Dove?</label><input type="text" id="zn" placeholder="es. Muralto"></div>
+          <div class="fld"><label for="qt">Quanto è grande?</label><select id="qt"><option>Una stanza</option><option>Più stanze</option><option>Appartamento intero</option><option>Casa / facciata</option></select></div>
+        </div>
+        <div class="fld"><label for="ms">Due parole</label><textarea id="ms" placeholder="es. vorrei uno stucco decorativo nel bagno"></textarea></div>
+        <div class="fld"><label class="up"><input type="file" accept="image/*" id="ph">📷 <span id="phT">Aggiungi una foto (facoltativo)</span></label></div>
+        <div class="row2">
+          <div class="fld"><label for="nm">Nome</label><input type="text" id="nm"></div>
+          <div class="fld"><label for="tl">Telefono</label><input type="tel" id="tl" placeholder="07x ..."></div>
+        </div>
+        <button class="btn" type="submit" style="width:100%">Invia la richiesta</button>
+      </div>
+      <div class="done" id="dn"><h3>Grazie!</h3><p id="dnT"></p><p style="font-size:13px">(È una dimostrazione: nessuna richiesta è stata inviata.)</p></div>
+    </form>
+  </div>
+</section>
+
+<section class="cont" id="contatti">
+  <div class="wrap cont-grid">
+    <div>
+      <div class="lbl">Contatti</div>
+      <h2>Locarno e dintorni</h2>
+      <ul class="hours" id="hrs">
+        <li data-d="1"><span>Lunedì</span><span>7:30 – 17:00</span></li>
+        <li data-d="2"><span>Martedì</span><span>7:30 – 17:00</span></li>
+        <li data-d="3"><span>Mercoledì</span><span>7:30 – 17:00</span></li>
+        <li data-d="4"><span>Giovedì</span><span>7:30 – 17:00</span></li>
+        <li data-d="5"><span>Venerdì</span><span>7:30 – 17:00</span></li>
+        <li data-d="6"><span>Sabato</span><span>chiuso</span></li>
+        <li data-d="0"><span>Domenica</span><span>chiuso</span></li>
+      </ul>
+      <p><b>Manenti Pittura</b><br>Via Domenico Galli 22, 6600 Locarno<br><a href="tel:+41787313539">+41 78 731 35 39</a></p>
+    </div>
+    <div class="map"><iframe loading="lazy" title="Mappa" src="https://maps.google.com/maps?q=Via%20Domenico%20Galli%2022%2C%206600%20Locarno&z=15&output=embed"></iframe></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><strong>Manenti Pittura</strong>Via Domenico Galli 22 · 6600 Locarno · <a href="tel:+41787313539">078 731 35 39</a></div>
+    <div class="sm">Anteprima non ufficiale · foto dalla scheda Google</div>
+  </div>
+</footer>
+
+<div class="lb" id="lb"><img alt=""></div>
+<div class="mbar">
+  <a class="btn dark" href="tel:+41787313539">Chiama</a>
+  <a class="btn wa" href="https://wa.me/41787313539" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  var h=document.querySelector('#hrs li[data-d="'+new Date().getDay()+'"]');if(h)h.classList.add('now');
+  var lb=document.getElementById('lb'),li=lb.querySelector('img');
+  document.getElementById('gal').addEventListener('click',function(e){var i=e.target.closest('img');if(!i)return;li.src=i.src.replace(/=s\d+$/,'=s2000');lb.classList.add('on');});
+  lb.addEventListener('click',function(){lb.classList.remove('on');});
+  document.getElementById('ph').addEventListener('change',function(){if(this.files[0])document.getElementById('phT').textContent=this.files[0].name;});
+  document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();
+    var c=[].map.call(document.querySelectorAll('.chips input:checked'),function(x){return x.value.toLowerCase();});
+    var nm=document.getElementById('nm').value.trim();
+    document.getElementById('fb').style.display='none';document.getElementById('dn').style.display='block';
+    document.getElementById('dnT').textContent=(nm?nm+', g':'G')+'razie per la richiesta'+(c.length?' ('+c.join(', ')+')':'')+'. Ti ricontatto a breve per fissare il sopralluogo.';});
+})();
+</script>
+</body>
+</html>
