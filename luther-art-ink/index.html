@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Luther Art Ink · Tattoo &amp; Piercing · Vezia</title>
+<meta name="description" content="Luther Art Ink, Tattoo & Piercing a Vezia (Lugano). Realismo in bianco e nero, studio pulitissimo, 5 stelle su 166 recensioni. Via Daldini 3.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Manrope:wght@400;500;600&display=swap">
+<style>
+/* Come i lavori dello studio: bianco e nero, sfumature morbide, e il calore del parquet dello studio come unico colore. */
+:root{
+  --ink:#121212;
+  --ink-2:#1B1B1A;
+  --ink-3:#252523;
+  --bone:#ECE7DF;
+  --ash:#A39E95;
+  --wood:#C08A55;
+  --line:rgba(236,231,223,.13);
+  --serif:"Bodoni Moda", Didot, "Times New Roman", serif;
+  --sans:"Manrope", "Helvetica Neue", Arial, sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--bone);font-family:var(--sans);font-size:17px;line-height:1.65}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05;margin:0;text-wrap:balance}
+p{margin:0}
+.container{max-width:1160px;margin:0 auto;padding-inline:20px}
+:focus-visible{outline:2px solid var(--wood);outline-offset:3px}
+.label{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--ash)}
+
+.proposal{background:var(--bone);color:#2A2826;font-size:13px;text-align:center;padding:7px 16px}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:rgba(18,18,18,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+header .container{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:14px}
+.logo{text-decoration:none;line-height:1}
+.logo b{font-family:var(--serif);font-size:26px;font-weight:700;letter-spacing:.01em}
+.logo b i{font-weight:500;color:var(--wood)}
+.logo small{display:block;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--ash);margin-top:5px}
+nav{display:flex;gap:28px;font-size:14.5px}
+nav a{text-decoration:none;color:var(--ash)}
+nav a:hover{color:var(--bone)}
+.cta{border:1px solid var(--bone);color:var(--bone);text-decoration:none;padding:10px 18px;font-size:14px;font-weight:600;letter-spacing:.04em;white-space:nowrap}
+.cta:hover{background:var(--bone);color:var(--ink)}
+@media (max-width:860px){nav{display:none}}
+
+/* Hero: titolo grande accanto a un lavoro vero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:0;min-height:600px;border-bottom:1px solid var(--line)}
+.hero > *{min-width:0}
+.hero-text{display:flex;flex-direction:column;justify-content:center;gap:22px;padding:64px clamp(20px,5vw,72px)}
+.hero h1{font-size:clamp(46px,7.2vw,96px);letter-spacing:-.01em}
+.hero h1 i{color:var(--wood)}
+.hero p.lead{color:var(--ash);max-width:44ch;font-size:18px}
+.rating{display:flex;align-items:center;gap:14px;font-size:14.5px;color:var(--ash)}
+.rating b{font-family:var(--serif);font-size:30px;color:var(--bone);font-weight:500}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 24px;font-weight:600;font-size:15px;letter-spacing:.03em;text-decoration:none;border:1px solid var(--bone);cursor:pointer;font-family:var(--sans)}
+.btn-solid{background:var(--bone);color:var(--ink)}
+.btn-solid:hover{background:#fff}
+.btn-line{color:var(--bone);background:transparent}
+.btn-line:hover{border-color:var(--wood);color:var(--wood)}
+.hero-img{background:var(--ink-2) center/cover no-repeat;min-height:420px;filter:grayscale(100%) contrast(1.05)}
+@media (max-width:860px){.hero{grid-template-columns:1fr}.hero-img{order:-1;aspect-ratio:4/5;min-height:0}}
+
+/* Striscia valori */
+.values{border-bottom:1px solid var(--line)}
+.values .container{display:grid;grid-template-columns:repeat(4,1fr)}
+.values div{padding:24px 18px;border-left:1px solid var(--line)}
+.values div:first-child{border-left:0}
+.values b{display:block;font-family:var(--serif);font-size:22px;font-weight:500;margin-bottom:2px}
+.values span{font-size:14px;color:var(--ash)}
+@media (max-width:760px){.values .container{grid-template-columns:1fr 1fr}.values div:nth-child(3){border-left:0}.values div:nth-child(n+3){border-top:1px solid var(--line)}}
+
+section{padding-block:88px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.head h2{font-size:clamp(38px,5vw,62px)}
+.head p{color:var(--ash);max-width:46ch}
+
+/* Portfolio */
+.works{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:140px;gap:12px}
+.work{position:relative;overflow:hidden;background:var(--ink-2) center/cover no-repeat;filter:grayscale(100%);transition:filter .4s}
+.work:hover{filter:grayscale(0)}
+.work span{position:absolute;left:12px;bottom:10px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--bone);text-shadow:0 1px 6px rgba(0,0,0,.8)}
+.w1{grid-column:span 4;grid-row:span 4}
+.w2{grid-column:span 4;grid-row:span 4}
+.w3{grid-column:span 4;grid-row:span 2}
+.w4{grid-column:span 4;grid-row:span 2}
+.w5{grid-column:span 12;grid-row:span 1;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 24px;background:var(--ink-2);filter:none}
+.w5 p{color:var(--ash);font-size:15px}
+.note{font-size:13.5px;color:var(--ash);margin-top:16px}
+@media (max-width:760px){.works{grid-template-columns:1fr 1fr;grid-auto-rows:auto}.work{aspect-ratio:3/4}.w1,.w2,.w3,.w4{grid-column:span 1;grid-row:auto}.w5{grid-column:span 2;aspect-ratio:auto;padding:18px;flex-wrap:wrap}}
+
+/* Lo studio */
+.studio-img{width:100%;aspect-ratio:21/8;max-width:100%;background:var(--ink-2) center 55%/cover no-repeat;border-block:1px solid var(--line)}
+.studio{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:56px}
+.studio > *{min-width:0}
+.studio h2{font-size:clamp(36px,4.6vw,56px);margin-bottom:20px}
+.studio p{color:var(--ash)}
+.studio p + p{margin-top:14px}
+.studio strong{color:var(--bone);font-weight:600}
+.points{display:grid;gap:0;border-top:1px solid var(--line)}
+.points div{display:grid;grid-template-columns:44px 1fr;gap:4px 14px;padding:18px 0;border-bottom:1px solid var(--line)}
+.points em{grid-row:span 2;font-family:var(--serif);font-style:italic;font-size:26px;color:var(--wood)}
+.points b{font-weight:600}
+.points span{color:var(--ash);font-size:15px}
+@media (max-width:860px){.studio{grid-template-columns:1fr;gap:36px}.studio-img{aspect-ratio:16/9}}
+
+/* Recensioni */
+.reviews-bg{background:var(--ink-2);border-block:1px solid var(--line)}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.quote{display:grid;gap:14px;align-content:start}
+.quote p{font-family:var(--serif);font-size:23px;line-height:1.35}
+.quote p::before{content:"“";color:var(--wood);margin-right:2px}
+.quote span{font-size:13.5px;color:var(--ash);letter-spacing:.04em}
+@media (max-width:860px){.quotes{grid-template-columns:1fr;gap:32px}}
+
+/* Richiesta appuntamento demo */
+.book{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.book > *{min-width:0}
+.book-intro h2{font-size:clamp(38px,5vw,62px);margin-bottom:18px}
+.book-intro p{color:var(--ash);max-width:40ch}
+.how{display:grid;gap:10px;margin-top:26px;counter-reset:s}
+.how li{list-style:none;display:flex;gap:12px;color:var(--ash);font-size:15px}
+.how li::before{counter-increment:s;content:counter(s);font-family:var(--serif);color:var(--wood);font-size:18px;min-width:16px}
+.how{padding:0;margin-bottom:0}
+.demo-tag{display:inline-block;margin-top:24px;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;border:1px dashed var(--ash);color:var(--ash);padding:5px 9px}
+.card{background:var(--ink-2);border:1px solid var(--line);padding:26px}
+.steps{display:flex;gap:6px;margin-bottom:22px}
+.steps span{flex:1;height:3px;background:var(--line)}
+.steps span.on{background:var(--wood)}
+.q{font-family:var(--serif);font-size:24px;margin-bottom:16px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.opts button{font-family:var(--sans);font-size:15px;text-align:left;padding:14px 16px;background:transparent;color:var(--bone);border:1px solid var(--line);cursor:pointer;display:grid;gap:2px}
+.opts button small{color:var(--ash);font-size:13px}
+.opts button:hover,.opts button.sel{border-color:var(--wood)}
+.opts button.sel{background:rgba(192,138,85,.12)}
+@media (max-width:520px){.opts{grid-template-columns:1fr}}
+.form{display:grid;gap:14px}
+.form label{display:grid;gap:6px;font-size:14px;color:var(--ash)}
+.form input,.form textarea,.form select{font:inherit;color:var(--bone);background:var(--ink);border:1px solid var(--line);padding:12px;border-radius:0}
+.form textarea{min-height:96px;resize:vertical}
+.form input:focus,.form textarea:focus,.form select:focus{outline:none;border-color:var(--wood)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:20px;flex-wrap:wrap}
+.linkbtn{background:none;border:0;color:var(--ash);font:inherit;font-size:14px;cursor:pointer;text-decoration:underline;padding:0}
+.recap{border-left:2px solid var(--wood);padding-left:14px;margin-bottom:18px;font-size:14.5px;color:var(--ash)}
+.recap b{color:var(--bone);font-weight:600}
+.done{text-align:center;padding:10px 0}
+.done h3{font-size:32px;margin-bottom:10px}
+.done p{color:var(--ash)}
+.box{margin-top:20px;text-align:left;border:1px solid var(--line);padding:16px;font-size:14px;color:var(--ash)}
+.box b{color:var(--bone)}
+
+/* Contatti */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.visit > *{min-width:0}
+.visit h2{font-size:clamp(36px,4.6vw,56px);margin-bottom:24px}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+td{padding:12px 0;border-bottom:1px solid var(--line)}
+td:last-child{text-align:right}
+tr.closed td{color:var(--ash)}
+tr.today td{font-weight:600}
+tr.today td:first-child::after{content:"  oggi";font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--wood);font-weight:500}
+.info{display:grid;gap:22px}
+.info .v{font-size:20px;margin-top:4px}
+.street{margin-top:28px;aspect-ratio:16/7;max-width:100%;background:var(--ink-2) center/cover no-repeat;filter:grayscale(100%)}
+@media (max-width:860px){.visit{grid-template-columns:1fr;gap:48px}}
+
+footer{border-top:1px solid var(--line)}
+footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-block:24px;font-size:13.5px;color:var(--ash)}
+
+.mbar{display:none}
+@media (max-width:860px){
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(18,18,18,.97);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}
+  .mbar a{text-align:center;padding:13px 10px}
+  footer{padding-bottom:84px}
+}
+@media (prefers-reduced-motion:reduce){.work{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="proposal">Anteprima di un sito preparata per Luther Art Ink · foto dalla vostra scheda Google, testi da confermare insieme</div>
+
+<header>
+  <div class="container">
+    <a class="logo" href="#"><b>Luther Art <i>Ink</i></b><small>Tattoo &amp; Piercing · Vezia</small></a>
+    <nav aria-label="Menu">
+      <a href="#lavori">Lavori</a>
+      <a href="#studio">Lo studio</a>
+      <a href="#recensioni">Recensioni</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a class="cta" href="#appuntamento">Prenota una consulenza</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-text">
+    <span class="label">Ad Libitum Studio · Lugano</span>
+    <h1>Tatuaggi che durano <i>una vita.</i></h1>
+    <p class="lead">Realismo in bianco e nero, ritratti e lavori su misura, nello studio di Sergio a Vezia. Igiene ossessiva, un caffè prima di iniziare e tutto il tempo che serve.</p>
+    <div class="rating"><b>5,0</b><span>★★★★★ · 166 recensioni su Google</span></div>
+    <div class="actions">
+      <a class="btn btn-solid" href="#appuntamento">Prenota una consulenza</a>
+      <a class="btn btn-line" href="#lavori">Guarda i lavori</a>
+    </div>
+  </div>
+  <div class="hero-img" role="img" aria-label="Tatuaggio realistico con ritratto sull'avambraccio" style="background-image:url('https://lh3.googleusercontent.com/grass-cs/AABkmLeGlABv52GmatNX8L-lTGgzIQl1kjiVEvqJtnGzbms2oYESrjGi7OyLNdBi5X0aXRIxT2nJLUnYaFLtxt_sO4ZtM1j4JJMk6xgrZtrv6teJfqFNMXKDicHX0ocvV63K-3gQl5el2Q-DXzM=s1400')"></div>
+</div>
+
+<div class="values">
+  <div class="container">
+    <div><b>Tattoo &amp; piercing</b><span>nello stesso studio</span></div>
+    <div><b>Igiene totale</b><span>la cosa che i clienti citano di più</span></div>
+    <div><b>Su misura</b><span>ogni lavoro parte da una consulenza</span></div>
+    <div><b>Lun – Sab</b><span>10:30 – 18:30</span></div>
+  </div>
+</div>
+
+<section id="lavori">
+  <div class="container">
+    <div class="head">
+      <h2>Lavori</h2>
+      <p>Ritratti, teschi, animali e sleeve: sfumature morbide e contrasti decisi, pensati per invecchiare bene sulla pelle.</p>
+    </div>
+    <div class="works">
+      <div class="work w1" role="img" aria-label="Sleeve sulla gamba" style="background-image:url('https://lh3.googleusercontent.com/grass-cs/AABkmLcjYm-ePUtoKZz0FpdMV6ntwgQHi8HMoP8RGRn9mkUyLH9wf7LFI_3vKQUsMdMxSoDxijSir-D8aqT6SSHzXq7FCUUSzvGkslWR6BZUzIet7Tg2zsnOVzW57B2M0HNMc_VNUidvQXDr8qM=s1200')"><span>Sleeve gamba</span></div>
+      <div class="work w2" role="img" aria-label="Teschio realistico sull'avambraccio" style="background-image:url('https://lh3.googleusercontent.com/grass-cs/AABkmLdWMEq4vcz24rU3etR9gvCF4c3cEvlwRNJYV09N0iuaodlwSVTheyyRH5bIksdfJLiwuv880mg51mTHhxFqagXWKBRQhV2qblRhTAYWJDw7jxTyuQtDw9wxWq_lgvTT7xKmIQU=s1200')"><span>Teschio · avambraccio</span></div>
+      <div class="work w3" role="img" aria-label="Lupo sulla spalla" style="background-image:url('https://lh3.googleusercontent.com/grass-cs/AABkmLcc8kdUdv0r0GeMgB23JfmYZgqJN7YHL5XXqJFXNgQ2tMbS8FFFTrCndhShGvy0DHUQxtH0bd2nTf1pwWMZI_FPp6ucmudlKLSBSwNX_r8yBZuTyGDPO7vkcuxZGqp4ipkm6sEx=s1200');background-position:center 30%"><span>Lupo · spalla</span></div>
+      <div class="work w4" role="img" aria-label="Composizione con occhio e teschio sull'avambraccio" style="background-image:url('https://lh3.googleusercontent.com/grass-cs/AABkmLesog3Mmml2sULoD0IBvnhyhWy4OR08okrlIi5mczeCn_6z5wV0Tq0Pp8mqetzMAMUBITBDgzUmT9RssfqNUNfNvzKqvk8DXE3OJdF2OZsN5Lf8KkDTAvcE788_qwYbPlQIUuqnJQ=s1200');background-position:center 40%"><span>Composizione · avambraccio</span></div>
+      <div class="work w5"><p>Avete un'idea? Portatela in consulenza: il disegno si costruisce insieme.</p><a class="btn btn-line" href="#appuntamento">Raccontaci la tua idea</a></div>
+    </div>
+    <p class="note">Le foto sono in bianco e nero sul sito; passandoci sopra si vedono a colori.</p>
+  </div>
+</section>
+
+<div class="studio-img" id="studio" role="img" aria-label="Lo studio con la poltrona, il parquet e la parete in marmo nero" style="background-image:url('https://lh3.googleusercontent.com/grass-cs/AABkmLetwrMdYbH1uquVB3dIrA4Os2A3rNeONaP0sEe-Y2MvZSlPMPM19Ot5l3WcbBn5aFKCQ6pQNW7Qp-bsacO5FgD_GuuzBFxMX7EEzI9NDCBGGK6FXvvgogojiMhSquYyL6ySXDQ=s2000')"></div>
+<section style="padding-top:0">
+  <div class="container studio">
+    <div>
+      <h2>Lo studio</h2>
+      <p>Uno studio raccolto e accogliente a Vezia, a due passi da Lugano. Si lavora con buona musica e <strong>senza fretta</strong>: anche una sessione di sette ore, con le pause giuste.</p>
+      <p>Per Sergio la pulizia è <strong>una vera ossessione</strong>, e chi ci è stato lo scrive nelle recensioni. Prima di iniziare c'è sempre un caffè o un bicchiere d'acqua.</p>
+    </div>
+    <div class="points">
+      <div><em>i</em><b>Consulenza prima di tutto</b><span>Si parte dall'idea, dalla zona e dalle dimensioni. Il disegno si costruisce insieme.</span></div>
+      <div><em>ii</em><b>Igiene e materiali</b><span>Uno studio pulitissimo e curato in ogni dettaglio: è la prima cosa che notano i clienti.</span></div>
+      <div><em>iii</em><b>Piercing e assistenza</b><span>Anche per problemi con piercing già fatti, quando possibile senza rimuoverli.</span></div>
+      <div><em>iv</em><b>Preventivo chiaro</b><span>Il prezzo si definisce in consulenza, in base al lavoro.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="recensioni" class="reviews-bg">
+  <div class="container">
+    <div class="head">
+      <h2>Chi è passato da qui</h2>
+      <p>5,0 su 5, con 166 recensioni su Google.</p>
+    </div>
+    <div class="quotes">
+      <div class="quote"><p>Non ho mai visto uno studio così pulito. E la qualità del lavoro parla da sola.</p><span>Leo · recensione Google, tradotta</span></div>
+      <div class="quote"><p>Quasi sette ore di lavoro, qualche pausa caffè, ed ero soddisfattissimo. Prezzo più che onesto.</p><span>Mirko · recensione Google, tradotta</span></div>
+      <div class="quote"><p>Avevo un problema con un piercing e mi ha ricevuta subito, all'ultimo minuto. Gentile, onesto e professionale.</p><span>Elodie · recensione Google, tradotta</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="appuntamento">
+  <div class="container book">
+    <div class="book-intro">
+      <h2>Prenota una consulenza</h2>
+      <p>Raccontaci la tua idea in un minuto. Sergio la guarda e ti propone giorno e ora per parlarne in studio.</p>
+      <ol class="how">
+        <li>Scegli cosa vuoi fare</li>
+        <li>Indica zona e dimensioni</li>
+        <li>Descrivi l'idea e lascia i tuoi contatti</li>
+      </ol>
+      <span class="demo-tag">Dimostrazione · nessuna richiesta reale</span>
+    </div>
+    <div>
+      <div class="card" aria-live="polite">
+        <div class="steps" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+        <div id="flow"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contatti" style="padding-top:0">
+  <div class="container visit">
+    <div>
+      <h2>Orari</h2>
+      <table aria-label="Orari di apertura"><tbody id="hours"></tbody></table>
+      <p class="note">Orari dalla vostra scheda Google, da confermare. Studio LGBTQ+ friendly.</p>
+    </div>
+    <div>
+      <h2>Dove siamo</h2>
+      <div class="info">
+        <div><div class="label">Indirizzo</div><div class="v">Via Daldini 3<br>6943 Vezia (Lugano)</div></div>
+        <div><div class="label">Telefono e WhatsApp</div><div class="v">076 367 78 61</div></div>
+        <div class="actions">
+          <a class="btn btn-solid" href="tel:+41763677861">Chiama</a>
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Luther+Art+Ink+Via+Daldini+3+Vezia" target="_blank" rel="noopener">Indicazioni</a>
+        </div>
+      </div>
+      <div class="street" role="img" aria-label="La via dello studio a Vezia" style="background-image:url('https://lh3.googleusercontent.com/grass-cs/AABkmLdxeuhJJw12YFwaM1pa3Wj6Txb9SG-4uBzaSylenZvYl2e9DcDU3iQV9JHN-QQeUIOSQR5VPSZPEmU6uc4g_3kgEBVhq_7_gv450wzF2CLE5JHD47a6c_VvMjPT0Qd--4f_vynH=s1600')"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <span>Luther Art Ink · Tattoo &amp; Piercing · Via Daldini 3, Vezia</span>
+    <span>Proposta di sito · ottobre 2026</span>
+  </div>
+</footer>
+<div class="mbar"><a class="btn btn-solid" href="#appuntamento">Consulenza</a><a class="btn btn-line" href="tel:+41763677861">Chiama</a></div>
+
+<script>
+(function(){
+  const h=[["Lunedì","10:30 – 18:30"],["Martedì","10:30 – 18:30"],["Mercoledì","10:30 – 18:30"],["Giovedì","10:30 – 18:30"],["Venerdì","10:30 – 18:30"],["Sabato","10:30 – 18:30"],["Domenica",null]];
+  const t=(new Date().getDay()+6)%7;
+  document.getElementById("hours").innerHTML=h.map((r,i)=>`<tr class="${r[1]?"":"closed"} ${i===t?"today":""}"><td>${r[0]}</td><td>${r[1]||"Chiuso"}</td></tr>`).join("");
+})();
+
+// Richiesta di consulenza dimostrativa: nessun dato lascia la pagina.
+(function(){
+  const el=document.getElementById("flow"),bars=[...document.querySelectorAll(".steps span")];
+  const st={tipo:null,zona:null,misura:null};
+  const TIPI=[["Tatuaggio nuovo","un'idea da realizzare"],["Cover-up","coprire un vecchio tatuaggio"],["Piercing","nuovo o da sistemare"],["Solo consulenza","ho dubbi, voglio parlarne"]];
+  const ZONE=["Braccio","Avambraccio","Gamba","Schiena","Petto","Spalla","Mano","Altro"];
+  const MIS=["Piccolo (fino a 8 cm)","Medio (palmo della mano)","Grande","Sleeve o progetto lungo"];
+  const bar=n=>bars.forEach((b,i)=>b.classList.toggle("on",i<n));
+  function s1(){bar(1);el.innerHTML=`<div class="q">Cosa vorresti fare?</div><div class="opts">${TIPI.map((x,i)=>`<button type="button" data-i="${i}" class="${st.tipo===x[0]?"sel":""}">${x[0]}<small>${x[1]}</small></button>`).join("")}</div>`;
+    el.querySelectorAll("button").forEach(b=>b.onclick=()=>{st.tipo=TIPI[b.dataset.i][0];st.tipo==="Piercing"||st.tipo==="Solo consulenza"?s3():s2()})}
+  function s2(){bar(2);el.innerHTML=`<div class="recap"><b>${st.tipo}</b></div><div class="q">Dove e quanto grande?</div>
+    <div class="opts" id="zone">${ZONE.map(z=>`<button type="button" class="${st.zona===z?"sel":""}">${z}</button>`).join("")}</div>
+    <div class="q" style="font-size:19px;margin-top:20px">Dimensioni</div>
+    <div class="opts" id="mis">${MIS.map(m=>`<button type="button" class="${st.misura===m?"sel":""}">${m}</button>`).join("")}</div>
+    <div class="row"><button type="button" class="linkbtn" id="b1">Indietro</button><button type="button" class="btn btn-solid" id="n2">Continua</button></div>`;
+    el.querySelectorAll("#zone button").forEach(b=>b.onclick=()=>{st.zona=b.textContent;s2()});
+    el.querySelectorAll("#mis button").forEach(b=>b.onclick=()=>{st.misura=b.textContent;s2()});
+    document.getElementById("b1").onclick=s1;
+    document.getElementById("n2").onclick=()=>{if(!st.zona)st.zona="Da definire";if(!st.misura)st.misura="Da definire";s3()}}
+  function s3(){bar(3);const det=st.zona?` · ${st.zona} · ${st.misura}`:"";
+    el.innerHTML=`<div class="recap"><b>${st.tipo}</b>${det}</div>
+    <form class="form" id="f" novalidate>
+      <label for="idea">La tua idea<textarea id="idea" placeholder="Es. ritratto realistico del mio cane, in bianco e nero, sull'avambraccio"></textarea></label>
+      <label for="nome">Nome<input id="nome" autocomplete="name" placeholder="Il tuo nome"></label>
+      <label for="tel">Telefono o WhatsApp<input id="tel" type="tel" autocomplete="tel" placeholder="079 123 45 67"></label>
+      <label for="quando">Quando preferisci passare<select id="quando"><option>In settimana, mattina</option><option>In settimana, pomeriggio</option><option>Sabato</option><option>Indifferente</option></select></label>
+      <button class="btn btn-solid" type="submit">Invia la richiesta</button>
+    </form>
+    <div class="row"><button type="button" class="linkbtn" id="b2">Indietro</button></div>`;
+    document.getElementById("b2").onclick=()=>st.zona?s2():s1();
+    document.getElementById("f").addEventListener("submit",e=>{e.preventDefault();const n=(document.getElementById("nome").value.trim()||"").split(" ")[0];s4(n)})}
+  function s4(n){bar(3);
+    el.innerHTML=`<div class="done"><h3>Grazie${n?", "+n:""}.</h3><p>Richiesta per: ${st.tipo}${st.zona?" · "+st.zona:""}</p>
+    <div class="box"><b>Nel sito vero, a questo punto:</b><br>· Sergio riceve la richiesta sul telefono, con la tua idea<br>· ti risponde per fissare la consulenza in studio<br>· il giorno prima ricevi un promemoria</div>
+    <div class="row" style="justify-content:center"><button type="button" class="linkbtn" id="again">Prova un'altra richiesta</button></div></div>`;
+    document.getElementById("again").onclick=()=>{st.tipo=st.zona=st.misura=null;s1()}}
+  s1();
+})();
+</script>
+</body>
+</html>
