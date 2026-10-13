@@ -51,28 +51,28 @@ Nessun prezzo (nessun listino pubblicato), nessun anno di apertura, nessun elenc
 - **"Il vostro scontrino":** il modulo (marcato Dimostrazione) stampa uno **scontrino di carta** con il numero di ritiro, come quello vero della bottega.
 - **"Tre parole che i clienti ripetono":** competente, cordiale, puntuale — tre parole prese letteralmente dalle sue recensioni.
 
-### Messaggio WhatsApp pronto da copiare
+### Messaggio WhatsApp pronto da copiare (versione formale)
 
-> Buongiorno Gennaro,
+> Buongiorno signor Gennaro,
 >
-> sono Jacopo, un ragazzo ticinese che realizza siti web per attività della zona.
+> mi chiamo Jacopo e sono un ragazzo ticinese che realizza siti web per le attività della regione.
 >
-> Ho letto le recensioni della sua calzoleria: una cliente scrive che usa materiali di ottima qualità e che dà saggi consigli, un'altra che è molto bravo a riparare e a rendere nuove le scarpe. 4,7 su 93 recensioni su Google, per un calzolaio è tanta roba.
+> Ho avuto modo di leggere le recensioni della Sua calzoleria: c'è chi scrive che, dopo dieci anni, il Suo lavoro non l'ha mai deluso, e chi racconta che è riuscito a riparare perfino scarpe e borse che sembravano senza speranza. Una media di 4,7 su 93 recensioni su Google è un risultato di cui essere davvero orgogliosi.
 >
-> Però cercandola su internet non ho trovato nessun sito: solo l'indirizzo e il numero negli elenchi. Chi cerca "calzolaio Locarno" non vede da nessuna parte il suo lavoro.
+> Cercando la Sua bottega su internet, però, non ho trovato un sito: chi cerca un calzolaio a Locarno non ha modo di vedere il Suo lavoro.
 >
-> Mi sono permesso di prepararle un'anteprima:
+> Mi sono quindi permesso di prepararLe un'anteprima di come potrebbe essere:
 > https://jdozio.github.io/dozioswebsites-anteprime/calzoleria-da-gennaro/
 >
-> Ci sono due cose pensate apposta per lei: un "prima e dopo" da trascinare con il dito, dove si vede la stessa scarpa all'arrivo e dopo il suo lavoro, e un piccolo scontrino di ritiro che si stampa sullo schermo, come quello che dà in bottega.
+> Ho pensato a due elementi in particolare per Lei: un "prima e dopo" che mostra la stessa scarpa all'arrivo in bottega e dopo il Suo intervento, e un piccolo scontrino di ritiro, simile a quello che consegna ai Suoi clienti.
 >
-> È solo una bozza: niente è ufficiale e si può cambiare tutto. Ho usato le foto della sua scheda Google; per il "prima e dopo" servirebbero due foto dello stesso paio di scarpe, prima e dopo il suo lavoro.
+> Si tratta soltanto di una bozza: nulla è definitivo e ogni parte può essere modificata. Ho utilizzato le fotografie della Sua scheda Google; per il "prima e dopo" sarebbero ideali due foto dello stesso paio di scarpe, prima e dopo la riparazione.
 >
-> Se le interessa, mi scriva pure qui su WhatsApp quando ha un momento: possiamo parlare di prezzo, modifiche o qualsiasi altra cosa direttamente per messaggio. Buona giornata! 👞
+> Se la proposta Le interessa, può scrivermi qui su WhatsApp quando Le è più comodo: possiamo parlare del prezzo, di eventuali modifiche o di qualsiasi altra cosa direttamente per messaggio.
+>
+> La ringrazio per l'attenzione e Le auguro una buona giornata.
 >
 > Jacopo
-
-*(Nota: ho usato il "lei". Non so l'età di Gennaro; se sulla scheda Google si vede che è giovane, si può passare al "tu".)*
 
 ---
 

@@ -142,6 +142,13 @@ Di notte (cloud) Google, Google Maps e le foto delle schede NON sono raggiungibi
   sostituiscono i segnaposto, si aggiorna lo stato in VERIFICATA o SCARTATA, e si pubblica. Se
   un'attività risulta avere un sito o essere ferma, si cancella la sua cartella e si segna nel registro.
 
+## Tono del messaggio
+- Titolari anziani, attività storiche, o età sconosciuta: **formale** ("Buongiorno signor/signora …",
+  maiuscole di cortesia Sua/Lei/Le, chiusura "La ringrazio per l'attenzione e Le auguro una buona giornata.",
+  nessuna emoji). Mai gergo o espressioni colloquiali ("tanta roba", "top", "spacca"…).
+- Solo con titolari chiaramente giovani (es. artigiani giovani, barbieri, tatuatori) si può usare il "tu",
+  comunque sempre educato.
+
 ## 8. Output di ogni notte
 1. Le cartelle dei siti nella radice del repo.
 2. Il file `_interno/messaggi-AAAA-MM-GG.md` con, per ogni attività:
