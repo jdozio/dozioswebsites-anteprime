@@ -13,6 +13,31 @@ Regola d'oro (parole di Jacopo): *"Guardi lo stile del lavoro della gente, lo an
 migliori in circolazione, sia di sito che di lavoro generale, impari, poi applichi. Il sito deve
 essere più umano possibile, non può essere una stronzatina che dici 'sì, fatto dal chat'."*
 
+## REGOLA N°1 – Emozione e sorpresa a prima vista
+Parole di Jacopo: **"Il sito deve essere più umano possibile, deve creare emozioni e deve
+sorprendere a prima vista."**
+Il titolare deve aprire il link e pensare *"questo è proprio il mio lavoro, e non l'avevo mai visto
+così"*. Se un sito non provoca questa reazione, non è finito. Come ottenerla:
+- **I primi 3 secondi decidono tutto.** La prima schermata (hero) deve colpire: una frase vera e
+  forte presa dalla loro storia o da un cliente (es. "C'è chi ci affida il suo giardino da quasi
+  trent'anni", "Il gelato vi cambia la giornata? Per noi sì."), un'immagine o un segnaposto
+  grande e curato, una composizione con carattere. Mai un hero generico tipo "Benvenuti / Qualità e
+  professionalità".
+- **Raccontare persone, non servizi.** Il titolare per nome (se certo), i clienti con le loro
+  parole, i quartieri, gli aneddoti. Le recensioni vere sono la materia prima delle emozioni.
+- **Un'idea che sorprende per ogni sito**, pensata sul mestiere e non riciclata. Esempi già fatti:
+  i gusti della settimana con cartellini scritti a mano (gelateria), il calendario del giardino che
+  evidenzia la stagione in corso (giardiniere), le finiture come campioni di materia (pittore),
+  il portfolio stile Instagram con richiesta e foto di riferimento (tatuatore).
+  Inventane una nuova per ogni attività.
+- **Dettagli fatti a mano**: tipografia scelta con cura, colori presi dal loro mondo (le sedie
+  arancioni della terrazza, la terracotta della doccia, il verde delle siepi), piccoli tocchi
+  (texture di carta o intonaco, etichette scritte a mano, animazioni leggere e fluide al passaggio).
+- **Calore nel testo**: frasi brevi, concrete, in prima persona ("noi"/"io"), come parlerebbe
+  davvero quella persona. Niente parole vuote da agenzia.
+- Test finale: rileggi la prima schermata e chiediti "un titolare qui si emozionerebbe e lo
+  farebbe vedere a sua moglie/ai suoi amici?". Se la risposta è no, rifalla.
+
 ## 1. Dove cercare (in quest'ordine)
 1. **Ticino** (Svizzera italiana): Lugano, Mendrisiotto, Bellinzonese, Locarnese, Malcantone, Riviera/Valli.
 2. Se in Ticino non trovi abbastanza attività valide: **Italia, partendo dal nord** (Como, Varese,
