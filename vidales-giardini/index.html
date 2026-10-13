@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vidales Giardini · Massagno, Lugano</title>
+<meta name="description" content="Manutenzione giardini, siepi, prati e aiuole a Lugano e dintorni. Vidales Giardini, Via Nosedo 15, Massagno.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --leaf:#1F3A2A; --leaf2:#2C4E39; --moss:#6F8A3E; --stone:#EFECE4; --stone2:#E4DFD3; --paper:#F8F6F1;
+  --ink:#1C231E; --ink2:#5B6459; --terra:#B4552F; --line:#D8D2C3;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:76px}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.65 'Manrope',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Newsreader',Georgia,serif;font-weight:400;line-height:1.05;letter-spacing:-.015em}
+em{font-style:italic}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--moss)}
+
+.draft{background:var(--leaf);color:#DCE5D6;font-size:13px;text-align:center;padding:8px 16px}
+.draft b{color:#fff}
+
+header{position:sticky;top:0;z-index:30;background:rgba(248,246,241,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{text-decoration:none;display:flex;align-items:center;gap:12px}
+.brand svg{flex:none}
+.brand b{font-family:'Newsreader',serif;font-weight:500;font-size:23px;display:block;line-height:1}
+.brand small{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);display:block;margin-top:4px}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:15px;font-weight:500}
+.nav ul a{text-decoration:none}
+.nav ul a:hover{color:var(--moss)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--leaf);color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:13px 22px;border-radius:6px;border:0;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--leaf2)}
+.btn.light{background:#fff;color:var(--leaf)}
+.btn.light:hover{background:var(--stone)}
+.btn.line{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px currentColor}
+
+/* hero */
+.hero{position:relative;min-height:min(88vh,760px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,28,20,.10) 0%,rgba(15,28,20,.35) 35%,rgba(12,24,16,.88) 72%,rgba(12,24,16,.94) 100%)}
+.hero h1,.hero p,.hero .eyebrow{text-shadow:0 1px 18px rgba(0,0,0,.35)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:64px;width:100%}
+.hero .eyebrow{color:#CFE0B8}
+.hero h1{font-size:clamp(44px,7vw,92px);max-width:11em;margin:16px 0 22px}
+.hero p{font-size:19px;max-width:32em;color:#E7EEE2}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+
+.strip{background:var(--leaf);color:#E6EDE0}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.strip div.it{padding:22px 0;display:flex;gap:14px;align-items:baseline;border-right:1px solid rgba(255,255,255,.12);padding-left:24px}
+.strip div.it:first-child{padding-left:0}
+.strip div.it:last-child{border:0}
+.strip b{font-family:'Newsreader',serif;font-weight:400;font-size:30px;color:#fff;white-space:nowrap}
+.strip span{font-size:14px;line-height:1.35}
+
+/* intro */
+.intro{padding:100px 0 60px}
+.intro-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:72px;align-items:start}
+.intro h2{font-size:clamp(36px,4.6vw,58px);margin-top:14px}
+.intro p{color:var(--ink2);margin-bottom:16px}
+.intro .quote{font-family:'Newsreader',serif;font-size:24px;line-height:1.35;color:var(--ink);border-left:3px solid var(--moss);padding-left:20px;margin:26px 0}
+.intro .quote small{display:block;font-family:'Manrope',sans-serif;font-size:13px;color:var(--ink2);margin-top:10px}
+.todo{background:#fff;border:1.5px dashed var(--terra);border-radius:8px;padding:14px 16px;color:var(--ink2);font-size:15px}
+.todo b{color:var(--terra)}
+
+/* servizi */
+.servizi{padding:40px 0 100px}
+.sv-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+.sv-head h2{font-size:clamp(34px,4.2vw,52px)}
+.sv-head p{max-width:28em;color:var(--ink2)}
+.sv{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.svc{background:#fff;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+.svc .ph{aspect-ratio:4/5;overflow:hidden}
+.svc .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.svc:hover .ph img{transform:scale(1.04)}
+.svc .tx{padding:18px 18px 20px}
+.svc .n{font-size:12px;font-weight:700;color:var(--moss);letter-spacing:.1em}
+.svc h3{font-size:26px;margin:6px 0 8px}
+.svc p{font-size:15px;color:var(--ink2)}
+
+/* stagioni */
+.stagioni{background:var(--stone);padding:96px 0}
+.st-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);margin-top:34px}
+.st{padding:26px 22px 28px 0;border-right:1px solid var(--line);position:relative}
+.st+.st{padding-left:22px}
+.st:last-child{border-right:0}
+.st h3{font-size:30px}
+.st .m{font-size:13px;color:var(--ink2);margin:4px 0 14px}
+.st ul{list-style:none;font-size:15px}
+.st li{padding:5px 0;border-bottom:1px dotted var(--line)}
+.st.now::before{content:"Adesso";position:absolute;top:-13px;left:0;background:var(--terra);color:#fff;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:3px}
+.st+.st.now::before{left:22px}
+.st.now h3{color:var(--terra)}
+
+/* lavori */
+.lavori{padding:100px 0}
+.gal{columns:3;column-gap:16px;margin-top:34px}
+.gal figure{break-inside:avoid;margin-bottom:16px;border-radius:8px;overflow:hidden;cursor:zoom-in;background:var(--stone2)}
+.gal img{width:100%;transition:opacity .2s}
+.gal figure:hover img{opacity:.92}
+.lb{position:fixed;inset:0;background:rgba(10,18,13,.92);z-index:60;display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-height:90vh;max-width:100%;border-radius:6px}
+
+/* recensioni */
+.rev{background:var(--leaf);color:#E6EDE0;padding:96px 0}
+.rev h2{font-size:clamp(34px,4.2vw,52px);color:#fff}
+.rev-top{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:38px}
+.score{display:flex;align-items:center;gap:14px}
+.score b{font-family:'Newsreader',serif;font-weight:400;font-size:56px;color:#fff;line-height:1}
+.score span{font-size:14px;line-height:1.4}
+.stars{color:#D9B44A;letter-spacing:2px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rv{border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:26px}
+.rv p{font-family:'Newsreader',serif;font-size:21px;line-height:1.35;color:#fff;margin:12px 0 16px}
+.rv small{font-size:13px;opacity:.75}
+
+/* sopralluogo */
+.sop{padding:100px 0}
+.sop-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.sop h2{font-size:clamp(34px,4.2vw,52px);margin:14px 0 18px}
+.sop p.l{color:var(--ink2);margin-bottom:22px}
+.steps{list-style:none;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:16px;padding:14px 0;border-top:1px solid var(--line);font-size:16px}
+.steps li::before{content:counter(s);font-family:'Newsreader',serif;font-size:28px;color:var(--moss);line-height:1;min-width:22px}
+form.f{background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px}
+.demo{display:inline-block;background:var(--terra);color:#fff;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:3px;margin-bottom:14px}
+form.f h3{font-size:30px;margin-bottom:18px}
+.fld{margin-bottom:16px}
+.fld>label{display:block;font-weight:600;font-size:14px;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips label{border:1.5px solid var(--line);border-radius:6px;padding:8px 13px;font-size:14px;cursor:pointer;user-select:none;background:var(--paper)}
+.chips input:checked+label{background:var(--leaf);border-color:var(--leaf);color:#fff}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+input[type=text],input[type=tel],select,textarea{width:100%;font:inherit;font-size:15px;padding:12px 14px;border:1.5px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink)}
+textarea{min-height:90px;resize:vertical}
+.up{display:flex;align-items:center;gap:10px;border:1.5px dashed var(--line);border-radius:6px;padding:12px 14px;font-size:14px;color:var(--ink2);cursor:pointer}
+.up input{display:none}
+.done{display:none;text-align:center;padding:40px 10px}
+.done h3{color:var(--leaf)}
+.done p{color:var(--ink2);margin-top:10px}
+
+/* zona */
+.zona{background:var(--stone);padding:90px 0}
+.zona-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:48px}
+.zona h2{font-size:clamp(34px,4.2vw,50px);margin:14px 0 18px}
+.places{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 26px}
+.places span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px}
+.hours{list-style:none;margin:6px 0 22px}
+.hours li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dashed var(--line);font-size:15.5px}
+.hours li.now{font-weight:700}
+.map{border-radius:12px;overflow:hidden;min-height:400px;position:relative;background:#ddd}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+footer{background:var(--ink);color:#B9C2B6;padding:44px 0 110px;font-size:15px}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:end}
+footer strong{font-family:'Newsreader',serif;font-weight:400;font-size:26px;color:#fff;display:block;margin-bottom:6px}
+footer a{color:#fff}
+.foot .sm{font-size:13px;opacity:.7}
+
+.mbar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;gap:8px}
+.mbar a{flex:1;box-shadow:0 0 0 1.5px rgba(255,255,255,.55),0 10px 24px -8px rgba(0,0,0,.45)}
+.wa{background:#2E7D4F}
+.wa:hover{background:#256B42}
+
+@media (max-width:980px){
+  .sv{grid-template-columns:repeat(2,1fr)}
+  .st-grid{grid-template-columns:repeat(2,1fr)}
+  .st{border-bottom:1px solid var(--line)}
+  .st:nth-child(2){border-right:0}
+  .st:nth-child(3){padding-left:0}
+  .gal{columns:2}
+}
+@media (max-width:860px){
+  .nav ul{display:none}
+  .nav .btn{display:none}
+  .intro-grid,.sop-grid,.zona-grid{grid-template-columns:1fr;gap:36px}
+  .rv-grid{grid-template-columns:1fr}
+  .strip .wrap{grid-template-columns:1fr}
+  .strip div.it{padding:14px 0;border-right:0;border-bottom:1px solid rgba(255,255,255,.12)}
+  .strip div.it:last-child{border:0}
+  .intro{padding:64px 0 40px}.servizi{padding:30px 0 70px}.stagioni,.lavori,.rev,.sop,.zona{padding:66px 0}
+  .mbar{display:flex}
+}
+@media (max-width:600px){
+  .wrap{padding:0 16px}
+  .hero{min-height:620px}
+  .hero .wrap{padding-bottom:40px}
+  .hero p{font-size:17px}
+  .sv{gap:12px}
+  .svc h3{font-size:22px}
+  .svc .tx{padding:14px}
+  .svc p{font-size:14px}
+  .st-grid{grid-template-columns:1fr}
+  .st,.st+.st{padding:24px 0;border-right:0}
+  .st.now{order:-1}
+  .st+.st.now::before{left:0}
+  .gal{columns:2;column-gap:10px}.gal figure{margin-bottom:10px}
+  .row2{grid-template-columns:1fr}
+  form.f{padding:22px}
+}
+</style>
+</head>
+<body>
+
+<div class="draft"><b>Anteprima</b> di sito preparata per Vidales Giardini · foto dalla scheda Google, testi da completare insieme</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M15 27V13" stroke="#1F3A2A" stroke-width="2" stroke-linecap="round"/><path d="M15 15c0-6 4-10 10-10 0 6-4 10-10 10Z" fill="#6F8A3E"/><path d="M15 19c0-5-3.5-8.5-9-8.5 0 5 3.5 8.5 9 8.5Z" fill="#1F3A2A"/></svg>
+      <span><b>Vidales Giardini</b><small>Massagno · Lugano</small></span>
+    </a>
+    <ul>
+      <li><a href="#servizi">Servizi</a></li>
+      <li><a href="#lavori">Lavori</a></li>
+      <li><a href="#recensioni">Recensioni</a></li>
+      <li><a href="#zona">Zona e orari</a></li>
+    </ul>
+    <a class="btn" href="#sopralluogo">Chiedi un sopralluogo</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWW2leHys-g6ijImgfrgZkikvFqnzTdC_KmaDDpswyhBMw0OH32zepMZfdu1e_E8gva7uMYogSqcoV83KCM4bUxI1bddQE2qpaGbAeING_LS53ETEclf2gTUTqZk6aZkrVrs2PcEkXQ8zC=s2400" alt="Aiuola con palme e fiori rossi e bianchi a bordo piscina">
+  <div class="wrap">
+    <div class="eyebrow">Giardiniere a Lugano e dintorni</div>
+    <h1>C'è chi ci affida il suo giardino <em>da quasi trent'anni.</em></h1>
+    <p>Manutenzione, siepi, prati e aiuole. Manuel e la sua squadra lavorano dal lunedì al sabato, con puntualità e il giardino lasciato in ordine.</p>
+    <div class="ctas">
+      <a class="btn light" href="#sopralluogo">Chiedi un sopralluogo</a>
+      <a class="btn line" href="tel:+41768166145">076 816 61 45</a>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="it"><b>★ 5,0</b><span>su Google<br>con 39 recensioni</span></div>
+    <div class="it"><b>~30 anni</b><span>con lo stesso cliente,<br>senza interruzioni</span></div>
+    <div class="it"><b>Lun – Sab</b><span>dalle 7:00 alle 18:00</span></div>
+  </div>
+</div>
+
+<section class="intro">
+  <div class="wrap intro-grid">
+    <div>
+      <div class="eyebrow">Chi siamo</div>
+      <h2>Un giardiniere di fiducia, non solo uno che taglia l'erba.</h2>
+    </div>
+    <div>
+      <p>Da Massagno ci occupiamo dei giardini di Lugano e dintorni: c'è chi ci chiama una volta per rimettere in sesto un giardino trascurato, e chi ci affida la manutenzione tutto l'anno.</p>
+      <div class="quote">«Vidales si occupa del nostro giardino da praticamente trent'anni, senza interruzioni. Disponibilità, puntualità, impegno e un lavoro fatto bene.»<small>Cliente, recensione su Google</small></div>
+      <div class="todo"><b>Da completare insieme:</b> la vostra storia in due righe: da quando lavorate, come è nata l'impresa, quante persone siete in squadra.</div>
+    </div>
+  </div>
+</section>
+
+<section class="servizi" id="servizi">
+  <div class="wrap">
+    <div class="sv-head">
+      <h2>Cosa facciamo</h2>
+      <p>Dal giardino trascurato da rimettere in sesto alla cura di tutto l'anno, con lo stesso ordine e la stessa attenzione ai dettagli.</p>
+    </div>
+    <div class="sv">
+      <div class="svc"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RUm_NJoGiBlYffE0vQpVAAOPl80O2aHE9IHYF7mf1OnGg2Z3o1tuIKEKN5MKYPIqfpC2U9Yh-KRoqRQknEmSrCAaHmvemuZV_QCAXIoOQqM6z6PhiI048C-Vsebcn_zh8WM_Mm7VWIl4LO=s900" alt="Aiuola curata"></div><div class="tx"><div class="n">01</div><h3>Manutenzione</h3><p>Visite regolari durante l'anno: tagli, pulizia, concimazioni. Il giardino sempre in ordine, senza doverci pensare.</p></div></div>
+      <div class="svc"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ROoQYL9vwNZA4_pm9lqfNsF3uu9_WWz4RWOYzR2i_ONU3JMgwefdyNUktZokP2ks4c8AK2sKbCtf3rqptYX-ZoOwjYB49Hdjd3EaLlPG5lMMr4inw-d9Cs4l-NLJSBerlIOsderNCn607v=s900" alt="Siepe potata"></div><div class="tx"><div class="n">02</div><h3>Siepi e potature</h3><p>Siepi dritte e compatte, alberi e arbusti potati nel periodo giusto.</p></div></div>
+      <div class="svc"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sivatv8bx8IQw8XgB18eRiMnI_SDV_aJDj2ObJa6oEU0GT5hqOV3p7a9sTB2yLYOYK7mfk9U6EEzx5cw9gavCdbjCFppe0YHljZxwUDCHRzdQhMkr-7EFLtgaZ3-JlA6aFLNBaVTzulK4Q=s900" alt="Prato vicino alla piscina"></div><div class="tx"><div class="n">03</div><h3>Prati</h3><p>Prati nuovi e rinnovati, con bordi puliti e camminamenti in pietra.</p></div></div>
+      <div class="svc"><div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TcUavPHghGydiGWQmCw4M1aqNp-Bqh-DuRwkA0JYNiOCVnvnGJAM8Eb6EXTh0R5puwWtL7aJQj3A5VChfyvCrl6rXRB_wFn6O6WZvmGcMlZc7hXZKMJ2hY6ozoRzdBmdFoUV5CIgPc2I8=s900" alt="Aiuola fiorita con palma"></div><div class="tx"><div class="n">04</div><h3>Aiuole e fioriture</h3><p>Aiuole fiorite, piante e sistemazioni in pietra che danno colore al giardino.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="stagioni">
+  <div class="wrap">
+    <div class="eyebrow">Il giardino durante l'anno</div>
+    <h2 style="font-size:clamp(34px,4.2vw,52px);margin-top:14px;max-width:16em">Ogni stagione ha il suo lavoro.</h2>
+    <div class="st-grid" id="st">
+      <div class="st" data-s="0"><h3>Primavera</h3><div class="m">marzo – maggio</div><ul><li>Pulizia dopo l'inverno</li><li>Primo taglio del prato</li><li>Concimazione</li><li>Nuove aiuole e fioriture</li></ul></div>
+      <div class="st" data-s="1"><h3>Estate</h3><div class="m">giugno – agosto</div><ul><li>Tagli regolari del prato</li><li>Siepi in forma</li><li>Controllo dell'irrigazione</li><li>Cura delle aiuole</li></ul></div>
+      <div class="st" data-s="2"><h3>Autunno</h3><div class="m">settembre – novembre</div><ul><li>Raccolta delle foglie</li><li>Ultimo taglio della stagione</li><li>Potature e siepi</li><li>Preparare il giardino all'inverno</li></ul></div>
+      <div class="st" data-s="3"><h3>Inverno</h3><div class="m">dicembre – febbraio</div><ul><li>Potatura di alberi e arbusti</li><li>Protezione delle piante delicate</li><li>Pulizia e sgombero</li><li>Progetti per la primavera</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="lavori" id="lavori">
+  <div class="wrap">
+    <div class="sv-head">
+      <h2>Alcuni lavori</h2>
+      <p>Giardini di clienti a Lugano e dintorni. Toccate una foto per ingrandirla.</p>
+    </div>
+    <div class="gal" id="gal">
+      <figure><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RUKhdiw78Xy2e4RO7gcZljrL-keg1CSv9JiwzJhSzlBxpGmwMW3mt6_N3FJPC5C9ulnB7vSkbGQJZpjiyOECSlb3HpyYpjQeTHOg-hYBopD0HjqmPcDluPmJ_7F4XL5JFlcg6t10HX55Si=s1000" alt="Scarpata con arbusti e tappezzanti"></figure>
+      <figure><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SBjaDVjkWlIG33fSqllk7P8LRWS1NY3hChPedPIhmydxVZCeCsdsx8TuvVx_0EsaETvrBtdHEG3Xi52tOomxO2zHw5RcE5LwD05aNmmyB6FOHbddoF6kusxBWew_Sfl2N9rnhbRVwGv-Yc=s1000" alt="Siepi e piante sagomate"></figure>
+      <figure><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWW2leHys-g6ijImgfrgZkikvFqnzTdC_KmaDDpswyhBMw0OH32zepMZfdu1e_E8gva7uMYogSqcoV83KCM4bUxI1bddQE2qpaGbAeING_LS53ETEclf2gTUTqZk6aZkrVrs2PcEkXQ8zC=s1000" alt="Aiuola con palme a bordo piscina"></figure>
+      <figure><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RdvTk-_L9RnfNFBV0FPT9VjIb8KIdXlZt6amAjjseszbTlR_t09_qfRyrKhnlWgu7dJOVa-oS_LWNwsaVO7NlX2o-6SPtSch5hoPFMppnfHzWOqgd8HTfQnDF_QnOO2CH7nhQAo2EK7FkX=s1000" alt="Prato lungo con bordura in sassi"></figure>
+      <figure><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R9iHAOhrMnI1ihth0lC0frcUTYFNKrUQHd83GJYJBxdzYl-CeewZXs9yJSmwIouNLAh54b7eBE_LMmTnt9cqE3wXvDe2k4ftr6JX2XYjw138xUsYGsDFmfgwNgUrXC_AS19ubrYLL-qYY=s1000" alt="Prato nuovo con camminamento in pietra"></figure>
+      <figure><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ROoQYL9vwNZA4_pm9lqfNsF3uu9_WWz4RWOYzR2i_ONU3JMgwefdyNUktZokP2ks4c8AK2sKbCtf3rqptYX-ZoOwjYB49Hdjd3EaLlPG5lMMr4inw-d9Cs4l-NLJSBerlIOsderNCn607v=s1000" alt="Siepe lungo la casa"></figure>
+      <figure><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TcUavPHghGydiGWQmCw4M1aqNp-Bqh-DuRwkA0JYNiOCVnvnGJAM8Eb6EXTh0R5puwWtL7aJQj3A5VChfyvCrl6rXRB_wFn6O6WZvmGcMlZc7hXZKMJ2hY6ozoRzdBmdFoUV5CIgPc2I8=s1000" alt="Aiuola fiorita con palma"></figure>
+      <figure><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sivatv8bx8IQw8XgB18eRiMnI_SDV_aJDj2ObJa6oEU0GT5hqOV3p7a9sTB2yLYOYK7mfk9U6EEzx5cw9gavCdbjCFppe0YHljZxwUDCHRzdQhMkr-7EFLtgaZ3-JlA6aFLNBaVTzulK4Q=s1000" alt="Prato con vista piscina e montagne"></figure>
+      <figure><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RUm_NJoGiBlYffE0vQpVAAOPl80O2aHE9IHYF7mf1OnGg2Z3o1tuIKEKN5MKYPIqfpC2U9Yh-KRoqRQknEmSrCAaHmvemuZV_QCAXIoOQqM6z6PhiI048C-Vsebcn_zh8WM_Mm7VWIl4LO=s1000" alt="Aiuola con arbusti fioriti"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="rev" id="recensioni">
+  <div class="wrap">
+    <div class="rev-top">
+      <h2>Cosa dicono i clienti</h2>
+      <div class="score"><b>5,0</b><span><span class="stars">★★★★★</span><br>39 recensioni su Google</span></div>
+    </div>
+    <div class="rv-grid">
+      <div class="rv"><span class="stars">★★★★★</span><p>«Hanno trasformato completamente il mio giardino a Viganello, superando ogni aspettativa. Un lavoro pulito, preciso e fatto con passione.»</p><small>Recensione Google · Viganello</small></div>
+      <div class="rv"><span class="stars">★★★★★</span><p>«Manuel e i suoi colleghi curano il mio giardino a Breganzona: professionalità, puntualità, pulizia e gentilezza.»</p><small>Recensione Google · Breganzona</small></div>
+      <div class="rv"><span class="stars">★★★★★</span><p>«Ha ridato vita al mio giardino in un attimo. Finalmente un giardiniere di fiducia a cui affidare il mio verde.»</p><small>Recensione Google</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="sop" id="sopralluogo">
+  <div class="wrap sop-grid">
+    <div>
+      <div class="eyebrow">Sopralluogo</div>
+      <h2>Raccontateci il vostro giardino.</h2>
+      <p class="l">Bastano due minuti: ci dite cosa serve, se volete mandate una foto, e vi richiamiamo per fissare un sopralluogo.</p>
+      <ol class="steps">
+        <li>Compilate il modulo o chiamateci</li>
+        <li>Veniamo a vedere il giardino</li>
+        <li>Ricevete il preventivo</li>
+      </ol>
+    </div>
+    <form class="f" id="f" novalidate>
+      <div id="fb">
+        <span class="demo">Dimostrazione</span>
+        <h3>Richiesta di sopralluogo</h3>
+        <div class="fld"><label>Di cosa avete bisogno?</label>
+          <div class="chips">
+            <input type="checkbox" id="c1" value="Manutenzione"><label for="c1">Manutenzione</label>
+            <input type="checkbox" id="c2" value="Siepi e potature"><label for="c2">Siepi e potature</label>
+            <input type="checkbox" id="c3" value="Prato"><label for="c3">Prato</label>
+            <input type="checkbox" id="c4" value="Aiuole"><label for="c4">Aiuole</label>
+            <input type="checkbox" id="c5" value="Altro"><label for="c5">Altro</label>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="fld"><label for="zn">Dove?</label><input type="text" id="zn" placeholder="es. Massagno"></div>
+          <div class="fld"><label for="dm">Grandezza del giardino</label><select id="dm"><option>Piccolo</option><option>Medio</option><option>Grande</option></select></div>
+        </div>
+        <div class="fld"><label for="ms">Due parole sul lavoro</label><textarea id="ms" placeholder="es. siepe di 20 metri da potare e prato da sistemare"></textarea></div>
+        <div class="fld"><label class="up"><input type="file" accept="image/*" id="ph">📷 <span id="phT">Aggiungi una foto del giardino (facoltativo)</span></label></div>
+        <div class="row2">
+          <div class="fld"><label for="nm">Nome</label><input type="text" id="nm"></div>
+          <div class="fld"><label for="tl">Telefono</label><input type="tel" id="tl" placeholder="07x ..."></div>
+        </div>
+        <button class="btn" type="submit" style="width:100%">Invia la richiesta</button>
+      </div>
+      <div class="done" id="dn"><h3>Grazie!</h3><p id="dnT"></p><p style="font-size:13px">(È una dimostrazione: nessuna richiesta è stata inviata.)</p></div>
+    </form>
+  </div>
+</section>
+
+<section class="zona" id="zona">
+  <div class="wrap zona-grid">
+    <div>
+      <div class="eyebrow">Zona e orari</div>
+      <h2>Lugano e dintorni</h2>
+      <div class="places"><span>Lugano</span><span>Massagno</span><span>Viganello</span><span>Breganzona</span><span>e dintorni</span></div>
+      <ul class="hours" id="hrs">
+        <li data-d="1"><span>Lunedì</span><span>7:00 – 18:00</span></li>
+        <li data-d="2"><span>Martedì</span><span>7:00 – 18:00</span></li>
+        <li data-d="3"><span>Mercoledì</span><span>7:00 – 18:00</span></li>
+        <li data-d="4"><span>Giovedì</span><span>7:00 – 18:00</span></li>
+        <li data-d="5"><span>Venerdì</span><span>7:00 – 18:00</span></li>
+        <li data-d="6"><span>Sabato</span><span>7:00 – 18:00</span></li>
+        <li data-d="0"><span>Domenica</span><span>chiuso</span></li>
+      </ul>
+      <p><b>Vidales Giardini</b><br>Via Nosedo 15, 6900 Massagno<br><a href="tel:+41768166145">+41 76 816 61 45</a></p>
+    </div>
+    <div class="map"><iframe loading="lazy" title="Mappa" src="https://maps.google.com/maps?q=Vidales%20giardini%2C%20Via%20Nosedo%2015%2C%20Massagno&z=15&output=embed"></iframe></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><strong>Vidales Giardini</strong>Via Nosedo 15 · 6900 Massagno · <a href="tel:+41768166145">076 816 61 45</a></div>
+    <div class="sm">Anteprima non ufficiale · foto dalla scheda Google</div>
+  </div>
+</footer>
+
+<div class="lb" id="lb"><img alt=""></div>
+
+<div class="mbar">
+  <a class="btn" href="tel:+41768166145">Chiama</a>
+  <a class="btn wa" href="https://wa.me/41768166145" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  var n=new Date(),m=n.getMonth(),d=n.getDay();
+  var s=m<2||m===11?3:m<5?0:m<8?1:2;
+  var el=document.querySelector('.st[data-s="'+s+'"]');if(el)el.classList.add('now');
+  var h=document.querySelector('#hrs li[data-d="'+d+'"]');if(h)h.classList.add('now');
+  var lb=document.getElementById('lb'),li=lb.querySelector('img');
+  document.getElementById('gal').addEventListener('click',function(e){var i=e.target.closest('img');if(!i)return;li.src=i.src.replace('=s1000','=s2000');lb.classList.add('on');});
+  lb.addEventListener('click',function(){lb.classList.remove('on');});
+  document.getElementById('ph').addEventListener('change',function(){if(this.files[0])document.getElementById('phT').textContent=this.files[0].name;});
+  document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();
+    var c=[].map.call(document.querySelectorAll('.chips input:checked'),function(x){return x.value.toLowerCase();});
+    var nm=document.getElementById('nm').value.trim();
+    document.getElementById('fb').style.display='none';document.getElementById('dn').style.display='block';
+    document.getElementById('dnT').textContent=(nm?nm+', a':'A')+'bbiamo ricevuto la richiesta'+(c.length?' ('+c.join(', ')+')':'')+'. Vi richiamiamo entro poco per fissare il sopralluogo.';});
+})();
+</script>
+</body>
+</html>
