@@ -10,7 +10,7 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 - Gelateria Veneta | Via al Chioso 30, Lugano | gelateria | anteprima fatta | 2026-10-13 | /gelateria-veneta/
 - Vidales Giardini | Via Nosedo 15, Massagno | giardiniere | anteprima fatta | 2026-10-13 | /vidales-giardini/
 - Manenti Pittura (Andy Manenti) | Via D. Galli 22, Locarno | imbianchino | anteprima fatta | 2026-10-13 | /manenti-pittura/
-- Calzoleria da Gennaro (Gennaro Zuppa) | Via B. Varenna 2, Locarno | calzolaio | anteprima fatta (TEST), da controllare su Maps | 2026-10-13 | /calzoleria-da-gennaro/
+- Calzoleria da Gennaro (Gennaro Zuppa) | Via B. Varenna 2, Locarno | calzolaio | anteprima fatta (TEST), verificata su Maps 13.10, foto inserite | 2026-10-13 | /calzoleria-da-gennaro/
 
 ## Valutate e scartate
 - Grotto Tradizionale | Ticino | ristorante | ha già un sito

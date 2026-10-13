@@ -19,7 +19,9 @@ Questa è una sessione di TEST: una sola attività, lavorata al massimo della qu
 - **Un solo concorrente serio in zona** (Atay Locarno) ha già il suo sito; Gennaro no.
 
 ### Stato verifica
-**DA CONTROLLARE SU MAPS** — motivo: da qui non ho potuto aprire Google Maps né la ricerca Google (bloccate dal proxy) e non esiste uno strumento di ricerca luoghi in questa sessione. Tutti i dati vengono da local.ch, zip.ch, ATICREA e tio.ch. Da verificare sulla scheda Google, in due minuti:
+**VERIFICATA SU MAPS (13.10 sera):** scheda Google 4,7 su 93 recensioni, recensioni recenti (3–6 mesi), nessun sito, stesso cellulare, aperto. Foto vere inserite.
+
+~~DA CONTROLLARE SU MAPS~~ — motivo: da qui non ho potuto aprire Google Maps né la ricerca Google (bloccate dal proxy) e non esiste uno strumento di ricerca luoghi in questa sessione. Tutti i dati vengono da local.ch, zip.ch, ATICREA e tio.ch. Da verificare sulla scheda Google, in due minuti:
 1. che nel campo "sito web" della scheda **non** ci sia un sito;
 2. il voto e il numero di recensioni **Google** (quello del sito è local.ch) e che ce ne siano di recenti — l'ultima recensione local.ch è di **marzo 2024**, quindi conviene controllare che l'attività sia viva e attiva adesso;
 3. che l'indirizzo sia davvero **Via Bartolomeo Varenna 2** (zip.ch riporta ancora il vecchio Via dell'Ospedale 10, un elenco local.ch mostrava Via Serafino Balestra 20: l'indirizzo giusto sembra Varenna 2, confermato sia da local.ch sia da ATICREA, ma meglio una conferma).
@@ -55,7 +57,7 @@ Nessun prezzo (nessun listino pubblicato), nessun anno di apertura, nessun elenc
 >
 > sono Jacopo, un ragazzo ticinese che realizza siti web per attività della zona.
 >
-> Ho letto le recensioni della sua calzoleria: una cliente scrive che usa materiali di ottima qualità e che dà saggi consigli, un'altra che è molto bravo a riparare e a rendere nuove le scarpe. 4,7 su 21 valutazioni, per un calzolaio è tanta roba.
+> Ho letto le recensioni della sua calzoleria: una cliente scrive che usa materiali di ottima qualità e che dà saggi consigli, un'altra che è molto bravo a riparare e a rendere nuove le scarpe. 4,7 su 93 recensioni su Google, per un calzolaio è tanta roba.
 >
 > Però cercandola su internet non ho trovato nessun sito: solo l'indirizzo e il numero negli elenchi. Chi cerca "calzolaio Locarno" non vede da nessuna parte il suo lavoro.
 >
@@ -64,7 +66,7 @@ Nessun prezzo (nessun listino pubblicato), nessun anno di apertura, nessun elenc
 >
 > Ci sono due cose pensate apposta per lei: un "prima e dopo" da trascinare con il dito, dove si vede la stessa scarpa all'arrivo e dopo il suo lavoro, e un piccolo scontrino di ritiro che si stampa sullo schermo, come quello che dà in bottega.
 >
-> È solo una bozza: niente è ufficiale e si può cambiare tutto, foto comprese (adesso ci sono dei riquadri vuoti, al posto loro andrebbero le sue).
+> È solo una bozza: niente è ufficiale e si può cambiare tutto. Ho usato le foto della sua scheda Google; per il "prima e dopo" servirebbero due foto dello stesso paio di scarpe, prima e dopo il suo lavoro.
 >
 > Se le interessa, mi scriva pure qui su WhatsApp quando ha un momento: possiamo parlare di prezzo, modifiche o qualsiasi altra cosa direttamente per messaggio. Buona giornata! 👞
 >

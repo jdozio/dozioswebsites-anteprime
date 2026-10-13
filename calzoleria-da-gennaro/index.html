@@ -199,6 +199,19 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--cognac2);outline
 .bottega p{color:var(--ink2);margin-bottom:14px}
 .bottega .sign{font-family:'Fraunces',serif;font-style:italic;font-size:30px;color:var(--cuoio);margin:6px 0 18px}
 
+/* foto vere */
+.bt-photos figure{margin:0;border-radius:16px;overflow:hidden;background:#E9DCC6}
+.bt-photos figure img{width:100%;height:100%;object-fit:cover;display:block}
+.bt-photos .big{aspect-ratio:4/5}
+.bt-photos .sq{aspect-ratio:1/1}
+.banco{padding:0 0 100px}
+.banco-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.banco-grid figure{margin:0;border-radius:14px;overflow:hidden;aspect-ratio:3/4;background:#E9DCC6;position:relative}
+.banco-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.banco-grid figure:hover img{transform:scale(1.04)}
+.banco-grid figcaption{position:absolute;left:10px;bottom:10px;background:rgba(33,22,15,.82);color:#F3E9DA;font-size:12.5px;padding:5px 9px;border-radius:6px}
+@media (max-width:980px){.banco-grid{grid-template-columns:1fr 1fr}}
+
 /* orari */
 .orari{background:var(--crema);padding:96px 0}
 .or-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:stretch}
@@ -344,7 +357,7 @@ footer b{font-family:'Fraunces',serif;font-weight:600;font-size:20px;color:#F3E9
 
 <div class="strip">
   <div class="wrap">
-    <div class="it"><b>4,7 ★</b><span>su local.ch<br>21 valutazioni</span></div>
+    <div class="it"><b>4,7 ★</b><span>su Google<br>93 recensioni</span></div>
     <div class="it"><b>Cuoio</b><span>e pelle: il materiale<br>su cui lavora ogni giorno</span></div>
     <div class="it"><b>Lun–Sab</b><span>bottega aperta in<br>Via Varenna 2, Locarno</span></div>
   </div>
@@ -411,6 +424,21 @@ footer b{font-family:'Fraunces',serif;font-weight:600;font-size:20px;color:#F3E9
       </div>
     </div>
     <div class="todo reveal"><b>Da completare insieme:</b> l'elenco preciso dei lavori (tacchi, suole, cerniere, borse, cinture…) ed eventuali prezzi, solo se volete pubblicarli.</div>
+  </div>
+</section>
+
+<section class="banco">
+  <div class="wrap">
+    <div class="lv-head reveal">
+      <div><div class="eyebrow">Dal banco di Gennaro</div><h2>Scarpe che tornano a camminare</h2></div>
+      <p>Foto dalla bottega: suole rifatte, scarpe da ginnastica, scarponi pronti per la montagna.</p>
+    </div>
+    <div class="banco-grid">
+      <figure class="reveal"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QK4GqhcrCO57lDvTY3RVSNDEFeotjurLIZ8JXbRAVl3R2SopDwbX2CxruGEraChjs2FjILSZBHdvG_8-VplkiP6Dd8pOL4Ha5QAKo2E9OoQqTFWE7xmuBdnMiMDJOHVrdwRNgb=s900" alt="Scarponi con suola nuova"><figcaption>Scarponi, suola nuova</figcaption></figure>
+      <figure class="reveal"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QlwZ8c4y-BACUha4nyPGe9kp1KcftzJYGym8UdyKYhgd3zFyIL7jJx08GZ9fXYAAQrmcDOk6xiY0yfR7cYOpaQ_hIQEtxzlBxpquA_LcHH6BNyKmnAMKbpPNlEXdehyNJgYnm2nuuGqZtK=s900" alt="Ballerina con la suola consumata"><figcaption>Suole consumate</figcaption></figure>
+      <figure class="reveal"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tyt-Mp_c9JME9vEb8wev_qeSJfXGxB1tt1Vza1jiyROjxjLRXuwsOJdLBY8EZ62o1ce4sXFXRs-Og91R6--bMJRgnfu7sRydWmMQuoUNy1vkXqYkYisojCLVLJYgCZCO54XZgPoA=s900" alt="Scarpe da ginnastica in riparazione"><figcaption>Anche le sneakers</figcaption></figure>
+      <figure class="reveal"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q-tkcocw1gb2zqgmdkRkfRbWEt1srPzSRScyfaIcpUmDdqu4DRb37eIvLZFcqk7-COB76562ZJBmnYSnTztsilp240A3uZIa_zezFoRVraavvcE2nCXt3JQYUSMdtsngvkk_FUzLlvljLv=s900" alt="La vetrina con l'insegna"><figcaption>Via Varenna 2</figcaption></figure>
+    </div>
   </div>
 </section>
 
@@ -522,46 +550,43 @@ footer b{font-family:'Fraunces',serif;font-weight:600;font-size:20px;color:#F3E9
   <div class="wrap">
     <div class="eyebrow reveal">Le parole dei clienti</div>
     <h2 class="reveal">«Grazie Gennaro!»</h2>
-    <p class="lead reveal">Recensioni vere, lasciate su local.ch. Riportate così come sono state scritte.</p>
+    <p class="lead reveal">Recensioni vere, lasciate su Google (tradotte in italiano dove serve).</p>
     <div class="rv">
       <div class="rvc reveal">
         <div class="stars">★★★★★</div>
-        <h3>Molto competente!</h3>
-        <blockquote>«Ottimo calzolaio, usa materiali di ottima qualità, da saggi consigli ed è molto gentile. Grazie Gennaro!»</blockquote>
-        <small>reginahoesli · recensione local.ch · 29 dicembre 2023</small>
+        <h3>Dieci anni, mai deluso</h3>
+        <blockquote>«Sempre accogliente e sorridente, è un artigiano eccezionale. Lavora con cura e precisione. Dopo 10 anni il suo lavoro non mi ha ancora deluso, anzi!»</blockquote>
+        <small>Cliente · recensione Google</small>
       </div>
       <div class="rvc reveal">
         <div class="stars">★★★★★</div>
-        <h3>Cordialità</h3>
-        <blockquote>«Sempre molto simpatico e cordiale. Puntuale nella consegna. Molto bravo a riparare e a rendere nuove le nostre scarpe!»</blockquote>
-        <small>Cliente · recensione local.ch · 11 febbraio 2024</small>
+        <h3>Anche le più rovinate</h3>
+        <blockquote>«Molto professionale: è riuscito a riparare perfino le scarpe e le borse più rovinate che gli ho portato. E nei consigli è estremamente onesto.»</blockquote>
+        <small>Cliente · recensione Google · 3 mesi fa</small>
       </div>
       <div class="rvc reveal">
         <div class="stars">★★★★★</div>
-        <h3>Soletta Noene ottimo acquisto</h3>
-        <blockquote>«Gennaro molto competente, mi ha consigliato una soletta Noene e mi sto trovando molto bene, ripassero' ad acquistarne altre.»</blockquote>
-        <small>Cliente · recensione local.ch · 5 marzo 2024</small>
+        <h3>La passione si sente</h3>
+        <blockquote>«Ottimo rapporto qualità-prezzo e grande attenzione alle richieste. Ma soprattutto è un piacere parlarci: si capisce la passione che mette nel suo lavoro.»</blockquote>
+        <small>Cliente · recensione Google · 6 mesi fa</small>
       </div>
     </div>
-    <div class="rating reveal"><b>4,7</b><span>su 5 · 21 valutazioni su local.ch<br>Qui si possono aggiungere anche le recensioni Google.</span></div>
+    <div class="rating reveal"><b>4,7</b><span>su 5 · 93 recensioni su Google</span></div>
   </div>
 </section>
 
 <section class="bottega" id="bottega">
   <div class="wrap bt-grid">
     <div class="bt-photos reveal">
-      <div class="photo-ph">
-        <div class="ico"><svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 6l1.5-2h5L16 6"/></svg></div>
-        <span>Foto: Gennaro al banco</span>
-      </div>
+      <figure class="big"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SMwhTXeDXKokJ6KzxnIVQrrDSmOiUcJA1oLmiuJaRIf7RnQoANKiDBbepU6DSzygyabs7UgRqkvxXkWAlsnaOUTA4qAC0T4az8joC7GP-Du5Ux599ZVcnaJ5V3LFaULWCsN0rsYY7UnqTU=s1200" alt="Gennaro in bottega con una scarpa in mano" style="object-position:40% 30%"></figure>
       <div class="col">
-        <div class="photo-ph small"><span>Foto: la vetrina</span></div>
-        <div class="photo-ph small"><span>Foto: gli attrezzi</span></div>
+        <figure class="sq"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TW4gIPaHzCMZpzA03MtsvqPsXdR7Gzl8CL_G4w_PSrZfQVrmiR_L-8KodYk8yjx11tFKfRr0jX_htrylxHTfMAZkp1rFjLqbWosSy68FR9GX-WF96Jg5u8Ay0X8UH5yGZP_G90yE-VGh2-=s800" alt="La vetrina della Calzoleria da Gennaro"></figure>
+        <figure class="sq"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RtRBdNOrnze0fLRDHQc1asbCImSGbxikfq_Eza-kJg7fIzSQ6s5JgOikrEDRnderAi-ot6Uo5RlBdfzFUEhTprnTmgPF_rwQQrSQlZbLYdqNBqMWiOGt7I3eJtJBBYuK5vcJxcjR58I0YC=s800" alt="L'interno della bottega"></figure>
       </div>
     </div>
     <div class="reveal">
       <div class="eyebrow">La bottega</div>
-      <h2>Una bottega vera, in Via Varenna.</h2>
+      <h2>Una bottega vera, in Via Varenna. E Gennaro dietro al banco.</h2>
       <p>Si entra, si appoggiano le scarpe sul banco e si spiega cosa non va. Il resto lo raccontano i clienti: competenza, gentilezza e consegne puntuali.</p>
       <div class="todo"><b>Da completare insieme:</b> la tua storia in due righe: da quanti anni ripari scarpe, dove hai imparato il mestiere, una scarpa o un cliente che ti è rimasto in mente.</div>
     </div>
@@ -599,7 +624,7 @@ footer b{font-family:'Fraunces',serif;font-weight:600;font-size:20px;color:#F3E9
 <footer>
   <div class="wrap">
     <div><b>Calzoleria da Gennaro</b>Via Bartolomeo Varenna 2 · 6600 Locarno · 079 717 65 99</div>
-    <div>Anteprima non ufficiale · testi e foto da completare insieme</div>
+    <div>Anteprima non ufficiale · foto dalla scheda Google, testi da completare insieme</div>
   </div>
 </footer>
 
