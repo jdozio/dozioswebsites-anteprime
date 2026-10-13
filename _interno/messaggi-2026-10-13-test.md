@@ -30,7 +30,6 @@ https://jdozio.github.io/dozioswebsites-anteprime/calzoleria-da-gennaro/
 ### Numero
 **079 717 65 99** (cellulare) → WhatsApp: https://wa.me/41797176599
 Fonti del numero: scheda local.ch (indicato sia come telefono sia come cellulare), scheda artigiano ATICREA (+41 79 717 65 99), zip.ch.
-Email trovata su ATICREA: naomi.benedetti44@gmail.com (non usata nel sito: non è detto che sia un indirizzo di contatto pubblico dell'attività).
 Facebook: facebook.com/p/Calzoleria-da-Gennaro-100063560463098/ — nessun Instagram trovato.
 
 ### Foto da inserire (ora ci sono segnaposto eleganti)

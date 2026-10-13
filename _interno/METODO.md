@@ -122,6 +122,12 @@ Struttura (adattala all'attività, in italiano naturale, "tu" con artigiani giov
    parlare di prezzo, modifiche o qualsiasi altra cosa direttamente per messaggio."** + saluto + emoji
    pertinente + "Jacopo".
 
+## Privacy (il repository è PUBBLICO)
+Nei file del repo (siti, messaggi, registro) scrivi SOLO dati pubblici dell'attività: nome
+dell'attività, indirizzo, telefono e social dell'attività, nome del titolare se compare
+pubblicamente. MAI email personali, nomi di familiari/dipendenti, dati privati trovati su
+elenchi o profili personali. Se un dato non è chiaramente un contatto pubblico dell'attività, non scriverlo.
+
 ## 8. Output di ogni notte
 1. Le cartelle dei siti nella radice del repo.
 2. Il file `_interno/messaggi-AAAA-MM-GG.md` con, per ogni attività:
