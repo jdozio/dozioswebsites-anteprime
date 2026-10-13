@@ -128,6 +128,20 @@ dell'attività, indirizzo, telefono e social dell'attività, nome del titolare s
 pubblicamente. MAI email personali, nomi di familiari/dipendenti, dati privati trovati su
 elenchi o profili personali. Se un dato non è chiaramente un contatto pubblico dell'attività, non scriverlo.
 
+## Lavoro in due tempi (notte nel cloud + mattina sul Mac di Jacopo)
+Di notte (cloud) Google, Google Maps e le foto delle schede NON sono raggiungibili. Quindi:
+- **Notte:** ricerca, scelta, sito completo con segnaposto per le foto, messaggio. Ogni attività è
+  "DA VERIFICARE AL MATTINO" se non hai potuto leggere la scheda Google.
+- Ogni segnaposto foto deve avere l'attributo `data-foto="nome-breve"` (es. `data-foto="titolare-al-lavoro"`)
+  e un'etichetta visibile, così la mattina si sostituisce in un attimo con `<img>` vera.
+- Nel file messaggi, per ogni attività scrivi il **nome esatto da cercare su Google Maps** e l'elenco
+  dei `data-foto` con cosa dovrebbe mostrare ogni foto.
+- **Mattina (sessione sul Mac di Jacopo, con browser):** per ogni attività della notte si apre la scheda
+  Maps, si conferma che non ha sito, si controllano recensioni recenti e numero, si prendono le foto
+  vere (`lh3.googleusercontent.com/...=sNNNN`, mai panoramiche 360° né foto di altre attività), si
+  sostituiscono i segnaposto, si aggiorna lo stato in VERIFICATA o SCARTATA, e si pubblica. Se
+  un'attività risulta avere un sito o essere ferma, si cancella la sua cartella e si segna nel registro.
+
 ## 8. Output di ogni notte
 1. Le cartelle dei siti nella radice del repo.
 2. Il file `_interno/messaggi-AAAA-MM-GG.md` con, per ogni attività:
