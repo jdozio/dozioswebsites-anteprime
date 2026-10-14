@@ -92,7 +92,8 @@ Le attività affermate con tantissime recensioni e senza sito spesso NON voglion
   puoi usarle; altrimenti usa **segnaposto eleganti** (blocchi colorati coerenti con il design,
   con una piccola etichetta tipo "Foto: vetrina" / "Foto: lavoro 1") e annota nel file messaggi
   quali foto servono. La mattina Jacopo apre il browser e le foto vere vengono inserite.
-  NON usare MAI foto stock o foto di altre attività. Attenzione alle foto della scheda che non
+  NON usare MAI foto stock o foto di altre attività. Eccezione decisa da Jacopo (14.10): se l'attività non ha foto, per lo sfondo si può usare una foto VERA del luogo (città, lago, piazza) con licenza libera da Wikimedia Commons, con il credito dell'autore e della licenza scritto sulla foto. Mai illustrazioni disegnate o che sembrano fatte con l'AI.
+   Attenzione alle foto della scheda che non
   c'entrano (es. una ditta di traslochi su una scheda di elettricista): sono da scartare.
 
 ## 4. Studio dello stile (prima di scrivere una riga di codice)
