@@ -14,12 +14,12 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 - Agata hair | Vicolo del Gabi 2, Gordola | parrucchiera | anteprima fatta, verificata su Maps 14.10, foto inserite | 2026-10-14 | /agata-hair/
 - Calzerotti Food Truck | Via Dott. G. Varesi 1, Locarno | food truck | RIFIUTATO 14.10 (non vuole crescere né un sito), anteprima rimossa | 2026-10-14 | NON ricontattare
 - Trattoria da Elia e Ugo | Via F. Cavallotti 29, Luino (VA) | trattoria | anteprima fatta, verificata su Maps 14.10, foto inserite | 2026-10-14 | /trattoria-elia-e-ugo/
-- Estetica Jaelle | Via San Gottardo 105, Minusio | estetista/unghie | anteprima fatta di giorno, verificata su Maps (5,0/18 Google, 5,0/206 Fresha, sito = solo link Fresha), foto inserite | 2026-10-14 | /estetica-jaelle/
+- Estetica Jaelle | Via San Gottardo 105, Minusio | estetista/unghie | anteprima fatta di giorno, verificata su Maps (5,0/18 Google, 5,0/206 Fresha, sito = solo link Fresha), foto inserite | 2026-10-14 | /estetica-jaelle/ · categoria: solo prenotazione
+- Elettro-Evolution (titolare Miki) | Via Vallemaggia 56A, Locarno | elettricista | anteprima fatta 14.10, verificata su Maps (5,0/27, ultima rec. 4 mesi fa), foto inserite | 2026-10-14 | /elettro-evolution/ · categoria: sito scadente (Wix, da telefono esce dallo schermo, link social del template Wix)
 
 ## Valutate e scartate
 - Grotto Tradizionale | Ticino | ristorante | ha già un sito
 - Elettrowatt Sagl | Cugnasco | elettricista | foto della scheda di un'altra ditta, recensioni vecchie
-- Elettro-Evolution | Locarno | elettricista | ha un dominio proprio (sito debole, possibile in futuro)
 - MS Elettricità | Ascona | elettricista | solo 3 foto, 7 recensioni (possibile in futuro)
 - Idroterm SA | Pregassona | idraulico | solo 3 recensioni
 - ParadIce Gelateria | Paradiso | gelateria | candidata alternativa (solo Instagram)
