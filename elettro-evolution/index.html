@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Elettro-Evolution · Elettricista a Locarno · Picchetto 7/7 24h</title>
+<meta name="description" content="Elettro-Evolution, impianti elettrici a Locarno. Installazioni, riparazioni, eliminazione difetti RaSi, illuminazione, videosorveglianza e allarmi. Picchetto 7 giorni su 7, 24 ore su 24. Tel. 076 265 91 46.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400;0,62..125,500;0,62..125,700;0,62..125,800;0,62..125,900;1,62..125,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --notte:#0E1014; --grafite:#171A20; --grafite2:#22262E; --acciaio:#3A404B;
+  --luce:#FFC84A; --luce2:#FFE3A1; --rosso:#C0262F; --rosso2:#9E1B23;
+  --carta:#F6F4EF; --carta2:#ECE8E0; --ink:#15171B; --ink2:#5E636D; --line:#DAD5CB;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:72px}
+body{background:var(--carta);color:var(--ink);font:400 16.5px/1.65 'Archivo',system-ui,sans-serif;font-variation-settings:"wdth" 100;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Archivo',sans-serif;font-weight:800;line-height:.98;letter-spacing:-.02em;font-variation-settings:"wdth" 82}
+h2{font-size:clamp(38px,5vw,70px);text-transform:uppercase}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--rosso)}
+.eyebrow::before{content:"";width:22px;height:2px;background:currentColor}
+
+.draft{background:var(--rosso2);color:#FBE3E4;font-size:13px;text-align:center;padding:8px 16px;line-height:1.45}
+.draft b{color:#fff;font-weight:700}
+
+header{position:sticky;top:0;z-index:30;background:rgba(14,16,20,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid #262A31}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand .logo{font:italic 700 22px/1 'Archivo',serif;font-variation-settings:"wdth" 110;letter-spacing:.01em;color:#fff}
+.brand .logo span{color:var(--rosso);}
+.brand svg{width:22px;height:22px}
+.nav ul{display:flex;gap:26px;list-style:none;font-size:14px;font-weight:500}
+.nav ul a{text-decoration:none;opacity:.8;transition:opacity .2s}
+.nav ul a:hover{opacity:1;color:var(--luce)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--rosso);color:#fff;text-decoration:none;font:700 15px/1 'Archivo',sans-serif;letter-spacing:.02em;padding:16px 24px;border-radius:6px;border:0;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}
+.btn:hover{background:var(--rosso2);transform:translateY(-1px)}
+.btn.luce{background:var(--luce);color:var(--notte)}
+.btn.luce:hover{background:#FFD873;box-shadow:0 0 30px rgba(255,200,74,.45)}
+.btn.ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px currentColor}
+.btn.ghost:hover{background:rgba(255,255,255,.08)}
+.btn.small{padding:11px 16px;font-size:14px}
+.btn svg{width:18px;height:18px}
+
+/* placeholder foto */
+.ph{position:relative;overflow:hidden;background:linear-gradient(150deg,#2A2F38,#1B1E24)}
+.ph::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.04) 0 2px,transparent 2px 14px)}
+.ph .ph-label{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);white-space:nowrap;background:rgba(255,200,74,.95);color:var(--notte);padding:6px 10px;border-radius:4px;z-index:2;font:500 11px 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase}
+.has-photo>img.real{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.has-photo::before{display:none}
+.has-photo .ph-label{display:none}
+
+/* HERO: il blackout */
+.hero{position:relative;background:var(--notte);color:#fff;overflow:hidden}
+.hero .bg{position:absolute;inset:0;opacity:.06;transition:opacity 1.4s ease .15s}
+.hero .bg img.real{filter:saturate(1.05)}
+.hero .bg::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(14,16,20,.94) 0%,rgba(14,16,20,.78) 45%,rgba(14,16,20,.25) 100%)}
+.hero.on .bg{opacity:1}
+.hero .glow{position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(60% 50% at 78% 20%,rgba(255,200,74,.0),transparent 70%);transition:background 1.2s}
+.hero.on .glow{background:radial-gradient(60% 50% at 78% 20%,rgba(255,200,74,.22),transparent 70%)}
+.strip{position:absolute;left:0;right:0;top:0;height:3px;z-index:4;background:var(--luce);transform:scaleX(0);transform-origin:left;box-shadow:0 0 18px 2px rgba(255,200,74,.8);transition:transform 1.1s cubic-bezier(.6,0,.2,1)}
+.hero.on .strip{transform:scaleX(1)}
+.hero .wrap{position:relative;z-index:5;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;min-height:min(88vh,760px);padding-top:56px;padding-bottom:70px}
+.hero .tag{color:var(--luce);transition:opacity .6s}
+.hero h1{font-size:clamp(50px,7.4vw,112px);text-transform:uppercase;margin:20px 0 22px;color:#3B4049;transition:color 1s .2s,text-shadow 1s .2s}
+.hero.on h1{color:#fff}
+.hero h1 em{font-style:normal;color:#4A4232;transition:color 1s .35s,text-shadow 1s .35s}
+.hero.on h1 em{color:var(--luce);text-shadow:0 0 40px rgba(255,200,74,.35)}
+.hero .lead{font-size:19px;max-width:30em;color:#5D636D;transition:color 1s .4s}
+.hero.on .lead{color:#C9CDD4}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px;opacity:.25;transition:opacity 1s .5s}
+.hero.on .ctas{opacity:1}
+.hero .stars{display:flex;align-items:center;gap:12px;margin-top:26px;font-size:14px;color:#8A9099;transition:color 1s .5s}
+.hero.on .stars{color:#C9CDD4}
+.hero .stars b{color:var(--luce);letter-spacing:3px;font-size:16px}
+
+.plate{justify-self:center;display:flex;flex-direction:column;align-items:center;gap:18px}
+.switch{position:relative;width:150px;height:230px;border-radius:22px;border:0;cursor:pointer;background:linear-gradient(160deg,#F4F2EC,#D9D5CC);box-shadow:0 30px 60px -20px rgba(0,0,0,.8),inset 0 2px 0 #fff,inset 0 -3px 0 #BDB7AB;transition:box-shadow .6s}
+.hero.on .switch{box-shadow:0 30px 60px -20px rgba(0,0,0,.8),0 0 80px rgba(255,200,74,.25),inset 0 2px 0 #fff,inset 0 -3px 0 #BDB7AB}
+.switch .rocker{position:absolute;left:28px;right:28px;top:34px;bottom:34px;border-radius:12px;background:linear-gradient(180deg,#FBFAF7 0%,#E5E1D8 50%,#CFCABF 100%);box-shadow:0 10px 18px -8px rgba(0,0,0,.45),inset 0 1px 0 #fff;transform:perspective(300px) rotateX(14deg);transition:transform .25s cubic-bezier(.3,1.6,.5,1),background .25s}
+.hero.on .switch .rocker{transform:perspective(300px) rotateX(-14deg);background:linear-gradient(0deg,#FBFAF7 0%,#E5E1D8 50%,#CFCABF 100%)}
+.switch .led{position:absolute;left:50%;top:50px;width:10px;height:10px;margin-left:-5px;border-radius:50%;background:#FF7A4A;box-shadow:0 0 10px #FF7A4A;animation:blink 1.4s infinite;transition:background .3s,box-shadow .3s}
+.hero.on .switch .led{background:#5CE08A;box-shadow:0 0 10px #5CE08A;animation:none}
+@keyframes blink{50%{opacity:.25}}
+.switch .screw{position:absolute;left:50%;width:9px;height:9px;margin-left:-4.5px;border-radius:50%;background:#BDB7AB;box-shadow:inset 0 1px 1px rgba(0,0,0,.25)}
+.plate .hint{color:#8A9099;text-align:center;transition:opacity .5s}
+.hero.on .plate .hint{opacity:0}
+
+/* PICCHETTO */
+.picchetto{background:var(--luce);color:var(--notte)}
+.picchetto .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:center;padding-top:34px;padding-bottom:34px}
+.picchetto .big{font:900 clamp(56px,7vw,96px)/.85 'Archivo';font-variation-settings:"wdth" 70;letter-spacing:-.02em}
+.picchetto .big small{display:block;font:500 12px 'IBM Plex Mono',monospace;letter-spacing:.16em;margin-top:8px}
+.picchetto p{font-size:18px;max-width:30em}
+.picchetto p q{font-style:italic;font-weight:700}
+.picchetto .btn{background:var(--notte);color:#fff}
+.picchetto .btn:hover{background:var(--rosso)}
+
+/* SERVIZI: il quadro */
+.sec{padding:110px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:46px;flex-wrap:wrap}
+.head p{max-width:30em;color:var(--ink2)}
+.quadro{background:var(--grafite);border-radius:14px;padding:22px;box-shadow:0 40px 60px -40px rgba(0,0,0,.6),inset 0 0 0 1px #2B3038}
+.quadro .rail{display:flex;justify-content:space-between;color:#7C838E;padding:0 4px 14px;border-bottom:1px dashed #333944;margin-bottom:18px}
+.moduli{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.mod{position:relative;background:var(--grafite2);border-radius:10px;padding:22px 22px 24px 86px;color:#E7E9EC;min-height:170px;border:1px solid #2E333C;transition:border-color .3s,background .3s;cursor:pointer;text-align:left;font:inherit}
+.mod:hover,.mod.on{border-color:#4B525E;background:#272C35}
+.mod .brk{position:absolute;left:22px;top:22px;width:40px;height:72px;border-radius:6px;background:#E9E6DF;box-shadow:inset 0 -2px 0 #BDB7AB}
+.mod .brk i{position:absolute;left:8px;right:8px;height:26px;border-radius:4px;background:#2D323B;top:38px;transition:top .25s cubic-bezier(.3,1.6,.5,1),background .25s}
+.mod.on .brk i{top:8px;background:var(--rosso)}
+.mod .lbl{color:#7C838E;margin-bottom:8px;display:block}
+.mod.on .lbl{color:var(--luce)}
+.mod{min-width:0}
+.mod h3{overflow-wrap:anywhere;font-size:25px;text-transform:uppercase;margin-bottom:8px;font-variation-settings:"wdth" 80}
+.mod p{font-size:14px;color:#A9AFB8;line-height:1.55}
+.mod .lamp{position:absolute;right:16px;top:18px;width:8px;height:8px;border-radius:50%;background:#3A404B;transition:.3s}
+.mod.on .lamp{background:var(--luce);box-shadow:0 0 12px var(--luce)}
+.quadro .foot{margin-top:16px;color:#7C838E;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+
+/* RaSi */
+.rasi{background:var(--carta2);overflow:hidden}
+.rasi .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+.rasi .letter{position:relative;background:#fff;border-radius:6px;padding:30px 30px 34px;box-shadow:0 30px 50px -30px rgba(0,0,0,.35);transform:rotate(-2deg);font-size:15px;margin-top:20px}
+.rasi .letter::before{content:"";position:absolute;inset:10px;border:1px dashed var(--line);border-radius:4px;pointer-events:none}
+.rasi .letter .mono{color:var(--ink2)}
+.rasi .letter h3{font-size:30px;text-transform:uppercase;margin:12px 0 14px}
+.rasi .letter ul{list-style:none}
+.rasi .letter li{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--carta2);transition:color .4s}
+.rasi .letter li .x{flex:none;width:20px;height:20px;border-radius:4px;border:2px solid var(--rosso);display:grid;place-items:center;font-weight:900;font-size:12px;color:var(--rosso);transition:.4s}
+.rasi .letter li.ok{color:var(--ink2);text-decoration:line-through;text-decoration-color:#9AA0A8}
+.rasi .letter li.ok .x{border-color:#2E9E62;background:#2E9E62;color:#fff}
+.rasi .stamp{position:absolute;right:20px;bottom:24px;transform:rotate(-14deg) scale(1.6);opacity:0;border:3px solid #2E9E62;color:#2E9E62;font:900 22px 'Archivo';letter-spacing:.06em;padding:6px 12px;border-radius:6px;transition:all .5s cubic-bezier(.3,1.6,.5,1)}
+.rasi .stamp.in{transform:rotate(-14deg) scale(1);opacity:.9}
+.passi{list-style:none;margin:28px 0 30px;counter-reset:p}
+.passi li{counter-increment:p;display:grid;grid-template-columns:52px 1fr;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+.passi li::before{content:"0" counter(p);font:900 34px/1 'Archivo';font-variation-settings:"wdth" 70;color:var(--rosso)}
+.passi b{display:block;font-size:18px;margin-bottom:2px}
+.passi span{color:var(--ink2);font-size:15px}
+.voce{border-left:3px solid var(--rosso);padding:6px 0 6px 18px;font-size:19px;font-style:italic;margin-bottom:28px}
+.voce small{display:block;font-style:normal;font-size:13px;color:var(--ink2);margin-top:6px}
+
+/* LAVORI */
+.lavori{background:var(--notte);color:#fff}
+.lavori h2{color:#fff}
+.lavori .head p{color:#9AA0A8}
+.grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:300px 300px;gap:14px}
+.grid .ph{border-radius:10px}
+.grid .g1{grid-row:span 2}
+.grid figcaption{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.75));font:500 12px 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#fff}
+.grid figcaption b{color:var(--luce);font-weight:500}
+.grid .ph img.real{transition:transform 1.4s}
+.grid figure:hover img.real{transform:scale(1.05)}
+
+/* CHE TI SERVE */
+.serve .box{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 40px 60px -45px rgba(0,0,0,.4)}
+.serve .q{padding:34px}
+.serve .q h3{font-size:15px;font-family:'IBM Plex Mono',monospace;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);margin:22px 0 12px}
+.serve .q h3:first-child{margin-top:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts button{font:600 14.5px 'Archivo',sans-serif;padding:11px 15px;border-radius:6px;border:1.5px solid var(--line);background:var(--carta);color:var(--ink);cursor:pointer;transition:.2s}
+.opts button:hover{border-color:var(--ink)}
+.opts button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.serve input{width:100%;font:500 16px 'Archivo',sans-serif;padding:13px 14px;border:1.5px solid var(--line);border-radius:6px;background:var(--carta)}
+.serve input:focus{outline:2px solid var(--luce);border-color:var(--ink)}
+.phone{background:#E9E2D6 radial-gradient(rgba(0,0,0,.04) 1px,transparent 1px) 0 0/14px 14px;padding:34px;display:flex;flex-direction:column;justify-content:flex-end;gap:14px;position:relative}
+.phone .top{position:absolute;left:0;right:0;top:0;display:flex;align-items:center;gap:12px;padding:14px 20px;background:#1F5E49;color:#fff;font-size:14px}
+.phone .top i{width:34px;height:34px;border-radius:50%;background:var(--rosso);display:grid;place-items:center;font:italic 800 14px 'Archivo';font-style:italic}
+.phone .top small{display:block;opacity:.75;font-size:12px}
+.bubble{align-self:flex-end;max-width:88%;background:#D9FDD3;border-radius:12px 12px 2px 12px;padding:12px 14px 20px;font-size:15px;line-height:1.5;box-shadow:0 1px 1px rgba(0,0,0,.1);position:relative;white-space:pre-line;margin-top:70px;min-height:60px}
+.bubble::after{content:"✓✓";position:absolute;right:10px;bottom:4px;font-size:11px;color:#53BDEB}
+.demo{display:inline-block;font:500 11px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;background:var(--ink);color:#fff;padding:4px 8px;border-radius:4px}
+.phone .note{font-size:12.5px;color:#5E636D}
+
+/* RECENSIONI */
+.rec{background:var(--carta)}
+.rec .top{display:grid;grid-template-columns:auto 1fr;gap:56px;align-items:center;margin-bottom:50px}
+.score{background:var(--notte);color:#fff;border-radius:14px;padding:30px 34px;text-align:center}
+.score b{display:block;font:900 92px/.9 'Archivo';font-variation-settings:"wdth" 70}
+.score .s{color:var(--luce);letter-spacing:5px;font-size:18px;margin:8px 0 4px}
+.score small{color:#9AA0A8;font-size:13px}
+.rec blockquote{font:700 clamp(26px,3vw,40px)/1.15 'Archivo';font-variation-settings:"wdth" 85;letter-spacing:-.01em}
+.rec blockquote mark{background:linear-gradient(transparent 60%,rgba(255,200,74,.6) 60%);color:inherit}
+.rec cite{display:block;font:500 12px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);margin-top:14px;font-style:normal}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px;position:relative}
+.card::before{content:"";position:absolute;left:24px;top:0;width:40px;height:3px;background:var(--rosso)}
+.card p{font-size:16px}
+.card span{display:block;margin-top:14px;font:500 11.5px 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
+
+/* CHI */
+.chi .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.chi .ph{aspect-ratio:4/5;border-radius:12px}
+.chi .claim{font:800 clamp(30px,3.4vw,46px)/1.05 'Archivo';font-variation-settings:"wdth" 80;text-transform:uppercase;margin:16px 0 18px}
+.chi .claim span{color:var(--rosso)}
+.chi p{color:var(--ink2);margin-bottom:14px}
+.todo{border:1.5px dashed #C9C2B4;border-radius:10px;padding:14px 16px;font-size:14px;color:var(--ink2);background:#fff;margin-top:18px}
+.todo b{color:var(--rosso)}
+
+/* CONTATTI */
+.contatti{background:var(--grafite);color:#fff}
+.contatti .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
+.contatti h2{color:#fff}
+.kv{list-style:none;margin:26px 0 28px}
+.kv li{display:grid;grid-template-columns:130px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid #2F343D;font-size:16px}
+.kv li .mono{color:#7C838E;padding-top:3px}
+.kv a{color:var(--luce);text-decoration:none;font-weight:700}
+.map{border-radius:12px;overflow:hidden;min-height:340px;border:1px solid #2F343D}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;filter:grayscale(.6) contrast(1.05)}
+.ctas2{display:flex;gap:10px;flex-wrap:wrap}
+
+footer{background:var(--notte);color:#7C838E;padding:34px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer b{color:#fff;font-style:italic}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
+.reveal.in{opacity:1;transform:none}
+.mbar{display:none}
+
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .hero *,.hero .bg{transition:none!important;animation:none!important}
+}
+@media (max-width:1000px){
+  .nav ul{display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:30px}
+  .plate{flex-direction:row;justify-self:start}
+  .picchetto .wrap{grid-template-columns:1fr;gap:16px}
+  .moduli{grid-template-columns:1fr 1fr}
+  .rasi .wrap,.chi .wrap,.contatti .wrap{grid-template-columns:1fr}
+  .serve .box{grid-template-columns:1fr}
+  .rec .top{grid-template-columns:1fr;gap:26px}
+  .cards{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr 1fr;grid-template-rows:320px 220px 220px}
+  .grid .g1{grid-row:auto;grid-column:span 2}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:76px}
+  .wrap{padding:0 16px}
+  .sec{padding:76px 0}
+  header .btn{display:none}
+  .hero .wrap{padding-top:34px;padding-bottom:50px;min-height:0}
+  .hero h1{font-size:54px}
+  .hero .lead{font-size:17px}
+  .switch{width:104px;height:158px;border-radius:16px}
+  .switch .rocker{left:20px;right:20px;top:24px;bottom:24px}
+  .switch .led{top:34px}
+  .plate .hint{text-align:left;max-width:12em}
+  .moduli{grid-template-columns:1fr}
+  .mod{min-height:0;padding:18px 16px 18px 76px}
+  .mod h3{font-size:22px}
+  .mod .brk{left:18px;top:18px;width:36px;height:64px}
+  .mod .brk i{height:22px;top:34px}
+  .quadro{padding:14px}
+  .serve .q,.phone{padding:22px}
+  .phone{min-height:330px}
+  .grid{grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:240px}
+  .grid .g1{grid-column:auto}
+  .kv li{grid-template-columns:1fr;gap:2px}
+  .rasi .letter{padding:24px 22px 30px;transform:rotate(-1deg)}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(14,16,20,.96);border-top:1px solid #262A31}
+  .mbar .btn{padding:14px 10px}
+  .mbar .wa{background:#1F7A4D}
+}
+</style>
+</head>
+<body>
+
+<div class="draft"><b>Anteprima di sito preparata per Elettro-Evolution</b> · foto dalla scheda Google e dal sito attuale, testi da completare insieme</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Elettro-Evolution">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#FFC84A" stroke-width="2" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+      <span class="logo">Elettro-<span>Evolution</span></span>
+    </a>
+    <ul>
+      <li><a href="#servizi">Servizi</a></li>
+      <li><a href="#rasi">Difetti RaSi</a></li>
+      <li><a href="#lavori">Lavori</a></li>
+      <li><a href="#recensioni">Recensioni</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+    </ul>
+    <a class="btn small" href="tel:+41762659146">076 265 91 46</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="has-photo bg ph" data-foto="hero-luce"><img class="real" loading="eager" src="https://static.wixstatic.com/media/f152dc_181e5cdac83d411ca0f1815e18ab8a9c~mv2.jpg" alt="Corridoio con linee LED a soffitto" style="object-position:50% 40%"><span class="ph-label">Foto: impianto illuminato</span></div>
+  <div class="glow"></div>
+  <span class="strip"></span>
+  <div class="wrap">
+    <div>
+      <span class="mono tag">Impianti elettrici · Locarno · Picchetto 7/7 24h</span>
+      <h1>Si è spenta <br>la luce?<br><em>Ci pensa Miki.</em></h1>
+      <p class="lead">Installazioni, riparazioni ed eliminazione dei difetti RaSi a Locarno e dintorni. E quando qualcosa si guasta di notte o nei giorni festivi, il telefono risponde lo stesso.</p>
+      <div class="stars"><b>★★★★★</b><span>5,0 su 27 recensioni Google</span></div>
+      <div class="ctas">
+        <a class="btn luce" href="tel:+41762659146"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Chiama ora</a>
+        <a class="btn ghost" href="#serve">Richiedi un preventivo gratuito</a>
+      </div>
+    </div>
+    <div class="plate">
+      <button class="switch" id="sw" aria-label="Accendi la luce" aria-pressed="false">
+        <span class="screw" style="top:12px"></span>
+        <span class="rocker"><span class="led"></span></span>
+        <span class="screw" style="bottom:12px"></span>
+      </button>
+      <span class="mono hint">Premi l'interruttore</span>
+    </div>
+  </div>
+</section>
+
+<!-- PICCHETTO -->
+<section class="picchetto">
+  <div class="wrap">
+    <div class="big">7/7 · 24H<small>Servizio picchetto</small></div>
+    <p>Un guasto non aspetta il lunedì. Una cliente l'ha scritto così: <q>sempre disponibile sotto ogni punto di vista, anche nei giorni festivi.</q></p>
+    <a class="btn" href="tel:+41762659146">076 265 91 46</a>
+  </div>
+</section>
+
+<!-- SERVIZI -->
+<section class="sec" id="servizi">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><span class="mono eyebrow">Servizi</span><h2>Il nostro<br>quadro elettrico</h2></div>
+      <p>Dalle case agli uffici, fino ai cantieri. E il preventivo è sempre gratuito. Tocca un interruttore per saperne di più.</p>
+    </div>
+    <div class="quadro reveal">
+      <div class="rail mono"><span>Elettro-Evolution · Locarno</span><span>6 circuiti</span></div>
+      <div class="moduli" id="moduli">
+        <button class="mod on"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C1 · Impianti</span><h3>Installazione</h3><p>Impianti elettrici residenziali, commerciali e industriali, con materiali di qualità.</p></button>
+        <button class="mod"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C2 · Guasti</span><h3>Riparazione e manutenzione</h3><p>Interventi su guasti e manutenzione programmata, per un impianto sicuro nel tempo.</p></button>
+        <button class="mod"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C3 · Sicurezza</span><h3>Difetti RaSi</h3><p>Eliminazione dei difetti segnalati nel rapporto di sicurezza, per rimettere l'impianto in regola.</p></button>
+        <button class="mod"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C4 · Luce</span><h3>Illuminazione</h3><p>Impianti di illuminazione su misura, come le linee LED a soffitto e le gole luminose.</p></button>
+        <button class="mod"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C5 · Protezione</span><h3>Video&shy;sorveglianza e allarme</h3><p>Impianti di sicurezza e controllo, progettati e installati per la casa o l'attività.</p></button>
+        <button class="mod"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C6 · Casa</span><h3>Elettrodomestici</h3><p>Interventi sugli elettrodomestici di casa.</p></button>
+      </div>
+      <div class="foot mono"><span>Preventivo gratuito</span><span>Picchetto 7/7 24h</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- RaSi -->
+<section class="sec rasi" id="rasi">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="mono eyebrow">Rapporto di sicurezza</span>
+      <h2>Il controllo ha trovato dei difetti?</h2>
+      <div class="letter" id="letter">
+        <span class="mono">Rapporto di sicurezza (RaSi) · difetti da eliminare</span>
+        <h3>Elenco difetti</h3>
+        <ul>
+          <li><span class="x">✕</span>Difetto n. 1</li>
+          <li><span class="x">✕</span>Difetto n. 2</li>
+          <li><span class="x">✕</span>Difetto n. 3</li>
+          <li><span class="x">✕</span>Difetto n. 4</li>
+        </ul>
+        <span class="stamp" id="stamp">ELIMINATI</span>
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="voce">«Ho contattato Elettro-Evolution per l'eliminazione di difetti RASI e devo dire che mi sono trovata veramente bene.»<small>MD · recensione Google</small></p>
+      <p style="color:var(--ink2)">Quando il controllo periodico dell'impianto segnala dei difetti, vanno eliminati da un elettricista. È uno dei servizi scritti anche sulla vetrina dell'ufficio.</p>
+      <ol class="passi">
+        <li><div><b>Ci mandi l'elenco dei difetti</b><span>Anche solo una foto del rapporto, su WhatsApp.</span></div></li>
+        <li><div><b>Ricevi un preventivo gratuito</b><span>Chiaro, prima di iniziare qualsiasi lavoro.</span></div></li>
+        <li><div><b>Eliminiamo i difetti</b><span>Lavoro preciso, veloce e pulito.</span></div></li>
+      </ol>
+      <a class="btn" href="https://wa.me/41762659146" target="_blank" rel="noopener">Manda il rapporto su WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- LAVORI -->
+<section class="sec lavori" id="lavori">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><span class="mono eyebrow" style="color:var(--luce)">Lavori</span><h2>Prima i tubi,<br>poi la luce</h2></div>
+      <p>Dalla posa dei tubi in cantiere alle ultime linee LED in una cucina finita.</p>
+    </div>
+    <div class="grid reveal">
+      <figure class="has-photo ph g1" data-foto="corridoio-led"><img class="real" loading="lazy" src="https://static.wixstatic.com/media/f152dc_181e5cdac83d411ca0f1815e18ab8a9c~mv2.jpg" alt="Corridoio con linee LED a soffitto" style="object-position:50% 50%"><span class="ph-label">Foto: corridoio LED</span><figcaption><b>Illuminazione</b> · linee LED a soffitto</figcaption></figure>
+      <figure class="has-photo ph" data-foto="cantiere-tubi"><img class="real" loading="lazy" src="https://static.wixstatic.com/media/f152dc_5a94cbece5ab4945a0530b4f27ce537a~mv2.jpg" alt="Tubi elettrici posati in cantiere" style="object-position:50% 60%"><span class="ph-label">Foto: cantiere</span><figcaption><b>Cantiere</b> · tubi pronti per il getto</figcaption></figure>
+      <figure class="has-photo ph" data-foto="gola-led"><img class="real" loading="lazy" src="https://static.wixstatic.com/media/f152dc_6ca2653eeaca4eae8c963fbe7dab53ec~mv2.jpg" alt="Locale con gola luminosa LED" style="object-position:50% 40%"><span class="ph-label">Foto: gola luminosa</span><figcaption><b>Illuminazione</b> · gola luminosa</figcaption></figure>
+      <figure class="has-photo ph" data-foto="furgone"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RRbUr5bjS4qSA4D6NyLEOU-HVjf165KZbvullDvtOwN1Wx5SyukdouJBUNsKk_fogz-jk45GShmGN9IAW2GOPuxmmkZAudVuCefr8LGoaXf9ziobCyzpzSHyZgv26HU_5YpFqy=s1400" alt="Il furgone Elettro-Evolution" style="object-position:30% 50%"><span class="ph-label">Foto: furgone</span><figcaption><b>Sempre in giro</b> · il furgone</figcaption></figure>
+      <figure class="has-photo ph" data-foto="ufficio"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SwSVQEo0H71ntfZky-l5gC7bLvnxXYx647b5-Sbb2qfJ7qL4Y9B45IRHp2zjuMc34YNUAi5JMofbA_K23QBwyk0xN_393i47DMeUTlX6F357SEHiQ6nWF7fkmhcxPIuoM7u7hH=s1400" alt="L'ufficio in Via Vallemaggia 56A" style="object-position:50% 45%"><span class="ph-label">Foto: ufficio</span><figcaption><b>L'ufficio</b> · Via Vallemaggia 56A</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- CHE TI SERVE -->
+<section class="sec serve" id="serve">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><span class="mono eyebrow">Preventivo gratuito</span><h2>Di cosa<br>hai bisogno?</h2></div>
+      <p>Tre tocchi e il messaggio per Miki è già scritto. Nessun modulo da compilare.</p>
+    </div>
+    <div class="box reveal">
+      <div class="q">
+        <h3>Che cosa</h3>
+        <div class="opts" data-g="cosa">
+          <button aria-pressed="true">un guasto urgente</button>
+          <button aria-pressed="false">l'eliminazione dei difetti RaSi</button>
+          <button aria-pressed="false">un nuovo impianto</button>
+          <button aria-pressed="false">l'illuminazione</button>
+          <button aria-pressed="false">videosorveglianza o allarme</button>
+          <button aria-pressed="false">un elettrodomestico</button>
+        </div>
+        <h3>Quando</h3>
+        <div class="opts" data-g="quando">
+          <button aria-pressed="true">il prima possibile</button>
+          <button aria-pressed="false">entro qualche settimana</button>
+          <button aria-pressed="false">da pianificare</button>
+        </div>
+        <h3>Dove</h3>
+        <input id="dove" placeholder="Es. Muralto, Minusio, Ascona…" autocomplete="off">
+      </div>
+      <div class="phone">
+        <div class="top"><i>E</i><div>Elettro-Evolution<small>076 265 91 46</small></div></div>
+        <div class="bubble" id="bubble"></div>
+        <div><span class="demo">Dimostrazione</span></div>
+        <p class="note">Nel sito vero il pulsante apre WhatsApp con questo messaggio già scritto, pronto da inviare.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECENSIONI -->
+<section class="sec rec" id="recensioni">
+  <div class="wrap">
+    <div class="top reveal">
+      <div class="score"><b>5,0</b><div class="s">★★★★★</div><small>27 recensioni Google</small></div>
+      <div>
+        <blockquote>«Servizio impeccabile e grande professionalità. Lavoro eseguito in modo <mark>preciso, veloce e pulito.</mark>»</blockquote>
+        <cite>Angelco S. · Google</cite>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card reveal"><p>«È stato professionale, puntuale e molto competente. Ha risolto tutti i problemi con velocità e precisione.»</p><span>El Mahdi M. · Google</span></div>
+      <div class="card reveal"><p>«Ho avuto il piacere di conoscere Miki, il proprietario della ditta Elettroevolution. Cordiale e onesto.»</p><span>Christine B. · Google</span></div>
+      <div class="card reveal"><p>«Azienda seria e professionale, sempre disponibile sotto ogni punto di vista, anche nei giorni festivi.»</p><span>Monica C. · Google</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CHI -->
+<section class="sec chi" style="padding-top:0">
+  <div class="wrap">
+    <div class="reveal"><div class="ph" data-foto="squadra"><span class="ph-label">Foto: Miki e la squadra (da richiedere)</span></div></div>
+    <div class="reveal">
+      <span class="mono eyebrow">Chi siamo</span>
+      <p class="claim">Affidabilità <span>e</span> onestà.</p>
+      <p>Due parole che Elettro-Evolution si è scelta, e che i clienti ripetono nelle recensioni: «cordiale e onesto», «affidabile e competente».</p>
+      <p>Dall'ufficio di Via Vallemaggia al cantiere, una squadra di professionisti che spiega cosa sta facendo e risponde a ogni domanda.</p>
+      <div class="todo"><b>Da completare insieme:</b> la storia della ditta (da quando esiste, quante persone ci lavorano), le zone in cui lavorate e una foto della squadra.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATTI -->
+<section class="sec contatti" id="contatti">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="mono eyebrow" style="color:var(--luce)">Contatti</span>
+      <h2>Una chiamata,<br>e arriviamo</h2>
+      <ul class="kv">
+        <li><span class="mono">Telefono</span><a href="tel:+41762659146">076 265 91 46</a></li>
+        <li><span class="mono">Picchetto</span><span>7 giorni su 7, 24 ore su 24</span></li>
+        <li><span class="mono">Ufficio</span><span>Via Vallemaggia 56A, 6600 Locarno</span></li>
+        <li><span class="mono">Preventivo</span><span>Gratuito</span></li>
+      </ul>
+      <div class="ctas2">
+        <a class="btn luce" href="tel:+41762659146">Chiama</a>
+        <a class="btn ghost" href="https://wa.me/41762659146" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="map reveal"><iframe title="Mappa Elettro-Evolution" loading="lazy" src="https://www.google.com/maps?q=Elettro-Evolution,+Via+Vallemaggia+56A,+6600+Locarno&output=embed"></iframe></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><b>Elettro-Evolution</b> · Impianti elettrici · Via Vallemaggia 56A, 6600 Locarno</span>
+    <a href="tel:+41762659146">076 265 91 46</a>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn" href="tel:+41762659146">Chiama</a>
+  <a class="btn wa" href="https://wa.me/41762659146" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // reveal
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+    els.forEach(function(el){io.observe(el)});
+  } else els.forEach(function(el){el.classList.add('in')});
+
+  // interruttore
+  var hero=document.getElementById('hero'),sw=document.getElementById('sw'),auto;
+  function set(on){hero.classList.toggle('on',on);sw.setAttribute('aria-pressed',on);sw.setAttribute('aria-label',on?'Spegni la luce':'Accendi la luce');}
+  sw.addEventListener('click',function(){clearTimeout(auto);set(!hero.classList.contains('on'));});
+  if(reduce)set(true);else auto=setTimeout(function(){set(true)},2600);
+
+  // quadro
+  var mods=document.querySelectorAll('.mod');
+  mods.forEach(function(m){m.addEventListener('click',function(){m.classList.toggle('on')})});
+
+  // RaSi: i difetti si spuntano
+  var letter=document.getElementById('letter'),items=letter.querySelectorAll('li'),stamp=document.getElementById('stamp');
+  function play(){items.forEach(function(li,i){setTimeout(function(){li.classList.add('ok');li.querySelector('.x').textContent='✓'},500+i*450)});setTimeout(function(){stamp.classList.add('in')},500+items.length*450+200);}
+  if(reduce||!('IntersectionObserver' in window)){items.forEach(function(li){li.classList.add('ok');li.querySelector('.x').textContent='✓'});stamp.classList.add('in');}
+  else{var io3=new IntersectionObserver(function(es){if(es[0].isIntersecting){play();io3.disconnect();}},{threshold:.5});io3.observe(letter);}
+
+  // messaggio WhatsApp (dimostrazione)
+  var sel={cosa:'un guasto urgente',quando:'il prima possibile'},dove=document.getElementById('dove'),bubble=document.getElementById('bubble');
+  function render(){var d=dove.value.trim();
+    bubble.textContent='Buongiorno, avrei bisogno di '+sel.cosa+(d?' a '+d:'')+'.\nTempi: '+sel.quando+'.\nPotete darmi un preventivo? Grazie!';}
+  document.querySelectorAll('.opts').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
+    g.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});sel[g.dataset.g]=b.textContent;render();})});
+  dove.addEventListener('input',render);render();
+})();
+</script>
+</body>
+</html>

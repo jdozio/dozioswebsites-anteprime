@@ -46,6 +46,24 @@ così"*. Se un sito non provoca questa reazione, non è finito. Come ottenerla:
    osterie, bar, gelaterie, pasticcerie, panetterie, artigiani, giardinieri, imbianchini,
    elettricisti, idraulici, falegnami, fabbri, piastrellisti, ecc. Varia i settori tra una notte e l'altra.
 
+## 1b. PRIORITÀ DEL TARGET (decisa da Jacopo il 14.10.2026)
+Le attività affermate con tantissime recensioni e senza sito spesso NON vogliono un sito
+(sono già piene di clienti: Calzerotti, Gennaro, Gordy hanno rifiutato). Cerca in quest'ordine:
+1. **Sito rotto o scadente** (priorità massima: hanno già deciso di volere un sito).
+   Esempi: dominio scaduto, sito che non si apre o va in errore, illeggibile da telefono,
+   fermo da anni (© vecchio, notizie vecchie), fatto con strumenti gratuiti (Google Sites,
+   Strikingly, sitefree, digitalone, Wix gratuito con banner). Nel messaggio il problema si
+   nomina con tatto, senza criticare: "dal telefono il Suo sito non si legge bene, guardi come potrebbe essere".
+2. **Attività nuove** (aperte da meno di ~2 anni), voto alto anche con poche recensioni (≥ 5, recenti),
+   con segni di voglia di crescere: Instagram attivo, foto caricate dal titolare, risposte alle
+   recensioni, prenotazione online. Meno materiale non è un problema: le foto si chiedono
+   (segnaposto "(da richiedere)").
+3. **Solo link di prenotazione / Facebook / Instagram** al posto del sito, con segni di crescita.
+- **Da evitare**: > ~300 recensioni e nessun sito, titolare anziano o attività già al completo,
+  a meno di segni chiari che vogliano crescere.
+- Nel registro segna sempre la **categoria** (rotto / nuova / solo prenotazione / nessun sito)
+  per capire quale risponde di più.
+
 ## 2. Criteri (TUTTI obbligatori)
 - **Nessun sito**, oppure solo Facebook/Instagram, oppure sito **scarso o rotto**
   (es. Wix gratuito con errore 404, template mai personalizzato, refusi, nessuna foto dei lavori).
@@ -53,7 +71,7 @@ così"*. Se un sito non provoca questa reazione, non è finito. Come ottenerla:
   un link al sito, aprilo (WebFetch) e controlla che funzioni e com'è fatto.
   Se puoi leggere la scheda Google Maps (campo "sito web"), fallo. Se non sei sicuro al 100%,
   segna l'attività come **"DA CONTROLLARE SU MAPS"** nel file messaggi.
-- **Recensioni buone**: idealmente ≥ 4,6 stelle e un numero di recensioni sensato (≥ ~10),
+- **Recensioni buone**: idealmente ≥ 4,6 stelle e un numero di recensioni sensato (≥ ~10; per attività nuove bastano ≥ 5),
   con recensioni **recenti** (non ferma da anni). Scarta attività che sembrano chiuse o inattive.
 - **Cellulare** (per WhatsApp). In Svizzera: 076/077/078/079. In Italia: 3xx. Se c'è solo un fisso,
   scarta a meno che non ci sia un'altra via chiara (Instagram attivo) e segnalalo.
