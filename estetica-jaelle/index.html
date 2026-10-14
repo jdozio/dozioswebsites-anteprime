@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Estetica Jaelle · Estetista a Minusio</title>
+<meta name="description" content="Estetica Jaelle, Via San Gottardo 105, Minusio. Manicure, semipermanente, ricostruzione unghie, pedicure, CallusPeeling, trattamenti viso, ciglia e sopracciglia. Dalle 7:30. Tel. 079 155 53 96.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<style>
+:root{
+  --porcellana:#FBF7F4; --petalo:#F5E9E6; --petalo2:#EED9D4; --cipria:#E6C6BF;
+  --fucsia:#C8306F; --fucsia2:#A6205A; --lampone:#E05A92;
+  --prugna:#2A1220; --prugna2:#4A2236; --ink:#2A1220; --ink2:#7B6170;
+  --pesca:#F2D3B3; --oro:#C9A26B; --line:#EAD9D3;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:76px}
+body{background:var(--porcellana);color:var(--ink);font:400 16.5px/1.7 'Manrope',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.02;letter-spacing:-.01em}
+h2{font-size:clamp(38px,4.6vw,64px)}
+h1 em,h2 em,h3 em{font-style:italic;color:var(--fucsia)}
+.eyebrow{font-size:11.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--fucsia2)}
+.sig{font-family:'Mrs Saint Delafield',cursive;font-weight:400;line-height:1}
+.muted{color:var(--ink2)}
+
+.draft{background:var(--prugna);color:#EBD6DF;font-size:13px;text-align:center;padding:8px 16px;line-height:1.45}
+.draft b{color:#fff;font-weight:600}
+
+header{position:sticky;top:0;z-index:30;background:rgba(251,247,244,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand .sig{font-size:44px;color:var(--prugna);margin-top:6px}
+.brand small{font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--ink2);border-left:1px solid var(--line);padding-left:10px}
+.nav ul{display:flex;gap:26px;list-style:none;font-size:14px;font-weight:500}
+.nav ul a{text-decoration:none;position:relative}
+.nav ul a::after{content:"";position:absolute;left:0;right:100%;bottom:-4px;height:2px;border-radius:2px;background:var(--fucsia);transition:right .35s}
+.nav ul a:hover::after{right:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--prugna);color:#FBF7F4;text-decoration:none;font:600 14.5px/1 'Manrope',sans-serif;letter-spacing:.02em;padding:15px 24px;border-radius:999px;border:0;cursor:pointer;transition:transform .25s,background .25s,box-shadow .25s}
+.btn:hover{background:var(--fucsia);transform:translateY(-1px);box-shadow:0 12px 24px -12px rgba(200,48,111,.6)}
+.btn.pink{background:var(--fucsia)}
+.btn.pink:hover{background:var(--prugna)}
+.btn.soft{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.soft:hover{background:var(--ink);color:var(--porcellana)}
+.btn.small{padding:11px 18px;font-size:13.5px}
+
+/* placeholders (riempiti con foto vere) */
+.ph{position:relative;overflow:hidden;background:linear-gradient(150deg,#F1DCD6,#E7C3BB 60%,#D9A9A1)}
+.ph::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.18) 0 2px,transparent 2px 14px)}
+.ph .ph-label{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);white-space:nowrap;font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:rgba(42,18,32,.8);color:#F7E6EC;padding:7px 12px;border-radius:999px;z-index:2}
+.has-photo>img.real{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.has-photo::before{display:none}
+.has-photo .ph-label{display:none}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 85% 10%,#F7E1E4 0%,rgba(247,225,228,0) 60%),linear-gradient(180deg,var(--porcellana),var(--petalo))}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;min-height:min(88vh,780px);padding-top:40px;padding-bottom:70px}
+.hero .sigwrap{position:relative;display:inline-block;margin:8px 0 -18px -6px}
+.hero .bigsig{font-size:clamp(110px,13vw,190px);color:var(--fucsia);clip-path:inset(0 100% 0 0);animation:write 2.4s cubic-bezier(.6,.05,.3,1) .35s forwards;display:block;padding:0 .2em 0 .05em}
+@keyframes write{to{clip-path:inset(0 0 0 0)}}
+.hero .pen{position:absolute;top:58%;left:0;width:10px;height:10px;border-radius:50%;background:var(--prugna);opacity:0;animation:pen 2.4s cubic-bezier(.6,.05,.3,1) .35s forwards}
+@keyframes pen{0%{opacity:1;left:2%}92%{opacity:1}100%{left:96%;opacity:0}}
+.hero h1{font-size:clamp(40px,4.6vw,68px);margin:0 0 22px}
+.hero h1 em{display:inline}
+.hero .lead{font-size:18px;max-width:31em;color:var(--prugna2)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{display:inline-flex;align-items:center;gap:10px;padding:9px 16px 9px 12px;background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:999px;font-size:13.5px}
+.chip .stars{color:var(--fucsia);letter-spacing:2px}
+.chip b{font-weight:700}
+.dot{width:9px;height:9px;border-radius:50%;background:#2E9E62;box-shadow:0 0 0 0 rgba(46,158,98,.5);animation:pulse 2s infinite}
+.dot.closed{background:#B9A2AC;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(46,158,98,0)}100%{box-shadow:0 0 0 0 rgba(46,158,98,0)}}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+
+.stack{position:relative;height:min(640px,72vh);min-height:480px}
+.card-a{position:absolute;right:6%;top:0;width:62%;aspect-ratio:9/15;border-radius:220px 220px 20px 20px;box-shadow:0 50px 80px -40px rgba(42,18,32,.55);transform:rotate(2deg)}
+.card-b{position:absolute;left:0;bottom:4%;width:54%;aspect-ratio:16/10;border-radius:20px;box-shadow:0 40px 60px -30px rgba(42,18,32,.5);transform:rotate(-4deg);border:6px solid #fff}
+.seal{position:absolute;right:0;bottom:16%;width:132px;height:132px;z-index:4}
+.seal svg{width:100%;height:100%;animation:spin 22s linear infinite}
+.seal .c{position:absolute;inset:38px;border-radius:50%;background:var(--fucsia);display:grid;place-items:center;color:#fff;font:italic 500 26px/1 'Cormorant Garamond',serif}
+@keyframes spin{to{transform:rotate(360deg)}}
+.petal{position:absolute;border-radius:60% 0 60% 0;background:var(--lampone);opacity:.18;filter:blur(1px)}
+
+/* 7:30 */
+.alba{background:var(--prugna);color:#F4E4EA;position:relative;overflow:hidden}
+.alba .wrap{display:grid;grid-template-columns:auto 1fr;gap:60px;align-items:center;padding-top:80px;padding-bottom:80px}
+.alba .ora{font:500 clamp(110px,15vw,210px)/.8 'Cormorant Garamond',serif;letter-spacing:-.03em;background:linear-gradient(180deg,#FFD9B8 0%,#F08BB3 55%,#C8306F 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.alba h2{color:#fff;font-size:clamp(32px,3.6vw,50px);margin-bottom:16px}
+.alba h2 em{color:#F7A9C8}
+.alba p{max-width:36em;color:#DCC3CF}
+.alba .settimana{display:flex;gap:6px;margin-top:28px;flex-wrap:wrap}
+.alba .g{flex:1 1 0;min-width:64px;border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:10px 8px;text-align:center;font-size:12px;color:#CDB2BF}
+.alba .g b{display:block;font:600 13px 'Manrope',sans-serif;color:#fff;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.alba .g.oggi{background:rgba(247,169,200,.14);border-color:#F7A9C8}
+.alba .g.chiuso{opacity:.45}
+.sun{position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(255,190,150,.35),rgba(255,190,150,0) 65%)}
+
+/* TRATTAMENTI */
+.sec{padding:110px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:46px;flex-wrap:wrap}
+.head p{max-width:30em;color:var(--ink2)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.tcard{position:relative;border-radius:22px;overflow:hidden;background:#fff;border:1px solid var(--line);text-decoration:none;display:flex;flex-direction:column;transition:transform .4s,box-shadow .4s}
+.tcard:hover{transform:translateY(-6px);box-shadow:0 30px 50px -30px rgba(42,18,32,.45)}
+.tcard .ph{aspect-ratio:4/5}
+.tcard .ph img.real{transition:transform 1.2s}
+.tcard:hover .ph img.real{transform:scale(1.06)}
+.tcard .tx{padding:20px 20px 22px}
+.tcard h3{font-size:30px;margin-bottom:6px}
+.tcard p{font-size:14px;color:var(--ink2)}
+.tcard .from{display:inline-block;margin-top:12px;font-size:12.5px;font-weight:700;color:var(--fucsia2);letter-spacing:.04em}
+.lensviz{aspect-ratio:4/5;background:radial-gradient(circle at 50% 46%,#fff 0 22%,transparent 23%),radial-gradient(circle at 50% 46%,var(--fucsia) 0 24%,transparent 25%),linear-gradient(160deg,#F6DCCB,#EBC0AE);position:relative}
+.lensviz::after{content:"";position:absolute;left:50%;top:46%;width:60%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.85),rgba(255,255,255,.1) 40%),radial-gradient(circle,#F4CDBB 0 55%,#E9B19C);box-shadow:0 0 0 10px #fff,0 0 0 12px var(--fucsia),0 30px 40px -20px rgba(42,18,32,.5)}
+
+/* LENTE */
+.lente{background:linear-gradient(180deg,var(--petalo),var(--porcellana))}
+.lente .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:60px;align-items:center}
+.lente blockquote{font:italic 500 clamp(30px,3.2vw,44px)/1.1 'Cormorant Garamond',serif;color:var(--prugna);margin:18px 0 18px}
+.lente blockquote small{display:block;font:500 13px/1.5 'Manrope',sans-serif;font-style:normal;color:var(--ink2);margin-top:10px;letter-spacing:.02em}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:26px 0}
+.fact{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;font-size:14px}
+.fact b{display:block;font:600 22px/1.1 'Cormorant Garamond',serif;color:var(--fucsia2);margin-bottom:2px}
+.skin{position:relative;aspect-ratio:1/1;border-radius:28px;overflow:hidden;cursor:none;touch-action:none;box-shadow:0 40px 70px -40px rgba(42,18,32,.6);user-select:none}
+.skin .layer{position:absolute;inset:0}
+.skin .base{background:
+  radial-gradient(circle at 20% 30%,rgba(255,255,255,.35),transparent 30%),
+  radial-gradient(circle at 70% 75%,rgba(214,150,130,.25),transparent 35%),
+  radial-gradient(circle at 60% 20%,rgba(255,230,215,.6),transparent 40%),
+  linear-gradient(150deg,#F3D2C1,#E8B9A5 55%,#DDA592)}
+.skin .base::after{content:"";position:absolute;inset:0;opacity:.35;background-image:radial-gradient(rgba(160,90,70,.35) .8px,transparent 1.2px);background-size:9px 9px}
+.skin .zoom{clip-path:circle(0px at 50% 50%);transition:clip-path .08s linear}
+.skin .zoom .inner{position:absolute;inset:0;background:linear-gradient(150deg,#F7DACB,#EDC3AF 55%,#E3AE9A)}
+.skin .zoom .inner::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(150,80,60,.45) 1.3px,transparent 2px);background-size:22px 22px;opacity:.45}
+.mk{position:absolute;transition:opacity .35s}
+.mk.off{opacity:.07}
+.mk.idr{width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff,#9FD4F0 60%,#5BA8D6);box-shadow:0 0 12px rgba(91,168,214,.8)}
+.mk.pig{width:34px;height:26px;border-radius:50% 40% 55% 45%;background:radial-gradient(circle,rgba(140,80,40,.75),rgba(140,80,40,.15) 70%,transparent)}
+.mk.cap{width:120px;height:40px;border-top:2px solid rgba(200,40,60,.7);border-radius:50%;transform:rotate(-14deg)}
+.mk.imp{width:12px;height:12px;border-radius:50%;background:radial-gradient(circle,#5A3A2E 0 30%,rgba(230,160,120,.8) 45%,transparent 70%)}
+.mk.rug{width:150px;height:30px;border-bottom:2px solid rgba(110,60,50,.55);border-radius:50%}
+.ring{position:absolute;width:220px;height:220px;border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);box-shadow:0 0 0 10px #fff,0 0 0 12px var(--fucsia),0 20px 40px -10px rgba(42,18,32,.5),inset 0 0 30px rgba(255,255,255,.4);opacity:0;transition:opacity .3s}
+.ring::after{content:"";position:absolute;left:50%;top:50%;width:16px;height:1px;background:rgba(42,18,32,.35);transform:translate(-50%,-50%);box-shadow:0 0 0 0 transparent}
+.skin.active .ring{opacity:1}
+.skin .hint{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(42,18,32,.82);color:#fff;font-size:13px;letter-spacing:.06em;padding:10px 16px;border-radius:999px;pointer-events:none;transition:opacity .4s;white-space:nowrap}
+.skin.active .hint{opacity:0}
+.skin .found{position:absolute;left:16px;bottom:16px;right:16px;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.88);backdrop-filter:blur(6px);border-radius:14px;padding:10px 14px;font-size:13px;pointer-events:none}
+.skin .found b{color:var(--fucsia2)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.filters button{font:600 12.5px 'Manrope',sans-serif;letter-spacing:.03em;padding:9px 14px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;transition:.25s}
+.filters button[aria-pressed=true]{background:var(--prugna);border-color:var(--prugna);color:#fff}
+.filters button i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;vertical-align:1px}
+
+/* RITO */
+.rito{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rito .top{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;margin-bottom:56px}
+.price-tag{display:flex;gap:26px;align-items:center;background:var(--petalo);border-radius:20px;padding:16px 24px}
+.price-tag b{display:block;font:500 34px/1 'Cormorant Garamond',serif;color:var(--prugna)}
+.price-tag span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2)}
+.steps{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.steps .track{position:absolute;left:4%;right:4%;top:31px;height:2px;background:var(--line)}
+.steps .track i{position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,var(--lampone),var(--fucsia));transition:width 2.4s cubic-bezier(.5,0,.2,1)}
+.steps.in .track i{width:100%}
+.step{position:relative;text-align:center}
+.step .n{width:64px;height:64px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;background:#fff;border:2px solid var(--line);font:500 26px 'Cormorant Garamond',serif;color:var(--ink2);transition:all .5s}
+.steps.in .step .n{border-color:var(--fucsia);color:var(--fucsia);box-shadow:0 0 0 6px rgba(200,48,111,.08)}
+.steps.in .step:nth-child(2) .n{transition-delay:.2s}.steps.in .step:nth-child(3) .n{transition-delay:.7s}.steps.in .step:nth-child(4) .n{transition-delay:1.2s}.steps.in .step:nth-child(5) .n{transition-delay:1.7s}.steps.in .step:nth-child(6) .n{transition-delay:2.2s}
+.step h3{font-size:24px;margin-bottom:6px}
+.step p{font-size:13.5px;color:var(--ink2);max-width:15em;margin:0 auto}
+.rito .voice{margin-top:56px;text-align:center;font:italic 500 clamp(26px,2.6vw,36px)/1.2 'Cormorant Garamond',serif}
+.rito .voice small{display:block;font:500 13px 'Manrope',sans-serif;font-style:normal;color:var(--ink2);margin-top:10px}
+
+/* LISTINO */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.tabs button{font:600 14px 'Manrope',sans-serif;padding:12px 20px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;transition:.25s}
+.tabs button[aria-selected=true]{background:var(--fucsia);border-color:var(--fucsia);color:#fff}
+.panel{display:none;background:#fff;border:1px solid var(--line);border-radius:24px;padding:10px 28px}
+.panel.on{display:block;animation:fade .45s}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:18px;align-items:baseline;padding:18px 0;border-bottom:1px dashed var(--line)}
+.row:last-child{border-bottom:0}
+.row h4{font:500 22px/1.2 'Cormorant Garamond',serif}
+.row h4 small{display:block;font:400 13.5px/1.5 'Manrope',sans-serif;color:var(--ink2);margin-top:4px;max-width:44em}
+.row .dur{font-size:13px;color:var(--ink2);white-space:nowrap}
+.row .pr{font:600 16px 'Manrope',sans-serif;white-space:nowrap;color:var(--prugna)}
+.note{font-size:13px;color:var(--ink2);margin-top:16px}
+
+/* GALLERIA */
+.mosaic{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:280px 280px;gap:14px}
+.mosaic .ph{border-radius:20px}
+.mosaic .m1{grid-row:span 2}
+.mosaic figcaption{position:absolute;left:14px;bottom:14px;z-index:3;background:rgba(255,255,255,.9);color:var(--prugna);font-size:12px;font-weight:600;letter-spacing:.04em;padding:6px 11px;border-radius:999px}
+
+/* RECENSIONI */
+.voci{background:var(--prugna);color:#F2E3EA;overflow:hidden}
+.voci .big{display:grid;grid-template-columns:auto 1fr;gap:50px;align-items:center}
+.voci .score{text-align:center}
+.voci .score b{display:block;font:500 clamp(100px,12vw,160px)/.85 'Cormorant Garamond',serif;color:#fff}
+.voci .score .stars{color:#F7A9C8;letter-spacing:6px;font-size:20px;margin:12px 0 6px}
+.voci .score small{font-size:13px;color:#CDB2BF}
+.voci blockquote{font:italic 500 clamp(30px,3.4vw,48px)/1.15 'Cormorant Garamond',serif;color:#fff}
+.voci blockquote mark{background:linear-gradient(transparent 62%,rgba(224,90,146,.45) 62%);color:inherit}
+.voci cite{display:block;font:500 13px 'Manrope',sans-serif;font-style:normal;color:#CDB2BF;margin-top:16px}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:60px}
+.q{border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:24px;background:rgba(255,255,255,.03)}
+.q p{font:italic 400 22px/1.3 'Cormorant Garamond',serif;color:#fff}
+.q span{display:block;font-size:12.5px;color:#BFA3B1;margin-top:12px}
+.ticker{margin-top:56px;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);padding:18px 0;white-space:nowrap;overflow:hidden}
+.ticker .belt{display:inline-flex;gap:48px;animation:belt 38s linear infinite;font:italic 400 24px 'Cormorant Garamond',serif;color:#E8CFDA}
+.ticker .belt span::after{content:"✦";font-style:normal;font-size:12px;color:#F7A9C8;margin-left:48px;vertical-align:4px}
+@keyframes belt{to{transform:translateX(-50%)}}
+
+/* STORIA */
+.storia .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.portrait{aspect-ratio:4/5;border-radius:24px 220px 24px 24px;box-shadow:0 40px 60px -40px rgba(42,18,32,.55)}
+.storia .sig{font-size:76px;color:var(--fucsia);margin-top:-10px}
+.timeline{list-style:none;margin:30px 0;border-left:2px solid var(--line);padding-left:26px}
+.timeline li{position:relative;padding-bottom:26px}
+.timeline li::before{content:"";position:absolute;left:-34px;top:6px;width:14px;height:14px;border-radius:50%;background:#fff;border:2px solid var(--fucsia)}
+.timeline li:last-child{padding-bottom:0}
+.timeline li:last-child::before{background:var(--fucsia)}
+.timeline b{display:block;font:500 26px/1.1 'Cormorant Garamond',serif;color:var(--fucsia2)}
+.timeline span{font-size:15px;color:var(--prugna2)}
+.todo{border:1.5px dashed var(--cipria);border-radius:16px;padding:16px 18px;font-size:14px;color:var(--ink2);background:rgba(255,255,255,.6);margin-top:20px}
+.todo b{color:var(--fucsia2)}
+
+/* REGALO */
+.regalo{padding:0 0 110px}
+.gift{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;background:linear-gradient(120deg,var(--fucsia2),var(--fucsia) 55%,var(--lampone));color:#fff;border-radius:30px;padding:56px;overflow:hidden}
+.gift h2{color:#fff;font-size:clamp(34px,3.8vw,52px)}
+.gift h2 em{color:#FFD9E6}
+.gift p{color:#FBE2EC;margin:14px 0 24px;max-width:30em}
+.gift .btn{background:#fff;color:var(--fucsia2)}
+.gift .btn:hover{background:var(--prugna);color:#fff}
+.giftcard{justify-self:center;width:280px;aspect-ratio:1.6;border-radius:18px;background:linear-gradient(140deg,#fff,#F8E7EE);color:var(--prugna);padding:20px 22px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 30px 50px -20px rgba(42,18,32,.5);transform:rotate(-6deg);transition:transform .5s}
+.gift:hover .giftcard{transform:rotate(-2deg) translateY(-6px)}
+.giftcard .sig{font-size:50px;color:var(--fucsia)}
+.giftcard small{font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink2)}
+.giftcard div{display:flex;justify-content:space-between;align-items:end}
+.giftcard b{font:500 26px 'Cormorant Garamond',serif}
+
+/* VISITA */
+.visita{background:var(--petalo)}
+.visita .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.vcard{background:#fff;border-radius:26px;border:1px solid var(--line);overflow:hidden}
+.vcard .ph{aspect-ratio:16/9}
+.vcard .in{padding:28px 30px 30px}
+.vcard h3{font-size:34px;margin-bottom:8px}
+.info{list-style:none;margin:16px 0 22px;font-size:15px}
+.info li{display:flex;gap:12px;padding:8px 0;border-bottom:1px solid var(--line)}
+.info li:last-child{border-bottom:0}
+.info li span:first-child{width:22px;flex:none;color:var(--fucsia)}
+.orari{list-style:none;font-size:15px}
+.orari li{display:flex;justify-content:space-between;padding:11px 14px;border-radius:12px}
+.orari li.today{background:var(--petalo);font-weight:700}
+.orari li.today span:first-child::after{content:" · oggi";color:var(--fucsia);font-weight:600}
+.orari li .c{color:var(--ink2)}
+.map{margin-top:18px;border-radius:18px;overflow:hidden;border:1px solid var(--line);height:240px}
+.map iframe{width:100%;height:100%;border:0;filter:saturate(.75)}
+.ctas2{display:flex;gap:10px;flex-wrap:wrap}
+
+footer{background:var(--prugna);color:#CDB2BF;padding:46px 0 40px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer .sig{font-size:48px;color:#fff}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s,transform .9s}
+.reveal.in{opacity:1;transform:none}
+.mbar{display:none}
+
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .hero .bigsig{animation:none;clip-path:none}.hero .pen{display:none}
+  .seal svg,.ticker .belt,.dot{animation:none}
+  .steps .track i{transition:none}
+}
+@media (max-width:1020px){
+  .nav ul{display:none}
+  .hero .wrap,.lente .wrap,.storia .wrap,.visita .wrap{grid-template-columns:1fr}
+  .stack{height:540px;max-width:520px;margin:0 auto;width:100%}
+  .cards{grid-template-columns:1fr 1fr}
+  .alba .wrap{grid-template-columns:1fr;gap:20px}
+  .voci .big{grid-template-columns:1fr;gap:30px}
+  .voci .score{text-align:left}
+  .quotes{grid-template-columns:1fr}
+  .gift{grid-template-columns:1fr;padding:40px 30px}
+  .rito .top{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:0}
+  .steps .track{left:31px;right:auto;top:20px;bottom:20px;width:2px;height:auto}
+  .steps .track i{width:100%!important;height:0;transition:height 2.4s cubic-bezier(.5,0,.2,1)}
+  .steps.in .track i{height:100%}
+  .step{display:grid;grid-template-columns:64px 1fr;gap:18px;text-align:left;padding-bottom:22px}
+  .step .n{margin:0}
+  .step p{margin:0}
+  .portrait{max-width:440px}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:76px}
+  .wrap{padding:0 16px}
+  .sec{padding:76px 0}
+  .brand small{display:none}
+  header .btn{display:none}
+  .hero .wrap{padding-top:22px;padding-bottom:50px;gap:26px}
+  .hero .bigsig{font-size:112px}
+  .hero .sigwrap{margin-bottom:-12px}
+  .stack{height:440px;min-height:0}
+  .card-a{width:66%;right:2%}
+  .card-b{width:62%}
+  .seal{width:104px;height:104px;bottom:6%}
+  .seal .c{inset:30px;font-size:21px}
+  .cards{grid-template-columns:1fr;gap:16px}
+  .tcard{flex-direction:row}
+  .tcard .ph,.tcard .lensviz{aspect-ratio:auto;width:38%;flex:none;min-height:170px}
+  .tcard .tx{padding:16px}
+  .tcard h3{font-size:25px}
+  .facts{grid-template-columns:1fr 1fr}
+  .ring{width:150px;height:150px}
+  .row{grid-template-columns:1fr auto;gap:4px 14px}
+  .row .dur{grid-column:1;grid-row:2}
+  .row .pr{grid-column:2;grid-row:1 / span 2;align-self:center}
+  .panel{padding:4px 18px}
+  .tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -16px 22px;padding:0 16px 6px;scrollbar-width:none}
+  .tabs button{flex:none}
+  .mosaic{grid-template-columns:1fr 1fr;grid-template-rows:260px 180px 180px}
+  .mosaic .m1{grid-row:auto;grid-column:span 2}
+  .gift{padding:34px 22px}
+  .giftcard{width:240px}
+  .vcard .in{padding:22px 20px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(251,247,244,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+  .mbar .btn{padding:14px 10px}
+  .mbar .wa{background:#1F7A4D}
+}
+</style>
+</head>
+<body>
+
+<div class="draft"><b>Anteprima di sito preparata per Estetica Jaelle</b> · foto dalla scheda Google e da Fresha, testi da completare insieme</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><span class="sig">Jaelle</span><small>Estetica · Minusio</small></a>
+    <ul>
+      <li><a href="#trattamenti">Trattamenti</a></li>
+      <li><a href="#pelle">La pelle</a></li>
+      <li><a href="#listino">Listino</a></li>
+      <li><a href="#recensioni">Recensioni</a></li>
+      <li><a href="#visita">Dove siamo</a></li>
+    </ul>
+    <a class="btn small" href="https://www.fresha.com/it/a/estetica-jaelle-minusio-via-san-gottardo-105-o7y953yw" target="_blank" rel="noopener">Prenota</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <span class="petal" style="width:120px;height:120px;left:-30px;top:120px;transform:rotate(20deg)"></span>
+  <span class="petal" style="width:70px;height:70px;left:46%;bottom:60px;transform:rotate(-30deg)"></span>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Estetica · Via San Gottardo 105 · Minusio</p>
+      <div class="sigwrap"><span class="sig bigsig">Jaelle</span><span class="pen"></span></div>
+      <h1>Mani, piedi e viso,<br><em>curati nei minimi dettagli.</em></h1>
+      <p class="lead">Uno studio piccolo e luminoso a Minusio, dove ogni trattamento è fatto con calma, su misura per te. Si apre alle 7:30, perché la cura di sé non deve aspettare la fine della giornata.</p>
+      <div class="chips">
+        <span class="chip"><span class="stars">★★★★★</span><span><b>5,0</b> su 206 recensioni Fresha · <b>5,0</b> su Google</span></span>
+        <span class="chip"><span class="dot" id="dot"></span><span id="stato">Orari qui sotto</span></span>
+      </div>
+      <div class="ctas">
+        <a class="btn pink" href="https://www.fresha.com/it/a/estetica-jaelle-minusio-via-san-gottardo-105-o7y953yw" target="_blank" rel="noopener">Prenota online</a>
+        <a class="btn soft" href="https://wa.me/41791555396" target="_blank" rel="noopener">Scrivi su WhatsApp</a>
+      </div>
+    </div>
+    <div class="stack" aria-hidden="true">
+      <div class="has-photo ph card-a" data-foto="hero-unghie"><img class="real" loading="eager" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ROkZuvYxnoJsK7FLwaGmeP7mECSNzdLojt9X_ugStRMfNr91MUko9wAR_LCUaB3BChUvJYwlHVybWw_dGn1Wo0rMgIMpLXWH3vSEQoHdVkjlJqNY0wWRtIjPFRhMuudXOxcmLu=s1400" alt="Unghie lunghe in gel con decorazione" style="object-position:50% 40%"><span class="ph-label">Foto: unghie lunghe</span></div>
+      <div class="has-photo ph card-b" data-foto="hero-glitter"><img class="real" loading="eager" src="https://images.fresha.com/locations/location-profile-images/713094/5136989/39be851d-633b-4710-b778-4d0c9d6e709b-EsteticaJaelle-CH-Ticino-Minusio-Fresha.jpg?class=venue-gallery-large&amp;f_width=1200" alt="Unghia con glitter" style="object-position:50% 50%"><span class="ph-label">Foto: glitter</span></div>
+      <div class="seal">
+        <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><circle cx="100" cy="100" r="98" fill="#fff"/><text font-family="Manrope" font-size="15" font-weight="600" letter-spacing="4.6" fill="#2A1220"><textPath href="#circ">CURATO NEI MINIMI DETTAGLI · MINUSIO · </textPath></text></svg>
+        <span class="c">2021</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7:30 -->
+<section class="alba">
+  <span class="sun"></span>
+  <div class="wrap">
+    <div class="ora reveal">7:30</div>
+    <div class="reveal">
+      <p class="eyebrow" style="color:#F7A9C8">Dal lunedì al venerdì</p>
+      <h2>La porta si apre <em>quando comincia la giornata.</em></h2>
+      <p>Una manicure prima dell'ufficio, una pedicure prima di tutto il resto. E se gli orari non ti bastano, basta una telefonata: per appuntamenti fuori orario Jaelle trova sempre un modo.</p>
+      <div class="settimana" id="settimana">
+        <div class="g" data-d="1"><b>Lun</b>7:30–18</div>
+        <div class="g" data-d="2"><b>Mar</b>7:30–18</div>
+        <div class="g" data-d="3"><b>Mer</b>7:30–18</div>
+        <div class="g" data-d="4"><b>Gio</b>7:30–18</div>
+        <div class="g" data-d="5"><b>Ven</b>7:30–12</div>
+        <div class="g chiuso" data-d="6"><b>Sab</b>chiuso</div>
+        <div class="g chiuso" data-d="0"><b>Dom</b>chiuso</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRATTAMENTI -->
+<section class="sec" id="trattamenti">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><p class="eyebrow">48 trattamenti, quattro mondi</p><h2>Che cosa <em>ti regali</em> oggi?</h2></div>
+      <p>Dalla semipermanente alla ricostruzione in gel, dalla pedicure al CallusPeeling, fino alla pulizia del viso ad ultrasuoni. Ogni trattamento ha il suo tempo, e qui il tempo non si contrae.</p>
+    </div>
+    <div class="cards">
+      <a class="tcard reveal" href="#listino" data-tab="mani">
+        <div class="has-photo ph" data-foto="mani"><img class="real" loading="lazy" src="https://images.fresha.com/locations/location-profile-images/713094/5136988/cb0b42b1-ae25-4fdd-89bf-f7e0ef430d18-EsteticaJaelle-CH-Ticino-Minusio-Fresha.jpg?class=venue-gallery-large&amp;f_width=1200" alt="Ricostruzione unghie in gel e acrygel" style="object-position:50% 50%"><span class="ph-label">Foto: mani</span></div>
+        <div class="tx"><h3>Mani</h3><p>Manicure, semipermanente, gel e acrygel, ricostruzione e nail art.</p><span class="from">da 35 CHF →</span></div>
+      </a>
+      <a class="tcard reveal" href="#listino" data-tab="piedi">
+        <div class="has-photo ph" data-foto="piedi"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RPZ1w4cSHzClj4axRKpmrKS6hHXhQdYWL0PsxOorFWxKImx-acN9IFchq4ZlTa4KQutZoegaA20hec5r3usKk-zV_Bq7TBqenFmlcrm8jb0koGxJhe0K39DzU7P8gkdPJ2sVmv_jLTGT9t=s1400" alt="Pedicure con smalto rosso" style="object-position:50% 60%"><span class="ph-label">Foto: piedi</span></div>
+        <div class="tx"><h3>Piedi</h3><p>Pedicure essenziale, pedicure curativa e CallusPeeling, senza lame né frese.</p><span class="from">da 50 CHF →</span></div>
+      </a>
+      <a class="tcard reveal" href="#listino" data-tab="ciglia">
+        <div class="has-photo ph" data-foto="ciglia"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWn2lkZvoOmW1o8vyaWTpuNuxzHyuYpBV7lW1NwfcXRdNp0ue46uoyw_jmQ3Jet8IQcKtgnrroef_72HoZhqo45zmkfcwXLTp-LbkLhGlBg3Ev3EHRdnv1P_CYcwC1PAOFdgpmZw=s1400" alt="Laminazione ciglia" style="object-position:40% 50%"><span class="ph-label">Foto: ciglia</span></div>
+        <div class="tx"><h3>Ciglia e sopracciglia</h3><p>Laminazione, tintura e correzione, per uno sguardo definito ma naturale.</p><span class="from">da 20 CHF →</span></div>
+      </a>
+      <a class="tcard reveal" href="#pelle" data-tab="viso">
+        <div class="lensviz"></div>
+        <div class="tx"><h3>Viso</h3><p>Analisi della pelle con microcamera, pulizia ad ultrasuoni, peeling e trattamenti mirati.</p><span class="from">consulenza →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- LENTE -->
+<section class="sec lente" id="pelle">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Consulenza viso</p>
+      <blockquote>«Hai mai chiesto alla tua pelle come sta?»<small>Dalla presentazione della consulenza, su Fresha</small></blockquote>
+      <p class="muted">La pelle parla, ma non sempre riusciamo a sentirla. Con il dermatoscopio Mavex, una microcamera professionale con tre diversi tipi di luce, Jaelle osserva anche gli strati che a occhio nudo non si vedono. Poi costruisce con te un percorso su misura.</p>
+      <div class="facts">
+        <div class="fact"><b>45 minuti</b>solo per te e per le tue domande</div>
+        <div class="fact"><b>3 luci</b>per vedere sotto la superficie</div>
+        <div class="fact"><b>Gratuita</b>per chi è già cliente</div>
+        <div class="fact"><b>CHF 30</b>la prima analisi, deducibili da un trattamento o un prodotto</div>
+      </div>
+      <a class="btn" href="https://www.fresha.com/it/a/estetica-jaelle-minusio-via-san-gottardo-105-o7y953yw" target="_blank" rel="noopener">Prenota la tua analisi</a>
+    </div>
+    <div class="reveal">
+      <div class="skin" id="skin" aria-label="Prova la lente: passa il dito o il mouse sulla pelle">
+        <div class="layer base"></div>
+        <div class="layer zoom" id="zoom">
+          <div class="inner"></div>
+          <span class="mk idr" data-k="idr" style="left:22%;top:24%"></span>
+          <span class="mk idr" data-k="idr" style="left:31%;top:31%"></span>
+          <span class="mk idr" data-k="idr" style="left:64%;top:60%"></span>
+          <span class="mk idr" data-k="idr" style="left:72%;top:52%"></span>
+          <span class="mk pig" data-k="pig" style="left:58%;top:22%"></span>
+          <span class="mk pig" data-k="pig" style="left:24%;top:66%"></span>
+          <span class="mk pig" data-k="pig" style="left:66%;top:28%"></span>
+          <span class="mk cap" data-k="cap" style="left:38%;top:46%"></span>
+          <span class="mk cap" data-k="cap" style="left:10%;top:44%;width:80px"></span>
+          <span class="mk imp" data-k="imp" style="left:47%;top:72%"></span>
+          <span class="mk imp" data-k="imp" style="left:52%;top:76%"></span>
+          <span class="mk imp" data-k="imp" style="left:80%;top:36%"></span>
+          <span class="mk imp" data-k="imp" style="left:16%;top:16%"></span>
+          <span class="mk rug" data-k="rug" style="left:54%;top:84%"></span>
+          <span class="mk rug" data-k="rug" style="left:8%;top:84%;width:110px"></span>
+        </div>
+        <div class="ring" id="ring"></div>
+        <span class="hint">Passa la lente sulla pelle</span>
+        <div class="found"><span>Sotto la lente: <b id="trovato">—</b></span><span class="muted">dimostrazione</span></div>
+      </div>
+      <div class="filters" id="filters">
+        <button aria-pressed="true" data-k="all">Tutto</button>
+        <button aria-pressed="false" data-k="idr"><i style="background:#5BA8D6"></i>Idratazione</button>
+        <button aria-pressed="false" data-k="pig"><i style="background:#8C5028"></i>Pigmentazione</button>
+        <button aria-pressed="false" data-k="cap"><i style="background:#C8283C"></i>Capillari</button>
+        <button aria-pressed="false" data-k="imp"><i style="background:#5A3A2E"></i>Impurità</button>
+        <button aria-pressed="false" data-k="rug"><i style="background:#6E3C32"></i>Rughe</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RITO -->
+<section class="sec rito">
+  <div class="wrap">
+    <div class="top reveal">
+      <div><p class="eyebrow">Il trattamento più amato</p><h2>Novanta minuti di <em>semipermanente.</em></h2></div>
+      <div class="price-tag"><div><b>1 h 30</b><span>durata</span></div><div><b>55 CHF</b><span>tutto compreso</span></div></div>
+    </div>
+    <div class="steps" id="steps">
+      <span class="track"><i></i></span>
+      <div class="step"><span class="n">1</span><div><h3>Via il vecchio</h3><p>La rimozione del lavoro precedente è inclusa.</p></div></div>
+      <div class="step"><span class="n">2</span><div><h3>Forma</h3><p>Limatura delle unghie, con pazienza.</p></div></div>
+      <div class="step"><span class="n">3</span><div><h3>Cuticole</h3><p>Rimosse con delicatezza, per una base pulita.</p></div></div>
+      <div class="step"><span class="n">4</span><div><h3>Colore</h3><p>Lo smalto semipermanente, steso strato dopo strato.</p></div></div>
+      <div class="step"><span class="n">5</span><div><h3>Coccola</h3><p>Olio e crema finali, a tua scelta.</p></div></div>
+    </div>
+    <p class="voice reveal">«Molto brava, precisa e gentile»<small>Danila D., dopo una manicure con semipermanente · recensione Fresha</small></p>
+  </div>
+</section>
+
+<!-- LISTINO -->
+<section class="sec" id="listino">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><p class="eyebrow">Listino</p><h2>Prezzi chiari, <em>senza sorprese.</em></h2></div>
+      <p>Tutti i trattamenti si prenotano online in pochi secondi, con conferma immediata.</p>
+    </div>
+    <div class="tabs" role="tablist" id="tabs">
+      <button role="tab" aria-selected="true" data-p="mani">Mani</button>
+      <button role="tab" aria-selected="false" data-p="piedi">Piedi</button>
+      <button role="tab" aria-selected="false" data-p="viso">Viso</button>
+      <button role="tab" aria-selected="false" data-p="ciglia">Ciglia e sopracciglia</button>
+      <button role="tab" aria-selected="false" data-p="ceretta">Ceretta e corpo</button>
+    </div>
+
+    <div class="panel on" id="p-mani" role="tabpanel">
+      <div class="row"><h4>Manicure<small>Limatura, rimozione cuticole ed eventuali calli. Olio e crema finali a scelta.</small></h4><span class="dur">40 min</span><span class="pr">35 CHF</span></div>
+      <div class="row"><h4>Manicure con smalto classico</h4><span class="dur">1 h 15</span><span class="pr">40 CHF</span></div>
+      <div class="row"><h4>Manicure con semipermanente<small>Rimozione del lavoro precedente inclusa.</small></h4><span class="dur">1 h 30</span><span class="pr">55 CHF</span></div>
+      <div class="row"><h4>Colata di gel / acrygel su unghia naturale</h4><span class="dur">2 h 15 – 2 h 30</span><span class="pr">da 80 CHF</span></div>
+      <div class="row"><h4>Refill in gel / acrygel<small>Eseguito solo su lavori fatti in studio, per la salute delle unghie.</small></h4><span class="dur">2 h 15</span><span class="pr">da 70 CHF</span></div>
+      <div class="row"><h4>Ricostruzione unghie in gel / acrygel</h4><span class="dur">2 h 45 – 3 h</span><span class="pr">da 100 CHF</span></div>
+      <div class="row"><h4>Ricostruzione di 1 unghia rotta</h4><span class="dur">30 min</span><span class="pr">7 CHF</span></div>
+      <div class="row"><h4>Rimozione semipermanente / gel / acrygel / acrilico</h4><span class="dur">45 min</span><span class="pr">35 CHF</span></div>
+    </div>
+    <div class="panel" id="p-piedi" role="tabpanel">
+      <div class="row"><h4>Pedicure Essenziale<small>Limatura, cuticole e, su richiesta, smalto classico o semipermanente.</small></h4><span class="dur">35 min – 1 h</span><span class="pr">da 50 CHF</span></div>
+      <div class="row"><h4>Trattamento CallusPeeling<small>Elimina callosità, duroni e ragadi in una sola seduta, senza lame né frese.</small></h4><span class="dur">45 min</span><span class="pr">50 CHF</span></div>
+      <div class="row"><h4>Pedicure curativa + CallusPeeling</h4><span class="dur">1 h – 1 h 45</span><span class="pr">da 70 CHF</span></div>
+    </div>
+    <div class="panel" id="p-viso" role="tabpanel">
+      <div class="row"><h4>Consulenza viso con dermatoscopio<small>Gratuita per le clienti; prima analisi CHF 30, deducibili.</small></h4><span class="dur">45 min</span><span class="pr">gratuita</span></div>
+      <div class="row"><h4>Pulizia viso 2.0<small>Ad ultrasuoni, su viso, collo e décolleté.</small></h4><span class="dur">1 h 15</span><span class="pr">90 CHF</span></div>
+      <div class="row"><h4>Sebo Balance<small>Trattamento dermoceutico di ricerca svizzera per pelli impure, miste e grasse.</small></h4><span class="dur">35 min</span><span class="pr">80 CHF</span></div>
+      <div class="row"><h4>White Perfection<small>Bio-esfoliazione per macchie, discromie e linee d'espressione.</small></h4><span class="dur">50 min</span><span class="pr">100 CHF</span></div>
+      <div class="row"><h4>Trattamento viso con peeling<small>Consigliato come cura di 3 sedute.</small></h4><span class="dur">40 min</span><span class="pr">da 60 CHF</span></div>
+    </div>
+    <div class="panel" id="p-ciglia" role="tabpanel">
+      <div class="row"><h4>Correzione sopracciglia</h4><span class="dur">30 min</span><span class="pr">20 CHF</span></div>
+      <div class="row"><h4>Tintura ciglia / sopracciglia</h4><span class="dur">25 min</span><span class="pr">25 CHF</span></div>
+      <div class="row"><h4>Laminazione sopracciglia</h4><span class="dur">1 h</span><span class="pr">60 CHF</span></div>
+      <div class="row"><h4>Laminazione ciglia<small>Linea InLei Lash Filler, con cheratine di origine vegetale.</small></h4><span class="dur">1 h 15</span><span class="pr">80 CHF</span></div>
+    </div>
+    <div class="panel" id="p-ceretta" role="tabpanel">
+      <div class="row"><h4>Ceretta · zona piccola</h4><span class="dur">5 – 10 min</span><span class="pr">10 CHF</span></div>
+      <div class="row"><h4>Ceretta · zona media</h4><span class="dur">15 – 30 min</span><span class="pr">20 CHF</span></div>
+      <div class="row"><h4>Ceretta · zona grande</h4><span class="dur">30 – 35 min</span><span class="pr">30 CHF</span></div>
+      <div class="row"><h4>Ceretta · zona molto grande</h4><span class="dur">1 h</span><span class="pr">da 50 CHF</span></div>
+      <div class="row"><h4>Trattamento impurità della schiena<small>Con vaporizzatore all'ozono.</small></h4><span class="dur">1 h 15</span><span class="pr">90 CHF</span></div>
+    </div>
+    <p class="note">Prezzi dal listino di Estetica Jaelle su Fresha (ottobre 2026), senza le promozioni del momento. Nail art esclusa: il prezzo si vede in studio.</p>
+    <div style="margin-top:22px"><a class="btn pink" href="https://www.fresha.com/it/a/estetica-jaelle-minusio-via-san-gottardo-105-o7y953yw" target="_blank" rel="noopener">Scegli e prenota</a></div>
+  </div>
+</section>
+
+<!-- GALLERIA -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><p class="eyebrow">Dallo studio</p><h2>Piccoli lavori, <em>grande pazienza.</em></h2></div>
+    </div>
+    <div class="mosaic reveal">
+      <figure class="has-photo ph m1" data-foto="g-semi"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QHX3UnsxEhow_CtBLv9dItL71lWRG2ujW4HUM7AeH4OM1_H3EcwNlcudApnrLauqoMYDERltINehGFtAMmaTZdPow7fuJ8JEjDRWAg5Gb4Yc1rKxzv0FZ4d0ZehEqPzXDv900=s1400" alt="Semipermanente con rinforzo" style="object-position:50% 55%"><span class="ph-label">Foto: semipermanente</span><figcaption>Semipermanente con rinforzo</figcaption></figure>
+      <figure class="has-photo ph" data-foto="g-henne"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RYo1jdMJ9GEGyMsnpLvU5I7GgTyQ-imbzV54HIXoFTeft7p_LEYipPrFvVa3e7Ur6xHY0dRaLjLswYVNNPkri4rOWww24ybJ2Pl0J6mGqYODtaR-m2PgR7AFl8SmflgWtPKI1O=s1400" alt="Sopracciglia all'henné" style="object-position:50% 50%"><span class="ph-label">Foto: sopracciglia</span><figcaption>Sopracciglia all'henné</figcaption></figure>
+      <figure class="has-photo ph" data-foto="g-unghie"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9STGsPeY9nDNgeohjtfIIb6uwvYrGRzE7cqxWO7mkHkEUeTWj8ExEKvAVyUIXKNCjVY90xfZPwV8XYgDAk2pNaxSM5HFL0WZM3giQ9qPCDH_FWM9Ve447WzHO_BgnyAg5c3pTh4=s1400" alt="Semipermanente rosa" style="object-position:50% 45%"><span class="ph-label">Foto: ricostruzione</span><figcaption>Refill in gel</figcaption></figure>
+      <figure class="has-photo ph" data-foto="g-vetrina"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QZiHOSbVFELPgTu-VRYM_-BtEzKAsXOanIweaAHUVt3Xbr657Q5p_IgOMpUNg0YD3fH2-Qn-aJi2xx5BBUMpLdpOCpHaSU3Go-J9PSJdih8xTRDUKVipFQemW6pRml-F5eiSO7fw=s1400" alt="La vetrina dello studio a Natale" style="object-position:50% 50%"><span class="ph-label">Foto: vetrina</span><figcaption>La vetrina a Natale</figcaption></figure>
+      <figure class="has-photo ph" data-foto="g-studio"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9To3AI_eDfLJFjw3D26CwlFsengVmKJIg_q5bc6Zk1dW-SmElmAPBIKxTurzeEI4I3zpGU6TECo7AeCpNjBznSOZjAukGlDe-znBvUl3vIPEGdHlbKxAoHPuie_MvKrAwbdCjph=s1400" alt="Lo studio in Via San Gottardo" style="object-position:50% 70%"><span class="ph-label">Foto: studio</span><figcaption>Via San Gottardo 105</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- RECENSIONI -->
+<section class="sec voci" id="recensioni">
+  <div class="wrap">
+    <div class="big reveal">
+      <div class="score"><b>5,0</b><div class="stars">★★★★★</div><small>206 recensioni su Fresha<br>5,0 anche su Google</small></div>
+      <div>
+        <blockquote>«Il suo lavoro è sempre <mark>curato nei minimi dettagli</mark> e il risultato è davvero bellissimo.»</blockquote>
+        <cite>Kim Bette · recensione Google</cite>
+      </div>
+    </div>
+    <div class="quotes">
+      <div class="q reveal"><p>«Studio molto ben tenuto, pulitissimo. Consigliata alla grande»</p><span>Nives A. · Google</span></div>
+      <div class="q reveal"><p>«Prodotti di qualità ed esegue il suo lavoro con passione.»</p><span>Sonya F. · Google</span></div>
+      <div class="q reveal"><p>«Tutto molto curato e ordinato. Risultato meraviglioso»</p><span>Sofia C. · Google</span></div>
+    </div>
+  </div>
+  <div class="ticker" aria-hidden="true">
+    <div class="belt" id="belt">
+      <span>«Come sempre ottima!!!»</span><span>«Molto brava, precisa e gentile»</span><span>«Ottimo servizio»</span><span>«Bravissima e molto professionale!»</span><span>«Ragazza solare e preparata»</span><span>«Super consigliata!»</span><span>«Grazie Jaelle!!!»</span>
+    </div>
+  </div>
+</section>
+
+<!-- STORIA -->
+<section class="sec storia" id="storia">
+  <div class="wrap">
+    <div class="reveal"><div class="ph portrait" data-foto="ritratto-jaelle"><span class="ph-label">Foto: Jaelle (da richiedere)</span></div></div>
+    <div class="reveal">
+      <p class="eyebrow">Chi c'è dietro</p>
+      <h2>Uno studio <em>con un nome solo.</em></h2>
+      <p class="sig">Jaelle</p>
+      <p class="muted">Dietro ogni appuntamento c'è lei: Jaelle, titolare dello studio. Le clienti la descrivono solare, preparata, disponibile. Forse è per questo che tornano.</p>
+      <ul class="timeline">
+        <li><b>2019</b><span>Il diploma di estetista, dopo una formazione intensa.</span></li>
+        <li><b>4 gennaio 2021</b><span>Lo studio apre ufficialmente in Via San Gottardo 105, a Minusio.</span></li>
+        <li><b>Oggi</b><span>48 trattamenti e 206 recensioni, tutte con una media di cinque stelle.</span></li>
+      </ul>
+      <div class="todo"><b>Da completare insieme:</b> la tua storia in poche righe (perché hai scelto questo mestiere, cosa ti rende fiera del tuo studio), una tua foto e il link a Instagram, se vuoi metterlo.</div>
+    </div>
+  </div>
+</section>
+
+<!-- REGALO -->
+<section class="regalo">
+  <div class="wrap">
+    <div class="gift reveal">
+      <div>
+        <p class="eyebrow" style="color:#FFD9E6">Buono regalo</p>
+        <h2>Un'ora per sé è <em>il regalo più bello.</em></h2>
+        <p>Una manicure, una pedicure o un trattamento viso, da regalare a chi ami. Il buono si acquista online e arriva subito.</p>
+        <a class="btn" href="https://www.fresha.com/it/a/estetica-jaelle-minusio-via-san-gottardo-105-o7y953yw/gift-cards?menu=true&pId=713094" target="_blank" rel="noopener">Regala un buono</a>
+      </div>
+      <div class="giftcard" aria-hidden="true"><small>Buono regalo</small><span class="sig">Jaelle</span><div><small>Minusio</small><b>per te</b></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VISITA -->
+<section class="sec visita" id="visita">
+  <div class="wrap">
+    <div class="vcard reveal">
+      <div class="has-photo ph" data-foto="facciata"><img class="real" loading="lazy" src="https://images.fresha.com/locations/location-profile-images/713094/5136987/23e54834-1656-4208-bc62-5113145818d8.jpg?class=venue-gallery-large&amp;f_width=1200" alt="Lo studio Estetica Jaelle da fuori" style="object-position:50% 50%"><span class="ph-label">Foto: lo studio da fuori</span></div>
+      <div class="in">
+        <p class="eyebrow">Dove siamo</p>
+        <h3>Via San Gottardo 105, <em>Minusio</em></h3>
+        <ul class="info">
+          <li><span>☏</span><span><a href="tel:+41791555396">079 155 53 96</a> · anche su WhatsApp</span></li>
+          <li><span>◷</span><span>Fuori orario? Chiama: per un appuntamento speciale si trova sempre un momento.</span></li>
+          <li><span>✦</span><span>Raggiungibile con i mezzi pubblici · animali ammessi</span></li>
+        </ul>
+        <div class="ctas2">
+          <a class="btn pink" href="https://www.fresha.com/it/a/estetica-jaelle-minusio-via-san-gottardo-105-o7y953yw" target="_blank" rel="noopener">Prenota online</a>
+          <a class="btn soft" href="https://www.google.com/maps/search/?api=1&query=Estetica+Jaelle+Via+San+Gottardo+105+Minusio" target="_blank" rel="noopener">Indicazioni</a>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="vcard"><div class="in">
+        <p class="eyebrow">Orari</p>
+        <ul class="orari" id="orari">
+          <li data-d="1"><span>Lunedì</span><span>7:30 – 18:00</span></li>
+          <li data-d="2"><span>Martedì</span><span>7:30 – 18:00</span></li>
+          <li data-d="3"><span>Mercoledì</span><span>7:30 – 18:00</span></li>
+          <li data-d="4"><span>Giovedì</span><span>7:30 – 18:00</span></li>
+          <li data-d="5"><span>Venerdì</span><span>7:30 – 12:00</span></li>
+          <li data-d="6"><span>Sabato</span><span class="c">chiuso</span></li>
+          <li data-d="0"><span>Domenica</span><span class="c">chiuso</span></li>
+        </ul>
+        <div class="map"><iframe title="Mappa Estetica Jaelle" loading="lazy" src="https://www.google.com/maps?q=Estetica+Jaelle,+Via+San+Gottardo+105,+6648+Minusio&output=embed"></iframe></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="sig">Jaelle</span>
+    <span>Estetica Jaelle · Via San Gottardo 105 · 6648 Minusio · <a href="tel:+41791555396">079 155 53 96</a></span>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn" href="tel:+41791555396">Chiama</a>
+  <a class="btn wa" href="https://wa.me/41791555396" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  // reveal
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+    els.forEach(function(el){io.observe(el)});
+    var st=document.getElementById('steps');
+    var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){st.classList.add('in');io2.disconnect();}})},{threshold:.35});
+    io2.observe(st);
+  } else {els.forEach(function(el){el.classList.add('in')});document.getElementById('steps').classList.add('in');}
+
+  // aperto adesso (ora di Minusio)
+  var H={1:[450,1080],2:[450,1080],3:[450,1080],4:[450,1080],5:[450,720]};
+  var now=new Date();
+  try{var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Zurich',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(now);
+    var map={};p.forEach(function(x){map[x.type]=x.value});
+    var wd={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[map.weekday];var mins=(+map.hour%24)*60+(+map.minute);}
+  catch(e){wd=now.getDay();mins=now.getHours()*60+now.getMinutes();}
+  var stato=document.getElementById('stato'),dot=document.getElementById('dot'),h=H[wd];
+  function hm(m){return Math.floor(m/60)+':'+('0'+m%60).slice(-2)}
+  if(h&&mins>=h[0]&&mins<h[1]){stato.innerHTML='<b>Aperto adesso</b> · fino alle '+hm(h[1]);}
+  else{dot.classList.add('closed');
+    var t='';if(h&&mins<h[0])t='oggi alle '+hm(h[0]);else{var d=wd;for(var i=1;i<8;i++){d=(wd+i)%7;if(H[d]){t=(i===1?'domani':['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'][d])+' alle '+hm(H[d][0]);break;}}}
+    stato.innerHTML='Chiuso ora · riapre <b>'+t+'</b>';}
+  var g=document.querySelector('#settimana .g[data-d="'+wd+'"]');if(g)g.classList.add('oggi');
+  var li=document.querySelector('#orari li[data-d="'+wd+'"]');if(li)li.classList.add('today');
+
+  // lente
+  var skin=document.getElementById('skin'),zoom=document.getElementById('zoom'),ring=document.getElementById('ring'),out=document.getElementById('trovato');
+  var mks=[].slice.call(zoom.querySelectorAll('.mk')),filt='all';
+  var names={idr:'idratazione',pig:'pigmentazione',cap:'capillari',imp:'impurità',rug:'rughe'};
+  function R(){return ring.offsetWidth/2}
+  function move(x,y){
+    var r=skin.getBoundingClientRect(),lx=x-r.left,ly=y-r.top,rad=R();
+    zoom.style.clipPath='circle('+rad+'px at '+lx+'px '+ly+'px)';
+    ring.style.left=lx+'px';ring.style.top=ly+'px';
+    var seen={};
+    mks.forEach(function(m){if(m.classList.contains('off'))return;var b=m.getBoundingClientRect(),cx=b.left+b.width/2-r.left,cy=b.top+b.height/2-r.top;
+      if(Math.hypot(cx-lx,cy-ly)<rad*.85)seen[m.dataset.k]=1;});
+    var k=Object.keys(seen).map(function(s){return names[s]});
+    out.textContent=k.length?k.join(', '):'pelle sana';
+  }
+  function on(e){skin.classList.add('active');var t=e.touches?e.touches[0]:e;move(t.clientX,t.clientY);if(e.touches)e.preventDefault();}
+  skin.addEventListener('mousemove',on);skin.addEventListener('mouseenter',on);
+  skin.addEventListener('touchstart',on,{passive:false});skin.addEventListener('touchmove',on,{passive:false});
+  skin.addEventListener('mouseleave',function(){skin.classList.remove('active');zoom.style.clipPath='circle(0px at 50% 50%)';});
+  // demo automatica finché nessuno tocca
+  var auto=true,a=0;skin.addEventListener('mouseenter',function(){auto=false});skin.addEventListener('touchstart',function(){auto=false});
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function tick(){if(!auto)return;var r=skin.getBoundingClientRect();if(r.width&&r.top<innerHeight&&r.bottom>0){a+=.012;skin.classList.add('active');move(r.left+r.width*(.5+.3*Math.cos(a)),r.top+r.height*(.48+.26*Math.sin(a*1.6)));}requestAnimationFrame(tick);}
+  if(!reduce)requestAnimationFrame(tick);
+  document.getElementById('filters').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
+    filt=b.dataset.k;[].forEach.call(this.querySelectorAll('button'),function(x){x.setAttribute('aria-pressed',x===b)});
+    mks.forEach(function(m){m.classList.toggle('off',filt!=='all'&&m.dataset.k!==filt)});});
+
+  // listino
+  var tabs=document.getElementById('tabs');
+  function show(p){[].forEach.call(tabs.querySelectorAll('button'),function(b){b.setAttribute('aria-selected',b.dataset.p===p)});
+    [].forEach.call(document.querySelectorAll('.panel'),function(x){x.classList.toggle('on',x.id==='p-'+p)});}
+  tabs.addEventListener('click',function(e){var b=e.target.closest('button');if(b)show(b.dataset.p)});
+  [].forEach.call(document.querySelectorAll('.tcard[data-tab]'),function(c){c.addEventListener('click',function(){if(c.dataset.tab!=='viso')show(c.dataset.tab)})});
+
+  // nastro recensioni senza buchi
+  var belt=document.getElementById('belt');belt.innerHTML+=belt.innerHTML;
+})();
+</script>
+</body>
+</html>
