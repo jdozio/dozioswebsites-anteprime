@@ -20,15 +20,20 @@ https://jdozio.github.io/dozioswebsites-anteprime/estetica-jaelle/
 
 ---
 
-## Elettro-Evolution – Locarno (elettricista) · categoria: SITO SCADENTE
+## Elettro-Evolution – NON CONTATTARE (il suo sito funziona; anteprima rimossa)
 
-> ✅ **VERIFICATA SU MAPS (14.10):** 5,0 su 27 recensioni Google (ultima 4 mesi fa), cellulare +41 76 265 91 46, titolare Miki (dalle recensioni). Sito attuale elettro-evolution.ch su Wix: FUNZIONA (verifica di Jacopo; il mio controllo "esce dallo schermo" era sbagliato, il pannello non riceve la versione mobile di Wix). Punti deboli veri: testi del modello con refusi, link social in fondo che portano alle pagine di Wix, una sola pagina.
-**Indirizzo:** Via Vallemaggia 56A, 6600 Locarno
-**Servizi (vetrina + sito):** picchetto 7/7 24h, eliminazione difetti RaSi, installazione, riparazione e manutenzione, illuminazione, videosorveglianza e allarme, elettrodomestici, preventivo gratuito.
-**Foto:** 6 vere (dal suo sito e dalla scheda Google). Niente foto di persone: squadra "(da richiedere)".
+---
+
+## Pgimpianti elettrici di Giuseppe Pisillo – Verbania (elettricista) · categoria: NESSUN SITO
+
+> ✅ **VERIFICATA SU MAPS (14.10):** 5,0 su 32 recensioni Google (ultima 2 mesi fa), cellulare +39 347 606 3007, nessun sito sulla scheda, nessuna foto, nessun social trovato.
+**Indirizzo:** Via Martiri di Pogallo 35, 28923 Verbania (VB)
+**Orari (Google):** lun–ven 8:00–17:30 · sab 9:00–17:00 · dom chiuso
+**Servizi:** solo quelli citati nelle recensioni (guasti/mancanza corrente, dispersioni, contatore); il resto "da completare insieme".
+**Foto:** nessuna disponibile → tutte "(da richiedere)".
 
 ### Link anteprima
-https://jdozio.github.io/dozioswebsites-anteprime/elettro-evolution/
+https://jdozio.github.io/dozioswebsites-anteprime/pgimpianti-verbania/
 
 ### Numero
-**076 265 91 46** → https://wa.me/41762659146
+**347 606 3007** → https://wa.me/393476063007

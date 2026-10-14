@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Elettro-Evolution · Elettricista a Locarno · Picchetto 7/7 24h</title>
-<meta name="description" content="Elettro-Evolution, impianti elettrici a Locarno. Installazioni, riparazioni, eliminazione difetti RaSi, illuminazione, videosorveglianza e allarmi. Picchetto 7 giorni su 7, 24 ore su 24. Tel. 076 265 91 46.">
+<title>Pgimpianti elettrici · Elettricista a Verbania · Giuseppe Pisillo</title>
+<meta name="description" content="Pgimpianti elettrici di Giuseppe Pisillo, elettricista a Verbania. Guasti, mancanza di corrente, dispersioni, contatori e impianti elettrici. Tel. 347 606 3007.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400;0,62..125,500;0,62..125,700;0,62..125,800;0,62..125,900;1,62..125,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -267,26 +267,74 @@ footer b{color:#fff;font-style:italic}
   .mbar .btn{padding:14px 10px}
   .mbar .wa{background:#1F7A4D}
 }
+
+/* lampadina */
+.plate{justify-self:start!important}
+.moduli.due{grid-template-columns:repeat(2,1fr)}
+.bulbwrap{position:absolute;right:2%;top:0;width:220px;height:100%;z-index:2;pointer-events:none}
+.bulbwrap .cord{position:absolute;left:50%;top:0;width:2px;height:34%;background:#2C3038;transform-origin:top;animation:sway 6s ease-in-out infinite}
+.bulbwrap svg{position:absolute;left:50%;top:34%;width:120px;margin-left:-60px;transform-origin:50% -100%;animation:sway 6s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(1.5deg)}50%{transform:rotate(-1.5deg)}}
+.bulbwrap .glass{fill:#22262E;transition:fill .5s}
+.bulbwrap .fil{stroke:#4A4232;transition:stroke .5s}
+.hero.on .bulbwrap .glass{fill:#FFE7A8}
+.hero.on .bulbwrap .fil{stroke:#FF9A1F}
+.bulbwrap .halo{position:absolute;left:50%;top:calc(34% + 70px);width:900px;height:900px;margin:-450px 0 0 -450px;border-radius:50%;background:radial-gradient(circle,rgba(255,200,74,.38) 0%,rgba(255,200,74,.12) 25%,transparent 60%);opacity:0;transition:opacity 1s}
+.hero.on .bulbwrap .halo{opacity:1}
+.hero .bg{opacity:1!important;background:radial-gradient(80% 70% at 80% 30%,#1A1D23,#0E1014)}
+.hero .bg::after{display:none}
+
+/* salvavita */
+.salva{background:var(--carta2);overflow:hidden}
+.salva .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+.diff{position:relative;width:min(320px,100%);margin:0 auto;background:#F4F2EC;border-radius:14px;padding:26px 26px 30px;box-shadow:0 40px 60px -35px rgba(0,0,0,.45),inset 0 -4px 0 #D8D3C8}
+.diff .brand{display:flex;justify-content:space-between;color:var(--ink2);margin-bottom:18px}
+.diff .lever{position:relative;height:150px;border-radius:10px;background:#E4E0D7;box-shadow:inset 0 2px 6px rgba(0,0,0,.12);margin:0 auto;width:90px}
+.diff .lever i{position:absolute;left:12px;right:12px;height:62px;border-radius:8px;background:var(--rosso);top:12px;box-shadow:0 6px 10px -4px rgba(0,0,0,.4);transition:top .18s cubic-bezier(.5,1.8,.5,1)}
+.diff.trip .lever i{top:76px;background:#3A404B}
+.diff .test{display:block;margin:18px auto 0;width:44px;height:44px;border-radius:50%;background:#2E9E62;box-shadow:inset 0 -3px 0 rgba(0,0,0,.25);border:0}
+.diff .state{text-align:center;margin-top:16px;font-weight:700}
+.diff .state span{color:var(--rosso)}
+.diff .spark{position:absolute;right:30px;top:96px;font-size:30px;color:var(--luce);opacity:0}
+.diff.trip .spark{animation:spark .5s}
+@keyframes spark{0%{opacity:1;transform:scale(.6)}100%{opacity:0;transform:scale(1.6)}}
+.salva ul.why{list-style:none;margin:22px 0 26px}
+.salva ul.why li{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.salva ul.why li b{flex:none;width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:13px}
+
+/* tempi */
+.tempi .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0;padding-top:0;padding-bottom:0}
+.tempi .t{padding:34px 28px;border-right:1px solid rgba(14,16,20,.15)}
+.tempi .t:last-child{border-right:0}
+.tempi .t b{display:block;font:900 clamp(48px,6vw,80px)/.9 'Archivo',sans-serif;font-variation-settings:"wdth" 70}
+.tempi .t b small{font-size:.4em;font-weight:800;margin-left:4px}
+.tempi .t p{font-size:15px;margin-top:10px;font-style:italic}
+.tempi .t span{display:block;font:500 11px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;margin-top:8px;opacity:.7;font-style:normal}
+.ph.light{background:linear-gradient(150deg,#E4DFD5,#D3CCBF)}
+.ph.light .ph-label{background:var(--ink);color:#fff}
+.lavori .grid{grid-template-rows:260px 260px}
+@media (max-width:1000px){.salva .wrap{grid-template-columns:1fr}.tempi .wrap{grid-template-columns:1fr}.tempi .t{border-right:0;border-bottom:1px solid rgba(14,16,20,.15);padding:24px 0}.bulbwrap{right:-10px;opacity:.9}}
+@media (max-width:1000px){.lavori .grid{grid-template-columns:1fr!important;grid-template-rows:none!important;grid-auto-rows:220px}}
+@media (max-width:640px){.moduli.due{grid-template-columns:1fr}.bulbwrap{display:none}.hero h1{font-size:50px}}
 </style>
 </head>
 <body>
 
-<div class="draft"><b>Anteprima di sito preparata per Elettro-Evolution</b> · foto dalla scheda Google e dal sito attuale, testi da completare insieme</div>
+<div class="draft"><b>Anteprima di sito preparata per Pgimpianti elettrici</b> · testi dalle recensioni Google, foto da richiedere e testi da completare insieme</div>
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="Elettro-Evolution">
+    <a class="brand" href="#top" aria-label="Pgimpianti elettrici">
       <svg viewBox="0 0 24 24" fill="none" stroke="#FFC84A" stroke-width="2" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
-      <span class="logo">Elettro-<span>Evolution</span></span>
+      <span class="logo">PG<span>impianti</span></span>
     </a>
     <ul>
       <li><a href="#servizi">Servizi</a></li>
-      <li><a href="#rasi">Difetti RaSi</a></li>
-      <li><a href="#lavori">Lavori</a></li>
+      <li><a href="#salvavita">Il salvavita</a></li>
       <li><a href="#recensioni">Recensioni</a></li>
       <li><a href="#contatti">Contatti</a></li>
     </ul>
-    <a class="btn small" href="tel:+41762659146">076 265 91 46</a>
+    <a class="btn small" href="tel:+393476063007">347 606 3007</a>
   </div>
 </header>
 
@@ -294,18 +342,23 @@ footer b{color:#fff;font-style:italic}
 
 <!-- HERO -->
 <section class="hero" id="hero">
-  <div class="has-photo bg ph" data-foto="hero-luce"><img class="real" loading="eager" src="https://static.wixstatic.com/media/f152dc_181e5cdac83d411ca0f1815e18ab8a9c~mv2.jpg" alt="Corridoio con linee LED a soffitto" style="object-position:50% 40%"><span class="ph-label">Foto: impianto illuminato</span></div>
+  <div class="bg"></div>
+  <div class="bulbwrap" aria-hidden="true">
+    <span class="halo"></span>
+    <span class="cord"></span>
+    <svg viewBox="0 0 120 170"><rect x="44" y="0" width="32" height="26" rx="4" fill="#3A404B"/><rect x="46" y="26" width="28" height="10" fill="#2C3038"/><path class="glass" d="M60 36c-30 0-50 22-50 50 0 20 11 33 22 43 6 6 9 12 9 20h38c0-8 3-14 9-20 11-10 22-23 22-43 0-28-20-50-50-50z"/><path class="fil" d="M48 150V112l6-14 6 14 6-14 6 14v38" fill="none" stroke-width="3" stroke-linejoin="round"/></svg>
+  </div>
   <div class="glow"></div>
   <span class="strip"></span>
   <div class="wrap">
     <div>
-      <span class="mono tag">Impianti elettrici · Locarno · Picchetto 7/7 24h</span>
-      <h1>Si è spenta <br>la luce?<br><em>Ci pensa Miki.</em></h1>
-      <p class="lead">Installazioni, riparazioni ed eliminazione dei difetti RaSi a Locarno e dintorni. E quando qualcosa si guasta di notte o nei giorni festivi, il telefono risponde lo stesso.</p>
-      <div class="stars"><b>★★★★★</b><span>5,0 su 27 recensioni Google</span></div>
+      <span class="mono tag">Impianti elettrici · Verbania</span>
+      <h1>Senza<br>corrente?<br><em>Chiama Giuseppe.</em></h1>
+      <p class="lead">Guasti, contatori, dispersioni e impianti elettrici a Verbania e dintorni. Chi lo ha chiamato racconta che è arrivato in pochi minuti, ha trovato il problema e lo ha risolto.</p>
+      <div class="stars"><b>★★★★★</b><span>5,0 su 32 recensioni Google</span></div>
       <div class="ctas">
-        <a class="btn luce" href="tel:+41762659146"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Chiama ora</a>
-        <a class="btn ghost" href="#serve">Richiedi un preventivo gratuito</a>
+        <a class="btn luce" href="tel:+393476063007"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Chiama ora</a>
+        <a class="btn ghost" href="#serve">Scrivi su WhatsApp</a>
       </div>
     </div>
     <div class="plate">
@@ -319,12 +372,12 @@ footer b{color:#fff;font-style:italic}
   </div>
 </section>
 
-<!-- PICCHETTO -->
-<section class="picchetto">
+<!-- TEMPI -->
+<section class="picchetto tempi">
   <div class="wrap">
-    <div class="big">7/7 · 24H<small>Servizio picchetto</small></div>
-    <p>Un guasto non aspetta il lunedì. Una cliente l'ha scritto così: <q>sempre disponibile sotto ogni punto di vista, anche nei giorni festivi.</q></p>
-    <a class="btn" href="tel:+41762659146">076 265 91 46</a>
+    <div class="t"><b>5<small>MIN</small></b><p>«Subito dopo aver telefonato è arrivato, tempo 5 minuti.»</p><span>Yousra O. · Google</span></div>
+    <div class="t"><b>15<small>MIN</small></b><p>«Ero senza corrente… nel giro di un quarto d'ora è arrivato.»</p><span>Francesco P. · Google</span></div>
+    <div class="t"><b>5,0<small>★</small></b><p>«Gran lavoratore, competente e onesto!»</p><span>32 recensioni Google</span></div>
   </div>
 </section>
 
@@ -332,51 +385,44 @@ footer b{color:#fff;font-style:italic}
 <section class="sec" id="servizi">
   <div class="wrap">
     <div class="head reveal">
-      <div><span class="mono eyebrow">Servizi</span><h2>Il nostro<br>quadro elettrico</h2></div>
-      <p>Dalle case agli uffici, fino ai cantieri. E il preventivo è sempre gratuito. Tocca un interruttore per saperne di più.</p>
+      <div><span class="mono eyebrow">Servizi</span><h2>Il quadro<br>di Giuseppe</h2></div>
+      <p>Dal guasto improvviso all'impianto da rifare. Tocca un interruttore per accenderlo.</p>
     </div>
     <div class="quadro reveal">
-      <div class="rail mono"><span>Elettro-Evolution · Locarno</span><span>6 circuiti</span></div>
-      <div class="moduli" id="moduli">
-        <button class="mod on"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C1 · Impianti</span><h3>Installazione</h3><p>Impianti elettrici residenziali, commerciali e industriali, con materiali di qualità.</p></button>
-        <button class="mod"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C2 · Guasti</span><h3>Riparazione e manutenzione</h3><p>Interventi su guasti e manutenzione programmata, per un impianto sicuro nel tempo.</p></button>
-        <button class="mod"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C3 · Sicurezza</span><h3>Difetti RaSi</h3><p>Eliminazione dei difetti segnalati nel rapporto di sicurezza, per rimettere l'impianto in regola.</p></button>
-        <button class="mod"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C4 · Luce</span><h3>Illuminazione</h3><p>Impianti di illuminazione su misura, come le linee LED a soffitto e le gole luminose.</p></button>
-        <button class="mod"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C5 · Protezione</span><h3>Video&shy;sorveglianza e allarme</h3><p>Impianti di sicurezza e controllo, progettati e installati per la casa o l'attività.</p></button>
-        <button class="mod"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C6 · Casa</span><h3>Elettrodomestici</h3><p>Interventi sugli elettrodomestici di casa.</p></button>
+      <div class="rail mono"><span>Pgimpianti elettrici · Verbania</span><span>4 circuiti</span></div>
+      <div class="moduli due" id="moduli">
+        <button class="mod on"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C1 · Guasti</span><h3>Senza corrente</h3><p>Quando salta tutto, si parte dal problema: trovarlo in fretta e rimettere la luce in casa.</p></button>
+        <button class="mod"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C2 · Ricerca</span><h3>Dispersioni</h3><p>Il salvavita continua a scattare? Si controlla l'impianto punto per punto finché la dispersione salta fuori.</p></button>
+        <button class="mod"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C3 · Contatore</span><h3>Problemi al contatore</h3><p>Uno dei lavori citati più spesso nelle recensioni, risolto «nel giro di pochi minuti».</p></button>
+        <button class="mod"><span class="brk"><i></i></span><span class="lamp"></span><span class="mono lbl">C4 · Impianti</span><h3>Impianti elettrici</h3><p>Realizzazione e manutenzione di impianti elettrici per la casa.</p></button>
       </div>
-      <div class="foot mono"><span>Preventivo gratuito</span><span>Picchetto 7/7 24h</span></div>
+      <div class="foot mono"><span>Lun–Ven 8:00–17:30 · Sab 9:00–17:00</span><span>Verbania e dintorni</span></div>
     </div>
+    <div class="todo reveal"><b>Da completare insieme:</b> l'elenco completo dei lavori che fa (per esempio domotica, citofoni, fotovoltaico, certificazioni) e le zone in cui si sposta.</div>
   </div>
 </section>
 
-<!-- RaSi -->
-<section class="sec rasi" id="rasi">
+<!-- SALVAVITA -->
+<section class="sec salva" id="salvavita">
   <div class="wrap">
     <div class="reveal">
-      <span class="mono eyebrow">Rapporto di sicurezza</span>
-      <h2>Il controllo ha trovato dei difetti?</h2>
-      <div class="letter" id="letter">
-        <span class="mono">Rapporto di sicurezza (RaSi) · difetti da eliminare</span>
-        <h3>Elenco difetti</h3>
-        <ul>
-          <li><span class="x">✕</span>Difetto n. 1</li>
-          <li><span class="x">✕</span>Difetto n. 2</li>
-          <li><span class="x">✕</span>Difetto n. 3</li>
-          <li><span class="x">✕</span>Difetto n. 4</li>
-        </ul>
-        <span class="stamp" id="stamp">ELIMINATI</span>
+      <div class="diff" id="diff">
+        <div class="brand mono"><span>Salvavita</span><span>30 mA</span></div>
+        <div class="lever"><i></i></div>
+        <span class="spark">✦</span>
+        <button class="test" id="rearm" aria-label="Riarma il salvavita"></button>
+        <p class="state" id="state">Acceso</p>
       </div>
     </div>
     <div class="reveal">
-      <p class="voce">«Ho contattato Elettro-Evolution per l'eliminazione di difetti RASI e devo dire che mi sono trovata veramente bene.»<small>MD · recensione Google</small></p>
-      <p style="color:var(--ink2)">Quando il controllo periodico dell'impianto segnala dei difetti, vanno eliminati da un elettricista. È uno dei servizi scritti anche sulla vetrina dell'ufficio.</p>
-      <ol class="passi">
-        <li><div><b>Ci mandi l'elenco dei difetti</b><span>Anche solo una foto del rapporto, su WhatsApp.</span></div></li>
-        <li><div><b>Ricevi un preventivo gratuito</b><span>Chiaro, prima di iniziare qualsiasi lavoro.</span></div></li>
-        <li><div><b>Eliminiamo i difetti</b><span>Lavoro preciso, veloce e pulito.</span></div></li>
-      </ol>
-      <a class="btn" href="https://wa.me/41762659146" target="_blank" rel="noopener">Manda il rapporto su WhatsApp</a>
+      <span class="mono eyebrow">Il salvavita</span>
+      <h2>Continua a scattare?</h2>
+      <p style="color:var(--ink2);margin-top:18px">Prova a riarmarlo qui accanto. Se in casa succede di continuo, di solito c'è una dispersione: un punto dell'impianto, o un elettrodomestico, che perde corrente. Va cercata, con pazienza.</p>
+      <ul class="why">
+        <li><b>1</b><span>«In poco tempo ha ribaltato mezzo impianto per trovare la dispersione.» <em style="color:var(--ink2)">Francesco P.</em></span></li>
+        <li><b>2</b><span>E se il problema è un elettrodomestico, lo dice: «mi ha dato anche i contatti per riparare l'elettrodomestico che mi dava i problemi sulla linea». <em style="color:var(--ink2)">Alessia N.</em></span></li>
+      </ul>
+      <a class="btn" href="tel:+393476063007">Chiama Giuseppe</a>
     </div>
   </div>
 </section>
@@ -385,15 +431,13 @@ footer b{color:#fff;font-style:italic}
 <section class="sec lavori" id="lavori">
   <div class="wrap">
     <div class="head reveal">
-      <div><span class="mono eyebrow" style="color:var(--luce)">Lavori</span><h2>Prima i tubi,<br>poi la luce</h2></div>
-      <p>Dalla posa dei tubi in cantiere alle ultime linee LED in una cucina finita.</p>
+      <div><span class="mono eyebrow" style="color:var(--luce)">Lavori</span><h2>I lavori</h2></div>
+      <p>Qui andranno le foto dei lavori di Giuseppe: quadri elettrici, impianti nuovi, interventi.</p>
     </div>
-    <div class="grid reveal">
-      <figure class="has-photo ph g1" data-foto="corridoio-led"><img class="real" loading="lazy" src="https://static.wixstatic.com/media/f152dc_181e5cdac83d411ca0f1815e18ab8a9c~mv2.jpg" alt="Corridoio con linee LED a soffitto" style="object-position:50% 50%"><span class="ph-label">Foto: corridoio LED</span><figcaption><b>Illuminazione</b> · linee LED a soffitto</figcaption></figure>
-      <figure class="has-photo ph" data-foto="cantiere-tubi"><img class="real" loading="lazy" src="https://static.wixstatic.com/media/f152dc_5a94cbece5ab4945a0530b4f27ce537a~mv2.jpg" alt="Tubi elettrici posati in cantiere" style="object-position:50% 60%"><span class="ph-label">Foto: cantiere</span><figcaption><b>Cantiere</b> · tubi pronti per il getto</figcaption></figure>
-      <figure class="has-photo ph" data-foto="gola-led"><img class="real" loading="lazy" src="https://static.wixstatic.com/media/f152dc_6ca2653eeaca4eae8c963fbe7dab53ec~mv2.jpg" alt="Locale con gola luminosa LED" style="object-position:50% 40%"><span class="ph-label">Foto: gola luminosa</span><figcaption><b>Illuminazione</b> · gola luminosa</figcaption></figure>
-      <figure class="has-photo ph" data-foto="furgone"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RRbUr5bjS4qSA4D6NyLEOU-HVjf165KZbvullDvtOwN1Wx5SyukdouJBUNsKk_fogz-jk45GShmGN9IAW2GOPuxmmkZAudVuCefr8LGoaXf9ziobCyzpzSHyZgv26HU_5YpFqy=s1400" alt="Il furgone Elettro-Evolution" style="object-position:30% 50%"><span class="ph-label">Foto: furgone</span><figcaption><b>Sempre in giro</b> · il furgone</figcaption></figure>
-      <figure class="has-photo ph" data-foto="ufficio"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SwSVQEo0H71ntfZky-l5gC7bLvnxXYx647b5-Sbb2qfJ7qL4Y9B45IRHp2zjuMc34YNUAi5JMofbA_K23QBwyk0xN_393i47DMeUTlX6F357SEHiQ6nWF7fkmhcxPIuoM7u7hH=s1400" alt="L'ufficio in Via Vallemaggia 56A" style="object-position:50% 45%"><span class="ph-label">Foto: ufficio</span><figcaption><b>L'ufficio</b> · Via Vallemaggia 56A</figcaption></figure>
+    <div class="grid reveal" style="grid-template-columns:repeat(3,1fr);grid-template-rows:280px">
+      <figure class="ph" data-foto="lavoro-1"><span class="ph-label">Foto: quadro elettrico (da richiedere)</span></figure>
+      <figure class="ph" data-foto="lavoro-2"><span class="ph-label">Foto: impianto (da richiedere)</span></figure>
+      <figure class="ph" data-foto="lavoro-3"><span class="ph-label">Foto: lavoro finito (da richiedere)</span></figure>
     </div>
   </div>
 </section>
@@ -402,31 +446,30 @@ footer b{color:#fff;font-style:italic}
 <section class="sec serve" id="serve">
   <div class="wrap">
     <div class="head reveal">
-      <div><span class="mono eyebrow">Preventivo gratuito</span><h2>Di cosa<br>hai bisogno?</h2></div>
-      <p>Tre tocchi e il messaggio per Miki è già scritto. Nessun modulo da compilare.</p>
+      <div><span class="mono eyebrow">WhatsApp</span><h2>Di cosa<br>hai bisogno?</h2></div>
+      <p>Tre tocchi e il messaggio per Giuseppe è già scritto. Nessun modulo da compilare.</p>
     </div>
     <div class="box reveal">
       <div class="q">
         <h3>Che cosa</h3>
         <div class="opts" data-g="cosa">
-          <button aria-pressed="true">un guasto urgente</button>
-          <button aria-pressed="false">l'eliminazione dei difetti RaSi</button>
-          <button aria-pressed="false">un nuovo impianto</button>
-          <button aria-pressed="false">l'illuminazione</button>
-          <button aria-pressed="false">videosorveglianza o allarme</button>
-          <button aria-pressed="false">un elettrodomestico</button>
+          <button aria-pressed="true">sono senza corrente</button>
+          <button aria-pressed="false">il salvavita continua a scattare</button>
+          <button aria-pressed="false">ho un problema al contatore</button>
+          <button aria-pressed="false">vorrei rifare l'impianto</button>
+          <button aria-pressed="false">mi serve un preventivo</button>
         </div>
         <h3>Quando</h3>
         <div class="opts" data-g="quando">
           <button aria-pressed="true">il prima possibile</button>
-          <button aria-pressed="false">entro qualche settimana</button>
+          <button aria-pressed="false">in settimana</button>
           <button aria-pressed="false">da pianificare</button>
         </div>
         <h3>Dove</h3>
-        <input id="dove" placeholder="Es. Muralto, Minusio, Ascona…" autocomplete="off">
+        <input id="dove" placeholder="Es. Intra, Pallanza, Suna…" autocomplete="off">
       </div>
       <div class="phone">
-        <div class="top"><i>E</i><div>Elettro-Evolution<small>076 265 91 46</small></div></div>
+        <div class="top"><i>PG</i><div>Giuseppe · Pgimpianti<small>347 606 3007</small></div></div>
         <div class="bubble" id="bubble"></div>
         <div><span class="demo">Dimostrazione</span></div>
         <p class="note">Nel sito vero il pulsante apre WhatsApp con questo messaggio già scritto, pronto da inviare.</p>
@@ -439,16 +482,16 @@ footer b{color:#fff;font-style:italic}
 <section class="sec rec" id="recensioni">
   <div class="wrap">
     <div class="top reveal">
-      <div class="score"><b>5,0</b><div class="s">★★★★★</div><small>27 recensioni Google</small></div>
+      <div class="score"><b>5,0</b><div class="s">★★★★★</div><small>32 recensioni Google</small></div>
       <div>
-        <blockquote>«Servizio impeccabile e grande professionalità. Lavoro eseguito in modo <mark>preciso, veloce e pulito.</mark>»</blockquote>
-        <cite>Angelco S. · Google</cite>
+        <blockquote>«Dovessi consigliare un elettricista a qualcuno, consiglierei <mark>senza ombra di dubbio sempre e solo Giuseppe!</mark>»</blockquote>
+        <cite>Recensione Google</cite>
       </div>
     </div>
     <div class="cards">
-      <div class="card reveal"><p>«È stato professionale, puntuale e molto competente. Ha risolto tutti i problemi con velocità e precisione.»</p><span>El Mahdi M. · Google</span></div>
-      <div class="card reveal"><p>«Ho avuto il piacere di conoscere Miki, il proprietario della ditta Elettroevolution. Cordiale e onesto.»</p><span>Christine B. · Google</span></div>
-      <div class="card reveal"><p>«Azienda seria e professionale, sempre disponibile sotto ogni punto di vista, anche nei giorni festivi.»</p><span>Monica C. · Google</span></div>
+      <div class="card reveal"><p>«È riuscito a venire in tarda giornata nonostante fosse molto impegnato. Mi ha risolto il problema del contatore praticamente subito.»</p><span>Alessia N. · Google · 2 mesi fa</span></div>
+      <div class="card reveal"><p>«Ottimo rapporto qualità prezzo ed è un operaio gentile e disponibile. Ve lo consiglio.»</p><span>Yousra O. · Google</span></div>
+      <div class="card reveal"><p>«Oltre ad essere bravissimo nel suo lavoro, è una persona sempre disponibile ed onesta, tutte qualità difficili da trovare oggi.»</p><span>Recensione Google</span></div>
     </div>
   </div>
 </section>
@@ -456,13 +499,12 @@ footer b{color:#fff;font-style:italic}
 <!-- CHI -->
 <section class="sec chi" style="padding-top:0">
   <div class="wrap">
-    <div class="reveal"><div class="ph" data-foto="squadra"><span class="ph-label">Foto: Miki e la squadra (da richiedere)</span></div></div>
+    <div class="reveal"><div class="ph light" data-foto="giuseppe"><span class="ph-label">Foto: Giuseppe (da richiedere)</span></div></div>
     <div class="reveal">
-      <span class="mono eyebrow">Chi siamo</span>
-      <p class="claim">Affidabilità <span>e</span> onestà.</p>
-      <p>Due parole che Elettro-Evolution si è scelta, e che i clienti ripetono nelle recensioni: «cordiale e onesto», «affidabile e competente».</p>
-      <p>Dall'ufficio di Via Vallemaggia al cantiere, una squadra di professionisti che spiega cosa sta facendo e risponde a ogni domanda.</p>
-      <div class="todo"><b>Da completare insieme:</b> la storia della ditta (da quando esiste, quante persone ci lavorano), le zone in cui lavorate e una foto della squadra.</div>
+      <span class="mono eyebrow">Chi sono</span>
+      <p class="claim">Competente <span>e</span> onesto.</p>
+      <p>Pgimpianti elettrici è Giuseppe Pisillo, elettricista a Verbania. Nelle recensioni tornano sempre le stesse parole: gran lavoratore, disponibile, onesto. E un'altra cosa: quando lo chiami, arriva.</p>
+      <div class="todo"><b>Da completare insieme:</b> da quanti anni fa questo lavoro, come ha cominciato, se lavora da solo o con una squadra.</div>
     </div>
   </div>
 </section>
@@ -472,19 +514,18 @@ footer b{color:#fff;font-style:italic}
   <div class="wrap">
     <div class="reveal">
       <span class="mono eyebrow" style="color:var(--luce)">Contatti</span>
-      <h2>Una chiamata,<br>e arriviamo</h2>
+      <h2>Una chiamata,<br>e arriva</h2>
       <ul class="kv">
-        <li><span class="mono">Telefono</span><a href="tel:+41762659146">076 265 91 46</a></li>
-        <li><span class="mono">Picchetto</span><span>7 giorni su 7, 24 ore su 24</span></li>
-        <li><span class="mono">Ufficio</span><span>Via Vallemaggia 56A, 6600 Locarno</span></li>
-        <li><span class="mono">Preventivo</span><span>Gratuito</span></li>
+        <li><span class="mono">Telefono</span><a href="tel:+393476063007">347 606 3007</a></li>
+        <li><span class="mono">Orari</span><span>Lunedì–venerdì 8:00–17:30<br>Sabato 9:00–17:00 · domenica chiuso</span></li>
+        <li><span class="mono">Indirizzo</span><span>Via Martiri di Pogallo 35, 28923 Verbania</span></li>
       </ul>
       <div class="ctas2">
-        <a class="btn luce" href="tel:+41762659146">Chiama</a>
-        <a class="btn ghost" href="https://wa.me/41762659146" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn luce" href="tel:+393476063007">Chiama</a>
+        <a class="btn ghost" href="https://wa.me/393476063007" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
-    <div class="map reveal"><iframe title="Mappa Elettro-Evolution" loading="lazy" src="https://www.google.com/maps?q=Elettro-Evolution,+Via+Vallemaggia+56A,+6600+Locarno&output=embed"></iframe></div>
+    <div class="map reveal"><iframe title="Mappa Pgimpianti elettrici" loading="lazy" src="https://www.google.com/maps?q=Via+Martiri+di+Pogallo+35,+28923+Verbania&output=embed"></iframe></div>
   </div>
 </section>
 
@@ -492,47 +533,45 @@ footer b{color:#fff;font-style:italic}
 
 <footer>
   <div class="wrap">
-    <span><b>Elettro-Evolution</b> · Impianti elettrici · Via Vallemaggia 56A, 6600 Locarno</span>
-    <a href="tel:+41762659146">076 265 91 46</a>
+    <span><b>Pgimpianti elettrici</b> di Giuseppe Pisillo · Via Martiri di Pogallo 35, 28923 Verbania</span>
+    <a href="tel:+393476063007">347 606 3007</a>
   </div>
 </footer>
 
 <div class="mbar">
-  <a class="btn" href="tel:+41762659146">Chiama</a>
-  <a class="btn wa" href="https://wa.me/41762659146" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn" href="tel:+393476063007">Chiama</a>
+  <a class="btn wa" href="https://wa.me/393476063007" target="_blank" rel="noopener">WhatsApp</a>
 </div>
 
 <script>
 (function(){
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  // reveal
   var els=document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
     els.forEach(function(el){io.observe(el)});
   } else els.forEach(function(el){el.classList.add('in')});
 
-  // interruttore
+  // interruttore e lampadina
   var hero=document.getElementById('hero'),sw=document.getElementById('sw'),auto;
   function set(on){hero.classList.toggle('on',on);sw.setAttribute('aria-pressed',on);sw.setAttribute('aria-label',on?'Spegni la luce':'Accendi la luce');}
   sw.addEventListener('click',function(){clearTimeout(auto);set(!hero.classList.contains('on'));});
   if(reduce)set(true);else auto=setTimeout(function(){set(true)},2600);
 
   // quadro
-  var mods=document.querySelectorAll('.mod');
-  mods.forEach(function(m){m.addEventListener('click',function(){m.classList.toggle('on')})});
+  document.querySelectorAll('.mod').forEach(function(m){m.addEventListener('click',function(){m.classList.toggle('on')})});
 
-  // RaSi: i difetti si spuntano
-  var letter=document.getElementById('letter'),items=letter.querySelectorAll('li'),stamp=document.getElementById('stamp');
-  function play(){items.forEach(function(li,i){setTimeout(function(){li.classList.add('ok');li.querySelector('.x').textContent='✓'},500+i*450)});setTimeout(function(){stamp.classList.add('in')},500+items.length*450+200);}
-  if(reduce||!('IntersectionObserver' in window)){items.forEach(function(li){li.classList.add('ok');li.querySelector('.x').textContent='✓'});stamp.classList.add('in');}
-  else{var io3=new IntersectionObserver(function(es){if(es[0].isIntersecting){play();io3.disconnect();}},{threshold:.5});io3.observe(letter);}
+  // salvavita che scatta
+  var diff=document.getElementById('diff'),rearm=document.getElementById('rearm'),state=document.getElementById('state'),n=0,tm;
+  function trip(){diff.classList.add('trip');state.innerHTML='<span>Scattato</span>';}
+  rearm.addEventListener('click',function(){clearTimeout(tm);diff.classList.remove('trip');state.textContent='Acceso';n++;
+    tm=setTimeout(function(){trip();if(n>=2)state.innerHTML='<span>Scattato di nuovo.</span> Probabile dispersione: chiama Giuseppe.';},n>=2?900:1400);});
+  if(!reduce&&'IntersectionObserver' in window){var io3=new IntersectionObserver(function(es){if(es[0].isIntersecting){setTimeout(trip,900);io3.disconnect();}},{threshold:.6});io3.observe(diff);}
 
   // messaggio WhatsApp (dimostrazione)
-  var sel={cosa:'un guasto urgente',quando:'il prima possibile'},dove=document.getElementById('dove'),bubble=document.getElementById('bubble');
+  var sel={cosa:'sono senza corrente',quando:'il prima possibile'},dove=document.getElementById('dove'),bubble=document.getElementById('bubble');
   function render(){var d=dove.value.trim();
-    bubble.textContent='Buongiorno, avrei bisogno di '+sel.cosa+(d?' a '+d:'')+'.\nTempi: '+sel.quando+'.\nPotete darmi un preventivo? Grazie!';}
+    bubble.textContent='Buongiorno Giuseppe, '+sel.cosa+(d?' (zona '+d+')':'')+'.\nQuando: '+sel.quando+'.\nPuò aiutarmi? Grazie!';}
   document.querySelectorAll('.opts').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
     g.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});sel[g.dataset.g]=b.textContent;render();})});
   dove.addEventListener('input',render);render();
