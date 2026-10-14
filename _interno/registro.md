@@ -15,7 +15,7 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 - Calzerotti Food Truck | Via Dott. G. Varesi 1, Locarno | food truck | RIFIUTATO 14.10 (non vuole crescere né un sito), anteprima rimossa | 2026-10-14 | NON ricontattare
 - Trattoria da Elia e Ugo | Via F. Cavallotti 29, Luino (VA) | trattoria | anteprima fatta, verificata su Maps 14.10, foto inserite | 2026-10-14 | /trattoria-elia-e-ugo/
 - Estetica Jaelle | Via San Gottardo 105, Minusio | estetista/unghie | anteprima fatta di giorno, verificata su Maps (5,0/18 Google, 5,0/206 Fresha, sito = solo link Fresha), foto inserite | 2026-10-14 | /estetica-jaelle/ · categoria: solo prenotazione
-- Elettro-Evolution (titolare Miki) | Via Vallemaggia 56A, Locarno | elettricista | anteprima fatta 14.10, verificata su Maps (5,0/27, ultima rec. 4 mesi fa), foto inserite | 2026-10-14 | /elettro-evolution/ · categoria: sito scadente (Wix, da telefono esce dallo schermo, link social del template Wix)
+- Elettro-Evolution (titolare Miki) | Via Vallemaggia 56A, Locarno | elettricista | anteprima fatta 14.10, verificata su Maps (5,0/27, ultima rec. 4 mesi fa), foto inserite | 2026-10-14 | /elettro-evolution/ · categoria: sito discreto (Wix con dominio, funziona; testi del modello e link social di Wix) · Jacopo lo trova buono: da decidere se mandare
 
 ## Valutate e scartate
 - Grotto Tradizionale | Ticino | ristorante | ha già un sito

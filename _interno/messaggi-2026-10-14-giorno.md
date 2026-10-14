@@ -22,7 +22,7 @@ https://jdozio.github.io/dozioswebsites-anteprime/estetica-jaelle/
 
 ## Elettro-Evolution – Locarno (elettricista) · categoria: SITO SCADENTE
 
-> ✅ **VERIFICATA SU MAPS (14.10):** 5,0 su 27 recensioni Google (ultima 4 mesi fa), cellulare +41 76 265 91 46, titolare Miki (dalle recensioni). Sito attuale elettro-evolution.ch su Wix: da telefono la pagina è larga più del doppio dello schermo (il titolo esce a destra), testi del modello con refusi, in fondo i link social portano alle pagine di Wix, non alle sue.
+> ✅ **VERIFICATA SU MAPS (14.10):** 5,0 su 27 recensioni Google (ultima 4 mesi fa), cellulare +41 76 265 91 46, titolare Miki (dalle recensioni). Sito attuale elettro-evolution.ch su Wix: FUNZIONA (verifica di Jacopo; il mio controllo "esce dallo schermo" era sbagliato, il pannello non riceve la versione mobile di Wix). Punti deboli veri: testi del modello con refusi, link social in fondo che portano alle pagine di Wix, una sola pagina.
 **Indirizzo:** Via Vallemaggia 56A, 6600 Locarno
 **Servizi (vetrina + sito):** picchetto 7/7 24h, eliminazione difetti RaSi, installazione, riparazione e manutenzione, illuminazione, videosorveglianza e allarme, elettrodomestici, preventivo gratuito.
 **Foto:** 6 vere (dal suo sito e dalla scheda Google). Niente foto di persone: squadra "(da richiedere)".

@@ -53,7 +53,10 @@ Le attività affermate con tantissime recensioni e senza sito spesso NON voglion
    Esempi: dominio scaduto, sito che non si apre o va in errore, illeggibile da telefono,
    fermo da anni (© vecchio, notizie vecchie), fatto con strumenti gratuiti (Google Sites,
    Strikingly, sitefree, digitalone, Wix gratuito con banner). Nel messaggio il problema si
-   nomina con tatto, senza criticare: "dal telefono il Suo sito non si legge bene, guardi come potrebbe essere".
+   nomina con tatto, senza criticare. ATTENZIONE: per dire che un sito "non si vede bene da telefono"
+   non basta restringere la finestra del browser (Wix, Squarespace ecc. hanno una versione mobile
+   separata che arriva solo ai telefoni veri): o lo verifichi con un vero user-agent mobile, o non lo scrivi.
+   Esempio di frase: "dal telefono il Suo sito non si legge bene, guardi come potrebbe essere".
 2. **Attività nuove** (aperte da meno di ~2 anni), voto alto anche con poche recensioni (≥ 5, recenti),
    con segni di voglia di crescere: Instagram attivo, foto caricate dal titolare, risposte alle
    recensioni, prenotazione online. Meno materiale non è un problema: le foto si chiedono
