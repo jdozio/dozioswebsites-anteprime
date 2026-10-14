@@ -37,3 +37,18 @@ https://jdozio.github.io/dozioswebsites-anteprime/pgimpianti-verbania/
 
 ### Numero
 **347 606 3007** (cellulare, NON ha WhatsApp → mandare SMS)
+
+---
+
+## G.S. Manutenzioni di Gaggi Stefano – Gravedona ed Uniti (CO) · categoria: NESSUN SITO
+
+> ✅ **VERIFICATA SU MAPS (14.10):** 5,0 su 9 recensioni Google (ultima 6 mesi fa), cellulare +39 348 874 1279, aperto 24 ore su 24, nessun sito, nessuna foto. **WhatsApp confermato:** una recensione dice che lo hanno contattato su WhatsApp senza corrente.
+**Indirizzo:** Via Martesana 11, 22015 Gravedona ed Uniti (CO)
+**Servizi (dalle recensioni):** guasti, prese, cancelli automatici, riparazione elettrodomestici con ritiro a casa.
+**Foto:** sfondo = Gravedona di sera (Wikimedia, LauraPiatti, CC BY-SA 4.0); lavori e ritratto "(da richiedere)".
+
+### Link anteprima
+https://jdozio.github.io/dozioswebsites-anteprime/gs-manutenzioni-gravedona/
+
+### Numero
+**348 874 1279** → https://wa.me/393488741279
