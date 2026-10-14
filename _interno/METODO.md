@@ -76,7 +76,7 @@ Le attività affermate con tantissime recensioni e senza sito spesso NON voglion
   segna l'attività come **"DA CONTROLLARE SU MAPS"** nel file messaggi.
 - **Recensioni buone**: idealmente ≥ 4,6 stelle e un numero di recensioni sensato (≥ ~10; per attività nuove bastano ≥ 5),
   con recensioni **recenti** (non ferma da anni). Scarta attività che sembrano chiuse o inattive.
-- **Cellulare** (per WhatsApp). In Svizzera: 076/077/078/079. In Italia: 3xx. Se c'è solo un fisso,
+- **Cellulare** (per WhatsApp; se poi risulta senza WhatsApp si manda lo stesso messaggio via SMS, e nel sito i pulsanti WhatsApp diventano SMS). In Svizzera: 076/077/078/079. In Italia: 3xx. Se c'è solo un fisso,
   scarta a meno che non ci sia un'altra via chiara (Instagram attivo) e segnalalo.
 - **Non già presente in `_interno/registro.md`** (né contattata né scartata). Controlla SEMPRE il registro.
 - **Materiale vero**: recensioni, servizi, orari, indirizzo reali. Mai inventare.

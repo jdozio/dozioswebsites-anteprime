@@ -36,4 +36,4 @@ https://jdozio.github.io/dozioswebsites-anteprime/estetica-jaelle/
 https://jdozio.github.io/dozioswebsites-anteprime/pgimpianti-verbania/
 
 ### Numero
-**347 606 3007** → https://wa.me/393476063007
+**347 606 3007** (cellulare, NON ha WhatsApp → mandare SMS)
