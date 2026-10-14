@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trattoria da Elia e Ugo · Luino</title>
+<meta name="description" content="Trattoria da Elia e Ugo, Via Felice Cavallotti 29, Luino. Cucina di terra e di mare, pasta fatta in casa, pochi posti: meglio prenotare. Tel. 324 843 1253.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
+<style>
+:root{
+  --lino:#F5EEE1; --lino2:#ECE2CF; --vino:#7A1F2B; --vino2:#9C2F3C; --lago:#1E4A60; --lago2:#2F6A86;
+  --oliva:#6B7738; --ink:#2A211C; --ink2:#6E6157; --line:#DCCFB8; --carta:#FFFCF6; --oro:#C99A3E;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:72px}
+body{background:var(--lino);color:var(--ink);font:400 17px/1.65 'Figtree',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Gloock',Georgia,serif;font-weight:400;line-height:1.04;letter-spacing:-.005em}
+h1 em,h2 em{font-style:italic;color:var(--vino)}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--vino)}
+.hand{font-family:'Reenie Beanie',cursive;font-weight:400}
+
+/* tovaglia */
+.tovaglia{background-color:var(--carta);background-image:linear-gradient(90deg,rgba(122,31,43,.07) 50%,transparent 50%),linear-gradient(rgba(122,31,43,.07) 50%,transparent 50%);background-size:44px 44px}
+
+.draft{background:var(--ink);color:#E9DECB;font-size:13px;text-align:center;padding:8px 16px;line-height:1.45}
+.draft b{color:#fff}
+
+header{position:sticky;top:0;z-index:30;background:rgba(245,238,225,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.brand{text-decoration:none;line-height:1.05}
+.brand b{font-family:'Gloock',serif;font-weight:400;font-size:22px;display:block}
+.brand small{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink2)}
+.nav ul{display:flex;gap:26px;list-style:none;font-size:15px;font-weight:500}
+.nav ul a{text-decoration:none}
+.nav ul a:hover{color:var(--vino)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--vino);color:#fff;text-decoration:none;font:600 15px/1 'Figtree',sans-serif;padding:15px 24px;border-radius:999px;border:0;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{background:var(--vino2);transform:translateY(-1px)}
+.btn.line{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px currentColor}
+.btn.lago{background:var(--lago)}
+.btn.small{padding:11px 18px;font-size:14px}
+
+/* HERO */
+.hero{position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;min-height:min(84vh,720px);padding-top:50px;padding-bottom:70px}
+.hero h1{font-size:clamp(46px,5.6vw,84px);margin:18px 0 22px}
+.hero h1 span{display:block}
+.hero .who{font-size:15px;color:var(--ink2)}
+.hero .who b{color:var(--ink)}
+.hero .lead{font-size:19px;max-width:28em;margin-top:22px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.score{display:flex;gap:22px;margin-top:30px;flex-wrap:wrap}
+.score div{border-left:2px solid var(--vino);padding-left:12px;font-size:14px;color:var(--ink2);line-height:1.3}
+.score b{display:block;font-family:'Gloock',serif;font-weight:400;font-size:28px;color:var(--ink)}
+.stamp{position:absolute;right:6%;top:30px;transform:rotate(8deg);border:3px solid var(--vino);color:var(--vino);border-radius:10px;padding:8px 14px;font-family:'Gloock',serif;font-size:24px;letter-spacing:.04em;opacity:.85;background:rgba(255,252,246,.7)}
+.stamp small{display:block;font-family:'Figtree',sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;text-align:center}
+
+.sala{position:relative;border-radius:22px;padding:22px;box-shadow:0 40px 60px -40px rgba(42,33,28,.6);border:1px solid var(--line)}
+.sala svg{display:block;width:100%;height:auto}
+.sala .cap{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:12px;font-size:14px;color:var(--ink2)}
+.sala .cap .hand{font-size:28px;color:var(--vino);line-height:1}
+.plate{opacity:0;transform-box:fill-box;transform-origin:center;animation:serve .55s cubic-bezier(.3,1.5,.5,1) forwards}
+@keyframes serve{from{opacity:0;transform:scale(.3)}to{opacity:1;transform:scale(1)}}
+.steam{opacity:0;animation:steam 2.6s ease-in-out infinite}
+@keyframes steam{0%{opacity:0;transform:translateY(4px)}40%{opacity:.7}100%{opacity:0;transform:translateY(-10px)}}
+@media (prefers-reduced-motion:reduce){.plate{animation:none;opacity:1}.steam{animation:none;opacity:.5}}
+
+/* strip */
+.strip{background:var(--lago);color:#E3EEF3;padding:22px 0;position:relative}
+.strip .wrap{display:flex;justify-content:space-around;gap:20px;flex-wrap:wrap;text-align:center}
+.strip span{font-family:'Gloock',serif;font-size:21px}
+.strip i{font-style:normal;opacity:.5}
+.wave{display:block;width:100%;height:18px;color:var(--lago)}
+
+/* menu */
+.menu{padding:100px 0}
+.menu-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.menu h2{font-size:clamp(38px,4.4vw,62px);margin:12px 0 18px}
+.menu p.sub{color:var(--ink2);margin-bottom:14px}
+.foglio{position:relative;background:var(--carta);border-radius:6px;padding:40px 44px 36px;box-shadow:0 30px 50px -34px rgba(42,33,28,.6);transform:rotate(-.6deg)}
+.foglio::before{content:"";position:absolute;left:30px;right:30px;top:-12px;height:24px;background:rgba(201,154,62,.35);transform:rotate(1deg)}
+.foglio h3{font-size:30px;text-align:center}
+.foglio .date{text-align:center;font-family:'Reenie Beanie',cursive;font-size:26px;color:var(--ink2);margin-bottom:18px}
+.foglio .sez{font-family:'Reenie Beanie',cursive;font-size:32px;color:var(--vino);margin:16px 0 4px;display:flex;align-items:center;gap:10px}
+.foglio .sez::after{content:"";flex:1;height:1px;background:var(--line)}
+.foglio ul{list-style:none}
+.foglio li{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:7px 0;font-size:17px}
+.foglio li::after{content:"";order:1;flex:1;border-bottom:1px dotted #BFAF95;transform:translateY(-4px)}
+.foglio li span:first-child{order:0}
+.foglio li span:last-child{order:2;font-size:13px;font-style:italic;color:#A8977E;white-space:nowrap}
+.foglio .fonte{font-size:13px;color:var(--ink2);margin-top:18px}
+.todo{border:1.5px dashed var(--vino);border-radius:12px;padding:15px 18px;font-size:15px;color:var(--ink2);margin-top:24px;background:rgba(255,252,246,.8)}
+.todo b{color:var(--vino)}
+.pasta{margin-top:26px;background:var(--lino2);border-radius:16px;padding:22px 24px}
+.pasta q{font-family:'Gloock',serif;font-size:22px;line-height:1.3;quotes:"«" "»"}
+.pasta small{display:block;font-size:13px;color:var(--ink2);margin-top:8px}
+
+/* foto */
+.foto{padding:0 0 100px}
+.fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:220px 220px;gap:14px}
+.ph{position:relative;border-radius:16px;overflow:hidden;background:linear-gradient(150deg,#D8C6A6,#B99B73)}
+.ph::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.25),transparent 60%)}
+.ph .lab{position:absolute;left:12px;bottom:12px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:rgba(42,33,28,.8);color:#F5EEE1;padding:6px 10px;border-radius:999px}
+.f1{grid-row:span 2;background:linear-gradient(160deg,#9C2F3C,#5E1620)}
+.f2{background:linear-gradient(160deg,#2F6A86,#1E4A60)}
+.f4{background:linear-gradient(160deg,#8A9550,#5A6430)}
+
+/* prenota */
+.prenota{padding:100px 0}
+.pr-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:start}
+.prenota h2{font-size:clamp(38px,4.4vw,60px);margin:12px 0 18px}
+.prenota p{color:var(--ink2);margin-bottom:14px}
+.demo{display:inline-block;background:var(--vino);color:#fff;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:5px 10px;border-radius:4px}
+.booking{background:var(--carta);border:1px solid var(--line);border-radius:20px;padding:26px}
+.ppl{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.ppl button{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--ink);background:none;font:600 22px/1 'Figtree',sans-serif;cursor:pointer}
+.ppl output{font-family:'Gloock',serif;font-size:40px;min-width:40px;text-align:center}
+.ppl span{color:var(--ink2)}
+.room{border-radius:14px;padding:12px;background:var(--lino2)}
+.room svg{display:block;width:100%;height:auto}
+.chair{fill:#CDBEA3;transition:fill .3s,transform .3s;transform-box:fill-box;transform-origin:center}
+.chair.on{fill:var(--vino);transform:scale(1.18)}
+.tbl{fill:var(--carta);stroke:#BFAF95;stroke-width:1.5}
+.tbl.on{stroke:var(--vino);stroke-width:2.5}
+.bf{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:16px}
+.booking label{display:block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);margin-bottom:5px}
+.booking input,.booking select{width:100%;border:1px solid var(--line);border-radius:10px;padding:11px;font:400 16px 'Figtree',sans-serif;background:#fff}
+.form-note{font-size:13px;color:var(--ink2);margin-top:12px}
+.biglietto{display:none;margin-top:18px;background:#fff;border-radius:12px;padding:18px 20px;border-left:5px solid var(--vino);box-shadow:0 14px 30px -22px rgba(0,0,0,.5)}
+.biglietto.on{display:block;animation:in .45s ease}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.biglietto .hand{font-size:32px;line-height:1.1;color:var(--ink)}
+.biglietto small{display:block;color:var(--ink2);font-size:13px;margin-top:6px}
+
+/* recensioni */
+.rec{background:var(--vino);color:#F6E9E3;padding:100px 0}
+.rec .eyebrow{color:#F0C27A}
+.rec h2{font-size:clamp(38px,4.4vw,62px);margin:12px 0 40px;color:#fff}
+.rec h2 em{color:#F0C27A}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rv{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:24px 22px}
+.rv q{display:block;font-family:'Gloock',serif;font-size:21px;line-height:1.35;quotes:"«" "»"}
+.rv.big{grid-column:span 2;background:var(--carta);color:var(--ink)}
+.rv.big q{font-size:clamp(28px,3vw,40px);line-height:1.15}
+.rgrid .rv:last-child{grid-column:span 2}
+.rv .w{margin-top:14px;font-size:13px;opacity:.75}
+.rnote{font-size:13px;margin-top:22px;opacity:.75}
+
+/* chi */
+.chi{padding:100px 0}
+.chi-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.duo .ph{aspect-ratio:3/4}
+.duo .ph:last-child{transform:translateY(34px)}
+.chi h2{font-size:clamp(36px,4.2vw,58px);margin:12px 0 20px}
+.chi p{margin-bottom:14px;color:var(--ink2)}
+.chi p b{color:var(--ink);font-weight:600}
+
+/* dove */
+.dove{padding:100px 0 110px;background:var(--lino2)}
+.dv-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:44px}
+.dove h2{font-size:clamp(38px,4.4vw,60px);margin:12px 0 22px}
+.orari{list-style:none;margin-bottom:20px}
+.orari li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.orari li.today{font-weight:700}
+.orari li.today span:first-child::after{content:" · oggi";color:var(--vino);font-weight:400}
+.orari .closed{color:#A8977E}
+.addr{font-size:17px;margin:6px 0}
+.addr a{text-decoration:none;border-bottom:1.5px solid var(--vino)}
+.dove .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.map{border-radius:20px;overflow:hidden;border:1px solid var(--line);min-height:380px}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+footer{background:var(--lago);color:#BCD2DC;padding:44px 0 120px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer b{font-family:'Gloock',serif;font-weight:400;font-size:22px;color:#fff;display:block;margin-bottom:4px}
+
+.mbar{display:none}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .75s ease,transform .75s ease}
+.reveal.in{opacity:1;transform:none}
+.foglio.reveal.in{transform:rotate(-.6deg)}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+@media (max-width:980px){
+  .nav ul{display:none}
+  .hero .wrap,.menu-grid,.pr-grid,.chi-grid,.dv-grid{grid-template-columns:1fr}
+  .hero .wrap{min-height:auto;padding-top:36px;gap:44px}
+  .stamp{right:18px;top:16px;font-size:18px}
+  .rgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 18px}
+  .brand small{display:none}
+  .nav .btn{display:none}
+  .hero h1{font-size:44px}
+  .hero .lead{font-size:17px}
+  .hero .ctas .btn{flex:1 1 100%}
+  .stamp{display:none}
+  .sala{padding:12px}
+  .sala .cap{font-size:12px}
+  .sala .cap .hand{font-size:22px;white-space:nowrap}
+  .strip span{font-size:17px}
+  .strip i{display:none}
+  .menu,.prenota,.rec,.chi,.dove{padding:72px 0}
+  .foglio{padding:30px 20px 26px}
+  .foglio li{font-size:16px}
+  .fgrid{grid-template-columns:1fr 1fr;grid-template-rows:200px 140px 140px}
+  .f1{grid-column:span 2;grid-row:auto}
+  .bf{grid-template-columns:1fr 1fr}
+  .bf div:last-child{grid-column:span 2}
+  .rgrid{grid-template-columns:1fr}
+  .rv.big,.rgrid .rv:last-child{grid-column:auto}
+  .duo .ph:last-child{transform:translateY(20px)}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(245,238,225,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+  .mbar .btn{padding:14px 10px}
+  .mbar .wa{background:#1F7A4D}
+}
+</style>
+</head>
+<body>
+
+<div class="draft"><b>Anteprima di sito preparata per Trattoria da Elia e Ugo</b> · foto dalla scheda Google, testi da completare insieme</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><b>da Elia e Ugo</b><small>Trattoria · Luino</small></a>
+    <ul>
+      <li><a href="#menu">In cucina</a></li>
+      <li><a href="#prenota">Prenota</a></li>
+      <li><a href="#recensioni">Recensioni</a></li>
+      <li><a href="#chi">Chi siamo</a></li>
+      <li><a href="#dove">Dove</a></li>
+    </ul>
+    <a class="btn small" href="tel:+393248431253">324 843 1253</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero tovaglia">
+  <div class="stamp" aria-hidden="true">COME A CASA!<small>una recensione</small></div>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow reveal">Trattoria · Via Felice Cavallotti 29, Luino</p>
+      <h1 class="reveal"><span>Il locale non è grandissimo,</span><span><em>ma i piatti sì!</em></span></h1>
+      <p class="who reveal"><b>Elena B.</b>, recensione Google</p>
+      <p class="lead reveal">Una piccola trattoria nel cuore di Luino: pasta fatta in casa, carne e pesce, porzioni abbondanti e un'accoglienza che fa sentire di famiglia.</p>
+      <div class="ctas reveal">
+        <a class="btn" href="#prenota">Prenota un tavolo</a>
+        <a class="btn line" href="#menu">Cosa si mangia</a>
+      </div>
+      <div class="score reveal">
+        <div><b>4,8</b>su Google</div>
+        <div><b>4,6</b>su Tripadvisor</div>
+        <div><b>~15</b>posti a sedere</div>
+      </div>
+    </div>
+    <div class="sala reveal tovaglia" style="background-color:var(--carta)">
+      <svg viewBox="0 0 420 262" role="img" aria-label="La sala vista dall'alto: pochi tavoli, i piatti arrivano">
+        <rect x="6" y="6" width="408" height="250" rx="18" fill="#FFFCF6" stroke="#DCCFB8" stroke-width="2"/>
+        <g id="heroTables"></g>
+      </svg>
+      <div class="cap"><span>La sala, vista dall'alto (illustrazione)</span><span class="hand">si mangia!</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap"><span>Pasta fatta in casa</span><i>·</i><span>Terra e mare</span><i>·</i><span>Porzioni abbondanti</span><i>·</i><span>Pranzo e cena</span></div>
+</div>
+
+<section class="menu" id="menu">
+  <div class="wrap menu-grid">
+    <div class="reveal">
+      <p class="eyebrow">In cucina</p>
+      <h2>Una trattoria dove i piatti <em>fanno sentire la passione.</em></h2>
+      <p class="sub">Lo ha scritto Michele in una recensione, e non c'è modo migliore di dirlo. Qui accanto alcuni dei piatti di Elia e Ugo, presi dal loro menu e dai racconti dei clienti.</p>
+      <div class="pasta"><q>Una trattoria fantastica nel cuore di Luino. Il cibo è ottimo, la pasta fatta in casa è davvero speciale.</q><small>Gio M. · recensione, giugno 2026 (tradotta)</small></div>
+    </div>
+    <div class="foglio reveal">
+      <h3>da Elia e Ugo</h3>
+      <div class="date">alcuni dei nostri piatti</div>
+      <div class="sez">per cominciare</div>
+      <ul>
+        <li><span>Melone, crudo di Parma e mozzarella di bufala salernitana</span><span>da inserire</span></li>
+      </ul>
+      <div class="sez">dalla terra</div>
+      <ul>
+        <li><span>Polenta con porcini</span><span>da inserire</span></li>
+        <li><span>Gnocchetti di castagne ai funghi</span><span>da inserire</span></li>
+        <li><span>Tagliatelle al tartufo</span><span>da inserire</span></li>
+      </ul>
+      <div class="sez">dal mare</div>
+      <ul>
+        <li><span>Caccavelle profumo di mare</span><span>da inserire</span></li>
+        <li><span>Tagliolini all'astice</span><span>da inserire</span></li>
+        <li><span>Pasta con vongole e cozze</span><span>da inserire</span></li>
+        <li><span>Ravioloni ripieni di pesce</span><span>da inserire</span></li>
+        <li><span>Pasta al pesce spada</span><span>da inserire</span></li>
+      </ul>
+      <p class="fonte">Piatti presi dal menu pubblicato online e dalle recensioni dei clienti. Prezzi da completare.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="todo reveal"><b>Da completare insieme:</b> il menu vero (fisso e del giorno), i prezzi, i dolci, i vini, e se cambiate i piatti con le stagioni.</div>
+  </div>
+</section>
+
+<section class="foto">
+  <div class="wrap fgrid">
+    <div class="ph f1 reveal" data-foto="piatto-pasta"><span class="lab">Foto: un piatto di pasta</span></div>
+    <div class="ph f2 reveal" data-foto="piatto-pesce"><span class="lab">Foto: piatto di mare</span></div>
+    <div class="ph f3 reveal" data-foto="sala-interna"><span class="lab">Foto: la sala</span></div>
+    <div class="ph f4 reveal" data-foto="polenta-porcini"><span class="lab">Foto: polenta e porcini</span></div>
+    <div class="ph f5 reveal" data-foto="ingresso-via-cavallotti"><span class="lab">Foto: l'ingresso</span></div>
+  </div>
+</section>
+
+<section class="prenota tovaglia" id="prenota">
+  <div class="wrap pr-grid">
+    <div class="reveal">
+      <p class="eyebrow">Prenota</p>
+      <h2>Pochi tavoli, <em>uno è per voi.</em></h2>
+      <p>Il locale ha una quindicina di posti: chi ci è stato consiglia di chiamare prima. Scegliete quanti siete e guardate la sala apparecchiarsi.</p>
+      <p><b>Lunedì chiusi.</b> Da martedì a domenica, pranzo e cena.</p>
+      <span class="demo">Dimostrazione</span>
+    </div>
+    <form class="booking reveal" id="booking" novalidate>
+      <div class="ppl">
+        <button type="button" id="minus" aria-label="una persona in meno">−</button>
+        <output id="n">2</output>
+        <button type="button" id="plus" aria-label="una persona in più">+</button>
+        <span id="nLab">persone</span>
+      </div>
+      <div class="room">
+        <svg viewBox="0 0 420 260" aria-label="Pianta illustrativa della sala">
+          <rect x="4" y="4" width="412" height="252" rx="14" fill="#FFFCF6" stroke="#DCCFB8" stroke-width="2"/>
+          <rect x="170" y="236" width="80" height="20" fill="#ECE2CF"/>
+          <text x="210" y="251" text-anchor="middle" font-size="11" fill="#6E6157" font-family="Figtree">ingresso</text>
+          <g id="room"></g>
+        </svg>
+      </div>
+      <div class="bf">
+        <div><label for="bd">Giorno</label><select id="bd"><option>Martedì</option><option>Mercoledì</option><option>Giovedì</option><option selected>Venerdì</option><option>Sabato</option><option>Domenica</option></select></div>
+        <div><label for="bt">Ora</label><select id="bt"><option>12:00</option><option>12:30</option><option>13:00</option><option>19:00</option><option selected>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option></select></div>
+        <div><label for="bn">Nome</label><input id="bn" type="text" placeholder="Es. Rossi" autocomplete="off"></div>
+      </div>
+      <button class="btn" type="submit" style="width:100%;margin-top:16px">Prenota il tavolo</button>
+      <p class="form-note">Dimostrazione: il modulo non invia nulla. Per prenotare davvero chiamate o scrivete su WhatsApp al 324 843 1253.</p>
+      <div class="biglietto" id="big" aria-live="polite"><div class="hand" id="bigT"></div><small>dimostrazione · nessuna prenotazione è stata inviata</small></div>
+    </form>
+  </div>
+</section>
+
+<section class="rec" id="recensioni">
+  <div class="wrap">
+    <p class="eyebrow reveal">Recensioni</p>
+    <h2 class="reveal">Chi entra, <em>torna.</em></h2>
+    <div class="rgrid">
+      <article class="rv big reveal"><q>Persona gentile e cordiale che ti fa sentire a casa…</q><div class="w">Adriano F. · recensione Google, 5 stelle</div></article>
+      <article class="rv reveal"><q>Atmosfera familiare e molto accogliente. Ottimo cibo.</q><div class="w">Irina T. · recensione Google</div></article>
+      <article class="rv reveal"><q>Cibo genuino, personale cortese e professionale, pulizia del locale top.</q><div class="w">Brunella C. · recensione Google</div></article>
+      <article class="rv reveal"><q>Porzione ABBONDANTE e molto gustosa.</q><div class="w">Nicola D. M. · recensione Google</div></article>
+      <article class="rv reveal"><q>Le porzioni erano enormi e il gusto davvero ottimo!</q><div class="w">Jiali W. · giugno 2026 (tradotta)</div></article>
+      <article class="rv reveal"><q>Una gemma nascosta a Luino! Il cibo? Sempre straordinario.</q><div class="w">Bart W. · maggio 2026 (tradotta)</div></article>
+      <article class="rv reveal"><q>Cibo davvero buono, proprietari gentilissimi, persone genuine.</q><div class="w">Remo D. · Tripadvisor, febbraio 2026 (tradotta)</div></article>
+    </div>
+    <p class="rnote">Media 4,8 su 175 recensioni Google (dato riportato da un portale), 4,6 su Tripadvisor. Le recensioni in inglese sono tradotte in italiano.</p>
+  </div>
+</section>
+
+<section class="chi" id="chi">
+  <div class="wrap chi-grid">
+    <div class="duo reveal">
+      <div class="ph" data-foto="elia" style="background:linear-gradient(160deg,#C9A27A,#8E6A48)"><span class="lab">Foto: Elia</span></div>
+      <div class="ph" data-foto="ugo" style="background:linear-gradient(160deg,#9C2F3C,#6A1A24)"><span class="lab">Foto: Ugo</span></div>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">Chi siamo</p>
+      <h2>Due nomi sull'insegna, <em>una cucina di casa.</em></h2>
+      <p>Il nome dice già tutto: <b>da Elia e Ugo</b>. Una trattoria piccola, dove i clienti scrivono di sentirsi accolti come a casa e dove chi è di passaggio a Luino promette di tornare.</p>
+      <p>«Come sempre siamo stati felici di venire a trovare Elia e Ugo e di mangiare da loro», scrive un cliente affezionato.</p>
+      <div class="todo"><b>Da completare insieme:</b> la vostra storia: chi è Elia e chi è Ugo, chi sta in cucina e chi in sala, da quando avete aperto in Via Cavallotti, da dove vengono le vostre ricette.</div>
+    </div>
+  </div>
+</section>
+
+<section class="dove" id="dove">
+  <div class="wrap dv-grid">
+    <div class="reveal">
+      <p class="eyebrow">Orari e indirizzo</p>
+      <h2>Vi aspettiamo <em>a Luino.</em></h2>
+      <ul class="orari" id="orari">
+        <li data-d="1"><span>Lunedì</span><span class="closed">chiuso</span></li>
+        <li data-d="2"><span>Martedì</span><span>11:30–14 · 18:30–23</span></li>
+        <li data-d="3"><span>Mercoledì</span><span>11:30–14 · 18:30–23</span></li>
+        <li data-d="4"><span>Giovedì</span><span>11:30–14 · 18–23</span></li>
+        <li data-d="5"><span>Venerdì</span><span>11:30–14 · 18:30–23</span></li>
+        <li data-d="6"><span>Sabato</span><span>11:30–14 · 18:30–23</span></li>
+        <li data-d="0"><span>Domenica</span><span>11:30–14 · 18:30–23</span></li>
+      </ul>
+      <p class="addr">Via Felice Cavallotti 29, 21016 Luino (VA)</p>
+      <p class="addr"><a href="tel:+393248431253">324 843 1253</a> · <a href="https://www.facebook.com/102543949574824/" target="_blank" rel="noopener">Facebook</a></p>
+      <div class="ctas">
+        <a class="btn" href="tel:+393248431253">Chiama per prenotare</a>
+        <a class="btn lago" href="https://wa.me/393248431253" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="map reveal">
+      <iframe title="Mappa Trattoria da Elia e Ugo" loading="lazy" src="https://maps.google.com/maps?q=Via%20Felice%20Cavallotti%2029%2C%2021016%20Luino&z=16&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>Trattoria da Elia e Ugo</b>Via Felice Cavallotti 29 · 21016 Luino (VA) · 324 843 1253</div>
+    <div>Anteprima non ufficiale · preparata da Jacopo Dozio</div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn" href="tel:+393248431253">Chiama</a>
+  <a class="btn wa" href="https://wa.me/393248431253" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  var ns='http://www.w3.org/2000/svg';
+  function el(n,a,p){var e=document.createElementNS(ns,n);for(var k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e}
+
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+    els.forEach(function(x){io.observe(x)});
+  } else els.forEach(function(x){x.classList.add('in')});
+
+  // pianta: tavoli (x,y,w,h, sedie) — illustrativa, ~15 posti
+  var T=[
+    {x:40,y:40,w:90,h:56,s:[[85,26],[85,110],[26,68],[144,68]]},
+    {x:175,y:40,w:70,h:56,s:[[210,26],[210,110]]},
+    {x:290,y:40,w:90,h:56,s:[[335,26],[335,110],[394,68]]},
+    {x:40,y:150,w:70,h:56,s:[[75,136],[75,220]]},
+    {x:165,y:150,w:110,h:56,s:[[195,136],[245,136],[195,220],[245,220]]}
+  ];
+
+  // hero: i piatti arrivano
+  var hg=document.getElementById('heroTables'),k=0;
+  T.forEach(function(t){
+    el('rect',{x:t.x,y:t.y,width:t.w,height:t.h,rx:8,fill:'#FFF',stroke:'#BFAF95','stroke-width':1.5},hg);
+    t.s.forEach(function(c){
+      el('circle',{cx:c[0],cy:c[1],r:9,fill:'#CDBEA3'},hg);
+      var px=c[0]+(c[0]<t.x?22:c[0]>t.x+t.w?-22:0), py=c[1]+(c[1]<t.y?24:c[1]>t.y+t.h?-24:0);
+      var g=el('g',{'class':'plate',style:'animation-delay:'+(0.6+k*0.18).toFixed(2)+'s'},hg);
+      el('circle',{cx:px,cy:py,r:10,fill:'#fff',stroke:'#7A1F2B','stroke-width':1.5},g);
+      el('circle',{cx:px,cy:py,r:5.5,fill:(k%3===0?'#C99A3E':k%3===1?'#9C2F3C':'#6B7738')},g);
+      if(k%4===0){var st=el('path',{'class':'steam',d:'M'+(px-3)+' '+(py-14)+' q4 -6 0 -12 M'+(px+3)+' '+(py-14)+' q4 -6 0 -12',stroke:'#A8977E','stroke-width':1.4,fill:'none',style:'animation-delay:'+(2+k*0.2).toFixed(2)+'s'},hg);}
+      k++;
+    });
+  });
+  el('text',{x:396,y:240,'text-anchor':'end','font-size':13,fill:'#6E6157','font-family':'Figtree'},hg).textContent='cucina →';
+
+  // prenotazione (demo)
+  var room=document.getElementById('room'),chairs=[],tables=[];
+  T.forEach(function(t,i){
+    var r=el('rect',{x:t.x,y:t.y*0.92+6,width:t.w,height:t.h*0.9,rx:8,'class':'tbl'},room);tables.push(r);
+    t.s.forEach(function(c){chairs.push({t:i,e:el('circle',{cx:c[0],cy:c[1]*0.92+6,r:10,'class':'chair'},room)})});
+  });
+  var n=2,out=document.getElementById('n'),lab=document.getElementById('nLab');
+  function paint(){
+    out.textContent=n;lab.textContent=n===1?'persona':'persone';
+    chairs.forEach(function(c){c.e.classList.remove('on')});tables.forEach(function(t){t.classList.remove('on')});
+    var order=n<=2?[1,0,2,3,4]:n<=4?[0,4,2,1,3]:[4,0,2,1,3],left=n;
+    for(var i=0;i<order.length&&left>0;i++){
+      var ti=order[i];tables[ti].classList.add('on');
+      chairs.filter(function(c){return c.t===ti}).forEach(function(c){if(left>0){c.e.classList.add('on');left--}});
+    }
+  }
+  document.getElementById('minus').addEventListener('click',function(){n=Math.max(1,n-1);paint()});
+  document.getElementById('plus').addEventListener('click',function(){n=Math.min(12,n+1);paint()});
+  paint();
+  document.getElementById('booking').addEventListener('submit',function(e){
+    e.preventDefault();
+    var nm=document.getElementById('bn').value.trim()||'Rossi';
+    document.getElementById('bigT').textContent='Tavolo per '+n+' · '+document.getElementById('bd').value+' alle '+document.getElementById('bt').value+' · '+nm;
+    var b=document.getElementById('big');b.classList.remove('on');void b.offsetWidth;b.classList.add('on');
+  });
+
+  var d=new Date().getDay(),li=document.querySelector('#orari li[data-d="'+d+'"]');if(li)li.classList.add('today');
+})();
+</script>
+</body>
+</html>

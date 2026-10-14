@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agata hair · Parrucchiera a Gordola</title>
+<meta name="description" content="Agata hair, Vicolo del Gabi 2, Gordola. Extension, colore, soft balayage e trasformazioni su misura. Tel. 076 566 47 12.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --avorio:#FAF5EF; --cipria:#F1E3DA; --cipria2:#E8D2C4; --rosa:#C98F7E; --rosa2:#B4705E;
+  --espresso:#2B1D18; --espresso2:#4A332A; --ink:#2B1D18; --ink2:#7A6259;
+  --miele:#D9A95B; --caramello:#B97A3E; --perla:#E9DFD2; --line:#E4D3C7;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:76px}
+body{background:var(--avorio);color:var(--ink);font:400 17px/1.7 'Jost',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Bodoni Moda',Georgia,serif;font-weight:400;line-height:1.05;letter-spacing:-.01em}
+h1 em,h2 em{font-style:italic;color:var(--rosa2)}
+.eyebrow{font-size:12px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--rosa2)}
+.script{font-family:'Pinyon Script',cursive;font-weight:400}
+
+.draft{background:var(--espresso);color:#EADBD0;font-size:13px;text-align:center;padding:8px 16px;line-height:1.45}
+.draft b{color:#fff;font-weight:500}
+
+header{position:sticky;top:0;z-index:30;background:rgba(250,245,239,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.brand{text-decoration:none;display:flex;align-items:baseline;gap:10px}
+.brand b{font-family:'Bodoni Moda',serif;font-weight:500;font-size:24px;font-style:italic;letter-spacing:-.01em}
+.brand small{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink2)}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:14px;letter-spacing:.06em}
+.nav ul a{text-decoration:none;position:relative}
+.nav ul a::after{content:"";position:absolute;left:0;right:100%;bottom:-3px;height:1px;background:var(--rosa2);transition:right .35s}
+.nav ul a:hover::after{right:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--espresso);color:#FAF5EF;text-decoration:none;font:500 15px/1 'Jost',sans-serif;letter-spacing:.04em;padding:15px 26px;border-radius:999px;border:0;cursor:pointer;transition:transform .25s,background .25s}
+.btn:hover{background:var(--rosa2);transform:translateY(-1px)}
+.btn.soft{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.btn.soft:hover{background:var(--ink);color:var(--avorio)}
+.btn.small{padding:11px 18px;font-size:14px}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--avorio) 0%,var(--cipria) 100%)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;min-height:min(86vh,760px);padding-top:48px;padding-bottom:64px}
+.hero h1{font-size:clamp(46px,5.6vw,86px);margin:22px 0 26px}
+.hero h1 span{display:block}
+.hero h1 .l2{font-style:italic;color:var(--rosa2);padding-left:.6em}
+.hero .lead{font-size:19px;max-width:30em;color:var(--espresso2)}
+.hero .lead small{display:block;font-size:13px;color:var(--ink2);margin-top:8px;letter-spacing:.04em}
+.rating{display:inline-flex;align-items:center;gap:12px;margin-top:28px;padding:10px 18px 10px 12px;background:rgba(255,255,255,.65);border:1px solid var(--line);border-radius:999px;font-size:14px}
+.rating .stars{color:var(--caramello);letter-spacing:2px;font-size:15px}
+.rating b{font-weight:600}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero-photo{position:relative;justify-self:end;width:min(100%,430px)}
+.arch{position:relative;aspect-ratio:4/5.2;border-radius:999px 999px 18px 18px;overflow:hidden;background:linear-gradient(160deg,#E7CDBE,#D9B5A3 55%,#C9998A);box-shadow:0 40px 70px -40px rgba(74,51,42,.55)}
+.ph-label{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);white-space:nowrap;font-size:12px;letter-spacing:.16em;text-transform:uppercase;background:rgba(43,29,24,.78);color:#F6EAE1;padding:7px 12px;border-radius:999px}
+.arch .monogram{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Pinyon Script',cursive;font-size:150px;color:rgba(255,255,255,.55);line-height:1}
+.hero-photo .note{position:absolute;left:-44px;bottom:70px;background:#fff;border-radius:14px;padding:14px 16px;max-width:230px;box-shadow:0 24px 40px -24px rgba(43,29,24,.45);font-size:14px;line-height:1.45;transform:rotate(-2deg)}
+.hero-photo .note q{font-family:'Bodoni Moda',serif;font-style:italic;font-size:16px;quotes:"«" "»"}
+.hero-photo .note small{display:block;color:var(--ink2);font-size:12px;margin-top:6px}
+.strands{position:absolute;inset:0;z-index:1;pointer-events:none}
+.strands svg{position:absolute;right:-6%;top:-4%;width:78%;height:112%;opacity:.9}
+.strand{fill:none;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 3.4s cubic-bezier(.3,.1,.2,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.sway{transform-origin:70% 0;animation:sway 9s ease-in-out 3s infinite alternate}
+@keyframes sway{from{transform:skewX(0) translateX(0)}to{transform:skewX(-2.4deg) translateX(-10px)}}
+@media (prefers-reduced-motion:reduce){.strand{animation:none;stroke-dashoffset:0}.sway{animation:none}}
+
+/* manifesto */
+.manifesto{background:var(--espresso);color:#F3E6DC;padding:30px 0}
+.manifesto .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.manifesto span{font-family:'Bodoni Moda',serif;font-style:italic;font-size:22px}
+.manifesto i{font-style:normal;color:var(--miele);font-size:18px}
+
+/* nuance */
+.nuance{padding:110px 0 100px}
+.nu-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.nuance h2{font-size:clamp(36px,4.4vw,60px);margin:14px 0 20px}
+.nuance p{color:var(--ink2);margin-bottom:14px;max-width:30em}
+.swatches{display:flex;gap:14px;margin:26px 0 22px;flex-wrap:wrap}
+.sw{display:flex;flex-direction:column;align-items:center;gap:8px;background:none;border:0;cursor:pointer;font:500 13px 'Jost',sans-serif;letter-spacing:.06em;color:var(--ink2)}
+.sw span{width:46px;height:46px;border-radius:50%;box-shadow:inset 0 0 0 3px #fff,0 0 0 1px var(--line);transition:transform .25s,box-shadow .25s}
+.sw[aria-pressed="true"] span{transform:scale(1.1);box-shadow:inset 0 0 0 3px #fff,0 0 0 2px var(--espresso)}
+.sw[aria-pressed="true"]{color:var(--ink)}
+.range{width:100%;max-width:420px}
+.range label{display:flex;justify-content:space-between;font-size:13px;letter-spacing:.06em;color:var(--ink2);margin-bottom:8px}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--espresso2),var(--miele));outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:#fff;border:2px solid var(--espresso);cursor:grab;box-shadow:0 4px 10px rgba(0,0,0,.2)}
+input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:#fff;border:2px solid var(--espresso);cursor:grab}
+.lock{position:relative;border-radius:22px;background:radial-gradient(120% 90% at 50% 0%,#fff 0%,var(--cipria) 70%);aspect-ratio:5/4;overflow:hidden;box-shadow:0 30px 60px -40px rgba(74,51,42,.6)}
+.lock svg{position:absolute;inset:0;width:100%;height:100%}
+.lock .cap{position:absolute;left:18px;bottom:16px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2)}
+.lock .word{position:absolute;right:22px;top:18px;font-family:'Pinyon Script',cursive;font-size:34px;color:var(--rosa2)}
+
+/* servizi */
+.servizi{background:#fff;padding:100px 0}
+.sv-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:46px}
+.sv-head h2{font-size:clamp(36px,4.4vw,58px)}
+.sv-head p{max-width:26em;color:var(--ink2)}
+.sv{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+.svc{padding:30px 26px 34px;border-right:1px solid var(--line);position:relative}
+.svc:last-child{border-right:0}
+.svc .num{font-family:'Bodoni Moda',serif;font-style:italic;font-size:15px;color:var(--rosa2)}
+.svc h3{font-size:28px;margin:12px 0 14px}
+.svc ul{list-style:none;font-size:15px}
+.svc li{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.svc li span:last-child{white-space:nowrap;color:var(--ink2);font-size:14px}
+.svc li .tbd{font-style:italic;color:#B6A196}
+.svc p{font-size:15px;color:var(--ink2);margin-top:14px}
+.sv-note{font-size:13.5px;color:var(--ink2);margin-top:22px}
+
+/* lavori */
+.lavori{padding:100px 0}
+.lavori h2{font-size:clamp(36px,4.4vw,58px);margin:12px 0 10px}
+.lavori .sub{color:var(--ink2);max-width:32em;margin-bottom:38px}
+.gal{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:14px}
+.ph{position:relative;border-radius:16px;overflow:hidden;background:linear-gradient(150deg,var(--cipria),var(--cipria2));transition:transform .4s}
+.ph:hover{transform:scale(1.015)}
+.ph::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 22px,rgba(255,255,255,.18) 22px 23px)}
+.ph .ph-label{bottom:14px;font-size:11px}
+.g1{grid-column:span 3;grid-row:span 3;background:linear-gradient(160deg,#D9B5A3,#B98473)}
+.g2{grid-column:span 3;grid-row:span 2;background:linear-gradient(160deg,#EBD9C4,#D9A95B)}
+.g3{grid-column:span 2;grid-row:span 2}
+.g4{grid-column:span 1;grid-row:span 2;background:linear-gradient(160deg,#4A332A,#7A5444)}
+.g5{grid-column:span 3;grid-row:span 3;background:linear-gradient(160deg,#E9DFD2,#C9B8A6)}
+.g6{grid-column:span 3;grid-row:span 2;background:linear-gradient(160deg,#F1E3DA,#C98F7E)}
+
+/* consulenza */
+.consulenza{background:var(--cipria);padding:100px 0}
+.cs-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.consulenza h2{font-size:clamp(36px,4.4vw,58px);margin:14px 0 18px}
+.consulenza p{color:var(--espresso2);margin-bottom:14px}
+.demo{display:inline-block;background:var(--rosa2);color:#fff;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:5px 10px;border-radius:4px}
+.quiz{background:#fff;border-radius:22px;padding:30px;box-shadow:0 30px 60px -40px rgba(74,51,42,.5)}
+.q{border:0;margin-bottom:24px}
+.q legend{font-family:'Bodoni Moda',serif;font-size:22px;margin-bottom:12px}
+.q legend small{font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--rosa2);display:block;margin-bottom:2px}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;pointer-events:none}
+.chip span{display:inline-block;padding:10px 16px;border-radius:999px;border:1px solid var(--line);font-size:15px;cursor:pointer;transition:all .2s;background:var(--avorio)}
+.chip input:checked+span{background:var(--espresso);color:#fff;border-color:var(--espresso)}
+.chip input:focus-visible+span{outline:2px solid var(--rosa2);outline-offset:2px}
+.quiz textarea,.quiz input[type=text]{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font:400 16px 'Jost',sans-serif;background:var(--avorio);resize:vertical}
+.quiz .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-note{font-size:13px;color:var(--ink2);margin-top:12px}
+.scheda{display:none;margin-top:22px;border-radius:18px;background:var(--avorio);border:1px solid var(--line);padding:24px 24px 20px;position:relative}
+.scheda.on{display:block;animation:rise .5s ease}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.scheda h3{font-size:24px;margin-bottom:12px}
+.scheda dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:15px}
+.scheda dt{color:var(--ink2)}
+.scheda .sig{font-family:'Pinyon Script',cursive;font-size:30px;color:var(--rosa2);text-align:right;margin-top:6px}
+.scheda .stamp{position:absolute;right:18px;top:16px;border:1.5px solid var(--rosa2);color:var(--rosa2);font-size:11px;font-weight:600;letter-spacing:.14em;padding:3px 8px;border-radius:4px;transform:rotate(4deg)}
+
+/* recensioni */
+.recensioni{padding:100px 0}
+.rc-head{text-align:center;max-width:720px;margin:0 auto 50px}
+.rc-head h2{font-size:clamp(36px,4.4vw,58px);margin:14px 0 12px}
+.rc-head p{color:var(--ink2)}
+.rc{columns:3;column-gap:22px}
+.card{break-inside:avoid;background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px;margin-bottom:22px;transition:transform .3s}
+.card:hover{transform:translateY(-3px)}
+.card q{display:block;font-family:'Bodoni Moda',serif;font-size:20px;line-height:1.4;quotes:"«" "»"}
+.card.big q{font-size:25px}
+.card .who{display:flex;justify-content:space-between;gap:10px;margin-top:16px;font-size:13px;color:var(--ink2)}
+.card .who b{color:var(--ink);font-weight:500}
+.card .svc-tag{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--rosa2)}
+
+/* chi sono */
+.chi{background:var(--espresso);color:#F3E6DC;padding:100px 0}
+.chi-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.chi .ph{aspect-ratio:4/5;background:linear-gradient(160deg,#6B4A3D,#3A2820)}
+.chi h2{font-size:clamp(34px,4vw,54px);margin:14px 0 22px;color:#fff}
+.chi h2 em{color:var(--miele)}
+.chi p{color:#D9C6B9;margin-bottom:14px;max-width:32em}
+.chi .eyebrow{color:var(--miele)}
+.todo{border:1.5px dashed var(--rosa);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--ink2);background:rgba(255,255,255,.6);margin-top:22px}
+.todo b{color:var(--rosa2);font-weight:600}
+.chi .todo{background:rgba(255,255,255,.05);color:#D9C6B9;border-color:var(--miele)}
+.chi .todo b{color:var(--miele)}
+
+/* dove */
+.dove{padding:100px 0 110px}
+.dv-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:44px;align-items:stretch}
+.dove h2{font-size:clamp(36px,4.4vw,58px);margin:14px 0 24px}
+.orari{list-style:none;font-size:16px;margin-bottom:26px}
+.orari li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)}
+.orari li.today{font-weight:600}
+.orari li.today span:first-child::after{content:" · oggi";color:var(--rosa2);font-weight:400}
+.orari .closed{color:#B6A196}
+.addr{font-size:17px;margin-bottom:6px}
+.addr a{text-decoration:none;border-bottom:1px solid var(--rosa)}
+.dove .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.map{border-radius:22px;overflow:hidden;min-height:380px;border:1px solid var(--line);background:var(--cipria)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block;filter:sepia(.18) saturate(.85)}
+
+footer{background:var(--espresso);color:#BFA99C;padding:44px 0 120px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer b{font-family:'Bodoni Moda',serif;font-style:italic;font-weight:500;font-size:22px;color:#F3E6DC;display:block;margin-bottom:4px}
+
+.mbar{display:none}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+@media (max-width:980px){
+  .nav ul{display:none}
+  .hero .wrap,.nu-grid,.cs-grid,.chi-grid,.dv-grid{grid-template-columns:1fr}
+  .hero .wrap{min-height:auto;padding-top:36px;gap:40px}
+  .hero-photo{justify-self:center;width:min(86%,380px)}
+  .hero-photo .note{left:-18px;bottom:40px}
+  .strands svg{width:120%;right:-30%;opacity:.5}
+  .sv{grid-template-columns:1fr 1fr}
+  .svc:nth-child(2){border-right:0}
+  .svc{border-bottom:1px solid var(--line)}
+  .rc{columns:2}
+  .chi .ph{max-width:420px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 18px}
+  .brand small{display:none}
+  .nav .btn{display:none}
+  .hero h1{font-size:44px}
+  .hero .lead{font-size:17px}
+  .hero .ctas .btn{flex:1 1 100%}
+  .hero-photo .note{left:-8px;max-width:200px;bottom:auto;top:46%}
+  .hero h1 .l2{padding-left:0}
+  .manifesto span{font-size:18px}
+  .manifesto i{display:none}
+  .nuance,.servizi,.lavori,.consulenza,.recensioni,.chi,.dove{padding:72px 0}
+  .sv{grid-template-columns:1fr}
+  .svc{border-right:0}
+  .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px}
+  .g1{grid-column:span 2;grid-row:span 2}
+  .g2,.g5,.g6{grid-column:span 2;grid-row:span 1}
+  .g3{grid-column:span 1;grid-row:span 2}
+  .g4{grid-column:span 1;grid-row:span 2}
+  .quiz{padding:22px 18px}
+  .quiz .row{grid-template-columns:1fr}
+  .rc{columns:1}
+  .card.big q{font-size:22px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(250,245,239,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+  .mbar .btn{padding:14px 10px}
+  .mbar .wa{background:#1F7A4D}
+}
+</style>
+</head>
+<body>
+
+<div class="draft"><b>Anteprima di sito preparata per Agata hair</b> · foto dalla scheda Google, testi da completare insieme</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><b>Agata hair</b><small>Gordola</small></a>
+    <ul>
+      <li><a href="#nuance">Colore</a></li>
+      <li><a href="#servizi">Servizi</a></li>
+      <li><a href="#lavori">Lavori</a></li>
+      <li><a href="#consulenza">Consulenza</a></li>
+      <li><a href="#recensioni">Recensioni</a></li>
+      <li><a href="#dove">Dove</a></li>
+    </ul>
+    <a class="btn small" href="https://www.fresha.com/a/agata-hair-gordola-vicolo-del-gabi-2-h8nh8bi3" target="_blank" rel="noopener">Prenota online</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="strands" aria-hidden="true">
+    <svg viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="hg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#4A332A"/><stop offset=".45" stop-color="#8A5A3C"/><stop offset=".8" stop-color="#D9A95B"/><stop offset="1" stop-color="#EBD3A6"/>
+        </linearGradient>
+      </defs>
+      <g class="sway" stroke="url(#hg)">
+        <path class="strand" pathLength="1" stroke-width="2.2" style="animation-delay:.1s" d="M330 -20 C 300 120, 420 200, 360 330 S 250 520, 330 640 S 450 760, 400 840"/>
+        <path class="strand" pathLength="1" stroke-width="1.4" style="animation-delay:.25s" d="M350 -20 C 320 130, 440 210, 380 340 S 270 530, 350 650 S 470 770, 420 850"/>
+        <path class="strand" pathLength="1" stroke-width="3" style="animation-delay:.4s" d="M372 -20 C 344 136, 462 222, 404 350 S 294 540, 374 660 S 492 780, 446 860"/>
+        <path class="strand" pathLength="1" stroke-width="1.2" style="animation-delay:.55s" d="M396 -20 C 368 140, 486 232, 428 360 S 320 552, 400 670 S 516 790, 472 870"/>
+        <path class="strand" pathLength="1" stroke-width="2" style="animation-delay:.7s" d="M420 -20 C 392 150, 508 242, 452 370 S 346 562, 426 680 S 540 800, 498 880"/>
+        <path class="strand" pathLength="1" stroke-width="1" style="animation-delay:.85s" d="M446 -20 C 418 156, 532 252, 478 380 S 374 572, 454 690 S 566 810, 526 890"/>
+        <path class="strand" pathLength="1" stroke-width="2.6" style="animation-delay:1s" d="M472 -20 C 446 160, 556 262, 504 392 S 402 582, 482 700 S 592 820, 554 900"/>
+        <path class="strand" pathLength="1" stroke-width="1.3" style="animation-delay:1.15s" d="M500 -20 C 474 168, 580 272, 530 402 S 430 592, 510 710 S 618 830, 582 910"/>
+        <path class="strand" pathLength="1" stroke-width="1.8" style="animation-delay:1.3s" d="M528 -20 C 502 176, 604 282, 556 412 S 458 602, 538 720 S 644 840, 610 920"/>
+      </g>
+    </svg>
+  </div>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow reveal">Parrucchiera · Vicolo del Gabi 2, Gordola</p>
+      <h1 class="reveal"><span>Qui non seguiamo mode.</span><span class="l2">Valorizziamo chi sei.</span></h1>
+      <p class="lead reveal">Extension e trasformazioni su misura: risultati naturali e forti allo stesso tempo.<small>— Agata, con le sue parole</small></p>
+      <div class="rating reveal"><span class="stars">★★★★★</span><span><b>5,0</b> su 206 recensioni · Fresha</span></div>
+      <div class="ctas reveal">
+        <a class="btn" href="https://www.fresha.com/a/agata-hair-gordola-vicolo-del-gabi-2-h8nh8bi3" target="_blank" rel="noopener">Prenota il tuo appuntamento</a>
+        <a class="btn soft" href="https://wa.me/41765664712" target="_blank" rel="noopener">Scrivi ad Agata</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <div class="arch" data-foto="agata-al-lavoro">
+        <div class="monogram">A</div>
+        <span class="ph-label">Foto: Agata al lavoro</span>
+      </div>
+      <div class="note"><q>Sono stata bene e sono uscita felice.</q><small>Emma, recensione Fresha</small></div>
+    </div>
+  </div>
+</section>
+
+<div class="manifesto">
+  <div class="wrap">
+    <span>Tecnica.</span><i>✦</i><span>Intuito.</span><i>✦</i><span>Presenza.</span>
+  </div>
+</div>
+
+<section class="nuance" id="nuance">
+  <div class="wrap nu-grid">
+    <div class="reveal">
+      <p class="eyebrow">Soft balayage &amp; colore</p>
+      <h2>Dalla radice alle punte, <em>senza stacchi.</em></h2>
+      <p>Un balayage morbido è una sfumatura che nasce dal tuo colore e si accende verso le punte. Prova qui: scegli una nuance e trascina per sciogliere il colore lungo la ciocca.</p>
+      <div class="swatches" role="group" aria-label="Scegli la nuance">
+        <button class="sw" type="button" data-c1="#E7C27A" data-c2="#F4E1B5" data-w="miele" aria-pressed="true"><span style="background:linear-gradient(135deg,#D9A95B,#F4E1B5)"></span>Miele</button>
+        <button class="sw" type="button" data-c1="#B97A3E" data-c2="#DDA66B" data-w="caramello" aria-pressed="false"><span style="background:linear-gradient(135deg,#9C5F2C,#DDA66B)"></span>Caramello</button>
+        <button class="sw" type="button" data-c1="#CDBFAE" data-c2="#F1EAE0" data-w="perla" aria-pressed="false"><span style="background:linear-gradient(135deg,#B9AA98,#F1EAE0)"></span>Perla</button>
+        <button class="sw" type="button" data-c1="#9C4A3A" data-c2="#C9765F" data-w="ramato" aria-pressed="false"><span style="background:linear-gradient(135deg,#7E3426,#C9765F)"></span>Ramato</button>
+      </div>
+      <div class="range">
+        <label for="melt"><span>Naturale</span><span>Cambio look</span></label>
+        <input id="melt" type="range" min="0" max="100" value="45" aria-label="Intensità della sfumatura">
+      </div>
+      <p style="font-size:13.5px;margin-top:18px">Illustrazione: le nuance vere si scelgono con Agata in consulenza.</p>
+    </div>
+    <div class="lock reveal" aria-hidden="true">
+      <svg viewBox="0 0 500 400" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="lg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#3A2620"/>
+            <stop id="s1" offset=".38" stop-color="#5A3A2C"/>
+            <stop id="s2" offset=".62" stop-color="#E7C27A"/>
+            <stop id="s3" offset="1" stop-color="#F4E1B5"/>
+          </linearGradient>
+        </defs>
+        <g id="lockG" stroke="url(#lg)" fill="none" stroke-linecap="round"></g>
+      </svg>
+      <span class="word" id="nuWord">miele</span>
+      <span class="cap">Una ciocca, la tua nuance</span>
+    </div>
+  </div>
+</section>
+
+<section class="servizi" id="servizi">
+  <div class="wrap">
+    <div class="sv-head reveal">
+      <div><p class="eyebrow">I servizi</p><h2>Ogni testa è <em>un progetto a sé.</em></h2></div>
+      <p>Si parte sempre da una consulenza: cosa desideri, cosa ti sta bene, come vuoi sentirti uscendo dal salone.</p>
+    </div>
+    <div class="sv reveal">
+      <div class="svc">
+        <span class="num">i.</span>
+        <h3>Taglio &amp; styling</h3>
+        <ul>
+          <li><span>New Look · taglio e piega</span><span>CHF 95</span></li>
+          <li><span>Taglio punte e piega</span><span>da CHF 85</span></li>
+          <li><span>Styling</span><span>da CHF 50</span></li>
+        </ul>
+      </div>
+      <div class="svc">
+        <span class="num">ii.</span>
+        <h3>Colore</h3>
+        <ul>
+          <li><span>Colore</span><span class="tbd">prezzo da inserire</span></li>
+          <li><span>Correzione colore</span><span class="tbd">prezzo da inserire</span></li>
+        </ul>
+        <p>Quando il colore va rimesso in ordine: prima si capisce da dove si parte.</p>
+      </div>
+      <div class="svc">
+        <span class="num">iii.</span>
+        <h3>Balayage</h3>
+        <ul>
+          <li><span>Soft balayage</span><span class="tbd">prezzo da inserire</span></li>
+        </ul>
+        <p>Sfumature morbide che crescono bene, senza la riga netta della ricrescita.</p>
+      </div>
+      <div class="svc">
+        <span class="num">iv.</span>
+        <h3>Extension</h3>
+        <ul>
+          <li><span>Installazione extension</span><span class="tbd">prezzo da inserire</span></li>
+        </ul>
+        <p>La specialità di Agata: lunghezza e volume che sembrano tuoi.</p>
+      </div>
+    </div>
+    <p class="sv-note">Prezzi di taglio e styling come pubblicati da Agata hair su Fresha. Gli altri si completano insieme.</p>
+    <div class="todo"><b>Da completare insieme:</b> l'elenco completo dei 12 servizi (durate e prezzi), i tipi di extension che usi e i prodotti per il colore, se vuoi citarli.</div>
+  </div>
+</section>
+
+<section class="lavori" id="lavori">
+  <div class="wrap">
+    <p class="eyebrow reveal">I lavori</p>
+    <h2 class="reveal">Trasformazioni <em>su misura.</em></h2>
+    <p class="sub reveal">Extension, balayage e cambi di look fatti a Gordola. Ogni foto è una cliente che è uscita sorridendo.</p>
+    <div class="gal reveal">
+      <div class="ph g1" data-foto="extension-1"><span class="ph-label">Foto: extension</span></div>
+      <div class="ph g2" data-foto="soft-balayage"><span class="ph-label">Foto: soft balayage</span></div>
+      <div class="ph g3" data-foto="taglio-piega"><span class="ph-label">Foto: taglio e piega</span></div>
+      <div class="ph g4" data-foto="correzione-colore"><span class="ph-label">Foto: colore</span></div>
+      <div class="ph g5" data-foto="salone-interno"><span class="ph-label">Foto: il salone</span></div>
+      <div class="ph g6" data-foto="cambio-look"><span class="ph-label">Foto: cambio look</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="consulenza" id="consulenza">
+  <div class="wrap cs-grid">
+    <div class="reveal">
+      <p class="eyebrow">Prima di sederti</p>
+      <h2>La tua consulenza <em>comincia qui.</em></h2>
+      <p>Le clienti lo scrivono spesso: con Agata si parte da una consulenza chiara. Raccontale in tre tocchi cosa hai in mente, e arrivi in salone che lei sa già da dove partire.</p>
+      <p style="font-size:15px;color:var(--ink2)">«Oltre ad avermi fatto una consulenza chiara e professionale ha fatto un lavoro stupendo!» — Emma, recensione Fresha</p>
+      <span class="demo">Dimostrazione</span>
+    </div>
+    <form class="quiz reveal" id="quiz" novalidate>
+      <fieldset class="q">
+        <legend><small>1 · Il desiderio</small>Cosa vorresti cambiare?</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="cosa" value="La lunghezza (extension)" checked><span>La lunghezza</span></label>
+          <label class="chip"><input type="radio" name="cosa" value="Il colore"><span>Il colore</span></label>
+          <label class="chip"><input type="radio" name="cosa" value="Il taglio"><span>Il taglio</span></label>
+          <label class="chip"><input type="radio" name="cosa" value="Un po' tutto"><span>Un po' tutto</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="q">
+        <legend><small>2 · Il risultato</small>Come ti vuoi vedere?</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="come" value="Naturale, come se fosse sempre stato così" checked><span>Naturale</span></label>
+          <label class="chip"><input type="radio" name="come" value="Un cambio deciso"><span>Un cambio deciso</span></label>
+          <label class="chip"><input type="radio" name="come" value="Lo decidiamo insieme"><span>Decidiamo insieme</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="q">
+        <legend><small>3 · Tu</small>Due parole su di te</legend>
+        <div class="row">
+          <input type="text" id="nome" placeholder="Il tuo nome" autocomplete="off">
+          <input type="text" id="quando" placeholder="Quando preferiresti venire?" autocomplete="off">
+        </div>
+        <textarea id="note" rows="2" style="margin-top:12px" placeholder="Es. ho fatto la tinta a casa e vorrei rimediare…"></textarea>
+      </fieldset>
+      <button class="btn" type="submit">Prepara la mia scheda</button>
+      <p class="form-note">Dimostrazione: il modulo non invia nulla. Per prenotare davvero usa Fresha o scrivi su WhatsApp al 076 566 47 12.</p>
+      <div class="scheda" id="scheda" aria-live="polite">
+        <span class="stamp">DEMO</span>
+        <h3>Scheda consulenza</h3>
+        <dl>
+          <dt>Per</dt><dd id="oNome">—</dd>
+          <dt>Desiderio</dt><dd id="oCosa">—</dd>
+          <dt>Risultato</dt><dd id="oCome">—</dd>
+          <dt>Quando</dt><dd id="oQuando">—</dd>
+          <dt>Note</dt><dd id="oNote">—</dd>
+        </dl>
+        <div class="sig">a presto, Agata</div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="recensioni" id="recensioni">
+  <div class="wrap">
+    <div class="rc-head reveal">
+      <p class="eyebrow">206 recensioni · media 5,0</p>
+      <h2>Le parole <em>delle clienti.</em></h2>
+      <p>Le più recenti, lasciate dopo l'appuntamento su Fresha.</p>
+    </div>
+    <div class="rc">
+      <article class="card big reveal"><q>Ha soddisfatto la mia voglia di un cambio look pazzesco ✨</q><div class="who"><span><b>Sasha M.</b> · recensione Fresha</span><span class="svc-tag">Soft balayage</span></div></article>
+      <article class="card reveal"><q>Cordiale, professionale e molto attenta alle tue esigenze. La consiglio tantissimo.</q><div class="who"><span><b>Moira R.</b> · recensione Fresha</span><span class="svc-tag">New Look</span></div></article>
+      <article class="card reveal"><q>Ha azzeccato taglio e colore, davvero molto molto competente.</q><div class="who"><span><b>Giada B.</b> · recensione Fresha</span><span class="svc-tag">Taglio e colore</span></div></article>
+      <article class="card reveal"><q>Agata è veramente brava, oltre ad avermi fatto una consulenza chiara e professionale ha fatto un lavoro stupendo!</q><div class="who"><span><b>Emma A.</b> · recensione Fresha</span><span class="svc-tag">Correzione colore</span></div></article>
+      <article class="card reveal"><q>Brava Agata, accogliente e professionale! Taglio perfetto!</q><div class="who"><span><b>Emanuela D.</b> · recensione Fresha</span><span class="svc-tag">Taglio punte</span></div></article>
+      <article class="card big reveal"><q>Agata bravissima. Professionale e carinissima. ❤️</q><div class="who"><span><b>Aylin C.</b> · recensione Fresha</span><span class="svc-tag">Due servizi</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="chi" id="chi">
+  <div class="wrap chi-grid">
+    <div class="ph reveal" data-foto="ritratto-agata"><span class="ph-label">Foto: ritratto di Agata</span></div>
+    <div class="reveal">
+      <p class="eyebrow">Chi sono</p>
+      <h2>Uno spazio dove l'immagine <em>incontra l'autenticità.</em></h2>
+      <p>Agata hair è il salone di Agata, a Gordola. Le clienti lo descrivono così: accogliente, attenta alle esigenze, competente. E ne escono felici.</p>
+      <p>Specializzata in extension e trasformazioni su misura, lavora per far emergere chi sei, non l'ultima tendenza.</p>
+      <div class="todo"><b>Da completare insieme:</b> la tua storia in poche righe: dove ti sei formata, da quando hai il salone a Gordola, perché proprio le extension, la trasformazione che ricordi con più orgoglio.</div>
+    </div>
+  </div>
+</section>
+
+<section class="dove" id="dove">
+  <div class="wrap dv-grid">
+    <div class="reveal">
+      <p class="eyebrow">Orari e indirizzo</p>
+      <h2>Ti aspetto <em>a Gordola.</em></h2>
+      <ul class="orari" id="orari">
+        <li data-d="1"><span>Lunedì</span><span class="closed">chiuso</span></li>
+        <li data-d="2"><span>Martedì</span><span>13:00 – 19:00</span></li>
+        <li data-d="3"><span>Mercoledì</span><span>10:00 – 19:00</span></li>
+        <li data-d="4"><span>Giovedì</span><span>10:00 – 19:00</span></li>
+        <li data-d="5"><span>Venerdì</span><span>10:00 – 19:00</span></li>
+        <li data-d="6"><span>Sabato</span><span>10:00 – 15:00</span></li>
+        <li data-d="0"><span>Domenica</span><span class="closed">chiuso</span></li>
+      </ul>
+      <p class="addr">Vicolo del Gabi 2, 6596 Gordola</p>
+      <p class="addr"><a href="tel:+41765664712">076 566 47 12</a></p>
+      <p style="font-size:14px;color:var(--ink2);margin-top:8px">Parcheggio disponibile · vicino ai mezzi pubblici</p>
+      <div class="ctas">
+        <a class="btn" href="https://www.fresha.com/a/agata-hair-gordola-vicolo-del-gabi-2-h8nh8bi3" target="_blank" rel="noopener">Prenota su Fresha</a>
+        <a class="btn soft" href="https://wa.me/41765664712" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="map reveal">
+      <iframe title="Mappa Agata hair, Gordola" loading="lazy" src="https://maps.google.com/maps?q=Vicolo%20del%20Gabi%202%2C%206596%20Gordola&z=16&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>Agata hair</b>Vicolo del Gabi 2 · 6596 Gordola · 076 566 47 12</div>
+    <div>Anteprima non ufficiale · preparata da Jacopo Dozio</div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn" href="tel:+41765664712">Chiama</a>
+  <a class="btn wa" href="https://wa.me/41765664712" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  // reveal
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+    els.forEach(function(el){io.observe(el)});
+  } else els.forEach(function(el){el.classList.add('in')});
+
+  // ciocca
+  var g=document.getElementById('lockG'), ns='http://www.w3.org/2000/svg';
+  for(var i=0;i<34;i++){
+    var x=150+i*6+Math.sin(i*1.7)*5, w=(i%5===0)?3.2:(i%3===0?1.2:2), sway=40+Math.sin(i)*18;
+    var p=document.createElementNS(ns,'path');
+    p.setAttribute('d','M'+x+' -10 C '+(x-30)+' 90, '+(x+sway)+' 170, '+(x-10)+' 250 S '+(x-50)+' 360, '+(x+10+i%4*6)+' 420');
+    p.setAttribute('stroke-width',w);
+    p.setAttribute('opacity',(.7+((i*7)%3)/10).toFixed(2));
+    g.appendChild(p);
+  }
+  var s1=document.getElementById('s1'),s2=document.getElementById('s2'),s3=document.getElementById('s3'),
+      melt=document.getElementById('melt'),word=document.getElementById('nuWord'),
+      sws=document.querySelectorAll('.sw');
+  function upd(){
+    var v=melt.value/100;
+    s1.setAttribute('offset',(0.55-v*0.35).toFixed(3));
+    s2.setAttribute('offset',(0.82-v*0.4).toFixed(3));
+  }
+  melt.addEventListener('input',upd);upd();
+  sws.forEach(function(b){b.addEventListener('click',function(){
+    sws.forEach(function(o){o.setAttribute('aria-pressed','false')});
+    b.setAttribute('aria-pressed','true');
+    s2.setAttribute('stop-color',b.dataset.c1);s3.setAttribute('stop-color',b.dataset.c2);
+    word.textContent=b.dataset.w;
+  })});
+
+  // consulenza (demo)
+  var f=document.getElementById('quiz');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    function v(id){var el=document.getElementById(id);return (el&&el.value.trim())||'—'}
+    function r(n){var el=f.querySelector('input[name="'+n+'"]:checked');return el?el.value:'—'}
+    document.getElementById('oNome').textContent=v('nome');
+    document.getElementById('oCosa').textContent=r('cosa');
+    document.getElementById('oCome').textContent=r('come');
+    document.getElementById('oQuando').textContent=v('quando');
+    document.getElementById('oNote').textContent=v('note');
+    var s=document.getElementById('scheda');s.classList.remove('on');void s.offsetWidth;s.classList.add('on');
+    s.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+
+  // oggi negli orari
+  var d=new Date().getDay(), li=document.querySelector('#orari li[data-d="'+d+'"]');
+  if(li) li.classList.add('today');
+})();
+</script>
+</body>
+</html>
