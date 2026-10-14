@@ -220,6 +220,11 @@ footer b{font-family:'Gloock',serif;font-weight:400;font-size:22px;color:#fff;di
   .mbar .btn{padding:14px 10px}
   .mbar .wa{background:#1F7A4D}
 }
+
+/* foto vere inserite */
+.has-photo>img.real{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;display:block}
+.has-photo::before{display:none!important}
+.has-photo .ph-label,.has-photo .lab,.has-photo .monogram{display:none!important}
 </style>
 </head>
 <body>
@@ -312,11 +317,11 @@ footer b{font-family:'Gloock',serif;font-weight:400;font-size:22px;color:#fff;di
 
 <section class="foto">
   <div class="wrap fgrid">
-    <div class="ph f1 reveal" data-foto="piatto-pasta"><span class="lab">Foto: un piatto di pasta</span></div>
-    <div class="ph f2 reveal" data-foto="piatto-pesce"><span class="lab">Foto: piatto di mare</span></div>
-    <div class="ph f3 reveal" data-foto="sala-interna"><span class="lab">Foto: la sala</span></div>
-    <div class="ph f4 reveal" data-foto="polenta-porcini"><span class="lab">Foto: polenta e porcini</span></div>
-    <div class="ph f5 reveal" data-foto="ingresso-via-cavallotti"><span class="lab">Foto: l'ingresso</span></div>
+    <div class="has-photo ph f1 reveal" data-foto="piatto-pasta"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TZ_KZbbV7zGxXwdo-Tru2DS5-WI5T4bL5ImhFgggWx_O9Tqq3SAEMRzVc6XLLIppxJPmz5ZlIKUqLf5herghzY8gv-ibHbLsIlY3prjfaMapdDVIb5rWSLyHhwgjSLdmGegPsKk7pOKN8n=s1400" alt="Spaghetti al pomodoro e basilico" style="object-position:50% 50%"><span class="lab">Foto: un piatto di pasta</span></div>
+    <div class="has-photo ph f2 reveal" data-foto="piatto-pesce"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ti8IqmTziPwrAaEjzG5LLXoHFymF9ETVD4FLX3UNwRlI67LJO1XUnX3f_8pPrjYavWsXDBX6LLNBAKwN1IHTdrvF18ah2pRQDWOB_Z50EbLHWuGk2Sj8g5vqeiQ4vZ1ktLuS8p16_YQrLG=s1400" alt="Pasta con le vongole" style="object-position:50% 50%"><span class="lab">Foto: piatto di mare</span></div>
+    <div class="has-photo ph f3 reveal" data-foto="sala-interna"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R9XGh7FxpjwYB1xBfhhwpPRe88qQHj7geE_o7xWaBDv3vA-EZnTcyl2ymdgHD9tj--o0T0zw5oYVfriUowoD1ToDzBjekY1PsnwJLomprMXeDLBo0jDRNRWZNHSYU4MTuwy87Rc4uKsH9N=s1400" alt="La sala della trattoria" style="object-position:50% 50%"><span class="lab">Foto: la sala</span></div>
+    <div class="has-photo ph f4 reveal" data-foto="polenta-porcini"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SMB1wFnKNT4-xslhX1Gg3AxolBhD_lyufwQxSAz6MvLJ__T467vVc6eaeJc45fFkrbd8MMq2roeE9_fxA-SIsYd9MAfR4ARRQw5d-hs33QNdjHs6W4LZyrFzoaYOZS8uPsxvXXK0N34Gut=s1400" alt="Pasta al tartufo" style="object-position:50% 50%"><span class="lab">Foto: polenta e porcini</span></div>
+    <div class="has-photo ph f5 reveal" data-foto="ingresso-via-cavallotti"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q_8zfGnHBLuTToovO8g-2F3hozSVsT3vy8ddgJ6gBei0JpKE6Kqgylyvn2WYF7fIeanL_961vDp45Q2oFybbMmrTyoR2ThVz9x9ponG2qfkyAErh-gj7SqGOJ8urJlBPZHNzgYFgjmdVEy=s1400" alt="L'ingresso in via Cavallotti" style="object-position:50% 40%"><span class="lab">Foto: l'ingresso</span></div>
   </div>
 </section>
 
@@ -369,15 +374,15 @@ footer b{font-family:'Gloock',serif;font-weight:400;font-size:22px;color:#fff;di
       <article class="rv reveal"><q>Una gemma nascosta a Luino! Il cibo? Sempre straordinario.</q><div class="w">Bart W. · maggio 2026 (tradotta)</div></article>
       <article class="rv reveal"><q>Cibo davvero buono, proprietari gentilissimi, persone genuine.</q><div class="w">Remo D. · Tripadvisor, febbraio 2026 (tradotta)</div></article>
     </div>
-    <p class="rnote">Media 4,8 su 175 recensioni Google (dato riportato da un portale), 4,6 su Tripadvisor. Le recensioni in inglese sono tradotte in italiano.</p>
+    <p class="rnote">Media 4,8 su 275 recensioni Google, 4,6 su Tripadvisor. Le recensioni in inglese sono tradotte in italiano.</p>
   </div>
 </section>
 
 <section class="chi" id="chi">
   <div class="wrap chi-grid">
     <div class="duo reveal">
-      <div class="ph" data-foto="elia" style="background:linear-gradient(160deg,#C9A27A,#8E6A48)"><span class="lab">Foto: Elia</span></div>
-      <div class="ph" data-foto="ugo" style="background:linear-gradient(160deg,#9C2F3C,#6A1A24)"><span class="lab">Foto: Ugo</span></div>
+      <div class="ph" data-foto="elia" style="background:linear-gradient(160deg,#C9A27A,#8E6A48)"><span class="lab">Foto: Elia (da chiedere)</span></div>
+      <div class="ph" data-foto="ugo" style="background:linear-gradient(160deg,#9C2F3C,#6A1A24)"><span class="lab">Foto: Ugo (da chiedere)</span></div>
     </div>
     <div class="reveal">
       <p class="eyebrow">Chi siamo</p>
