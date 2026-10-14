@@ -10,7 +10,7 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 - Gelateria Veneta | Via al Chioso 30, Lugano | gelateria | anteprima fatta | 2026-10-13 | /gelateria-veneta/
 - Vidales Giardini | Via Nosedo 15, Massagno | giardiniere | anteprima fatta | 2026-10-13 | /vidales-giardini/
 - Manenti Pittura (Andy Manenti) | Via D. Galli 22, Locarno | imbianchino | anteprima fatta | 2026-10-13 | /manenti-pittura/
-- Calzoleria da Gennaro (Gennaro Zuppa) | Via B. Varenna 2, Locarno | calzolaio | anteprima fatta (TEST), verificata su Maps 13.10, foto inserite | 2026-10-13 | /calzoleria-da-gennaro/
+- Calzoleria da Gennaro (Gennaro Zuppa) | Via B. Varenna 2, Locarno | calzolaio | RIFIUTATO 14.10 (ha appena messo online un sito nuovo), anteprima rimossa | 2026-10-14 | NON ricontattare
 - Agata hair | Vicolo del Gabi 2, Gordola | parrucchiera | anteprima fatta, verificata su Maps 14.10, foto inserite | 2026-10-14 | /agata-hair/
 - Calzerotti Food Truck | Via Dott. G. Varesi 1, Locarno | food truck | anteprima fatta, verificata su Maps 14.10, foto inserite | 2026-10-14 | /calzerotti-food-truck/
 - Trattoria da Elia e Ugo | Via F. Cavallotti 29, Luino (VA) | trattoria | anteprima fatta, verificata su Maps 14.10, foto inserite | 2026-10-14 | /trattoria-elia-e-ugo/
