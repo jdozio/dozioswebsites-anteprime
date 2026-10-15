@@ -240,6 +240,10 @@ footer b{color:var(--bone)}
   .mbar svg{width:18px;height:18px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hero h1 .w,.hero h1 .cs{opacity:1;transform:none}}
+/* foto vere inserite */
+.has-photo>img.real{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;display:block}
+.has-photo::before,.has-photo::after{display:none!important}
+.has-photo .ph-label,.has-photo .lab,.has-photo .monogram{display:none!important}
 </style>
 </head>
 <body>
@@ -274,14 +278,14 @@ footer b{color:var(--bone)}
         <a class="btn ghost" href="#sfumatura">Prova la sfumatura</a>
       </div>
       <div class="meta">
-        <div><b>5,0</b><span class="mono">su 58 recensioni Treatwell</span></div>
+        <div><b>5,0</b><span class="mono">su 62 recensioni Google · 58 su Treatwell</span></div>
         <div><b>10+</b><span class="mono">anni di forbici e rasoio</span></div>
         <div><b>€18</b><span class="mono">il taglio uomo</span></div>
       </div>
     </div>
     <div class="portrait">
       <span class="cross tl"></span><span class="cross br"></span>
-      <div class="ph" data-foto="matteo-al-lavoro"><span class="ph-label">Foto: Matteo al lavoro</span></div>
+      <div class="has-photo ph" data-foto="matteo-al-lavoro"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SVa2SViTgI8AHBuRrxEo2tcba0kA_aIEsmyPxJ4EjA44WgO5toDwG9UNpr1NjOIZQdAtuu3eNrT8DosxchKCNmiq_o0C6jKBlX4hbBlEQMfd1HlLY367hXT5EG_LlCB8OHAHA9=s1400" alt="Sfumatura appena fatta da HeadCut" style="object-position:50% 35%"><span class="ph-label">Foto: Matteo al lavoro</span></div>
       <div class="tag"><b>«A prestissimo»</b><span class="mono">Filippo, settembre 2026</span></div>
     </div>
   </div>
@@ -336,7 +340,7 @@ footer b{color:var(--bone)}
       </div>
     </div>
     <div class="side reveal">
-      <div class="ph" data-foto="poltrona-salone"><span class="ph-label">Foto: la poltrona / il salone</span></div>
+      <div class="has-photo ph" data-foto="poltrona-salone"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T-wKiXeRjruAofF1VQ2ozgCwkqEK9eSF7sP6YJlTuI57q4MKPAaxU5PA7VKz2b7OZBO9zyT16jP99SXgOFr1f2VdvMteQIZV3imy_GI9Q5rLx1tDSTgWbTxwgXF9z09jLmZTM1=s1400" alt="Il salone HeadCut" style="object-position:50% 50%"><span class="ph-label">Foto: la poltrona / il salone</span></div>
       <p class="cap">«Mi sono trovato bene. Locale pulito e ben tenuto.» — Roberto, ottobre 2026</p>
     </div>
   </div>
@@ -344,21 +348,21 @@ footer b{color:var(--bone)}
 
 <section class="sec" id="recensioni" style="padding-top:20px">
   <div class="wrap">
-    <div class="big58 reveal"><b>5,0 ★</b><span>Cinquantotto recensioni su Treatwell, media 5 su 5. Le ultime sono di questo mese.</span></div>
+    <div class="big58 reveal"><b>5,0 ★</b><span>62 recensioni su Google e 58 su Treatwell, sempre con la media di 5 su 5. Le ultime sono di questo mese.</span></div>
     <div class="revs reveal">
       <article class="rev"><div class="n">Ottobre 2026</div><q>«Mi sono trovato bene. Locale pulito e <mark>ben tenuto</mark>.»</q><div class="who"><b>Roberto</b> · <span class="stars">★★★★★</span></div></article>
       <article class="rev"><div class="n">Settembre 2026</div><q>«Perfetto e preciso <mark>come sempre</mark>. A prestissimo.»</q><div class="who"><b>Filippo</b> · <span class="stars">★★★★★</span></div></article>
       <article class="rev"><div class="n">Settembre 2026</div><q>«Parrucchiere eccezionale, <mark>molto preciso</mark>, molto veloce, salone pulito.»</q><div class="who"><b>Gio</b> · <span class="stars">★★★★★</span></div></article>
       <article class="rev"><div class="n">Settembre 2026</div><q>«Perfetto, cortese e puntuale <mark>come sempre</mark>.»</q><div class="who"><b>Denny</b> · <span class="stars">★★★★★</span></div></article>
     </div>
-    <p class="revnote">Recensioni verificate di Treatwell. Da aggiungere: le recensioni Google.</p>
+    <p class="revnote">Recensioni verificate di Treatwell. Su Google: «Sfumatura ottima e taglio come richiesto» (Gianluca M.), «Puntualità, professionalità e simpatia» (Giuseppe Z.).</p>
   </div>
 </section>
 
 <section class="sec" id="matteo" style="background:var(--bone2)">
   <div class="wrap">
     <div class="about">
-      <div class="ph reveal" data-foto="ritratto-matteo"><span class="ph-label">Foto: ritratto di Matteo</span></div>
+      <div class="ph reveal" data-foto="ritratto-matteo"><span class="ph-label">Foto: ritratto di Matteo (da richiedere)</span></div>
       <div class="reveal">
         <div class="eyebrow mono">Chi c'è dietro la poltrona</div>
         <h2 style="margin-top:14px">Matteo.<br><em>Un cliente alla volta.</em></h2>
@@ -376,10 +380,10 @@ footer b{color:var(--bone)}
       </div>
     </div>
     <div class="gal">
-      <div class="ph reveal" data-foto="taglio-1"><span class="ph-label">Foto: taglio 1</span></div>
-      <div class="ph reveal" data-foto="taglio-2"><span class="ph-label">Foto: taglio 2</span></div>
-      <div class="ph reveal" data-foto="barba"><span class="ph-label">Foto: barba</span></div>
-      <div class="ph reveal" data-foto="dettaglio-salone"><span class="ph-label">Foto: dettaglio salone</span></div>
+      <div class="has-photo ph reveal" data-foto="taglio-1"><img class="real" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953911.w1080.h720.x692006BF/" alt="Sfumatura vista di lato" style="object-position:50% 40%"><span class="ph-label">Foto: taglio 1</span></div>
+      <div class="has-photo ph reveal" data-foto="taglio-2"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ShdcidvMRPCxTJCYh8xf3FmBshpHocrnFAY8RKomnL6fXHiJSYzLu9jTLf-R1is5tgnJj7nFB-eAC39C4c4yl7HsFp8D2kaXCOzSYly50OJ3bXaYqX2_NHP4-f6Plqg_YiRfI=s1200" alt="Le poltrone del salone" style="object-position:50% 50%"><span class="ph-label">Foto: taglio 2</span></div>
+      <div class="ph reveal" data-foto="barba"><span class="ph-label">Foto: barba (da richiedere)</span></div>
+      <div class="has-photo ph reveal" data-foto="dettaglio-salone"><img class="real" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953919.w1080.h720.x77D7549B/" alt="Gli attrezzi sul bancone" style="object-position:50% 60%"><span class="ph-label">Foto: dettaglio salone</span></div>
     </div>
   </div>
 </section>
@@ -424,14 +428,14 @@ footer b{color:var(--bone)}
         <h3 style="font-size:28px">Orari</h3>
         <ul class="hours" id="hours">
           <li data-d="1"><span>Lunedì</span><span>chiuso</span></li>
-          <li data-d="2"><span>Martedì</span><span>9:00–19:00</span></li>
-          <li data-d="3"><span>Mercoledì</span><span>9:00–19:00</span></li>
-          <li data-d="4"><span>Giovedì</span><span>9:00–19:00</span></li>
+          <li data-d="2"><span>Martedì</span><span>9:00–12:00 · 15:00–19:00</span></li>
+          <li data-d="3"><span>Mercoledì</span><span>9:00–12:00 · 15:00–19:00</span></li>
+          <li data-d="4"><span>Giovedì</span><span>9:00–12:00 · 15:00–19:00</span></li>
           <li data-d="5"><span>Venerdì</span><span>9:00–19:00</span></li>
           <li data-d="6"><span>Sabato</span><span>9:00–19:00</span></li>
           <li data-d="0"><span>Domenica</span><span>chiuso</span></li>
         </ul>
-        <p class="note">Orari di Treatwell, da confermare (eventuale pausa pranzo).</p>
+        <p class="note">Orari della scheda Google. Per gli appuntamenti risponde anche su WhatsApp.</p>
         <div class="contact">
           <a href="tel:+393420688985">📞 342 068 8985</a>
           <a href="https://wa.me/393420688985">💬 WhatsApp</a>

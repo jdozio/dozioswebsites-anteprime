@@ -238,6 +238,10 @@ footer b{color:#EDE6DA}
   .mbar svg{width:18px;height:18px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* foto vere inserite */
+.has-photo>img.real{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;display:block}
+.has-photo::before,.has-photo::after{display:none!important}
+.has-photo .ph-label,.has-photo .lab,.has-photo .monogram{display:none!important}
 </style>
 </head>
 <body>
@@ -269,13 +273,13 @@ footer b{color:#EDE6DA}
   <div class="wrap">
     <div>
       <span class="kicker">Cucina coreana <span class="ko">한식 · 벨린초나</span></span>
-      <h1>Finalmente la Corea <em>a due passi.</em></h1>
-      <p class="lead">Così ci ha descritti una cliente di Lodrino. Siamo in Via San Gottardo 88, a Bellinzona: una sala piccola e accogliente, il bibimbap da mescolare con il cucchiaio e il <q>viaggio in Corea</q> anche da portare a casa.</p>
+      <h1>Un angolo di Corea, <em>a Bellinzona.</em></h1>
+      <p class="lead">«Autentico e freschissimo», ha scritto un cliente su Google. Siamo in Via San Gottardo 88: una sala piccola e accogliente, il pollo fritto all'aglio, il bibimbap da mescolare con il cucchiaio, e tutto anche da portare a casa.</p>
       <div class="ctas">
         <a class="btn" href="#prenota">Prenota un tavolo</a>
         <a class="btn ghost" href="#cucina">Cosa si mangia</a>
       </div>
-      <div class="score"><b>4,8</b><span><span class="st">★★★★★</span><br>116 recensioni · dato da verificare sulla scheda Google</span></div>
+      <div class="score"><b>4,7</b><span><span class="st">★★★★★</span><br>137 recensioni Google</span></div>
     </div>
 
     <div class="bowlbox">
@@ -300,32 +304,32 @@ footer b{color:#EDE6DA}
 </section>
 
 <div class="ribbon" aria-hidden="true"><div class="track">
-  <span>«Ogni boccone è stato uno spettacolo»</span><span>«Finalmente la Corea a due passi»</span><span>«Prima esperienza di cucina coreana, sicuramente da ripetere»</span><span>«Il pulsante sul tavolo: originale, pratico e divertente»</span>
-  <span>«Ogni boccone è stato uno spettacolo»</span><span>«Finalmente la Corea a due passi»</span><span>«Prima esperienza di cucina coreana, sicuramente da ripetere»</span><span>«Il pulsante sul tavolo: originale, pratico e divertente»</span>
+  <span>«Un angolo di Corea autentico e freschissimo»</span><span>«Il Pollo fritto migliore mai provato!»</span><span>«Cucina fedelmente coreana»</span><span>«Abbiamo un po' placato la nostra nostalgia»</span>
+  <span>«Un angolo di Corea autentico e freschissimo»</span><span>«Il Pollo fritto migliore mai provato!»</span><span>«Cucina fedelmente coreana»</span><span>«Abbiamo un po' placato la nostra nostalgia»</span>
 </div></div>
 
 <section class="sec" id="cucina">
   <div class="wrap">
     <div class="head reveal">
       <div><span class="kicker">La cucina <span class="ko">메뉴</span></span><h2>I piatti di cui parlano<br>i nostri clienti</h2></div>
-      <p>Qualcuno ha scritto di aver provato «tutto il menù». Noi qui ne mettiamo quattro, quelli che tornano nelle recensioni. Il menù completo lo scriviamo insieme.</p>
+      <p>Qui ne mettiamo quattro, quelli di cui parlano le recensioni. Il menù completo lo scriviamo insieme.</p>
     </div>
     <div class="dishes">
       <article class="dish reveal">
-        <div class="ph" data-foto="bibimbap"><span class="ph-label">Foto: bibimbap</span></div>
-        <div class="body"><div class="ko">비빔밥</div><h3>Bibimbap</h3><p>Riso caldo con verdure e carne in ordine nella ciotola, da mescolare a tavola. Una cliente l'ha preso con il manzo e lo ha definito «ottimo».</p><div class="price"><span>prezzo</span><b>da inserire</b></div></div>
+        <div class="ph has-photo" data-foto="pollo-fritto"><span class="ph-label">Foto: pollo fritto</span><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QyYIlUD2QInzHiLI8aTeEQvEem2vAgBwjfiWZs8349TbF0p0pWAG3sPifs3xIdt0kDhBKGJ1vsR6l18gSoIoF0KIWP-cN42G2H75ibOXcIijgALtvQnLVjwVrokOXF2sSSs0uq0mX2Y7o=s1200" alt="Pollo fritto coreano" style="object-position:50% 45%"></div>
+        <div class="body"><div class="ko">치킨</div><h3>Pollo fritto coreano</h3><p>All'aglio o alla soia. «Quello all'aglio è semplicemente stratosferico», ha scritto un cliente.</p><div class="price"><span>prezzo</span><b>da inserire</b></div></div>
       </article>
       <article class="dish reveal">
-        <div class="ph" data-foto="bulgogi"><span class="ph-label">Foto: bulgogi</span></div>
-        <div class="body"><div class="ko">불고기</div><h3>Bulgogi</h3><p>Il piatto di carne marinata più conosciuto della cucina coreana.</p><div class="price"><span>prezzo</span><b>da inserire</b></div></div>
+        <div class="ph" data-foto="bibimbap"><span class="ph-label">Foto: bibimbap (da richiedere)</span></div>
+        <div class="body"><div class="ko">비빔밥</div><h3>Bibimbap</h3><p>Riso caldo con verdure e carne in ordine nella ciotola, da mescolare a tavola.</p><div class="price"><span>prezzo</span><b>da inserire</b></div></div>
       </article>
       <article class="dish reveal">
-        <div class="ph" data-foto="pancake-kimchi"><span class="ph-label">Foto: pancake al kimchi</span></div>
-        <div class="body"><div class="ko">김치전</div><h3>Pancake al kimchi</h3><p>Il kimchijeon: una frittella dorata con dentro il kimchi.</p><div class="price"><span>prezzo</span><b>da inserire</b></div></div>
+        <div class="ph" data-foto="kimbap-mandu"><span class="ph-label">Foto: kimbap e mandu (da richiedere)</span></div>
+        <div class="body"><div class="ko">김밥 · 만두</div><h3>Kimbap e mandu</h3><p>Il kimbap di manzo e i mandu, i ravioli coreani: «ottimi», secondo le recensioni.</p><div class="price"><span>prezzo</span><b>da inserire</b></div></div>
       </article>
       <article class="dish reveal">
-        <div class="ph" data-foto="antipasti-misti"><span class="ph-label">Foto: piatto misto</span></div>
-        <div class="body"><div class="ko">모둠</div><h3>Antipasti misti</h3><p>Il piatto misto per assaggiare un po' di tutto. Nelle recensioni è «ottimo».</p><div class="price"><span>prezzo</span><b>da inserire</b></div></div>
+        <div class="ph has-photo" data-foto="pesciolini"><span class="ph-label">Foto: pesciolini</span><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TZWdvfRY4sLZK53xrVY_kbzMkAp305YpMX3GGo4M_ggqVjV_vaBwm-SaXKsjIsxLF-EnX1YpvusYiWjIHpSA9XsRfqgEvDJseEmIDvaNVUj53BWx48nMT3FWMIsyAUmQ6tNmfmNujF7ck=s1200" alt="Pesciolino caldo coreano con gelato" style="object-position:50% 50%"></div>
+        <div class="body"><div class="ko">붕어빵</div><h3>Pesciolini caldi con gelato</h3><p>Il dolce tipico a forma di pesce, servito caldo con il gelato: «la conclusione perfetta».</p><div class="price"><span>prezzo</span><b>da inserire</b></div></div>
       </article>
     </div>
     <div class="menunote reveal"><b>Da completare insieme:</b> il menù completo con i prezzi, i piatti piccanti e quelli vegetariani, cosa si può prendere da asporto e se c'è un menù del pranzo.</div>
@@ -337,8 +341,8 @@ footer b{color:#EDE6DA}
     <div class="reveal">
       <span class="kicker" style="color:var(--yellow)">Un dettaglio coreano <span class="ko" style="color:#958C80">호출벨</span></span>
       <h2 style="margin-top:12px">Basta un tocco<br>e arriviamo.</h2>
-      <p style="margin-top:16px">In Corea tanti ristoranti hanno il campanello sul tavolo. Da noi anche. Ai clienti piace: lo scrivono pure nelle recensioni. Provi a premerlo.</p>
-      <blockquote>«Ho trovato molto carina l'idea del pulsante sul tavolo per chiamare il cameriere: un dettaglio originale, pratico e divertente.»<cite>Vale · recensione Tripadvisor, agosto 2026</cite></blockquote>
+      <p style="margin-top:16px">In Corea tanti ristoranti hanno il campanello sul tavolo. Da noi anche. Ai clienti piace: una cliente l'ha trovato originale, pratico e divertente. Provi a premerlo.</p>
+      <blockquote>«La signora è stata carinissima e ci ha fatto sentire ospiti graditi, non semplici clienti.»<cite>Recensione Google</cite></blockquote>
     </div>
     <div class="table reveal">
       <div class="screen" id="screen">— — —</div>
@@ -356,20 +360,20 @@ footer b{color:#EDE6DA}
       <p>Per molti è la prima volta con la cucina coreana. Ecco cosa hanno scritto.</p>
     </div>
     <div class="revs">
-      <article class="rev reveal"><div class="st">★★★★★</div><h3>«Un'esperienza meravigliosa»</h3><p>«Cibo ottimo, il viaggio in Corea: abbiamo provato tutto il menù e vi garantisco che ogni boccone è stato uno spettacolo.»</p><div class="who"><b>Cliente</b> · in coppia · agosto 2026</div></article>
-      <article class="rev reveal"><div class="st">★★★★★</div><h3>«Bravo, bravo, bravo»</h3><p>«Prima esperienza di cucina coreana e sicuramente da ripetere. Locale molto carino, pulizia.» Ha lodato anche lo chef e il personale, gentili.</p><div class="who"><b>Alex</b> · da Piacenza, in famiglia · febbraio 2026</div></article>
-      <article class="rev reveal"><div class="st">★★★★★</div><h3>«Finalmente la Corea a due passi»</h3><p>«Cibo davvero buono, ne vale la pena.» Un locale piccolo, accogliente e familiare.</p><div class="who"><b>Tatiana</b> · da Lodrino, in famiglia · marzo 2026</div></article>
-      <article class="rev reveal"><div class="st">★★★★☆</div><h3>«Il pulsante sul tavolo»</h3><p>Ha preso il piatto misto di antipasti e il bibimbap di manzo: «ottimi». E tornerebbe.</p><div class="who"><b>Vale</b> · con amici · agosto 2026</div></article>
+      <article class="rev reveal"><div class="st">★★★★★</div><h3>«Un angolo di Corea autentico»</h3><p>«Un angolo di Corea autentico e freschissimo a Bellinzona! È un locale piccolo ma incredibilmente accogliente, con un'atmosfera orientale che ti fa sentire subito altrove.»</p><div class="who"><b>Recensione Google</b></div></article>
+      <article class="rev reveal"><div class="st">★★★★★</div><h3>«Semplicemente divino!»</h3><p>«Il Pollo fritto migliore mai provato! Il Cuoco è coreano e ci delizia ogni volta con pietanze fresche e succulente!»</p><div class="who"><b>Cedric C.</b> · Google</div></article>
+      <article class="rev reveal"><div class="st">★★★★★</div><h3>«Torneremo sicuramente»</h3><p>«Nostalgiche dal nostro viaggio in Sud Corea… Cucina fedelmente coreana, qualità dei prodotti alta. Abbiamo un po' placato la nostra nostalgia.»</p><div class="who"><b>Miriam S.</b> · Google</div></article>
+      <article class="rev reveal"><div class="st">★★★★★</div><h3>«Torneremo!»</h3><p>«Il cibo era assolutamente delizioso, tutto era fresco, ben equilibrato e autenticamente coreano. La nostra cameriera era estremamente attenta, gentile e davvero dolce.»</p><div class="who"><b>Jana P.</b> · Google</div></article>
     </div>
-    <p class="revnote reveal">Recensioni Tripadvisor (testi ripresi dalla traduzione del sito: da sostituire con le parole originali e con le recensioni Google).</p>
+    <p class="revnote reveal">4,7 su 137 recensioni Google.</p>
   </div>
 </section>
 
 <section class="sec" id="chi">
   <div class="wrap about">
     <div class="pics reveal">
-      <div class="ph" data-foto="sala"><span class="ph-label">Foto: la sala</span></div>
-      <div class="ph two" data-foto="in-cucina"><span class="ph-label">Foto: in cucina</span></div>
+      <div class="ph has-photo" data-foto="sala"><span class="ph-label">Foto: la sala</span><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rg23qK-LSG_pgmqrg13PkW7k_uXnMMpxoH4tPvdDHjnaPYVwuIMXdzBWruAH4x1RVFVfIBOeJnOI3O82oJzTBXQRP6XkqAhVyF-Wa15WEjZMMf7DZoFMB6KffvNuc_yQ6f4yvghXetOqwL=s1400" alt="La sala di M&amp;M Korean Food" style="object-position:50% 50%"></div>
+      <div class="ph two has-photo" data-foto="ingresso"><span class="ph-label">Foto: ingresso</span><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R7_ugf0ve49CtTC0T6k7_-TH6AfUhvwNmZogjlqszbMOsT6laFXjASLU93coLWpxjYOdG2NaavybbG-L200m4ufQSMEzRGW-81-FyCEg8rnLHlPqWww6_mBeHD_2rlk-HnPp_TwGz3q2rZ=s1200" alt="L'ingresso in Via San Gottardo 88" style="object-position:50% 70%"></div>
     </div>
     <div class="reveal">
       <span class="kicker">Chi siamo <span class="ko">우리</span></span>
@@ -430,11 +434,11 @@ footer b{color:#EDE6DA}
           <li data-d="2"><span>Martedì</span><span>18:00–21:30</span></li>
           <li data-d="3"><span>Mercoledì</span><span>11:30–14:00 · 18:00–21:30</span></li>
           <li data-d="4"><span>Giovedì</span><span>11:30–14:00 · 18:00–21:30</span></li>
-          <li data-d="5"><span>Venerdì</span><span>11:30–14:00 · 18:00–23:30</span></li>
+          <li data-d="5"><span>Venerdì</span><span>11:30–14:00 · 18:00–23:00</span></li>
           <li data-d="6"><span>Sabato</span><span>18:00–23:30</span></li>
-          <li data-d="0"><span>Domenica</span><span>18:00–22:00</span></li>
+          <li data-d="0"><span>Domenica</span><span>18:00–21:30</span></li>
         </ul>
-        <p class="small">Orari da confermare insieme (le fonti online non coincidono).</p>
+        <p class="small">Orari della scheda Google.</p>
         <div class="contact">
           <a href="tel:+41762035232">📞 076 203 52 32</a>
           <a href="https://maps.google.com/?q=M%26M+Korean+Food+Via+San+Gottardo+88+Bellinzona" target="_blank" rel="noopener">📍 Via San Gottardo 88, 6500 Bellinzona</a>

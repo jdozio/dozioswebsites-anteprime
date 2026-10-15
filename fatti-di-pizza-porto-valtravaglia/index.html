@@ -221,6 +221,10 @@ footer b{color:#fff}
   .mbar svg{width:18px;height:18px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* foto vere inserite */
+.has-photo>img.real{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;display:block}
+.has-photo::before,.has-photo::after{display:none!important}
+.has-photo .ph-label,.has-photo .lab,.has-photo .monogram{display:none!important}
 </style>
 </head>
 <body>
@@ -248,16 +252,16 @@ footer b{color:#fff}
   <div class="wrap">
     <div>
       <span class="eyebrow">Pizza d'asporto sul Lago Maggiore</span>
-      <h1 style="margin-top:18px">Tanti fanno la pizza.<span class="mk">Così buona, pochi.</span></h1>
-      <p class="lead">Lo ha scritto una cliente. Da noi la pizza si ordina, si ritira calda e si porta dove si vuole: a casa o in riva al lago. Impasto leggero, ingredienti freschi e un saluto con il sorriso.</p>
+      <h1 style="margin-top:18px">La pizza qui<span class="mk">è uno spettacolo.</span></h1>
+      <p class="lead">Lo ha scritto un cliente che la prende qui «ormai da anni». Da noi la pizza si ordina, si ritira calda e si porta dove si vuole: a casa o in riva al lago. Impasto leggero, ingredienti freschi e un saluto con il sorriso.</p>
       <div class="ctas">
         <a class="btn" href="#ordina">Ordina la tua pizza</a>
         <a class="btn ghost" href="tel:+393516713059">Chiama 351 671 3059</a>
       </div>
-      <div class="score"><b>4,9</b><i>★★★★★</i><span>82 recensioni Google · dato da verificare</span></div>
+      <div class="score"><b>4,9</b><i>★★★★★</i><span>106 recensioni Google</span></div>
     </div>
     <div class="boxwrap closed" id="boxwrap" role="button" tabindex="0" aria-label="Apri e chiudi il cartone della pizza">
-      <div class="lid"><p>Portatela al lago e godetevi la vista!<small>— Julian, cliente</small></p><div class="front"><span class="stamp">Fatti di Pizza</span></div></div>
+      <div class="lid"><p>Portatela al lago e godetevi la vista!<small>— un cliente, su Google</small></p><div class="front"><span class="stamp">Fatti di Pizza</span></div></div>
       <div class="base"><div class="pizza" id="pizza"><span class="cut" style="transform:rotate(0deg)"></span><span class="cut" style="transform:rotate(45deg)"></span><span class="cut" style="transform:rotate(90deg)"></span><span class="cut" style="transform:rotate(135deg)"></span></div></div>
       <div class="steam" aria-hidden="true"><i></i><i></i><i></i></div>
       <span class="hint">tocca il cartone</span>
@@ -268,21 +272,21 @@ footer b{color:#fff}
 <section class="lakequote">
   <div class="wrap">
     <blockquote class="reveal">«Solo da asporto! Ma persone davvero gentili e buon cibo. Portatela al lago e godetevi la vista!»</blockquote>
-    <cite class="reveal">Julian · recensione, agosto 2025 (tradotta dall'inglese)</cite>
-    <div class="langs reveal"><span>🇮🇹 «leggere e fresche»</span><span>🇩🇪 «la migliore pizza della zona»</span><span>🇬🇧 «really nice people»</span></div>
+    <cite class="reveal">Recensione Google · tradotta dall'inglese</cite>
+    <div class="langs reveal"><span>🇮🇹 «leggere e fresche»</span><span>🇬🇧 «very good pizza»</span><span>🇬🇧 «really nice people»</span></div>
   </div>
 </section>
 
 <section class="sec" id="impasto">
   <div class="wrap">
     <div class="head reveal">
-      <div><span class="eyebrow">L'impasto</span><h2>Leggera.<br>Anche la sera dopo.</h2></div>
-      <p>Il complimento che torna più spesso è sempre lo stesso: la pizza non appesantisce. Tre cose, dette dai clienti.</p>
+      <div><span class="eyebrow">Come la facciamo</span><h2>Davanti a te.<br>Con ingredienti veri.</h2></div>
+      <p>Tre cose che i clienti notano, con le loro parole.</p>
     </div>
     <div class="dough">
-      <article class="dcard reveal"><div class="num">1</div><h3>Lievitata bene</h3><p>Un impasto che si digerisce: è una delle cose che i clienti notano di più.</p><q>«Impasto lievitato perfettamente, non appesantisce.»</q><cite>Maria · agosto 2025 (tradotta)</cite></article>
-      <article class="dcard reveal"><div class="num">2</div><h3>Ingredienti freschi</h3><p>Si sente al primo morso, e i clienti lo scrivono.</p><q>«Le pizze sono straordinarie, leggere e fresche.»</q><cite>Farjana · luglio 2025</cite></article>
-      <article class="dcard reveal"><div class="num">3</div><h3>Gentilezza</h3><p>Un posto semplice, a conduzione familiare, dove si viene accolti con un sorriso.</p><q>«Un'ottima pizza da asporto, con cortesia e ottima qualità.»</q><cite>Fabio · aprile 2026 (tradotta)</cite></article>
+      <article class="dcard reveal"><div class="num">1</div><h3>Fatta davanti a te</h3><p>La pizza si prepara al banco, sotto gli occhi di chi aspetta.</p><q>«La tecnica di fartela davanti a te, osservando che gli ingredienti non sono di sotto marca ma tutti di qualità.»</q><cite>Pietro S. · Google</cite></article>
+      <article class="dcard reveal"><div class="num">2</div><h3>Ingredienti freschi</h3><p>Si sente al primo morso, e i clienti lo scrivono.</p><q>«Le pizze sono straordinarie, leggere e fresche.»</q><cite>Farjana N. · Google</cite></article>
+      <article class="dcard reveal"><div class="num">3</div><h3>Come a casa</h3><p>Nando e Ale accolgono i clienti come amici, anche quelli di passaggio.</p><q>«Ottima pizza, personale fantastico che ti fa sentire a casa.»</q><cite>Cristina D. · Google</cite></article>
     </div>
   </div>
 </section>
@@ -300,7 +304,7 @@ footer b{color:#fff}
       </div>
       <div class="menunote"><b>Da completare insieme:</b> il menù completo con i prezzi (questi nomi vengono da un menù trovato online e vanno confermati), le pizze speciali, le bevande e gli eventuali impasti alternativi.</div>
     </div>
-    <div class="ph reveal" data-foto="pizza-appena-sfornata"><span class="ph-label">Foto: pizza appena sfornata</span></div>
+    <div class="has-photo ph reveal" data-foto="pizza-appena-sfornata"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S4KXWsn0M2r-1eRRvP-U_1Ahd8Nb3g3dJhin28cBv55mZs1ZaTzzP6B6-xjibj6LzF-WDcNy6FbDQsUFJ5YvNjmAhNPukvOosdW5k0GvkY7x27k2sBhY0w0fCBvmQibsxYZwHB=s1400" alt="Pizza ai frutti di mare di Fatti di Pizza" style="object-position:50% 50%"><span class="ph-label">Foto: pizza appena sfornata</span></div>
   </div>
 </section>
 
@@ -335,13 +339,13 @@ footer b{color:#fff}
 <section class="sec" id="chi">
   <div class="wrap about">
     <div class="pics reveal">
-      <div class="ph" data-foto="pizzaiolo-al-forno"><span class="ph-label">Foto: il pizzaiolo al forno</span></div>
-      <div class="ph" data-foto="bancone-cartoni"><span class="ph-label">Foto: il bancone</span></div>
+      <div class="ph" data-foto="pizzaiolo-al-forno"><span class="ph-label">Foto: il pizzaiolo al forno (da richiedere)</span></div>
+      <div class="has-photo ph" data-foto="bancone-cartoni"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TXRQXVlfiEUsgjzA5XCy73hUT6g_lpMuLR6E3MtjUQojjK4Jrs3qK6L1LOMLtUW5HS1txWVJcl_FHwVTAns2N9O3KoI7SLGNzQldUXZyO6L_dQgY20BiKBffCYRQ01DquwWOvfQP2LnJ3H=s1400" alt="Pizze da asporto portate davanti al lago" style="object-position:50% 60%"><span class="ph-label">Foto: il bancone</span></div>
     </div>
     <div class="reveal">
       <span class="eyebrow">Chi siamo</span>
       <h2 style="margin-top:14px">Un posto piccolo.<br>Una famiglia.</h2>
-      <p>Fatti di Pizza è una pizzeria d'asporto a Porto Valtravaglia, sulla sponda lombarda del Lago Maggiore. Un cliente ci ha trovati su Google e ci ha chiamati «un miraggio»; c'è chi torna ogni anno, in vacanza.</p>
+      <p>Fatti di Pizza è una pizzeria d'asporto a Porto Valtravaglia, sulla sponda lombarda del Lago Maggiore. Da poco siamo in un locale nuovo e più grande, in Via Roma davanti alla chiesa, con una decina di posti per mangiare sul momento o la piazza lì fuori.</p>
       <div class="todo">
         <b>Da completare insieme</b>
         <ul>
@@ -359,14 +363,14 @@ footer b{color:#fff}
   <div class="wrap">
     <div class="head reveal"><div><span class="eyebrow">Recensioni</span><h2>In tre lingue,<br>la stessa pizza.</h2></div><p>Turisti e gente del posto, d'estate e d'inverno.</p></div>
     <div class="revs">
-      <article class="rev big reveal"><div class="st">★★★★★</div><p>«Ogni anno di nuovo. Semplicemente fantastica, la migliore pizza della zona.»</p><div class="who"><b>Sandra</b> · agosto 2025 · tradotta dal tedesco</div></article>
-      <article class="rev reveal"><div class="st">★★★★★</div><p>«Le pizze sono straordinarie, leggere e fresche.»</p><div class="who"><b>Farjana</b> · luglio 2025</div></article>
-      <article class="rev reveal"><div class="st">★★★★★</div><p>«Un miraggio nel Varesotto, grazie a Google.» Ha lodato ingredienti freschi e di qualità, l'impasto e il condimento.</p><div class="who"><b>Recensione Tripadvisor</b> · marzo 2025 · tradotta</div></article>
-      <article class="rev reveal"><div class="st">★★★★★</div><p>«Pizza molto buona e persone molto gentili. Consigliatissima.»</p><div class="who"><b>Ma He</b> · ottobre 2025 · tradotta dall'inglese</div></article>
-      <article class="rev reveal"><div class="st">★★★★★</div><p>«Tanti fanno la pizza, ma così buona pochi.» Il personale è «sempre disponibile e gentile».</p><div class="who"><b>Maria</b> · agosto 2025 · Tripadvisor, tradotta</div></article>
-      <article class="rev reveal"><div class="st">★★★★★</div><p>«Un posto semplice con un'ottima pizza da asporto.»</p><div class="who"><b>Fabio</b> · aprile 2026 · Tripadvisor, tradotta</div></article>
+      <article class="rev big reveal"><div class="st">★★★★★</div><p>«La pizza qui è uno spettacolo, sono velocissimi e gentilissimi. Prendo la pizza qua ormai da anni e non mi sono mai lamentato.»</p><div class="who"><b>Brian</b> · Google</div></article>
+      <article class="rev reveal"><div class="st">★★★★★</div><p>«Le pizze sono straordinarie, leggere e fresche, una delle più buone mai mangiate.»</p><div class="who"><b>Farjana N.</b> · Google</div></article>
+      <article class="rev reveal"><div class="st">★★★★★</div><p>«Nando e Ale bravissime persone e sanno accogliere i loro clienti.» E un consiglio: le patatine fritte e lo gnocco fritto con i salumi.</p><div class="who"><b>Pietro S.</b> · Google</div></article>
+      <article class="rev reveal"><div class="st">★★★★★</div><p>«Ottima pizza, personale fantastico che ti fa sentire a casa.»</p><div class="who"><b>Cristina D.</b> · Google</div></article>
+      <article class="rev reveal"><div class="st">★★★★★</div><p>«Great pizza and super friendly staff… take the pizza and eat outside in the lovely square.»</p><div class="who"><b>Recensione Google</b> · in inglese</div></article>
+      <article class="rev reveal"><div class="st">★★★★★</div><p>«Very good pizza! Best to order in advance… They have lots of pre orders.»</p><div class="who"><b>Recensione Google</b> · in inglese</div></article>
     </div>
-    <p class="note">Testi ripresi da Tripadvisor e da un aggregatore di recensioni Google; quelli tradotti vanno sostituiti con le parole originali.</p>
+    <p class="note">4,9 su 106 recensioni Google.</p>
   </div>
 </section>
 
@@ -381,11 +385,11 @@ footer b{color:#fff}
           <li data-d="2"><span>Martedì</span><span>chiuso</span></li>
           <li data-d="3"><span>Mercoledì</span><span>18:30–22:00</span></li>
           <li data-d="4"><span>Giovedì</span><span>18:30–22:00</span></li>
-          <li data-d="5"><span>Venerdì</span><span>18:00–22:00</span></li>
+          <li data-d="5"><span>Venerdì</span><span>18:30–22:00</span></li>
           <li data-d="6"><span>Sabato</span><span>18:30–22:00</span></li>
           <li data-d="0"><span>Domenica</span><span>18:30–22:00</span></li>
         </ul>
-        <p class="note">Orari da confermare insieme: le fonti online non coincidono (forse anche a pranzo).</p>
+        <p class="note">Orari della scheda Google. Conviene ordinare in anticipo: le pizze prenotate sono tante.</p>
         <div class="contact">
           <a href="tel:+393516713059">📞 351 671 3059</a>
           <a href="https://wa.me/393516713059">💬 WhatsApp</a>
