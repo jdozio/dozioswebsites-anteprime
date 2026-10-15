@@ -125,6 +125,17 @@ Le attività affermate con tantissime recensioni e senza sito spesso NON voglion
 - Responsive impeccabile (controlla a 375px e a desktop), immagini con `loading="lazy"`.
 - Script dentro IIFE.
 
+
+## Anteprima del link su WhatsApp (obbligatoria in ogni sito)
+Nel `<head>`, subito dopo `<meta name="description">`, metti il blocco tra i commenti
+`<!-- anteprima link (WhatsApp) -->` e `<!-- /anteprima link -->` con: og:type website, og:locale it_IT,
+og:site_name "Jacopo Dozio · siti web", og:title "<Nome attività> · anteprima del nuovo sito",
+og:description (= meta description), og:url (link completo dell'anteprima), og:image (una foto vera
+dell'attività, 1200×630: per le foto Google usa il suffisso `=w1200-h630-p-k-no`), og:image:width/height,
+og:image:alt, twitter:card summary_large_image. Così su WhatsApp sotto il link compare una scheda con la
+foto e il nome della loro attività invece di un link nudo. Se le foto arrivano solo la mattina, la mattina
+si aggiorna og:image (script: /tmp o rifallo a mano).
+
 ## 6. Controllo qualità (obbligatorio)
 - Se puoi, apri la pagina con Playwright/Chromium (preinstallato in `/opt/pw-browsers`) e fai
   screenshot mobile e desktop; correggi testi illeggibili, sovrapposizioni, buchi nella griglia.
