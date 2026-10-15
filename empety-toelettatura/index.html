@@ -461,8 +461,10 @@ footer b{color:#fff}
     size();make();requestAnimationFrame(draw);
     window.addEventListener('resize',function(){size();});
     // se nessuno tocca, la schiuma si scioglie da sola
-    setTimeout(function auto(){if(touched)return;var left=bubbles.filter(function(b){return !b.pop});if(!left.length){tip.classList.add('off');return}
-      for(var i=0;i<6&&left.length;i++){var b=left.splice(Math.floor(Math.random()*left.length),1)[0];popAt(b.x,b.y,1);}setTimeout(auto,120);},4500);
+    function auto(){if(touched)return;var left=bubbles.filter(function(b){return !b.pop});if(!left.length){tip.classList.add('off');return}
+      for(var i=0;i<4&&left.length;i++){var b=left.splice(Math.floor(Math.random()*left.length),1)[0];popAt(b.x,b.y,1);}setTimeout(auto,140);}
+    var started=false;function startAuto(){if(started)return;started=true;setTimeout(auto,5000);}
+    if('IntersectionObserver' in window){var fio=new IntersectionObserver(function(es){if(es[0].isIntersecting&&es[0].intersectionRatio>.6){startAuto();fio.disconnect();}},{threshold:[.6]});fio.observe(cv);}else startAuto();
   }
 
   // messaggio WhatsApp (dimostrazione)
