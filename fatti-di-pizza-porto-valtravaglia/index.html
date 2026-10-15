@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fatti di Pizza · Pizza d'asporto a Porto Valtravaglia (Lago Maggiore)</title>
+<meta name="description" content="Fatti di Pizza, pizza d'asporto a Porto Valtravaglia sul Lago Maggiore. Impasto leggero, ingredienti freschi. Ordina al 351 671 3059.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+:root{
+  --kraft:#C9A06A; --kraft2:#B98D57; --kraft3:#E6CDA6; --cream:#FBF4E8; --cream2:#F3E7D3;
+  --tomato:#C7341F; --tomato2:#A42816; --basil:#3D6B35; --lake:#173A55; --lake2:#0F2A40; --dusk:#E98A4E;
+  --ink:#231A12; --ink2:#6A5A48; --line:#E2D2B8; --marker:#1E1A17;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:72px}
+body{background:var(--cream);color:var(--ink);font:400 17px/1.65 'Bricolage Grotesque',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-weight:800;line-height:.98;letter-spacing:-.025em}
+h2{font-size:clamp(38px,5.4vw,72px)}
+.mk{font-family:'Permanent Marker',cursive;font-weight:400;letter-spacing:0}
+.eyebrow{font:600 13px/1 'Bricolage Grotesque';letter-spacing:.16em;text-transform:uppercase;color:var(--tomato);display:inline-flex;gap:10px;align-items:center}
+.eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor}
+
+.draft{background:var(--lake2);color:#D8E3EC;font-size:13px;text-align:center;padding:8px 16px;line-height:1.45}
+.draft b{color:#fff}
+
+header{position:sticky;top:0;z-index:40;background:rgba(251,244,232,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:14px}
+.brand{text-decoration:none;display:flex;align-items:center;gap:12px}
+.brand .dot{width:38px;height:38px;border-radius:50%;background:radial-gradient(circle at 50% 50%,var(--tomato) 0 52%,#E9C27F 53% 64%,#C98C4A 65%);box-shadow:inset 0 0 0 2px rgba(0,0,0,.08)}
+.brand b{display:block;font:400 23px/1 'Permanent Marker'}
+.brand small{display:block;font-size:12px;color:var(--ink2);margin-top:3px}
+.nav ul{display:flex;gap:24px;list-style:none;font-size:15px;font-weight:600}
+.nav ul a{text-decoration:none;opacity:.75}
+.nav ul a:hover{opacity:1;color:var(--tomato)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--tomato);color:#fff;text-decoration:none;font:800 16px/1 'Bricolage Grotesque';padding:16px 24px;border-radius:12px;border:0;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s;box-shadow:0 4px 0 var(--tomato2)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 var(--tomato2)}
+.btn:active{transform:translateY(2px);box-shadow:0 1px 0 var(--tomato2)}
+.btn.ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}
+.btn.sm{padding:11px 16px;font-size:14px}
+.btn.wa{background:#25D366;color:#0B3B1E;box-shadow:0 4px 0 #179247}
+
+.ph{position:relative;overflow:hidden;border-radius:16px;background:linear-gradient(150deg,#E8D6B8,#D9C19B)}
+.ph::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg,rgba(255,255,255,.18) 0 2px,transparent 2px 13px)}
+.ph .ph-label{position:absolute;left:14px;bottom:14px;z-index:2;background:var(--marker);color:#fff;font:400 13px/1.2 'Permanent Marker';padding:7px 11px;border-radius:6px;transform:rotate(-1.5deg)}
+.has-photo>img.real{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.has-photo::before,.has-photo .ph-label{display:none}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#F6D9B0 0%,#F1B784 34%,#DE8A5C 58%,#7C5A6A 78%,var(--lake) 100%)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:26%;background:linear-gradient(180deg,rgba(23,58,85,0),rgba(15,42,64,.6)),repeating-linear-gradient(180deg,rgba(255,220,180,.0) 0 7px,rgba(255,220,180,.16) 7px 8px);pointer-events:none}
+.hero .sun{position:absolute;left:62%;top:52%;width:220px;height:220px;margin-left:-110px;border-radius:50%;background:radial-gradient(circle,#FFE3B0 0,#FFC57E 45%,rgba(255,180,110,0) 70%);filter:blur(2px);animation:sun 6s ease-in-out infinite alternate}
+@keyframes sun{to{transform:translateY(14px)}}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;min-height:min(86vh,760px);padding-top:50px;padding-bottom:70px}
+.hero h1{font-size:clamp(50px,7vw,100px);color:var(--ink)}
+.hero h1 .mk{display:block;color:var(--tomato);font-size:.78em;margin-top:8px;transform:rotate(-2deg);transform-origin:left}
+.hero .lead{margin-top:22px;font-size:19px;max-width:28em;color:#4A3426}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.hero .ctas .ghost{color:var(--ink)}
+.hero .score{margin-top:26px;display:inline-flex;align-items:center;gap:12px;background:rgba(251,244,232,.75);padding:10px 16px;border-radius:999px;font-size:14px;color:#4A3426}
+.hero .score b{font-size:22px;color:var(--ink)}
+.hero .score i{font-style:normal;color:var(--tomato);letter-spacing:2px}
+
+/* il cartone */
+.boxwrap{position:relative;justify-self:center;width:min(460px,88vw);display:flex;flex-direction:column;align-items:center;cursor:pointer;margin-top:10px}
+.lid,.base{position:relative;width:100%;aspect-ratio:1/.62;border-radius:8px;background:var(--kraft);box-shadow:inset 0 0 0 10px var(--kraft2)}
+.lid::before,.base::before{content:"";position:absolute;inset:0;border-radius:inherit;background:repeating-linear-gradient(90deg,rgba(0,0,0,.025) 0 2px,transparent 2px 6px);pointer-events:none}
+.lid{z-index:2;background:var(--kraft3);box-shadow:inset 0 0 0 10px #D8BB8E,0 -2px 0 #B98D57;transform:perspective(900px) rotateX(14deg);transform-origin:50% 100%;transition:transform 1.3s cubic-bezier(.5,0,.15,1) .3s;display:grid;place-items:center}
+.lid p{font:400 clamp(20px,3.2vw,30px)/1.2 'Permanent Marker';color:var(--marker);text-align:center;padding:0 10%;transform:rotate(-3deg)}
+.lid p small{display:block;margin-top:8px;font-size:.55em;color:#6A5A48}
+.lid .front{position:absolute;inset:0;border-radius:8px;background:var(--kraft);box-shadow:inset 0 0 0 10px var(--kraft2);display:grid;place-items:center;transition:opacity .5s .9s}
+.lid .front .stamp{font:400 clamp(28px,5vw,44px)/1 'Permanent Marker';color:var(--tomato);transform:rotate(-8deg);border:4px solid var(--tomato);padding:10px 18px;border-radius:12px}
+.base{aspect-ratio:1/.7;transform:perspective(900px) rotateX(46deg);transform-origin:50% 0;margin-top:-2px;margin-bottom:-22%;box-shadow:inset 0 0 0 10px var(--kraft2),0 50px 50px -30px rgba(40,20,10,.55)}
+.pizza{position:absolute;left:50%;top:50%;width:60%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,#D63B22 0 64%,#E6B66E 66% 76%,#C98945 80%,#B87736 86%);box-shadow:inset 0 0 22px rgba(80,30,10,.35);overflow:hidden}
+.pizza .moz{position:absolute;border-radius:48% 52% 45% 55%;background:radial-gradient(circle at 40% 40%,#FFFDF5,#F6EBD3 70%);box-shadow:0 2px 3px rgba(80,30,10,.25)}
+.pizza .bas{position:absolute;width:9%;height:5%;border-radius:0 100% 0 100%;background:linear-gradient(135deg,#4E8A3E,#2E5F27)}
+.pizza .cut{position:absolute;left:50%;top:0;bottom:0;width:2px;margin-left:-1px;background:rgba(120,40,20,.35)}
+.boxwrap.closed .lid{transform:perspective(900px) rotateX(-75deg) translateY(10%)}
+.boxwrap.closed .lid .front{opacity:1;transition:opacity .3s}
+.boxwrap:not(.closed) .lid .front{opacity:0}
+.steam{position:absolute;left:20%;right:20%;bottom:30%;height:30%;pointer-events:none;opacity:0;transition:opacity 1s 1.2s;z-index:3}
+.boxwrap:not(.closed) .steam{opacity:1}
+.steam i{position:absolute;bottom:0;width:10px;height:70px;border-radius:50%;background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.55));filter:blur(4px);animation:steam 3s ease-in-out infinite}
+.steam i:nth-child(1){left:25%}.steam i:nth-child(2){left:50%;animation-delay:1s}.steam i:nth-child(3){left:72%;animation-delay:2s}
+@keyframes steam{0%{transform:translateY(20px) scaleY(.6);opacity:0}40%{opacity:1}100%{transform:translateY(-50px) scaleY(1.2);opacity:0}}
+.boxwrap .hint{margin-top:14px;font:400 14px 'Permanent Marker';color:rgba(255,255,255,.85)}
+
+/* RECENSIONE GRANDE */
+.lakequote{background:var(--lake);color:#EAF0F4;text-align:center;padding:96px 0;position:relative;overflow:hidden}
+.lakequote::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(180deg,transparent 0 13px,rgba(255,255,255,.035) 13px 14px)}
+.lakequote blockquote{position:relative;font:400 clamp(30px,4.6vw,58px)/1.15 'Permanent Marker';max-width:16em;margin:0 auto}
+.lakequote cite{position:relative;display:block;margin-top:22px;font:600 14px 'Bricolage Grotesque';font-style:normal;color:#9FB6C7;letter-spacing:.04em}
+.langs{position:relative;display:flex;gap:8px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.langs span{border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:6px 12px;font-size:13px;color:#C9D7E1}
+
+.sec{padding:104px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:46px;flex-wrap:wrap}
+.head p{max-width:30em;color:var(--ink2)}
+.head h2{margin-top:14px}
+
+/* IMPASTO */
+.dough{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.dcard{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px 26px;position:relative;overflow:hidden;transition:transform .3s}
+.dcard:hover{transform:translateY(-6px) rotate(-.5deg)}
+.dcard .num{font:400 56px/1 'Permanent Marker';color:var(--kraft)}
+.dcard h3{font-size:26px;margin:10px 0 10px}
+.dcard p{color:var(--ink2);font-size:16px}
+.dcard q{quotes:none;display:block;margin-top:14px;font-style:italic;color:var(--ink)}
+.dcard cite{display:block;font-size:13px;color:var(--ink2);font-style:normal;margin-top:4px}
+
+/* PIZZE */
+.menu{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+.plist{display:grid;gap:0;border-top:2px solid var(--ink)}
+.pz{display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:center;padding:18px 0;border-bottom:1px dashed #CDB894}
+.pz .mini{width:64px;height:64px;border-radius:50%;box-shadow:inset 0 0 0 5px #E3B470,inset 0 0 0 8px #C9894A}
+.pz h3{font-size:28px}
+.pz p{color:var(--ink2);font-size:15px}
+.pz .pr{font:400 15px 'Permanent Marker';color:var(--ink2);text-align:right}
+.menunote{margin-top:20px;border:2px dashed #C9A06A;border-radius:16px;padding:16px 18px;color:var(--ink2);font-size:15px;background:#fff}
+.menunote b{color:var(--ink)}
+.menu .ph{aspect-ratio:4/5}
+
+/* ORDINE */
+.order{background:var(--cream2)}
+.order .wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+.demo{display:inline-block;background:var(--ink);color:#fff;font:600 11.5px 'Bricolage Grotesque';letter-spacing:.14em;text-transform:uppercase;padding:6px 10px;border-radius:6px}
+form{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;display:grid;gap:16px}
+.qty{display:grid;gap:10px}
+.qrow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 12px;border:1px solid var(--line);border-radius:12px}
+.qrow b{font-size:17px}
+.qrow .ctl{display:flex;align-items:center;gap:10px}
+.qrow button{width:36px;height:36px;border-radius:50%;border:2px solid var(--ink);background:#fff;font:800 18px/1 'Bricolage Grotesque';cursor:pointer}
+.qrow output{min-width:20px;text-align:center;font-weight:800;font-size:18px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:grid;gap:6px;font-size:13.5px;font-weight:600;color:var(--ink2)}
+input,select{font:400 16px 'Bricolage Grotesque';padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);width:100%}
+input:focus,select:focus{outline:2px solid var(--tomato);outline-offset:1px}
+.lidcard{position:sticky;top:96px;aspect-ratio:1;border-radius:10px;background:var(--kraft);box-shadow:inset 0 0 0 12px var(--kraft2),0 40px 50px -30px rgba(60,30,10,.5);padding:13%;display:flex;flex-direction:column;justify-content:center;transform:rotate(1.5deg)}
+.lidcard::before{content:"";position:absolute;inset:0;border-radius:inherit;background:repeating-linear-gradient(90deg,rgba(0,0,0,.025) 0 2px,transparent 2px 6px);pointer-events:none}
+.lidcard .who{font:400 clamp(30px,4vw,46px)/1 'Permanent Marker';color:var(--marker);transform:rotate(-4deg)}
+.lidcard .time{font:400 clamp(22px,2.8vw,32px)/1 'Permanent Marker';color:var(--tomato);margin-top:14px;transform:rotate(-2deg)}
+.lidcard ul{list-style:none;margin-top:20px;font:400 clamp(18px,2.2vw,24px)/1.5 'Permanent Marker';color:var(--marker)}
+.lidcard ul li span{letter-spacing:.12em}
+.lidcard .hint{position:absolute;left:0;right:0;bottom:-38px;text-align:center;font-size:13px;color:var(--ink2);transform:rotate(-1.5deg)}
+.ok{display:none;background:#EEF4E8;border:1px solid #C3D6B4;color:#2D4A22;border-radius:12px;padding:14px 16px;font-size:15px}
+.ok.on{display:block}
+
+/* CHI */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about .pics{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.about .pics .ph{aspect-ratio:3/4}
+.about .pics .ph:nth-child(2){margin-top:46px}
+.about p{color:var(--ink2);margin-top:14px}
+.todo{margin-top:24px;border:2px dashed #C9A06A;border-radius:16px;padding:20px 22px;background:#fff}
+.todo b{display:block;font:400 18px 'Permanent Marker';color:var(--tomato);margin-bottom:6px}
+.todo ul{margin-left:18px;color:var(--ink2);font-size:15.5px}
+
+/* RECENSIONI */
+.revs{columns:3 300px;column-gap:18px}
+.rev{break-inside:avoid;margin-bottom:18px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}
+.rev .st{color:var(--tomato);letter-spacing:2px}
+.rev p{margin-top:10px;font-size:17px}
+.rev .who{margin-top:12px;font-size:13px;color:var(--ink2)}
+.rev .who b{color:var(--ink)}
+.rev.big{background:var(--tomato);color:#fff;border-color:var(--tomato)}
+.rev.big p{font:400 26px/1.25 'Permanent Marker'}
+.rev.big .st,.rev.big .who,.rev.big .who b{color:#FFE3D6}
+
+/* DOVE */
+.info{display:grid;grid-template-columns:1fr 1.1fr;gap:26px}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px}
+.hours{list-style:none;margin-top:12px}
+.hours li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--line)}
+.hours li.today{color:var(--tomato);font-weight:800}
+.map{border-radius:22px;overflow:hidden;border:1px solid var(--line);min-height:380px;background:var(--cream2)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+.contact{display:grid;gap:12px;margin-top:20px}
+.contact a{text-decoration:none;font-weight:600;font-size:17px}
+.contact a:hover{color:var(--tomato)}
+.note{font-size:13.5px;color:var(--ink2);margin-top:12px}
+
+footer{background:var(--lake2);color:#9FB6C7;padding:44px 0 120px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer b{color:#fff}
+
+.mbar{display:none}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:980px){
+  .hero .wrap,.menu,.order .wrap,.about,.info{grid-template-columns:1fr}
+  .hero .wrap{min-height:0}
+  .dough{grid-template-columns:1fr}
+  .nav ul{display:none}
+  .lidcard{position:relative;top:0;max-width:440px}
+  .hero .sun{left:50%;top:auto;bottom:4%}
+}
+@media (max-width:600px){
+  .wrap{padding:0 18px}
+  .sec{padding:76px 0}
+  .hero .wrap{padding-top:34px;gap:10px}
+  .hero .lead{font-size:17px}
+  .boxwrap{width:min(250px,68vw);margin:0 auto 22px;order:-1}.boxwrap .hint{display:none}
+  .row2{grid-template-columns:1fr}
+  form{padding:20px}
+  .pz{grid-template-columns:48px 1fr;gap:14px}
+  .pz .mini{width:48px;height:48px}
+  .pz .pr{grid-column:2;text-align:left}
+  .pz h3{font-size:24px}
+  .nav .btn{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(251,244,232,.96);border-top:1px solid var(--line)}
+  .mbar a{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;border-radius:12px;text-decoration:none;font:800 15px 'Bricolage Grotesque'}
+  .mbar a:first-child{background:var(--tomato);color:#fff}
+  .mbar a:last-child{background:#25D366;color:#0B3B1E}
+  .mbar svg{width:18px;height:18px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="draft"><b>Anteprima</b> di sito preparata per <b>Fatti di Pizza</b> · foto dalla scheda Google, testi da completare insieme</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><span class="dot" aria-hidden="true"></span><span><b>Fatti di Pizza</b><small>Pizza d'asporto · Porto Valtravaglia</small></span></a>
+    <ul>
+      <li><a href="#impasto">L'impasto</a></li>
+      <li><a href="#pizze">Le pizze</a></li>
+      <li><a href="#ordina">Ordina</a></li>
+      <li><a href="#recensioni">Recensioni</a></li>
+      <li><a href="#dove">Orari e dove</a></li>
+    </ul>
+    <a class="btn sm" href="tel:+393516713059">351 671 3059</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="sun" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Pizza d'asporto sul Lago Maggiore</span>
+      <h1 style="margin-top:18px">Tanti fanno la pizza.<span class="mk">Così buona, pochi.</span></h1>
+      <p class="lead">Lo ha scritto una cliente. Da noi la pizza si ordina, si ritira calda e si porta dove si vuole: a casa o in riva al lago. Impasto leggero, ingredienti freschi e un saluto con il sorriso.</p>
+      <div class="ctas">
+        <a class="btn" href="#ordina">Ordina la tua pizza</a>
+        <a class="btn ghost" href="tel:+393516713059">Chiama 351 671 3059</a>
+      </div>
+      <div class="score"><b>4,9</b><i>★★★★★</i><span>82 recensioni Google · dato da verificare</span></div>
+    </div>
+    <div class="boxwrap closed" id="boxwrap" role="button" tabindex="0" aria-label="Apri e chiudi il cartone della pizza">
+      <div class="lid"><p>Portatela al lago e godetevi la vista!<small>— Julian, cliente</small></p><div class="front"><span class="stamp">Fatti di Pizza</span></div></div>
+      <div class="base"><div class="pizza" id="pizza"><span class="cut" style="transform:rotate(0deg)"></span><span class="cut" style="transform:rotate(45deg)"></span><span class="cut" style="transform:rotate(90deg)"></span><span class="cut" style="transform:rotate(135deg)"></span></div></div>
+      <div class="steam" aria-hidden="true"><i></i><i></i><i></i></div>
+      <span class="hint">tocca il cartone</span>
+    </div>
+  </div>
+</section>
+
+<section class="lakequote">
+  <div class="wrap">
+    <blockquote class="reveal">«Solo da asporto! Ma persone davvero gentili e buon cibo. Portatela al lago e godetevi la vista!»</blockquote>
+    <cite class="reveal">Julian · recensione, agosto 2025 (tradotta dall'inglese)</cite>
+    <div class="langs reveal"><span>🇮🇹 «leggere e fresche»</span><span>🇩🇪 «la migliore pizza della zona»</span><span>🇬🇧 «really nice people»</span></div>
+  </div>
+</section>
+
+<section class="sec" id="impasto">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><span class="eyebrow">L'impasto</span><h2>Leggera.<br>Anche la sera dopo.</h2></div>
+      <p>Il complimento che torna più spesso è sempre lo stesso: la pizza non appesantisce. Tre cose, dette dai clienti.</p>
+    </div>
+    <div class="dough">
+      <article class="dcard reveal"><div class="num">1</div><h3>Lievitata bene</h3><p>Un impasto che si digerisce: è una delle cose che i clienti notano di più.</p><q>«Impasto lievitato perfettamente, non appesantisce.»</q><cite>Maria · agosto 2025 (tradotta)</cite></article>
+      <article class="dcard reveal"><div class="num">2</div><h3>Ingredienti freschi</h3><p>Si sente al primo morso, e i clienti lo scrivono.</p><q>«Le pizze sono straordinarie, leggere e fresche.»</q><cite>Farjana · luglio 2025</cite></article>
+      <article class="dcard reveal"><div class="num">3</div><h3>Gentilezza</h3><p>Un posto semplice, a conduzione familiare, dove si viene accolti con un sorriso.</p><q>«Un'ottima pizza da asporto, con cortesia e ottima qualità.»</q><cite>Fabio · aprile 2026 (tradotta)</cite></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="pizze" style="padding-top:20px">
+  <div class="wrap menu">
+    <div class="reveal">
+      <span class="eyebrow">Le pizze</span>
+      <h2 style="margin:14px 0 30px">Dal forno<br>al cartone.</h2>
+      <div class="plist">
+        <div class="pz"><span class="mini" style="background:radial-gradient(circle,#F7EEDA 0 18%,#D63B22 20% 62%,#E3B470 64%)"></span><div><h3>Margherita</h3><p>Pomodoro, mozzarella, basilico.</p></div><span class="pr">prezzo da inserire</span></div>
+        <div class="pz"><span class="mini" style="background:radial-gradient(circle,#C7341F 0 62%,#E3B470 64%)"></span><div><h3>Marinara</h3><p>Pomodoro, aglio, origano.</p></div><span class="pr">prezzo da inserire</span></div>
+        <div class="pz"><span class="mini" style="background:radial-gradient(circle,#EADFB8 0 30%,#F5F0E0 32% 62%,#E3B470 64%)"></span><div><h3>Mele e Zola</h3><p>Con mele e gorgonzola.</p></div><span class="pr">prezzo da inserire</span></div>
+        <div class="pz"><span class="mini" style="background:radial-gradient(circle,#D04A2A 0 40%,#B83A22 42% 62%,#E3B470 64%)"></span><div><h3>Samuele</h3><p>La pizza della casa: ingredienti da scrivere insieme.</p></div><span class="pr">prezzo da inserire</span></div>
+      </div>
+      <div class="menunote"><b>Da completare insieme:</b> il menù completo con i prezzi (questi nomi vengono da un menù trovato online e vanno confermati), le pizze speciali, le bevande e gli eventuali impasti alternativi.</div>
+    </div>
+    <div class="ph reveal" data-foto="pizza-appena-sfornata"><span class="ph-label">Foto: pizza appena sfornata</span></div>
+  </div>
+</section>
+
+<section class="sec order" id="ordina">
+  <div class="wrap">
+    <div>
+      <div class="reveal">
+        <span class="eyebrow">Ordina</span>
+        <h2 style="margin:14px 0 18px">Il tuo nome<br>sul cartone.</h2>
+        <p style="color:var(--ink2);max-width:28em">Componi l'ordine e guarda il coperchio del cartone: nome, ora e pizze, scritti a pennarello come in pizzeria. Poi passi a ritirarla, ancora calda.</p>
+      </div>
+      <form id="form" class="reveal" style="margin-top:28px" novalidate>
+        <span class="demo">Dimostrazione · il modulo non invia nulla</span>
+        <div class="qty" id="qty"></div>
+        <div class="row2">
+          <label>Nome<input type="text" id="nome" placeholder="Il tuo nome" maxlength="16"></label>
+          <label>Ritiro alle<select id="ora"><option>18:30</option><option>19:00</option><option selected>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option></select></label>
+        </div>
+        <button class="btn" type="submit">Invia l'ordine</button>
+        <div class="ok" id="ok"></div>
+      </form>
+    </div>
+    <div class="lidcard reveal" aria-live="polite">
+      <div class="who" id="lwho">Per: ______</div>
+      <div class="time" id="ltime">ore 19:30</div>
+      <ul id="llist"><li>…scegli le pizze</li></ul>
+      <div class="hint">↑ il coperchio del tuo cartone</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="chi">
+  <div class="wrap about">
+    <div class="pics reveal">
+      <div class="ph" data-foto="pizzaiolo-al-forno"><span class="ph-label">Foto: il pizzaiolo al forno</span></div>
+      <div class="ph" data-foto="bancone-cartoni"><span class="ph-label">Foto: il bancone</span></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Chi siamo</span>
+      <h2 style="margin-top:14px">Un posto piccolo.<br>Una famiglia.</h2>
+      <p>Fatti di Pizza è una pizzeria d'asporto a Porto Valtravaglia, sulla sponda lombarda del Lago Maggiore. Un cliente ci ha trovati su Google e ci ha chiamati «un miraggio»; c'è chi torna ogni anno, in vacanza.</p>
+      <div class="todo">
+        <b>Da completare insieme</b>
+        <ul>
+          <li>Chi c'è dietro il bancone e la storia della "nuova gestione".</li>
+          <li>Da dove viene la ricetta dell'impasto e quante ore lievita.</li>
+          <li>Perché una pizza si chiama "Samuele".</li>
+          <li>Se fate anche consegne o solo ritiro.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="recensioni" style="background:#fff">
+  <div class="wrap">
+    <div class="head reveal"><div><span class="eyebrow">Recensioni</span><h2>In tre lingue,<br>la stessa pizza.</h2></div><p>Turisti e gente del posto, d'estate e d'inverno.</p></div>
+    <div class="revs">
+      <article class="rev big reveal"><div class="st">★★★★★</div><p>«Ogni anno di nuovo. Semplicemente fantastica, la migliore pizza della zona.»</p><div class="who"><b>Sandra</b> · agosto 2025 · tradotta dal tedesco</div></article>
+      <article class="rev reveal"><div class="st">★★★★★</div><p>«Le pizze sono straordinarie, leggere e fresche.»</p><div class="who"><b>Farjana</b> · luglio 2025</div></article>
+      <article class="rev reveal"><div class="st">★★★★★</div><p>«Un miraggio nel Varesotto, grazie a Google.» Ha lodato ingredienti freschi e di qualità, l'impasto e il condimento.</p><div class="who"><b>Recensione Tripadvisor</b> · marzo 2025 · tradotta</div></article>
+      <article class="rev reveal"><div class="st">★★★★★</div><p>«Pizza molto buona e persone molto gentili. Consigliatissima.»</p><div class="who"><b>Ma He</b> · ottobre 2025 · tradotta dall'inglese</div></article>
+      <article class="rev reveal"><div class="st">★★★★★</div><p>«Tanti fanno la pizza, ma così buona pochi.» Il personale è «sempre disponibile e gentile».</p><div class="who"><b>Maria</b> · agosto 2025 · Tripadvisor, tradotta</div></article>
+      <article class="rev reveal"><div class="st">★★★★★</div><p>«Un posto semplice con un'ottima pizza da asporto.»</p><div class="who"><b>Fabio</b> · aprile 2026 · Tripadvisor, tradotta</div></article>
+    </div>
+    <p class="note">Testi ripresi da Tripadvisor e da un aggregatore di recensioni Google; quelli tradotti vanno sostituiti con le parole originali.</p>
+  </div>
+</section>
+
+<section class="sec" id="dove">
+  <div class="wrap">
+    <div class="head reveal"><div><span class="eyebrow">Orari e dove</span><h2>Via Roma 62,<br>Porto Valtravaglia</h2></div></div>
+    <div class="info">
+      <div class="card reveal">
+        <h3 style="font-size:28px">Orari</h3>
+        <ul class="hours" id="hours">
+          <li data-d="1"><span>Lunedì</span><span>chiuso</span></li>
+          <li data-d="2"><span>Martedì</span><span>chiuso</span></li>
+          <li data-d="3"><span>Mercoledì</span><span>18:30–22:00</span></li>
+          <li data-d="4"><span>Giovedì</span><span>18:30–22:00</span></li>
+          <li data-d="5"><span>Venerdì</span><span>18:00–22:00</span></li>
+          <li data-d="6"><span>Sabato</span><span>18:30–22:00</span></li>
+          <li data-d="0"><span>Domenica</span><span>18:30–22:00</span></li>
+        </ul>
+        <p class="note">Orari da confermare insieme: le fonti online non coincidono (forse anche a pranzo).</p>
+        <div class="contact">
+          <a href="tel:+393516713059">📞 351 671 3059</a>
+          <a href="https://wa.me/393516713059">💬 WhatsApp</a>
+          <a href="https://www.facebook.com/p/Fatti-di-Pizza-Nuova-Gestione-100094760536712/" target="_blank" rel="noopener">👍 Facebook · Fatti di Pizza – Nuova Gestione</a>
+        </div>
+      </div>
+      <div class="map reveal"><iframe loading="lazy" title="Mappa Fatti di Pizza" src="https://maps.google.com/maps?q=Via%20Roma%2062%2C%2021010%20Porto%20Valtravaglia%20VA&amp;output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>Fatti di Pizza</b> · pizza d'asporto<br>Via Roma 62, 21010 Porto Valtravaglia (VA) · 351 671 3059</div>
+    <div>Anteprima non ufficiale · preparata da Jacopo Dozio</div>
+  </div>
+</footer>
+
+<nav class="mbar">
+  <a href="tel:+393516713059"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Chiama</a>
+  <a href="https://wa.me/393516713059"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>WhatsApp</a>
+</nav>
+
+<script>
+(function(){
+  /* pizza: mozzarella e basilico sparsi */
+  var pz=document.getElementById('pizza'),i;
+  for(i=0;i<14;i++){var m=document.createElement('span');m.className='moz';var a=Math.random()*6.283,r=Math.sqrt(Math.random())*30;var s=9+Math.random()*7;
+    m.style.cssText='width:'+s+'%;height:'+(s*.85)+'%;left:'+(50+Math.cos(a)*r-s/2)+'%;top:'+(50+Math.sin(a)*r-s/2)+'%;transform:rotate('+(Math.random()*180)+'deg)';pz.appendChild(m);}
+  for(i=0;i<7;i++){var b=document.createElement('span');b.className='bas';var a2=Math.random()*6.283,r2=Math.sqrt(Math.random())*28;
+    b.style.cssText='left:'+(50+Math.cos(a2)*r2)+'%;top:'+(50+Math.sin(a2)*r2)+'%;transform:rotate('+(Math.random()*180)+'deg)';pz.appendChild(b);}
+  var bw=document.getElementById('boxwrap');
+  setTimeout(function(){bw.classList.remove('closed')},500);
+  bw.addEventListener('click',function(){bw.classList.toggle('closed')});
+
+  /* ordine dimostrativo: il coperchio scritto a pennarello */
+  var pizze=['Margherita','Marinara','Mele e Zola','Samuele'],q={},box=document.getElementById('qty');
+  pizze.forEach(function(p){q[p]=0;var r=document.createElement('div');r.className='qrow';
+    r.innerHTML='<b>'+p+'</b><span class="ctl"><button type="button" aria-label="meno">−</button><output>0</output><button type="button" aria-label="più">+</button></span>';
+    var bs=r.querySelectorAll('button'),o=r.querySelector('output');
+    bs[0].onclick=function(){q[p]=Math.max(0,q[p]-1);o.textContent=q[p];upd()};
+    bs[1].onclick=function(){q[p]=Math.min(9,q[p]+1);o.textContent=q[p];upd()};
+    box.appendChild(r);});
+  q['Margherita']=2;box.querySelector('output').textContent=2;
+  var nome=document.getElementById('nome'),ora=document.getElementById('ora');
+  function tally(n){return '× '+n;}
+  function upd(){
+    var n=(nome.value||'').trim();document.getElementById('lwho').textContent='Per: '+(n||'______');
+    document.getElementById('ltime').textContent='ore '+ora.value;
+    var ul=document.getElementById('llist'),h='';
+    pizze.forEach(function(p){if(q[p])h+='<li>'+p+' <span>'+tally(q[p])+'</span></li>';});
+    ul.innerHTML=h||'<li>…scegli le pizze</li>';
+  }
+  nome.addEventListener('input',upd);ora.addEventListener('change',upd);upd();
+  document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();var tot=0;for(var k in q)tot+=q[k];
+    var ok=document.getElementById('ok');ok.innerHTML='<b>Dimostrazione:</b> nessun ordine è stato inviato. Nel sito vero arriverebbe in pizzeria: '+tot+' pizz'+(tot===1?'a':'e')+', ritiro alle '+ora.value+'.';ok.classList.add('on');});
+
+  var td=new Date().getDay(),li=document.querySelector('#hours li[data-d="'+td+'"]');if(li)li.classList.add('today');
+  var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(z){if(z.isIntersecting){z.target.classList.add('in');io.unobserve(z.target);}})},{threshold:.12}):null;
+  document.querySelectorAll('.reveal').forEach(function(el){io?io.observe(el):el.classList.add('in')});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HeadCut di Matteo Cerbino · Barbiere a Oggiona con Santo Stefano</title>
+<meta name="description" content="HeadCut di Matteo Cerbino, barbiere in Via Campiglio 51 a Oggiona con Santo Stefano (VA). Taglio uomo, barba, shampoo. Prenotazione online. Tel. 342 068 8985.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500;1,6..96,700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --coal:#121212; --coal2:#1C1C1B; --coal3:#2A2927; --bone:#EEE9E0; --bone2:#E3DCCF; --brass:#B98A3E; --brass2:#D9AE62;
+  --ink:#151514; --ink2:#5D5953; --line:#D3CBBC; --red:#A3231F; --blue:#1F3E73;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:74px}
+body{background:var(--bone);color:var(--ink);font:400 16.5px/1.7 'Manrope',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:'Bodoni Moda',Didot,serif;font-weight:700;line-height:1.02;letter-spacing:-.015em}
+h2{font-size:clamp(36px,5vw,66px)}
+h2 em,h1 em{font-style:italic;font-weight:500}
+.mono{font:500 11.5px/1.3 'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase}
+.eyebrow{display:flex;align-items:center;gap:12px;color:var(--brass)}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+
+.draft{background:var(--red);color:#F8E3E1;font-size:13px;text-align:center;padding:8px 16px;line-height:1.45}
+.draft b{color:#fff}
+
+header{position:sticky;top:0;z-index:40;background:rgba(18,18,18,.94);color:var(--bone);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid #2B2A28}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.pole{width:12px;height:36px;border-radius:6px;overflow:hidden;position:relative;box-shadow:0 0 0 2px var(--brass)}
+.pole::before{content:"";position:absolute;left:0;right:0;top:-40px;bottom:-40px;background:repeating-linear-gradient(160deg,var(--red) 0 6px,#F4F1EA 6px 12px,var(--blue) 12px 18px,#F4F1EA 18px 24px);animation:pole 3s linear infinite}
+@keyframes pole{to{transform:translateY(24.6px)}}
+.brand b{display:block;font:700 22px/1 'Bodoni Moda',serif;letter-spacing:.01em}
+.brand small{display:block;margin-top:4px;color:#A29C92;font:500 10.5px 'IBM Plex Mono';letter-spacing:.16em;text-transform:uppercase}
+.nav ul{display:flex;gap:26px;list-style:none;font-size:14px;font-weight:500}
+.nav ul a{text-decoration:none;opacity:.75;transition:.2s}
+.nav ul a:hover{opacity:1;color:var(--brass2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--brass);color:var(--coal);text-decoration:none;font:700 15px/1 'Manrope';padding:16px 24px;border-radius:3px;border:0;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{background:var(--brass2);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 1px currentColor}
+.btn.ghost:hover{background:rgba(255,255,255,.06)}
+.btn.sm{padding:11px 16px;font-size:14px}
+.btn.dark{background:var(--coal);color:var(--bone)}
+.btn.dark:hover{background:var(--coal3)}
+
+.ph{position:relative;overflow:hidden;background:linear-gradient(160deg,#2C2B29,#1A1A19)}
+.ph::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 1px,transparent 1px 9px)}
+.ph .ph-label{position:absolute;left:14px;bottom:14px;z-index:2;background:var(--bone);color:var(--coal);font:500 10.5px/1.2 'IBM Plex Mono';letter-spacing:.12em;text-transform:uppercase;padding:7px 10px}
+.has-photo>img.real{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.has-photo::before,.has-photo .ph-label{display:none}
+
+/* HERO */
+.hero{position:relative;background:var(--coal);color:var(--bone);overflow:hidden}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:46px;align-items:center;min-height:min(86vh,740px);padding-top:56px;padding-bottom:64px}
+.ruler{position:absolute;left:0;top:0;bottom:0;width:46px;z-index:1;border-right:1px solid #2E2D2A;
+  background:repeating-linear-gradient(180deg,transparent 0 9px,#4A4741 9px 10px),repeating-linear-gradient(180deg,transparent 0 49px,#8B857A 49px 50px);background-size:14px 100%,26px 100%;background-repeat:repeat-y;background-position:right top,right top}
+.ruler::after{content:"";position:absolute;right:-1px;top:0;width:2px;height:0;background:var(--brass2);box-shadow:0 0 12px var(--brass2);animation:measure 2.2s .3s cubic-bezier(.6,0,.2,1) forwards}
+@keyframes measure{to{height:100%}}
+.hero .eyebrow{margin-bottom:20px}
+.hero h1{font-size:clamp(52px,7.6vw,112px);font-weight:500}
+.hero h1 .w{display:inline-block;opacity:0;transform:translateY(30px);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1 .w:nth-child(2){animation-delay:.12s}.hero h1 .w:nth-child(3){animation-delay:.24s}.hero h1 .w:nth-child(4){animation-delay:.36s}
+@keyframes up{to{opacity:1;transform:none}}
+.hero h1 .cs{display:block;font-style:italic;color:var(--brass2);font-weight:500;position:relative;width:max-content;max-width:100%;opacity:0;animation:up .9s .7s forwards}
+.hero h1 .cs::after{content:"";position:absolute;left:0;bottom:.04em;height:2px;width:100%;background:var(--brass2);transform:scaleX(0);transform-origin:left;animation:line 1s 1.5s cubic-bezier(.6,0,.2,1) forwards}
+@keyframes line{to{transform:scaleX(1)}}
+.hero .lead{margin-top:26px;font-size:18.5px;color:#B9B2A6;max-width:31em}
+.hero .lead b{color:var(--bone);font-weight:500}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.hero .meta{display:flex;gap:30px;flex-wrap:wrap;margin-top:34px;padding-top:22px;border-top:1px solid #2E2D2A}
+.hero .meta div b{display:block;font:500 34px/1 'Bodoni Moda';color:var(--bone)}
+.hero .meta div span{color:#8D877D}
+.hero .portrait{position:relative;aspect-ratio:4/5;max-height:600px;justify-self:center;width:100%}
+.hero .portrait .ph{position:absolute;inset:0}
+.hero .portrait .tag{position:absolute;z-index:3;right:-12px;top:28px;background:var(--bone);color:var(--coal);padding:14px 16px;transform:rotate(3deg);box-shadow:0 18px 30px -16px #000}
+.hero .portrait .tag b{display:block;font:italic 500 22px/1.1 'Bodoni Moda'}
+.hero .portrait .tag span{color:var(--ink2)}
+.cross{position:absolute;z-index:3;width:46px;height:46px;border:1px solid rgba(217,174,98,.7)}
+.cross.tl{left:-10px;top:-10px;border-right:0;border-bottom:0}.cross.br{right:-10px;bottom:-10px;border-left:0;border-top:0}
+
+/* COME SEMPRE */
+.always{background:var(--bone2);padding:40px 0;overflow:hidden;border-bottom:1px solid var(--line)}
+.always .row{display:flex;gap:56px;white-space:nowrap;animation:slide 46s linear infinite;width:max-content}
+.always span{font:italic 500 clamp(26px,3.4vw,40px)/1 'Bodoni Moda'}
+.always span i{font-style:normal;color:var(--brass)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+.sec{padding:108px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:48px;flex-wrap:wrap}
+.head p{max-width:30em;color:var(--ink2)}
+.head h2{margin-top:14px}
+
+/* SFUMATURA */
+.fade{background:var(--coal2);color:var(--bone)}
+.fade .head p{color:#A9A296}
+.fadebox{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.nape{position:relative;aspect-ratio:1/1.05;max-width:500px;width:100%;justify-self:center;background:#1A1918;border:1px solid #33312D}
+.nape canvas{position:absolute;inset:0;width:100%;height:100%}
+.nape .scale{position:absolute;right:-1px;top:0;bottom:0;width:58px;border-left:1px dashed rgba(217,174,98,.45);display:flex;flex-direction:column;justify-content:space-between;padding:10px 0;font:500 11px 'IBM Plex Mono';color:var(--brass2);text-align:right;padding-right:8px;background:linear-gradient(90deg,rgba(18,18,18,.0),rgba(18,18,18,.55))}
+.nape .line{position:absolute;left:0;right:58px;height:0;border-top:1px solid var(--brass2);transition:top .6s cubic-bezier(.4,0,.2,1)}
+.nape .line::after{content:attr(data-l);position:absolute;left:10px;top:-24px;font:500 10.5px 'IBM Plex Mono';letter-spacing:.12em;text-transform:uppercase;color:var(--brass2);background:rgba(18,18,18,.75);padding:3px 6px}
+.ctrl h3{font-size:34px}
+.ctrl p{color:#A9A296;margin-top:10px}
+.choices{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:26px}
+.choices button{background:transparent;color:var(--bone);border:1px solid #3B3935;padding:14px 8px;cursor:pointer;font:500 14px 'Manrope';transition:.2s}
+.choices button small{display:block;font:500 10px 'IBM Plex Mono';letter-spacing:.1em;color:#8D877D;margin-top:4px;text-transform:uppercase}
+.choices button.on{background:var(--brass);color:var(--coal);border-color:var(--brass)}
+.choices button.on small{color:#4A3A1C}
+.range{margin-top:22px}
+.range input{width:100%;accent-color:var(--brass)}
+.range .lbl{display:flex;justify-content:space-between;font:500 11px 'IBM Plex Mono';color:#8D877D;letter-spacing:.08em;margin-top:6px}
+.saynote{margin-top:22px;border-left:2px solid var(--brass);padding:4px 0 4px 16px;font:italic 500 19px/1.45 'Bodoni Moda';color:var(--bone)}
+.saynote small{display:block;font:400 13px 'Manrope';color:#8D877D;font-style:normal;margin-top:6px}
+
+/* LISTINO */
+.price{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:start}
+.ticket{background:#FBF9F4;border:1px solid var(--line);padding:34px 34px 26px;position:relative;box-shadow:0 30px 50px -36px rgba(0,0,0,.4)}
+.ticket::before,.ticket::after{content:"";position:absolute;left:0;right:0;height:10px;background:radial-gradient(circle at 7px -2px,var(--bone) 6px,transparent 6.5px) repeat-x;background-size:14px 10px}
+.ticket::before{top:-1px}.ticket::after{bottom:-1px;transform:rotate(180deg)}
+.ticket h3{font-size:30px;display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:8px}
+.ticket h3 span{font:500 11px 'IBM Plex Mono';letter-spacing:.14em;color:var(--ink2)}
+.item{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:baseline;padding:14px 0;border-bottom:1px dotted #BDB4A3;cursor:default;transition:background .2s}
+.item:hover{background:rgba(185,138,62,.08)}
+.item b{font-weight:700;font-size:17px}
+.item small{display:block;color:var(--ink2);font:400 12px 'IBM Plex Mono';letter-spacing:.06em}
+.item .eur{font:500 26px/1 'Bodoni Moda'}
+.ticket .foot{display:flex;justify-content:space-between;gap:14px;margin-top:18px;font:400 11px 'IBM Plex Mono';letter-spacing:.08em;color:var(--ink2);flex-wrap:wrap}
+.side .ph{aspect-ratio:4/5}
+.side .cap{margin-top:12px;color:var(--ink2);font-size:14px}
+
+/* RECENSIONI */
+.revs{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.rev{padding:30px 24px 26px;border-right:1px solid var(--line);position:relative}
+.rev:last-child{border-right:0}
+.rev .n{font:500 11px 'IBM Plex Mono';color:var(--brass);letter-spacing:.14em}
+.rev q{display:block;margin:14px 0 18px;font:500 23px/1.25 'Bodoni Moda'}
+.rev q::before,.rev q::after{content:""}
+.rev q mark{background:linear-gradient(transparent 60%,rgba(217,174,98,.45) 60%);color:inherit}
+.rev .who{font-size:13.5px;color:var(--ink2)}
+.rev .who b{color:var(--ink)}
+.stars{color:var(--brass);letter-spacing:3px;font-size:14px}
+.revnote{margin-top:18px;font-size:13px;color:var(--ink2)}
+.big58{display:flex;gap:18px;align-items:baseline;margin-bottom:30px}
+.big58 b{font:500 clamp(64px,8vw,104px)/.9 'Bodoni Moda'}
+.big58 span{color:var(--ink2);max-width:18em}
+
+/* MATTEO */
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.about .ph{aspect-ratio:3/4}
+.about p{margin-top:16px;color:var(--ink2)}
+.about blockquote{margin-top:22px;font:italic 500 22px/1.4 'Bodoni Moda';border-left:2px solid var(--brass);padding-left:18px}
+.about blockquote small{display:block;margin-top:8px;font:400 13px 'Manrope';font-style:normal;color:var(--ink2)}
+.todo{margin-top:26px;border:1.5px dashed #A99F8C;padding:20px 22px;background:rgba(255,255,255,.35)}
+.todo b{display:block;font:500 11px 'IBM Plex Mono';letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.todo ul{margin-left:18px;color:var(--ink2);font-size:15px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:70px}
+.gal .ph{aspect-ratio:1}
+
+/* PRENOTA */
+.book{background:var(--coal);color:var(--bone)}
+.book .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.book p{color:#A9A296;margin-top:14px}
+.demo{display:inline-block;background:var(--brass2);color:var(--coal);font:500 10.5px 'IBM Plex Mono';letter-spacing:.14em;text-transform:uppercase;padding:6px 9px}
+form{background:#1C1C1B;border:1px solid #33312D;padding:28px;display:grid;gap:18px}
+.svc{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.svc label{display:block;cursor:pointer}
+.svc input{position:absolute;opacity:0;pointer-events:none}
+.svc span{display:flex;justify-content:space-between;gap:8px;border:1px solid #3B3935;padding:12px 14px;font-size:14px;transition:.2s}
+.svc input:checked+span{border-color:var(--brass2);background:rgba(217,174,98,.1);color:#fff}
+.svc span em{font-style:normal;color:var(--brass2);font-family:'IBM Plex Mono';font-size:13px}
+.days{display:flex;gap:6px;flex-wrap:wrap}
+.days button{flex:1 1 0;min-width:0;background:transparent;color:var(--bone);border:1px solid #3B3935;padding:10px 4px;cursor:pointer;font:500 13px 'Manrope'}
+.days button small{display:block;font:400 10px 'IBM Plex Mono';color:#8D877D}
+.days button.on{background:var(--bone);color:var(--coal)}
+.days button.on small{color:var(--ink2)}
+.flab{font:500 11px 'IBM Plex Mono';letter-spacing:.14em;text-transform:uppercase;color:#8D877D;margin-bottom:8px;display:block}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+input[type=text],input[type=tel],select{font:400 15.5px 'Manrope';padding:13px 14px;border:1px solid #3B3935;background:#121212;color:var(--bone);width:100%;border-radius:0}
+input:focus,select:focus{outline:1px solid var(--brass2)}
+.ok{display:none;border:1px solid var(--brass);padding:14px 16px;font-size:14.5px;color:var(--bone);background:rgba(185,138,62,.12)}
+.ok.on{display:block}
+.real{display:flex;flex-direction:column;gap:12px;margin-top:26px}
+
+/* DOVE */
+.info{display:grid;grid-template-columns:1fr 1.1fr;gap:28px}
+.card{background:#FBF9F4;border:1px solid var(--line);padding:30px}
+.hours{list-style:none;margin-top:12px}
+.hours li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dotted #BDB4A3;font-size:15px}
+.hours li.today{color:var(--red);font-weight:700}
+.map{border:1px solid var(--line);min-height:380px;background:var(--bone2)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block;filter:grayscale(.6) contrast(1.05)}
+.contact{display:grid;gap:12px;margin-top:20px}
+.contact a{text-decoration:none;font-size:17px;font-weight:500;display:flex;gap:10px;align-items:center}
+.contact a:hover{color:var(--brass)}
+.note{font-size:13px;color:var(--ink2);margin-top:12px}
+
+footer{background:var(--coal);color:#8D877D;padding:44px 0 120px;font-size:13.5px;border-top:1px solid #2B2A28}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer b{color:var(--bone)}
+
+.mbar{display:none}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:980px){
+  .hero .wrap,.fadebox,.price,.about,.book .wrap,.info{grid-template-columns:1fr}
+  .hero .wrap{min-height:0}
+  .hero .portrait{max-width:420px}
+  .revs{grid-template-columns:1fr 1fr}
+  .rev:nth-child(2){border-right:0}
+  .rev:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .nav ul{display:none}
+}
+@media (max-width:600px){
+  .wrap{padding:0 18px}
+  .ruler{width:14px}
+  .hero .wrap{padding-left:30px;padding-top:40px}
+  .hero .lead{font-size:17px}
+  .hero .portrait .tag{right:6px}
+  .sec{padding:78px 0}
+  .revs{grid-template-columns:1fr}
+  .rev{border-right:0;border-bottom:1px solid var(--line)}
+  .rev:last-child{border-bottom:0}
+  .choices{grid-template-columns:1fr 1fr}
+  .svc,.row2{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr 1fr}
+  .ticket{padding:28px 20px 22px}
+  form{padding:20px}
+  .nav .btn{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(18,18,18,.96);border-top:1px solid #2B2A28}
+  .mbar a{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;text-decoration:none;font:700 15px 'Manrope'}
+  .mbar a:first-child{background:var(--brass);color:var(--coal)}
+  .mbar a:last-child{background:#25D366;color:#0B3B1E}
+  .mbar svg{width:18px;height:18px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hero h1 .w,.hero h1 .cs{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="draft"><b>Anteprima</b> di sito preparata per <b>HeadCut di Matteo Cerbino</b> · foto dalla scheda Google, testi da completare insieme</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><span class="pole" aria-hidden="true"></span><span><b>HeadCut</b><small>Matteo Cerbino · Oggiona S.S.</small></span></a>
+    <ul>
+      <li><a href="#sfumatura">La sfumatura</a></li>
+      <li><a href="#listino">Listino</a></li>
+      <li><a href="#recensioni">Recensioni</a></li>
+      <li><a href="#matteo">Matteo</a></li>
+      <li><a href="#dove">Orari e dove</a></li>
+    </ul>
+    <a class="btn sm" href="#prenota">Prenota</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="ruler" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <div class="eyebrow mono">Barbiere · Via Campiglio 51 · Oggiona con S. Stefano</div>
+      <h1><span class="w">Perfetto</span> <span class="w">e</span> <span class="w">preciso.</span><span class="cs">Come sempre.</span></h1>
+      <p class="lead">Lo scrivono i clienti, quasi con le stesse parole, mese dopo mese. Da HeadCut <b>Matteo</b> taglia capelli e barba da oltre dieci anni: tecnica, precisione, un salone pulito e l'appuntamento rispettato.</p>
+      <div class="ctas">
+        <a class="btn" href="#prenota">Prenota il tuo taglio</a>
+        <a class="btn ghost" href="#sfumatura">Prova la sfumatura</a>
+      </div>
+      <div class="meta">
+        <div><b>5,0</b><span class="mono">su 58 recensioni Treatwell</span></div>
+        <div><b>10+</b><span class="mono">anni di forbici e rasoio</span></div>
+        <div><b>€18</b><span class="mono">il taglio uomo</span></div>
+      </div>
+    </div>
+    <div class="portrait">
+      <span class="cross tl"></span><span class="cross br"></span>
+      <div class="ph" data-foto="matteo-al-lavoro"><span class="ph-label">Foto: Matteo al lavoro</span></div>
+      <div class="tag"><b>«A prestissimo»</b><span class="mono">Filippo, settembre 2026</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="always" aria-hidden="true"><div class="row">
+  <span>Perfetto e preciso <i>come sempre</i></span><span>✂</span><span>Cortese e puntuale <i>come sempre</i></span><span>✂</span><span>Molto preciso, molto veloce</span><span>✂</span><span>Locale pulito e ben tenuto</span><span>✂</span>
+  <span>Perfetto e preciso <i>come sempre</i></span><span>✂</span><span>Cortese e puntuale <i>come sempre</i></span><span>✂</span><span>Molto preciso, molto veloce</span><span>✂</span><span>Locale pulito e ben tenuto</span><span>✂</span>
+</div></div>
+
+<section class="sec fade" id="sfumatura">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><div class="eyebrow mono">La sfumatura</div><h2>Dove inizia,<br><em>al millimetro.</em></h2></div>
+      <p>La differenza tra un taglio qualsiasi e un taglio preciso sta tutta qui, sulla nuca. Scegli l'altezza e guarda come cambia. Poi in poltrona lo decidete insieme.</p>
+    </div>
+    <div class="fadebox">
+      <div class="nape reveal" id="nape">
+        <canvas id="cv" width="500" height="525" aria-label="Simulazione di una sfumatura sulla nuca"></canvas>
+        <div class="line" id="ln" data-l="inizio sfumatura"></div>
+        <div class="scale"><span>lunghezza</span><span>—</span><span>—</span><span>—</span><span>0 mm</span></div>
+      </div>
+      <div class="ctrl reveal">
+        <h3 id="fname">Sfumatura media</h3>
+        <p id="fdesc">Parte a metà della nuca: ordinata, ma senza scoprire troppo. La più chiesta da chi vuole un taglio che duri.</p>
+        <div class="choices" id="choices">
+          <button type="button" data-v="18">Bassa<small>sopra il collo</small></button>
+          <button type="button" data-v="42" class="on">Media<small>a metà nuca</small></button>
+          <button type="button" data-v="66">Alta<small>verso la tempia</small></button>
+          <button type="button" data-v="80">Alta a zero<small>pelle in basso</small></button>
+        </div>
+        <div class="range"><input type="range" id="rg" min="8" max="85" value="42" aria-label="Altezza della sfumatura"><div class="lbl"><span>collo</span><span>nuca</span><span>tempia</span></div></div>
+        <div class="saynote">«Parrucchiere eccezionale, molto preciso, molto veloce.»<small>Gio · recensione Treatwell, settembre 2026</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="listino">
+  <div class="wrap price">
+    <div class="reveal">
+      <div class="eyebrow mono">Listino</div>
+      <h2 style="margin:14px 0 30px">Prezzi chiari,<br><em>niente sorprese.</em></h2>
+      <div class="ticket">
+        <h3>HeadCut <span>Oggiona S.S.</span></h3>
+        <div class="item"><div><b>Taglio uomo</b><small>30 min</small></div><span class="eur">€18</span></div>
+        <div class="item"><div><b>Shampoo e taglio uomo</b><small>30 min</small></div><span class="eur">€22</span></div>
+        <div class="item"><div><b>Shampoo, taglio e barba</b><small>30 min</small></div><span class="eur">€30</span></div>
+        <div class="item"><div><b>Barba con macchinetta</b><small>30 min</small></div><span class="eur">€15</span></div>
+        <div class="item"><div><b>Pulizia collo</b><small>tra un taglio e l'altro</small></div><span class="eur">€10</span></div>
+        <div class="foot"><span>Prezzi pubblicati su Treatwell</span><span>da confermare insieme</span></div>
+      </div>
+    </div>
+    <div class="side reveal">
+      <div class="ph" data-foto="poltrona-salone"><span class="ph-label">Foto: la poltrona / il salone</span></div>
+      <p class="cap">«Mi sono trovato bene. Locale pulito e ben tenuto.» — Roberto, ottobre 2026</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="recensioni" style="padding-top:20px">
+  <div class="wrap">
+    <div class="big58 reveal"><b>5,0 ★</b><span>Cinquantotto recensioni su Treatwell, media 5 su 5. Le ultime sono di questo mese.</span></div>
+    <div class="revs reveal">
+      <article class="rev"><div class="n">Ottobre 2026</div><q>«Mi sono trovato bene. Locale pulito e <mark>ben tenuto</mark>.»</q><div class="who"><b>Roberto</b> · <span class="stars">★★★★★</span></div></article>
+      <article class="rev"><div class="n">Settembre 2026</div><q>«Perfetto e preciso <mark>come sempre</mark>. A prestissimo.»</q><div class="who"><b>Filippo</b> · <span class="stars">★★★★★</span></div></article>
+      <article class="rev"><div class="n">Settembre 2026</div><q>«Parrucchiere eccezionale, <mark>molto preciso</mark>, molto veloce, salone pulito.»</q><div class="who"><b>Gio</b> · <span class="stars">★★★★★</span></div></article>
+      <article class="rev"><div class="n">Settembre 2026</div><q>«Perfetto, cortese e puntuale <mark>come sempre</mark>.»</q><div class="who"><b>Denny</b> · <span class="stars">★★★★★</span></div></article>
+    </div>
+    <p class="revnote">Recensioni verificate di Treatwell. Da aggiungere: le recensioni Google.</p>
+  </div>
+</section>
+
+<section class="sec" id="matteo" style="background:var(--bone2)">
+  <div class="wrap">
+    <div class="about">
+      <div class="ph reveal" data-foto="ritratto-matteo"><span class="ph-label">Foto: ritratto di Matteo</span></div>
+      <div class="reveal">
+        <div class="eyebrow mono">Chi c'è dietro la poltrona</div>
+        <h2 style="margin-top:14px">Matteo.<br><em>Un cliente alla volta.</em></h2>
+        <p>Da oltre dieci anni Matteo si occupa di tagli uomo e barba, unendo tecnica, precisione e stile. A Oggiona con Santo Stefano ha aperto HeadCut: un salone dal design curato, con attenzione ai dettagli, dove ogni taglio e ogni rasatura diventano un momento di piacere.</p>
+        <blockquote>«Perfetto e preciso come sempre.»<small>È la frase che i clienti scrivono più spesso. Non si costruisce in un giorno.</small></blockquote>
+        <div class="todo">
+          <b>Da completare insieme</b>
+          <ul>
+            <li>Dove hai imparato e quando hai aperto HeadCut.</li>
+            <li>Perché "HeadCut": la storia del nome.</li>
+            <li>Il taglio che ti piace fare di più, e i prodotti che usi.</li>
+            <li>Se tagli anche ai bambini, e da che età.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="gal">
+      <div class="ph reveal" data-foto="taglio-1"><span class="ph-label">Foto: taglio 1</span></div>
+      <div class="ph reveal" data-foto="taglio-2"><span class="ph-label">Foto: taglio 2</span></div>
+      <div class="ph reveal" data-foto="barba"><span class="ph-label">Foto: barba</span></div>
+      <div class="ph reveal" data-foto="dettaglio-salone"><span class="ph-label">Foto: dettaglio salone</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec book" id="prenota">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow mono">Prenota</div>
+      <h2 style="margin-top:14px">Scegli il giorno.<br><em>Al resto pensa Matteo.</em></h2>
+      <p>Si prenota online in due minuti, oppure con un messaggio. I clienti lo scrivono: «cortese e puntuale come sempre».</p>
+      <div class="real">
+        <a class="btn" href="https://www.treatwell.it/salone/headcut-di-matteo-cerbino/" target="_blank" rel="noopener">Prenota su Treatwell</a>
+        <a class="btn ghost" href="https://wa.me/393420688985">Scrivi su WhatsApp</a>
+      </div>
+    </div>
+    <form id="form" class="reveal" novalidate>
+      <span class="demo">Dimostrazione · il modulo non invia nulla</span>
+      <div><span class="flab">1 · Il servizio</span>
+        <div class="svc">
+          <label><input type="radio" name="s" value="Taglio uomo" checked><span>Taglio uomo <em>€18</em></span></label>
+          <label><input type="radio" name="s" value="Shampoo e taglio"><span>Shampoo e taglio <em>€22</em></span></label>
+          <label><input type="radio" name="s" value="Shampoo, taglio e barba"><span>Taglio e barba <em>€30</em></span></label>
+          <label><input type="radio" name="s" value="Barba con macchinetta"><span>Solo barba <em>€15</em></span></label>
+        </div>
+      </div>
+      <div><span class="flab">2 · Il giorno</span><div class="days" id="days"></div></div>
+      <div class="row2">
+        <label><span class="flab">3 · L'ora</span><select name="ora"><option>09:00</option><option>10:00</option><option>11:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option></select></label>
+        <label><span class="flab">4 · Il tuo nome</span><input type="text" name="nome" placeholder="Nome"></label>
+      </div>
+      <button class="btn" type="submit">Chiedi l'appuntamento</button>
+      <div class="ok" id="ok"></div>
+    </form>
+  </div>
+</section>
+
+<section class="sec" id="dove">
+  <div class="wrap">
+    <div class="head reveal"><div><div class="eyebrow mono">Orari e dove</div><h2>Via Campiglio 51,<br><em>Oggiona con Santo Stefano.</em></h2></div><p>A due passi da Gallarate e Cavaria.</p></div>
+    <div class="info">
+      <div class="card reveal">
+        <h3 style="font-size:28px">Orari</h3>
+        <ul class="hours" id="hours">
+          <li data-d="1"><span>Lunedì</span><span>chiuso</span></li>
+          <li data-d="2"><span>Martedì</span><span>9:00–19:00</span></li>
+          <li data-d="3"><span>Mercoledì</span><span>9:00–19:00</span></li>
+          <li data-d="4"><span>Giovedì</span><span>9:00–19:00</span></li>
+          <li data-d="5"><span>Venerdì</span><span>9:00–19:00</span></li>
+          <li data-d="6"><span>Sabato</span><span>9:00–19:00</span></li>
+          <li data-d="0"><span>Domenica</span><span>chiuso</span></li>
+        </ul>
+        <p class="note">Orari di Treatwell, da confermare (eventuale pausa pranzo).</p>
+        <div class="contact">
+          <a href="tel:+393420688985">📞 342 068 8985</a>
+          <a href="https://wa.me/393420688985">💬 WhatsApp</a>
+          <a href="https://www.facebook.com/onlyheadcut/" target="_blank" rel="noopener">👍 Facebook · onlyheadcut</a>
+        </div>
+      </div>
+      <div class="map reveal"><iframe loading="lazy" title="Mappa HeadCut" src="https://maps.google.com/maps?q=Via%20Campiglio%2051%2C%2021040%20Oggiona%20con%20Santo%20Stefano%20VA&amp;output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>HeadCut di Matteo Cerbino</b><br>Via Campiglio 51, 21040 Oggiona con Santo Stefano (VA) · 342 068 8985</div>
+    <div>Anteprima non ufficiale · preparata da Jacopo Dozio</div>
+  </div>
+</footer>
+
+<nav class="mbar">
+  <a href="tel:+393420688985"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Chiama</a>
+  <a href="https://wa.me/393420688985"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>WhatsApp</a>
+</nav>
+
+<script>
+(function(){
+  /* la sfumatura: capelli disegnati a tratti */
+  var cv=document.getElementById('cv'),x=cv.getContext('2d'),W=cv.width,H=cv.height,ln=document.getElementById('ln'),rg=document.getElementById('rg');
+  var seed=[],i;for(i=0;i<5200;i++)seed.push([Math.random(),Math.random(),Math.random(),Math.random()]);
+  var info={18:['Sfumatura bassa','Parte appena sopra il collo: pulita e discreta, va bene anche in ufficio.'],42:['Sfumatura media','Parte a metà della nuca: ordinata, ma senza scoprire troppo. Un buon equilibrio tra pulito e naturale.'],66:['Sfumatura alta','Sale verso le tempie: il contrasto si vede, il taglio ha carattere.'],80:['Alta a zero','In basso si arriva alla pelle e si sale piano piano: serve mano ferma, millimetro dopo millimetro.']};
+  function smooth(a,b,t){t=Math.min(1,Math.max(0,(t-a)/(b-a)));return t*t*(3-2*t)}
+  function draw(h){
+    var zero=h>=75;
+    x.fillStyle='#C99F80';x.fillRect(0,0,W,H);
+    var g=x.createLinearGradient(0,0,0,H);g.addColorStop(0,'rgba(120,80,55,.0)');g.addColorStop(1,'rgba(120,80,55,.25)');x.fillStyle=g;x.fillRect(0,0,W,H);
+    var start=H*(1-h/100), span=H*.32;
+    x.lineCap='round';
+    for(var k=0;k<seed.length;k++){
+      var s=seed[k],px=s[0]*W,py=s[1]*H;
+      var t=smooth(start+span*.5,start-span*.6,py); /* 0 in basso, 1 in alto */
+      var base=zero?0:.10;
+      var len=(base+(1-base)*t);
+      if(len<=0.02)continue;
+      var dens=.25+.75*len; if(s[3]>dens)continue;
+      var L=2+len*26*(0.7+s[2]*.6);
+      x.strokeStyle='rgba(28,22,18,'+(0.35+len*.6)+')';x.lineWidth=0.8+len*1.2;
+      x.beginPath();x.moveTo(px,py);x.quadraticCurveTo(px+(s[2]-.5)*6,py-L*.5,px+(s[2]-.5)*10,py-L);x.stroke();
+    }
+    var top=H*(1-h/100)+span*.5;ln.style.top=(Math.min(H-6,top)/H*100)+'%';
+    var sc=document.querySelectorAll('.scale span');
+    sc[1].textContent=zero?'—':'';sc[4].textContent=zero?'0 mm':'0,5 mm';
+  }
+  function setH(h,fromBtn){
+    rg.value=h;draw(+h);
+    var keys=[18,42,66,80],best=keys.reduce(function(a,b){return Math.abs(b-h)<Math.abs(a-h)?b:a});
+    document.querySelectorAll('#choices button').forEach(function(b){b.classList.toggle('on',+b.dataset.v===best)});
+    document.getElementById('fname').textContent=info[best][0];document.getElementById('fdesc').textContent=info[best][1];
+  }
+  document.querySelectorAll('#choices button').forEach(function(b){b.addEventListener('click',function(){animTo(+b.dataset.v)})});
+  rg.addEventListener('input',function(){setH(+rg.value)});
+  var raf;function animTo(t){cancelAnimationFrame(raf);var f=+rg.value;var st=null;function step(ts){if(!st)st=ts;var p=Math.min(1,(ts-st)/600),e=1-Math.pow(1-p,3);setH(Math.round(f+(t-f)*e));if(p<1)raf=requestAnimationFrame(step)}raf=requestAnimationFrame(step)}
+  setH(42);
+
+  /* giorni prenotabili (mar–sab) */
+  var days=document.getElementById('days'),nomi=['dom','lun','mar','mer','gio','ven','sab'],d=new Date(),c=0,sel=null;
+  for(i=1;c<5&&i<14;i++){var dd=new Date(d.getFullYear(),d.getMonth(),d.getDate()+i);if(dd.getDay()===0||dd.getDay()===1)continue;
+    var b=document.createElement('button');b.type='button';b.innerHTML=nomi[dd.getDay()]+'<small>'+dd.getDate()+'/'+(dd.getMonth()+1)+'</small>';b.dataset.t=nomi[dd.getDay()]+' '+dd.getDate()+'/'+(dd.getMonth()+1);
+    if(c===0){b.classList.add('on');sel=b.dataset.t;}
+    b.addEventListener('click',function(){days.querySelectorAll('button').forEach(function(z){z.classList.remove('on')});this.classList.add('on');sel=this.dataset.t;});
+    days.appendChild(b);c++;}
+  document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();var f=e.target,n=(f.nome.value||'').trim().replace(/</g,'&lt;')||'—',s=f.querySelector('input[name=s]:checked').value;
+    var ok=document.getElementById('ok');ok.innerHTML='<b>Dimostrazione:</b> nessuna richiesta è stata inviata. Nel sito vero Matteo riceverebbe: '+s+', '+sel+' alle '+f.ora.value+', a nome di '+n+'.';ok.classList.add('on');});
+
+  var td=new Date().getDay(),li=document.querySelector('#hours li[data-d="'+td+'"]');if(li)li.classList.add('today');
+  var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(z){if(z.isIntersecting){z.target.classList.add('in');io.unobserve(z.target);}})},{threshold:.12}):null;
+  document.querySelectorAll('.reveal').forEach(function(el){io?io.observe(el):el.classList.add('in')});
+})();
+</script>
+</body>
+</html>
