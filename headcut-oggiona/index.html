@@ -101,7 +101,11 @@ header{position:sticky;top:0;z-index:40;background:rgba(18,18,18,.94);color:var(
 .fade .head p{color:#A9A296}
 .fadebox{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
 .nape{position:relative;aspect-ratio:1/1.05;max-width:500px;width:100%;justify-self:center;background:#1A1918;border:1px solid #33312D}
-.nape canvas{position:absolute;inset:0;width:100%;height:100%}
+.nape{overflow:hidden;border-radius:6px}
+.nape img{position:absolute;left:0;width:100%;top:-13%;height:113%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity .7s ease,transform 1.2s ease}
+.nape img.on{opacity:1;transform:scale(1)}
+.nape .badge{position:absolute;left:12px;bottom:12px;z-index:3;background:rgba(18,18,18,.78);color:var(--brass2);padding:7px 10px;border-radius:4px;font-size:10.5px}
+.cuts img.tw{top:-13%!important;height:113%!important}
 .nape .scale{position:absolute;right:-1px;top:0;bottom:0;width:58px;border-left:1px dashed rgba(217,174,98,.45);display:flex;flex-direction:column;justify-content:space-between;padding:10px 0;font:500 11px 'IBM Plex Mono';color:var(--brass2);text-align:right;padding-right:8px;background:linear-gradient(90deg,rgba(18,18,18,.0),rgba(18,18,18,.55))}
 .nape .line{position:absolute;left:0;right:58px;height:0;border-top:1px solid var(--brass2);transition:top .6s cubic-bezier(.4,0,.2,1)}
 .nape .line::after{content:attr(data-l);position:absolute;left:10px;top:-24px;font:500 10.5px 'IBM Plex Mono';letter-spacing:.12em;text-transform:uppercase;color:var(--brass2);background:rgba(18,18,18,.75);padding:3px 6px}
@@ -309,13 +313,15 @@ footer b{color:var(--bone)}
   <div class="wrap">
     <div class="head reveal">
       <div><div class="eyebrow mono">La sfumatura</div><h2>Dove inizia,<br><em>al millimetro.</em></h2></div>
-      <p>La differenza tra un taglio qualsiasi e un taglio preciso sta tutta qui, sulla nuca. Scegli l'altezza e guarda come cambia. Poi in poltrona lo decidete insieme.</p>
+      <p>La differenza tra un taglio qualsiasi e un taglio preciso sta tutta qui. Scegli l'altezza e guarda un taglio vero fatto da Matteo. Poi in poltrona lo decidete insieme.</p>
     </div>
     <div class="fadebox">
       <div class="nape reveal" id="nape">
-        <canvas id="cv" width="500" height="525" aria-label="Simulazione di una sfumatura sulla nuca"></canvas>
-        <div class="line" id="ln" data-l="inizio sfumatura"></div>
-        <div class="scale"><span>lunghezza</span><span>—</span><span>—</span><span>—</span><span>0 mm</span></div>
+        <img data-v="18" class="tw" src="https://cdn1.treatwell.net/images/view/v2.i11953909.w1080.h720.xC2772F67/" alt="Sfumatura bassa sulla nuca" style="object-position:55% 45%" loading="lazy">
+        <img data-v="42" class="tw on" src="https://cdn1.treatwell.net/images/view/v2.i11953911.w1080.h720.x692006BF/" alt="Sfumatura media laterale" style="object-position:50% 40%" loading="lazy">
+        <img data-v="66" class="tw" src="https://cdn1.treatwell.net/images/view/v2.i11953906.w1080.h720.x3DC7BA90/" alt="Sfumatura alta" style="object-position:55% 35%" loading="lazy">
+        <img data-v="80" class="tw" src="https://cdn1.treatwell.net/images/view/v2.i11953904.w1080.h720.x902F57BD/" alt="Sfumatura alta a zero con barba" style="object-position:45% 40%" loading="lazy">
+        <span class="badge mono">Foto vera · un taglio di Matteo</span>
       </div>
       <div class="ctrl reveal">
         <h3 id="fname">Sfumatura media</h3>
@@ -326,7 +332,7 @@ footer b{color:var(--bone)}
           <button type="button" data-v="66">Alta<small>verso la tempia</small></button>
           <button type="button" data-v="80">Alta a zero<small>pelle in basso</small></button>
         </div>
-        <div class="range"><input type="range" id="rg" min="8" max="85" value="42" aria-label="Altezza della sfumatura"><div class="lbl"><span>collo</span><span>nuca</span><span>tempia</span></div></div>
+        <div class="range"><input type="range" id="rg" min="0" max="3" step="1" value="1" aria-label="Altezza della sfumatura"><div class="lbl"><span>collo</span><span>nuca</span><span>tempia</span></div></div>
         <div class="saynote">«Parrucchiere eccezionale, molto preciso, molto veloce.»<small>Gio · recensione Treatwell, settembre 2026</small></div>
       </div>
     </div>
@@ -390,11 +396,11 @@ footer b{color:var(--bone)}
     </div>
     <div class="cuts-head reveal"><span class="mono" style="color:var(--brass2);letter-spacing:.2em;font-size:12px">I TAGLI</span><h2 style="margin-top:10px">Al millimetro,<br><em>uno per uno.</em></h2></div>
     <div class="cuts">
-      <figure class="cut has-photo ph reveal c1"><img class="real" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953904.w1080.h720.x902F57BD/" alt="Sfumatura e barba" style="object-position:45% 40%"><figcaption>Sfumatura e barba</figcaption></figure>
-      <figure class="cut has-photo ph reveal"><img class="real" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953906.w1080.h720.x3DC7BA90/" alt="Ciuffo texturizzato, sfumatura alta" style="object-position:50% 35%"><figcaption>Ciuffo texturizzato, sfumatura alta</figcaption></figure>
-      <figure class="cut has-photo ph reveal"><img class="real" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953909.w1080.h720.xC2772F67/" alt="Sfumatura sulla nuca" style="object-position:55% 45%"><figcaption>Sfumatura sulla nuca</figcaption></figure>
-      <figure class="cut has-photo ph reveal"><img class="real" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953915.w1080.h720.x156B332C/" alt="Sfumatura con disegno" style="object-position:50% 45%"><figcaption>Sfumatura con disegno</figcaption></figure>
-      <figure class="cut has-photo ph reveal"><img class="real" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953911.w1080.h720.x692006BF/" alt="Sfumatura laterale" style="object-position:50% 40%"><figcaption>Sfumatura laterale</figcaption></figure>
+      <figure class="cut has-photo ph reveal c1"><img class="real tw" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953904.w1080.h720.x902F57BD/" alt="Sfumatura e barba" style="object-position:45% 40%"><figcaption>Sfumatura e barba</figcaption></figure>
+      <figure class="cut has-photo ph reveal"><img class="real tw" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953906.w1080.h720.x3DC7BA90/" alt="Ciuffo texturizzato, sfumatura alta" style="object-position:50% 35%"><figcaption>Ciuffo texturizzato, sfumatura alta</figcaption></figure>
+      <figure class="cut has-photo ph reveal"><img class="real tw" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953909.w1080.h720.xC2772F67/" alt="Sfumatura sulla nuca" style="object-position:55% 45%"><figcaption>Sfumatura sulla nuca</figcaption></figure>
+      <figure class="cut has-photo ph reveal"><img class="real tw" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953915.w1080.h720.x156B332C/" alt="Sfumatura con disegno" style="object-position:50% 45%"><figcaption>Sfumatura con disegno</figcaption></figure>
+      <figure class="cut has-photo ph reveal"><img class="real tw" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953911.w1080.h720.x692006BF/" alt="Sfumatura laterale" style="object-position:50% 40%"><figcaption>Sfumatura laterale</figcaption></figure>
       <figure class="cut has-photo ph reveal"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SVa2SViTgI8AHBuRrxEo2tcba0kA_aIEsmyPxJ4EjA44WgO5toDwG9UNpr1NjOIZQdAtuu3eNrT8DosxchKCNmiq_o0C6jKBlX4hbBlEQMfd1HlLY367hXT5EG_LlCB8OHAHA9=s1400" alt="Taglio corto, sfumatura bassa" style="object-position:50% 30%"><figcaption>Taglio corto, sfumatura bassa</figcaption></figure>
     </div>
   </div>
@@ -475,42 +481,18 @@ footer b{color:var(--bone)}
 
 <script>
 (function(){
-  /* la sfumatura: capelli disegnati a tratti */
-  var cv=document.getElementById('cv'),x=cv.getContext('2d'),W=cv.width,H=cv.height,ln=document.getElementById('ln'),rg=document.getElementById('rg');
-  var seed=[],i;for(i=0;i<5200;i++)seed.push([Math.random(),Math.random(),Math.random(),Math.random()]);
-  var info={18:['Sfumatura bassa','Parte appena sopra il collo: pulita e discreta, va bene anche in ufficio.'],42:['Sfumatura media','Parte a metà della nuca: ordinata, ma senza scoprire troppo. Un buon equilibrio tra pulito e naturale.'],66:['Sfumatura alta','Sale verso le tempie: il contrasto si vede, il taglio ha carattere.'],80:['Alta a zero','In basso si arriva alla pelle e si sale piano piano: serve mano ferma, millimetro dopo millimetro.']};
-  function smooth(a,b,t){t=Math.min(1,Math.max(0,(t-a)/(b-a)));return t*t*(3-2*t)}
-  function draw(h){
-    var zero=h>=75;
-    x.fillStyle='#C99F80';x.fillRect(0,0,W,H);
-    var g=x.createLinearGradient(0,0,0,H);g.addColorStop(0,'rgba(120,80,55,.0)');g.addColorStop(1,'rgba(120,80,55,.25)');x.fillStyle=g;x.fillRect(0,0,W,H);
-    var start=H*(1-h/100), span=H*.32;
-    x.lineCap='round';
-    for(var k=0;k<seed.length;k++){
-      var s=seed[k],px=s[0]*W,py=s[1]*H;
-      var t=smooth(start+span*.5,start-span*.6,py); /* 0 in basso, 1 in alto */
-      var base=zero?0:.10;
-      var len=(base+(1-base)*t);
-      if(len<=0.02)continue;
-      var dens=.25+.75*len; if(s[3]>dens)continue;
-      var L=2+len*26*(0.7+s[2]*.6);
-      x.strokeStyle='rgba(28,22,18,'+(0.35+len*.6)+')';x.lineWidth=0.8+len*1.2;
-      x.beginPath();x.moveTo(px,py);x.quadraticCurveTo(px+(s[2]-.5)*6,py-L*.5,px+(s[2]-.5)*10,py-L);x.stroke();
-    }
-    var top=H*(1-h/100)+span*.5;ln.style.top=(Math.min(H-6,top)/H*100)+'%';
-    var sc=document.querySelectorAll('.scale span');
-    sc[1].textContent=zero?'—':'';sc[4].textContent=zero?'0 mm':'0,5 mm';
+  /* la sfumatura: foto vere dei tagli di Matteo */
+  var rg=document.getElementById('rg'),keys=[18,42,66,80],pics=document.querySelectorAll('#nape img');
+  var info={18:['Sfumatura bassa','Parte appena sopra il collo: pulita e discreta, va bene anche in ufficio.'],42:['Sfumatura media','Parte a metà, sopra l\'orecchio: ordinata, ma senza scoprire troppo. Un buon equilibrio tra pulito e naturale.'],66:['Sfumatura alta','Sale verso le tempie: il contrasto si vede, il taglio ha carattere.'],80:['Alta a zero','In basso si arriva alla pelle e si sale piano piano: serve mano ferma, millimetro dopo millimetro.']};
+  function setV(v){
+    pics.forEach(function(im){im.classList.toggle('on',+im.dataset.v===v)});
+    document.querySelectorAll('#choices button').forEach(function(b){b.classList.toggle('on',+b.dataset.v===v)});
+    document.getElementById('fname').textContent=info[v][0];document.getElementById('fdesc').textContent=info[v][1];
+    rg.value=keys.indexOf(v);
   }
-  function setH(h,fromBtn){
-    rg.value=h;draw(+h);
-    var keys=[18,42,66,80],best=keys.reduce(function(a,b){return Math.abs(b-h)<Math.abs(a-h)?b:a});
-    document.querySelectorAll('#choices button').forEach(function(b){b.classList.toggle('on',+b.dataset.v===best)});
-    document.getElementById('fname').textContent=info[best][0];document.getElementById('fdesc').textContent=info[best][1];
-  }
-  document.querySelectorAll('#choices button').forEach(function(b){b.addEventListener('click',function(){animTo(+b.dataset.v)})});
-  rg.addEventListener('input',function(){setH(+rg.value)});
-  var raf;function animTo(t){cancelAnimationFrame(raf);var f=+rg.value;var st=null;function step(ts){if(!st)st=ts;var p=Math.min(1,(ts-st)/600),e=1-Math.pow(1-p,3);setH(Math.round(f+(t-f)*e));if(p<1)raf=requestAnimationFrame(step)}raf=requestAnimationFrame(step)}
-  setH(42);
+  document.querySelectorAll('#choices button').forEach(function(b){b.addEventListener('click',function(){setV(+b.dataset.v)})});
+  rg.addEventListener('input',function(){setV(keys[+rg.value])});
+  setV(42);
 
   /* giorni prenotabili (mar–sab) */
   var days=document.getElementById('days'),nomi=['dom','lun','mar','mer','gio','ven','sab'],d=new Date(),c=0,sel=null;
