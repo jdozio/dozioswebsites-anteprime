@@ -160,6 +160,13 @@ header{position:sticky;top:0;z-index:40;background:rgba(18,18,18,.94);color:var(
 .todo b{display:block;font:500 11px 'IBM Plex Mono';letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
 .todo ul{margin-left:18px;color:var(--ink2);font-size:15px}
 .gal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:70px}
+.cuts-head{margin-top:90px;margin-bottom:26px}
+.cuts{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-auto-rows:260px;gap:10px}
+.cuts .c1{grid-row:span 2}
+.cuts figure{position:relative;margin:0;border-radius:6px;overflow:hidden}
+.cuts figure img.real{transition:transform 1.2s}
+.cuts figure:hover img.real{transform:scale(1.05)}
+.cuts figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:34px 14px 12px;background:linear-gradient(transparent,rgba(10,10,10,.75));color:#F3EADB;font:500 12px 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase}
 .gal .ph{aspect-ratio:1}
 
 /* PRENOTA */
@@ -230,6 +237,8 @@ footer b{color:var(--bone)}
   .choices{grid-template-columns:1fr 1fr}
   .svc,.row2{grid-template-columns:1fr}
   .gal{grid-template-columns:1fr 1fr}
+  .cuts{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
+  .cuts .c1{grid-column:span 2;grid-row:span 1;}
   .ticket{padding:28px 20px 22px}
   form{padding:20px}
   .nav .btn{display:none}
@@ -379,11 +388,14 @@ footer b{color:var(--bone)}
         </div>
       </div>
     </div>
-    <div class="gal">
-      <div class="has-photo ph reveal" data-foto="taglio-1"><img class="real" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953911.w1080.h720.x692006BF/" alt="Sfumatura vista di lato" style="object-position:50% 40%"><span class="ph-label">Foto: taglio 1</span></div>
-      <div class="has-photo ph reveal" data-foto="taglio-2"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ShdcidvMRPCxTJCYh8xf3FmBshpHocrnFAY8RKomnL6fXHiJSYzLu9jTLf-R1is5tgnJj7nFB-eAC39C4c4yl7HsFp8D2kaXCOzSYly50OJ3bXaYqX2_NHP4-f6Plqg_YiRfI=s1200" alt="Le poltrone del salone" style="object-position:50% 50%"><span class="ph-label">Foto: taglio 2</span></div>
-      <div class="ph reveal" data-foto="barba"><span class="ph-label">Foto: barba (da richiedere)</span></div>
-      <div class="has-photo ph reveal" data-foto="dettaglio-salone"><img class="real" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953919.w1080.h720.x77D7549B/" alt="Gli attrezzi sul bancone" style="object-position:50% 60%"><span class="ph-label">Foto: dettaglio salone</span></div>
+    <div class="cuts-head reveal"><span class="mono" style="color:var(--brass2);letter-spacing:.2em;font-size:12px">I TAGLI</span><h2 style="margin-top:10px">Al millimetro,<br><em>uno per uno.</em></h2></div>
+    <div class="cuts">
+      <figure class="cut has-photo ph reveal c1"><img class="real" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953904.w1080.h720.x902F57BD/" alt="Sfumatura e barba" style="object-position:45% 40%"><figcaption>Sfumatura e barba</figcaption></figure>
+      <figure class="cut has-photo ph reveal"><img class="real" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953906.w1080.h720.x3DC7BA90/" alt="Ciuffo texturizzato, sfumatura alta" style="object-position:50% 35%"><figcaption>Ciuffo texturizzato, sfumatura alta</figcaption></figure>
+      <figure class="cut has-photo ph reveal"><img class="real" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953909.w1080.h720.xC2772F67/" alt="Sfumatura sulla nuca" style="object-position:55% 45%"><figcaption>Sfumatura sulla nuca</figcaption></figure>
+      <figure class="cut has-photo ph reveal"><img class="real" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953915.w1080.h720.x156B332C/" alt="Sfumatura con disegno" style="object-position:50% 45%"><figcaption>Sfumatura con disegno</figcaption></figure>
+      <figure class="cut has-photo ph reveal"><img class="real" loading="lazy" src="https://cdn1.treatwell.net/images/view/v2.i11953911.w1080.h720.x692006BF/" alt="Sfumatura laterale" style="object-position:50% 40%"><figcaption>Sfumatura laterale</figcaption></figure>
+      <figure class="cut has-photo ph reveal"><img class="real" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SVa2SViTgI8AHBuRrxEo2tcba0kA_aIEsmyPxJ4EjA44WgO5toDwG9UNpr1NjOIZQdAtuu3eNrT8DosxchKCNmiq_o0C6jKBlX4hbBlEQMfd1HlLY367hXT5EG_LlCB8OHAHA9=s1400" alt="Taglio corto, sfumatura bassa" style="object-position:50% 30%"><figcaption>Taglio corto, sfumatura bassa</figcaption></figure>
     </div>
   </div>
 </section>
