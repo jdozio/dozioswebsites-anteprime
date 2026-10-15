@@ -21,6 +21,8 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 - HeadCut di Matteo Cerbino | Via Campiglio 51, Oggiona con S. Stefano (VA) | barbiere | anteprima fatta 15.10, verificata su Maps 15.10 (Google 5,0/62, Treatwell 5,0/58, WhatsApp sì), foto inserite | 2026-10-15 | /headcut-oggiona/ · categoria: solo prenotazione (Treatwell) + Facebook
 - Fatti di Pizza (di Oliveri Fernando) | Via Roma 62, Porto Valtravaglia (VA) | pizza d'asporto | RIFIUTATO 15.10 ("non ci interessa"), anteprima rimossa | 2026-10-15 | NON ricontattare
 
+- Empety toelettatura (titolare Chiara) | Via Sempione 25, Olgiate Comasco (CO) | toelettatura cani | anteprima fatta 15.10, verificata su Maps (4,8/256, ultime 4 mesi fa, cellulare), foto inserite, WhatsApp non confermato | 2026-10-15 | /empety-toelettatura/ · categoria: nessun sito su Google
+
 ## Valutate e scartate
 - Elettro-Evolution (Miki) | Locarno | elettricista | sito Wix con dominio che funziona: non contattato (anteprima fatta e rimossa il 14.10)
 - Ms elettricità Sagl | Ascona | elettricista | recensioni ferme a 5 anni fa, nessuna foto
