@@ -19,7 +19,7 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 - G.S. Manutenzioni (Stefano Gaggi) | Via Martesana 11, Gravedona ed Uniti (CO) | elettricista/elettronica | anteprima fatta 14.10, verificata su Maps (5,0/9, ultima rec. 6 mesi fa, aperto 24h), WhatsApp confermato da una recensione, nessuna foto | 2026-10-14 | /gs-manutenzioni-gravedona/ · categoria: nessun sito · RISPOSTA 15.10: "per ora non interessato, in futuro magari" → anteprima lasciata online, ricontattare tra qualche mese
 - M&M Korean Food | Via San Gottardo 88, Bellinzona | ristorante coreano / take away | anteprima fatta 15.10, DA CONTROLLARE SU MAPS (RG 4,8/116, cellulare 076 203 52 32) | 2026-10-15 | /mm-korean-food-bellinzona/ · categoria: nuova, nessun sito
 - HeadCut di Matteo Cerbino | Via Campiglio 51, Oggiona con S. Stefano (VA) | barbiere | anteprima fatta 15.10, DA CONTROLLARE SU MAPS (Treatwell 5,0/58, cellulare 342 068 8985) | 2026-10-15 | /headcut-oggiona/ · categoria: solo prenotazione (Treatwell) + Facebook
-- Fatti di Pizza (di Oliveri Fernando) | Via Roma 62, Porto Valtravaglia (VA) | pizza d'asporto | anteprima fatta 15.10, DA CONTROLLARE SU MAPS (Google 4,9/82 da RistorantePro, cellulare 351 671 3059) | 2026-10-15 | /fatti-di-pizza-porto-valtravaglia/ · categoria: solo Facebook
+- Fatti di Pizza (di Oliveri Fernando) | Via Roma 62, Porto Valtravaglia (VA) | pizza d'asporto | RIFIUTATO 15.10 ("non ci interessa"), anteprima rimossa | 2026-10-15 | NON ricontattare
 
 ## Valutate e scartate
 - Elettro-Evolution (Miki) | Locarno | elettricista | sito Wix con dominio che funziona: non contattato (anteprima fatta e rimossa il 14.10)
