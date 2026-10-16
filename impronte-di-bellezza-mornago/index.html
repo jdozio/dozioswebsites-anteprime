@@ -12,7 +12,7 @@
 <meta property="og:title" content="Impronte di Bellezza · anteprima del nuovo sito">
 <meta property="og:description" content="Impronte di Bellezza, toelettatura per cani e gatti a Mornago (VA), Via Stazione 31. Lavaggio, rimozione del sottopelo, tosatura e asciugatura con Andrea e Manuela. Tel. 345 619 7298.">
 <meta property="og:url" content="https://jdozio.github.io/dozioswebsites-anteprime/impronte-di-bellezza-mornago/">
-<meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGZBBDnpb6k0e1wprHT500e0NIck4ivQINOz0vCNKTnYK1-i8bO6Dp1kxGPDQLB_wOU_M-dfta-RJp7ZqNQV_c3SdW1sNV8WETwW408dSEXMaf8QkTMcim4N1d4PdnG8Ze0xgt0A=w1200-h630-p-k-no-rj-l80">
+<meta property="og:image" content="https://images.unsplash.com/photo-1719464454959-9cf304ef4774?w=1200&h=630&q=80&auto=format&fit=crop">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Impronte di Bellezza">
@@ -181,6 +181,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   footer{padding-bottom:110px}
 }
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.steps li{animation:none;opacity:1;transform:none}}
+
+/* foto di esempio */
+.stock{position:relative}
+.stock::after{content:"Foto di esempio";position:absolute;top:10px;right:10px;z-index:3;font:700 10.5px/1 system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;background:rgba(0,0,0,.55);color:#fff;padding:6px 9px;border-radius:99px;pointer-events:none}
 </style>
 </head>
 <body>
@@ -208,8 +212,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="stars"><b>4,8</b><span><span class="s">★★★★★</span><br>103 recensioni su Google</span></div>
     </div>
     <div class="duo reveal">
-      <div class="p p1"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGZBBDnpb6k0e1wprHT500e0NIck4ivQINOz0vCNKTnYK1-i8bO6Dp1kxGPDQLB_wOU_M-dfta-RJp7ZqNQV_c3SdW1sNV8WETwW408dSEXMaf8QkTMcim4N1d4PdnG8Ze0xgt0A=s1400" alt="Un cane bianco dal pelo soffice appena toelettato"></div>
-      <div class="p p2"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RIs42m53ZvBxongALxQo5GneFrqNz8JiIiMyuL2blTd-3NtjxKuLrh3_o7R_7knng6eoLI3XC6zZDIsaC30oM-DqUU_SqacOr_b15N6oZMGCRoj3zNFYDclZ4HTGFBIqCXCFNK=s900" alt="Un cavalier king dal pelo lungo e lucido"></div>
+      <div class="stock p p1"><img src="https://images.unsplash.com/photo-1719464454959-9cf304ef4774?w=1600&q=80&auto=format&fit=crop" alt="Un cane bianco dal pelo soffice appena toelettato"></div>
+      <div class="stock p p2"><img src="https://images.unsplash.com/photo-1678153184494-1f6fc14a673d?w=900&q=80&auto=format&fit=crop" alt="Un cavalier king dal pelo lungo e lucido"></div>
       <div class="tag"><i>«Una vera principessa col fiocchetto.»</i>Il padrone di Zara, border collie</div>
     </div>
   </div>
@@ -228,7 +232,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <button role="tab" aria-selected="false" data-k="doppio">Con sottopelo</button>
     </div>
     <div class="pview reveal">
-      <div class="ph"><img id="pImg" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qx-IriY5wDJFC-PLS0Aa9VlvJtaW_dFmcreK6dtvIDkxiQ-oKN2cLxD8Ov5ojorQezTtJ3fel8ASWdbHUayA0v6UeMAjABupG2qZd3huUD17B6sjYlK1Xx3JAcLdOS-7_7zRw=s1000" alt="Cane dal pelo corto con il fiocco rosa"></div>
+      <div class="stock ph"><img id="pImg" src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=1000&q=80&auto=format&fit=crop" alt="Cane dal pelo corto con il fiocco rosa"></div>
       <div>
         <h3 id="pTit">Pelo corto</h3>
         <p class="desc" id="pDesc"></p>
@@ -236,6 +240,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       </div>
     </div>
     <div class="todo reveal"><b>Da completare insieme:</b> i trattamenti esatti per ogni tipo di pelo, i prezzi indicativi per taglia e quanto dura in media un appuntamento.</div>
+    <div class="todo reveal"><b>Foto:</b> quelle segnate «Foto di esempio» servono solo a dare l'idea. Nel sito vero andranno le vostre: i cani appena usciti dal salone, fotografati bene, con buona luce.</div>
   </div>
 </section>
 
@@ -251,13 +256,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 
 <section class="gal" id="cani">
   <div class="wrap">
-    <div class="reveal"><span class="kicker">I cani</span><h2 style="margin-top:14px">Usciti da qui,<br><em>con il fiocco.</em></h2></div>
+    <div class="reveal"><span class="kicker">I cani</span><h2 style="margin-top:14px">Dal bagno<br><em>al fiocco.</em></h2></div>
     <div class="ggrid reveal">
-      <div class="t"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TFIo-lG_wgU1t8pYp8FknOQt9j12cu0Xn-ZT5Kcx4rHKuJxycUVebZDwc7-Tbpx4VhMr9BAI1eBP_BPxtpsJ3HskmGM3ZrGWcovvcPC2S1bacRQIpKvzcuscDgcDJ2rNh_czsjMg=s900" alt="Border collie con il fiocco rosa sul tavolo da toelettatura" loading="lazy"><span>Fiocco rosa</span></div>
-      <div><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SDlspnQBRnZOrmRJooNW_WApiIY5l72EDO5rVZ6XJYSXEfABd2h4LqRr46HlbvIcV_PzGy3TF2zqhxMM9smPG7ImqCi8izwCrD5eulqxRkUUaBexlC1a1WuMnwEQFKWgS3HQ4O3A=s800" alt="Cane dal pelo arruffato con il fiocco azzurro" loading="lazy"><span>Fiocco azzurro</span></div>
-      <div><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RIhmbpC08MJChsgcds5xYwV59eR-4-7w2N0tC0qA2xOKxlkJVycQYK9dhDQ8ily2PwefLMQm2mLynmdYAJnuZshM4YcLDUgUunkuzNhL5OocTBGnqaqUZmxbpc4U5CnZTmJwKCSb1pLoI=s800" alt="Cane nero dal pelo ruvido sul prato" loading="lazy"><span>Di nuovo a casa</span></div>
-      <div class="t"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qc_h4hKrGx_abjw2F6F-abdOZscxm-W0HGU6nOI948NTlVz1w3CxFvqs3bsyziYFQqymCpQLL0ZhSdeFhxOHVNkNwo247Mz6m83sP69QwKnJTI5evLaZcZm9o4_uzOdjNUzy50rw=s900" alt="Pastore australiano dal pelo lungo e lucido" loading="lazy"><span>Pelo lucido</span></div>
-      <div class="w"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SLQAjwHalU829Ar4mDOk9NctFfqpkOX9vTXRCmw6sjcaBpTOvRaDX5mHu7M0Vh-lFUPhmoq1DO8Z2W3WhGtTW0iV8DStxKQfoPiMP4soP4-rXcP1U3Y3W5L4ft0tjcHHGOksY=s1000" alt="Cani tranquilli nell'ingresso del salone, con la porta dipinta" loading="lazy" style="object-position:50% 70%"><span>Si aspetta tranquilli</span></div>
+      <div class="t stock"><img src="https://images.unsplash.com/photo-1789846959088-fad9ee5a6096?w=900&q=80&auto=format&fit=crop" alt="Border collie con il fiocco rosa sul tavolo da toelettatura" loading="lazy"><span>Con i fiocchi</span></div>
+      <div class="stock"><img src="https://images.unsplash.com/photo-1611173622933-91942d394b04?w=800&q=80&auto=format&fit=crop" alt="Cane dal pelo arruffato con il fiocco azzurro" loading="lazy"><span>Dopo il bagno</span></div>
+      <div class="stock"><img src="https://images.unsplash.com/photo-1597595735781-6a57fb8e3e3d?w=800&q=80&auto=format&fit=crop" alt="Cane nero dal pelo ruvido sul prato" loading="lazy"><span>Il bagno</span></div>
+      <div class="t stock"><img src="https://images.unsplash.com/photo-1528846104175-4fd300ee59da?w=900&q=80&auto=format&fit=crop" alt="Pastore australiano dal pelo lungo e lucido" loading="lazy"><span>Spazzolatura</span></div>
+      <div class="w stock"><img src="https://images.unsplash.com/photo-1625321171045-1fea4ac688e9?w=1000&q=80&auto=format&fit=crop" alt="Cani tranquilli nell'ingresso del salone, con la porta dipinta" loading="lazy" style="object-position:50% 40%"><span>Asciugatura</span></div>
     </div>
   </div>
 </section>
@@ -334,14 +339,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 (function(){
 var TEL='393456197298',G='https://lh3.googleusercontent.com/gps-cs-s/';
 var P={
- corto:{t:'Pelo corto',img:'ANWiy9Qx-IriY5wDJFC-PLS0Aa9VlvJtaW_dFmcreK6dtvIDkxiQ-oKN2cLxD8Ov5ojorQezTtJ3fel8ASWdbHUayA0v6UeMAjABupG2qZd3huUD17B6sjYlK1Xx3JAcLdOS-7_7zRw',d:'Sembra che non serva niente, e invece un buon lavaggio cambia tutto: pelo pulito, lucido e senza odore.',s:[['Lavaggio','shampoo adatto alla pelle'],['Asciugatura','con il phon, senza fretta'],['Il fiocco','per uscire in bellezza']]},
- lungo:{t:'Lungo e liscio',img:'ANWiy9RIs42m53ZvBxongALxQo5GneFrqNz8JiIiMyuL2blTd-3NtjxKuLrh3_o7R_7knng6eoLI3XC6zZDIsaC30oM-DqUU_SqacOr_b15N6oZMGCRoj3zNFYDclZ4HTGFBIqCXCFNK',d:'Orecchie, frange e pelo lungo vanno districati con pazienza, perché tornino morbidi e ordinati.',s:[['Lavaggio e maschera','per un pelo morbido'],['Spazzolatura','nodi via, uno alla volta'],['Fonatura','pelo liscio e lucido']]},
- riccio:{t:'Riccio o arruffato',img:'ANWiy9SDlspnQBRnZOrmRJooNW_WApiIY5l72EDO5rVZ6XJYSXEfABd2h4LqRr46HlbvIcV_PzGy3TF2zqhxMM9smPG7ImqCi8izwCrD5eulqxRkUUaBexlC1a1WuMnwEQFKWgS3HQ4O3A',d:'Il pelo che cresce sempre ha bisogno della tosatura giusta, per stare comodo e in ordine più a lungo.',s:[['Lavaggio','anche il pelo più fitto'],['Tosatura','a misura del tuo cane'],['Rifinitura','muso e zampe in ordine']]},
- doppio:{t:'Con sottopelo',img:'ANWiy9TFIo-lG_wgU1t8pYp8FknOQt9j12cu0Xn-ZT5Kcx4rHKuJxycUVebZDwc7-Tbpx4VhMr9BAI1eBP_BPxtpsJ3HskmGM3ZrGWcovvcPC2S1bacRQIpKvzcuscDgcDJ2rNh_czsjMg',d:'Border collie, pastori, nordici: durante la muta il sottopelo va tolto, così il cane respira e il pelo torna leggero.',s:[['Lavaggio','in profondità'],['Rimozione sottopelo','il cane si sente più leggero'],['Fonatura','manto pieno e lucido']]}
+ corto:{t:'Pelo corto',img:'https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=1000&q=80&auto=format&fit=crop',d:'Sembra che non serva niente, e invece un buon lavaggio cambia tutto: pelo pulito, lucido e senza odore.',s:[['Lavaggio','shampoo adatto alla pelle'],['Asciugatura','con il phon, senza fretta'],['Il fiocco','per uscire in bellezza']]},
+ lungo:{t:'Lungo e liscio',img:'https://images.unsplash.com/photo-1588269845464-8993565cac3a?w=1000&q=80&auto=format&fit=crop',d:'Orecchie, frange e pelo lungo vanno districati con pazienza, perché tornino morbidi e ordinati.',s:[['Lavaggio e maschera','per un pelo morbido'],['Spazzolatura','nodi via, uno alla volta'],['Fonatura','pelo liscio e lucido']]},
+ riccio:{t:'Riccio o arruffato',img:'https://images.unsplash.com/photo-1546447147-3fc2b8181a74?w=1000&q=80&auto=format&fit=crop',d:'Il pelo che cresce sempre ha bisogno della tosatura giusta, per stare comodo e in ordine più a lungo.',s:[['Lavaggio','anche il pelo più fitto'],['Tosatura','a misura del tuo cane'],['Rifinitura','muso e zampe in ordine']]},
+ doppio:{t:'Con sottopelo',img:'https://images.unsplash.com/photo-1554692918-08fa0fdc9db3?w=1000&q=80&auto=format&fit=crop',d:'Border collie, pastori, nordici: durante la muta il sottopelo va tolto, così il cane respira e il pelo torna leggero.',s:[['Lavaggio','in profondità'],['Rimozione sottopelo','il cane si sente più leggero'],['Fonatura','manto pieno e lucido']]}
 };
 var img=document.getElementById('pImg');
 function show(k){var p=P[k];document.getElementById('pTit').textContent=p.t;document.getElementById('pDesc').textContent=p.d;
-  img.style.opacity=0;setTimeout(function(){img.src=G+p.img+'=s1000';img.onload=function(){img.style.opacity=1}},200);
+  img.style.opacity=0;setTimeout(function(){img.src=p.img;img.onload=function(){img.style.opacity=1}},200);
   document.getElementById('pSteps').innerHTML=p.s.map(function(x,i){return '<li style="animation-delay:'+(i*.12)+'s"><i>'+(i+1)+'</i><div>'+x[0]+'<br><span>'+x[1]+'</span></div></li>'}).join('');}
 document.getElementById('ptabs').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;this.querySelectorAll('button').forEach(function(z){z.setAttribute('aria-selected',z===b)});show(b.dataset.k)});
 show('corto');img.style.opacity=1;
