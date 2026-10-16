@@ -141,30 +141,21 @@ si aggiorna og:image (script: /tmp o rifallo a mano).
   screenshot mobile e desktop; correggi testi illeggibili, sovrapposizioni, buchi nella griglia.
 - Rileggi ogni frase: niente inventato, niente errori di italiano, niente refusi.
 
-## 7. Messaggio WhatsApp (Jacopo lo manda lui) — NUOVA REGOLA 16.10.2026
-Jacopo: "i messaggi devono essere più reali, più umani, il cliente non deve pensare di parlare con una
-macchina". E la frase "mi ha colpito la recensione dove il cliente dice…" è VIETATA (rende il messaggio ridicolo).
+## 7. Messaggio WhatsApp (Jacopo lo manda lui) — aggiornato 16.10.2026
+Jacopo: "il messaggio deve essere più umano, il cliente non deve pensare di parlare con una macchina".
+E la frase "mi ha colpito la recensione dove il cliente dice…" è VIETATA (rende il messaggio ridicolo).
+La lunghezza e il tono formale di prima vanno bene: NON accorciarlo apposta.
 
-Come scriverlo:
-- Corto: 5–7 righe, come lo scriverebbe davvero un ragazzo di vent'anni dal telefono. Niente elenchi.
-- Si dà del Lei, ma con le minuscole (lei, le, suo): le maiuscole di cortesia sembrano una lettera automatica.
-- Niente citazioni di recensioni, niente numeri di recensioni e stelle, niente complimenti costruiti.
-- Al massimo UNA cosa concreta del sito, detta in modo semplice (es. "c'è anche un calendario per chiedere
-  l'appuntamento su WhatsApp").
-- Niente frasi da agenzia ("mi sono permesso di", "si tratta soltanto di", "La ringrazio per l'attenzione").
-- Firma solo "Jacopo" (nome e cognome solo nella presentazione).
-- Niente emoji, niente gergo.
+Restano (a Jacopo funzionano): presentazione con nome e cognome, "mi sono permesso di prepararLe…",
+"è solo una bozza", la chiusura con "La ringrazio per l'attenzione" e la firma "Jacopo Dozio".
 
-Modello:
-> Buongiorno [nome se certo, altrimenti niente], sono Jacopo Dozio, un ragazzo ticinese che fa siti web
-> per piccole attività.
-> Ho visto che [attività] non ha un sito, così ho provato a prepararne una bozza, giusto per farle vedere
-> come potrebbe venire:
-> [link]
-> [una riga sola su una cosa pensata per loro]
-> È solo una prova, si può cambiare tutto. Se le interessa mi scriva pure qui, altrimenti nessun problema.
-> Buona giornata,
-> Jacopo
+Per renderlo umano:
+- Niente citazioni di recensioni, niente numeri di recensioni e stelle usati come complimento.
+- Scrivi come una persona che ha davvero guardato l'attività: dì in parole semplici cosa hai notato
+  (es. "lavora solo su appuntamento", "fa anche la frutta realistica") e perché hai pensato a loro.
+- Le cose del sito raccontale come le diresti a voce, non come un elenco di funzioni.
+- Frasi normali, collegate tra loro; niente struttura identica in ogni messaggio.
+- Formale (Lei, signor/signora), niente emoji, niente gergo.
 
 ## Privacy (il repository è PUBBLICO)
 Nei file del repo (siti, messaggi, registro) scrivi SOLO dati pubblici dell'attività: nome
@@ -187,7 +178,7 @@ Di notte (cloud) Google, Google Maps e le foto delle schede NON sono raggiungibi
   un'attività risulta avere un sito o essere ferma, si cancella la sua cartella e si segna nel registro.
 
 ## Tono del messaggio
-- Vedi la regola 7 (16.10.2026): corto, umano, Lei con le minuscole, niente recensioni citate.
+- Vedi la regola 7 (16.10.2026): umano, formale, niente recensioni citate.
 - Mai gergo o espressioni colloquiali ("tanta roba", "top", "spacca"…), mai emoji.
 
 ## 8. Output di ogni notte
