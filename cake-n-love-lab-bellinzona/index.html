@@ -115,6 +115,35 @@ nav a:hover{color:var(--cacao)}
 .tg:nth-child(2){margin-top:60px}
 .tg:nth-child(5){margin-top:60px}
 
+/* frutta realistica */
+.frutta{padding:20px 0 110px}
+.fhead{max-width:640px}
+.fhead p{color:var(--cacao2);margin-top:18px;font-size:18px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr 1.05fr;gap:22px;margin-top:44px;align-items:stretch}
+.fph{margin:0;position:relative;border-radius:24px;overflow:hidden;background:var(--panna2);min-height:360px}
+.fph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.fph figcaption{position:absolute;left:14px;bottom:14px;background:rgba(255,253,249,.92);padding:6px 13px;border-radius:99px;font-family:'Instrument Serif',serif;font-style:italic;font-size:19px}
+.box{background:var(--crema);border:1px solid var(--line);border-radius:24px;padding:24px 22px;display:flex;flex-direction:column}
+.bh{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.bh b{font-family:'Young Serif',serif;font-weight:400;font-size:22px}
+.bsub{font-size:14px;color:var(--cacao2);margin:6px 0 14px}
+.gusti{display:grid;gap:8px}
+.g{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.g i{width:30px;height:30px;border-radius:50% 50% 46% 54%/60% 60% 40% 40%;box-shadow:inset -3px -4px 6px rgba(0,0,0,.18)}
+.g span{font-weight:600}
+.qq{display:flex;align-items:center;gap:8px}
+.qq button{width:32px;height:32px;border-radius:50%;border:1.5px solid var(--line);background:#fff;font-size:17px;line-height:1}
+.qq output{min-width:18px;text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+.slots{display:flex;flex-wrap:wrap;gap:6px;min-height:30px;margin:14px 0 4px;padding:10px;border-radius:14px;background:linear-gradient(#E9D3B4,#DCC09B);box-shadow:inset 0 2px 6px rgba(0,0,0,.12)}
+.slots i{width:22px;height:22px;border-radius:50% 50% 46% 54%/60% 60% 40% 40%;box-shadow:inset -2px -3px 5px rgba(0,0,0,.2);animation:pop .35s cubic-bezier(.3,1.6,.5,1)}
+.slots i.empty{background:rgba(255,255,255,.35)!important;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.6);animation:none}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+.btot{display:flex;justify-content:space-between;align-items:baseline;margin:10px 0 14px;font-size:14.5px;color:var(--cacao2)}
+.btot b{font-family:'Young Serif',serif;font-weight:400;font-size:26px;color:var(--cacao)}
+.box .btn[aria-disabled="true"]{opacity:.45;pointer-events:none}
+@media (max-width:980px){.fgrid{grid-template-columns:1fr 1fr}.box{grid-column:span 2}}
+@media (max-width:640px){.frutta{padding:0 0 80px}.fgrid{gap:12px}.fph{min-height:220px}.fph figcaption{font-size:16px;left:10px;bottom:10px}}
+
 /* battesimo */
 .storia{background:var(--cielo);padding:0;position:relative;overflow:hidden}
 .storia .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;max-width:none;padding:0}
@@ -244,7 +273,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 <header>
   <div class="wrap">
     <a class="logo" href="#top">Cake <i>'n'</i> Love Lab</a>
-    <nav><a href="#torte">Le torte</a><a href="#come">Come funziona</a><a href="#ordina">Chiedi la tua</a><a href="#orari">Orari</a></nav>
+    <nav><a href="#torte">Le torte</a><a href="#frutta">Frutta realistica</a><a href="#come">Come funziona</a><a href="#ordina">Chiedi la tua</a><a href="#orari">Orari</a></nav>
     <a class="hbtn" href="tel:+41762384616">076 238 46 16</a>
   </div>
 </header>
@@ -252,9 +281,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 <section class="hero" id="top">
   <div class="wrap">
     <div>
-      <span class="kicker">Torte su misura · Bellinzona</span>
+      <span class="kicker">Laboratorio di dolci · Bellinzona</span>
       <h1>Identica alla foto. <span class="it">E buonissima dentro.</span></h1>
-      <p class="lead">Le torte di <b>Ilaria</b> per compleanni, battesimi e ogni festa che merita qualcosa da ricordare. Curate nei minimi dettagli, soffici e golose al primo taglio.</p>
+      <p class="lead">Le torte su misura di <b>Ilaria</b> e la sua frutta realistica, per compleanni, battesimi e ogni festa che merita qualcosa da ricordare. Curate nei minimi dettagli, soffici e golose al primo taglio.</p>
       <div class="cta">
         <a class="btn dark" href="#ordina">Racconta la tua festa</a>
         <a class="btn line" href="#torte">Guarda le torte</a>
@@ -299,16 +328,44 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   <div class="wrap">
     <div class="thead reveal">
       <div><span class="kicker">Le torte</span><h2 style="margin-top:14px">Ogni festa<br><span class="it">la sua torta.</span></h2></div>
-      <p>Alcune delle torte uscite dal laboratorio, fotografate da Ilaria e dalle sue clienti.</p>
+      <p>Altre torte uscite dal laboratorio: dal cioccolato con le lune d'oro al cantiere per i 4 anni.</p>
     </div>
     <div class="tgrid">
-      <figure class="tg reveal"><div class="ph"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TKc7E2kaLaNYEgvmGIEX1WHd4Yy5l9wrKX0cgk4zIMvCTaDpfWxIYtjcTr4e7mDppYeNdkrhMTWQOjtZCc_oH4T43hvs82yDQRX83IsReFOEIn4JpMoI0Kab03iMRqEzJqnyrKyDYujEen=s900" alt="Torta a due piani con orsetti" loading="lazy"></div><figcaption><b>Orsetti e palloncini</b><span>Due piani</span></figcaption></figure>
-      <figure class="tg reveal"><div class="ph"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QWglSUuEoZainc-68SX2zHgyDMIisGc8lA5653KEwYDqFjhTYelwcfs-896xlMfHrFdwbdcBVezjVeGgBE_Q388qLXlz7JhcopDZXLYl7uqe0iK84dYUNroGD7Pf-ymJpj1c8GERjjepsm=s900" alt="Torta per i 40 anni" loading="lazy"></div><figcaption><b>40 anni</b><span>Frutti di bosco</span></figcaption></figure>
-      <figure class="tg reveal"><div class="ph"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rr-GEQQAt5is5nfQ9yERLv9DzWh3lq8Od4-P21Wbca5LwNO40DMlWlBU7D82ZV67c1_0akpT-bJ3uf0v4rluaAusXTNU0J35CjMWeqiTNxBr0u8g6tzHX94ma-II-ZVJ9RMAsvyt1u02TS=s900" alt="Torta a cuore con crema rossa" loading="lazy"></div><figcaption><b>Tanti auguri</b><span>A cuore</span></figcaption></figure>
-      <figure class="tg reveal"><div class="ph"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S8YDTpyTAN_xG18nRIWcwqkeOG10wlx9AkBlhAeJomzRjgCUCB0PNhhX-4lF_vr09ijnZ0wltWGL665vY-cWGIDOivzo0On8TkIZcrOKJ6zpy8pTlb8lIsJabhfwamOj6bTvONwPoClPBf=s900" alt="Torta con rose di crema blu per il papà" loading="lazy"></div><figcaption><b>Per il papà</b><span>Rose di crema</span></figcaption></figure>
-      <figure class="tg reveal"><div class="ph"><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLfTn02ogM3BInvEgBw7sQq3NrkeEWpZXEbMYol7lY7Cq5ufeieNR3jhtdRFvOMLiY3UQGgrjUEpaJnrnYagapiZJVoclrLaKcj1vVhuzBRgsDGKZhM6esA1vKWruYIWqMs5PhFJ8VYXeIM=s900" alt="Torta con candeline dorate" loading="lazy"></div><figcaption><b>Nineteen</b><span>Maculato</span></figcaption></figure>
-      <figure class="tg reveal"><div class="ph" style="display:flex;align-items:center;justify-content:center;background:var(--panna2);border:2px dashed #DCC6B1"><p style="padding:24px;text-align:center;color:var(--cacao2);font-size:15px">La prossima torta<br><b style="font-family:'Instrument Serif',serif;font-style:italic;font-size:24px;color:var(--rosa2);font-weight:400">potrebbe essere la vostra</b><br><span style="font-size:13px">(altre foto da Instagram, da scegliere insieme)</span></p></div><figcaption><b>La vostra festa</b><span>Su misura</span></figcaption></figure>
+      <figure class="tg reveal"><div class="ph"><img src="foto/torta-streghe.jpg" alt="Torta al cioccolato con lune e stelle dorate e la scritta witches don't age" loading="lazy"></div><figcaption><b>Lune e stelle</b><span>Cioccolato e oro</span></figcaption></figure>
+      <figure class="tg reveal"><div class="ph"><img src="foto/torta-cantiere.jpg" alt="Torta azzurra a tema cantiere con ruspa e camion" loading="lazy"></div><figcaption><b>Il cantiere</b><span>Per i 4 anni</span></figcaption></figure>
+      <figure class="tg reveal"><div class="ph"><img src="foto/torta-cuore.jpg" alt="Torta a cuore con decori di crema rosa e ciliegie" loading="lazy"></div><figcaption><b>A cuore</b><span>Crema e ciliegie</span></figcaption></figure>
+      <figure class="tg reveal"><div class="ph"><img src="foto/torta-bassotto.jpg" alt="Torta bianca con un bassotto di pasta di zucchero" loading="lazy"></div><figcaption><b>Il bassotto</b><span>Pasta di zucchero</span></figcaption></figure>
+      <figure class="tg reveal"><div class="ph"><img src="foto/torta-rose.jpg" alt="Mini torta rosa con rose vere, in confezione regalo per la festa della mamma" loading="lazy"></div><figcaption><b>Per la mamma</b><span>Con rose vere</span></figcaption></figure>
+      <figure class="tg reveal"><div class="ph"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RTDC6eb9-rm17cqSmhrwrmt23r-Q5netpxXk8AJoAM-1q1zi1r6ucTQCujDKutkEnJUEsObJXONnuRPZt7C5oOZ1Nym31r99ILUVYkUJGu811yt-3UiKQ87W6_GHj3r8Oj6W2Eco-maYej=s900" alt="Torta rosa con fiori di crema e perline" loading="lazy"></div><figcaption><b>Fiori di crema</b><span>Rosa e perle</span></figcaption></figure>
     </div>
+  </div>
+</section>
+
+<section class="frutta" id="frutta">
+  <div class="wrap">
+    <div class="fhead reveal">
+      <span class="kicker">Frutta realistica</span>
+      <h2 style="margin-top:14px">Sembra frutta.<br><span class="it">È un dolce.</span></h2>
+      <p>Un mango che profuma di mango, un lampone, un chicco di caffè che dentro è tiramisù. Piccoli dolci modellati a mano uno per uno, da regalare in una box o da servire a fine cena per stupire tutti.</p>
+    </div>
+    <div class="fgrid">
+      <figure class="fph reveal"><img src="foto/frutta-pistacchio-mango.jpg" alt="Dolci a forma di mango e di pistacchio su vassoi di legno" loading="lazy"><figcaption>Pistacchio e mango</figcaption></figure>
+      <figure class="fph reveal"><img src="foto/frutta-caffe-lamponi.jpg" alt="Dolci a forma di lampone e di chicco di caffè su vassoi di legno" loading="lazy"><figcaption>Lampone e tiramisù</figcaption></figure>
+      <div class="box reveal" id="box">
+        <div class="bh"><b>Componi la tua box</b><span class="demo">Dimostrazione</span></div>
+        <p class="bsub">CHF 9.– al pezzo · minimo 4 pezzi, gusti misti o uguali</p>
+        <div class="gusti">
+          <div class="g" data-g="Lampone"><i style="background:radial-gradient(circle at 35% 30%,#ff6b6b,#d91c2a 70%)"></i><span>Lampone</span><div class="qq"><button data-d="-1" aria-label="Togli un lampone">−</button><output>0</output><button data-d="1" aria-label="Aggiungi un lampone">+</button></div></div>
+          <div class="g" data-g="Tiramisù"><i style="background:radial-gradient(circle at 35% 30%,#a06a4b,#5a3424 70%)"></i><span>Tiramisù</span><div class="qq"><button data-d="-1" aria-label="Togli un tiramisù">−</button><output>0</output><button data-d="1" aria-label="Aggiungi un tiramisù">+</button></div></div>
+          <div class="g" data-g="Pistacchio"><i style="background:radial-gradient(circle at 35% 30%,#7cc06a,#2f7a2c 70%)"></i><span>Pistacchio</span><div class="qq"><button data-d="-1" aria-label="Togli un pistacchio">−</button><output>0</output><button data-d="1" aria-label="Aggiungi un pistacchio">+</button></div></div>
+          <div class="g" data-g="Mango"><i style="background:radial-gradient(circle at 35% 30%,#ffd34d,#f08a24 60%,#d9442b 90%)"></i><span>Mango</span><div class="qq"><button data-d="-1" aria-label="Togli un mango">−</button><output>0</output><button data-d="1" aria-label="Aggiungi un mango">+</button></div></div>
+        </div>
+        <div class="slots" id="slots" aria-hidden="true"></div>
+        <div class="btot"><span id="bInfo">Scegli almeno 4 pezzi</span><b id="bTot">CHF 0.–</b></div>
+        <a class="btn wa" id="bSend" href="#" target="_blank" rel="noopener" aria-disabled="true">Prenota la box su WhatsApp</a>
+      </div>
+    </div>
+    <div class="todo reveal"><b>Da completare insieme:</b> prezzo e gusti sono quelli pubblicati da Ilaria su Instagram (CHF 9.– al pezzo, minimo 4); da confermare, insieme ai nuovi gusti e ai tempi di preparazione.</div>
   </div>
 </section>
 
@@ -337,7 +394,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <span class="kicker" style="color:var(--rosa)">Chiedi la tua torta</span>
       <h2 style="margin-top:14px">Raccontale<br><span class="it">la tua festa.</span></h2>
       <p>Bastano pochi tocchi: il messaggio per Ilaria si scrive da solo, con tutto quello che le serve per pensare alla tua torta. Poi lo mandi su WhatsApp, insieme a una foto di ispirazione se ne hai una.</p>
-      <div class="todo"><b>Da completare insieme:</b> i prezzi indicativi, i gusti e le farciture, con quanto anticipo è meglio ordinare, se c'è la consegna e cosa si trova ogni giorno in pasticceria.</div>
+      <div class="todo"><b>Da completare insieme:</b> i prezzi indicativi, i gusti e le farciture, con quanto anticipo è meglio ordinare e se c'è la consegna.</div>
     </div>
     <div class="form reveal">
       <div class="fh"><b>La tua torta</b><span class="demo">Dimostrazione</span></div>
@@ -377,8 +434,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 <section class="info" id="orari">
   <div class="wrap">
     <div class="reveal">
-      <span class="kicker">Orari e indirizzo</span>
-      <h2 style="margin-top:14px">Passa a trovarla<br><span class="it">in Via alla Moderna.</span></h2>
+      <span class="kicker">Orari e ritiro</span>
+      <h2 style="margin-top:14px">Dove ritirare<br><span class="it">i tuoi dolci.</span></h2>
       <div class="hours" id="hours">
         <div data-d="1"><span>Lunedì</span><span>9:00–18:30</span></div>
         <div data-d="2"><span>Martedì</span><span>9:00–18:30</span></div>
@@ -388,6 +445,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <div data-d="6"><span>Sabato</span><span>9:00–18:30</span></div>
         <div data-d="0"><span>Domenica</span><span>10:00–13:00</span></div>
       </div>
+      <div class="todo" style="margin:22px 0 0"><b>Da completare insieme:</b> è un laboratorio di dolci in casa: confermare gli orari e se il ritiro è su appuntamento.</div>
       <p class="addr"><b>Cake 'n' Love Lab</b><br>Via alla Moderna 1, 6500 Bellinzona<br><a href="tel:+41762384616">076 238 46 16</a></p>
     </div>
     <div class="map reveal"><iframe title="Mappa Cake 'n' Love Lab" loading="lazy" src="https://www.google.com/maps?q=Cake+'n'+Love+Lab,+Via+alla+Moderna+1,+6500+Bellinzona&output=embed"></iframe></div>
@@ -446,6 +504,19 @@ function msg(){
   document.getElementById('sendWa').href='https://wa.me/'+TEL+'?text='+encodeURIComponent(t);
 }
 msg();
+
+/* box frutta */
+var BG={Lampone:'radial-gradient(circle at 35% 30%,#ff6b6b,#d91c2a 70%)','Tiramisù':'radial-gradient(circle at 35% 30%,#a06a4b,#5a3424 70%)',Pistacchio:'radial-gradient(circle at 35% 30%,#7cc06a,#2f7a2c 70%)',Mango:'radial-gradient(circle at 35% 30%,#ffd34d,#f08a24 60%,#d9442b 90%)'};
+var bq={Lampone:0,'Tiramisù':0,Pistacchio:0,Mango:0};
+document.getElementById('box').addEventListener('click',function(e){var b=e.target.closest('.qq button');if(!b)return;var g=b.closest('.g').dataset.g;bq[g]=Math.max(0,Math.min(24,bq[g]+(+b.dataset.d)));b.parentNode.querySelector('output').textContent=bq[g];box()});
+function box(){var n=0,h='',parts=[];for(var g in bq){n+=bq[g];for(var i=0;i<bq[g];i++)h+='<i style="background:'+BG[g]+'"></i>';if(bq[g])parts.push(bq[g]+' '+g.toLowerCase())}
+  for(var j=n;j<4;j++)h+='<i class="empty"></i>';document.getElementById('slots').innerHTML=h;
+  document.getElementById('bTot').textContent='CHF '+(n*9)+'.–';
+  document.getElementById('bInfo').textContent=n<4?(n?'Ancora '+(4-n)+(4-n===1?' pezzo':' pezzi')+' per il minimo':'Scegli almeno 4 pezzi'):n+' pezzi';
+  var a=document.getElementById('bSend');a.setAttribute('aria-disabled',n<4);
+  var t='Buongiorno Ilaria,\nvorrei prenotare una box di frutta realistica: '+parts.join(', ')+' ('+n+' pezzi).\nQuando potrei ritirarla? Grazie!';
+  a.href='https://wa.me/'+TEL+'?text='+encodeURIComponent(t);}
+box();
 
 /* oggi negli orari */
 try{var wd=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Zurich',weekday:'short'}).format(new Date());var di=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(wd);
