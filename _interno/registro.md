@@ -23,6 +23,7 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 
 - Empety toelettatura (titolare Chiara) | Via Sempione 25, Olgiate Comasco (CO) | toelettatura cani | anteprima fatta 15.10, verificata su Maps (4,8/256, ultime 4 mesi fa, cellulare), foto inserite, WhatsApp non confermato | 2026-10-15 | /empety-toelettatura/ · categoria: nessun sito su Google
 - Pizza Mania da Nico, Claudia e Gioia | Via Cantonale 8, Cresciano (Riviera) | pizza d'asporto | anteprima fatta 16.10, verificata su Maps (4,9/295, cellulare 079 552 24 74, solo Facebook + pagina digitalone/local.ch vuota senza foto), foto Google inserite, prezzi dal menù PDF su local.ch, WhatsApp non confermato | 2026-10-16 | /pizza-mania-cresciano/ · categoria: sito scarso
+- Cake 'n' Love Lab (Ilaria) | Via alla Moderna 1, Bellinzona | pasticceria / torte su misura | anteprima fatta 16.10, verificata su Maps (5,0/24, scheda recente, ultime rec. 3-4 mesi fa, cellulare 076 238 46 16, solo Instagram), 7 foto vere, WhatsApp non confermato | 2026-10-16 | /cake-n-love-lab-bellinzona/ · categoria: nuova, solo social
 - 2026-10-16 valutata: L'Arte nei Capelli Cadenazzo (4,9/17, recensioni molto brevi e vecchie, 14 foto: tenuta come riserva)
 
 ## Valutate e scartate
