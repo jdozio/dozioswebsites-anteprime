@@ -1,0 +1,152 @@
+{
+ "name": "Al Buco",
+ "short": "Al Buco",
+ "city": "Varese",
+ "tz": "Europe/Rome",
+ "desc": "Al Buco, wine e cocktail bar nel centro di Varese, Via Carlo Croce 5. Vini scelti, cocktail, birre e taglieri, aperti fino alle 2. Tel. 340 401 2359.",
+ "address": "Via Carlo Croce 5, 21100 Varese",
+ "mapsQuery": "Al Buco, Via Carlo Croce 5, Varese",
+ "phone": "+39 340 401 2359",
+ "phoneLabel": "340 401 2359",
+ "instagram": null,
+ "acc": "#B5832E",
+ "acc2": "#E8BD6A",
+ "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TPUq6YlnDIbmPZJPSwlDCQkjmS5vZQZP5Sh2FZBJqfGzJM9WbeC-hePpE6HknGREAvaoUaG4MOb14DRx0HEevqud0-Z68aboC8L-xBu_kZB79Cu5cw38zWmpwStLAVx_i3E7Ec=w1200-h630-p-k-no-rj-l80",
+ "hero": {
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TPUq6YlnDIbmPZJPSwlDCQkjmS5vZQZP5Sh2FZBJqfGzJM9WbeC-hePpE6HknGREAvaoUaG4MOb14DRx0HEevqud0-Z68aboC8L-xBu_kZB79Cu5cw38zWmpwStLAVx_i3E7Ec=s1800",
+  "alt": "Un calice di vino rosso sul bancone di Al Buco, con il logo del locale",
+  "pos": "50% 45%",
+  "title": "Vino, amici <span class=\"it\">e niente fretta.</span>",
+  "sub": "Vini scelti uno a uno, cocktail, birre e taglieri da dividere, nel centro di Varese. Aperti fino alle 2."
+ },
+ "facts": [
+  [
+   "4,4 ★",
+   "72 recensioni"
+  ],
+  [
+   "Fino alle 2",
+   "quasi tutte le sere"
+  ],
+  [
+   "Fuori",
+   "anche d'inverno"
+  ]
+ ],
+ "marquee": [
+  "Vini scelti",
+  "Aperitivo",
+  "Taglieri",
+  "Cocktail",
+  "Birre",
+  "Fino alle 2"
+ ],
+ "hours": {
+  "0": [
+   "18:00",
+   "23:30"
+  ],
+  "1": [
+   "18:00",
+   "02:00"
+  ],
+  "2": null,
+  "3": [
+   "18:00",
+   "02:00"
+  ],
+  "4": [
+   "18:00",
+   "02:00"
+  ],
+  "5": [
+   "18:00",
+   "02:00"
+  ],
+  "6": [
+   "18:00",
+   "02:00"
+  ]
+ },
+ "tonightTxt": "Un calice, un tagliere da dividere, e d'inverno i funghi accesi fuori per restare al calduccio.",
+ "tre": {
+  "kicker": "Al Buco",
+  "title": "Poche cose, <span class=\"it\">ma giuste.</span>",
+  "items": [
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T84DngzCCzw15V-nSBk8VgjGIsn4gngJHR5fS1MSPaeIFOa4C13N-h7RxR-l6fVmbgFTWjBNrtopYDM7YYFO0epn84DOiyBhY7BC1oJNsPIic3XUwFgL_feU5SJdmU9h9te5g=s900",
+    "t": "Vini fuori dal solito",
+    "d": "Poche etichette, ma ben studiate: non i soliti vini che si trovano ovunque. E se non sai cosa scegliere, ti consigliano loro."
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RsBfU2Gody8sBeqn0EqicC_bvEKozCvesKY2-DMxFHzSNRqqpvYBaxxvKeeDaYCESuioiW3ROUDKxEX8iHwwx5L1TomB5aL69UsMkfg1bnxrLT2AZE8p-dd11A-vPdid5sqnIAaCRIUyM=s900",
+    "t": "L'aperitivo",
+    "d": "Con stuzzichini abbondanti, oppure con un tagliere di salumi e formaggi da dividere in compagnia."
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RqC91F8IaPZlxLq8ii_zxa_OjxWMqfvamY378r_8uBo9okiRRicJTa0LcFgjEXbT7oukuRc4nMbj6tZGlTa7fvJxN9_uc1zX1j3wHKBeEmVpxXwIRNQ4wx0ljXIf6sIeyBrw=s900",
+    "t": "Fuori, anche d'inverno",
+    "d": "Tavolini all'aperto in pieno centro, con i funghi riscaldanti per stare al caldo anche quando fa freddo."
+   }
+  ],
+  "todo": "la lista dei vini e dei taglieri con i prezzi, e le eventuali serate a tema."
+ },
+ "galTitle": "Piccolo, <span class=\"it\">caldo, in centro.</span>",
+ "gallery": [
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q6YDLtC8F4diTteV21z4OKU4HYw1OI1xJHPjmD6BKmnTYGcDJ236CWjJgSx2SjQsvKBZf0olJ7vKiKMUiAJ9uuUm0sedZcLDJ0TbJvY_VoEecFQYUTqZvPk0f126VGd1GESxI=s1000",
+   "cap": "Dentro"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWjaqtM0uUsxzJtXHnx3uB61EIGOk1tjFwtHrFTLDKTvFUfaLBpBJx-Wi7q_3XNEeKegBgOu_TPFUDrMELDoVlNzcq3kyxnEWcQPuazq3PGFV9DneXf4hXaZife7bgK8dJ9RNZ=s1000",
+   "cap": "Mojito"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Te6YIE3b5E-6VW-mnIw32rLchfPYi1ZlpigvugzrCVqDdLpK9xVSlanU388zgYgeNXCpUlTgBZFAgvJxRV-bH_mR5ewsl4MYH_Izy7c5GNR1QODUdkVdZy6YMvR6k-JkxvR-A=s1000",
+   "cap": "Il bancone"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TPZvMAFLpfSa9jcsw1XfP25WpRJERkXB1n4x88XaBjTmwkgb4IA6DyWEJSVclpPs5-kR2n6N0D3n8xgLmGbi9cPqyJpi5N1fb1LNOU5BtfKqmeXzjzaK6WrlUT8hh8fLySnlsyxw=s1000",
+   "cap": "Panino e birra"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RnfSPlSqZIDdep-EA0uOpR3jZ3URCD4S79N7p_bBGWuJKba2OCZzPJ_fDLpYnl5LezZYrdzLbvtODej1K2WIHFCSqKH07a3zjiqyK4SQUOagbiHbyhhKtsqAvc1aY5TWHY9NthwMjl0192=s1000",
+   "cap": "La lavagna"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RsBfU2Gody8sBeqn0EqicC_bvEKozCvesKY2-DMxFHzSNRqqpvYBaxxvKeeDaYCESuioiW3ROUDKxEX8iHwwx5L1TomB5aL69UsMkfg1bnxrLT2AZE8p-dd11A-vPdid5sqnIAaCRIUyM=s1000",
+   "cap": "Il tagliere"
+  }
+ ],
+ "prenTxt": "Un aperitivo o una serata con gli amici: scegli quando e in quanti siete, e il messaggio per il locale si scrive da solo.",
+ "recTitle": "Gentili, <span class=\"it\">e vicini al cliente.</span>",
+ "rating": "4,4",
+ "reviewsCount": "72",
+ "reviews": [
+  {
+   "q": "Al Buco è il posto ideale per un bel aperitivo in centro a Varese. La selezione di vini è eccellente: poche scelte, ma ben studiate e che funzionano.",
+   "who": "Thom"
+  },
+  {
+   "q": "Il personale è davvero gentile e molto vicino al cliente, pronto a consigliare la scelta perfetta. L'atmosfera è calda e accogliente.",
+   "who": "Thom"
+  },
+  {
+   "q": "Una bella sorpresa: ottimi vini, cocktail e birre. L'aperitivo è servito con abbondanti stuzzichini. Il personale è preparato e cortese.",
+   "who": "Vale C"
+  },
+  {
+   "q": "Servizio ottimo, tutti gentilissimi e veloci, siamo rimasti molto soddisfatti.",
+   "who": "Christian Mauro"
+  }
+ ],
+ "doveTitle": "Ci vediamo <span class=\"it\">in Via Croce.</span>",
+ "greet": "Buonasera",
+ "occasions": [
+  "Aperitivo",
+  "Una serata",
+  "Compleanno",
+  "Dopo cena"
+ ],
+ "infoTodo": "se ci sono serate a tema o con musica e se si può prenotare un tavolo fuori."
+}

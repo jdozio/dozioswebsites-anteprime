@@ -1,0 +1,152 @@
+{
+ "name": "Attila Cocktails",
+ "short": "Attila",
+ "city": "Varese",
+ "tz": "Europe/Rome",
+ "desc": "Attila Cocktails, cocktail bar nel centro di Varese, Via Veratti 21. Cocktail d'autore, birre artigianali e aperitivo fino all'1:30. Tel. 342 346 8140.",
+ "address": "Via Carlo Giuseppe Veratti 21, 21100 Varese",
+ "mapsQuery": "Attila Cocktails, Via Veratti 21, Varese",
+ "phone": "+39 342 346 8140",
+ "phoneLabel": "342 346 8140",
+ "instagram": "https://www.instagram.com/attila_cocktails/",
+ "acc": "#C8322B",
+ "acc2": "#F28C72",
+ "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RKQOhdX9P2bTwtoD1BrsMFuGd0A4lxv6lq0d_iTkRCueblJ-PT1capETWQcK_BrgMZK3KQf8J2xphplZDYEQdBi4TKuqn1WZZE4pkafqgxiSwB9JjEyeaAezv3HcaTNbZb-nDA6kVMZBU=w1200-h630-p-k-no-rj-l80",
+ "hero": {
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RKQOhdX9P2bTwtoD1BrsMFuGd0A4lxv6lq0d_iTkRCueblJ-PT1capETWQcK_BrgMZK3KQf8J2xphplZDYEQdBi4TKuqn1WZZE4pkafqgxiSwB9JjEyeaAezv3HcaTNbZb-nDA6kVMZBU=s1800",
+  "alt": "Un cocktail sul bancone di Attila, con le pareti rosse sullo sfondo",
+  "pos": "50% 40%",
+  "title": "Cocktail <span class=\"it\">che non ti aspetti.</span>",
+  "sub": "Drink studiati, accostamenti sorprendenti e un locale dal carattere tutto suo, nel centro di Varese. Dall'aperitivo fino a tarda sera."
+ },
+ "facts": [
+  [
+   "4,8 ★",
+   "141 recensioni"
+  ],
+  [
+   "Fino all'1:30",
+   "venerdì e sabato"
+  ],
+  [
+   "Centro",
+   "Via Veratti 21"
+  ]
+ ],
+ "marquee": [
+  "Cocktail d'autore",
+  "Aperitivo",
+  "Birre artigianali",
+  "Musica",
+  "Dehors",
+  "Fino all'1:30"
+ ],
+ "hours": {
+  "0": [
+   "18:30",
+   "00:30"
+  ],
+  "1": [
+   "18:30",
+   "00:30"
+  ],
+  "2": null,
+  "3": [
+   "18:30",
+   "00:30"
+  ],
+  "4": [
+   "18:30",
+   "00:30"
+  ],
+  "5": [
+   "18:30",
+   "01:30"
+  ],
+  "6": [
+   "18:30",
+   "01:30"
+  ]
+ },
+ "tonightTxt": "Si comincia con l'aperitivo e si va avanti finché c'è voglia: cocktail, birre artigianali e musica scelta con gusto.",
+ "tre": {
+  "kicker": "Al bancone",
+  "title": "Tre motivi <span class=\"it\">per tornarci.</span>",
+  "items": [
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RmNeajZmQJY0SiHEQ18z6dJL2u_PWgn2Ae5Nd-XxDMtQBF_btjyVcJ1CNnS-6RPlusOsHv_bHWUKvrGh5-qUmdBbYfKm33Ki2nquuwyzMA--xhdkGpM2zgC9B8XNag4ir7PiFxXHZcOwXL=s900",
+    "t": "Cocktail d'autore",
+    "d": "Accostamenti che sorprendono, come il drink con cetriolo e jalapeño che un cliente ha definito «semplicemente geniale»."
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QLD3Z5_X6AxztFE00hnyzpnKTjWw52gbToTRayVcz2k5mq8oC1vpdGxQIAPxQQkXuBPimz8XQszpWTgLJx_sOn903IUJasgrd_f9rpyvdtswM0kQz0pc5v2rAQQzXOqQF9zudX=s900",
+    "t": "Saturno Contro",
+    "d": "Il drink che i clienti consigliano in tre lingue. Chiedetelo al bancone."
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TugoZ4uohAkaymtdphSvRik3o8SVUwH2N0a21eSpkQmaDyVX__ud4HDKZmpzi8yO0sdm2fsgo5HfIqC2yo3OQfQkkyq2kyGVZA_oBiEC7WKDdkcOT3UxnoqT3ejiMqbAI05WxlIg=s900",
+    "t": "Un locale con carattere",
+    "d": "Pareti rosse, arredamento insolito e musica scelta con gusto: l'atmosfera giusta per una serata diversa dal solito."
+   }
+  ],
+  "todo": "la carta dei cocktail con i prezzi, le serate con musica dal vivo e le birre artigianali del momento."
+ },
+ "galTitle": "Rosso, <span class=\"it\">caldo, insolito.</span>",
+ "gallery": [
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SXPT4Bd6CBC30z5mFPqesuKqf3JhXAbpR8WS6Qszbwv8TXMV9uUxA7ok8RUNLuCOf4c37BNW5SrRycEwnOeD7B9FqGYxTNetuOpr29XfFsrveKRB5UFuHh6ooYDkFXwvBUCug=s1000",
+   "cap": "La facciata, di sera"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S2Rf03s91bJbW8KWPCxOSG96FpN1UqK_2K8zUfZeemKtKuuYSD2cEnW70tEsYuzI9esQgaPK1wBjavjNQlrKoAnMQYCYR8Cm4TxU7eOU2rBTXXsVqhbsDh6EQ1ZZTX6_HiDF5n=s1000",
+   "cap": "Long drink"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RYDb8OuXqMsZicKQ9xeKBO2KAxKj8Ckej0-Kc_BwYOs9AFJwHRSH-Fr8Cvo8FHd3s-wypFjrGrh2NZTcuvMyvCqpi4Qb5ZTyFWLNiCFMfOZi-74MFOR-2pPu3HskeUAgz8EC2Xmw=s1000",
+   "cap": "Il dehors"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TugoZ4uohAkaymtdphSvRik3o8SVUwH2N0a21eSpkQmaDyVX__ud4HDKZmpzi8yO0sdm2fsgo5HfIqC2yo3OQfQkkyq2kyGVZA_oBiEC7WKDdkcOT3UxnoqT3ejiMqbAI05WxlIg=s1000",
+   "cap": "Il salottino"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QLD3Z5_X6AxztFE00hnyzpnKTjWw52gbToTRayVcz2k5mq8oC1vpdGxQIAPxQQkXuBPimz8XQszpWTgLJx_sOn903IUJasgrd_f9rpyvdtswM0kQz0pc5v2rAQQzXOqQF9zudX=s1000",
+   "cap": "Per due"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RmNeajZmQJY0SiHEQ18z6dJL2u_PWgn2Ae5Nd-XxDMtQBF_btjyVcJ1CNnS-6RPlusOsHv_bHWUKvrGh5-qUmdBbYfKm33Ki2nquuwyzMA--xhdkGpM2zgC9B8XNag4ir7PiFxXHZcOwXL=s1000",
+   "cap": "Con il basilico"
+  }
+ ],
+ "prenTxt": "Aperitivo con gli amici o serata lunga: scegli quando e in quanti siete, e il messaggio per il locale si scrive da solo.",
+ "recTitle": "I migliori drink <span class=\"it\">di Varese?</span>",
+ "rating": "4,8",
+ "reviewsCount": "141",
+ "reviews": [
+  {
+   "q": "Senza dubbio uno dei locali migliori a Varese per una serata con gli amici e per bere qualcosa di davvero particolare. I loro cocktail sono ben studiati, con accostamenti sorprendenti.",
+   "who": "Thom"
+  },
+  {
+   "q": "Il locale è molto carino e accogliente, con un'atmosfera davvero piacevole. La musica è scelta con gusto, e i cocktail, particolari e molto buoni, hanno reso l'aperitivo un vero piacere.",
+   "who": "Emanuela DM"
+  },
+  {
+   "q": "I migliori drinks di Varese! Matti e Roberto sono bravissimi. Vi raccomando il drink Saturno Contro.",
+   "who": "Giovanna Brito"
+  },
+  {
+   "q": "La location ha un arredamento insolito, stravagante per certi aspetti, ma che funziona alla grande. Personale simpatico, gentile e preparato.",
+   "who": "Thom"
+  }
+ ],
+ "doveTitle": "Ci vediamo <span class=\"it\">in Via Veratti.</span>",
+ "greet": "Buonasera",
+ "occasions": [
+  "Una serata",
+  "Aperitivo",
+  "Compleanno",
+  "Festa"
+ ],
+ "infoTodo": "se si prenota anche su Instagram e se nel weekend c'è un minimo per i tavoli."
+}
