@@ -1,0 +1,130 @@
+{
+ "name": "Jungle Club Lugano",
+ "logo": "JNGL",
+ "city": "Lugano",
+ "tz": "Europe/Zurich",
+ "desc": "Jungle Club, la discoteca con il gorilla giallo in Via Cantonale 1a a Lugano. Welcome to the Jungle: luci, musica e tavoli fino alle 5. Tel. 079 951 62 65.",
+ "address": "Via Cantonale 1a, 6900 Lugano",
+ "mapsQuery": "Jungle Club, Via Cantonale 1a, Lugano",
+ "phone": "+41 79 951 62 65",
+ "phoneLabel": "079 951 62 65",
+ "whatsapp": true,
+ "c1": "#22FF8A",
+ "c2": "#FFD21F",
+ "c3": "#FF2E88",
+ "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SXctfLkbjWCTNoqcwnmrEVWVgctsk4HAuYJpF7vRkdwZ-pePADvkmU8So9kQ9Azr6cISk5LdZ6LKyNrWnQ9YpxbQx4G4OwYUzJB05nErgtdw7hfOTGAuM86B0ccbGdEOdtBgwi=w1200-h630-p-k-no-rj-l80",
+ "hero": {
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SXctfLkbjWCTNoqcwnmrEVWVgctsk4HAuYJpF7vRkdwZ-pePADvkmU8So9kQ9Azr6cISk5LdZ6LKyNrWnQ9YpxbQx4G4OwYUzJB05nErgtdw7hfOTGAuM86B0ccbGdEOdtBgwi=s2000",
+  "alt": "Il tunnel di lucine con la scritta al neon Welcome to the Jungle",
+  "pos": "50% 55%",
+  "tag": "Welcome to the Jungle",
+  "title": "Jungle<br><span class=\"grad\">Club</span>",
+  "sub": "Il club con il gorilla giallo all'ingresso, in Via Cantonale a Lugano. Luci, musica e tavoli fino alle 5 del mattino."
+ },
+ "facts": [
+  [
+   "Fino alle 5",
+   "il sabato notte"
+  ],
+  [
+   "Lugano",
+   "Via Cantonale 1a"
+  ],
+  [
+   "Tavoli",
+   "su prenotazione"
+  ]
+ ],
+ "marquee": [
+  "Welcome to the Jungle",
+  "My head is a Jungle",
+  "Lugano",
+  "Tavoli",
+  "Fino alle 5",
+  "JNGL"
+ ],
+ "hours": {
+  "0": null,
+  "1": null,
+  "2": null,
+  "3": null,
+  "4": null,
+  "5": [
+   "23:45",
+   "05:00"
+  ],
+  "6": [
+   "23:45",
+   "05:00"
+  ]
+ },
+ "serateTxt": "Le prossime notti di apertura, con la data. Line-up e serate a tema si aggiornano da qui in un minuto.",
+ "lineup": "Line-up in arrivo",
+ "serateTodo": "i nomi delle serate, i DJ e l'orario del venerdì (su Google l'orario risulta incompleto).",
+ "clubTitle": "Benvenuti <span class=\"grad\">nella giungla</span>",
+ "gallery": [
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SaGvREIUCscTBjwJ7i5vKIsm4uqWtbXw2KhkUC5EPAeZ8en5mIFAK9q5DGULFstT1gJFMsLdk5k2hQhSlrNS8fz3ygn2zs33llnKKW8NOridETGxIDImmEJ2Xq_9Uawz-n4r4=s1400",
+   "cap": "Il gorilla all'ingresso",
+   "pos": "50% 30%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QjioAmb6IACN4eG6o3dhiVCoen4-QClv-k2oW2fIMarUSxc_2cQvBTAwC5ByhY685Gim2ZlgvSNhRW78c8mkKvlKJmK3S9k8_ggp8ap8ISjZ2nXTLYdjz1Nf-P3vI4IdC2kC66=s1000",
+   "cap": "My head is a Jungle"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rwsop_O6Tzmgd8KAlVsB-Uv5rG6uFgYP53sOtXBack_Av0x-UgaO5J59XABIFWyn3QY4BNAzCs9QxmxmWUleV3g9bDdmGPsbzR-F2H3YXPkOZ4RRZIx9-hKiLj0dIaYzaMcITZ=s1000",
+   "cap": "Luci in pista"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RsgpZXNIqmy-OCZtXQxlKh1nUXqpQHAafLuqrSLoWiBCHbpjwPxC2vn-xOmHgC8p6rzWasBFSiTJmpx7uc05gEkrszWMISk0JECA6m9FEY2PnKc5LxE7XZMTVn8dZW6u_-qJauhA=s1000",
+   "cap": "La sala"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RQ2Jq6TjCJTrTLsNe7fjeznWV3DUf6cjJC4GEcieyGmtwAZq_u1sNFTg0HpXRXo4iT1lq5Mt2rswbsbH8BURz3hq6zT45GenDLj7WwZReoPtIUVB5msr0__bQY6deM8W1EqVAd=s1000",
+   "cap": "Bottiglie al tavolo"
+  }
+ ],
+ "feat": [
+  [
+   "Il gorilla",
+   "La statua gialla all'ingresso: da qui comincia la serata, e la foto ricordo."
+  ],
+  [
+   "Il tunnel di luci",
+   "Migliaia di lucine e il neon verde «Welcome to the Jungle» prima di entrare in pista."
+  ],
+  [
+   "I tavoli",
+   "Per compleanni, feste e serate tra amici, con le bottiglie portate al tavolo."
+  ]
+ ],
+ "tavTxt": "Compleanno, addio al celibato o serata tra amici: scegli la notte e in quanti siete, e il messaggio parte già scritto.",
+ "tavTodo": "i tavoli disponibili, i prezzi e cosa è incluso (bottiglie, numero di persone per tavolo).",
+ "rules": [
+  [
+   "Solo maggiorenni",
+   "Documento d'identità all'ingresso, sempre e per tutti."
+  ],
+  [
+   "Dress code",
+   "Curato: niente tenuta sportiva."
+  ],
+  [
+   "Tavoli",
+   "Meglio prenotare prima, soprattutto il sabato."
+  ],
+  [
+   "Guardaroba",
+   "Giacche e borse al guardaroba, al sicuro per tutta la notte."
+  ]
+ ],
+ "rulesTodo": "queste regole sono una nostra proposta: età minima, dress code e guardaroba da confermare con il locale.",
+ "doveTitle": "Via Cantonale <span class=\"grad\">1a</span>",
+ "occasions": [
+  "Serata",
+  "Compleanno",
+  "Addio al celibato",
+  "Festa"
+ ]
+}

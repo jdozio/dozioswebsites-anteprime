@@ -1,0 +1,124 @@
+{
+ "name": "Blu Martini Club",
+ "logo": "Blu Martini",
+ "city": "Lugano",
+ "tz": "Europe/Zurich",
+ "desc": "Blu Martini Club, Via al Forte 4 a Lugano. Due sale, DJ e luci blu fino all'alba, il giovedì, venerdì e sabato. Tel. 091 922 03 48.",
+ "address": "Via al Forte 4, 6900 Lugano",
+ "mapsQuery": "Blu Martini Club, Via al Forte 4, Lugano",
+ "phone": "+41 91 922 03 48",
+ "phoneLabel": "091 922 03 48",
+ "whatsapp": false,
+ "c1": "#2F6BFF",
+ "c2": "#00E5FF",
+ "c3": "#FF3DB8",
+ "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T_SqjVYa0d3mAFX8a0GfxbJ2V5RSGViU8b7XK2ogjt6SD7y_H1qjwTtY8nO_ThV4p3gYUJ2cdYNrq-DvghAZ-o3lcuY_ZUatx-R-HukzYve6GYCeZpNi_gmhrxfReAGwbEXBWftQ=w1200-h630-p-k-no-rj-l80",
+ "hero": {
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T_SqjVYa0d3mAFX8a0GfxbJ2V5RSGViU8b7XK2ogjt6SD7y_H1qjwTtY8nO_ThV4p3gYUJ2cdYNrq-DvghAZ-o3lcuY_ZUatx-R-HukzYve6GYCeZpNi_gmhrxfReAGwbEXBWftQ=s2000",
+  "alt": "Il bancone del Blu Martini con le bottiglie illuminate di blu",
+  "pos": "50% 50%",
+  "tag": "Lugano by night",
+  "title": "Blu<br><span class=\"grad\">Martini</span>",
+  "sub": "Due sale, DJ conosciuti in tutta la regione e luci blu fino all'alba, in centro a Lugano."
+ },
+ "facts": [
+  [
+   "Fino alle 6",
+   "venerdì e sabato"
+  ],
+  [
+   "Due sale",
+   "e tanta musica"
+  ],
+  [
+   "Lugano",
+   "Via al Forte 4"
+  ]
+ ],
+ "marquee": [
+  "Blu Martini",
+  "Lugano",
+  "Due sale",
+  "DJ",
+  "Fino all'alba",
+  "Tavoli"
+ ],
+ "hours": {
+  "0": null,
+  "1": null,
+  "2": null,
+  "3": null,
+  "4": [
+   "23:00",
+   "04:00"
+  ],
+  "5": [
+   "23:00",
+   "06:00"
+  ],
+  "6": [
+   "23:00",
+   "06:00"
+  ]
+ },
+ "serateTxt": "Le prossime notti di apertura, con la data. Serate e DJ si aggiornano da qui in un minuto.",
+ "lineup": "DJ in arrivo",
+ "serateTodo": "i nomi delle serate e i DJ in consolle. Orari presi dal cartello all'ingresso (giovedì 23–04, venerdì, sabato e prefestivi 23–06).",
+ "clubTitle": "Tutto <span class=\"grad\">in blu</span>",
+ "gallery": [
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QvH5zNPaiE0rOlE_OT9s2TvLWY2_0X3Yy5I_bQL_c0IVt7CwIfCnwLad8oYvfH3KXshjx2TmGtthSzJmRdmAtQlxZZxNnfiWI0MuXc25vBI18B1EWsvIS5_XtrVDQvQF8xgDNt=s1400",
+   "cap": "Luci in pista"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T2iZRMS-y8sVzaulTXl0RHZVNhW_iEik6rBJXzgNgb4n_00d-A8u8Vj89rMeugHu6YK1XOrJ7A5OmwiQoCO8Zd5yZBrLQVhFcaBXTWLpwlRzOe8acTB4AT_efYlGEfz9e-W80XJQ=s1000",
+   "cap": "L'ingresso"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QBZH0xpbXvBQZD-c6tpBN0syfmkO71FVvcbLsnwUrW7pQlRS4PvVQ_KHoFnDqJobdWeLlw01EUUzQx7z14ag5CDxBtFb-7XyN1jjZU00Dx23nGNmOra6IppAV8pgc6fjXS004=s1000",
+   "cap": "Gli orari"
+  }
+ ],
+ "feat": [
+  [
+   "Due sale",
+   "Due ambienti per passare la notte: si inizia tardi, ma vale la pena aspettare."
+  ],
+  [
+   "Il bancone",
+   "Bottiglie illuminate di blu e di verde, e cocktail fino a tardi."
+  ],
+  [
+   "Fino all'alba",
+   "Il venerdì e il sabato si balla fino alle 6 del mattino."
+  ]
+ ],
+ "tavTxt": "Compleanno, addio al celibato o serata tra amici: scegli la notte e in quanti siete, e chiama per tenere il tavolo.",
+ "tavTodo": "i prezzi dei tavoli e cosa è incluso; con un numero di cellulare la prenotazione può arrivare direttamente su WhatsApp.",
+ "rules": [
+  [
+   "Solo maggiorenni",
+   "Documento d'identità all'ingresso, sempre e per tutti."
+  ],
+  [
+   "Dress code",
+   "Curato: niente tenuta sportiva."
+  ],
+  [
+   "Tavoli",
+   "Meglio prenotare prima, soprattutto il sabato."
+  ],
+  [
+   "Guardaroba",
+   "Giacche e borse al guardaroba, al sicuro per tutta la notte."
+  ]
+ ],
+ "rulesTodo": "queste regole sono una nostra proposta: età minima, dress code e guardaroba da confermare con il locale.",
+ "doveTitle": "Via al Forte <span class=\"grad\">4</span>",
+ "occasions": [
+  "Serata",
+  "Compleanno",
+  "Addio al celibato",
+  "Festa"
+ ]
+}
