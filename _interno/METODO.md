@@ -195,3 +195,8 @@ Di notte (cloud) Google, Google Maps e le foto delle schede NON sono raggiungibi
    In fondo: attività valutate e scartate, con motivo (una riga ciascuna).
 3. Aggiorna `_interno/registro.md` aggiungendo tutte le attività fatte E scartate.
 4. Commit e push su `main` (prima `git pull --rebase`).
+
+### Promemoria e anteprima del link
+- WhatsApp memorizza l'anteprima di un link la prima volta che lo vede. I link mandati prima del 15.10 13:07 (quando sono stati aggiunti i tag) restano senza foto.
+- Nei promemoria aggiungere sempre `?p=1` in fondo al link (es. `.../agata-hair/?p=1`): per WhatsApp è un link nuovo e rilegge la foto. Al secondo invio usare `?p=2`, ecc.
+- Immagine dell'anteprima sotto i 300 KB, in JPEG (`-rj-l80` sulle foto Google).
