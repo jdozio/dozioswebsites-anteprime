@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pizza Mania da Nico e Claudia · Cresciano</title>
+<meta name="description" content="Pizza Mania da Nico, Claudia e Gioia: la pizza da portar via a Cresciano, Via Cantonale 8. Pizze classiche, speciali, super, pizza in pala, focacce e panino pizza. Tel. 079 552 24 74.">
+<!-- anteprima link (WhatsApp) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Jacopo Dozio · siti web">
+<meta property="og:title" content="Pizza Mania da Nico e Claudia · anteprima del nuovo sito">
+<meta property="og:description" content="Pizza Mania da Nico, Claudia e Gioia: la pizza da portar via a Cresciano, Via Cantonale 8. Pizze classiche, speciali, super, pizza in pala, focacce e panino pizza. Tel. 079 552 24 74.">
+<meta property="og:url" content="https://jdozio.github.io/dozioswebsites-anteprime/pizza-mania-cresciano/">
+<meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TOPkgypLefkXm5b8qQQPIX31FUDXGJPOsKjKNALIfhpNXVCxytj-jNHGzqA-vSpcECybQY21t4XrRU5mqoiSvTiOlSvcSygnozVUHQfr9jRJhSdKBhF5NDyRagLcnG4sQ7YInQ4Q=w1200-h630-p-k-no">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pizza Mania da Nico e Claudia">
+<meta name="twitter:card" content="summary_large_image">
+<!-- /anteprima link -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --carbone:#141110; --forno:#221B17; --forno2:#2E2520; --brace:#E8562A; --pomodoro:#D33A2C; --pom2:#B02A1F;
+  --mozz:#FBF5EA; --mozz2:#F3E9D8; --crosta:#E7B46A; --basilico:#3F7A3B; --ink:#1E1915; --ink2:#6B5F55; --line:#E6D9C4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:70px}
+body{background:var(--mozz);color:var(--ink);font:400 17px/1.6 'Bricolage Grotesque',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-weight:700;line-height:.98;letter-spacing:-.03em}
+h2{font-size:clamp(38px,5vw,66px)}
+.serif{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-style:italic;letter-spacing:-.01em}
+.kicker{display:inline-flex;align-items:center;gap:10px;font:600 12.5px 'Bricolage Grotesque';letter-spacing:.18em;text-transform:uppercase;color:var(--pomodoro)}
+.kicker::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor}
+.draft{background:var(--carbone);color:#D8CBBB;font-size:13px;text-align:center;padding:8px 16px;line-height:1.45;border-bottom:1px solid #2c2420}
+.draft b{color:#fff;font-weight:600}
+.todo{border:2px dashed #D9C3A3;border-radius:16px;padding:15px 18px;font-size:14.5px;color:var(--ink2);background:#fff;margin-top:22px;line-height:1.55}
+.todo b{color:var(--pom2)}
+.demo{display:inline-block;font:600 11px 'Bricolage Grotesque';letter-spacing:.14em;text-transform:uppercase;background:var(--crosta);color:var(--carbone);padding:4px 9px;border-radius:99px}
+
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(20,17,16,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--mozz)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:18px}
+.logo{display:flex;align-items:baseline;gap:9px;text-decoration:none;white-space:nowrap}
+.logo b{font-size:23px;font-weight:800;letter-spacing:-.04em}
+.logo b i{font-style:normal;color:var(--brace)}
+.logo span{font-family:'Instrument Serif',serif;font-style:italic;font-size:17px;color:#C9B9A6}
+nav{display:flex;gap:26px;font-size:15px}
+nav a{text-decoration:none;opacity:.8}
+nav a:hover{opacity:1}
+.hcall{background:var(--pomodoro);color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:10px 18px;border-radius:99px;white-space:nowrap}
+.hcall:hover{background:var(--brace)}
+
+/* hero */
+.hero{background:var(--carbone);color:var(--mozz);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:180px;background:radial-gradient(60% 120% at 70% 120%,rgba(232,86,42,.28),transparent 70%);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;min-height:calc(100vh - 100px);padding-top:56px;padding-bottom:70px;position:relative;z-index:1}
+.status{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:99px;padding:8px 16px 8px 12px;font-size:14.5px;color:#E8DCCD}
+.status .dot{width:10px;height:10px;border-radius:50%;background:#7A6E64;flex:none}
+.status.on .dot{background:#FF7A3D;box-shadow:0 0 0 0 rgba(255,122,61,.6);animation:fiamma 1.8s infinite}
+@keyframes fiamma{0%{box-shadow:0 0 0 0 rgba(255,122,61,.55)}70%{box-shadow:0 0 0 10px rgba(255,122,61,0)}100%{box-shadow:0 0 0 0 rgba(255,122,61,0)}}
+.hero h1{font-size:clamp(54px,8.4vw,118px);margin:26px 0 22px;font-weight:800}
+.hero h1 span{display:block}
+.hero h1 .serif{font-weight:400;color:var(--crosta);font-size:1.02em;letter-spacing:-.02em}
+.hero .lead{font-size:clamp(18px,1.6vw,21px);max-width:520px;color:#D9CCBC;line-height:1.55}
+.hero .lead b{color:#fff;font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;font-weight:600;font-size:16px;padding:15px 24px;border-radius:99px;border:0;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.red{background:var(--pomodoro);color:#fff}
+.btn.red:hover{background:var(--brace)}
+.btn.ghost{background:transparent;color:var(--mozz);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35)}
+.btn.ghost:hover{box-shadow:inset 0 0 0 1.5px #fff}
+.btn.dark{background:var(--carbone);color:var(--mozz)}
+.btn.wa{background:#1F7A4D;color:#fff}
+.hero .facts{display:flex;gap:28px;margin-top:40px;font-size:14px;color:#A89A8B;flex-wrap:wrap}
+.hero .facts b{display:block;font-size:26px;color:#fff;font-weight:700;letter-spacing:-.02em}
+.plate{position:relative;aspect-ratio:1;width:min(100%,560px);justify-self:center}
+.plate .disc{position:absolute;inset:0;border-radius:50%;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.6),0 0 0 10px rgba(255,255,255,.03);animation:gira 120s linear infinite}
+.plate .disc img{position:absolute;width:181%;height:auto;max-width:none;left:50%;top:50%;transform:translate(-50.5%,-49%)}
+@keyframes gira{to{transform:rotate(360deg)}}
+.plate .tag{position:absolute;right:-6px;bottom:8%;background:var(--mozz);color:var(--ink);border-radius:18px;padding:14px 18px;max-width:240px;box-shadow:0 18px 40px rgba(0,0,0,.45);font-size:14px;line-height:1.4;transform:rotate(-3deg)}
+.plate .tag b{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--pomodoro);margin-bottom:4px}
+.plate .tag .serif{font-size:19px;line-height:1.2}
+
+/* ribbon */
+.ribbon{background:var(--pomodoro);color:#fff;overflow:hidden;white-space:nowrap;padding:14px 0;font-weight:700;font-size:19px;letter-spacing:-.01em}
+.ribbon .belt{display:inline-flex;gap:34px;animation:nastro 38s linear infinite;padding-left:34px}
+.ribbon .belt span::after{content:"✳";margin-left:34px;color:var(--crosta)}
+@keyframes nastro{to{transform:translateX(-50%)}}
+
+/* menu */
+.menu{padding:110px 0 90px}
+.mhead{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.mhead p{max-width:460px;color:var(--ink2)}
+.ctrl{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin:44px 0 26px;position:sticky;top:64px;z-index:20;background:var(--mozz);padding:12px 0;border-bottom:1px solid var(--line)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tabs button{border:0;background:var(--mozz2);padding:10px 18px;border-radius:99px;font-weight:600;font-size:15px}
+.tabs button[aria-selected="true"]{background:var(--carbone);color:var(--mozz)}
+.size{display:inline-flex;background:var(--mozz2);border-radius:99px;padding:4px}
+.size button{border:0;background:transparent;padding:8px 16px;border-radius:99px;font-weight:600;font-size:14px;color:var(--ink2)}
+.size button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.list{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+.item{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:14px;padding:17px 0;border-bottom:1px dashed var(--line)}
+.item h3{font-size:20px;letter-spacing:-.02em;font-weight:700;line-height:1.15}
+.item p{font-size:14.5px;color:var(--ink2);margin-top:3px;line-height:1.4}
+.item .pr{font-weight:700;font-size:18px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.item .pr small{display:block;font-weight:500;font-size:11.5px;color:var(--ink2);text-align:right;letter-spacing:.04em}
+.add{width:42px;height:42px;border-radius:50%;border:1.5px solid var(--ink);background:transparent;font-size:22px;line-height:1;display:grid;place-items:center;transition:.2s;position:relative}
+.add:hover{background:var(--carbone);color:#fff}
+.add .n{position:absolute;top:-6px;right:-6px;background:var(--pomodoro);color:#fff;font-size:11.5px;font-weight:700;min-width:20px;height:20px;border-radius:99px;display:none;place-items:center;padding:0 5px}
+.add.has .n{display:grid}
+.item.home h3::after{content:"il nome di casa";font:italic 400 15px 'Instrument Serif',serif;color:var(--pomodoro);margin-left:9px;letter-spacing:0}
+.extra{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.box{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px 24px 14px}
+.box h3{font-size:24px;margin-bottom:4px}
+.box .sub{font-size:14px;color:var(--ink2);margin-bottom:10px}
+.box .item{grid-template-columns:1fr auto auto;padding:11px 0}
+.box .item h3{font-size:16.5px}
+.box .item .pr{font-size:16px}
+.box .item:last-child{border-bottom:0}
+.box .add{width:36px;height:36px;font-size:19px}
+.mnote{font-size:13.5px;color:var(--ink2);margin-top:24px}
+
+/* order tray */
+.tray{position:fixed;left:50%;bottom:20px;transform:translate(-50%,140%);z-index:45;background:var(--carbone);color:var(--mozz);border-radius:99px;padding:8px 8px 8px 22px;display:flex;align-items:center;gap:18px;box-shadow:0 18px 50px rgba(0,0,0,.35);transition:transform .45s cubic-bezier(.2,.9,.3,1.2);white-space:nowrap}
+.tray.show{transform:translate(-50%,0)}
+.tray .t{font-size:15px}
+.tray .t b{font-size:18px}
+.tray a{background:var(--pomodoro);color:#fff;text-decoration:none;font-weight:600;padding:11px 18px;border-radius:99px;font-size:15px}
+
+/* ordine */
+.ordine{background:var(--forno);color:var(--mozz);padding:100px 0;position:relative;overflow:hidden}
+.ordine .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start}
+.ordine h2 .serif{color:var(--crosta)}
+.ordine .intro p{color:#CDBFAF;margin-top:20px;max-width:440px}
+.steps{list-style:none;margin-top:30px;display:grid;gap:14px;counter-reset:s}
+.steps li{display:flex;gap:14px;align-items:baseline;color:#E5D8C8;counter-increment:s}
+.steps li::before{content:counter(s);flex:none;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.08);display:grid;place-items:center;font-weight:700;font-size:14px;color:var(--crosta)}
+.ticket{background:var(--mozz);color:var(--ink);border-radius:6px;padding:30px 28px 26px;position:relative;box-shadow:0 30px 70px rgba(0,0,0,.45);transform:rotate(.6deg)}
+.ticket::before,.ticket::after{content:"";position:absolute;left:0;right:0;height:12px;background:radial-gradient(circle at 8px -2px,transparent 8px,var(--mozz) 8.5px) 0 0/16px 12px repeat-x}
+.ticket::before{top:-11px;transform:rotate(180deg)}
+.ticket::after{bottom:-11px}
+.ticket .th{display:flex;justify-content:space-between;align-items:center;border-bottom:2px dashed var(--line);padding-bottom:14px;margin-bottom:12px}
+.ticket .th b{font-size:20px;letter-spacing:-.02em}
+.lines{min-height:90px}
+.line{display:grid;grid-template-columns:auto 1fr auto auto;gap:10px;align-items:center;padding:8px 0;font-size:15.5px;border-bottom:1px dotted var(--line)}
+.line .q{display:flex;align-items:center;gap:6px}
+.line .q button{width:26px;height:26px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:15px;line-height:1}
+.line .nm small{color:var(--ink2);font-size:13px;margin-left:4px}
+.line .tt{font-variant-numeric:tabular-nums;font-weight:600}
+.empty{color:var(--ink2);font-size:15px;padding:16px 0}
+.empty a{color:var(--pomodoro);font-weight:600}
+.tot{display:flex;justify-content:space-between;font-weight:800;font-size:22px;padding:14px 0 6px;letter-spacing:-.02em}
+.tot small{display:block;font-size:12px;font-weight:500;color:var(--ink2);letter-spacing:0}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.fields label{font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2)}
+.fields input,.fields select{display:block;width:100%;margin-top:6px;padding:12px 13px;border:1.5px solid var(--line);border-radius:12px;background:#fff;font:inherit;font-size:16px;color:var(--ink)}
+.preview{background:#E9F5E7;border-radius:14px 14px 14px 4px;padding:14px 16px;font-size:14.5px;line-height:1.5;white-space:pre-wrap;color:#203a20;margin:6px 0 16px}
+.send{display:flex;gap:10px;flex-wrap:wrap}
+.send .btn{flex:1;min-width:150px;padding:14px 18px}
+.send .btn.sms{background:var(--carbone);color:#fff}
+
+/* impasti */
+.impasti{padding:110px 0}
+.impasti .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.imp-photo{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/3.3;background:#2a2220}
+.imp-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.doughs{display:grid;gap:12px;margin-top:30px}
+.dough{display:flex;gap:16px;align-items:center;padding:16px 18px;border-radius:18px;background:#fff;border:1px solid var(--line)}
+.dough i{flex:none;width:46px;height:46px;border-radius:50%;box-shadow:inset 0 -6px 0 rgba(0,0,0,.12)}
+.dough b{display:block;font-size:18px;letter-spacing:-.01em}
+.dough span{font-size:14.5px;color:var(--ink2)}
+blockquote.q1{margin-top:28px;font-family:'Instrument Serif',serif;font-style:italic;font-size:27px;line-height:1.25;color:var(--ink)}
+blockquote.q1 cite{display:block;font:500 14px 'Bricolage Grotesque';font-style:normal;color:var(--ink2);margin-top:10px}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:1.2fr 1fr 1fr 1.2fr;grid-template-rows:260px 260px;gap:10px;padding:0 10px}
+.gal div{position:relative;overflow:hidden;border-radius:18px;background:#2a2220}
+.gal img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s}
+.gal div:hover img{transform:scale(1.05)}
+.gal .a{grid-row:span 2}
+.gal .d{grid-row:span 2}
+.gal span{position:absolute;left:12px;bottom:12px;background:rgba(20,17,16,.78);color:#fff;font-size:13px;padding:5px 11px;border-radius:99px;z-index:2}
+
+/* massi */
+.massi{position:relative;color:#fff;padding:150px 0 120px;margin-top:110px;overflow:hidden;background:#1d2618}
+.massi .bg{position:absolute;inset:0;background:url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Dreamtime_Boulder_in_Cresciano.jpg/1280px-Dreamtime_Boulder_in_Cresciano.jpg") center 40%/cover;transform:scale(1.08)}
+.massi::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,16,10,.9) 0%,rgba(14,16,10,.7) 45%,rgba(14,16,10,.2) 100%);z-index:1}
+.massi .wrap{position:relative;z-index:2}
+.massi h2{max-width:640px}
+.massi h2 .serif{color:var(--crosta)}
+.massi p.big{max-width:540px;font-size:19px;color:#E4E0D2;margin-top:22px}
+.mq{display:grid;grid-template-columns:repeat(2,minmax(0,330px));gap:16px;margin-top:40px}
+.mq div{background:rgba(255,255,255,.1);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.15);border-radius:18px;padding:18px 20px;font-size:15.5px;line-height:1.5}
+.mq cite{display:block;font-style:normal;font-size:13px;color:#C7C3B4;margin-top:8px}
+.langs{display:flex;gap:8px;margin-top:30px;flex-wrap:wrap}
+.langs span{border:1px solid rgba(255,255,255,.35);border-radius:99px;padding:6px 13px;font-size:14px}
+.credit{position:absolute;right:14px;bottom:10px;z-index:2;font-size:11.5px;color:rgba(255,255,255,.6)}
+.credit a{color:inherit}
+
+/* recensioni */
+.rec{padding:110px 0}
+.rhead{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.score{display:flex;align-items:center;gap:16px}
+.score b{font-size:72px;letter-spacing:-.05em;line-height:1}
+.score span{font-size:15px;color:var(--ink2);line-height:1.4}
+.stars{color:#E9A21B;letter-spacing:2px;font-size:18px}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.rc{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.rc p{font-size:16.5px;line-height:1.55}
+.rc .who{margin-top:auto;font-size:14px;color:var(--ink2)}
+.rc .who b{color:var(--ink);font-weight:600}
+.rc.big{grid-row:span 2;background:var(--pomodoro);color:#fff;border:0;justify-content:center}
+.rc.big p{font-family:'Instrument Serif',serif;font-style:italic;font-size:33px;line-height:1.2}
+.rc.big .who,.rc.big .who b{color:#fff}
+
+/* info */
+.info{background:var(--carbone);color:var(--mozz);padding:100px 0 90px}
+.info .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.hours{margin-top:26px;border-top:1px solid #362C26}
+.hours div{display:flex;justify-content:space-between;padding:12px 4px;border-bottom:1px solid #362C26;font-size:16.5px;gap:14px}
+.hours div span:last-child{color:#CDBFAF;text-align:right}
+.hours div.today{background:rgba(232,86,42,.12);border-radius:10px;border-bottom-color:transparent;padding-left:12px;padding-right:12px}
+.hours div.today span:first-child::after{content:"oggi";font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:var(--brace);color:#fff;border-radius:99px;padding:2px 8px;margin-left:8px;vertical-align:2px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chips span{background:rgba(255,255,255,.07);border-radius:99px;padding:7px 13px;font-size:14px;color:#E0D3C3}
+.map{border-radius:22px;overflow:hidden;min-height:340px;background:#2a2220}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;filter:grayscale(.3) contrast(1.05)}
+.addr{margin-top:22px;font-size:17px;line-height:1.6}
+.addr a{color:var(--crosta)}
+.info .todo{background:rgba(255,255,255,.04);border-color:#4a3d34;color:#CDBFAF}
+.info .todo b{color:var(--crosta)}
+footer{background:var(--carbone);color:#8E8073;border-top:1px solid #2c2420;padding:28px 0 40px;font-size:13.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+.mbar{display:none}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:980px){
+  nav{display:none}
+  .hero .wrap{grid-template-columns:1fr;min-height:0;padding-top:34px;gap:10px}
+  .plate{width:min(88vw,460px);order:-1;margin-top:6px}
+  .plate .tag{right:0;bottom:2%;max-width:200px;padding:11px 14px}
+  .plate .tag .serif{font-size:17px}
+  .list{grid-template-columns:1fr}
+  .extra{grid-template-columns:1fr}
+  .ordine .wrap,.impasti .wrap,.info .wrap{grid-template-columns:1fr;gap:40px}
+  .gal{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}
+  .gal .a,.gal .d{grid-row:span 1}
+  .gal .d{grid-column:span 2}
+  .rgrid{grid-template-columns:1fr}
+  .rc.big{grid-row:auto}
+  .mq{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:16.5px}
+  .wrap{padding:0 18px}
+  .logo span{display:none}
+  .hcall{display:none}
+  .hero h1{margin:20px 0 16px}
+  .hero .facts{gap:20px}
+  .menu,.impasti,.rec{padding:80px 0}
+  .ctrl{top:64px;gap:10px}
+  .tabs{flex-wrap:nowrap;overflow-x:auto;max-width:100%;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs button{white-space:nowrap;padding:9px 14px;font-size:14px}
+  .item{gap:10px}
+  .item h3{font-size:18px}
+  .item.home h3::after{display:block;margin:2px 0 0}
+  .fields{grid-template-columns:1fr}
+  .ticket{padding:26px 18px 22px;transform:none}
+  .massi{padding:110px 0 90px;margin-top:80px}
+  .massi::before{background:linear-gradient(180deg,rgba(14,16,10,.55),rgba(14,16,10,.88))}
+  .score b{font-size:58px}
+  .rc.big p{font-size:28px}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(20,17,16,.96)}
+  .mbar .btn{flex:1;padding:14px 10px;font-size:15.5px}
+  .mbar .btn.call{background:var(--pomodoro);color:#fff}
+  footer{padding-bottom:110px}
+  .tray{bottom:84px;padding-left:18px;gap:12px}
+  .tray .t{font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .plate .disc,.ribbon .belt,.status.on .dot{animation:none}
+}
+</style>
+</head>
+<body>
+
+<div class="draft"><b>Anteprima di sito preparata per Pizza Mania da Nico, Claudia e Gioia</b> · foto dalla scheda Google, prezzi dal menù pubblicato su local.ch, tutto da completare insieme</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><b>pizza<i>·</i>mania</b><span>da Nico e Claudia</span></a>
+    <nav><a href="#menu">Il menù</a><a href="#ordine">Ordina</a><a href="#impasti">Impasti</a><a href="#orari">Orari</a></nav>
+    <a class="hcall" href="tel:+41795522474">079 552 24 74</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="status" id="status"><i class="dot"></i><span id="statusTxt">Via Cantonale 8, Cresciano</span></div>
+      <h1><span>Ordina.</span><span>Passa.</span><span class="serif">Ritira.</span></h1>
+      <p class="lead">La pizza da portar via di <b>Nico, Claudia e Gioia</b>, a Cresciano. Impasti curati, ingredienti freschi e un sorriso al bancone, da anni.</p>
+      <div class="cta">
+        <a class="btn red" href="#menu">Scegli la pizza</a>
+        <a class="btn ghost" href="tel:+41795522474">Chiama 079 552 24 74</a>
+      </div>
+      <div class="facts">
+        <div><b>4,9 ★</b>295 recensioni Google</div>
+        <div><b>50+</b>pizze nel menù</div>
+        <div><b>40×60</b>la pizza in pala</div>
+      </div>
+    </div>
+    <div class="plate reveal">
+      <div class="disc"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TOPkgypLefkXm5b8qQQPIX31FUDXGJPOsKjKNALIfhpNXVCxytj-jNHGzqA-vSpcECybQY21t4XrRU5mqoiSvTiOlSvcSygnozVUHQfr9jRJhSdKBhF5NDyRagLcnG4sQ7YInQ4Q=s1400" alt="Pizza con impasto al carbone, burrata e pomodorini, nel cartone di Pizza Mania"></div>
+      <div class="tag"><b>Impasto al carbone</b><span class="serif">«Molto digeribile e buonissima di gusto.»</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="ribbon" aria-hidden="true"><div class="belt">
+  <span>Pizze classiche</span><span>Pizze speciali</span><span>Pizze super</span><span>Pizza in pala</span><span>Focacce</span><span>Panino pizza</span>
+  <span>Pizze classiche</span><span>Pizze speciali</span><span>Pizze super</span><span>Pizza in pala</span><span>Focacce</span><span>Panino pizza</span>
+</div></div>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="mhead">
+      <div><span class="kicker">Il menù</span><h2 style="margin-top:14px">Scegli, tocca il <span class="serif">+</span>,<br>e l'ordine si scrive da solo.</h2></div>
+      <p>Ogni pizza è disponibile singola o family. Aggiungi quelle che vuoi: in fondo trovi il foglietto con il totale, pronto da mandare a Nico e Claudia.</p>
+    </div>
+
+    <div class="ctrl">
+      <div class="tabs" role="tablist">
+        <button role="tab" aria-selected="true" data-cat="classiche">Classiche</button>
+        <button role="tab" aria-selected="false" data-cat="speciali">Speciali</button>
+        <button role="tab" aria-selected="false" data-cat="super">Super</button>
+        <button role="tab" aria-selected="false" data-cat="altro">Pala, focacce, panini</button>
+      </div>
+      <div class="size" id="size">
+        <button aria-pressed="true" data-s="0">Singola</button>
+        <button aria-pressed="false" data-s="1">Family</button>
+      </div>
+    </div>
+
+    <div class="list" id="list"></div>
+    <div class="extra" id="extra" hidden></div>
+
+    <p class="mnote">Prezzi in franchi, come nel menù pubblicato su local.ch. Pomodoro e mozzarella su tutte le pizze, tranne la marinara. Provenienza di carne e pesce: CH e I.</p>
+    <div class="todo"><b>Da completare insieme:</b> prezzi aggiornati, la differenza di misura tra singola e family, gli impasti integrale e al carbone (su quali pizze e con quale supplemento) e le pizze del momento.</div>
+  </div>
+</section>
+
+<div class="tray" id="tray"><span class="t"><b id="trN">0</b> pizze · <b id="trT">Fr. 0.00</b></span><a href="#ordine">Vedi l'ordine</a></div>
+
+<section class="ordine" id="ordine">
+  <div class="wrap">
+    <div class="intro reveal">
+      <span class="kicker" style="color:var(--crosta)">Ordina</span>
+      <h2 style="margin-top:14px">Il foglietto<br><span class="serif">dell'ordine.</span></h2>
+      <p>Chi ordina da Pizza Mania di solito chiama, passa e ritira. Qui si può fare anche per messaggio, senza dettare le pizze una per una al telefono.</p>
+      <ol class="steps">
+        <li>Scegli le pizze dal menù qui sopra.</li>
+        <li>Indica a che ora passi e il tuo nome.</li>
+        <li>Invia il messaggio. Quando arrivi, la pizza ti aspetta calda nel cartone.</li>
+      </ol>
+    </div>
+    <div class="ticket reveal">
+      <div class="th"><b>Il tuo ordine</b><span class="demo">Dimostrazione</span></div>
+      <div class="lines" id="lines"></div>
+      <div class="tot"><span>Totale<small>indicativo, dal menù pubblicato</small></span><span id="tot">Fr. 0.00</span></div>
+      <div class="fields">
+        <label>Passo a ritirare alle<select id="ora"></select></label>
+        <label>Il tuo nome<input id="nome" placeholder="es. Marco" autocomplete="off"></label>
+      </div>
+      <div class="preview" id="prev"></div>
+      <div class="send">
+        <a class="btn wa" id="sendWa" href="#" target="_blank" rel="noopener">Invia su WhatsApp</a>
+        <a class="btn sms" id="sendSms" href="#">Invia per SMS</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="impasti" id="impasti">
+  <div class="wrap">
+    <div class="imp-photo reveal"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TPXdNQ9kB0jN-DonbSncN1D2pBEole3PuVW3A4OkKgieAkBoihY-Jfb_shJNZKlq91exNFsqm-yrzFsOW6i1P2TfPtmM7_gmK4e7e2CfMLgOqzdWglf8L6s2XLIvFQQF2nnRtB=s1400" alt="Pizza con impasto al carbone, rucola, pomodorini e scaglie di grana" loading="lazy"></div>
+    <div class="reveal">
+      <span class="kicker">Gli impasti</span>
+      <h2 style="margin-top:14px">Bianca, integrale<br>o <span class="serif">nera come il carbone.</span></h2>
+      <div class="doughs">
+        <div class="dough"><i style="background:#EBC98E"></i><div><b>Classico</b><span>La pizza di sempre, sottile e fragrante.</span></div></div>
+        <div class="dough"><i style="background:#A9773F"></i><div><b>Integrale</b><span>Per chi la vuole più rustica.</span></div></div>
+        <div class="dough"><i style="background:#2B2726"></i><div><b>Al carbone</b><span>Scura fuori, leggera da digerire.</span></div></div>
+        <div class="dough"><i style="background:#F2E6CF"></i><div><b>Senza glutine</b><span>Impasto apposito, con supplemento di Fr. 3.–</span></div></div>
+      </div>
+      <blockquote class="q1">«La pizza al carbone è molto digeribile e buonissima di gusto… da provare!»<cite>Ivan Mancuso, su Google</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<div class="gal reveal">
+  <div class="a"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q_r0sPukJUNzOzB1RIILxIb38AMzMLS5R65NpwZaJEKwZSdB3xdeaV6S460mnDmx04RktWPlgjhiX2Y5KcwcanqNSUx-oE952GRnUvsNqGyNHzwR2V8F5kwtbwr6YjNSEWVpsyYcY8NHj_=s1000" alt="Pizza al crudo" loading="lazy"><span>Crudo</span></div>
+  <div><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tt-B_FSADkvUVEyclzwLVIxVxdcQNDxEKBMkaV2G7rlEilFKcVjHEP1CUGLbtCrM3Dd8EsD7iFkWiP7TLBO4rlor_Js1K31o158DDRiDqWRmsIHcWWFw9hjr6pwEur2a9_d_GY=s800" alt="Pizza con patate e cotto" loading="lazy"><span>Patate e cotto</span></div>
+  <div><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TSTODqeJt3_EruY2w2K0WrkFlmH0iu4mfc-AdG_d2zvSlMYvw3zBRvGzaQGSdkuRBPwjciuUe-qpfjcJO3l8_J9Jepk7jmv2ZDrM_iodbFV4Bdi0HGx08gs5_MFId0DX33xWq6=s800" alt="Pizza appena sfornata" loading="lazy"><span>Appena sfornata</span></div>
+  <div class="d"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QojUUPZORZoZMECgv8lFomnnr7rH-UgvIf4FySxB-ylUdnBVpyjWZ4MpDgY10rG86l2BAw4lFFdSZ2wkO1dNi0aTF7XBTpDRk4utKU_cCj-TR4a-out6rtDGzCZH_H_hL9pVdNOb6Pm8AR=s1000" alt="Il locale di Pizza Mania con i tavolini" loading="lazy"><span>I tavolini, per mangiarla al volo</span></div>
+  <div><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TwPOAkTHtR8CKLKiX04O5bU0o13AUM1qJIrdDroJuQF6i_VXTBf4cFT84gvL3kisRGDqMod1uH3LO-8qnfBz6g7eeRGxWoQ2rDGlCCv3MCms_UDcdks9t6J-q_RvYDirLjN7dt=s800" alt="L'ingresso di Pizza Mania in Via Cantonale" loading="lazy"><span>Via Cantonale 8</span></div>
+  <div><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TPXdNQ9kB0jN-DonbSncN1D2pBEole3PuVW3A4OkKgieAkBoihY-Jfb_shJNZKlq91exNFsqm-yrzFsOW6i1P2TfPtmM7_gmK4e7e2CfMLgOqzdWglf8L6s2XLIvFQQF2nnRtB=s800" alt="Pizza al carbone con rucola" loading="lazy" style="object-position:30% 50%"><span>Al carbone</span></div>
+</div>
+
+<section class="massi" id="massi">
+  <div class="bg" id="massiBg"></div>
+  <div class="wrap">
+    <span class="kicker" style="color:var(--crosta)">Di ritorno dai massi</span>
+    <h2 style="margin-top:14px">Dita stanche,<br><span class="serif">fame da lupi.</span></h2>
+    <p class="big">I massi di Cresciano richiamano arrampicatori da mezza Europa. E chi scende dal bosco a fine giornata sa già dove fermarsi: due passi più in là, in Via Cantonale.</p>
+    <div class="mq">
+      <div>«Si può anche mangiare sul posto, al volo, ai loro tavolini. Ci hanno serviti e riveriti. Tappa obbligatoria di ritorno dalla falesia!»<cite>Sergio Mazzola, su Google</cite></div>
+      <div>«Grazie per aver messo da parte il libro sul canyoning; purtroppo non siamo riusciti a passare a prenderlo perché siamo dovuti tornare in Francia.»<cite>sipos csenge, su Google</cite></div>
+    </div>
+    <div class="langs"><span>Italiano</span><span>Deutsch</span><span>Français</span><span>English</span></div>
+  </div>
+  <div class="credit">Masso «Dreamtime», Cresciano · foto <a href="https://commons.wikimedia.org/wiki/File:Dreamtime_Boulder_in_Cresciano.jpg" target="_blank" rel="noopener">Amada44</a>, CC BY-SA 3.0</div>
+</section>
+
+<section class="rec" id="recensioni">
+  <div class="wrap">
+    <div class="rhead">
+      <div><span class="kicker">Cosa dicono</span><h2 style="margin-top:14px">Pizza buona,<br><span class="serif">gente ancora meglio.</span></h2></div>
+      <div class="score"><b>4,9</b><span><span class="stars">★★★★★</span><br>295 recensioni su Google</span></div>
+    </div>
+    <div class="rgrid">
+      <div class="rc big reveal"><p>«Il miglior servizio di sempre. Nico super gentile con me e il mio bimbo che andiamo spesso a prendere la pizza.»</p><div class="who"><b>Arianna De Biasi</b> · Google</div></div>
+      <div class="rc reveal"><p>«Buonissima pizza e molto gentile personale. Super pizza, danke vielmal Claudia e Nico.»</p><div class="who"><b>Marino Di Meo</b> · Google</div></div>
+      <div class="rc reveal"><p>«Servizio molto gentile e pizza davvero buona, la consiglio a tutti!»</p><div class="who"><b>sipos csenge</b> · Google</div></div>
+      <div class="rc reveal"><p>«Buona pizza d'asporto, personale gentilissimo e simpatico.»</p><div class="who"><b>Sergio Mazzola</b> · Google</div></div>
+      <div class="rc reveal"><p>«La pizza al carbone è molto digeribile e buonissima di gusto.»</p><div class="who"><b>Ivan Mancuso</b> · Google</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="orari">
+  <div class="wrap">
+    <div>
+      <span class="kicker" style="color:var(--crosta)">Orari e indirizzo</span>
+      <h2 style="margin-top:14px">Il forno<br><span class="serif">si accende alle…</span></h2>
+      <div class="hours" id="hours">
+        <div data-d="1"><span>Lunedì</span><span>11:30–13:30 · 17:30–21:30</span></div>
+        <div data-d="2"><span>Martedì</span><span>11:30–13:30 · 17:30–21:30</span></div>
+        <div data-d="3"><span>Mercoledì</span><span>11:30–13:30 · 17:30–21:30</span></div>
+        <div data-d="4"><span>Giovedì</span><span>11:30–13:30 · 17:30–21:30</span></div>
+        <div data-d="5"><span>Venerdì</span><span>11:30–13:30 · 17:30–21:30</span></div>
+        <div data-d="6"><span>Sabato</span><span>17:30–21:30</span></div>
+        <div data-d="0"><span>Domenica</span><span>17:30–21:30</span></div>
+      </div>
+      <div class="chips"><span>Solo da asporto</span><span>Tavolini per mangiare al volo</span><span>Ordini in anticipo</span><span>Buoni regalo</span><span>Menù bambini</span><span>Parcheggio</span><span>Carte e contactless</span></div>
+      <div class="todo"><b>Da completare insieme:</b> l'orario invernale (sul menù è indicato 17:00–21:00 la sera) e i giorni di chiusura per ferie.</div>
+    </div>
+    <div>
+      <div class="map"><iframe title="Mappa Pizza Mania Cresciano" loading="lazy" src="https://www.google.com/maps?q=Pizza+Mania+da+Nico,+Via+Cantonale+8,+6705+Cresciano&output=embed"></iframe></div>
+      <p class="addr"><b>Pizza Mania da Nico, Claudia e Gioia</b><br>Via Cantonale 8, 6705 Cresciano (Riviera)<br><a href="tel:+41795522474">079 552 24 74</a></p>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© Pizza Mania da Nico, Claudia e Gioia · Cresciano</span><span>Anteprima realizzata da Jacopo Dozio</span></div></footer>
+
+<div class="mbar">
+  <a class="btn call" href="tel:+41795522474">Chiama</a>
+  <a class="btn wa" href="https://wa.me/41795522474" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+var TEL='41795522474';
+var M={
+ classiche:[
+  ['Margherita','Pomodoro, mozzarella',10,18],
+  ['Cotto','Prosciutto cotto',13,24],
+  ['Cotto e funghi','Prosciutto cotto, funghi',15,28],
+  ['4 Stagioni','Cotto, funghi, carciofi, olive, peperoni',16,30],
+  ['Crudo','Prosciutto crudo',16,30],
+  ['Pugliese','Cipolle, olive, origano',13,24],
+  ['Vegetariana','Verdure miste grigliate',15,28],
+  ['Napoletana','Acciughe, olive, capperi',14,26],
+  ['Tonno','Tonno',13,24],
+  ['Tonno e cipolle','Tonno, cipolle',14,26],
+  ['4 Formaggi','Gorgonzola, alpe, latteria',15,28],
+  ['Gorgonzola','Gorgonzola',14,26],
+  ['Cotto e zola','Prosciutto cotto, gorgonzola',15,28],
+  ['Vesuviana','Salame piccante',14,26]],
+ speciali:[
+  ['Carpaccio','Bresaola, rucola, grana',17,32],
+  ['Rucola','Rucola, grana',13.5,25],
+  ['Boscaiola','Pancetta, funghi',16,30],
+  ['Marinara','Pomodoro, aglio, olio d’oliva, origano',9,16],
+  ['Crudo, rucola, mascarpone','Crudo, rucola, mascarpone',18,34],
+  ['Contadina','Gorgonzola, funghi, cipolle, peperoni',15,28],
+  ['Carbonara','Pancetta, uovo, parmigiano',16,30],
+  ['Gamberetti','Gamberetti, rucola',16,30],
+  ['Rustica','Pancetta affumicata',15,28],
+  ['Mascarpone','Mascarpone',13.5,25],
+  ['Parmigiana','Melanzane, parmigiano',14,26],
+  ['Capricciosa','Peperoni, capperi, acciughe, olive',15,30],
+  ['Porcini','Funghi porcini',17,32],
+  ['Calzone','Cotto, funghi, uovo',16,null]],
+ super:[
+  ['Gioia','Crudo, rucola, philadelphia',16.5,31,1],
+  ['Nico e Claudia','Zucchine, philadelphia',15,28,1],
+  ['Hawaii','Prosciutto cotto, ananas',15,28],
+  ['Popeye','Spinaci, uovo, parmigiano',14.5,27],
+  ['Ticinese','Salsiccia',14.5,27],
+  ['Americana','Patatine, würstel',15,28],
+  ['Messicana','Fagioli, pancetta, cipolle',16,28],
+  ['Pantera rosa','Würstel',14.5,27],
+  ['Sole','Asparagi, uova, parmigiano',14.5,27],
+  ['Luna','Mascarpone, salame piccante',15,28],
+  ['Cotto e raclette','Prosciutto cotto, raclette',14.5,27],
+  ['Saporita','Gorgonzola, pancetta affumicata',15,28],
+  ['Mix','Tonno, cipolle, gorgonzola, capperi',15.5,29],
+  ['Salsiccia e friarielli','Salsiccia, friarielli',15.5,29],
+  ['Frutti di mare','Frutti di mare',16,30],
+  ['Veneto','Pancetta, gorgonzola, radicchio',15.5,29]]
+};
+var X=[
+ {t:'Pizza in pala',s:'40×60 cm, da dividere (o anche no)',i:[['Pizza in pala Margherita','',25],['Pizza in pala farcita','',35]]},
+ {t:'Focacce',s:'Calde, semplici',i:[['Focaccia olio, rosmarino, origano, sale','',9],['Focaccia doppia pasta','',10]]},
+ {t:'Panino pizza',s:'Con la pasta della pizza · ogni aggiunta Fr. 1.–',i:[['Panino cotto e mozzarella','',10],['Panino crudo e mozzarella','',11],['Panino bresaola di manzo','',12],['Panino salame e mozzarella','',10],['Panino pancetta e mozzarella','',11],['Panino verdura e mozzarella','',10],['Panino porchetta','',12],['Panino alla Nutella','',5],['Pizza alla Nutella','',8]]}
+];
+var size=0,cat='classiche',order={};
+var list=document.getElementById('list'),extra=document.getElementById('extra');
+function fr(n){return 'Fr. '+n.toFixed(2)}
+function key(n,s){return n+'|'+s}
+function count(n){var c=0;for(var k in order){if(k.split('|')[0]===n)c+=order[k].q}return c}
+function addBtn(n){var c=count(n);return '<button class="add'+(c?' has':'')+'" data-n="'+n.replace(/"/g,'&quot;')+'" aria-label="Aggiungi '+n+'">+<span class="n">'+c+'</span></button>'}
+function row(it,fam){
+  var p=it[2+(fam?1:0)],sz=fam&&it[3]!=null?1:0;if(fam&&it[3]==null)p=it[2];
+  return '<div class="item'+(it[4]?' home':'')+'" data-p="'+p+'" data-sz="'+sz+'"><div><h3>'+it[0]+'</h3>'+(it[1]?'<p>'+it[1]+'</p>':'')+'</div><div class="pr">'+p.toFixed(2)+(fam&&it[3]==null?'<small>solo singola</small>':(it.length>3&&it[3]!==undefined?'<small>'+(sz?'family':'singola')+'</small>':''))+'</div>'+addBtn(it[0])+'</div>';
+}
+function render(){
+  if(cat==='altro'){
+    list.hidden=true;extra.hidden=false;document.getElementById('size').style.visibility='hidden';
+    extra.innerHTML=X.map(function(b){return '<div class="box"><h3>'+b.t+'</h3><div class="sub">'+b.s+'</div>'+b.i.map(function(it){return row(it,0)}).join('')+'</div>'}).join('');
+  }else{
+    list.hidden=false;extra.hidden=true;document.getElementById('size').style.visibility='';
+    list.innerHTML=M[cat].map(function(it){return row(it,size)}).join('');
+  }
+}
+document.querySelector('.tabs').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;cat=b.dataset.cat;this.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-selected',x===b)});render()});
+document.getElementById('size').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;size=+b.dataset.s;this.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});render()});
+document.querySelector('.menu').addEventListener('click',function(e){
+  var b=e.target.closest('.add');if(!b)return;var it=b.closest('.item'),n=b.dataset.n,sz=+it.dataset.sz,p=+it.dataset.p,k=key(n,sz);
+  if(!order[k])order[k]={n:n,s:sz,p:p,q:0};order[k].q++;
+  b.classList.add('has');b.querySelector('.n').textContent=count(n);
+  b.animate&&b.animate([{transform:'scale(1)'},{transform:'scale(1.25)'},{transform:'scale(1)'}],{duration:300});
+  update();
+});
+document.getElementById('lines').addEventListener('click',function(e){
+  var b=e.target.closest('button');if(!b)return;var k=b.dataset.k;order[k].q+=+b.dataset.d;if(order[k].q<=0)delete order[k];update();render();
+});
+['ora','nome'].forEach(function(id){document.getElementById(id).addEventListener('input',msg)});
+function update(){
+  var ks=Object.keys(order),n=0,t=0,h='';
+  ks.forEach(function(k){var o=order[k];n+=o.q;t+=o.q*o.p;
+    h+='<div class="line"><span class="q"><button data-k="'+k.replace(/"/g,'&quot;')+'" data-d="-1" aria-label="Togli">−</button>'+o.q+'<button data-k="'+k.replace(/"/g,'&quot;')+'" data-d="1" aria-label="Aggiungi">+</button></span><span class="nm">'+o.n+(isPizza(o.n)?'<small>'+(o.s?'family':'singola')+'</small>':'')+'</span><span></span><span class="tt">'+(o.q*o.p).toFixed(2)+'</span></div>'});
+  document.getElementById('lines').innerHTML=h||'<div class="empty">Ancora nessuna pizza. <a href="#menu">Sceglila dal menù</a>, oppure prova con una Margherita.</div>';
+  document.getElementById('tot').textContent=fr(t);
+  document.getElementById('trN').textContent=n;document.getElementById('trT').textContent=fr(t);
+  document.getElementById('tray').classList.toggle('show',n>0&&!inOrdine);
+  msg();
+}
+function isPizza(n){for(var c in M)for(var i=0;i<M[c].length;i++)if(M[c][i][0]===n)return M[c][i][3]!=null;return false}
+function msg(){
+  var ks=Object.keys(order),ora=document.getElementById('ora').value,nome=document.getElementById('nome').value.trim();
+  var t=(now().m<1020?'Buongiorno':'Buonasera')+' Nico e Claudia,\nvorrei ordinare:\n';
+  if(!ks.length)t+='• 1 Margherita singola\n';
+  ks.forEach(function(k){var o=order[k];t+='• '+o.q+' '+o.n+(isPizza(o.n)?(o.s?' family':' singola'):'')+'\n'});
+  t+='Passo a ritirare '+(ora?'alle '+ora:'appena è pronta')+'.\n'+(nome?'Grazie, '+nome+'.':'Grazie!');
+  document.getElementById('prev').textContent=t;
+  var e=encodeURIComponent(t);
+  document.getElementById('sendWa').href='https://wa.me/'+TEL+'?text='+e;
+  document.getElementById('sendSms').href='sms:+'+TEL+'?&body='+e;
+}
+
+/* orari in tempo reale (ora svizzera) */
+var H={1:[[690,810],[1050,1290]],2:[[690,810],[1050,1290]],3:[[690,810],[1050,1290]],4:[[690,810],[1050,1290]],5:[[690,810],[1050,1290]],6:[[1050,1290]],0:[[1050,1290]]};
+var GG=['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
+function now(){
+  try{var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Zurich',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date()),o={};p.forEach(function(x){o[x.type]=x.value});
+    return {d:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(o.weekday),m:(+o.hour%24)*60+(+o.minute)}}catch(e){var d=new Date();return {d:d.getDay(),m:d.getHours()*60+d.getMinutes()}}
+}
+function hm(m){return String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0')}
+function dur(m){var h=Math.floor(m/60),r=m%60;return (h?h+' h ':'')+(r||!h?r+' min':'')}
+function status(){
+  var n=now(),sl=H[n.d],el=document.getElementById('status'),tx=document.getElementById('statusTxt'),open=null,next=null;
+  sl.forEach(function(s){if(n.m>=s[0]&&n.m<s[1])open=s;else if(!next&&n.m<s[0])next=s});
+  if(open){el.classList.add('on');tx.textContent='Forno acceso · si ordina fino alle '+hm(open[1]);}
+  else{el.classList.remove('on');
+    if(next){var w=next[0]-n.m;tx.textContent=w<=90?'Il forno si riaccende tra '+dur(w):'Oggi si riapre alle '+hm(next[0]);}
+    else{var d=(n.d+1)%7;tx.textContent='Chiuso per stasera · '+GG[d]+' si riapre alle '+hm(H[d][0][0]);}}
+  var hs=document.querySelectorAll('#hours div');hs.forEach(function(r){r.classList.toggle('today',+r.dataset.d===n.d)});
+  /* orari di ritiro */
+  var sel=document.getElementById('ora'),cur=sel.value,opts='<option value="">Appena è pronta</option>',start=open?Math.ceil((n.m+20)/15)*15:null,day=n.d,slots=[];
+  sl.forEach(function(s){var a=Math.max(s[0]+15,start||0,n.m+20);a=Math.ceil(a/15)*15;for(var m=a;m<=s[1];m+=15)slots.push(m)});
+  if(!slots.length){var d2=(n.d+1)%7;H[d2].forEach(function(s){for(var m=s[0]+15;m<=s[1];m+=15)slots.push(m)});opts='<option value="">Appena è pronta</option>';slots=slots.map(function(m){return m});sel.dataset.dom=GG[d2];}
+  else sel.dataset.dom='';
+  slots.forEach(function(m){var v=(sel.dataset.dom?sel.dataset.dom+' ':'')+hm(m);opts+='<option'+(v===cur?' selected':'')+'>'+v+'</option>'});
+  sel.innerHTML=opts;msg();
+}
+var inOrdine=false;
+if('IntersectionObserver' in window){
+  new IntersectionObserver(function(es){inOrdine=es[0].isIntersecting;var n=+document.getElementById('trN').textContent;document.getElementById('tray').classList.toggle('show',n>0&&!inOrdine)},{threshold:.15}).observe(document.getElementById('ordine'));
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+}else document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});
+/* parallasse leggera sulla foto dei massi */
+var bg=document.getElementById('massiBg'),ms=document.getElementById('massi');
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){addEventListener('scroll',function(){var r=ms.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;bg.style.transform='scale(1.08) translateY('+((r.top/innerHeight)*-40)+'px)'},{passive:true})}
+render();update();status();setInterval(status,60000);
+})();
+</script>
+</body>
+</html>
