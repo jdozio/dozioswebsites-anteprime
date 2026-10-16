@@ -141,19 +141,30 @@ si aggiorna og:image (script: /tmp o rifallo a mano).
   screenshot mobile e desktop; correggi testi illeggibili, sovrapposizioni, buchi nella griglia.
 - Rileggi ogni frase: niente inventato, niente errori di italiano, niente refusi.
 
-## 7. Messaggio WhatsApp (Jacopo lo manda lui)
-Struttura (adattala all'attività, in italiano naturale, "tu" con artigiani giovani, altrimenti "voi"/"lei"):
-1. Saluto (con il nome SOLO se certo che sia il titolare).
-2. "Sono Jacopo, un ragazzo ticinese che realizza siti web per attività della zona."
-   (per l'Italia: "un ragazzo che realizza siti web per piccole attività")
-3. Un complimento SPECIFICO e vero (recensioni, una frase di un cliente, una specialità).
-4. Il problema concreto (nessun sito / solo Facebook / il link al sito dà errore).
-5. "Mi sono permesso di prepararvi un'anteprima:" + link.
-6. Cosa c'è di pensato per loro (1–2 cose concrete del sito).
-7. "È solo una bozza: niente è ufficiale e si può cambiare tutto."
-8. Chiusura: **"Se vi interessa, scrivetemi pure qui su WhatsApp quando avete un momento: possiamo
-   parlare di prezzo, modifiche o qualsiasi altra cosa direttamente per messaggio."** + saluto + emoji
-   pertinente + "Jacopo".
+## 7. Messaggio WhatsApp (Jacopo lo manda lui) — NUOVA REGOLA 16.10.2026
+Jacopo: "i messaggi devono essere più reali, più umani, il cliente non deve pensare di parlare con una
+macchina". E la frase "mi ha colpito la recensione dove il cliente dice…" è VIETATA (rende il messaggio ridicolo).
+
+Come scriverlo:
+- Corto: 5–7 righe, come lo scriverebbe davvero un ragazzo di vent'anni dal telefono. Niente elenchi.
+- Si dà del Lei, ma con le minuscole (lei, le, suo): le maiuscole di cortesia sembrano una lettera automatica.
+- Niente citazioni di recensioni, niente numeri di recensioni e stelle, niente complimenti costruiti.
+- Al massimo UNA cosa concreta del sito, detta in modo semplice (es. "c'è anche un calendario per chiedere
+  l'appuntamento su WhatsApp").
+- Niente frasi da agenzia ("mi sono permesso di", "si tratta soltanto di", "La ringrazio per l'attenzione").
+- Firma solo "Jacopo" (nome e cognome solo nella presentazione).
+- Niente emoji, niente gergo.
+
+Modello:
+> Buongiorno [nome se certo, altrimenti niente], sono Jacopo Dozio, un ragazzo ticinese che fa siti web
+> per piccole attività.
+> Ho visto che [attività] non ha un sito, così ho provato a prepararne una bozza, giusto per farle vedere
+> come potrebbe venire:
+> [link]
+> [una riga sola su una cosa pensata per loro]
+> È solo una prova, si può cambiare tutto. Se le interessa mi scriva pure qui, altrimenti nessun problema.
+> Buona giornata,
+> Jacopo
 
 ## Privacy (il repository è PUBBLICO)
 Nei file del repo (siti, messaggi, registro) scrivi SOLO dati pubblici dell'attività: nome
@@ -176,11 +187,8 @@ Di notte (cloud) Google, Google Maps e le foto delle schede NON sono raggiungibi
   un'attività risulta avere un sito o essere ferma, si cancella la sua cartella e si segna nel registro.
 
 ## Tono del messaggio
-- Titolari anziani, attività storiche, o età sconosciuta: **formale** ("Buongiorno signor/signora …",
-  maiuscole di cortesia Sua/Lei/Le, chiusura "La ringrazio per l'attenzione e Le auguro una buona giornata.",
-  nessuna emoji). Mai gergo o espressioni colloquiali ("tanta roba", "top", "spacca"…).
-- Solo con titolari chiaramente giovani (es. artigiani giovani, barbieri, tatuatori) si può usare il "tu",
-  comunque sempre educato.
+- Vedi la regola 7 (16.10.2026): corto, umano, Lei con le minuscole, niente recensioni citate.
+- Mai gergo o espressioni colloquiali ("tanta roba", "top", "spacca"…), mai emoji.
 
 ## 8. Output di ogni notte
 1. Le cartelle dei siti nella radice del repo.
