@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pacifico Hair Stylist · Varese</title>
+<meta name="description" content="Pacifico Hair Stylist, il salone di Gaetano a Varese, Via G. V. Walder 39. Taglio e barba su appuntamento, senza attese. Tel. 393 877 4385.">
+<!-- anteprima link (WhatsApp) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Jacopo Dozio · siti web">
+<meta property="og:title" content="Pacifico Hair Stylist · anteprima del nuovo sito">
+<meta property="og:description" content="Pacifico Hair Stylist, il salone di Gaetano a Varese, Via G. V. Walder 39. Taglio e barba su appuntamento, senza attese. Tel. 393 877 4385.">
+<meta property="og:url" content="https://jdozio.github.io/dozioswebsites-anteprime/pacifico-hair-stylist-varese/">
+<meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QzOpOd8ha0YpUKvHj9WvHzfSDrHOa03K_jkT_mjFPfL3BYcAT0pF6q_rNayfVMkkb2ykeiN0iKx37e3zWBi6_1fnh6lFcIPf7MARWl72qgn9o4FvFAsP-AZilXhmzlDSVeJs_-=w1200-h630-p-k-no-rj-l80">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pacifico Hair Stylist">
+<meta name="twitter:card" content="summary_large_image">
+<!-- /anteprima link -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--nero:#161514;--nero2:#22201E;--rame:#C27A3E;--rame2:#E39A5B;--crema:#F5EFE6;--crema2:#EAE1D3;--ink:#1D1B19;--ink2:#6E655C;--line:#E0D5C5}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:66px}
+body{background:var(--crema);color:var(--ink);font:400 17px/1.6 'Archivo',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;line-height:1.02;letter-spacing:-.01em}
+h2{font-size:clamp(38px,5vw,62px)}
+h2 em,h1 em{color:var(--rame)}
+.kicker{display:inline-flex;align-items:center;gap:10px;font:700 12px 'Archivo';letter-spacing:.22em;text-transform:uppercase;color:var(--rame)}
+.kicker::before{content:"";width:20px;height:2px;background:currentColor}
+.draft{background:#000;color:#CFC6BA;font-size:13px;text-align:center;padding:8px 16px;line-height:1.45}
+.draft b{color:#fff;font-weight:600}
+.todo{border:2px dashed #D3C3AC;border-radius:16px;padding:15px 18px;font-size:14.5px;color:var(--ink2);background:#fff;margin-top:24px;line-height:1.55}
+.todo b{color:#9C5A24}
+.demo{display:inline-block;font:700 11px 'Archivo';letter-spacing:.14em;text-transform:uppercase;background:var(--rame);color:#fff;padding:4px 10px;border-radius:99px}
+header{position:sticky;top:0;z-index:40;background:rgba(22,21,20,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--crema)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+.logo{text-decoration:none;font-family:'DM Serif Display',serif;font-size:23px;white-space:nowrap}
+.logo span{font:600 11px 'Archivo';letter-spacing:.24em;text-transform:uppercase;color:var(--rame2);margin-left:10px}
+nav{display:flex;gap:26px;font-size:15px}
+nav a{text-decoration:none;opacity:.8}
+.hbtn{background:var(--rame);color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:10px 18px;border-radius:99px;white-space:nowrap}
+
+.hero{position:relative;color:var(--crema);background:var(--nero);overflow:hidden;min-height:calc(100vh - 96px);display:flex;align-items:flex-end}
+.hero .bg{position:absolute;inset:0}
+.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 45%;filter:saturate(.9)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,14,13,.35) 0%,rgba(15,14,13,.55) 45%,rgba(15,14,13,.94) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:120px;padding-bottom:70px;width:100%}
+.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:99px;padding:8px 16px 8px 12px;font-size:14.5px}
+.pill i{width:9px;height:9px;border-radius:50%;background:#8a8178}
+.pill.on i{background:#6BD18A;box-shadow:0 0 0 4px rgba(107,209,138,.2)}
+.hero h1{font-size:clamp(54px,8.6vw,124px);margin:22px 0 18px;max-width:900px}
+.hero p.lead{font-size:clamp(18px,1.6vw,21px);max-width:560px;color:#E2D9CC}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;font-weight:600;font-size:16px;padding:15px 24px;border-radius:99px;border:0;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.rame{background:var(--rame);color:#fff}
+.btn.ghost{color:var(--crema);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.4)}
+.btn.wa{background:#1F7A4D;color:#fff}
+.btn.dark{background:var(--nero);color:var(--crema)}
+.facts{display:flex;gap:34px;margin-top:40px;flex-wrap:wrap;font-size:14px;color:#BFB4A6}
+.facts b{display:block;font-family:'DM Serif Display',serif;font-weight:400;font-size:30px;color:#fff}
+
+/* porta */
+.porta{padding:110px 0}
+.porta .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.porta .ph{position:relative;border-radius:26px;overflow:hidden;aspect-ratio:4/3.4;background:#ddd}
+.porta .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.porta p{color:var(--ink2);font-size:18.5px;margin-top:20px}
+.porta blockquote{margin-top:26px;padding-left:20px;border-left:3px solid var(--rame);font-family:'DM Serif Display',serif;font-style:italic;font-size:25px;line-height:1.3}
+.porta cite{display:block;font:500 14px 'Archivo';font-style:normal;color:var(--ink2);margin-top:10px}
+
+/* appuntamento */
+.app{background:var(--nero);color:var(--crema);padding:110px 0}
+.app .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+.app .intro p{color:#C9BFB2;margin-top:18px;max-width:420px}
+.card{background:var(--crema);color:var(--ink);border-radius:26px;padding:28px 26px}
+.card .ch{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.card .ch b{font-family:'DM Serif Display',serif;font-weight:400;font-size:25px}
+.lab{display:block;font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);margin:16px 0 9px}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg button{border:1.5px solid var(--line);background:#fff;border-radius:99px;padding:9px 15px;font-size:15px}
+.seg button[aria-pressed="true"]{background:var(--nero);border-color:var(--nero);color:#fff}
+.days{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.days button{border:1.5px solid var(--line);background:#fff;border-radius:14px;padding:10px 4px;text-align:center;line-height:1.2}
+.days button small{display:block;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
+.days button b{font-size:21px}
+.days button[aria-pressed="true"]{background:var(--rame);border-color:var(--rame);color:#fff}
+.days button[aria-pressed="true"] small{color:#fff}
+.times{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+.times button{border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:8px 2px;font-size:14px;font-variant-numeric:tabular-nums}
+.times button[aria-pressed="true"]{background:var(--nero);border-color:var(--nero);color:#fff}
+.card input{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;font:inherit;font-size:16px;background:#fff}
+.preview{background:#E9F5E7;border-radius:14px 14px 14px 4px;padding:13px 15px;font-size:14.5px;line-height:1.5;white-space:pre-wrap;color:#203a20;margin:18px 0 14px}
+.note{font-size:13px;color:var(--ink2);margin-top:10px}
+
+/* salone */
+.salone{padding:110px 0 90px}
+.sgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:280px 280px;gap:12px;margin-top:40px}
+.sgrid div{position:relative;border-radius:20px;overflow:hidden;background:#ddd}
+.sgrid img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sgrid .a{grid-row:span 2}
+.sgrid .ph-todo{display:flex;align-items:center;justify-content:center;text-align:center;background:var(--crema2);border:2px dashed #D3C3AC;color:var(--ink2);font-size:14.5px;padding:18px}
+.sgrid .ph-todo b{display:block;font-family:'DM Serif Display',serif;font-weight:400;font-size:22px;color:var(--ink)}
+.sgrid span.c{position:absolute;left:12px;bottom:12px;background:rgba(22,21,20,.8);color:#fff;font-size:13px;padding:5px 11px;border-radius:99px}
+
+/* servizi */
+.serv{padding:0 0 100px}
+.slist{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.sv{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px}
+.sv h3{font-size:26px;margin-bottom:8px}
+.sv p{color:var(--ink2);font-size:16px}
+.sv .pr{margin-top:14px;font-weight:700;color:#9C5A24;font-size:14px;letter-spacing:.04em}
+
+/* recensioni */
+.rec{background:var(--crema2);padding:110px 0}
+.rhead{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.score b{font-family:'DM Serif Display',serif;font-weight:400;font-size:70px;line-height:1;margin-right:12px}
+.score{display:flex;align-items:center;color:var(--ink2);font-size:15px;line-height:1.4}
+.score .s{color:#D99A2B;letter-spacing:2px}
+.rgrid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px;margin-top:44px}
+.rc{background:#fff;border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.rc p{font-size:16.5px}
+.rc .who{margin-top:auto;font-size:14px;color:var(--ink2)}
+.rc .who b{color:var(--ink);font-weight:600}
+.rc.big{grid-row:span 2;background:var(--nero);color:var(--crema);justify-content:center}
+.rc.big p{font-family:'DM Serif Display',serif;font-style:italic;font-size:31px;line-height:1.22}
+.rc.big .who,.rc.big .who b{color:#D7CCBE}
+
+/* info */
+.info{padding:100px 0}
+.info .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.hours{margin-top:24px;border-top:1px solid var(--line)}
+.hours div{display:flex;justify-content:space-between;padding:12px 4px;border-bottom:1px solid var(--line);font-size:16.5px}
+.hours div span:last-child{color:var(--ink2)}
+.hours div.today{background:#fff;border-radius:10px;padding-left:12px;padding-right:12px;border-bottom-color:transparent}
+.hours div.today span:first-child::after{content:"oggi";font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:var(--rame);color:#fff;border-radius:99px;padding:2px 8px;margin-left:8px;vertical-align:2px}
+.map{border-radius:22px;overflow:hidden;min-height:360px;background:#ddd}
+.map iframe{width:100%;height:100%;min-height:360px;border:0;filter:grayscale(.35)}
+.addr{margin-top:20px;font-size:17px;line-height:1.6}
+footer{background:var(--nero);color:#8F857A;padding:28px 0 40px;font-size:13.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.mbar{display:none}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:980px){
+  nav{display:none}
+  .porta .wrap,.app .wrap,.info .wrap{grid-template-columns:1fr;gap:36px}
+  .sgrid{grid-template-columns:1fr 1fr;grid-template-rows:220px 220px 220px}
+  .sgrid .a{grid-row:span 1;grid-column:span 2}
+  .slist,.rgrid{grid-template-columns:1fr}
+  .rc.big{grid-row:auto}
+}
+@media (max-width:640px){
+  body{font-size:16.5px}
+  .wrap{padding:0 18px}
+  .hbtn,.logo span{display:none}
+  .hero{min-height:calc(100svh - 110px)}
+  .hero .wrap{padding-bottom:110px}
+  .porta,.app,.salone,.rec,.info{padding:80px 0}
+  .card{padding:22px 16px}
+  .times{grid-template-columns:repeat(4,1fr)}
+  .days button b{font-size:18px}
+  .score b{font-size:56px}
+  .rc.big p{font-size:26px}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(22,21,20,.96)}
+  .mbar .btn{flex:1;padding:14px 10px;font-size:15.5px}
+  .mbar .call{background:var(--rame);color:#fff}
+  footer{padding-bottom:110px}
+}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<div class="draft"><b>Anteprima di sito preparata per Pacifico Hair Stylist</b> · foto e recensioni dalla scheda Google, testi da completare insieme</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Pacifico<span>Hair Stylist · Varese</span></a>
+    <nav><a href="#appuntamento">Appuntamento</a><a href="#salone">Il salone</a><a href="#recensioni">Recensioni</a><a href="#orari">Orari</a></nav>
+    <a class="hbtn" href="tel:+393938774385">393 877 4385</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="bg"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QzOpOd8ha0YpUKvHj9WvHzfSDrHOa03K_jkT_mjFPfL3BYcAT0pF6q_rNayfVMkkb2ykeiN0iKx37e3zWBi6_1fnh6lFcIPf7MARWl72qgn9o4FvFAsP-AZilXhmzlDSVeJs_-=s1600" alt="L'interno del salone Pacifico Hair Stylist, con la poltrona in pelle"></div>
+  <div class="wrap">
+    <div class="pill" id="pill"><i></i><span id="pillTxt">Via Walder 39, Varese</span></div>
+    <h1>Su appuntamento.<br><em>Senza attese.</em></h1>
+    <p class="lead">Il salone di Gaetano a Varese: taglio e barba con calma, in un ambiente pulito e accogliente, da un barbiere che i clienti chiamano ormai amico.</p>
+    <div class="cta">
+      <a class="btn rame" href="#appuntamento">Scegli il tuo orario</a>
+      <a class="btn ghost" href="tel:+393938774385">Chiama Gaetano</a>
+    </div>
+    <div class="facts"><div><b>4,9 ★</b>20 recensioni Google</div><div><b>9–18</b>orario continuato</div><div><b>P</b>parcheggio accanto</div></div>
+  </div>
+</section>
+
+<section class="porta">
+  <div class="wrap">
+    <div class="ph reveal"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TFvcyzs6VY51_f6P7bIafSvZVA7PbKF71I4-sHtVF6izwtViuxnCTGsncnNrlymJSWMPFBjRcX7P53trs_JJHflRuUij__c5LM_A6bTa26M5WR1Sq7XexIrgaiegTmtSxHKAA=s1200" alt="La vetrina del salone con gli orari e la scritta: riceve su appuntamento" loading="lazy"></div>
+    <div class="reveal">
+      <span class="kicker">Come funziona</span>
+      <h2 style="margin-top:14px">Lo dice anche<br>la porta: <em>si riceve<br>su appuntamento.</em></h2>
+      <p>Niente sale d'attesa piene, niente numeri da prendere. Scegli il giorno e l'ora, e quando arrivi la poltrona è pronta per te.</p>
+      <blockquote>«Riceve solo su appuntamento, quindi niente attese snervanti. Parcheggio adiacente l'attività. Cosa si può volere di più?»<cite>Alberto G, su Google</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="app" id="appuntamento">
+  <div class="wrap">
+    <div class="intro reveal">
+      <span class="kicker" style="color:var(--rame2)">Appuntamento</span>
+      <h2 style="margin-top:14px">Quando ti<br><em>farebbe comodo?</em></h2>
+      <p>Scegli il servizio, il giorno e l'ora che preferisci. Il messaggio per Gaetano si scrive da solo: lui ti risponde e ti conferma l'orario.</p>
+      <div class="todo" style="background:rgba(255,255,255,.04);border-color:#4a4038;color:#C9BFB2"><b style="color:var(--rame2)">Da completare insieme:</b> i servizi con i prezzi e la durata, così il calendario può proporre solo gli orari giusti.</div>
+    </div>
+    <div class="card reveal">
+      <div class="ch"><b>Il tuo appuntamento</b><span class="demo">Dimostrazione</span></div>
+      <span class="lab">Servizio</span>
+      <div class="seg" id="serv"><button aria-pressed="true">Taglio</button><button aria-pressed="false">Barba</button><button aria-pressed="false">Taglio e barba</button></div>
+      <span class="lab">Giorno</span>
+      <div class="days" id="days"></div>
+      <span class="lab">Ora</span>
+      <div class="times" id="times"></div>
+      <span class="lab">Il tuo nome</span>
+      <input id="nome" placeholder="es. Marco" autocomplete="off">
+      <div class="preview" id="prev"></div>
+      <a class="btn wa" id="send" href="#" target="_blank" rel="noopener" style="width:100%">Invia a Gaetano su WhatsApp</a>
+      <p class="note">Gli orari mostrati sono quelli di apertura: la conferma arriva da Gaetano.</p>
+    </div>
+  </div>
+</section>
+
+<section class="salone" id="salone">
+  <div class="wrap">
+    <div class="reveal"><span class="kicker">Il salone</span><h2 style="margin-top:14px">Pulito, curato,<br><em>tranquillo.</em></h2></div>
+    <div class="sgrid reveal">
+      <div class="a"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QSox8YngnAIA-QD9xbOcrDiczIyAsbQhD2CqNK2nNADPTYLzPYiofrCMm1Nu6tORDvwBP0oevAEZpJi4SXZz1GLAVW7POlgTPQuLxG7DGZxpRyfQNywC6r32HW2ecsSrH81y6I=s1200" alt="L'angolo d'attesa con il divanetto in pelle e i quadri" loading="lazy"><span class="c">L'angolo con i quadri</span></div>
+      <div><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T7a8kJV216qc8hyjUXGWmY8x8krA35WPKC6V6dWVpCcNbxQvxnLEIAUFkh1ZD8heT7vr64FCI0PjVla1blh2MIU7YR0v586XKA-ebqRNc4b7mq4jS8KSXA9NbjkXN1833MAM-v7Q=s900" alt="Il lavatesta e la postazione" loading="lazy"><span class="c">Il lavatesta</span></div>
+      <div><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QzdVUKhr4B5bKGhbEZ8f1oTIkf_J-llk0wMJ2qmzVUlBfae5wClD9pRrMjhJSKZkMkBbYbTdi59X3V1uYmW89VVd52Vzym9UraNOCD8gh4p1HQjr6OePwAV48nI6wZKLNLnF9Wcg=s900" alt="L'insegna del barbiere sul muro" loading="lazy" style="object-position:50% 40%"><span class="c">Il barbiere sul muro</span></div>
+      <div class="ph-todo"><p><b>I tagli di Gaetano</b>(foto da richiedere)</p></div>
+      <div class="ph-todo"><p><b>Barba e rifinitura</b>(foto da richiedere)</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="serv">
+  <div class="wrap">
+    <div class="slist">
+      <div class="sv reveal"><h3>Taglio</h3><p>Capelli corti o lunghi, classico o moderno: si parte da quello che desideri, e Gaetano lo capisce al volo.</p><div class="pr">Prezzo da completare</div></div>
+      <div class="sv reveal"><h3>Barba</h3><p>Cura della barba e rifinitura, con la stessa attenzione ai dettagli che i clienti notano nel taglio.</p><div class="pr">Prezzo da completare</div></div>
+      <div class="sv reveal"><h3>Taglio e barba</h3><p>Il pacchetto completo, per uscire in ordine da capo a fondo. Un momento di relax, senza fretta.</p><div class="pr">Prezzo da completare</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="rec" id="recensioni">
+  <div class="wrap">
+    <div class="rhead reveal">
+      <div><span class="kicker">Cosa dicono</span><h2 style="margin-top:14px">Non più solo<br><em>il barbiere.</em></h2></div>
+      <div class="score"><b>4,9</b><span><span class="s">★★★★★</span><br>20 recensioni su Google</span></div>
+    </div>
+    <div class="rgrid">
+      <div class="rc big reveal"><p>«Ci vado da quando ero ragazzino. Non più solo il mio parrucchiere di fiducia, ma un amico.»</p><div class="who"><b>Federico Baj</b> · Google</div></div>
+      <div class="rc reveal"><p>«Gaetano è senza dubbio il miglior barbiere di Varese! Ogni visita è un'esperienza di puro relax, grazie alla sua attenzione ai dettagli.»</p><div class="who"><b>Andrea Garofalo</b> · Google</div></div>
+      <div class="rc reveal"><p>«Gaetano, il titolare, è una persona solare con cui si può parlare e scherzare. Sa fare il proprio mestiere e non è caro.»</p><div class="who"><b>Alberto G</b> · Google</div></div>
+      <div class="rc reveal"><p>«Il proprietario è solare e accogliente. Il locale è molto carino. La qualità è eccellente.»</p><div class="who"><b>Michele Di Caprio</b> · Google</div></div>
+      <div class="rc reveal"><p>«Parrucchiere professionale, cordiale e simpatico. Ambiente pulito e sterilizzato.»</p><div class="who"><b>Davide Mazzanobile</b> · Google</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="orari">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Orari e indirizzo</span>
+      <h2 style="margin-top:14px">Dal martedì<br><em>al sabato.</em></h2>
+      <div class="hours" id="hours">
+        <div data-d="1"><span>Lunedì</span><span>Chiuso</span></div>
+        <div data-d="2"><span>Martedì</span><span>9:00–18:00</span></div>
+        <div data-d="3"><span>Mercoledì</span><span>9:00–18:00</span></div>
+        <div data-d="4"><span>Giovedì</span><span>9:00–18:00</span></div>
+        <div data-d="5"><span>Venerdì</span><span>9:00–18:00</span></div>
+        <div data-d="6"><span>Sabato</span><span>9:00–18:00</span></div>
+        <div data-d="0"><span>Domenica</span><span>Chiuso</span></div>
+      </div>
+      <p class="addr"><b>Pacifico Hair Stylist</b><br>Via Giuseppe Vincenzo Walder 39, 21100 Varese<br><a href="tel:+393938774385">393 877 4385</a> · orario continuato, solo su appuntamento</p>
+    </div>
+    <div class="map reveal"><iframe title="Mappa Pacifico Hair Stylist" loading="lazy" src="https://www.google.com/maps?q=Pacifico+Hair+Stylist,+Via+Walder+39,+Varese&output=embed"></iframe></div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© Pacifico Hair Stylist · Varese</span><span>Anteprima realizzata da Jacopo Dozio</span></div></footer>
+
+<div class="mbar">
+  <a class="btn call" href="tel:+393938774385">Chiama</a>
+  <a class="btn wa" href="https://wa.me/393938774385" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+var TEL='393938774385',GG=['Dom','Lun','Mar','Mer','Gio','Ven','Sab'],GL=['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
+function rome(){try{var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Rome',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date()),o={};p.forEach(function(x){o[x.type]=x.value});return {d:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(o.weekday),m:(+o.hour%24)*60+(+o.minute)}}catch(e){var d=new Date();return {d:d.getDay(),m:d.getHours()*60+d.getMinutes()}}}
+var n=rome(),open=n.d>=2&&n.d<=6&&n.m>=540&&n.m<1080,pill=document.getElementById('pill');
+if(open){pill.classList.add('on');document.getElementById('pillTxt').textContent='Oggi in salone fino alle 18:00';}
+else{var nd=n.d,add=0;do{add++;nd=(n.d+add)%7}while(nd<2);if(n.d>=2&&n.d<=6&&n.m<540){nd=n.d;add=0}
+  document.getElementById('pillTxt').textContent=add===0?'Oggi apre alle 9:00':(add===1?'Domani dalle 9:00':GL[nd].charAt(0).toUpperCase()+GL[nd].slice(1)+' dalle 9:00');}
+document.querySelectorAll('#hours div').forEach(function(r){r.classList.toggle('today',+r.dataset.d===n.d)});
+/* giorni: prossimi 5 giorni di apertura */
+var days=[],dt=new Date();for(var i=0;days.length<5&&i<14;i++){var x=new Date(dt.getFullYear(),dt.getMonth(),dt.getDate()+i);var wd=x.getDay();if(wd>=2&&wd<=6&&!(i===0&&n.m>=1050))days.push(x)}
+var dEl=document.getElementById('days');dEl.innerHTML=days.map(function(x,k){return '<button aria-pressed="'+(k===0)+'" data-k="'+k+'"><small>'+GG[x.getDay()]+'</small><b>'+x.getDate()+'</b></button>'}).join('');
+var sel={s:'Taglio',d:0,t:null};
+function times(){var x=days[sel.d],today=x.toDateString()===new Date().toDateString(),h='';for(var m=540;m<=1050;m+=30){if(today&&m<=n.m+30)continue;var v=String(Math.floor(m/60)).padStart(2,'0')+':'+(m%60?'30':'00');h+='<button aria-pressed="'+(sel.t===v)+'">'+v+'</button>'}document.getElementById('times').innerHTML=h||'<span style="color:var(--ink2);font-size:14px;grid-column:1/-1">Per oggi è tardi: scegli un altro giorno.</span>'}
+function seg(id,cb){document.getElementById(id).addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;this.querySelectorAll('button').forEach(function(z){z.setAttribute('aria-pressed',z===b)});cb(b);msg()})}
+seg('serv',function(b){sel.s=b.textContent});
+seg('days',function(b){sel.d=+b.dataset.k;sel.t=null;times()});
+seg('times',function(b){sel.t=b.textContent});
+document.getElementById('nome').addEventListener('input',msg);
+function msg(){var x=days[sel.d],nm=document.getElementById('nome').value.trim();
+  var t='Buongiorno Gaetano,\nvorrei prenotare: '+sel.s.toLowerCase()+'\n'+GL[x.getDay()]+' '+x.getDate()+(sel.t?' alle '+sel.t:', all’orario che preferisce')+'.\n'+(nm?'Grazie, '+nm+'.':'Grazie!');
+  document.getElementById('prev').textContent=t;document.getElementById('send').href='https://wa.me/'+TEL+'?text='+encodeURIComponent(t)}
+times();msg();
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)})}else document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});
+})();
+</script>
+</body>
+</html>
