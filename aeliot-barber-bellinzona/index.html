@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Æliot Barber · Bellinzona</title>
+<meta name="description" content="Æliot Barber, barbiere in Via San Gottardo 106 a Bellinzona. Sfumature precise, ambiente accogliente, aperto dal lunedì al sabato. Tel. 076 586 30 01.">
+<!-- anteprima link (WhatsApp) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Jacopo Dozio · siti web">
+<meta property="og:title" content="Æliot Barber · anteprima del nuovo sito">
+<meta property="og:description" content="Æliot Barber, barbiere in Via San Gottardo 106 a Bellinzona. Sfumature precise, ambiente accogliente, aperto dal lunedì al sabato. Tel. 076 586 30 01.">
+<meta property="og:url" content="https://jdozio.github.io/dozioswebsites-anteprime/aeliot-barber-bellinzona/">
+<meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TEYycs7KcEe9CP8IlO5mNWMp3zMp9H3S1NAPxbYDNGADoHKtQaKbLZG_cAqDrYOw-zbxW6kraggEeZODDqD3Oo-TsscYkx1mqj7vIP2waHpmOz7Tt1ouH9iL1hKxPrpWQmHa49uiJWu_x2=w1200-h630-p-k-no-rj-l80">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Æliot Barber">
+<meta name="twitter:card" content="summary_large_image">
+<!-- /anteprima link -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0A09;--bg2:#141210;--bg3:#1C1916;--gold:#D4AF6A;--gold2:#F1D9A0;--gold3:#9C7A3C;--tx:#F3EEE6;--tx2:#A8A097;--line:#2A2621;--red:#C8322F;--blue:#2B4FA0;--mint:#8FC9C0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{background:var(--bg);color:var(--tx);font:400 17px/1.65 'Manrope',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1.02;letter-spacing:-.01em}
+h2{font-size:clamp(40px,5.4vw,72px)}
+h2 em{font-style:italic;color:var(--gold)}
+.gold{background:linear-gradient(100deg,var(--gold3) 0%,var(--gold2) 35%,var(--gold) 55%,var(--gold3) 80%,var(--gold2) 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 7s ease-in-out infinite}
+@keyframes sheen{0%,100%{background-position:0 0}50%{background-position:100% 0}}
+.kicker{display:inline-flex;align-items:center;gap:12px;font:700 12px 'Manrope';letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.kicker::before{content:"";width:30px;height:1px;background:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:2px;padding:16px 26px;font:800 13.5px 'Manrope';letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold);transition:background .25s,color .25s,transform .25s}
+.btn.solid{background:var(--gold);color:#17130c}
+.btn.solid:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn.line{color:var(--gold)}
+.btn.line:hover{background:rgba(212,175,106,.1)}
+.todo{border:1px dashed #4a4236;padding:13px 16px;font-size:14px;color:var(--tx2);margin-top:22px;line-height:1.55}
+.todo b{color:var(--gold)}
+.draft{background:#1a1712;color:#b9ae9c;font-size:13px;text-align:center;padding:8px 16px;line-height:1.45;border-bottom:1px solid var(--line)}
+.draft b{color:var(--gold2)}
+
+header{position:sticky;top:0;z-index:60;background:rgba(11,10,9,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.logo{display:flex;align-items:baseline;gap:2px;text-decoration:none;font-family:'Cormorant Garamond',serif}
+.logo .ae{font-size:38px;font-weight:700;line-height:1}
+.logo .rest{font-size:15px;font-style:italic;letter-spacing:.06em;color:var(--gold2);margin-left:6px}
+nav{display:flex;gap:30px;font-size:14px;font-weight:600;letter-spacing:.04em}
+nav a{text-decoration:none;color:var(--tx2);transition:color .2s}
+nav a:hover{color:var(--gold)}
+header .btn{padding:11px 18px;font-size:12px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:70px 0 90px}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 70% at 78% 40%,rgba(212,175,106,.14),transparent 70%),radial-gradient(40% 50% at 10% 90%,rgba(143,201,192,.07),transparent 70%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--bg2);padding:8px 16px 8px 12px;font-size:13.5px;font-weight:600;border-radius:99px}
+.status i{width:8px;height:8px;border-radius:50%;background:#6b6358}
+.status.open i{background:#5BD28A;box-shadow:0 0 10px #5BD28A;animation:blink 1.6s infinite}
+@keyframes blink{50%{opacity:.35}}
+.mark{display:flex;align-items:flex-end;gap:22px;margin:30px 0 8px}
+.mark .big{font:700 clamp(130px,17vw,230px)/.8 'Cormorant Garamond',serif;letter-spacing:-.04em}
+.mark .side{padding-bottom:12px}
+.mark .side small{display:block;font:italic 600 clamp(26px,3vw,40px)/1 'Cormorant Garamond',serif;color:var(--gold2)}
+.mark .side span{display:block;font:italic 600 clamp(40px,5.2vw,72px)/1 'Cormorant Garamond',serif;letter-spacing:.06em;margin-top:6px}
+.hero h1{font-size:clamp(28px,3vw,40px);font-style:italic;font-weight:500;color:var(--tx);max-width:560px;margin-top:22px}
+.hero h1 b{font-weight:600;color:var(--gold)}
+.hero .lead{color:var(--tx2);max-width:500px;margin-top:16px;font-size:17.5px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero .facts{display:flex;gap:34px;margin-top:40px;padding-top:26px;border-top:1px solid var(--line);flex-wrap:wrap}
+.hero .facts div{font-size:13px;color:var(--tx2);letter-spacing:.04em}
+.hero .facts b{display:block;font:600 26px/1.1 'Cormorant Garamond',serif;color:var(--tx);letter-spacing:0}
+
+.stage{position:relative;display:flex;gap:22px;align-items:stretch;justify-content:center}
+.frame{position:relative;width:min(100%,400px);aspect-ratio:3/4.1;border:1px solid var(--gold3);padding:10px;background:var(--bg2)}
+.frame::after{content:"";position:absolute;inset:-12px;border:1px solid rgba(212,175,106,.25);pointer-events:none}
+.frame .imgs{position:relative;width:100%;height:100%;overflow:hidden}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity 1.2s ease,transform 6s ease}
+.frame img.on{opacity:1;transform:scale(1)}
+.frame .cap{position:absolute;left:22px;bottom:22px;z-index:2;background:rgba(11,10,9,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);padding:7px 13px;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2)}
+/* palo da barbiere */
+.pole{position:relative;width:34px;flex:0 0 34px;align-self:center;height:min(76%,380px);display:flex;flex-direction:column;align-items:center}
+.pole .cap1,.pole .cap2{width:42px;height:22px;border-radius:21px 21px 6px 6px;background:linear-gradient(90deg,#7a5c27,var(--gold2) 45%,#8a6a30);flex:0 0 auto}
+.pole .cap2{border-radius:6px 6px 21px 21px}
+.pole .knob{width:20px;height:20px;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--gold2),#7a5c27);margin-bottom:-4px}
+.pole .glass{position:relative;flex:1;width:30px;border-radius:4px;overflow:hidden;background:repeating-linear-gradient(-45deg,var(--red) 0 12px,#fff 12px 22px,var(--blue) 22px 34px,#fff 34px 44px);background-size:100% 62.2px;animation:pole 2.2s linear infinite;box-shadow:inset -8px 0 12px rgba(0,0,0,.35),inset 8px 0 12px rgba(255,255,255,.35)}
+@keyframes pole{to{background-position:0 62.2px}}
+
+/* marquee */
+.ribbon{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;background:var(--bg2)}
+.ribbon .belt{display:flex;width:max-content;animation:belt 36s linear infinite;padding:18px 0}
+.ribbon span{font:italic 600 26px 'Cormorant Garamond',serif;color:var(--tx2);padding:0 26px;white-space:nowrap}
+.ribbon span::after{content:"✦";color:var(--gold);font-style:normal;font-size:14px;margin-left:52px;vertical-align:middle}
+@keyframes belt{to{transform:translateX(-50%)}}
+
+/* tagli */
+.tagli{padding:120px 0 110px}
+.tagli .head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.tagli .head p{max-width:420px;color:var(--tx2)}
+.cuts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:50px}
+.cut{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--bg3);cursor:zoom-in}
+.cut img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease,filter .6s}
+.cut:hover img{transform:scale(1.06)}
+.cut::before{content:"";position:absolute;inset:12px;border:1px solid rgba(241,217,160,.0);z-index:2;transition:border-color .5s,inset .5s;pointer-events:none}
+.cut:hover::before{border-color:rgba(241,217,160,.7);inset:16px}
+.cut figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:60px 22px 20px;background:linear-gradient(180deg,transparent,rgba(11,10,9,.85));font:italic 600 24px 'Cormorant Garamond',serif}
+.cut figcaption small{display:block;font:700 11px 'Manrope';letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-style:normal;margin-bottom:4px}
+.cut:nth-child(2){transform:translateY(40px)}
+
+/* salone */
+.salone{padding:60px 0 120px}
+.salone .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.salone .ph{position:relative;aspect-ratio:4/4.6;overflow:hidden}
+.salone .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.salone .ph::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(212,175,106,.35)}
+.salone p{color:var(--tx2);margin-top:20px}
+.salone ul{list-style:none;margin-top:30px;display:grid;gap:14px}
+.salone li{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:1px solid var(--line)}
+.salone li b{font:600 22px/1.2 'Cormorant Garamond',serif;color:var(--tx);display:block}
+.salone li span{font-size:15px;color:var(--tx2)}
+.salone li i{flex:0 0 32px;height:32px;border:1px solid var(--gold3);border-radius:50%;display:grid;place-items:center;font-style:normal;color:var(--gold);font:600 15px 'Cormorant Garamond',serif}
+
+/* recensioni */
+.rec{padding:110px 0;background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rec .wrap{text-align:center}
+.quote{max-width:820px;margin:44px auto 0;min-height:220px;position:relative}
+.quote blockquote{position:absolute;inset:0;opacity:0;transform:translateY(14px);transition:opacity .8s,transform .8s;font:italic 500 clamp(26px,3.2vw,40px)/1.25 'Cormorant Garamond',serif}
+.quote blockquote.on{opacity:1;transform:none}
+.quote cite{display:block;font:700 12.5px 'Manrope';letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-style:normal;margin-top:22px}
+.stars{color:var(--gold);letter-spacing:4px;font-size:15px}
+.dots{display:flex;justify-content:center;gap:10px;margin-top:20px}
+.dots button{width:30px;height:3px;border:0;background:#3a342c;transition:background .3s}
+.dots button.on{background:var(--gold)}
+
+/* prenota */
+.pren{padding:120px 0}
+.pbox{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start}
+.pbox > div > p{color:var(--tx2);margin-top:18px}
+.card{background:var(--bg2);border:1px solid var(--line);padding:34px}
+.card label{display:block;font:700 11.5px 'Manrope';letter-spacing:.22em;text-transform:uppercase;color:var(--tx2);margin:0 0 12px}
+.days{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:26px}
+.days button{border:1px solid var(--line);background:var(--bg);color:var(--tx);padding:10px 4px;text-align:center;line-height:1.2;transition:border-color .2s,background .2s}
+.days button small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--tx2)}
+.days button b{font:600 24px 'Cormorant Garamond',serif}
+.days button[aria-pressed="true"]{border-color:var(--gold);background:rgba(212,175,106,.12)}
+.days button[aria-pressed="true"] small{color:var(--gold)}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(74px,1fr));gap:8px;margin-bottom:26px}
+.slots button{border:1px solid var(--line);background:var(--bg);color:var(--tx);padding:9px 4px;font-weight:700;font-size:14px}
+.slots button[aria-pressed="true"]{background:var(--gold);color:#17130c;border-color:var(--gold)}
+.slots .sep{grid-column:1/-1;font-size:12px;color:var(--tx2);letter-spacing:.18em;text-transform:uppercase;margin-top:4px}
+.card input{width:100%;background:var(--bg);border:1px solid var(--line);color:var(--tx);padding:14px 16px;font:500 16px 'Manrope';margin-bottom:22px;outline:none}
+.card input:focus{border-color:var(--gold)}
+.preview{border-left:2px solid var(--gold);padding:12px 16px;background:var(--bg);font-size:15px;color:#d8d0c3;margin-bottom:22px;white-space:pre-line}
+.card .btn{width:100%}
+.card .note{font-size:13px;color:var(--tx2);margin-top:12px;text-align:center}
+
+/* info */
+.info{padding:0 0 120px}
+.info .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:stretch}
+.hours{margin-top:26px}
+.hours div{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:16px}
+.hours div span:first-child{color:var(--tx2)}
+.hours div.today span{color:var(--gold);font-weight:700}
+.addr{margin-top:28px;font-size:16px;line-height:1.7}
+.addr a{color:var(--gold);text-decoration:none}
+.map{min-height:430px;border:1px solid var(--line);background:var(--bg3)}
+.map iframe{width:100%;height:100%;min-height:430px;border:0;filter:grayscale(1) invert(.9) sepia(.25) contrast(.9)}
+
+footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:13px;color:#776e63}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.mbar{display:none}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s,transform .9s}
+.reveal.in{opacity:1;transform:none}
+.zoom{position:fixed;inset:0;z-index:90;background:rgba(5,4,3,.94);display:none;align-items:center;justify-content:center;padding:30px;cursor:zoom-out}
+.zoom.on{display:flex}
+.zoom img{max-height:90vh;max-width:100%;border:1px solid var(--gold3)}
+
+@media (max-width:980px){
+  nav{display:none}
+  .hero .wrap,.salone .wrap,.pbox,.info .wrap{grid-template-columns:1fr;gap:44px}
+  .stage{order:-1}
+  .frame{width:min(78%,360px)}
+  .cuts{gap:10px}
+}
+@media (max-width:640px){
+  body{font-size:16.5px}
+  .wrap{padding:0 18px}
+  header .btn{display:none}
+  .hero{padding:36px 0 70px}
+  .frame{aspect-ratio:3/3.6}
+  .pole{height:300px}
+  .mark{margin-top:22px;gap:14px}
+  .cuts{grid-template-columns:1fr 1fr}
+  .cut:nth-child(2){transform:none}
+  .cut:nth-child(3){grid-column:span 2;aspect-ratio:4/3.4}
+  .cut figcaption{font-size:19px;padding:40px 14px 14px}
+  .tagli{padding:90px 0 80px}
+  .salone,.pren{padding-bottom:90px}
+  .pren{padding-top:90px}
+  .card{padding:22px 16px}
+  .days{grid-template-columns:repeat(3,1fr)}
+  .quote{min-height:300px}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:80;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(11,10,9,.95);border-top:1px solid var(--line)}
+  .mbar .btn{flex:1;padding:14px 8px;font-size:12.5px}
+  footer{padding-bottom:110px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="draft"><b>Anteprima di sito preparata per Æliot Barber</b> · foto e recensioni dalla scheda Google, servizi e prezzi da completare insieme</div>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top"><span class="ae gold">Æ</span><span class="rest">liot Barber</span></a>
+    <nav><a href="#tagli">I tagli</a><a href="#salone">Il salone</a><a href="#prenota">Prenota</a><a href="#orari">Orari</a></nav>
+    <a class="btn solid" href="#prenota">Prenota</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="status" id="status"><i></i><span id="statusTxt">Lun–Sab 9–12 · 13–19</span></div>
+      <div class="mark" aria-label="Æliot Barber">
+        <div class="big gold">Æ</div>
+        <div class="side"><small>liot</small><span>Barber</span></div>
+      </div>
+      <h1>Un taglio preciso, <b>fatto con calma</b>, in Via San Gottardo.</h1>
+      <p class="lead">Sfumature pulite, righe nette e un salone dove ti siedi sul divano in pelle e ti senti subito a casa. A Bellinzona, dal lunedì al sabato.</p>
+      <div class="cta">
+        <a class="btn solid" href="#prenota">Prenota il taglio</a>
+        <a class="btn line" href="tel:+41765863001">076 586 30 01</a>
+      </div>
+      <div class="facts">
+        <div><b>Lun – Sab</b>9–12 · 13–19</div>
+        <div><b>Via S. Gottardo</b>106, Bellinzona</div>
+        <div><b>076 586 30 01</b>chiama o scrivi</div>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="frame">
+        <div class="imgs" id="slides">
+          <img class="on" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWVHEweE3v8G04dYK-NxWo3Ae1GT42c8nwSthyUvk9Ovm3rvufzBHr6lC08PmWE0jFE6DKBxjaFBYj843Bc1ryc1W9UgGv37TUs55S_baBKe1Kx5XcL7cDVvb-1vQ14Py9skma8gkuCnJ8=w1000" alt="Sfumatura con riga laterale" style="object-position:50% 35%">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T3xVyKVT-ijb9jh5BfIz5_IxbgOwV8_v-Gk3UCPf98DcfbjvdF9eCr_KMZPEvafV4QnFyATEU_gWKG8TcNa5zfEeY6dRpys9E-Tjll5YGmPXnxxdOXWG-4lYKXTYQQh9Zlrw74zdxxWtI=w1000" alt="Sfumatura alta vista di lato" style="object-position:50% 30%">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qq7kf13vydpc_PtEmfz0T1Zz3PXOKTeG_1olLAXmpNQtiCUzcq0jPOJ31z3sHdALFzcyq_u8OAlL_CiryMipHIO9TOaXDZzmV_qhRJ6WPeDHVIMy7xIXXI4QoTUBFZ4wCqDZhtbrcs9Q5g=w1000" alt="Sfumatura sulla nuca" style="object-position:50% 30%">
+        </div>
+        <span class="cap" id="slideCap">La riga</span>
+      </div>
+      <div class="pole" aria-hidden="true"><div class="knob"></div><div class="cap1"></div><div class="glass"></div><div class="cap2"></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ribbon" aria-hidden="true"><div class="belt" id="belt"></div></div>
+
+<section class="tagli" id="tagli">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><span class="kicker">I tagli</span><h2 style="margin-top:16px">Si vede <em>da dietro</em>.</h2></div>
+      <p>Un taglio fatto bene si riconosce dalla nuca: la sfumatura che sale senza uno scalino, la linea pulita sul collo. Tocca una foto per vederla da vicino.</p>
+    </div>
+    <div class="cuts">
+      <figure class="cut reveal"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWVHEweE3v8G04dYK-NxWo3Ae1GT42c8nwSthyUvk9Ovm3rvufzBHr6lC08PmWE0jFE6DKBxjaFBYj843Bc1ryc1W9UgGv37TUs55S_baBKe1Kx5XcL7cDVvb-1vQ14Py9skma8gkuCnJ8=w900" alt="Taglio con riga laterale e sfumatura" loading="lazy" style="object-position:50% 30%"><figcaption><small>01</small>Riga e sfumatura</figcaption></figure>
+      <figure class="cut reveal"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qq7kf13vydpc_PtEmfz0T1Zz3PXOKTeG_1olLAXmpNQtiCUzcq0jPOJ31z3sHdALFzcyq_u8OAlL_CiryMipHIO9TOaXDZzmV_qhRJ6WPeDHVIMy7xIXXI4QoTUBFZ4wCqDZhtbrcs9Q5g=w900" alt="Sfumatura bassa sulla nuca" loading="lazy" style="object-position:50% 25%"><figcaption><small>02</small>La nuca</figcaption></figure>
+      <figure class="cut reveal"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T3xVyKVT-ijb9jh5BfIz5_IxbgOwV8_v-Gk3UCPf98DcfbjvdF9eCr_KMZPEvafV4QnFyATEU_gWKG8TcNa5zfEeY6dRpys9E-Tjll5YGmPXnxxdOXWG-4lYKXTYQQh9Zlrw74zdxxWtI=w900" alt="Taglio corto con sfumatura alta" loading="lazy" style="object-position:50% 30%"><figcaption><small>03</small>Corto e alto</figcaption></figure>
+    </div>
+    <div class="todo reveal"><b>Da completare insieme:</b> i servizi (taglio, barba, bambini…) con i prezzi, e altre foto dei vostri tagli. Su Google ce ne sono poche: qui basterebbe una decina di foto fatte bene, con buona luce.</div>
+  </div>
+</section>
+
+<section class="salone" id="salone">
+  <div class="wrap">
+    <div class="ph reveal"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TEYycs7KcEe9CP8IlO5mNWMp3zMp9H3S1NAPxbYDNGADoHKtQaKbLZG_cAqDrYOw-zbxW6kraggEeZODDqD3Oo-TsscYkx1mqj7vIP2waHpmOz7Tt1ouH9iL1hKxPrpWQmHa49uiJWu_x2=w1200" alt="Il salone: divano in pelle, poltrone da barbiere e parete verde acqua" loading="lazy"></div>
+    <div class="reveal">
+      <span class="kicker">Il salone</span>
+      <h2 style="margin-top:16px">Ti siedi, <em>e respiri</em>.</h2>
+      <p>Il divano Chesterfield, le poltrone da barbiere, la parete verde acqua e la luce che corre lungo il soffitto. Chi ci è stato parla di un ambiente accogliente e di un ragazzo giovane, preciso, che ama il suo lavoro.</p>
+      <ul>
+        <li><i>1</i><div><b>Con calma</b><span>Il tempo che serve per un taglio fatto bene, senza fretta.</span></div></li>
+        <li><i>2</i><div><b>Attento ai dettagli</b><span>Sfumature, righe e linee pulite: è quello che i clienti notano di più.</span></div></li>
+        <li><i>3</i><div><b>In Via San Gottardo</b><span>Al numero 106, a Bellinzona. Aperto dal lunedì al sabato.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="rec">
+  <div class="wrap">
+    <span class="kicker reveal">Dicono di noi</span>
+    <div class="quote reveal" id="quote"></div>
+    <div class="dots" id="dots"></div>
+  </div>
+</section>
+
+<section class="pren" id="prenota">
+  <div class="wrap pbox">
+    <div class="reveal">
+      <span class="kicker">Prenota</span>
+      <h2 style="margin-top:16px">Scegli il giorno, <em>poi l'ora</em>.</h2>
+      <p>Il messaggio parte già scritto su WhatsApp. È solo una richiesta: ti risponde lui per confermare l'orario.</p>
+      <div class="todo"><b>Da completare insieme:</b> se preferite, qui si può collegare un calendario vero con gli orari liberi.</div>
+    </div>
+    <div class="card reveal">
+      <label>Giorno</label>
+      <div class="days" id="days"></div>
+      <label>Ora</label>
+      <div class="slots" id="slots"></div>
+      <label for="nome">Il tuo nome</label>
+      <input id="nome" placeholder="es. Marco" autocomplete="given-name">
+      <div class="preview" id="preview"></div>
+      <a class="btn solid" id="send" href="#" target="_blank" rel="noopener">Invia su WhatsApp</a>
+      <p class="note">Oppure chiama: <a href="tel:+41765863001" style="color:var(--gold)">076 586 30 01</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="orari">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Orari e indirizzo</span>
+      <h2 style="margin-top:16px">Via San Gottardo <em>106</em></h2>
+      <div class="hours" id="hours"></div>
+      <p class="addr"><b>Æliot Barber</b><br>Via S. Gottardo 106, 6500 Bellinzona<br><a href="tel:+41765863001">076 586 30 01</a></p>
+      <div class="cta"><a class="btn line" href="https://www.google.com/maps/search/?api=1&query=%C3%86+Barber%2C+Via+S.+Gottardo+106%2C+Bellinzona" target="_blank" rel="noopener">Apri in Maps</a></div>
+    </div>
+    <div class="map reveal"><iframe title="Mappa Æliot Barber" loading="lazy" src="https://www.google.com/maps?q=%C3%86+Barber,+Via+S.+Gottardo+106,+6500+Bellinzona&output=embed"></iframe></div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© Æliot Barber · Bellinzona</span><span>Anteprima realizzata da Jacopo Dozio</span></div></footer>
+
+<div class="mbar">
+  <a class="btn line" href="tel:+41765863001">Chiama</a>
+  <a class="btn solid" href="#prenota">Prenota</a>
+</div>
+<div class="zoom" id="zoom"><img alt=""></div>
+
+<script>
+(function(){
+var TEL='41765863001',TZ='Europe/Zurich',$=function(i){return document.getElementById(i)};
+/* orari: 0=dom … 6=sab */
+var H={0:null,1:[[9,12],[13,19]],2:[[9,12],[13,19]],3:[[9,12],[13,19]],4:[[9,12],[13,19]],5:[[9,12],[13,19]],6:[[9,12],[13,19]]};
+var G=['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'],GS=['Dom','Lun','Mar','Mer','Gio','Ven','Sab'],M=['gen','feb','mar','apr','mag','giu','lug','ago','set','ott','nov','dic'];
+function now(){var p={};new Intl.DateTimeFormat('en-GB',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date()).forEach(function(x){p[x.type]=x.value});
+  var d=new Date(Date.UTC(+p.year,+p.month-1,+p.day));return {d:d,wd:d.getUTCDay(),m:(+p.hour%24)*60+(+p.minute)}}
+var N=now();
+/* stato */
+(function(){var t=H[N.wd],s=$('status'),txt;
+  if(t){for(var i=0;i<t.length;i++){if(N.m>=t[i][0]*60&&N.m<t[i][1]*60){s.classList.add('open');txt='Aperto ora · fino alle '+t[i][1]+(i===0?' (pausa fino alle 13)':'');break}
+    if(N.m<t[i][0]*60){txt='Oggi apre alle '+t[i][0]+':00';break}}}
+  if(!txt){for(var k=1;k<8;k++){var w=(N.wd+k)%7;if(H[w]){txt='Chiuso · riapre '+(k===1?'domani':G[w].toLowerCase())+' alle '+H[w][0][0]+':00';break}}}
+  $('statusTxt').textContent=txt})();
+/* orari tabella */
+$('hours').innerHTML=[1,2,3,4,5,6,0].map(function(d){var t=H[d];return '<div'+(d===N.wd?' class="today"':'')+'><span>'+G[d]+'</span><span>'+(t?t.map(function(x){return ('0'+x[0]).slice(-2)+'–'+x[1]}).join(' · '):'Chiuso')+'</span></div>'}).join('');
+/* slide hero */
+var sl=[].slice.call(document.querySelectorAll('#slides img')),caps=['La riga','Corto e alto','La nuca'],si=0;
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(function(){sl[si].classList.remove('on');si=(si+1)%sl.length;sl[si].classList.add('on');$('slideCap').textContent=caps[si]},4200);
+/* nastro */
+var R=['Sfumature','Righe nette','Via San Gottardo 106','Bellinzona','Lun – Sab','Taglio con calma'];
+$('belt').innerHTML=R.concat(R,R,R).map(function(x){return '<span>'+x+'</span>'}).join('');
+/* recensioni vere (Google) */
+var Q=[['Servizio impeccabile! Il ragazzo è professionale, gentile e molto attento ai dettagli. Taglio perfetto e ambiente accogliente.','Simao R.',5],
+['Barbiere davvero bravo, preciso e con una bella energia. Si vede che ama il suo lavoro e ti fa sentire subito a tuo agio.','Nicolò D.',5],
+['Salone fantastico, accogliente. Ragazzo giovane con voglia di fare, professionale e davvero bravo.','Dennis S.',5],
+['Ottimo taglio! Servizio gradevole, atmosfera accogliente e risultato eccellente.','Adem A.',5],
+['Molto bravo e gentile, consiglio a tutti.','Amal M.',4]],qi=0;
+$('quote').innerHTML=Q.map(function(q,i){return '<blockquote'+(i?'':' class="on"')+'><div class="stars">'+'★★★★★'.slice(0,q[2])+'</div><p style="margin-top:16px">«'+q[0]+'»</p><cite>'+q[1]+' · recensione Google</cite></blockquote>'}).join('');
+$('dots').innerHTML=Q.map(function(q,i){return '<button aria-label="Recensione '+(i+1)+'"'+(i?'':' class="on"')+'></button>'}).join('');
+var bq=[].slice.call(document.querySelectorAll('#quote blockquote')),db=[].slice.call(document.querySelectorAll('#dots button')),qt;
+function showQ(i){bq[qi].classList.remove('on');db[qi].classList.remove('on');qi=i;bq[qi].classList.add('on');db[qi].classList.add('on')}
+db.forEach(function(b,i){b.addEventListener('click',function(){clearInterval(qt);showQ(i)})});
+qt=setInterval(function(){showQ((qi+1)%Q.length)},6500);
+/* prenotazione */
+var days=[],selD=0,selT=null;
+for(var k=0;days.length<6&&k<14;k++){var dd=new Date(N.d.getTime()+k*864e5),w=dd.getUTCDay();if(!H[w])continue;
+  if(k===0){var last=H[w][H[w].length-1][1]*60;if(N.m>last-45)continue}days.push({d:dd,w:w,today:k===0,tom:k===1})}
+$('days').innerHTML=days.map(function(x,i){return '<button aria-pressed="'+(i===0)+'" data-i="'+i+'"><small>'+(x.today?'Oggi':x.tom?'Domani':GS[x.w])+'</small><b>'+x.d.getUTCDate()+'</b><small>'+M[x.d.getUTCMonth()]+'</small></button>'}).join('');
+function slots(){var x=days[selD],out='';H[x.w].forEach(function(r,j){out+='<div class="sep">'+(j===0?'Mattina':'Pomeriggio')+'</div>';
+  for(var m=r[0]*60;m<r[1]*60;m+=30){if(x.today&&m<N.m+30)continue;var t=(m/60|0)+':'+('0'+m%60).slice(-2);out+='<button aria-pressed="'+(t===selT)+'">'+t+'</button>'}});
+  $('slots').innerHTML=out;if(!$('slots').querySelector('[aria-pressed="true"]'))selT=null}
+$('days').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;selD=+b.dataset.i;this.querySelectorAll('button').forEach(function(z){z.setAttribute('aria-pressed',z===b)});slots();msg()});
+$('slots').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;selT=b.textContent;this.querySelectorAll('button').forEach(function(z){z.setAttribute('aria-pressed',z===b)});msg()});
+$('nome').addEventListener('input',msg);
+function msg(){var x=days[selD],dl=(x.today?'oggi':x.tom?'domani':G[x.w].toLowerCase())+' '+x.d.getUTCDate()+' '+M[x.d.getUTCMonth()],n=$('nome').value.trim();
+  var t='Ciao! '+(n?'Sono '+n+'. ':'')+'Vorrei prenotare un taglio '+dl+(selT?' alle '+selT:'')+'. Va bene?';
+  $('preview').textContent=t;$('send').href='https://wa.me/'+TEL+'?text='+encodeURIComponent(t)}
+slots();msg();
+/* zoom foto */
+var z=$('zoom');document.querySelectorAll('.cut').forEach(function(c){c.addEventListener('click',function(){z.querySelector('img').src=c.querySelector('img').src.replace('=w900','=w1600');z.classList.add('on')})});
+z.addEventListener('click',function(){z.classList.remove('on')});
+/* reveal */
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)})}else document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});
+})();
+</script>
+</body>
+</html>
