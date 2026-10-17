@@ -64,9 +64,9 @@
  "clubTitle": "Benvenuti <span class=\"grad\">nella giungla</span>",
  "gallery": [
   {
-   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SaGvREIUCscTBjwJ7i5vKIsm4uqWtbXw2KhkUC5EPAeZ8en5mIFAK9q5DGULFstT1gJFMsLdk5k2hQhSlrNS8fz3ygn2zs33llnKKW8NOridETGxIDImmEJ2Xq_9Uawz-n4r4=s1400",
+   "img": "foto/gorilla.webp",
    "cap": "Il gorilla all'ingresso",
-   "pos": "50% 30%"
+   "cut": true
   },
   {
    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QjioAmb6IACN4eG6o3dhiVCoen4-QClv-k2oW2fIMarUSxc_2cQvBTAwC5ByhY685Gim2ZlgvSNhRW78c8mkKvlKJmK3S9k8_ggp8ap8ISjZ2nXTLYdjz1Nf-P3vI4IdC2kC66=s1000",
@@ -126,5 +126,8 @@
   "Compleanno",
   "Addio al celibato",
   "Festa"
- ]
+ ],
+ "jungle": {
+  "emblem": "foto/stemma.webp"
+ }
 }
