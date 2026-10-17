@@ -56,7 +56,7 @@ nav a:hover{background:var(--red);color:#fff}
 header .btn{padding:11px 18px;font-size:13px}
 
 /* hero */
-.hero{position:relative;border-bottom:2.5px solid var(--ink);overflow:hidden}
+.hero{position:relative;border-bottom:2.5px solid var(--ink);overflow:clip}
 .hero .grid{display:grid;grid-template-columns:1.02fr .98fr;min-height:calc(100svh - 112px)}
 .hero .txt{position:relative;padding:54px 56px 50px;display:flex;flex-direction:column;justify-content:space-between;gap:30px;border-right:2.5px solid var(--ink)}
 .live{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;background:#fff;border:2.5px solid var(--ink);border-radius:99px;padding:8px 16px 8px 12px;font:800 13.5px 'Archivo';letter-spacing:.06em;text-transform:uppercase}
@@ -70,7 +70,8 @@ header .btn{padding:11px 18px;font-size:13px}
 .hero .sub{font-size:clamp(17px,1.4vw,20px);max-width:470px;color:var(--ink2)}
 .hero .sub b{color:var(--ink)}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
-.hero .ph{position:relative;overflow:hidden;background:var(--ink)}
+.hero .ph{position:relative;background:var(--ink)}
+.hero .ph .iw{position:absolute;inset:0;overflow:hidden}
 .hero .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%;transform:scale(1.08);animation:hz 16s ease-in-out infinite alternate}
 @keyframes hz{to{transform:scale(1.18) translate(-1.5%,1%)}}
 .sticker{position:absolute;z-index:3;width:150px;height:150px;border-radius:50%;background:var(--mustard);color:var(--ink);display:grid;place-items:center;text-align:center;font:900 25px/.92 'Big Shoulders Display';text-transform:uppercase;border:2.5px solid var(--ink);box-shadow:5px 5px 0 var(--ink);animation:spin 18s linear infinite}
@@ -262,7 +263,7 @@ header .btn{padding:11px 18px;font-size:13px}
     </div>
     <div class="ph">
       <div class="sticker"><div>Pull<br>up.<small>Lugano</small></div></div>
-      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QOt2UIf06lmtpAL6UQSXMmHQ_UMH4M9Lgq_tE-O0r54J-i0exWfc1JuVPg7hmCQ09s7KJYku0-fh6BB3Gm9MZXYBOy34M7YEWDJELsArE5WZyiDVMOETt-hkf51RpHRcuW9abZUaviAp4=w2000" alt="Smash burger con formaggio fuso e patatine, da LEFTY">
+      <div class="iw"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QOt2UIf06lmtpAL6UQSXMmHQ_UMH4M9Lgq_tE-O0r54J-i0exWfc1JuVPg7hmCQ09s7KJYku0-fh6BB3Gm9MZXYBOy34M7YEWDJELsArE5WZyiDVMOETt-hkf51RpHRcuW9abZUaviAp4=w2000" alt="Smash burger con formaggio fuso e patatine, da LEFTY"></div>
       <span class="tag">Original Smash</span>
     </div>
   </div>
@@ -350,7 +351,7 @@ header .btn{padding:11px 18px;font-size:13px}
       <div class="deliv reveal"><div><b>Lefty a casa tua</b><span>Consegna con l'app Divoora.</span></div><a class="btn white" style="margin-left:auto;flex:0 0 auto" href="https://divoora.ch/it/download-the-app" target="_blank" rel="noopener">Ordina</a></div>
       <div class="cta reveal" style="margin-top:22px"><a class="btn red" href="https://www.google.com/maps/search/?api=1&query=LEFTY%20Lugano%20Corso%20Enrico%20Pestalozzi%2012" target="_blank" rel="noopener">Indicazioni</a><a class="btn white" href="tel:+41912298300">Chiama</a></div>
     </div>
-    <div class="map"><iframe title="Mappa LEFTY Lugano" loading="lazy" src="https://www.google.com/maps?q=LEFTY,+Corso+Enrico+Pestalozzi+12,+6900+Lugano&output=embed"></iframe></div>
+    <div class="map"><iframe title="Mappa LEFTY Lugano" loading="lazy" src="https://www.google.com/maps?q=46.0055163,8.9544665&z=17&output=embed"></iframe></div>
   </div>
 </section>
 
