@@ -51,7 +51,7 @@ header{position:sticky;top:0;z-index:60;background:rgba(11,10,9,.88);backdrop-fi
 header .bar{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
 .logo{display:flex;align-items:baseline;gap:2px;text-decoration:none;font-family:'Cormorant Garamond',serif}
 .logo .ae{font-size:38px;font-weight:700;line-height:1}
-.logo .rest{font-size:15px;font-style:italic;letter-spacing:.06em;color:var(--gold2);margin-left:6px}
+.logo .rest{font-size:15px;font-style:italic;letter-spacing:.04em;color:var(--gold2);margin-left:1px}
 nav{display:flex;gap:30px;font-size:14px;font-weight:600;letter-spacing:.04em}
 nav a{text-decoration:none;color:var(--tx2);transition:color .2s}
 nav a:hover{color:var(--gold)}
@@ -86,7 +86,7 @@ header .btn{padding:11px 18px;font-size:12px}
 .frame img.on{opacity:1;transform:scale(1)}
 .frame .cap{position:absolute;left:22px;bottom:22px;z-index:2;background:rgba(11,10,9,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);padding:7px 13px;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2)}
 /* palo da barbiere */
-.pole{position:relative;width:34px;flex:0 0 34px;align-self:center;height:min(76%,380px);display:flex;flex-direction:column;align-items:center}
+.pole{position:relative;width:34px;flex:0 0 34px;align-self:center;height:400px;display:flex;flex-direction:column;align-items:center}
 .pole .cap1,.pole .cap2{width:42px;height:22px;border-radius:21px 21px 6px 6px;background:linear-gradient(90deg,#7a5c27,var(--gold2) 45%,#8a6a30);flex:0 0 auto}
 .pole .cap2{border-radius:6px 6px 21px 21px}
 .pole .knob{width:20px;height:20px;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--gold2),#7a5c27);margin-bottom:-4px}
@@ -185,7 +185,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 @media (max-width:980px){
   nav{display:none}
   .hero .wrap,.salone .wrap,.pbox,.info .wrap{grid-template-columns:1fr;gap:44px}
-  .stage{order:-1}
   .frame{width:min(78%,360px)}
   .cuts{gap:10px}
 }
@@ -383,8 +382,9 @@ var days=[],selD=0,selT=null;
 for(var k=0;days.length<6&&k<14;k++){var dd=new Date(N.d.getTime()+k*864e5),w=dd.getUTCDay();if(!H[w])continue;
   if(k===0){var last=H[w][H[w].length-1][1]*60;if(N.m>last-45)continue}days.push({d:dd,w:w,today:k===0,tom:k===1})}
 $('days').innerHTML=days.map(function(x,i){return '<button aria-pressed="'+(i===0)+'" data-i="'+i+'"><small>'+(x.today?'Oggi':x.tom?'Domani':GS[x.w])+'</small><b>'+x.d.getUTCDate()+'</b><small>'+M[x.d.getUTCMonth()]+'</small></button>'}).join('');
-function slots(){var x=days[selD],out='';H[x.w].forEach(function(r,j){out+='<div class="sep">'+(j===0?'Mattina':'Pomeriggio')+'</div>';
-  for(var m=r[0]*60;m<r[1]*60;m+=30){if(x.today&&m<N.m+30)continue;var t=(m/60|0)+':'+('0'+m%60).slice(-2);out+='<button aria-pressed="'+(t===selT)+'">'+t+'</button>'}});
+function slots(){var x=days[selD],out='';H[x.w].forEach(function(r,j){var b='';
+  for(var m=r[0]*60;m<r[1]*60;m+=30){if(x.today&&m<N.m+30)continue;var t=(m/60|0)+':'+('0'+m%60).slice(-2);b+='<button aria-pressed="'+(t===selT)+'">'+t+'</button>'}
+  if(b)out+='<div class="sep">'+(j===0?'Mattina':'Pomeriggio')+'</div>'+b});
   $('slots').innerHTML=out;if(!$('slots').querySelector('[aria-pressed="true"]'))selT=null}
 $('days').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;selD=+b.dataset.i;this.querySelectorAll('button').forEach(function(z){z.setAttribute('aria-pressed',z===b)});slots();msg()});
 $('slots').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;selT=b.textContent;this.querySelectorAll('button').forEach(function(z){z.setAttribute('aria-pressed',z===b)});msg()});

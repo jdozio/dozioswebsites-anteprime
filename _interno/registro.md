@@ -3,6 +3,7 @@
 Formato: Nome | Località | Settore | Stato | Data | Note
 
 ## Fatte / contattate
+- Æliot Barber | Via S. Gottardo 106, Bellinzona | barbiere | anteprima fatta | 2026-10-17 | /aeliot-barber-bellinzona/ · categoria: nuova (~1 anno, 10 rec., 4,4) · 076 586 30 01 · titolare forse "Eliot" (dal logo, non confermato)
 - Barbiere Rana | Ticino | barbiere | anteprima fatta, contattato | 2026-10 | /barbiere-rana/
 - L'Angolo di Ros | Ticino | estetica/parrucchiera | anteprima fatta | 2026-10 | /angolo-di-ros/
 - Luther Art Ink (Sergio) | Ticino | tatuatore | anteprima fatta | 2026-10 | /luther-art-ink/
@@ -82,3 +83,5 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 - 2026-10-14 (elettricisti) → Beppe Impianti Lecco (sito nuovo e buono) · Giacomello Luca Verbania (sito WordPress che funziona) · EBC Impianti Lurate Caccivio (ha sito) · Ms elettricità Ascona (recensioni vecchie) · candidati futuri con cellulare: DIEFFE Elettrotecnica Busto Arsizio (4,9/11), Romerio Arona (5,0/7), AcDc Service Omegna (5,0/3)
 - 2026-10-15 → candidate future (piste incomplete): Empety Toelettatura Olgiate Comasco (link Canva come sito, 4,8/237, cell. 340 973 2241: MOLTO promettente) · L'Arte nei Capelli Cadenazzo (digitalone, cell.) · Pizza Mania da Nico Cresciano (digitalone, cell., 4,9/34 local.ch) · Sammy Toelettatura Gordola (digitalone, poche rec.) · WildSide Nails Mendrisio, Bellezza Naturale Bissone, Urban Tailor Como (ottime ma telefono non trovato) · Lash & Beauty Sonja Bartolomeo, Estetica Venere (da riprovare) · Floralina Bellinzona (floralina.ch da controllare) · Atelier Mirabilia Manno (niente telefono) · Pacifico Hair Stylist Varese (mancano testi)
 - 2026-10-15 → scartate: Pizza 5 alle Otto (nessuna recensione) · Fabio Woodworks (forse sito, 0 rec.) · DM Pasticceria, Macelleria Stuppia, Macelleria Belotti, Lo Sfizio Take Away, Spizzico by Coppola, Pizzeria Pulcinella, Tre Valli Barber Shop, Salone Beauty Shop, Qua la Zampa, Sei Bella Luino (hanno un sito) · Cecchettin, Regno della pizza, Elle 26 Morbegno, Saverio Barbershop Luino, Beautiful Style Carugo, Glorioso Pasticceria, Bonadei e Vicenzi, Bijoux Grooming (solo fisso) · Pizza Napoli Bellinzona (448 rec.), Kalòs Arona (425 rec.) · SUY Nails, Elite Beauty Concept, Roj Barbershop, Salone Kristal, Barber Shop Dal Fra (troppe poche recensioni) · Tuina Massage Sido, SimoNails & Art, Unica Beauty Store, Modà Style, L'Esteta Erba, Vbstyle (recensioni vecchie) · WashDog (catena) · Estetica Beauty and Care Losone (centro strutturato) · La Tua Osteria Como (al limite, 4,6/282)
+
+- 2026-10-17 valutate (barbieri Bellinzona, nuovo criterio "bisogno di sito"): riserve Emporio Urban Barber Shop (5,0/13), Lady Bikers Barber Shop (5,0/9), Roj Barbershop (5,0/20) — da verificare sito e telefono
