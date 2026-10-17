@@ -74,8 +74,11 @@ Le attività affermate con tantissime recensioni e senza sito spesso NON voglion
   un link al sito, aprilo (WebFetch) e controlla che funzioni e com'è fatto.
   Se puoi leggere la scheda Google Maps (campo "sito web"), fallo. Se non sei sicuro al 100%,
   segna l'attività come **"DA CONTROLLARE SU MAPS"** nel file messaggi.
-- **Recensioni buone**: idealmente ≥ 4,6 stelle e un numero di recensioni sensato (≥ ~10; per attività nuove bastano ≥ 5),
-  con recensioni **recenti** (non ferma da anni). Scarta attività che sembrano chiuse o inattive.
+- **Bisogno di un sito prima di tutto (Jacopo, 17.10.2026)**: NON servono 5 stelle e centinaia di recensioni.
+  Conta che il sito gli serva davvero: attività nuove o appena rilevate, poche recensioni (anche 0–10),
+  nessun sito o sito rotto. Preferisci chi ha pochi canali per farsi trovare. Basta che l'attività sia
+  attiva (foto o recensioni recenti, orari presenti) e che il voto non sia chiaramente negativo (< ~4).
+  Scarta attività che sembrano chiuse o inattive. Le grandi e famose (club, locali storici) non sono il target.
 - **Cellulare** (per WhatsApp; se poi risulta senza WhatsApp si manda lo stesso messaggio via SMS, e nel sito i pulsanti WhatsApp diventano SMS). In Svizzera: 076/077/078/079. In Italia: 3xx. Se c'è solo un fisso,
   scarta a meno che non ci sia un'altra via chiara (Instagram attivo) e segnalalo.
 - **Non già presente in `_interno/registro.md`** (né contattata né scartata). Controlla SEMPRE il registro.
