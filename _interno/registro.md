@@ -3,6 +3,7 @@
 Formato: Nome | Località | Settore | Stato | Data | Note
 
 ## Fatte / contattate
+- LEFTY | Corso E. Pestalozzi 12, Lugano (Quartiere Maghetti) | smash burger | anteprima fatta | 2026-10-17 | /lefty-lugano/ · categoria: sito rotto (leftyburger.com su Vercel "deployment paused", 503) · 4,8/252 · solo fisso 091 229 83 00 → contatto via Instagram @lefty_lugano · brand di Studio Kilo (2025), foto professionali dal loro IG
 - Æliot Barber | Via S. Gottardo 106, Bellinzona | barbiere | anteprima fatta | 2026-10-17 | /aeliot-barber-bellinzona/ · categoria: nuova (~1 anno, 10 rec., 4,4) · 076 586 30 01 · titolare forse "Eliot" (dal logo, non confermato)
 - Barbiere Rana | Ticino | barbiere | anteprima fatta, contattato | 2026-10 | /barbiere-rana/
 - L'Angolo di Ros | Ticino | estetica/parrucchiera | anteprima fatta | 2026-10 | /angolo-di-ros/
