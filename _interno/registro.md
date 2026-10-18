@@ -5,7 +5,7 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 ## Fatte / contattate
 - Downtown Milano | Via F. Baracchini 11, Milano | club | anteprima fatta | 2026-10-18 | /downtown-milano/ · nessun sito, 2,8/63 (selezione all'ingresso), 392 657 9363 · lista di Jacopo
 - ICON Club Torino | Via T. Masaccio 28, Torino | club urban | anteprima fatta | 2026-10-18 | /icon-club-torino/ · aperto 11.04.2026, nessun sito, IG icon.torino non disponibile, 393 154 0621 (da tuttiglieventi) · stesso indirizzo di un ex club con sauna/piscina (foto Maps): usate solo foto bar/sala · lista di Jacopo
-- Mirage (Sicilia) | in attesa: Instagram giusto da confermare con Jacopo (Bagheria SS113 vs @mirage.discoclub)
+- Mirage Disco Club | SS113 km 248, Bagheria (PA) | discoteca all'aperto estiva | anteprima fatta | 2026-10-18 | /mirage-bagheria/ · IG @mirage_disco (link da Jacopo), niente telefono → contatto via DM Instagram · prezzi pista/privé dai post estate 2026 · stagione conclusa
 - Metin Barbershop | Viale Castagnola 21A, Lugano | barbiere | anteprima fatta | 2026-10-18 | /metin-barbershop-lugano/ · nuova (aperto estate 2026), solo Instagram, 5,0/47, 078 332 98 85, senza appuntamento · suggerito da Jacopo
 - Veneziano Parrucchieri (Alessandro e Liana) | Via A. Maspoli 7, Mendrisio (Sassi Center) | parrucchiere, specialisti ricci | anteprima fatta | 2026-10-18 | /veneziano-parrucchieri-mendrisio/ · solo link di prenotazione beautycheck (listino da lì), 5,0/32, 078 440 95 72
 - DaMa Estetica e massaggi (Federica, Martina) | Via Emilio Bossi 50, Chiasso | estetica | anteprima fatta | 2026-10-18 | /dama-estetica-chiasso/ · nessun sito, 5,0/25, 079 228 44 54, foto in parte di esempio (Unsplash)
