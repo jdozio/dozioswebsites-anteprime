@@ -3,6 +3,9 @@
 Formato: Nome | Località | Settore | Stato | Data | Note
 
 ## Fatte / contattate
+- Metin Barbershop | Viale Castagnola 21A, Lugano | barbiere | anteprima fatta | 2026-10-18 | /metin-barbershop-lugano/ · nuova (aperto estate 2026), solo Instagram, 5,0/47, 078 332 98 85, senza appuntamento · suggerito da Jacopo
+- Veneziano Parrucchieri (Alessandro e Liana) | Via A. Maspoli 7, Mendrisio (Sassi Center) | parrucchiere, specialisti ricci | anteprima fatta | 2026-10-18 | /veneziano-parrucchieri-mendrisio/ · solo link di prenotazione beautycheck (listino da lì), 5,0/32, 078 440 95 72
+- DaMa Estetica e massaggi (Federica, Martina) | Via Emilio Bossi 50, Chiasso | estetica | anteprima fatta | 2026-10-18 | /dama-estetica-chiasso/ · nessun sito, 5,0/25, 079 228 44 54, foto in parte di esempio (Unsplash)
 - LEFTY | Corso E. Pestalozzi 12, Lugano (Quartiere Maghetti) | smash burger | anteprima fatta | 2026-10-17 | /lefty-lugano/ · categoria: sito rotto (leftyburger.com su Vercel "deployment paused", 503) · 4,8/252 · solo fisso 091 229 83 00 → contatto via Instagram @lefty_lugano · brand di Studio Kilo (2025), foto professionali dal loro IG
 - Æliot Barber | Via S. Gottardo 106, Bellinzona | barbiere | anteprima fatta | 2026-10-17 | /aeliot-barber-bellinzona/ · categoria: nuova (~1 anno, 10 rec., 4,4) · 076 586 30 01 · titolare forse "Eliot" (dal logo, non confermato)
 - Barbiere Rana | Ticino | barbiere | anteprima fatta, contattato | 2026-10 | /barbiere-rana/
@@ -86,3 +89,5 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 - 2026-10-15 → scartate: Pizza 5 alle Otto (nessuna recensione) · Fabio Woodworks (forse sito, 0 rec.) · DM Pasticceria, Macelleria Stuppia, Macelleria Belotti, Lo Sfizio Take Away, Spizzico by Coppola, Pizzeria Pulcinella, Tre Valli Barber Shop, Salone Beauty Shop, Qua la Zampa, Sei Bella Luino (hanno un sito) · Cecchettin, Regno della pizza, Elle 26 Morbegno, Saverio Barbershop Luino, Beautiful Style Carugo, Glorioso Pasticceria, Bonadei e Vicenzi, Bijoux Grooming (solo fisso) · Pizza Napoli Bellinzona (448 rec.), Kalòs Arona (425 rec.) · SUY Nails, Elite Beauty Concept, Roj Barbershop, Salone Kristal, Barber Shop Dal Fra (troppe poche recensioni) · Tuina Massage Sido, SimoNails & Art, Unica Beauty Store, Modà Style, L'Esteta Erba, Vbstyle (recensioni vecchie) · WashDog (catena) · Estetica Beauty and Care Losone (centro strutturato) · La Tua Osteria Como (al limite, 4,6/282)
 
 - 2026-10-17 valutate (barbieri Bellinzona, nuovo criterio "bisogno di sito"): riserve Emporio Urban Barber Shop (5,0/13), Lady Bikers Barber Shop (5,0/9), Roj Barbershop (5,0/20) — da verificare sito e telefono
+
+- 2026-10-18 valutate su richiesta di Jacopo: Gambino Barber Shop (sito digitalone.site, solo fisso 091 923 98 53, 4,3/50: riserva, contatto di persona) · Salone Jasmine Breganzona (solo Facebook, fisso 091 966 03 18, 4,9/12: riserva) · Daniele Hair Boutique (non trovato su Maps a Lugano) · Beauty Line Chiasso (nessun sito, 076 693 95 55, 4,7/10: riserva) · EsteticArmonia (ha sito) · Leonor Beauty (ha sito)
