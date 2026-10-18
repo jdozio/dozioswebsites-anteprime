@@ -1,0 +1,161 @@
+{
+ "name": "Mirage Disco Club",
+ "logo": "Mirage",
+ "city": "Bagheria",
+ "tz": "Europe/Rome",
+ "desc": "Mirage Disco Club, la discoteca all'aperto sulla Statale 113 a Bagheria (PA). Il sabato d'estate: Favelado, Galactic Perreo, Circus Mirage e Jungle Mirage.",
+ "address": "Strada Statale 113 km 248, 90011 Bagheria (PA)",
+ "mapsQuery": "Mirage disco, Bagheria",
+ "phone": "",
+ "phoneLabel": "@mirage_disco",
+ "whatsapp": false,
+ "c1": "#39FF9C",
+ "c2": "#3D7BFF",
+ "c3": "#FFB020",
+ "ogImage": "https://jdozio.github.io/dozioswebsites-anteprime/mirage-bagheria/foto/pista.jpg",
+ "hero": {
+  "img": "foto/pista.jpg",
+  "alt": "La pista all'aperto del Mirage con le luci blu e la folla",
+  "pos": "50% 55%",
+  "tag": "Bagheria · open air",
+  "title": "Mira<span class=\"grad\">ge</span>",
+  "sub": "La discoteca all'aperto sulla Statale 113, tra Bagheria e Ficarazzi. D'estate ogni sabato una festa diversa, sotto le stelle e il palco di luci."
+ },
+ "facts": [
+  [
+   "Open air",
+   "sotto le stelle"
+  ],
+  [
+   "Ogni sabato",
+   "una festa diversa"
+  ],
+  [
+   "Bagheria",
+   "Statale 113, km 248"
+  ]
+ ],
+ "marquee": [
+  "Mirage",
+  "Bagheria",
+  "Open air",
+  "Favelado",
+  "Galactic Perreo",
+  "Circus Mirage",
+  "Jungle Mirage",
+  "Privé"
+ ],
+ "hours": {
+  "0": null,
+  "1": null,
+  "2": null,
+  "3": null,
+  "4": null,
+  "5": null,
+  "6": [
+   "23:30",
+   "05:00"
+  ]
+ },
+ "serateTxt": "Le feste dell'ultima estate. Le date della prossima stagione si aggiornano da qui in un minuto, con i biglietti.",
+ "lineup": "",
+ "serateTodo": "le date e i format della prossima stagione, gli orari di apertura e il link per i biglietti (oggi su Instagram e Notlife).",
+ "clubTitle": "Sotto <span class=\"grad\">le stelle</span>",
+ "gallery": [
+  {
+   "img": "foto/pista.jpg",
+   "cap": "La pista",
+   "pos": "50% 55%"
+  },
+  {
+   "img": "foto/favelado.jpg",
+   "cap": "Favelado"
+  },
+  {
+   "img": "foto/galactic.jpg",
+   "cap": "Galactic Perreo"
+  },
+  {
+   "img": "foto/circus.jpg",
+   "cap": "Circus Mirage"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QrUmwnPVSYsxzbGfLeVDc43JwfUtZUtrp7X8UyHuReoLbXBfMzgTCt86xu-synzrlAo47PQ0DzL1M9ysEagoqJyEQrg9gIql6y3FvbB5SyM0cyHQ3l9q_w0pa-00o6pHDTEMj2=s1000",
+   "cap": "Fuochi d'estate",
+   "pos": "50% 40%"
+  }
+ ],
+ "feat": [
+  [
+   "All'aperto",
+   "Il palco con le americane di luci, la pista sotto il cielo e le palme intorno."
+  ],
+  [
+   "Una festa a sabato",
+   "Ogni settimana un tema diverso: Brasile, spazio, circo, giungla."
+  ],
+  [
+   "Il privé",
+   "Per il compleanno o la serata con gli amici: il posto migliore per vedere la festa."
+  ]
+ ],
+ "tavTxt": "Pista da 10 € in prevendita, privé da 25 €. Scegli la festa e in quanti siete: il messaggio è pronto da incollare su Instagram.",
+ "tavTodo": "un numero WhatsApp per i privé: oggi le prenotazioni passano solo dai messaggi Instagram.",
+ "rules": [
+  [
+   "Solo maggiorenni",
+   "Documento d'identità all'ingresso, sempre e per tutti."
+  ],
+  [
+   "Prevendite",
+   "Con l'early ticket entri a 10 €, al botteghino 20 €."
+  ],
+  [
+   "Privé",
+   "Su prenotazione, da 25 € a persona."
+  ],
+  [
+   "Selezione",
+   "La direzione si riserva il diritto di selezione all'ingresso."
+  ]
+ ],
+ "rulesTodo": "regole e prezzi presi dai post dell'estate 2026: da confermare per la prossima stagione.",
+ "doveTitle": "Statale 113, <span class=\"grad\">Bagheria</span>",
+ "occasions": [
+  "Serata",
+  "Compleanno",
+  "Addio al celibato",
+  "Festa"
+ ],
+ "instagram": "mirage_disco",
+ "fx": "stars",
+ "offSeason": {
+  "status": "Stagione estiva 2026 conclusa · ci vediamo d'estate",
+  "nights": [
+   [
+    "Favelado",
+    "Il sabato brasiliano: aqui a gente não para, a gente dança!",
+    "Sabato 22 agosto",
+    "Pista 10–15 € · privé 25–30 €"
+   ],
+   [
+    "Galactic Perreo",
+    "Reggaeton e perreo in versione spaziale, sotto il cielo di agosto.",
+    "Sabato 29 agosto",
+    "Pista 10–20 € · privé 25–30 €"
+   ],
+   [
+    "Circus Mirage",
+    "Luci da circo, artisti e la pista trasformata in un tendone.",
+    "Sabato 5 settembre",
+    "Pista 10–20 € · privé 25–30 €"
+   ],
+   [
+    "Jungle Mirage",
+    "L'ultima festa dell'estate, in versione giungla.",
+    "Sabato 19 settembre",
+    "Biglietti dal link in bio"
+   ]
+  ]
+ }
+}
