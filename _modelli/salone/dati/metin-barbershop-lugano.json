@@ -73,12 +73,6 @@
   "sub": "Taper fade, tagli puliti e un caffè mentre aspetti. A Castagnola, in Viale Castagnola 21A. Senza appuntamento: passi quando ti va.",
   "imgs": [
    {
-    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S0NTfAJeIonvuwyB93pIbJwSN813mQGT8KWU0SXPiTY5j0D3j7Cq2co1gHN8wtXX_jLPtd6tnbLmvsKw2iGmKKBDjKuRvMB6ANpxPfBO5ACdy5WNA06opruSks761aiHG0Q5BbTe-R40nu=w1100",
-    "pos": "60% 30%",
-    "cap": "Taper fade",
-    "alt": "Taglio con sfumatura sui lati"
-   },
-   {
     "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RePhdGO82S6Gao0uJdMjaK2TFrSpTKwmhL-WC5x78g_j7EUCjF_MQGDWApvyGxZlO0LpUb84evRhsURewb1CaSZwr0G1tUSzQwlLY2EflqszfxJNIa2CfDb1V-otLQj0sbtta5B1-COXtV=w1100",
     "pos": "50% 35%",
     "cap": "Disegno a mano",
@@ -89,6 +83,12 @@
     "pos": "50% 30%",
     "cap": "Il risultato",
     "alt": "Taglio finito visto da dietro"
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S0NTfAJeIonvuwyB93pIbJwSN813mQGT8KWU0SXPiTY5j0D3j7Cq2co1gHN8wtXX_jLPtd6tnbLmvsKw2iGmKKBDjKuRvMB6ANpxPfBO5ACdy5WNA06opruSks761aiHG0Q5BbTe-R40nu=w1100",
+    "pos": "60% 30%",
+    "cap": "Taper fade",
+    "alt": "Taglio con sfumatura sui lati"
    }
   ]
  },

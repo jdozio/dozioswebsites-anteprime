@@ -44,6 +44,7 @@ h2 em,h1 em{font-style:italic;color:var(--acc)}
 .todo b{color:var(--acc)}
 .stock{position:relative}
 .stock::after{content:"Foto di esempio";position:absolute;right:10px;top:10px;z-index:3;background:rgba(0,0,0,.55);color:#fff;font:600 10.5px var(--fb);letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;border-radius:99px;backdrop-filter:blur(4px)}
+.frame.stock::after{top:auto;bottom:18px;right:18px}
 .draft{background:var(--ink);color:var(--bg);font-size:13px;text-align:center;padding:8px 16px;line-height:1.45;opacity:.96}
 .draft b{font-weight:700}
 body.dark .draft{background:#000;color:#cfc8bf}
@@ -110,6 +111,7 @@ body.barber .pole{display:flex}
 .sg h3 span{font:700 11px var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--acc)}
 .si{padding:15px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:2px 16px}
 .si b{font-weight:700;font-size:16.5px}
+.si b .t{font-weight:500;margin-left:4px}
 .si .pr{font:500 19px var(--fd);color:var(--acc);text-align:right}
 .si p{grid-column:1/-1;font-size:14.5px;color:var(--ink2)}
 .si .t{font-size:12.5px;color:var(--ink2);font-weight:600;letter-spacing:.04em}
@@ -351,7 +353,7 @@ $('navBook').textContent=D.walkin?'Vieni':'Prenota';$('hdrBook').textContent=D.w
 $('heroTitle').innerHTML=D.hero.title;$('heroSub').textContent=D.hero.sub;
 $('heroCta').innerHTML='<a class="btn solid" href="#prenota">'+(D.walkin?'Senza appuntamento':'Prenota ora')+'</a>'+(wa?'<a class="btn line" href="https://wa.me/'+tel+'" target="_blank" rel="noopener">WhatsApp</a>':'')+'<a class="btn line" href="tel:+'+tel+'">'+esc(D.phoneLabel)+'</a>';
 $('facts').innerHTML=D.facts.map(function(f){return '<div><b>'+esc(f[0])+'</b>'+esc(f[1])+'</div>'}).join('');
-if(D.badge){var bt=(D.badge.ring+' · ').repeat(3);$('badge').innerHTML='<svg viewBox="0 0 100 100"><defs><path id="cp" d="M50,50 m-39,0 a39,39 0 1,1 78,0 a39,39 0 1,1 -78,0"/></defs><text><textPath href="#cp">'+esc(bt)+'</textPath></text></svg><span>'+esc(D.badge.text)+'</span>'}else $('badge').remove();
+if(D.badge){var rn=Math.max(1,Math.floor(44/(D.badge.ring.length+3))),bt=(D.badge.ring+' · ').repeat(rn);$('badge').innerHTML='<svg viewBox="0 0 100 100"><defs><path id="cp" d="M50,50 m-39,0 a39,39 0 1,1 78,0 a39,39 0 1,1 -78,0"/></defs><text><textPath href="#cp" textLength="243" lengthAdjust="spacing">'+esc(bt)+'</textPath></text></svg><span>'+esc(D.badge.text)+'</span>'}else $('badge').remove();
 var fr=$('frame');D.hero.imgs.forEach(function(x,i){var im=new Image();im.src=x.img;im.alt=x.alt||'';im.style.objectPosition=x.pos||'50% 50%';if(!i)im.className='on';fr.insertBefore(im,$('frameCap'))});
 if(D.hero.stock)fr.classList.add('stock');
 $('frameCap').textContent=D.hero.imgs[0].cap||'';
@@ -365,7 +367,7 @@ var hi=0,his=fr.querySelectorAll('img');if(his.length>1&&!matchMedia('(prefers-r
 $('belt').innerHTML=D.marquee.concat(D.marquee,D.marquee,D.marquee).map(function(x){return '<span>'+esc(x)+'</span>'}).join('');
 /* servizi */
 $('servTitle').innerHTML=D.servTitle;$('servTxt').textContent=D.servTxt;
-$('sgrid').innerHTML=D.services.map(function(g){return '<div class="sg reveal"><h3>'+esc(g.group)+(g.tag?'<span>'+esc(g.tag)+'</span>':'')+'</h3>'+g.items.map(function(s){return '<div class="si"><b>'+esc(s.n)+'</b>'+(s.p?'<span class="pr">'+esc(s.p)+'</span>':(s.t?'<span class="t">'+esc(s.t)+'</span>':'<span></span>'))+(s.d?'<p>'+esc(s.d)+'</p>':'')+'</div>'}).join('')+'</div>'}).join('');
+$('sgrid').innerHTML=D.services.map(function(g){return '<div class="sg reveal"><h3>'+esc(g.group)+(g.tag?'<span>'+esc(g.tag)+'</span>':'')+'</h3>'+g.items.map(function(s){return '<div class="si"><b>'+esc(s.n)+(s.t&&s.p?' <span class="t">· '+esc(s.t)+'</span>':'')+'</b>'+(s.p?'<span class="pr">'+esc(s.p)+'</span>':(s.t?'<span class="t">'+esc(s.t)+'</span>':'<span></span>'))+(s.d?'<p>'+esc(s.d)+'</p>':'')+'</div>'}).join('')+'</div>'}).join('');
 if(D.servTodo)$('servTodo').innerHTML='<b>Da completare insieme:</b> '+esc(D.servTodo);else $('servTodo').remove();
 /* lavori */
 $('galTitle').innerHTML=D.galTitle;$('galTxt').textContent=D.galTxt;
