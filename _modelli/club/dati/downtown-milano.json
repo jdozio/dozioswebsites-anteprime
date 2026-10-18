@@ -1,0 +1,136 @@
+{
+ "name": "Downtown Milano",
+ "logo": "Downtown",
+ "city": "Milano",
+ "tz": "Europe/Rome",
+ "desc": "Downtown Milano, il club in Via Flavio Baracchini 11, in pieno centro. Venerdì e sabato dalle 23:30 alle 5, tavoli e drink di qualità. Tel. 392 657 9363.",
+ "address": "Via Flavio Baracchini 11, 20123 Milano",
+ "mapsQuery": "Downtown Milano, Via Flavio Baracchini 11, Milano",
+ "phone": "+39 392 657 9363",
+ "phoneLabel": "392 657 9363",
+ "whatsapp": true,
+ "c1": "#FF2B2B",
+ "c2": "#2F5BFF",
+ "c3": "#B84BFF",
+ "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SlmNcjICoOx-iX90Ki6S1R6EGzewvlLR8IZOgUoNTr8b7fWDLH3ayndG0t3jurhGKRC-WnoD8ndqiyEvj8C8akKpLHIaxi7LA9O362rc_9-KCkaagLPIBE1TwTBt99g7IBdz__2Dno45E=w1200-h630-p-k-no-rj-l80",
+ "hero": {
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SlmNcjICoOx-iX90Ki6S1R6EGzewvlLR8IZOgUoNTr8b7fWDLH3ayndG0t3jurhGKRC-WnoD8ndqiyEvj8C8akKpLHIaxi7LA9O362rc_9-KCkaagLPIBE1TwTBt99g7IBdz__2Dno45E=s2000",
+  "alt": "La pista sotto il soffitto di onde rosse",
+  "pos": "50% 40%",
+  "tag": "Milano · centro",
+  "title": "Down<span class=\"grad\">town</span>",
+  "sub": "Il club nel cuore di Milano, a due passi dal Duomo. Il soffitto di onde rosse, la sala blu, i tavoli e i drink fatti bene, il venerdì e il sabato fino alle 5."
+ },
+ "facts": [
+  [
+   "Fino alle 5",
+   "venerdì e sabato"
+  ],
+  [
+   "Tavoli",
+   "con servizio al tavolo"
+  ],
+  [
+   "Centro",
+   "Via Baracchini 11"
+  ]
+ ],
+ "marquee": [
+  "Downtown",
+  "Milano",
+  "Venerdì",
+  "Sabato",
+  "Tavoli",
+  "Fino alle 5",
+  "Red room",
+  "Blue room"
+ ],
+ "hours": {
+  "0": null,
+  "1": null,
+  "2": null,
+  "3": null,
+  "4": null,
+  "5": [
+   "23:30",
+   "05:00"
+  ],
+  "6": [
+   "23:30",
+   "05:00"
+  ]
+ },
+ "serateTxt": "Le prossime notti di apertura, con la data. Serate, DJ e guest si aggiornano da qui in un minuto.",
+ "lineup": "Line-up in arrivo",
+ "serateTodo": "i nomi delle serate, i DJ e le guest di ogni weekend.",
+ "clubTitle": "Rosso <span class=\"grad\">e blu</span>",
+ "gallery": [
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SlmNcjICoOx-iX90Ki6S1R6EGzewvlLR8IZOgUoNTr8b7fWDLH3ayndG0t3jurhGKRC-WnoD8ndqiyEvj8C8akKpLHIaxi7LA9O362rc_9-KCkaagLPIBE1TwTBt99g7IBdz__2Dno45E=s1400",
+   "cap": "La red room",
+   "pos": "50% 35%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QWR18vRtcUujcOlwloHgmhYzc3cQzLCsvWgi_n-4YBNLBpdxYp_9s5yFY0N1lOeHwGcEsTWF3Y2Yf2fB_a8JxqSJtAL0Q-73XO6WACJjMFKQX6zoqfl2WQaWQ--DY4yOp60Y3i=s1000",
+   "cap": "Onde di luce",
+   "pos": "50% 30%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TLblWDli4BsTkTN36cUQXUbzZ4dlF_T0PZGEgMNkej56aZapLlHWJKWcD0CBdiz8oo-IOFdekd5in0TzxUyOy-PusMi46ko1rxhCXxk45Hs39TA8JGokufoGrrFfMbNAwuagRyEw=s1000",
+   "cap": "La blue room"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RdLDf0TYFTzN0PAeUJqfHXpynZPJQuFbkizYVUvklWEflCaUZpKQoeKc5DWWCJwF17IfsbO--AKBAZvJldRcIOER2xMDMk6gt8_LejXcBqi9E-BmF63Qa-_4qV6e2bBLvrhG1kfOcv1Kms=s1000",
+   "cap": "Pista piena",
+   "pos": "50% 40%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TwuPd3Un7Pr9kV1gVR9v1iPZey9ZB3Uc-FApA0jHcAwz8SFUa9i8rR3yhcXN5_NcSzywImryVQ0nBlyPAlBInfxZ-ZEg3f8KHJqu7k97XFuvzLTf_fREjEiQqPGaEdA5WgVXJaJJAgQCMA=s1000",
+   "cap": "Downtown Milano"
+  }
+ ],
+ "feat": [
+  [
+   "Il soffitto rosso",
+   "Onde di luce rossa che corrono sopra la pista: la prima cosa che vedi entrando."
+  ],
+  [
+   "La sala blu",
+   "Divanetti, luce blu e i tavoli: il posto per la serata con gli amici."
+  ],
+  [
+   "I tavoli",
+   "Bottiglie al tavolo, camerieri gentilissimi e drink di qualità, come scrivono i clienti."
+  ]
+ ],
+ "tavTxt": "Compleanno, addio al celibato o serata tra amici: scegli la notte e in quanti siete, e il messaggio parte già scritto su WhatsApp.",
+ "tavTodo": "i tavoli disponibili, i prezzi e cosa è incluso.",
+ "rules": [
+  [
+   "Solo maggiorenni",
+   "Documento d'identità all'ingresso, sempre e per tutti."
+  ],
+  [
+   "Dress code",
+   "Curato ed elegante."
+  ],
+  [
+   "Selezione",
+   "La direzione si riserva il diritto di selezione all'ingresso."
+  ],
+  [
+   "Tavoli",
+   "Meglio prenotare prima, soprattutto il sabato."
+  ]
+ ],
+ "rulesTodo": "queste regole sono una proposta: dress code e politica d'ingresso da confermare con il locale. Scriverle in chiaro sul sito evita molte discussioni alla porta.",
+ "doveTitle": "Via Baracchini <span class=\"grad\">11</span>",
+ "occasions": [
+  "Serata",
+  "Compleanno",
+  "Addio al celibato",
+  "Festa"
+ ],
+ "fx": "waves",
+ "badgeLogo": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TPdG95mQbvRTsDTSrWg8tIjzQDCDFWz7MRMd6S60oLNOeXx1m0djzqx_CyHaE1yhJAtDF6PL1goi47XM3-c_7AXmjsJm8a7yccviX0E1JmPPX31Z25UZ19AzzcVzvuNNsZsn1X=w600"
+}
