@@ -456,7 +456,7 @@ if(D.fx==='vinyl'&&!D.logoImg){var v=document.createElement('div');v.className='
 if(D.fx==='vinyl'&&D.logoImg){var eq2=document.createElement('div');eq2.className='eq';var h2='';for(var k2=0;k2<48;k2++)h2+='<i style="animation-duration:'+(.45+((k2*37)%60)/100)+'s;animation-delay:-'+((k2*13)%90)/100+'s"></i>';eq2.innerHTML=h2;hero.insertBefore(eq2,hero.querySelector('.wrap'))}
 if(D.logoImg){var e=document.createElement('div');e.className='emb';e.title='Tocca il logo';e.style.setProperty('--m','url('+D.logoImg+')');e.innerHTML='<img src="'+D.logoImg+'" alt="Logo '+esc(D.name)+'"><span class="sh"></span>';hero.appendChild(e);hero.classList.add('fxp');
   e.addEventListener('click',function(){e.classList.remove('pop');void e.offsetWidth;e.classList.add('pop')});
-  if(D.logoMark)$('logo').innerHTML='<img class="mk" src="'+D.logoMark+'" alt="">'+esc(D.logo)}
+  if(D.logoMark)$('logo').innerHTML=D.logoMarkOnly?'<img class="mk" src="'+D.logoMark+'" alt="'+esc(D.name)+'" style="height:46px;margin-right:0">':'<img class="mk" src="'+D.logoMark+'" alt="">'+esc(D.logo)}
 if(D.badgeLogo){var t=document.createElement('div');t.className='tile';t.title='Tocca il logo';t.innerHTML='<div class="in"><img src="'+D.badgeLogo+'" alt="Logo '+esc(D.name)+'"></div>';hero.appendChild(t);hero.classList.add('fxp');
   t.addEventListener('click',function(){t.classList.remove('flip');void t.offsetWidth;t.classList.add('flip')});
   $('logo').innerHTML='<img src="'+D.badgeLogo+'" alt="" style="border-radius:8px">'+esc(D.logo)}
