@@ -1,0 +1,421 @@
+{
+ "name": "Veneziano Parrucchieri",
+ "short": "Veneziano",
+ "logoTag": "Parrucchieri",
+ "city": "Mendrisio",
+ "kind": "hair",
+ "fonts": "morbido",
+ "walkin": false,
+ "theme": {
+  "dark": false,
+  "bg": "#F8F2EB",
+  "bg2": "#FFFBF6",
+  "bg3": "#EFE4D8",
+  "ink": "#2B211D",
+  "ink2": "#76675F",
+  "acc": "#A8653D",
+  "acc2": "#E9C7A6",
+  "on": "#FFFFFF",
+  "line": "#E6D8CA"
+ },
+ "desc": "Veneziano Parrucchieri, Sassi Center a Mendrisio. Specialisti dei capelli ricci: Curly Expert Cut, Curly Booster, colore, schiariture e trattamenti. Tel. 078 440 95 72.",
+ "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tk33ztHFOQgdzn9jscXRsOzbbJ_88OQdHzVZQ1hC3ocKE0reNN5xM07YT98hE1FeqNRdeYX73bH4YLIUuz4LYfdVp0yrHO349EHgzb9x9XgJY_BrNPqExf8Wd-vdOoEEazGaeKm44nSMw=w1200-h630-p-k-no-rj-l80",
+ "phone": "+41 78 440 95 72",
+ "phoneLabel": "078 440 95 72",
+ "whatsapp": true,
+ "bookUrl": "https://venezianoparrucchieri.beautycheck.it/booking/prenotaPerGiorno.aspx",
+ "address": "Via Angelo Maspoli 7, 6850 Mendrisio · Sassi Center",
+ "mapsQuery": "Veneziano parrucchieri, Via Angelo Maspoli 7, Mendrisio",
+ "lat": 45.8737865,
+ "lng": 8.9795723,
+ "hours": {
+  "0": null,
+  "1": null,
+  "2": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "3": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "4": [
+   [
+    "13:00",
+    "21:00"
+   ]
+  ],
+  "5": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "6": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ]
+ },
+ "draftNote": "foto e recensioni dalla scheda Google, listino dalla vostra pagina di prenotazione",
+ "hero": {
+  "title": "I tuoi ricci,<br>finalmente <em>capiti</em>.",
+  "sub": "Alessandro e Liana sono specialisti dei capelli ricci: taglio con metodo curly, booster idratante e piega che tiene anche a casa. E poi colore, schiariture e trattamenti, al Sassi Center di Mendrisio.",
+  "imgs": [
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tk33ztHFOQgdzn9jscXRsOzbbJ_88OQdHzVZQ1hC3ocKE0reNN5xM07YT98hE1FeqNRdeYX73bH4YLIUuz4LYfdVp0yrHO349EHgzb9x9XgJY_BrNPqExf8Wd-vdOoEEazGaeKm44nSMw=w1100",
+    "pos": "50% 30%",
+    "cap": "Curly Expert Cut",
+    "alt": "Capelli ricci lunghi dopo il taglio curly"
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RIweIAKf-5M2rOjDWCkVGN2r8Fl6B4pLPtZ_6mMVBLCCuXdIfFPfpTc8yAkWU4m43UcF6OsM4LFE92YxtOaZd9XAoHDaRPqnWEoD85g2i4o0dZVWC9uIE30-nKskgFaj8_vkVL-DHoUVc=w1100",
+    "pos": "50% 40%",
+    "cap": "Onde morbide",
+    "alt": "Capelli castani mossi"
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SfqDkwZX62-VbFp8EyP7l2VRx_yK-NiVJTGtdEAMIwZKt1L54ecXNATUZajKlSM6qEyaA1vENsPVMCWf8fo6W0_C5W1hqhbZDG9Z68DynGEV5Lq5LCg05WmLQRrZb1ce62pmge4VQT3JEe=w1100",
+    "pos": "50% 35%",
+    "cap": "Ricci definiti",
+    "alt": "Ricci stretti e definiti"
+   }
+  ]
+ },
+ "badge": {
+  "ring": "Specialisti dei ricci",
+  "text": "Curly method"
+ },
+ "facts": [
+  [
+   "Mar – Sab",
+   "anche il giovedì fino alle 21"
+  ],
+  [
+   "Sassi Center",
+   "Via Angelo Maspoli 7"
+  ],
+  [
+   "Online",
+   "prenoti in un minuto"
+  ]
+ ],
+ "marquee": [
+  "Curly Expert Cut",
+  "Curly Booster",
+  "Colore",
+  "Airtouch",
+  "Nanoplastia",
+  "Mendrisio",
+  "Pieghe che durano"
+ ],
+ "servTitle": "Il listino, <em>chiaro</em>.",
+ "servTxt": "Prezzi e durate presi dalla vostra pagina di prenotazione. Il cliente sa subito cosa aspettarsi.",
+ "services": [
+  {
+   "group": "Ricci",
+   "tag": "La specialità",
+   "items": [
+    {
+     "n": "Curly Expert Cut",
+     "t": "30 min",
+     "p": "CHF 75",
+     "d": "Il taglio con metodo curly, ricciolo per ricciolo."
+    },
+    {
+     "n": "Curly Booster",
+     "t": "30 min",
+     "p": "CHF 50",
+     "d": "Il booster idratante che dà forma e morbidezza."
+    },
+    {
+     "n": "Piega media-lunga",
+     "t": "45 min",
+     "p": "CHF 45"
+    },
+    {
+     "n": "Piega corta",
+     "t": "45 min",
+     "p": "CHF 40"
+    }
+   ]
+  },
+  {
+   "group": "Taglio",
+   "tag": "Donna e uomo",
+   "items": [
+    {
+     "n": "Taglio donna",
+     "t": "20 min",
+     "p": "CHF 50"
+    },
+    {
+     "n": "Taglio uomo",
+     "t": "45 min",
+     "p": "CHF 40"
+    },
+    {
+     "n": "Taglio + barba",
+     "t": "1 h",
+     "p": "CHF 50"
+    },
+    {
+     "n": "Solo barba",
+     "t": "30 min",
+     "p": "CHF 20"
+    },
+    {
+     "n": "Bambino 0–10",
+     "t": "45 min",
+     "p": "CHF 25"
+    },
+    {
+     "n": "Ragazzi 10–18",
+     "t": "45 min",
+     "p": "CHF 35"
+    }
+   ]
+  },
+  {
+   "group": "Colore",
+   "tag": "Colore",
+   "items": [
+    {
+     "n": "Colore completo",
+     "t": "2 h",
+     "p": "CHF 130"
+    },
+    {
+     "n": "Colore ricrescita",
+     "t": "1 h 45",
+     "p": "CHF 110"
+    },
+    {
+     "n": "Phytoterre naturali",
+     "t": "1 h 15",
+     "p": "CHF 130"
+    },
+    {
+     "n": "Tonalizzante",
+     "t": "1 h 15",
+     "p": "CHF 95"
+    }
+   ]
+  },
+  {
+   "group": "Schiariture",
+   "tag": "Biondi",
+   "items": [
+    {
+     "n": "Airtouch",
+     "t": "5 h",
+     "p": "CHF 400"
+    },
+    {
+     "n": "Complete Blonde",
+     "t": "2 h 30",
+     "p": "CHF 220"
+    },
+    {
+     "n": "Complete Blonde Deluxe",
+     "t": "4 h 30",
+     "p": "CHF 280"
+    },
+    {
+     "n": "Schiariture contouring",
+     "t": "1 h 30",
+     "p": "CHF 115"
+    },
+    {
+     "n": "Ritocco schiariture",
+     "t": "1 h 30",
+     "p": "CHF 160"
+    }
+   ]
+  },
+  {
+   "group": "Trattamenti",
+   "tag": "Cura",
+   "items": [
+    {
+     "n": "Laminazione effetto specchio",
+     "t": "15 min",
+     "p": "CHF 50"
+    },
+    {
+     "n": "Ossigeno terapia",
+     "t": "30 min",
+     "p": "CHF 50"
+    },
+    {
+     "n": "Oil therapy con massaggio relax",
+     "t": "30 min",
+     "p": "CHF 40"
+    },
+    {
+     "n": "Trattamento ristrutturante",
+     "t": "30 min",
+     "p": "CHF 40"
+    }
+   ]
+  },
+  {
+   "group": "Lisciature",
+   "tag": "Liscio",
+   "items": [
+    {
+     "n": "Bioplastia disciplinante",
+     "t": "3 h",
+     "p": "CHF 290"
+    },
+    {
+     "n": "Keratina lisciante",
+     "t": "3 h",
+     "p": "CHF 290"
+    },
+    {
+     "n": "Nanoplastia",
+     "t": "4 h",
+     "p": "CHF 350"
+    },
+    {
+     "n": "Permanente corti / medi / lunghi",
+     "t": "2–3 h",
+     "p": "da CHF 135"
+    }
+   ]
+  },
+  {
+   "group": "Extension",
+   "tag": "Volume",
+   "items": [
+    {
+     "n": "1 ciocca",
+     "t": "15 min",
+     "p": "CHF 35"
+    },
+    {
+     "n": "12 ciocche",
+     "t": "1 h",
+     "p": "CHF 400"
+    },
+    {
+     "n": "24 ciocche",
+     "t": "1 h 30",
+     "p": "CHF 800"
+    }
+   ]
+  }
+ ],
+ "servTodo": "",
+ "bookChips": [
+  "Curly Expert Cut",
+  "Curly Booster",
+  "Taglio donna",
+  "Taglio uomo",
+  "Colore",
+  "Schiariture",
+  "Piega",
+  "Trattamento"
+ ],
+ "galTitle": "Ricci, onde, <em>biondi</em>.",
+ "galTxt": "I lavori del salone, dalla vostra scheda Google. Tocca una foto per ingrandirla.",
+ "gallery": [
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tk33ztHFOQgdzn9jscXRsOzbbJ_88OQdHzVZQ1hC3ocKE0reNN5xM07YT98hE1FeqNRdeYX73bH4YLIUuz4LYfdVp0yrHO349EHgzb9x9XgJY_BrNPqExf8Wd-vdOoEEazGaeKm44nSMw=w900",
+   "cap": "Ricci lunghi, curly cut",
+   "h": "3/4"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SVQHPaWU5dTnK9BoyJ94v5TGHIzSRsFSy6zAnPRdQB0leWUlj-Wjj02NSCtvMS60zUc6u514AcBLA5b5wZGIdzwEISqsxCBW_M0AWftZL42nhNBWh9Nmd-K0mZHnhUH_XEKQ5g3NSP30M=w900",
+   "cap": "Bob liscio e lucido",
+   "h": "4/5"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QC8tzrLlawHUKrDTeffS66Fiwv9WvbtonP-lMA2AYajRJA1lhghMRm9T27xalxfxdkDoxtf8GzYL3K4XvbcCFxlKd9vEpt_IWs5Qvq7GaBLoo-EivA5I1nmqjDjTIPd8v7V70Xr6F3p2db=w900",
+   "cap": "Biondo freddo",
+   "h": "3/4"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/grass-cs/AABkmLc5th1Ed4hd_k4_HWvARx92yj6o6zfiyl4bGmQ8tO2cRuvFmBxOvs1JPrSiZMe4zuVArf3GUxw_w7Xsl4g3BlywbQ-9wjJThCK-QFio87Y0y1bBvuehA1EMQzrypgtsrz27iDg_i73k8X3c=w900",
+   "cap": "Ricci corti, definiti",
+   "h": "4/5"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RIweIAKf-5M2rOjDWCkVGN2r8Fl6B4pLPtZ_6mMVBLCCuXdIfFPfpTc8yAkWU4m43UcF6OsM4LFE92YxtOaZd9XAoHDaRPqnWEoD85g2i4o0dZVWC9uIE30-nKskgFaj8_vkVL-DHoUVc=w900",
+   "cap": "Onde castane",
+   "h": "3/4"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SfqDkwZX62-VbFp8EyP7l2VRx_yK-NiVJTGtdEAMIwZKt1L54ecXNATUZajKlSM6qEyaA1vENsPVMCWf8fo6W0_C5W1hqhbZDG9Z68DynGEV5Lq5LCg05WmLQRrZb1ce62pmge4VQT3JEe=w900",
+   "cap": "Ricci afro",
+   "h": "1/1"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RQ0npyot1wdaDSrpGF6zqpUV_BrvybfHFMdlASblkNsdENHDi_w2R1Ezreehz3LKC-9f6hHGujKiQRs-tVTGQiT__lAnx0URDOFMvwJ-MkpoUCLFndgdWyHuwv6Yj1mVa1tm2Glqho4mgF=w900",
+   "cap": "Balayage biondo",
+   "h": "3/4",
+   "pos": "70% 50%"
+  }
+ ],
+ "galTodo": "",
+ "why": {
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RIweIAKf-5M2rOjDWCkVGN2r8Fl6B4pLPtZ_6mMVBLCCuXdIfFPfpTc8yAkWU4m43UcF6OsM4LFE92YxtOaZd9XAoHDaRPqnWEoD85g2i4o0dZVWC9uIE30-nKskgFaj8_vkVL-DHoUVc=w1100",
+  "pos": "50% 40%",
+  "alt": "Capelli mossi castani",
+  "title": "Niente più<br><em>rilavarli a casa</em>.",
+  "text": "Chi ha i ricci lo sa: trovare qualcuno che li capisca è difficile. Le clienti di Alessandro e Liana lo scrivono una dopo l'altra: finalmente un salone che sa cosa fare, vicino a casa.",
+  "points": [
+   [
+    "Consulenza prima di tutto",
+    "Si parte ascoltando: forma del viso, tipo di riccio, come li porti tutti i giorni."
+   ],
+   [
+    "Il metodo curly",
+    "Taglio ricciolo per ricciolo e booster idratante: la piega tiene anche dopo."
+   ],
+   [
+    "Ti senti a casa",
+    "Accoglienza calorosa e autentica, con la competenza di veri esperti."
+   ]
+  ]
+ },
+ "reviews": [
+  [
+   "Cercavo un salone specializzato nei ricci senza dover fare chilometri e finalmente l'ho trovato vicino a casa.",
+   "Chiara A.",
+   5
+  ],
+  [
+   "Finalmente non ho dovuto rilavare i capelli appena tornata a casa: ero soddisfatta della piega e del trattamento!",
+   "DivaDog",
+   5
+  ],
+  [
+   "Un ambiente dove ti senti a casa, ma con la qualità di veri esperti. Ogni volta esco soddisfatta e felice!",
+   "Carlotta M.",
+   5
+  ],
+  [
+   "Il primo parrucchiere che ti capisce: esci dal salone come ti immaginavi.",
+   "Marika C.",
+   5
+  ],
+  [
+   "Alessandro ti dà consigli sul taglio in base alla forma del viso e su come curare lo styling.",
+   "Nicolas M.",
+   5
+  ]
+ ],
+ "book": {
+  "title": "Scegli il servizio,<br><em>poi l'orario</em>.",
+  "text": "Puoi prenotare online vedendo gli orari liberi, oppure mandare una richiesta su WhatsApp: vi rispondono Alessandro e Liana.",
+  "todo": ""
+ },
+ "doveTitle": "Sassi Center, <em>Mendrisio</em>"
+}

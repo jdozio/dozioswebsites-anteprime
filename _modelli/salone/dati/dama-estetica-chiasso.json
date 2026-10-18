@@ -1,0 +1,275 @@
+{
+ "name": "DaMa Estetica e massaggi",
+ "short": "DaMa",
+ "logoTag": "Estetica · Massaggi",
+ "city": "Chiasso",
+ "kind": "beauty",
+ "fonts": "elegante",
+ "walkin": false,
+ "theme": {
+  "dark": false,
+  "bg": "#FBF6F3",
+  "bg2": "#FFFFFF",
+  "bg3": "#F2E6E1",
+  "ink": "#2F2A2B",
+  "ink2": "#7A6E6C",
+  "acc": "#B4707C",
+  "acc2": "#F1CFD3",
+  "on": "#FFFFFF",
+  "line": "#EEDFDA"
+ },
+ "desc": "DaMa Estetica e massaggi, Via Emilio Bossi 50 a Chiasso. Pulizia viso, pedicure, smalto semipermanente, cerette, pressoterapia e massaggi. Tel. 079 228 44 54.",
+ "ogImage": "https://images.unsplash.com/photo-1540555700478-4be289fbecef&h=630&w=1200?w=1200&q=80&auto=format&fit=crop",
+ "phone": "+41 79 228 44 54",
+ "phoneLabel": "079 228 44 54",
+ "whatsapp": true,
+ "address": "Via Emilio Bossi 50, 6830 Chiasso",
+ "mapsQuery": "Estetica e massaggi DaMa, Via Emilio Bossi 50, Chiasso",
+ "lat": 45.8370054,
+ "lng": 9.0316969,
+ "hours": {
+  "0": null,
+  "1": [
+   [
+    "09:00",
+    "19:30"
+   ]
+  ],
+  "2": [
+   [
+    "09:00",
+    "19:30"
+   ]
+  ],
+  "3": [
+   [
+    "09:00",
+    "19:30"
+   ]
+  ],
+  "4": [
+   [
+    "09:00",
+    "19:30"
+   ]
+  ],
+  "5": [
+   [
+    "09:00",
+    "19:30"
+   ]
+  ],
+  "6": [
+   [
+    "09:00",
+    "19:30"
+   ]
+  ]
+ },
+ "slotStep": 30,
+ "draftNote": "recensioni dalla scheda Google, foto in parte di esempio, testi da completare insieme",
+ "hero": {
+  "title": "Un'ora <em>solo</em><br>per te.",
+  "sub": "Pulizia viso, pedicure, smalto semipermanente, cerette, pressoterapia e massaggi. In un centro pulitissimo e accogliente in Via Emilio Bossi, dove ti senti coccolata dal primo minuto.",
+  "stock": true,
+  "imgs": [
+   {
+    "img": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&q=80&auto=format&fit=crop",
+    "pos": "50% 50%",
+    "cap": "Relax",
+    "alt": "Flacone di crema e tulipani rosa"
+   },
+   {
+    "img": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1200&q=80&auto=format&fit=crop",
+    "pos": "50% 40%",
+    "cap": "Pulizia viso",
+    "alt": "Trattamento viso"
+   },
+   {
+    "img": "https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=1200&q=80&auto=format&fit=crop",
+    "pos": "50% 50%",
+    "cap": "Massaggi",
+    "alt": "Massaggio con pietre e fiori"
+   }
+  ]
+ },
+ "badge": {
+  "ring": "Estetica e massaggi · Chiasso",
+  "text": "Mani fatate"
+ },
+ "facts": [
+  [
+   "Lun – Sab",
+   "9:00 – 19:30"
+  ],
+  [
+   "Chiasso",
+   "Via Emilio Bossi 50"
+  ],
+  [
+   "Su WhatsApp",
+   "prenoti in un minuto"
+  ]
+ ],
+ "marquee": [
+  "Pulizia viso",
+  "Pedicure",
+  "Smalto semipermanente",
+  "Cerette",
+  "Pressoterapia",
+  "Massaggi",
+  "Chiasso"
+ ],
+ "servTitle": "Tutto quello che ti <em>serve</em>.",
+ "servTxt": "I trattamenti di cui parlano le clienti. Durate e prezzi li inseriamo insieme.",
+ "services": [
+  {
+   "group": "Viso",
+   "tag": "Pelle",
+   "items": [
+    {
+     "n": "Pulizia viso",
+     "d": "Pelle pulita e luminosa, con i consigli giusti per la tua pelle."
+    }
+   ]
+  },
+  {
+   "group": "Mani e piedi",
+   "tag": "Cura",
+   "items": [
+    {
+     "n": "Pedicure",
+     "d": "Con una mano delicatissima: c'è chi viene da anni solo per questo."
+    },
+    {
+     "n": "Smalto semipermanente",
+     "d": "Mani in ordine per settimane."
+    }
+   ]
+  },
+  {
+   "group": "Epilazione",
+   "tag": "Ceretta",
+   "items": [
+    {
+     "n": "Cerette",
+     "d": "Veloci e delicate, in un ambiente pulitissimo."
+    }
+   ]
+  },
+  {
+   "group": "Corpo",
+   "tag": "Benessere",
+   "items": [
+    {
+     "n": "Pressoterapia",
+     "d": "Prima il relax con il macchinario, poi un breve massaggio di linfodrenaggio e tonificazione sulla zona trattata."
+    },
+    {
+     "n": "Massaggi",
+     "d": "Per staccare davvero: \"ha le mani fatate\", scrive una cliente."
+    }
+   ]
+  }
+ ],
+ "servTodo": "il listino completo con durate e prezzi, ed eventuali pacchetti (per esempio più sedute di pressoterapia).",
+ "galTitle": "Il <em>centro</em>.",
+ "galTxt": "La cabina, le mani appena sistemate, i prodotti. Le foto segnate «di esempio» danno solo l'idea: andranno sostituite con le vostre.",
+ "gallery": [
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q71ocDLh3E-Kp6fUsMRSxTe2GDkhqk1I9zDSO0N1MSn_3skKx0llh5R8LbMdw9jkpxhOHiKpIR5TDTm6RYxLvag67fSNvHWG-e55U7SxOWbX2EXhEJX8GICRx5rMmZxDRxPDkf9I3UHkCV=w900",
+   "cap": "La cabina",
+   "h": "4/5"
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1552693673-1bf958298935?w=900&q=80&auto=format&fit=crop",
+   "cap": "Pulizia viso",
+   "h": "3/4",
+   "stock": true
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SF2vuVzbqyl0i4QyYQEk8NPKNwMxNht_NRPIfMNpbBx04UiqIbwX4Gk0iB4qHd1xum_013Avit9Z9lkQfJlZQajwOqmbLUDQ9OnMUGGnx2sSQ0NrxJzgh-I73okO7FWbWOhmv0=w900",
+   "cap": "Semipermanente",
+   "h": "1/1"
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1745327883508-b6cd32e5dde5?w=900&q=80&auto=format&fit=crop",
+   "cap": "Massaggio",
+   "h": "4/5",
+   "stock": true
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=900&q=80&auto=format&fit=crop",
+   "cap": "Pedicure",
+   "h": "3/4",
+   "stock": true
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S4OaepCJmw_kUussB0cktlTnn7Tchgm04ik1pekjhVOmLfZGXGrgf4eHnTnaUWDFJmdRzqY4YCOKsFs1xHSZQ1tSYq6pUsGVZOVKH7GayWh8n4EXKCtXrxpjXcuZuFnx2z7FLL=w900",
+   "cap": "I prodotti",
+   "h": "4/5"
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=900&q=80&auto=format&fit=crop",
+   "cap": "Relax",
+   "h": "1/1",
+   "stock": true
+  }
+ ],
+ "galTodo": "quelle segnate «Foto di esempio» servono solo a dare l'idea. Nel sito vero andranno le vostre: la cabina, i lavori, i prodotti, fotografati bene e con buona luce.",
+ "why": {
+  "img": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1200&q=80&auto=format&fit=crop",
+  "pos": "50% 40%",
+  "stock": true,
+  "alt": "Trattamento viso",
+  "title": "Clienti <em>da anni</em>.",
+  "text": "Molte clienti scrivono che si affidano a voi da anni. Per la pedicure, la pressoterapia, la pulizia viso: tornano perché qui si sentono a casa.",
+  "points": [
+   [
+    "Una mano delicata",
+    "È la frase che ritorna di più nelle recensioni, insieme a \"professionale\"."
+   ],
+   [
+    "Pulito e curato",
+    "Un centro pulitissimo, curato nei minimi dettagli, che mette subito in relax."
+   ],
+   [
+    "Il consiglio giusto",
+    "Ti propongono i trattamenti più adatti a te, senza spingere quelli che non servono."
+   ]
+  ]
+ },
+ "reviews": [
+  [
+   "Un posto speciale dove mi sento sempre coccolata. Mi consiglia sempre i trattamenti più adeguati in base alle mie esigenze!",
+   "Eleonora D.",
+   5
+  ],
+  [
+   "Dopo una prima parte di totale relax con il macchinario, Federica esegue un breve massaggio di linfodrenaggio. Benessere assoluto!",
+   "Marzia C.",
+   5
+  ],
+  [
+   "Posto pulitissimo e molto accogliente. Federica ha una mano davvero delicatissima e riesce a farti vivere un'esperienza di relax.",
+   "Jessica A.",
+   5
+  ],
+  [
+   "Vado in questo centro da anni e mi sono sempre trovata benissimo. Il centro è sempre in ordine e pulito. Grazie ragazze!",
+   "Alessia",
+   5
+  ],
+  [
+   "Martina è molto gentile ed accogliente. Una persona capace e professionale.",
+   "Stefania C.",
+   5
+  ]
+ ],
+ "book": {
+  "title": "Scegli il trattamento,<br><em>poi il giorno</em>.",
+  "text": "La richiesta arriva su WhatsApp già scritta. Ti rispondiamo noi per confermare l'orario.",
+  "todo": "se preferite, qui si può collegare un'agenda online con gli orari liberi."
+ },
+ "doveTitle": "Via Emilio Bossi <em>50</em>"
+}

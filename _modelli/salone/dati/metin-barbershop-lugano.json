@@ -1,0 +1,254 @@
+{
+ "name": "Metin Barbershop",
+ "short": "Metin",
+ "logoTag": "Barbershop",
+ "city": "Lugano",
+ "kind": "barber",
+ "fonts": "classico",
+ "walkin": true,
+ "theme": {
+  "dark": true,
+  "bg": "#0F0F11",
+  "bg2": "#17171A",
+  "bg3": "#202024",
+  "ink": "#F2EEE7",
+  "ink2": "#A7A199",
+  "acc": "#E0B566",
+  "acc2": "#5B4420",
+  "on": "#16120A",
+  "line": "#2B2A2E"
+ },
+ "desc": "Metin Barbershop, Viale Castagnola 21A a Lugano. Taper fade, tagli e barba senza appuntamento, dal lunedì al sabato. Tel. 078 332 98 85.",
+ "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rh1EELoTkEEOf6MNm8Zi8IsbKK9Tc5uK_5H6oopgu75UPd1CKhbRyLgRY16Ikht_fK-HCujL-lK_W4hmDjucsHyllyXlCLVrC-SPNYQu1lY9UNCrbzwRgcnLAOemZGoovqCoURjxBJrBpf=w1200-h630-p-k-no-rj-l80",
+ "phone": "+41 78 332 98 85",
+ "phoneLabel": "078 332 98 85",
+ "whatsapp": true,
+ "instagram": "metinbarbershop1",
+ "address": "Viale Castagnola 21A, 6900 Lugano",
+ "mapsQuery": "Metin Barbershop, Viale Castagnola 21A, Lugano",
+ "lat": 46.0064887,
+ "lng": 8.9654399,
+ "hours": {
+  "0": null,
+  "1": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "2": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "3": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "4": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "5": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "6": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ]
+ },
+ "draftNote": "foto e recensioni dalla scheda Google, testi da completare insieme",
+ "hero": {
+  "title": "Entri, ti siedi,<br>esci <em>nuovo</em>.",
+  "sub": "Taper fade, tagli puliti e un caffè mentre aspetti. A Castagnola, in Viale Castagnola 21A. Senza appuntamento: passi quando ti va.",
+  "imgs": [
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S0NTfAJeIonvuwyB93pIbJwSN813mQGT8KWU0SXPiTY5j0D3j7Cq2co1gHN8wtXX_jLPtd6tnbLmvsKw2iGmKKBDjKuRvMB6ANpxPfBO5ACdy5WNA06opruSks761aiHG0Q5BbTe-R40nu=w1100",
+    "pos": "60% 30%",
+    "cap": "Taper fade",
+    "alt": "Taglio con sfumatura sui lati"
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RePhdGO82S6Gao0uJdMjaK2TFrSpTKwmhL-WC5x78g_j7EUCjF_MQGDWApvyGxZlO0LpUb84evRhsURewb1CaSZwr0G1tUSzQwlLY2EflqszfxJNIa2CfDb1V-otLQj0sbtta5B1-COXtV=w1100",
+    "pos": "50% 35%",
+    "cap": "Disegno a mano",
+    "alt": "Sfumatura con disegno inciso sulla nuca"
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TIlMCR4lyixtPMsN24ZM-6QK-_k2ewgSvF3snkFcVo-1BpBtA-QWX4r5EHdjxG00YNaN5r3NAwCacBnhEcBB5Z8r4tFCLbUxZ8tDk0-BEHR-6UwmAit5v-tH2CPhyQS6Gg_ey_Q9Rw_a6O=w1100",
+    "pos": "50% 30%",
+    "cap": "Il risultato",
+    "alt": "Taglio finito visto da dietro"
+   }
+  ]
+ },
+ "badge": {
+  "ring": "Senza appuntamento",
+  "text": "Passa quando vuoi"
+ },
+ "facts": [
+  [
+   "Lun – Ven",
+   "9:00 – 19:00"
+  ],
+  [
+   "Sabato",
+   "9:00 – 18:00"
+  ],
+  [
+   "Castagnola",
+   "Viale Castagnola 21A"
+  ]
+ ],
+ "marquee": [
+  "Taper fade",
+  "Senza appuntamento",
+  "Viale Castagnola 21A",
+  "Lugano",
+  "Un caffè mentre aspetti",
+  "Anche per bambini"
+ ],
+ "servTitle": "Il <em>taglio</em>, fatto bene.",
+ "servTxt": "Quello che si vede nei lavori e che i clienti raccontano. I prezzi li aggiungiamo insieme.",
+ "services": [
+  {
+   "group": "Capelli",
+   "tag": "Uomo",
+   "items": [
+    {
+     "n": "Taglio",
+     "d": "Forbice e macchinetta, rifinito con calma."
+    },
+    {
+     "n": "Taper fade",
+     "d": "La sfumatura che sale pulita, la specialità della casa."
+    },
+    {
+     "n": "Disegni",
+     "d": "Linee e disegni incisi a mano sulla sfumatura."
+    }
+   ]
+  },
+  {
+   "group": "Bambini",
+   "tag": "Piccoli",
+   "items": [
+    {
+     "n": "Taglio bambino",
+     "d": "Ragazzi giovani e pazienti: anche chi non ama stare fermo esce contento."
+    }
+   ]
+  },
+  {
+   "group": "La casa",
+   "tag": "Sempre",
+   "items": [
+    {
+     "n": "Senza appuntamento",
+     "d": "Dal lunedì al sabato: passi e ti siedi."
+    },
+    {
+     "n": "Un caffè mentre aspetti",
+     "d": "Offerto, come in un barbiere di una volta."
+    }
+   ]
+  }
+ ],
+ "servTodo": "i servizi completi (barba, rasatura, combinazioni) con i prezzi. Su Google i clienti parlano di \"miglior prezzo di Lugano\": metterlo in chiaro qui aiuta.",
+ "galTitle": "Si vede <em>dal profilo</em>.",
+ "galTxt": "Sfumature pulite e linee nette. Tocca una foto per vederla da vicino.",
+ "gallery": [
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S0NTfAJeIonvuwyB93pIbJwSN813mQGT8KWU0SXPiTY5j0D3j7Cq2co1gHN8wtXX_jLPtd6tnbLmvsKw2iGmKKBDjKuRvMB6ANpxPfBO5ACdy5WNA06opruSks761aiHG0Q5BbTe-R40nu=w900",
+   "cap": "Taper fade, di lato",
+   "h": "3/4",
+   "pos": "60% 30%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RePhdGO82S6Gao0uJdMjaK2TFrSpTKwmhL-WC5x78g_j7EUCjF_MQGDWApvyGxZlO0LpUb84evRhsURewb1CaSZwr0G1tUSzQwlLY2EflqszfxJNIa2CfDb1V-otLQj0sbtta5B1-COXtV=w900",
+   "cap": "Linee incise a mano",
+   "h": "3/4"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rh1EELoTkEEOf6MNm8Zi8IsbKK9Tc5uK_5H6oopgu75UPd1CKhbRyLgRY16Ikht_fK-HCujL-lK_W4hmDjucsHyllyXlCLVrC-SPNYQu1lY9UNCrbzwRgcnLAOemZGoovqCoURjxBJrBpf=w900",
+   "cap": "La vetrina in Viale Castagnola",
+   "h": "4/5"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TIlMCR4lyixtPMsN24ZM-6QK-_k2ewgSvF3snkFcVo-1BpBtA-QWX4r5EHdjxG00YNaN5r3NAwCacBnhEcBB5Z8r4tFCLbUxZ8tDk0-BEHR-6UwmAit5v-tH2CPhyQS6Gg_ey_Q9Rw_a6O=w900",
+   "cap": "Il risultato, da dietro",
+   "h": "3/4"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SU78-w7MxSvkS-HRgtmKJLEznzEtCG3dV8Ul68f0TduDUnSneRlcBavL5iQJIUwKBPpfaB1FEHgxJqLTY5sg0TkYPMLrzqFYzT3d9344DbuINNyM-Y_TBt-esdwMqVfjEcEEJvqxgZ8eDy=w900",
+   "cap": "Sfumatura alta",
+   "h": "1/1",
+   "pos": "50% 12%"
+  }
+ ],
+ "galTodo": "queste sono le poche foto su Google. Con una decina di foto dei vostri tagli, fatte con buona luce, questa parte diventa il vostro biglietto da visita.",
+ "why": {
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rh1EELoTkEEOf6MNm8Zi8IsbKK9Tc5uK_5H6oopgu75UPd1CKhbRyLgRY16Ikht_fK-HCujL-lK_W4hmDjucsHyllyXlCLVrC-SPNYQu1lY9UNCrbzwRgcnLAOemZGoovqCoURjxBJrBpf=w1100",
+  "pos": "50% 60%",
+  "alt": "La vetrina di Metin Barbershop",
+  "title": "Aperto <em>da poco</em>,<br>già di casa.",
+  "text": "Il barbiere nuovo di Castagnola. Chi è passato parla di un'accoglienza calorosa, di un locale curato e di ragazzi giovani che ci mettono passione.",
+  "points": [
+   [
+    "Ti senti a tuo agio",
+    "Accoglienza calorosa fin dal primo minuto, e il caffè mentre aspetti."
+   ],
+   [
+    "Pazienza con i bambini",
+    "Anche i più piccoli, che di solito non amano stare fermi, escono contenti."
+   ],
+   [
+    "Pulito e veloce",
+    "Professionale, preciso, senza farti perdere la giornata."
+   ]
+  ]
+ },
+ "reviews": [
+  [
+   "Ottimo servizio e accoglienza davvero calorosa. Mi sono sentito a mio agio fin dal primo momento.",
+   "Tesfit A.",
+   5
+  ],
+  [
+   "Fanno tagli di capelli davvero bellissimi e lavorano con grande professionalità. L'ambiente è pulito e piacevole.",
+   "Doğan K.",
+   5
+  ],
+  [
+   "Ragazzi giovani, simpatici e molto pazienti con i bambini: hanno saputo mettere a suo agio mio figlio.",
+   "Leone T.",
+   5
+  ],
+  [
+   "Nell'attesa mi è stato offerto un caffè, cosa molto apprezzata. Tornerò sicuramente.",
+   "Nikolas G.",
+   5
+  ],
+  [
+   "Professionale, pulito e veloce. Consigliato.",
+   "Mark I.",
+   5
+  ]
+ ],
+ "book": {
+  "title": "Senza appuntamento.<br><em>Passa e basta.</em>",
+  "text": "Dal lunedì al venerdì dalle 9 alle 19, il sabato fino alle 18. Se vuoi essere sicuro di non aspettare, scrivi prima su WhatsApp.",
+  "todo": ""
+ },
+ "doveTitle": "Viale Castagnola <em>21A</em>"
+}
