@@ -129,5 +129,7 @@
   "Addio al celibato",
   "Festa"
  ],
- "fx": "vinyl"
+ "fx": "vinyl",
+ "logoImg": "foto/logo.webp",
+ "logoMark": "foto/mark.webp"
 }
