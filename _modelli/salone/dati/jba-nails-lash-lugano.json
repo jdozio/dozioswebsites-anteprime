@@ -1,0 +1,301 @@
+{
+ "name": "JBA Nails & Lash Bar",
+ "short": "JBA",
+ "logoTag": "Nails & Lash Bar",
+ "city": "Lugano",
+ "kind": "beauty",
+ "fonts": "elegante",
+ "walkin": false,
+ "theme": {
+  "dark": false,
+  "bg": "#F8F5F3",
+  "bg2": "#FFFFFF",
+  "bg3": "#EFE8E6",
+  "ink": "#1D191C",
+  "ink2": "#776D72",
+  "acc": "#7A5870",
+  "acc2": "#EADCE5",
+  "on": "#FFFFFF",
+  "line": "#ECE3E2"
+ },
+ "sig": "lash",
+ "sigText": "JBA",
+ "sigSub": "Nails & Lash Bar",
+ "desc": "JBA Nails & Lash Bar, Via Besso 45 a Lugano. Unghie, lash extension, trattamenti viso e corpo, epilazione laser. Tel. 091 967 63 30.",
+ "ogImage": "https://images.unsplash.com/photo-1639629509821-c54cdd984227?w=1200&h=630&q=80&auto=format&fit=crop",
+ "phone": "+41 91 967 63 30",
+ "phoneLabel": "091 967 63 30",
+ "whatsapp": false,
+ "instagram": "jbanailandlashbar",
+ "address": "Via Besso 45, 6900 Lugano",
+ "mapsQuery": "JBA Nails & Lash Bar, Via Besso 45, Lugano",
+ "lat": 46.009447,
+ "lng": 8.938796,
+ "hours": {
+  "0": null,
+  "1": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "2": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "3": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "4": [
+   [
+    "09:00",
+    "20:30"
+   ]
+  ],
+  "5": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "6": [
+   [
+    "09:30",
+    "15:30"
+   ]
+  ]
+ },
+ "slotStep": 30,
+ "draftNote": "recensioni e orari dalla scheda Google, servizi da Instagram, foto di esempio da sostituire con le vostre",
+ "hero": {
+  "trio": true,
+  "stock": true,
+  "title": "Mani curate,<br><em>sguardo</em> che incanta.",
+  "sub": "Nail bar, lash extension, viso, corpo e laser in Via Besso a Lugano. Un centro estetico completo, con un team preparato che parla la tua lingua.",
+  "imgs": [
+   {
+    "img": "https://images.unsplash.com/photo-1762373349045-c2decd4ec3f3?w=900&q=80&auto=format&fit=crop",
+    "pos": "50% 60%",
+    "alt": "French manicure"
+   },
+   {
+    "img": "https://images.unsplash.com/photo-1639629509821-c54cdd984227?w=900&q=80&auto=format&fit=crop",
+    "pos": "50% 50%",
+    "alt": "Ciglia con extension"
+   },
+   {
+    "img": "https://images.unsplash.com/photo-1704757671022-e023c45c9d2f?w=900&q=80&auto=format&fit=crop",
+    "pos": "50% 50%",
+    "alt": "Mani curate con orchidee"
+   }
+  ]
+ },
+ "badge": {
+  "ring": "JBA · Nails & Lash Bar · Lugano",
+  "text": "Book now"
+ },
+ "facts": [
+  [
+   "Lun – Sab",
+   "giovedì fino alle 20:30"
+  ],
+  [
+   "Lugano",
+   "Via Besso 45"
+  ],
+  [
+   "Multilingua",
+   "italiano e non solo"
+  ]
+ ],
+ "marquee": [
+  "Nails",
+  "Lash extension",
+  "Trattamenti viso",
+  "Corpo",
+  "Laser a diodo",
+  "Via Besso 45"
+ ],
+ "servTitle": "Dalle unghie<br><em>allo sguardo</em>.",
+ "servTxt": "I servizi che JBA mostra ogni giorno su Instagram. Durate e prezzi li inseriamo insieme.",
+ "services": [
+  {
+   "group": "Nails",
+   "tag": "Mani",
+   "items": [
+    {
+     "n": "Manicure e semipermanente",
+     "d": "Dai nude eleganti ai colori di stagione."
+    },
+    {
+     "n": "Ricostruzione e refill",
+     "d": "Forme curate, che durano."
+    },
+    {
+     "n": "Nail art",
+     "d": "French classica, ombré, decorazioni d'autunno e di Halloween."
+    }
+   ]
+  },
+  {
+   "group": "Lash",
+   "tag": "Sguardo",
+   "items": [
+    {
+     "n": "Lash extension",
+     "d": "Classiche o effetto volume, per uno sguardo che si nota."
+    },
+    {
+     "n": "Refill extension",
+     "d": "Per mantenere le ciglia sempre piene."
+    }
+   ]
+  },
+  {
+   "group": "Viso",
+   "tag": "Pelle",
+   "items": [
+    {
+     "n": "Trattamenti Surgic Touch",
+     "d": "Trattamenti viso professionali."
+    },
+    {
+     "n": "Moulage Revér",
+     "d": "Il trattamento viso in maschera modellante."
+    },
+    {
+     "n": "Tecnologia frazionata",
+     "d": "Una delle novità d'autunno."
+    }
+   ]
+  },
+  {
+   "group": "Corpo e laser",
+   "tag": "Benessere",
+   "items": [
+    {
+     "n": "Rituali corpo Vagheggi",
+     "d": "Percorsi corpo con prodotti professionali."
+    },
+    {
+     "n": "Epilazione laser a diodo",
+     "d": "Per dire addio ai peli superflui."
+    }
+   ]
+  }
+ ],
+ "servTodo": "il listino con durate e prezzi, e le promo del momento (come quelle d'autunno su viso, corpo, laser e ciglia), che qui si possono mettere in evidenza.",
+ "galTitle": "I <em>lavori</em>.",
+ "galTxt": "Per ora foto di esempio: nel sito vero andranno i lavori del team, quelli che pubblicate ogni giorno su Instagram.",
+ "gallery": [
+  {
+   "img": "https://images.unsplash.com/photo-1683719312734-e31de63957ab?w=900&q=80&auto=format&fit=crop",
+   "cap": "Volume lashes",
+   "h": "4/5",
+   "stock": true
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1667207229735-266c430cca15?w=900&q=80&auto=format&fit=crop",
+   "cap": "French",
+   "h": "1/1",
+   "stock": true
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1735151226446-1d364b4adc2f?w=900&q=80&auto=format&fit=crop",
+   "cap": "Lash extension",
+   "h": "3/4",
+   "stock": true
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1517837317028-6ce34fd27c34?w=900&q=80&auto=format&fit=crop",
+   "cap": "Classy nails",
+   "h": "4/5",
+   "stock": true
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1683408640631-2c99fff964d7?w=900&q=80&auto=format&fit=crop",
+   "cap": "Trattamento viso",
+   "h": "1/1",
+   "stock": true
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1709477542153-5bedab2b5657?w=900&q=80&auto=format&fit=crop",
+   "cap": "Sguardo",
+   "h": "3/4",
+   "stock": true
+  }
+ ],
+ "galTodo": "tutte le foto qui sono di esempio: le sostituiamo con i vostri lavori (unghie, ciglia, il centro).",
+ "why": {
+  "img": "https://images.unsplash.com/photo-1713085085470-fba013d67e65?w=1400&q=80&auto=format&fit=crop",
+  "pos": "50% 40%",
+  "stock": true,
+  "alt": "Trattamento viso",
+  "title": "Tutto quello che ti serve,<br><em>in un solo posto</em>.",
+  "text": "«Il più grande salone di bellezza di Lugano», scrive un cliente: unghie, ciglia, viso, corpo e laser, con un team che segui ogni giorno su Instagram.",
+  "points": [
+   [
+    "Clienti da anni",
+    "Più recensioni raccontano di frequentare il centro da molti anni."
+   ],
+   [
+    "Personale multilingua",
+    "Cortese, preparato, e parla la tua lingua."
+   ],
+   [
+    "Pacchetti e promo",
+    "Offerte e pacchetti di servizi di buon livello, anche stagionali."
+   ]
+  ]
+ },
+ "stats": [
+  [
+   "4,7",
+   "21 recensioni su Google",
+   1
+  ]
+ ],
+ "reviews": [
+  [
+   "Professionalità, gentilezza ed esperienza caratterizzano questo salone. Lo frequento da anni e lo consiglio.",
+   "Nicoletta R.",
+   5
+  ],
+  [
+   "Il più grande salone di bellezza di Lugano: unghie, ciglia, massaggi e tanto altro. Personale professionale e competente, consigliato.",
+   "Nicola Stefano M.",
+   5
+  ],
+  [
+   "Lo frequento da molti anni. Il personale è multilingua, cortese e preparato. Buone proposte per pacchetti di servizi.",
+   "Speranza F.",
+   4
+  ],
+  [
+   "Bellissimo centro ben gestito, con vari servizi di estetica e molti trattamenti moderni. Consigliato!",
+   "Elisa D.",
+   4
+  ]
+ ],
+ "bookChips": [
+  "Manicure / semipermanente",
+  "Ricostruzione",
+  "Nail art",
+  "Lash extension",
+  "Refill ciglia",
+  "Trattamento viso",
+  "Corpo",
+  "Laser"
+ ],
+ "book": {
+  "title": "Scegli il servizio,<br><em>poi il giorno</em>.",
+  "text": "Scegli cosa ti serve e quando: poi chiamaci e ti confermiamo l'orario.",
+  "todo": "se avete un numero WhatsApp o un'agenda online, la richiesta arriva lì già scritta."
+ },
+ "doveTitle": "Via Besso <em>45</em>"
+}

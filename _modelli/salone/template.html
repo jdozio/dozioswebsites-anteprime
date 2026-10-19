@@ -237,6 +237,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 @keyframes write{to{stroke-dashoffset:0}}
 @keyframes ink{to{fill:var(--ink);stroke-width:.4}}
 .stage.t.hasl{padding-top:120px}
+
+/* firma: ciglia */
+.lashsig{position:absolute;left:50%;top:-6%;transform:translateX(-50%);width:86%;z-index:5;pointer-events:none}
+.lashsig svg{width:100%;overflow:visible}
+.lashsig .lid,.lashsig .ls{fill:none;stroke:var(--ink);stroke-linecap:round}
+.lashsig .lid{stroke-width:3.2;stroke-dasharray:300;stroke-dashoffset:300}
+.lashsig .ls{stroke-width:2.2;stroke-dasharray:60;stroke-dashoffset:60}
+.lashsig .wm{font:500 66px var(--fd);letter-spacing:.32em;fill:var(--ink);opacity:0;transform:translateY(10px);transition:opacity 1.2s 1.9s,transform 1.2s 1.9s}
+.lashsig .tg{font:700 10.5px var(--fb);letter-spacing:.42em;fill:var(--acc);opacity:0;transition:opacity 1.2s 2.4s}
+.lashsig.go .lid{animation:draw 1.3s cubic-bezier(.6,.1,.3,1) .2s forwards}
+.lashsig.go .ls{animation:draw .5s ease-out forwards}
+.lashsig.go .wm{opacity:1;transform:none}
+.lashsig.go .tg{opacity:1}
+.lashsig .lg{transform-box:fill-box;transform-origin:50% 0;animation:flutter 5.5s ease-in-out 3.5s infinite}
+@keyframes flutter{0%,86%,100%{transform:scaleY(1)}90%{transform:scaleY(.55)}94%{transform:scaleY(1)}97%{transform:scaleY(.7)}}
+.stage.t.hasls{padding-top:150px}
+.stage.t.stock::after{content:"Foto di esempio";position:absolute;right:6px;bottom:-30px;background:rgba(0,0,0,.55);color:#fff;font:600 10.5px var(--fb);letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;border-radius:99px}
+@media (max-width:640px){.stage.t.hasls{padding-top:118px}.lashsig{width:92%;top:-3%}}
 /* firma: pennellata di smalto */
 .hero h1 em.pol{position:relative;color:var(--on);padding:0 .12em;margin:0 -.04em;white-space:nowrap;z-index:0;transition:color .4s}
 .hero h1 em.pol .br{position:absolute;left:-.12em;right:-.18em;top:.12em;bottom:-.06em;z-index:-1;color:var(--sw,var(--acc));transition:color .9s}
@@ -459,6 +477,15 @@ if(sig==='script'){
   var w=document.createElement('div');w.className='lsig';w.appendChild(svg('0 0 640 230','<text class="mono" x="320" y="190" text-anchor="middle">'+esc(D.sigMono||'')+'</text><text class="scr" x="320" y="150" text-anchor="middle">'+esc(D.sigText||D.short)+'</text>'));st.classList.add('hasl');st.insertBefore(w,st.firstChild);
   var start=function(){requestAnimationFrame(function(){w.classList.add('go')})};
   if(document.fonts&&document.fonts.load)Promise.race([document.fonts.load("120px 'Great Vibes'"),new Promise(function(r){setTimeout(r,2500)})]).then(start,start);else start()}
+
+if(sig==='lash'){
+  var bz=function(t,a,b,c,d){var u=1-t;return u*u*u*a+3*u*u*t*b+3*u*t*t*c+t*t*t*d};
+  var P=[[40,70],[110,125],[210,125],[280,70]],ls='';
+  for(var k=0;k<11;k++){var t=.08+k*.083,x=bz(t,P[0][0],P[1][0],P[2][0],P[3][0]),y=bz(t,P[0][1],P[1][1],P[2][1],P[3][1]),dx=3*((1-t)*(1-t)*(P[1][0]-P[0][0])+2*(1-t)*t*(P[2][0]-P[1][0])+t*t*(P[3][0]-P[2][0])),dy=3*((1-t)*(1-t)*(P[1][1]-P[0][1])+2*(1-t)*t*(P[2][1]-P[1][1])+t*t*(P[3][1]-P[2][1])),L=Math.hypot(dx,dy),tx=dx/L,ty=dy/L,nx=-ty,ny=tx,len=16+t*30;
+    ls+='<path class="ls" style="animation-delay:'+(1+k*.07).toFixed(2)+'s" d="M'+x.toFixed(1)+' '+y.toFixed(1)+' Q'+(x+nx*len*.65).toFixed(1)+' '+(y+ny*len*.65).toFixed(1)+' '+(x+nx*len+tx*len*.45).toFixed(1)+' '+(y+ny*len+ty*len*.45).toFixed(1)+'"/>'}
+  var wl=document.createElement('div');wl.className='lashsig';wl.appendChild(svg('0 0 320 230','<path class="lid" d="M40 70 C 110 125 210 125 280 70"/><g class="lg">'+ls+'</g><text class="wm" x="172" y="208" text-anchor="middle">'+esc(D.sigText||D.short)+'</text><text class="tg" x="160" y="228" text-anchor="middle">'+esc((D.sigSub||'').toUpperCase())+'</text>'));
+  st.classList.add('hasls');st.insertBefore(wl,st.firstChild);setTimeout(function(){wl.classList.add('go')},250)}
+if(D.hero.stock&&D.hero.trio)st.classList.add('stock');
 if(sig==='polish'){
   var em=document.querySelector('#heroTitle em'),SW=D.swatches||[['Blu','#2E44B8'],['Rosa','#D4567F'],['Salvia','#6F8F6A'],['Rosso','#B81E2E']];
   if(em){em.classList.add('pol');var br=document.createElement('span');br.className='br';br.setAttribute('aria-hidden','true');
