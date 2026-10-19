@@ -213,3 +213,12 @@ Di notte (cloud) Google, Google Maps e le foto delle schede NON sono raggiungibi
 - WhatsApp memorizza l'anteprima di un link la prima volta che lo vede. I link mandati prima del 15.10 13:07 (quando sono stati aggiunti i tag) restano senza foto.
 - Nei promemoria aggiungere sempre `?p=1` in fondo al link (es. `.../agata-hair/?p=1`): per WhatsApp è un link nuovo e rilegge la foto. Al secondo invio usare `?p=2`, ecc.
 - Immagine dell'anteprima sotto i 300 KB, in JPEG (`-rj-l80` sulle foto Google).
+
+## STANDARD DI QUALITÀ (Jacopo, 19.10.2026) – obbligatorio per ogni sito
+Riferimento di livello: jungle-club-lugano. Mai consegnare siti "ordinati ma uguali".
+1. Prima di costruire: guardare 2–3 dei migliori siti del settore (anche template Framer/Awwwards) e annotare cosa riprendere.
+2. Ogni sito ha un ELEMENTO FIRMA preso dal locale (logo, concept, prodotto): es. gorilla+liane Jungle, linee a mano libera No Secrets, peonia Ambra, pennellata di smalto Nail and More, logo corsivo che si scrive Beauty Place. Il modello di settore dà la struttura, la firma lo rende unico.
+3. Foto: solo foto nitide e coerenti col testo vicino (mai unghie rovinate sotto "forme perfette"). Nei riquadri grandi solo foto ad alta risoluzione (rapporto pixel/visualizzazione ≥1 a 2x); altrimenti foto di esempio Unsplash con etichetta.
+4. Controllo prima di consegnare: sito ONLINE, scorso tutto su mobile (e desktop), ogni foto guardata nel suo riquadro, inquadrature, modulo prenotazione con voci sensate, nessun errore JS.
+5. Se una richiesta di Jacopo è ambigua ("il primo", "quello"): una domanda veloce, non indovinare.
+6. Modello salone v2 (_modelli/salone): trio di archi (hero.trio), firme D.sig = lines | peony | script | polish, D.stats, D.apptOnly, D.bookChips.
