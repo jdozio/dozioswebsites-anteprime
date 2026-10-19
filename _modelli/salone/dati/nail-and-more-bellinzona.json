@@ -8,15 +8,15 @@
  "walkin": false,
  "theme": {
   "dark": false,
-  "bg": "#F7F7FB",
+  "bg": "#FAF6F1",
   "bg2": "#FFFFFF",
-  "bg3": "#E8EBF8",
-  "ink": "#1D2033",
-  "ink2": "#6C7088",
-  "acc": "#2E44B8",
-  "acc2": "#D9DEFA",
+  "bg3": "#F1E7DC",
+  "ink": "#2A211D",
+  "ink2": "#7D6F66",
+  "acc": "#A0714A",
+  "acc2": "#EBDCCB",
   "on": "#FFFFFF",
-  "line": "#E1E4F2"
+  "line": "#ECE1D5"
  },
  "desc": "Nail and More di Giusi Vasile, Viale Portone 15 a Bellinzona. Ricostruzione unghie, semipermanente e nail art. Tel. 079 251 14 42.",
  "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rv9g9H6YcWrbYNSJNMaGPEYjeCyme4GeS6Ry4QRPic_B7ghBgWIi9c3GUu1v6eshjKX1g9ILKp7nNvqarclVBcPiqFLrSHL8zGliHCnZ5srpTq2AM8E306EGgdpM7Fm5-x9bu4=w1200-h630-k-no",
@@ -193,9 +193,9 @@
  ],
  "galTodo": "qui andranno i lavori più belli, presi dal vostro telefono o da Instagram, e una foto dello studio.",
  "why": {
-  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TcuNJpr8lqDexwOwelt3ECuUvkFqHcIXHJ6KqVL6vz5qsH3L_lMvdpo4o5d39aXnU_WFPjzQyHHA6SJESh_kJNCdmEnAxOmPfc_11Vzxd4PG2ohsU8HqBkHdbtTxVpaHNFOvs=w1200",
+  "img": "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=1400&q=80&auto=format&fit=crop",
   "pos": "50% 50%",
-  "alt": "Unghie naturali",
+  "alt": "Manicure in corso",
   "title": "Precisione,<br><em>e un sorriso</em>.",
   "text": "«Non ti lascia mai andare via senza un lavoro perfetto»: Giusi e il suo staff sono pazienti, precise e sempre disponibili, in un ambiente sereno e accogliente.",
   "points": [
@@ -211,7 +211,8 @@
     "A tuo agio",
     "Anche se «sei un disastro con le unghie», una soluzione si trova sempre."
    ]
-  ]
+  ],
+  "stock": true
  },
  "reviews": [
   [

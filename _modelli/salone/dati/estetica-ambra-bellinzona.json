@@ -194,9 +194,9 @@
  ],
  "galTodo": "possiamo aggiungere foto della cabina e dei trattamenti viso, se ne avete.",
  "why": {
-  "img": "foto/sfumate.webp",
-  "pos": "50% 75%",
-  "alt": "Unghie sfumate pastello",
+  "img": "https://images.unsplash.com/photo-1690749138086-7422f71dc159?w=1400&q=80&auto=format&fit=crop",
+  "pos": "50% 50%",
+  "alt": "Manicure",
   "title": "Da cliente<br><em>ad amica</em>.",
   "text": "Nelle recensioni ritorna sempre la stessa cosa: Ambra ascolta ogni richiesta, è delicata e si vede che ama quello che fa. E dopo un po' diventa un'amica.",
   "points": [
@@ -212,7 +212,8 @@
     "Relax vero",
     "Un ambiente rilassante e anche divertente."
    ]
-  ]
+  ],
+  "stock": true
  },
  "reviews": [
   [
