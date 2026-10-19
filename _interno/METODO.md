@@ -221,7 +221,7 @@ Riferimento di livello: jungle-club-lugano. Mai consegnare siti "ordinati ma ugu
 3. Foto: solo foto nitide e coerenti col testo vicino (mai unghie rovinate sotto "forme perfette"). Nei riquadri grandi solo foto ad alta risoluzione (rapporto pixel/visualizzazione ≥1 a 2x); altrimenti foto di esempio Unsplash con etichetta.
 4. Controllo prima di consegnare: sito ONLINE, scorso tutto su mobile (e desktop), ogni foto guardata nel suo riquadro, inquadrature, modulo prenotazione con voci sensate, nessun errore JS.
 5. Se una richiesta di Jacopo è ambigua ("il primo", "quello"): una domanda veloce, non indovinare.
-6. Modello salone v2 (_modelli/salone): trio di archi (hero.trio), firme D.sig = lines | peony | script | polish, D.stats, D.apptOnly, D.bookChips.
+6. Modello salone v2 (_modelli/salone): trio di archi (hero.trio), firme D.sig = lines | peony | script | polish | lash, D.stats, D.apptOnly, D.bookChips.
 7. Hamburgerie / street food: usare LEFTY (lefty-lugano/) come riferimento. Oggi è un sito unico, non ancora un modello: alla prima nuova hamburgeria trasformarlo in _modelli/hamburgeria (template + dati JSON), mantenendo stile e qualità.
 8. Artigiani e servizi: elettricisti → pgimpianti-verbania/ (Giuseppe Pisillo; vedi anche gs-manutenzioni-gravedona/); giardinieri / manutenzione verde → vidales-giardini/. Sono siti unici: alla prima nuova attività del settore trasformarli in modello (_modelli/artigiano, _modelli/giardini).
 9. Tatuatori: luther-art-ink/ (Sergio) come riferimento; sito unico, da trasformare in _modelli/tattoo alla prima nuova attività.
