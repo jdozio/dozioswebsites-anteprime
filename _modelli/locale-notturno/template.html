@@ -159,6 +159,70 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s,transform .9s}
 .reveal.in{opacity:1;transform:none}
 
+
+/* ===== variante "vino": carta, acquerello, calice ===== */
+body.vino{--bg:#F4ECE1;--bg2:#FBF6EF;--bg3:#EDE2D3;--tx:#2A1B1D;--tx2:#7A6460;--line:#E3D5C4}
+body.vino::after{opacity:.08;mix-blend-mode:multiply}
+body.vino h1,body.vino h2,body.vino h3{font-family:'Fraunces',serif;font-weight:600;text-transform:none;letter-spacing:-.025em;line-height:1.02}
+body.vino .it{color:var(--acc)}
+body.vino .kicker{font:400 13px 'Special Elite',monospace;letter-spacing:.1em;color:var(--acc)}
+body.vino .kicker::before{box-shadow:none}
+body.vino .draft{background:#2A1B1D;color:#d8c8be;border:0}
+body.vino .draft b{color:#fff}
+body.vino header.solid{background:color-mix(in srgb,var(--bg) 90%,transparent)}
+body.vino .logo img{height:30px;width:auto;display:block}
+body.vino nav a:hover{color:var(--acc)}
+body.vino .hero{min-height:auto;background:radial-gradient(60% 50% at 78% 40%,color-mix(in srgb,var(--acc) 10%,transparent),transparent 70%),var(--bg);align-items:center}
+body.vino .hero::after,body.vino .hero .glow,body.vino .hero .bigname{display:none}
+body.vino .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:150px;padding-bottom:80px}
+body.vino .hero h1{font-size:clamp(46px,7vw,104px)}
+body.vino .hero h1 .it{display:inline;font-size:1em}
+body.vino .status{background:var(--bg2);border-color:var(--line);backdrop-filter:none}
+body.vino .hero .sub{color:var(--tx2)}
+body.vino .btn.ghost{box-shadow:inset 0 0 0 1.5px #D3C1AD;color:var(--tx)}
+body.vino .btn.acc{box-shadow:0 12px 28px -12px var(--acc)}
+body.vino .facts b,body.vino .tonight .hrs,body.vino .wd b,body.vino .fh b,body.vino .stepper output,body.vino .score b{font-family:'Fraunces',serif;text-transform:none;letter-spacing:-.01em}
+body.vino .marquee .belt{font:400 21px 'Special Elite',monospace;text-transform:none;letter-spacing:.02em}
+body.vino .tonight{background:linear-gradient(150deg,color-mix(in srgb,var(--acc) 13%,var(--bg2)),var(--bg2) 70%);border-color:color-mix(in srgb,var(--acc) 25%,var(--line))}
+body.vino .tonight p{color:var(--tx2)}
+body.vino .wd.td{box-shadow:0 0 0 1px var(--acc)}
+body.vino .chips button,body.vino .stepper,body.vino .form select,body.vino .form input{border-color:#D6C5B2}
+body.vino .form select,body.vino .form input{background:var(--bg2)}
+body.vino .preview{background:var(--bg2);color:var(--tx);border-color:var(--line);border-left:3px solid var(--acc)}
+body.vino .todo{border-color:#D3C1AD}
+body.vino .gi span.c{background:rgba(42,27,29,.62)}
+body.vino .score .s{color:var(--acc)}
+body.vino .map iframe{filter:sepia(.2) saturate(.85)}
+body.vino footer{color:var(--tx2)}
+body.vino .garr button{color:var(--tx)}
+body.vino .btn.wa{background:var(--tx);color:var(--bg)}
+body.vino .mbar{background:color-mix(in srgb,var(--bg) 95%,transparent)!important}
+.vart{position:relative;justify-self:center;width:min(100%,440px)}
+.pour{position:relative}
+.pour img{display:block;width:100%;height:auto}
+.pour .f{position:absolute;inset:0;-webkit-mask-image:linear-gradient(to top,#000 46%,transparent 54%);mask-image:linear-gradient(to top,#000 46%,transparent 54%);-webkit-mask-size:100% 220%;mask-size:100% 220%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:0 0;mask-position:0 0;transition:-webkit-mask-position 3.6s cubic-bezier(.5,.1,.3,1) .4s,mask-position 3.6s cubic-bezier(.5,.1,.3,1) .4s}
+.vart.go .pour .f{-webkit-mask-position:0 100%;mask-position:0 100%}
+.vart .word{display:block;width:70%;height:auto;margin:16px auto 0;clip-path:inset(0 100% 0 0);transition:clip-path 1.8s cubic-bezier(.6,.1,.3,1) 2.6s}
+.vart.go .word{clip-path:inset(0 0 0 0)}
+.stamp{position:absolute;right:-10px;top:2%;width:122px;height:122px;border-radius:50%;border:2px solid var(--acc);color:var(--acc);display:grid;place-items:center;text-align:center;transform:rotate(-12deg);background:color-mix(in srgb,var(--bg2) 75%,transparent);opacity:0;scale:1.7;transition:opacity .45s 3.9s,scale .55s cubic-bezier(.3,1.6,.5,1) 3.9s}
+.vart.go .stamp{opacity:.92;scale:1}
+.stamp svg{position:absolute;inset:0;width:100%;height:100%}
+.stamp text{font:400 9.5px 'Special Elite',monospace;letter-spacing:.12em;fill:currentColor;text-transform:uppercase}
+.stamp b{font:600 26px/1 'Fraunces',serif;display:block}
+.stamp b small{display:block;font:400 10px 'Special Elite',monospace;letter-spacing:.1em;margin-top:2px}
+.stain{position:absolute;width:240px;height:240px;color:var(--acc);opacity:.15;pointer-events:none;z-index:0}
+.stain.s0{right:-70px;top:30px}.stain.s1{left:-80px;top:-50px}.stain.s2{right:-60px;top:-40px}
+section > .wrap{position:relative;z-index:1}
+@media (max-width:980px){body.vino .hero .wrap{grid-template-columns:1fr;gap:40px;padding-top:130px}}
+@media (max-width:640px){
+  body.vino .hero .wrap{padding-bottom:70px}
+  .vart{width:86%}
+  .stamp{width:96px;height:96px;right:-18px}
+  .stamp b{font-size:21px}
+  .stamp text{font-size:8.6px}
+  .stain{width:170px;height:170px}
+}
+
 @media (max-width:980px){
   nav{display:none}
   .st-grid,.pbox,.info .wrap{grid-template-columns:1fr}
@@ -298,7 +362,7 @@ function img(src,alt,cls){return src?'<img src="'+src+'" alt="'+esc(alt||'')+'" 
 $('draftName').textContent='Anteprima di sito preparata per '+D.name;
 $('logo').textContent=D.short||D.name;
 $('hcall').href=$('mCall').href='tel:+'+tel;$('hcall').textContent=D.phoneLabel;
-$('mWa').href='https://wa.me/'+tel;
+var NOWA=D.whatsapp===false;if(NOWA&&D.email){$('mWa').href='mailto:'+D.email;$('mWa').textContent='Email';$('mWa').removeAttribute('target');$('send').textContent='Invia la richiesta per email';$('send').removeAttribute('target')}else $('mWa').href='https://wa.me/'+tel;
 var mapUrl='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(D.mapsQuery);
 $('heroMap').href=mapUrl;
 if(D.hero.img){$('heroBg').innerHTML='<img src="'+D.hero.img+'" alt="'+esc(D.hero.alt||D.name)+'" style="object-position:'+(D.hero.pos||'50% 50%')+'">'}
@@ -321,6 +385,18 @@ $('links').innerHTML='<a class="btn acc" href="'+mapUrl+'" target="_blank" rel="
 if(D.infoTodo)$('infoTodo').innerHTML='<b>Da completare insieme:</b> '+esc(D.infoTodo);else $('infoTodo').hidden=true;
 $('map').src='https://www.google.com/maps?q='+encodeURIComponent(D.mapsQuery)+'&output=embed';
 $('foot').textContent='© '+D.name+' · '+D.city;
+
+/* variante vino */
+if(D.style==='vino'){
+  document.body.classList.add('vino');
+  var fl=document.createElement('link');fl.rel='stylesheet';fl.href='https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Special+Elite&display=swap';document.head.appendChild(fl);
+  if(D.logoImg)$('logo').innerHTML='<img src="'+D.logoImg+'" alt="'+esc(D.name)+'">';
+  var hw=document.querySelector('.hero .wrap'),vt=document.createElement('div');vt.className='vtxt';while(hw.firstChild)vt.appendChild(hw.firstChild);hw.appendChild(vt);
+  if(D.art){var A=D.art,art=document.createElement('div');art.className='vart';
+    art.innerHTML='<div class="pour"><img class="e" src="'+A.empty+'" alt=""><img class="f" src="'+A.full+'" alt="'+esc(A.alt||'')+'"></div>'+(A.word?'<img class="word" src="'+A.word+'" alt="'+esc(D.name)+'">':'')+(A.stamp?'<div class="stamp"><svg viewBox="0 0 100 100"><defs><path id="sp" d="M50,50 m-39,0 a39,39 0 1,1 78,0 a39,39 0 1,1 -78,0"/></defs><text><textPath href="#sp" textLength="240" lengthAdjust="spacing">'+esc(A.stampRing||'')+'</textPath></text></svg><b>'+esc(A.stamp)+'<small>'+esc(A.stampSub||'')+'</small></b></div>':'');
+    hw.appendChild(art);var ims=art.querySelectorAll('.pour img'),nl=0,go=function(){if(++nl>=ims.length)setTimeout(function(){art.classList.add('go')},150)};ims.forEach(function(im){if(im.complete)go();else{im.onload=go;im.onerror=go}})}
+  ['stasera','prenota','recensioni'].forEach(function(id,i){var sc=$(id);if(!sc)return;sc.style.position='relative';sc.insertAdjacentHTML('afterbegin','<svg class="stain s'+i+'" viewBox="0 0 200 200" aria-hidden="true"><defs><filter id="wf'+i+'"><feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="3" seed="'+(i*7+3)+'"/><feDisplacementMap in="SourceGraphic" scale="16"/></filter></defs><g filter="url(#wf'+i+')" fill="none" stroke="currentColor"><circle cx="100" cy="100" r="68" stroke-width="8" opacity=".6"/><circle cx="100" cy="100" r="62" stroke-width="2" opacity=".4"/><path d="M158 128 q 16 12 6 30" stroke-width="7" opacity=".45"/></g></svg>')})
+}
 /* orari (minuti; chiusura dopo mezzanotte = +1440) */
 function m(s){var p=s.split(':');return +p[0]*60+(+p[1]||0)}
 var H={};for(var k in D.hours){H[k]=D.hours[k]?[m(D.hours[k][0]),m(D.hours[k][1])]:null;if(H[k]&&H[k][1]<=H[k][0])H[k][1]+=1440}
@@ -353,7 +429,7 @@ $('pp').onclick=function(){pers=Math.min(40,pers+1);$('fPers').textContent=pers;
 ['fTime','fName'].forEach(function(id){$(id).addEventListener('input',msg)});
 function msg(){var x=days[sel],occ=document.querySelector('#fOcc [aria-pressed="true"]').textContent,n=$('fName').value.trim();
   var t=D.greet+',\nvorrei prenotare un tavolo per '+pers+(pers===1?' persona':' persone')+' '+(x.a===0?'stasera':x.a===1?'domani sera':G[x.d].toLowerCase()+' sera')+' verso le '+$('fTime').value+'.'+(occ&&occ!==D.occasions[0]?'\nOccasione: '+occ.toLowerCase()+'.':'')+'\n'+(n?'A nome '+n+'. ':'')+'Grazie!';
-  $('prev').textContent=t;$('send').href='https://wa.me/'+tel+'?text='+encodeURIComponent(t)}
+  $('prev').textContent=t;$('send').href=(NOWA&&D.email)?'mailto:'+D.email+'?subject='+encodeURIComponent('Prenotazione tavolo')+'&body='+encodeURIComponent(t):'https://wa.me/'+tel+'?text='+encodeURIComponent(t)}
 times();msg();
 /* effetti */
 var hdr=$('hdr');addEventListener('scroll',function(){hdr.classList.toggle('solid',scrollY>40)},{passive:true});
