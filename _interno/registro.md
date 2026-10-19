@@ -94,3 +94,10 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 - 2026-10-17 valutate (barbieri Bellinzona, nuovo criterio "bisogno di sito"): riserve Emporio Urban Barber Shop (5,0/13), Lady Bikers Barber Shop (5,0/9), Roj Barbershop (5,0/20) — da verificare sito e telefono
 
 - 2026-10-18 valutate su richiesta di Jacopo: Gambino Barber Shop (sito digitalone.site, solo fisso 091 923 98 53, 4,3/50: riserva, contatto di persona) · Salone Jasmine Breganzona (solo Facebook, fisso 091 966 03 18, 4,9/12: riserva) · Daniele Hair Boutique (non trovato su Maps a Lugano) · Beauty Line Chiasso (nessun sito, 076 693 95 55, 4,7/10: riserva) · EsteticArmonia (ha sito) · Leonor Beauty (ha sito)
+
+## Lista estetiste 19.10 (in attesa di scelta di Jacopo)
+- No Secrets Beauty Salon, Via G. Motta 7, Lugano. Titolare Noemi. 076 393 10 86. 4,9/57. Nessun sito. Aperto ~3 anni fa.
+- Estetica Ambra, Via Pratocarasso 26, Bellinzona. Titolare Ambra. 079 358 89 29. 5,0/9. Solo Instagram.
+- NAIL AND MORE di Giusi Vasile, Viale Portone 15, Bellinzona. 079 251 14 42. 4,9/29. Solo Instagram.
+- Beauty Place di Francesca Gori, Piazza Indipendenza 6, Bellinzona. 078 327 03 89. 5,0/2 (nuova). Solo Treatwell.
+- Scartate: DAMA Wellness Lugano (team, nessun nome titolare), Beauty Line Chiasso (nome titolare da trovare), Tiaré (fisso).
