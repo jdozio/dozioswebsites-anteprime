@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Beauty Place di Francesca Gori · Bellinzona</title>
+<meta name="description" content="Beauty Place di Francesca Gori, Piazza Indipendenza 6 a Bellinzona. Trattamenti viso, laminazione ed extension ciglia, manicure, pedicure, massaggi ed epilazione. Tel. 078 327 03 89.">
+<!-- anteprima link (WhatsApp) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Jacopo Dozio · siti web">
+<meta property="og:title" content="Beauty Place di Francesca Gori · anteprima del nuovo sito">
+<meta property="og:description" content="Beauty Place di Francesca Gori, Piazza Indipendenza 6 a Bellinzona. Trattamenti viso, laminazione ed extension ciglia, manicure, pedicure, massaggi ed epilazione. Tel. 078 327 03 89.">
+<meta property="og:url" content="https://jdozio.github.io/dozioswebsites-anteprime/beauty-place-bellinzona/">
+<meta property="og:image" content="https://jdozio.github.io/dozioswebsites-anteprime/beauty-place-bellinzona/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Beauty Place di Francesca Gori">
+<meta name="twitter:card" content="summary_large_image">
+<!-- /anteprima link -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FCF7F6;--bg2:#FFFFFF;--bg3:#F5E6E6;--ink:#272123;--ink2:#7E6F72;--acc:#B9727F;--acc2:#F2D7DB;--on:#FFFFFF;--line:#EEDFDF;--fd:'Cormorant Garamond',serif;--fb:'Nunito Sans',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--fb);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;cursor:pointer;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--fd);font-weight:500;line-height:1.02;letter-spacing:-.015em}
+h2{font-size:clamp(40px,5.6vw,76px)}
+h2 em,h1 em{font-style:italic;color:var(--acc)}
+.k{display:inline-flex;align-items:center;gap:12px;font:700 12px var(--fb);letter-spacing:.28em;text-transform:uppercase;color:var(--acc)}
+.k::before{content:"";width:28px;height:1.5px;background:currentColor}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 26px;border-radius:var(--r,999px);font:700 14px var(--fb);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:1.5px solid var(--acc);transition:transform .25s,background .25s,color .25s,box-shadow .25s}
+.btn.solid{background:var(--acc);color:var(--on)}
+.btn.solid:hover{transform:translateY(-2px);box-shadow:0 14px 30px -12px var(--acc)}
+.btn.line{color:var(--ink);border-color:var(--line)}
+.btn.line:hover{border-color:var(--acc);color:var(--acc)}
+.todo{border:1.5px dashed var(--line);border-radius:16px;padding:13px 16px;font-size:14.5px;color:var(--ink2);margin-top:24px;line-height:1.55}
+.todo b{color:var(--acc)}
+.stock{position:relative}
+.stock::after{content:"Foto di esempio";position:absolute;right:10px;top:10px;z-index:3;background:rgba(0,0,0,.55);color:#fff;font:600 10.5px var(--fb);letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;border-radius:99px;backdrop-filter:blur(4px)}
+.frame.stock::after{top:auto;bottom:18px;right:18px}
+.draft{background:var(--ink);color:var(--bg);font-size:13px;text-align:center;padding:8px 16px;line-height:1.45;opacity:.96}
+.draft b{font-weight:700}
+body.dark .draft{background:#000;color:#cfc8bf}
+
+header{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+.logo{font:600 26px/1 var(--fd);text-decoration:none;letter-spacing:-.01em}
+.logo small{font:600 10.5px var(--fb);letter-spacing:.3em;text-transform:uppercase;color:var(--acc);margin-left:10px;vertical-align:middle}
+nav{display:flex;gap:30px;font-size:14.5px;font-weight:600}
+nav a{text-decoration:none;color:var(--ink2);transition:color .2s}
+nav a:hover{color:var(--acc)}
+header .btn{padding:11px 20px;font-size:12.5px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:60px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center;min-height:min(78svh,760px)}
+.status{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--bg2);padding:8px 16px 8px 12px;border-radius:99px;font-size:13.5px;font-weight:600}
+.status i{width:8px;height:8px;border-radius:50%;background:#9a928a}
+.status.open i{background:#3CC47C;box-shadow:0 0 0 0 rgba(60,196,124,.55);animation:ping 1.8s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 9px rgba(60,196,124,0)}100%{box-shadow:0 0 0 0 rgba(60,196,124,0)}}
+.hero h1{font-size:clamp(54px,7.6vw,118px);margin:26px 0 22px}
+.hero .sub{font-size:clamp(17px,1.4vw,19.5px);color:var(--ink2);max-width:520px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.facts{display:flex;gap:36px;flex-wrap:wrap;margin-top:42px;padding-top:24px;border-top:1px solid var(--line)}
+.facts div{font-size:13.5px;color:var(--ink2)}
+.facts b{display:block;font:500 25px/1.15 var(--fd);color:var(--ink)}
+.stage{position:relative;justify-self:center;width:min(100%,460px)}
+.frame{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--bg3);border-radius:var(--fr,28px)}
+body.beauty .frame{border-radius:999px 999px 28px 28px}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.07);transition:opacity 1.3s ease,transform 7s ease}
+.frame img.on{opacity:1;transform:scale(1)}
+.frame .cap{position:absolute;left:18px;bottom:18px;z-index:2;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(6px);padding:7px 14px;border-radius:99px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.badge{position:absolute;z-index:4;left:-46px;top:12%;width:132px;height:132px;border-radius:50%;background:var(--acc);color:var(--on);display:grid;place-items:center;text-align:center;font:500 19px/1.05 var(--fd);padding:14px;box-shadow:0 18px 40px -16px rgba(0,0,0,.45)}
+.badge svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 22s linear infinite}
+.badge text{font:700 9.6px var(--fb);letter-spacing:.22em;text-transform:uppercase;fill:currentColor}
+@keyframes spin{to{transform:rotate(360deg)}}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;pointer-events:none;z-index:-1}
+.blob.b1{width:420px;height:420px;background:var(--acc2);right:-120px;top:-80px;animation:drift 18s ease-in-out infinite alternate}
+.blob.b2{width:320px;height:320px;background:var(--acc);left:-140px;bottom:-120px;opacity:.18;animation:drift 22s ease-in-out infinite alternate-reverse}
+@keyframes drift{to{transform:translate(-40px,40px) scale(1.1)}}
+/* palo barbiere */
+.pole{display:none;position:absolute;right:-48px;top:50%;transform:translateY(-50%);width:30px;height:62%;flex-direction:column;align-items:center}
+body.barber .pole{display:flex}
+.pole .c1,.pole .c2{width:38px;height:18px;border-radius:19px 19px 5px 5px;background:linear-gradient(90deg,#6d5426,#f0d9a2 45%,#7d6230)}
+.pole .c2{border-radius:5px 5px 19px 19px}
+.pole .g{flex:1;width:26px;border-radius:3px;background:repeating-linear-gradient(-45deg,#C8322F 0 11px,#fff 11px 20px,#2B4FA0 20px 31px,#fff 31px 40px);background-size:100% 56.6px;animation:pole 2.2s linear infinite;box-shadow:inset -7px 0 10px rgba(0,0,0,.35),inset 7px 0 10px rgba(255,255,255,.35)}
+@keyframes pole{to{background-position:0 56.6px}}
+
+/* nastro */
+.ribbon{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;background:var(--bg2)}
+.ribbon .belt{display:flex;width:max-content;animation:belt 38s linear infinite;padding:18px 0}
+.ribbon span{font:italic 500 26px var(--fd);color:var(--ink2);padding:0 26px;white-space:nowrap}
+.ribbon span::after{content:"✦";font-style:normal;font-size:13px;color:var(--acc);margin-left:52px;vertical-align:middle}
+@keyframes belt{to{transform:translateX(-50%)}}
+
+/* servizi */
+.serv{padding:120px 0 100px}
+.serv .head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.serv .head p{max-width:420px;color:var(--ink2)}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:50px}
+.sg{background:var(--bg2);border:1px solid var(--line);border-radius:24px;padding:30px 28px 18px;transition:transform .3s,box-shadow .3s}
+.sg:hover{transform:translateY(-4px);box-shadow:0 24px 50px -30px rgba(0,0,0,.35)}
+.sg h3{font-size:32px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.sg h3 span{font:700 11px var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--acc)}
+.si{padding:15px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:2px 16px}
+.si b{font-weight:700;font-size:16.5px}
+.si b .t{font-weight:500;margin-left:4px}
+.si .pr{font:500 19px var(--fd);color:var(--acc);text-align:right}
+.si p{grid-column:1/-1;font-size:14.5px;color:var(--ink2)}
+.si .t{font-size:12.5px;color:var(--ink2);font-weight:600;letter-spacing:.04em}
+
+/* lavori */
+.lav{padding:110px 0;background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.lav .head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.lav .head p{max-width:420px;color:var(--ink2)}
+.mas{columns:3 280px;column-gap:16px;margin-top:46px}
+.mas figure{break-inside:avoid;margin-bottom:16px;position:relative;overflow:hidden;border-radius:20px;background:var(--bg3);cursor:zoom-in}
+.mas img{width:100%;transition:transform 1.2s ease}
+.mas figure:hover img{transform:scale(1.05)}
+.mas figcaption{position:absolute;left:0;right:0;bottom:0;padding:50px 18px 16px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.66));color:#fff;font:italic 500 21px var(--fd);opacity:0;transform:translateY(8px);transition:opacity .4s,transform .4s}
+.mas figure:hover figcaption{opacity:1;transform:none}
+@media (hover:none){.mas figcaption{opacity:1;transform:none}}
+.zoom{position:fixed;inset:0;z-index:95;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.zoom.on{display:flex}
+.zoom img{max-height:90vh;max-width:100%;border-radius:12px}
+
+/* perché */
+.why{padding:120px 0}
+.why .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px;align-items:center}
+.why .ph{position:relative;aspect-ratio:4/4.7;overflow:hidden;border-radius:var(--fr,28px)}
+body.beauty .why .ph{border-radius:28px 999px 28px 28px}
+.why .ph img{width:100%;height:100%;object-fit:cover}
+.why p.lead{color:var(--ink2);margin-top:18px}
+.wl{list-style:none;margin-top:30px}
+.wl li{display:grid;grid-template-columns:46px 1fr;gap:16px;padding:20px 0;border-top:1px solid var(--line)}
+.wl i{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--acc);display:grid;place-items:center;font:italic 500 19px var(--fd);color:var(--acc);font-style:normal}
+.wl b{font:500 23px/1.2 var(--fd);display:block}
+.wl span{font-size:15px;color:var(--ink2)}
+
+/* recensioni */
+.rev{padding:110px 0;background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
+.qs{position:relative;max-width:840px;margin:40px auto 0;min-height:230px}
+.qs blockquote{position:absolute;inset:0;opacity:0;transform:translateY(14px);transition:opacity .8s,transform .8s}
+.qs blockquote.on{opacity:1;transform:none}
+.qs p{font:italic 500 clamp(25px,3.1vw,38px)/1.28 var(--fd)}
+.qs cite{display:block;margin-top:22px;font:700 12.5px var(--fb);letter-spacing:.2em;text-transform:uppercase;font-style:normal;color:var(--acc)}
+.stars{color:var(--acc);letter-spacing:4px;font-size:15px;margin-bottom:14px}
+.dots{display:flex;justify-content:center;gap:9px;margin-top:22px}
+.dots button{width:28px;height:3px;border:0;border-radius:2px;background:var(--line)}
+.dots button.on{background:var(--acc)}
+
+/* prenota */
+.pren{padding:120px 0}
+.pbox{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start}
+.pbox > div > p{color:var(--ink2);margin-top:18px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:28px;padding:32px}
+.step{display:flex;align-items:center;gap:12px;font:700 12px var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--ink2);margin:0 0 12px}
+.step i{width:24px;height:24px;border-radius:50%;background:var(--acc);color:var(--on);display:grid;place-items:center;font-style:normal;font-size:12px;letter-spacing:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.chips button{border:1.5px solid var(--line);background:var(--bg);padding:9px 15px;border-radius:99px;font-weight:600;font-size:14.5px;transition:all .2s}
+.chips button[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:var(--on)}
+.days{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:26px}
+.days button{border:1.5px solid var(--line);background:var(--bg);border-radius:16px;padding:10px 4px;line-height:1.2;transition:all .2s}
+.days small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2)}
+.days b{font:500 25px var(--fd)}
+.days button[aria-pressed="true"]{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 14%,var(--bg))}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:8px;margin-bottom:26px}
+.slots button{border:1.5px solid var(--line);background:var(--bg);border-radius:12px;padding:9px 4px;font-weight:700;font-size:14px}
+.slots button[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:var(--on)}
+.slots .none{grid-column:1/-1;font-size:14px;color:var(--ink2)}
+.card input{width:100%;background:var(--bg);border:1.5px solid var(--line);border-radius:14px;color:var(--ink);padding:14px 16px;font:500 16px var(--fb);margin-bottom:22px;outline:none}
+.card input:focus{border-color:var(--acc)}
+.preview{border-left:3px solid var(--acc);padding:12px 16px;background:var(--bg);border-radius:0 12px 12px 0;font-size:15px;color:var(--ink2);margin-bottom:22px}
+.card .btn{width:100%}
+.card .note{font-size:13.5px;color:var(--ink2);margin-top:12px;text-align:center}
+.walk{display:grid;gap:14px}
+.walk .big{font:500 clamp(34px,4vw,50px)/1.05 var(--fd)}
+.walk .big em{font-style:italic;color:var(--acc)}
+
+/* info */
+.info{padding:0 0 120px}
+.info .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:stretch}
+.hours{margin-top:26px}
+.hours div{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:16px}
+.hours div span:first-child{color:var(--ink2)}
+.hours div.td span{color:var(--acc);font-weight:700}
+.addr{margin-top:26px;font-size:16.5px;line-height:1.7}
+.addr a{color:var(--acc);text-decoration:none;font-weight:600}
+.map{min-height:440px;border-radius:28px;overflow:hidden;border:1px solid var(--line);background:var(--bg3)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0}
+body.dark .map iframe{filter:grayscale(1) invert(.9) contrast(.9)}
+
+footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:13px;color:var(--ink2)}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.mbar{display:none}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s,transform .9s}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:980px){
+  nav{display:none}
+  .hero .wrap,.why .wrap,.pbox,.info .wrap{grid-template-columns:1fr;gap:46px}
+  .hero .wrap{min-height:0}
+  .stage{width:min(84%,420px)}
+  .badge{left:-30px;width:112px;height:112px;font-size:16px}
+}
+@media (max-width:640px){
+  body{font-size:16.5px}
+  .wrap{padding:0 18px}
+  header .bar{height:64px}
+  header .btn{display:none}
+  .hero{padding:34px 0 60px}
+  .hero h1{font-size:clamp(46px,13vw,72px)}
+  .stage{width:78%}
+  .badge{left:-34px;top:6%;width:96px;height:96px;font-size:14px;padding:10px}
+  .badge text{font-size:8.4px}
+  .pole{right:-36px;width:24px}
+  .serv,.why,.pren{padding:84px 0}
+  .lav,.rev{padding:84px 0}
+  .card{padding:22px 16px;border-radius:22px}
+  .days{grid-template-columns:repeat(3,1fr)}
+  .qs{min-height:310px}
+  .mas{columns:2 140px;column-gap:10px}
+  .mas figure{margin-bottom:10px;border-radius:14px}
+  .mas figcaption{font-size:16px;padding:34px 12px 10px}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:80;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--bg) 95%,transparent);border-top:1px solid var(--line)}
+  .mbar .btn{flex:1;padding:14px 8px;font-size:12.5px}
+  footer{padding-bottom:110px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body class="beauty">
+
+<div class="draft"><b id="draftName"></b> · <span id="draftNote"></span></div>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top" id="logo"></a>
+    <nav><a href="#servizi">Servizi</a><a href="#lavori">Lavori</a><a href="#prenota" id="navBook">Prenota</a><a href="#orari">Orari</a></nav>
+    <a class="btn solid" href="#prenota" id="hdrBook">Prenota</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="wrap">
+    <div>
+      <div class="status" id="status"><i></i><span id="statusTxt"></span></div>
+      <h1 id="heroTitle"></h1>
+      <p class="sub" id="heroSub"></p>
+      <div class="cta" id="heroCta"></div>
+      <div class="facts" id="facts"></div>
+    </div>
+    <div class="stage">
+      <div class="badge" id="badge"></div>
+      <div class="frame" id="frame"><span class="cap" id="frameCap"></span></div>
+      <div class="pole" aria-hidden="true"><div class="c1"></div><div class="g"></div><div class="c2"></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ribbon" aria-hidden="true"><div class="belt" id="belt"></div></div>
+
+<section class="serv" id="servizi">
+  <div class="wrap">
+    <div class="head reveal"><div><span class="k">Servizi</span><h2 style="margin-top:16px" id="servTitle"></h2></div><p id="servTxt"></p></div>
+    <div class="sgrid" id="sgrid"></div>
+    <div class="todo reveal" id="servTodo"></div>
+  </div>
+</section>
+
+<section class="lav" id="lavori">
+  <div class="wrap">
+    <div class="head reveal"><div><span class="k">Lavori</span><h2 style="margin-top:16px" id="galTitle"></h2></div><p id="galTxt"></p></div>
+    <div class="mas" id="mas"></div>
+    <div class="todo reveal" id="galTodo"></div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="ph reveal" id="whyPh"></div>
+    <div class="reveal">
+      <span class="k">Perché qui</span>
+      <h2 style="margin-top:16px" id="whyTitle"></h2>
+      <p class="lead" id="whyTxt"></p>
+      <ul class="wl" id="wl"></ul>
+    </div>
+  </div>
+</section>
+
+<section class="rev">
+  <div class="wrap">
+    <span class="k reveal">Dicono di noi</span>
+    <div class="qs reveal" id="qs"></div>
+    <div class="dots" id="dots"></div>
+  </div>
+</section>
+
+<section class="pren" id="prenota">
+  <div class="wrap pbox">
+    <div class="reveal">
+      <span class="k" id="bookK">Prenota</span>
+      <h2 style="margin-top:16px" id="bookTitle"></h2>
+      <p id="bookTxt"></p>
+      <div class="todo" id="bookTodo"></div>
+    </div>
+    <div class="card reveal" id="card"></div>
+  </div>
+</section>
+
+<section class="info" id="orari">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="k">Orari e indirizzo</span>
+      <h2 style="margin-top:16px" id="doveTitle"></h2>
+      <div class="hours" id="hours"></div>
+      <p class="addr" id="addr"></p>
+      <div class="cta" id="links"></div>
+    </div>
+    <div class="map reveal"><iframe id="map" title="Mappa" loading="lazy"></iframe></div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span id="foot"></span><span>Anteprima realizzata da Jacopo Dozio</span></div></footer>
+<div class="mbar" id="mbar"></div>
+<div class="zoom" id="zoom"><img alt=""></div>
+
+<script id="dati" type="application/json">{"name": "Beauty Place di Francesca Gori", "short": "Beauty Place", "logoTag": "Bellinzona", "city": "Bellinzona", "kind": "beauty", "fonts": "elegante", "walkin": false, "theme": {"dark": false, "bg": "#FCF7F6", "bg2": "#FFFFFF", "bg3": "#F5E6E6", "ink": "#272123", "ink2": "#7E6F72", "acc": "#B9727F", "acc2": "#F2D7DB", "on": "#FFFFFF", "line": "#EEDFDF"}, "desc": "Beauty Place di Francesca Gori, Piazza Indipendenza 6 a Bellinzona. Trattamenti viso, laminazione ed extension ciglia, manicure, pedicure, massaggi ed epilazione. Tel. 078 327 03 89.", "ogImage": "https://jdozio.github.io/dozioswebsites-anteprime/beauty-place-bellinzona/og.jpg", "phone": "+41 78 327 03 89", "phoneLabel": "078 327 03 89", "whatsapp": true, "bookUrl": "https://www.treatwell.ch/ort/beauty-place-di-gori-francesca/", "address": "Piazza Indipendenza 6, 6500 Bellinzona", "mapsQuery": "Beauty Place di Francesca Gori, Piazza Indipendenza 6, Bellinzona", "lat": 46.1896796, "lng": 9.0225223, "hours": {"0": null, "1": [["09:00", "17:15"]], "2": [["09:00", "18:00"]], "3": null, "4": [["09:00", "18:00"]], "5": [["09:00", "18:00"]], "6": null}, "slotStep": 15, "draftNote": "listino, foto e orari dalla pagina Treatwell, recensioni da Treatwell e Google, testi da completare insieme", "hero": {"title": "Il tuo posto<br><em>di bellezza<\/em>.", "sub": "Viso, ciglia, mani, piedi e massaggi in Piazza Indipendenza. Francesca ti accoglie con gentilezza e ti consiglia il trattamento giusto, senza fretta.", "imgs": [{"img": "foto/laminazione.webp", "pos": "50% 40%", "cap": "Laminazione ciglia", "alt": "Ciglia dopo la laminazione"}, {"img": "foto/unghie-autunno.webp", "pos": "50% 50%", "cap": "Manicure", "alt": "Unghie marroni e arancio con nail art"}, {"img": "foto/studio.webp", "pos": "50% 50%", "cap": "Lo studio", "alt": "Il tavolo manicure dello studio"}]}, "badge": {"ring": "Beauty Place · Bellinzona", "text": "4,9 su Treatwell"}, "facts": [["Lun – Ven", "mercoledì chiuso"], ["Bellinzona", "Piazza Indipendenza 6"], ["Prenota online", "o su WhatsApp"]], "marquee": ["Pulizia viso", "Laminazione ciglia", "Extension ciglia", "Manicure", "Semipermanente", "Pedicure", "Massaggi", "Ceretta", "Make-up"], "servTitle": "Il listino,<br><em>trasparente<\/em>.", "servTxt": "Prezzi e durate come pubblicati sulla pagina Treatwell.", "services": [{"group": "Viso", "tag": "Pelle", "items": [{"n": "Pulizia viso classica", "t": "1 h", "p": "CHF 80"}, {"n": "Pulizia viso purificante", "d": "Per pelli impure o grasse.", "t": "1 h", "p": "CHF 85"}, {"n": "Trattamento viso illuminante", "t": "1 h", "p": "CHF 110"}, {"n": "Trattamento viso anti-age", "t": "1 h", "p": "CHF 110"}]}, {"group": "Ciglia e sopracciglia", "tag": "Sguardo", "items": [{"n": "Laminazione ciglia", "t": "1 h 15", "p": "CHF 80"}, {"n": "Extension ciglia one to one", "t": "1 h 30", "p": "CHF 130"}, {"n": "Extension ciglia volume", "t": "1 h 30", "p": "CHF 150"}, {"n": "Laminazione sopracciglia", "t": "1 h", "p": "CHF 75"}, {"n": "Forma e pulizia sopracciglia", "t": "30 min", "p": "CHF 25"}]}, {"group": "Mani", "tag": "Nails", "items": [{"n": "Manicure", "t": "30 min", "p": "CHF 30"}, {"n": "Manicure con semipermanente", "t": "1 h 15", "p": "da CHF 55"}, {"n": "Refill unghie", "t": "1 h 30", "p": "CHF 80"}, {"n": "Ricostruzione unghie", "t": "2 h", "p": "CHF 115"}]}, {"group": "Piedi", "tag": "Cura", "items": [{"n": "Pedicure", "t": "55 min", "p": "CHF 50"}, {"n": "Pedicure curativo", "t": "1 h", "p": "CHF 55"}, {"n": "Pedicure con semipermanente", "t": "1 h 10", "p": "CHF 75"}]}, {"group": "Corpo e massaggi", "tag": "Relax", "items": [{"n": "Massaggio rilassante", "t": "1 h", "p": "CHF 80"}, {"n": "Massaggio decontratturante schiena", "t": "30 min", "p": "CHF 55"}, {"n": "Linfodrenaggio", "t": "1 h", "p": "CHF 85"}, {"n": "Fanghi corpo riducenti", "t": "1 h", "p": "CHF 90"}]}, {"group": "Ceretta e trucco", "tag": "Extra", "items": [{"n": "Ceretta viso", "p": "da CHF 10"}, {"n": "Ceretta corpo", "p": "da CHF 15"}, {"n": "Ceretta total body e viso", "t": "1 h 30", "p": "CHF 105"}, {"n": "Trucco giorno o sera", "t": "1 h 30", "p": "CHF 80"}]}], "servTodo": "il listino è una selezione di quello su Treatwell: lo completiamo insieme, con eventuali pacchetti o novità.", "galTitle": "I <em>lavori<\/em>.", "galTxt": "Lavori di Francesca e lo studio, dalla pagina Treatwell.", "gallery": [{"img": "foto/unghie-autunno.webp", "cap": "Colori d'autunno", "h": "4/5"}, {"img": "foto/laminazione-prima-dopo.webp", "cap": "Laminazione: prima e dopo", "h": "4/5"}, {"img": "foto/studio.webp", "cap": "Lo studio", "h": "8/5"}, {"img": "foto/unghie-bordeaux.webp", "cap": "Bordeaux e brillantini", "h": "4/5"}, {"img": "foto/laminazione.webp", "cap": "Laminazione ciglia", "h": "3/4"}, {"img": "foto/logo-banner.webp", "cap": "Beauty Place", "h": "8/5"}], "galTodo": "possiamo aggiungere altri lavori e qualche foto della cabina viso.", "why": {"img": "foto/laminazione.webp", "pos": "50% 40%", "alt": "Ciglia", "title": "4,9 stelle,<br><em>80 recensioni<\/em>.", "text": "Su Treatwell Francesca ha 4,9 stelle con 80 recensioni. Le parole che tornano: gentilissima, professionale, delicata. E chi prova una volta, poi torna.", "points": [["Delicata e precisa", "Dalla laminazione ciglia alla manicure, ogni lavoro fatto con cura."], ["Ottimi consigli", "Ti suggerisce il trattamento giusto per te."], ["Prenoti in un attimo", "Online con gli orari liberi, oppure su WhatsApp."]]}, "reviews": [["Veramente brava, delicata, gentile e disponibile. Laminazione ciglia eseguita magnificamente e con cura. Da quando vado da lei non ho più provato nessun altro posto.", "Ludovica G.", 5], ["Francesca, si vede proprio che il suo lavoro le piace.", "Fiore", 5, "Treatwell"], ["Francesca gentilissima e super professionale! Tornerò sicuramente.", "Monica", 5, "Treatwell"], ["Ottima estetista, molto professionale e dolce, dà ottimi consigli. Rimango sempre molto soddisfatta del suo lavoro.", "Keky91 B", 5], ["Tutto perfetto, Francesca è molto professionale, competente e gentile.", "Benedetta", 5, "Treatwell"]], "book": {"title": "Scegli il trattamento,<br><em>poi il giorno<\/em>.", "text": "Prenota online vedendo gli orari liberi, oppure manda una richiesta su WhatsApp: Francesca ti risponde per confermare.", "todo": "verifichiamo insieme gli orari, che su Google e Treatwell sono diversi."}, "doveTitle": "Piazza Indipendenza <em>6<\/em>"}</script>
+<script>
+(function(){
+var D=JSON.parse(document.getElementById('dati').textContent),$=function(i){return document.getElementById(i)};
+var esc=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var G=['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'],GS=['Dom','Lun','Mar','Mer','Gio','Ven','Sab'],M=['gen','feb','mar','apr','mag','giu','lug','ago','set','ott','nov','dic'];
+var tel=D.phone.replace(/\D/g,''),wa=D.whatsapp!==false,mapUrl='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(D.mapsQuery);
+function toM(s){var p=s.split(':');return +p[0]*60+(+p[1]||0)}
+function hm(m){return (m/60|0)+':'+('0'+m%60).slice(-2)}
+var AP=!!D.apptOnly;if(AP&&!D.hours)D.hours={1:[['09:00','18:00']],2:[['09:00','18:00']],3:[['09:00','18:00']],4:[['09:00','18:00']],5:[['09:00','18:00']],6:[['09:00','13:00']]};var H={};for(var d=0;d<7;d++)H[d]=D.hours[d]?D.hours[d].map(function(r){return [toM(r[0]),toM(r[1])]}):null;
+var P={};new Intl.DateTimeFormat('en-GB',{timeZone:D.tz||'Europe/Zurich',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date()).forEach(function(x){P[x.type]=x.value});
+var TODAY=new Date(Date.UTC(+P.year,+P.month-1,+P.day)),WD=TODAY.getUTCDay(),NOW=(+P.hour%24)*60+(+P.minute);
+
+/* testa */
+$('draftName').textContent='Anteprima di sito preparata per '+D.name;$('draftNote').textContent=D.draftNote||'foto e recensioni dalla scheda Google, testi da completare insieme';
+$('logo').innerHTML=esc(D.short||D.name)+(D.logoTag?'<small>'+esc(D.logoTag)+'</small>':'');
+var bookLabel=D.walkin?'Passa a trovarci':'Prenota';
+$('navBook').textContent=D.walkin?'Vieni':'Prenota';$('hdrBook').textContent=D.walkin?'Come venire':'Prenota';
+$('heroTitle').innerHTML=D.hero.title;$('heroSub').textContent=D.hero.sub;
+$('heroCta').innerHTML='<a class="btn solid" href="#prenota">'+(D.walkin?'Senza appuntamento':'Prenota ora')+'</a>'+(wa?'<a class="btn line" href="https://wa.me/'+tel+'" target="_blank" rel="noopener">WhatsApp</a>':'')+'<a class="btn line" href="tel:+'+tel+'">'+esc(D.phoneLabel)+'</a>';
+$('facts').innerHTML=D.facts.map(function(f){return '<div><b>'+esc(f[0])+'</b>'+esc(f[1])+'</div>'}).join('');
+if(D.badge){var rn=Math.max(1,Math.floor(44/(D.badge.ring.length+3))),bt=(D.badge.ring+' · ').repeat(rn);$('badge').innerHTML='<svg viewBox="0 0 100 100"><defs><path id="cp" d="M50,50 m-39,0 a39,39 0 1,1 78,0 a39,39 0 1,1 -78,0"/></defs><text><textPath href="#cp" textLength="243" lengthAdjust="spacing">'+esc(bt)+'</textPath></text></svg><span>'+esc(D.badge.text)+'</span>'}else $('badge').remove();
+var fr=$('frame');D.hero.imgs.forEach(function(x,i){var im=new Image();im.src=x.img;im.alt=x.alt||'';im.style.objectPosition=x.pos||'50% 50%';if(!i)im.className='on';fr.insertBefore(im,$('frameCap'))});
+if(D.hero.stock)fr.classList.add('stock');
+$('frameCap').textContent=D.hero.imgs[0].cap||'';
+var hi=0,his=fr.querySelectorAll('img');if(his.length>1&&!matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(function(){his[hi].classList.remove('on');hi=(hi+1)%his.length;his[hi].classList.add('on');$('frameCap').textContent=D.hero.imgs[hi].cap||''},4300);
+/* stato */
+(function(){var t=H[WD],s=$('status'),txt;
+  if(t){for(var i=0;i<t.length;i++){if(NOW>=t[i][0]&&NOW<t[i][1]){s.classList.add('open');txt='Aperto ora · fino alle '+hm(t[i][1])+(t[i+1]?' (pausa)':'');break}if(NOW<t[i][0]){txt=(i?'In pausa · riapre alle ':'Oggi apre alle ')+hm(t[i][0]);break}}}
+  if(!txt){for(var k=1;k<8;k++){var w=(WD+k)%7;if(H[w]){txt='Chiuso · riapre '+(k===1?'domani':G[w].toLowerCase())+' alle '+hm(H[w][0][0]);break}}}
+  if(AP){s.classList.add('open');txt=D.apptText||'Su appuntamento · scrivi su WhatsApp'}
+  $('statusTxt').textContent=txt})();
+/* nastro */
+$('belt').innerHTML=D.marquee.concat(D.marquee,D.marquee,D.marquee).map(function(x){return '<span>'+esc(x)+'</span>'}).join('');
+/* servizi */
+$('servTitle').innerHTML=D.servTitle;$('servTxt').textContent=D.servTxt;
+$('sgrid').innerHTML=D.services.map(function(g){return '<div class="sg reveal"><h3>'+esc(g.group)+(g.tag?'<span>'+esc(g.tag)+'</span>':'')+'</h3>'+g.items.map(function(s){return '<div class="si"><b>'+esc(s.n)+(s.t&&s.p?' <span class="t">· '+esc(s.t)+'</span>':'')+'</b>'+(s.p?'<span class="pr">'+esc(s.p)+'</span>':(s.t?'<span class="t">'+esc(s.t)+'</span>':'<span></span>'))+(s.d?'<p>'+esc(s.d)+'</p>':'')+'</div>'}).join('')+'</div>'}).join('');
+if(D.servTodo)$('servTodo').innerHTML='<b>Da completare insieme:</b> '+esc(D.servTodo);else $('servTodo').remove();
+/* lavori */
+$('galTitle').innerHTML=D.galTitle;$('galTxt').textContent=D.galTxt;
+$('mas').innerHTML=D.gallery.map(function(g){return '<figure class="reveal'+(g.stock?' stock':'')+'"><img src="'+g.img+'" alt="'+esc(g.cap)+'" loading="lazy"'+(g.h?' style="aspect-ratio:'+g.h+';object-fit:cover;object-position:'+(g.pos||'50% 50%')+'"':'')+'><figcaption>'+esc(g.cap)+'</figcaption></figure>'}).join('');
+if(D.galTodo)$('galTodo').innerHTML='<b>Foto:</b> '+esc(D.galTodo);else $('galTodo').remove();
+var z=$('zoom');document.querySelectorAll('.mas figure').forEach(function(f){f.addEventListener('click',function(){var s=f.querySelector('img').src;z.querySelector('img').src=s.replace(/=w\d+/,'=w1800').replace(/w=\d+/,'w=1800');z.classList.add('on')})});z.addEventListener('click',function(){z.classList.remove('on')});
+/* perché */
+$('whyPh').innerHTML='<img src="'+D.why.img+'" alt="'+esc(D.why.alt||'')+'" loading="lazy" style="object-position:'+(D.why.pos||'50% 50%')+'">';if(D.why.stock)$('whyPh').classList.add('stock');
+$('whyTitle').innerHTML=D.why.title;$('whyTxt').textContent=D.why.text;
+$('wl').innerHTML=D.why.points.map(function(p,i){return '<li><i>'+(i+1)+'</i><div><b>'+esc(p[0])+'</b><span>'+esc(p[1])+'</span></div></li>'}).join('');
+/* recensioni */
+var Q=D.reviews,qi=0;
+$('qs').innerHTML=Q.map(function(q,i){return '<blockquote'+(i?'':' class="on"')+'><div class="stars">'+'★★★★★'.slice(0,q[2]||5)+'</div><p>«'+esc(q[0])+'»</p><cite>'+esc(q[1])+' · recensione '+(q[3]||'Google')+'</cite></blockquote>'}).join('');
+$('dots').innerHTML=Q.map(function(q,i){return '<button aria-label="Recensione '+(i+1)+'"'+(i?'':' class="on"')+'></button>'}).join('');
+var bq=document.querySelectorAll('#qs blockquote'),db=document.querySelectorAll('#dots button'),qt;
+function sq(i){bq[qi].classList.remove('on');db[qi].classList.remove('on');qi=i;bq[qi].classList.add('on');db[qi].classList.add('on')}
+db.forEach(function(b,i){b.addEventListener('click',function(){clearInterval(qt);sq(i)})});qt=setInterval(function(){sq((qi+1)%Q.length)},6500);
+/* prenota / senza appuntamento */
+$('bookTitle').innerHTML=D.book.title;$('bookTxt').textContent=D.book.text;
+if(D.book.todo)$('bookTodo').innerHTML='<b>Da completare insieme:</b> '+esc(D.book.todo);else $('bookTodo').remove();
+var card=$('card');
+if(D.walkin){$('bookK').textContent='Senza appuntamento';
+  var openNow=$('status').classList.contains('open');
+  card.innerHTML='<div class="walk"><div class="big">'+(openNow?'Siamo <em>aperti</em>. Passa pure.':'Ora siamo <em>chiusi</em>.')+'</div><p style="color:var(--ink2)">'+esc($('statusTxt').textContent)+'</p><input id="nome" placeholder="Il tuo nome (facoltativo)"><div class="preview" id="preview"></div>'+(wa?'<a class="btn solid" id="send" target="_blank" rel="noopener">Chiedi su WhatsApp se c\'è posto</a>':'')+'<a class="btn line" href="tel:+'+tel+'">Chiama '+esc(D.phoneLabel)+'</a><a class="btn line" href="'+mapUrl+'" target="_blank" rel="noopener">Indicazioni</a></div>';
+  var nx=function(){var t=H[WD];if(t&&NOW<t[t.length-1][0])return 'Oggi';for(var k=1;k<8;k++){var w=(WD+k)%7;if(H[w])return k===1?'Domani':G[w]}};
+  var wm=function(){var n=$('nome').value.trim(),t='Ciao! '+(n?'Sono '+n+'. ':'')+(openNow?'C\'è posto adesso per un taglio? Passerei tra poco.':(nx()+' c\'è posto per un taglio? A che ora mi conviene passare?'));$('preview').textContent=t;if($('send'))$('send').href='https://wa.me/'+tel+'?text='+encodeURIComponent(t)};
+  $('nome').addEventListener('input',wm);wm();
+}else{
+  var svc=D.bookChips||[];if(!svc.length)D.services.forEach(function(g){g.items.forEach(function(s){if(s.book!==false)svc.push(s.n)})});
+  var days=[];for(var k=0;days.length<6&&k<21;k++){var dd=new Date(TODAY.getTime()+k*864e5),w=dd.getUTCDay();if(!H[w])continue;if(k===0&&NOW>H[w][H[w].length-1][1]-60)continue;days.push({d:dd,w:w,k:k})}
+  card.innerHTML=(D.bookUrl?'<a class="btn solid" href="'+D.bookUrl+'" target="_blank" rel="noopener">Prenota online · vedi gli orari liberi</a><p class="note" style="margin:12px 0 26px">oppure manda una richiesta su WhatsApp qui sotto</p>':'')+'<div class="step"><i>1</i>Cosa desideri</div><div class="chips" id="svc">'+svc.map(function(s,i){return '<button aria-pressed="'+(i===0)+'">'+esc(s)+'</button>'}).join('')+'</div><div class="step"><i>2</i>Giorno</div><div class="days" id="days">'+days.map(function(x,i){return '<button aria-pressed="'+(i===0)+'" data-i="'+i+'"><small>'+(x.k===0?'Oggi':x.k===1?'Domani':GS[x.w])+'</small><b>'+x.d.getUTCDate()+'</b><small>'+M[x.d.getUTCMonth()]+'</small></button>'}).join('')+'</div><div class="step"><i>3</i>Ora preferita</div><div class="slots" id="slots"></div><div class="step"><i>4</i>Il tuo nome</div><input id="nome" placeholder="es. Laura" autocomplete="given-name"><div class="preview" id="preview"></div>'+(wa?'<a class="btn solid" id="send" target="_blank" rel="noopener">Invia la richiesta su WhatsApp</a>':'<a class="btn solid" href="tel:+'+tel+'">Chiama per prenotare</a>')+'<p class="note">È una richiesta: ti confermiamo noi l\'orario.</p>';
+  var sS=svc[0],sD=0,sT=null,step=D.slotStep||30;
+  function slots(){var x=days[sD],o='';H[x.w].forEach(function(r){for(var m=r[0];m<=r[1]-step;m+=step){if(x.k===0&&m<NOW+45)continue;var t=hm(m);o+='<button aria-pressed="'+(t===sT)+'">'+t+'</button>'}});$('slots').innerHTML=o||'<p class="none">Per oggi non ci sono più orari: scegli un altro giorno.</p>';if(!$('slots').querySelector('[aria-pressed="true"]'))sT=null}
+  function msg(){var x=days[sD],n=$('nome').value.trim(),dl=(x.k===0?'oggi':x.k===1?'domani':G[x.w].toLowerCase())+' '+x.d.getUTCDate()+' '+M[x.d.getUTCMonth()];
+    var t='Buongiorno! '+(n?'Sono '+n+'. ':'')+'Vorrei prenotare: '+sS+', '+dl+(sT?' verso le '+sT:'')+'. È possibile?';$('preview').textContent=t;if($('send'))$('send').href='https://wa.me/'+tel+'?text='+encodeURIComponent(t)}
+  function grp(id,cb){$(id).addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;this.querySelectorAll('button').forEach(function(z){z.setAttribute('aria-pressed',z===b)});cb(b);msg()})}
+  grp('svc',function(b){sS=b.textContent});grp('days',function(b){sD=+b.dataset.i;slots()});grp('slots',function(b){sT=b.textContent});
+  $('nome').addEventListener('input',msg);slots();msg();
+}
+/* info */
+$('doveTitle').innerHTML=D.doveTitle;
+$('hours').innerHTML=AP?'<div class="td"><span>Orari</span><span>'+esc(D.apptHours||'Su appuntamento')+'</span></div>':[1,2,3,4,5,6,0].map(function(d){var t=H[d];return '<div'+(d===WD?' class="td"':'')+'><span>'+G[d]+'</span><span>'+(t?t.map(function(r){return hm(r[0])+'–'+hm(r[1])}).join(' · '):'Chiuso')+'</span></div>'}).join('');
+$('addr').innerHTML='<b>'+esc(D.name)+'</b><br>'+esc(D.address)+'<br><a href="tel:+'+tel+'">'+esc(D.phoneLabel)+'</a>'+(D.instagram?' · <a href="https://www.instagram.com/'+D.instagram+'/" target="_blank" rel="noopener">@'+esc(D.instagram)+'</a>':'');
+$('links').innerHTML='<a class="btn solid" href="'+mapUrl+'" target="_blank" rel="noopener">Indicazioni</a><a class="btn line" href="tel:+'+tel+'">Chiama</a>';
+$('map').src='https://www.google.com/maps?q='+(D.lat?D.lat+','+D.lng:encodeURIComponent(D.mapsQuery))+'&z=17&output=embed';
+$('foot').textContent='© '+D.name+' · '+D.city;
+$('mbar').innerHTML='<a class="btn line" href="tel:+'+tel+'">Chiama</a>'+(wa?'<a class="btn line" href="https://wa.me/'+tel+'" target="_blank" rel="noopener">WhatsApp</a>':'')+'<a class="btn solid" href="#prenota">'+(D.walkin?'Vieni':'Prenota')+'</a>';
+/* reveal */
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)})}else document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});
+})();
+</script>
+</body>
+</html>

@@ -328,7 +328,7 @@ var G=['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabat
 var tel=D.phone.replace(/\D/g,''),wa=D.whatsapp!==false,mapUrl='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(D.mapsQuery);
 function toM(s){var p=s.split(':');return +p[0]*60+(+p[1]||0)}
 function hm(m){return (m/60|0)+':'+('0'+m%60).slice(-2)}
-var H={};for(var d=0;d<7;d++)H[d]=D.hours[d]?D.hours[d].map(function(r){return [toM(r[0]),toM(r[1])]}):null;
+var AP=!!D.apptOnly;if(AP&&!D.hours)D.hours={1:[['09:00','18:00']],2:[['09:00','18:00']],3:[['09:00','18:00']],4:[['09:00','18:00']],5:[['09:00','18:00']],6:[['09:00','13:00']]};var H={};for(var d=0;d<7;d++)H[d]=D.hours[d]?D.hours[d].map(function(r){return [toM(r[0]),toM(r[1])]}):null;
 var P={};new Intl.DateTimeFormat('en-GB',{timeZone:D.tz||'Europe/Zurich',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date()).forEach(function(x){P[x.type]=x.value});
 var TODAY=new Date(Date.UTC(+P.year,+P.month-1,+P.day)),WD=TODAY.getUTCDay(),NOW=(+P.hour%24)*60+(+P.minute);
 
@@ -349,6 +349,7 @@ var hi=0,his=fr.querySelectorAll('img');if(his.length>1&&!matchMedia('(prefers-r
 (function(){var t=H[WD],s=$('status'),txt;
   if(t){for(var i=0;i<t.length;i++){if(NOW>=t[i][0]&&NOW<t[i][1]){s.classList.add('open');txt='Aperto ora · fino alle '+hm(t[i][1])+(t[i+1]?' (pausa)':'');break}if(NOW<t[i][0]){txt=(i?'In pausa · riapre alle ':'Oggi apre alle ')+hm(t[i][0]);break}}}
   if(!txt){for(var k=1;k<8;k++){var w=(WD+k)%7;if(H[w]){txt='Chiuso · riapre '+(k===1?'domani':G[w].toLowerCase())+' alle '+hm(H[w][0][0]);break}}}
+  if(AP){s.classList.add('open');txt=D.apptText||'Su appuntamento · scrivi su WhatsApp'}
   $('statusTxt').textContent=txt})();
 /* nastro */
 $('belt').innerHTML=D.marquee.concat(D.marquee,D.marquee,D.marquee).map(function(x){return '<span>'+esc(x)+'</span>'}).join('');
@@ -367,7 +368,7 @@ $('whyTitle').innerHTML=D.why.title;$('whyTxt').textContent=D.why.text;
 $('wl').innerHTML=D.why.points.map(function(p,i){return '<li><i>'+(i+1)+'</i><div><b>'+esc(p[0])+'</b><span>'+esc(p[1])+'</span></div></li>'}).join('');
 /* recensioni */
 var Q=D.reviews,qi=0;
-$('qs').innerHTML=Q.map(function(q,i){return '<blockquote'+(i?'':' class="on"')+'><div class="stars">'+'★★★★★'.slice(0,q[2]||5)+'</div><p>«'+esc(q[0])+'»</p><cite>'+esc(q[1])+' · recensione Google</cite></blockquote>'}).join('');
+$('qs').innerHTML=Q.map(function(q,i){return '<blockquote'+(i?'':' class="on"')+'><div class="stars">'+'★★★★★'.slice(0,q[2]||5)+'</div><p>«'+esc(q[0])+'»</p><cite>'+esc(q[1])+' · recensione '+(q[3]||'Google')+'</cite></blockquote>'}).join('');
 $('dots').innerHTML=Q.map(function(q,i){return '<button aria-label="Recensione '+(i+1)+'"'+(i?'':' class="on"')+'></button>'}).join('');
 var bq=document.querySelectorAll('#qs blockquote'),db=document.querySelectorAll('#dots button'),qt;
 function sq(i){bq[qi].classList.remove('on');db[qi].classList.remove('on');qi=i;bq[qi].classList.add('on');db[qi].classList.add('on')}
@@ -396,7 +397,7 @@ if(D.walkin){$('bookK').textContent='Senza appuntamento';
 }
 /* info */
 $('doveTitle').innerHTML=D.doveTitle;
-$('hours').innerHTML=[1,2,3,4,5,6,0].map(function(d){var t=H[d];return '<div'+(d===WD?' class="td"':'')+'><span>'+G[d]+'</span><span>'+(t?t.map(function(r){return hm(r[0])+'–'+hm(r[1])}).join(' · '):'Chiuso')+'</span></div>'}).join('');
+$('hours').innerHTML=AP?'<div class="td"><span>Orari</span><span>'+esc(D.apptHours||'Su appuntamento')+'</span></div>':[1,2,3,4,5,6,0].map(function(d){var t=H[d];return '<div'+(d===WD?' class="td"':'')+'><span>'+G[d]+'</span><span>'+(t?t.map(function(r){return hm(r[0])+'–'+hm(r[1])}).join(' · '):'Chiuso')+'</span></div>'}).join('');
 $('addr').innerHTML='<b>'+esc(D.name)+'</b><br>'+esc(D.address)+'<br><a href="tel:+'+tel+'">'+esc(D.phoneLabel)+'</a>'+(D.instagram?' · <a href="https://www.instagram.com/'+D.instagram+'/" target="_blank" rel="noopener">@'+esc(D.instagram)+'</a>':'');
 $('links').innerHTML='<a class="btn solid" href="'+mapUrl+'" target="_blank" rel="noopener">Indicazioni</a><a class="btn line" href="tel:+'+tel+'">Chiama</a>';
 $('map').src='https://www.google.com/maps?q='+(D.lat?D.lat+','+D.lng:encodeURIComponent(D.mapsQuery))+'&z=17&output=embed';
