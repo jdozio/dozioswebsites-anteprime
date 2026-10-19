@@ -223,3 +223,4 @@ Riferimento di livello: jungle-club-lugano. Mai consegnare siti "ordinati ma ugu
 5. Se una richiesta di Jacopo è ambigua ("il primo", "quello"): una domanda veloce, non indovinare.
 6. Modello salone v2 (_modelli/salone): trio di archi (hero.trio), firme D.sig = lines | peony | script | polish, D.stats, D.apptOnly, D.bookChips.
 7. Hamburgerie / street food: usare LEFTY (lefty-lugano/) come riferimento. Oggi è un sito unico, non ancora un modello: alla prima nuova hamburgeria trasformarlo in _modelli/hamburgeria (template + dati JSON), mantenendo stile e qualità.
+8. Artigiani e servizi: elettricisti → pgimpianti-verbania/ (Giuseppe Pisillo; vedi anche gs-manutenzioni-gravedona/); giardinieri / manutenzione verde → vidales-giardini/. Sono siti unici: alla prima nuova attività del settore trasformarli in modello (_modelli/artigiano, _modelli/giardini).
