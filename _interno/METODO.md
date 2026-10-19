@@ -11,7 +11,8 @@ Dopo giorni senza risposte (club, locali lontani, numeri senza WhatsApp, saluti 
 3. Cellulare E nome del titolare obbligatori (da recensioni o Instagram). Se manca uno dei due: scartare.
 4. Meglio ancora se è un'attività nuova (aperta da poco): non obbligatorio, ma ha la precedenza.
 5. Prima si manda a Jacopo una lista di 8–10 candidati con il motivo; i siti si fanno solo per quelli che sceglie lui.
-6. Consigli d'invio: in settimana 9–11 o 14–16; promemoria breve dopo 3–4 giorni.
+6. Lista per SETTORE: 3 o più candidati dello stesso settore, così un modello serve per tutti. Se il modello esiste già (_modelli/club, locale-notturno, salone…) si usa quello.
+7. Consigli d'invio: in settimana 9–11 o 14–16; promemoria breve dopo 3–4 giorni.
 
 ## Obiettivo
 Jacopo vende siti web a piccole attività. Ogni notte prepari da **3 a 5** anteprime di sito
