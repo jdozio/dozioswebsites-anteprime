@@ -95,7 +95,7 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 
 - 2026-10-18 valutate su richiesta di Jacopo: Gambino Barber Shop (sito digitalone.site, solo fisso 091 923 98 53, 4,3/50: riserva, contatto di persona) · Salone Jasmine Breganzona (solo Facebook, fisso 091 966 03 18, 4,9/12: riserva) · Daniele Hair Boutique (non trovato su Maps a Lugano) · Beauty Line Chiasso (nessun sito, 076 693 95 55, 4,7/10: riserva) · EsteticArmonia (ha sito) · Leonor Beauty (ha sito)
 
-## Lista estetiste 19.10 (in attesa di scelta di Jacopo)
+## Lista estetiste 19.10 – siti fatti tutti e 4 (no-secrets-lugano, estetica-ambra-bellinzona, nail-and-more-bellinzona, beauty-place-bellinzona), messaggi in messaggi-2026-10-19.md
 - No Secrets Beauty Salon, Via G. Motta 7, Lugano. Titolare Noemi. 076 393 10 86. 4,9/57. Nessun sito. Aperto ~3 anni fa.
 - Estetica Ambra, Via Pratocarasso 26, Bellinzona. Titolare Ambra. 079 358 89 29. 5,0/9. Solo Instagram.
 - NAIL AND MORE di Giusi Vasile, Viale Portone 15, Bellinzona. 079 251 14 42. 4,9/29. Solo Instagram.
