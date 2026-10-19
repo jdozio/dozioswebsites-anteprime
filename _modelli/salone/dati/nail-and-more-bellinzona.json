@@ -69,24 +69,25 @@
   "sub": "Ricostruzione, semipermanente e nail art a Bellinzona. Forme perfette, lavori che durano, e un sorriso che ti mette subito a tuo agio.",
   "imgs": [
    {
-    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rv9g9H6YcWrbYNSJNMaGPEYjeCyme4GeS6Ry4QRPic_B7ghBgWIi9c3GUu1v6eshjKX1g9ILKp7nNvqarclVBcPiqFLrSHL8zGliHCnZ5srpTq2AM8E306EGgdpM7Fm5-x9bu4=w1200",
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RdYihp2W7sW0Ef5CIKL51bOxHfh15mVAo6p_8h0jc-daE2gqk41cPDEsbuc7kW8gZFDvM1dt6BR-HSaHvbRhVtw80Xqcrq0nhZGb09TBrMYl4L4iw-FDbhk-0N_zoFDthQeqo=w1000",
+    "pos": "50% 60%",
+    "cap": "Pastello",
+    "alt": "Unghie rosa"
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rv9g9H6YcWrbYNSJNMaGPEYjeCyme4GeS6Ry4QRPic_B7ghBgWIi9c3GUu1v6eshjKX1g9ILKp7nNvqarclVBcPiqFLrSHL8zGliHCnZ5srpTq2AM8E306EGgdpM7Fm5-x9bu4=w1000",
     "pos": "50% 50%",
     "cap": "Nail art",
     "alt": "Unghie blu con disegni"
    },
    {
-    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q_FYoGYC0nblg3Z4fS_b31ndv2_-r87foTjtJO_K6oKnn_euIQXdfAiURfZOGejORLjsEjYzyMfSDHP09HO3JKiLWNrqjN0cWxWYn6OeOApb8V3zR-oKzcE_c3FhZ-ViqwcH5qRg=w1200",
-    "pos": "50% 50%",
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q_FYoGYC0nblg3Z4fS_b31ndv2_-r87foTjtJO_K6oKnn_euIQXdfAiURfZOGejORLjsEjYzyMfSDHP09HO3JKiLWNrqjN0cWxWYn6OeOApb8V3zR-oKzcE_c3FhZ-ViqwcH5qRg=w1000",
+    "pos": "50% 55%",
     "cap": "Rosso classico",
     "alt": "Unghie rosse"
-   },
-   {
-    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RdYihp2W7sW0Ef5CIKL51bOxHfh15mVAo6p_8h0jc-daE2gqk41cPDEsbuc7kW8gZFDvM1dt6BR-HSaHvbRhVtw80Xqcrq0nhZGb09TBrMYl4L4iw-FDbhk-0N_zoFDthQeqo=w1200",
-    "pos": "50% 50%",
-    "cap": "Pastello",
-    "alt": "Unghie rosa"
    }
-  ]
+  ],
+  "trio": true
  },
  "badge": {
   "ring": "Nail and More · Bellinzona",
@@ -246,5 +247,31 @@
   "text": "La richiesta arriva su WhatsApp già scritta. Ti rispondiamo noi per confermare l'orario.",
   "todo": "se preferite, qui si può collegare un'agenda online con gli orari liberi."
  },
- "doveTitle": "Viale Portone <em>15</em>"
+ "doveTitle": "Viale Portone <em>15</em>",
+ "sig": "polish",
+ "swatches": [
+  [
+   "Blu",
+   "#2E44B8"
+  ],
+  [
+   "Rosa",
+   "#D4567F"
+  ],
+  [
+   "Salvia",
+   "#6F8F6A"
+  ],
+  [
+   "Rosso",
+   "#B81E2E"
+  ]
+ ],
+ "stats": [
+  [
+   "4,9",
+   "29 recensioni su Google",
+   1
+  ]
+ ]
 }

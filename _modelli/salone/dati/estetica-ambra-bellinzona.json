@@ -38,24 +38,22 @@
   "sub": "Viso, corpo, laminazione, pedicure, unghie e make-up. Da Ambra a Bellinzona, in un ambiente rilassante dove ci si sente subito tra amiche.",
   "imgs": [
    {
-    "img": "foto/rosso.webp",
-    "pos": "50% 60%",
-    "cap": "Nail art",
-    "alt": "Unghie con onde rosse"
-   },
-   {
     "img": "foto/cioccolato.webp",
-    "pos": "50% 70%",
-    "cap": "Semipermanente",
+    "pos": "55% 70%",
     "alt": "Unghie color cioccolato"
    },
    {
+    "img": "foto/rosso.webp",
+    "pos": "50% 65%",
+    "alt": "Unghie con onde rosse"
+   },
+   {
     "img": "foto/fucsia.webp",
-    "pos": "50% 70%",
-    "cap": "Brillantini",
+    "pos": "45% 70%",
     "alt": "Unghie fucsia con strass"
    }
-  ]
+  ],
+  "trio": true
  },
  "badge": {
   "ring": "Estetica Ambra · Bellinzona",
@@ -247,5 +245,13 @@
   "text": "La richiesta arriva ad Ambra su WhatsApp già scritta. Ti risponde lei per confermare.",
   "todo": "giorni e orari in cui ricevete, così mostriamo solo quelli giusti."
  },
- "doveTitle": "Via Pratocarasso <em>26</em>"
+ "doveTitle": "Via Pratocarasso <em>26</em>",
+ "sig": "peony",
+ "stats": [
+  [
+   "5,0",
+   "9 recensioni su Google",
+   1
+  ]
+ ]
 }

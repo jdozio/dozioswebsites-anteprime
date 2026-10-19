@@ -64,24 +64,22 @@
   "sub": "Viso, ciglia, mani, piedi e massaggi in Piazza Indipendenza. Francesca ti accoglie con gentilezza e ti consiglia il trattamento giusto, senza fretta.",
   "imgs": [
    {
+    "img": "foto/unghie-autunno.webp",
+    "pos": "50% 55%",
+    "alt": "Unghie autunnali"
+   },
+   {
     "img": "foto/laminazione.webp",
-    "pos": "50% 40%",
-    "cap": "Laminazione ciglia",
+    "pos": "45% 40%",
     "alt": "Ciglia dopo la laminazione"
    },
    {
-    "img": "foto/unghie-autunno.webp",
-    "pos": "50% 50%",
-    "cap": "Manicure",
-    "alt": "Unghie marroni e arancio con nail art"
-   },
-   {
-    "img": "foto/studio.webp",
-    "pos": "50% 50%",
-    "cap": "Lo studio",
-    "alt": "Il tavolo manicure dello studio"
+    "img": "foto/unghie-bordeaux.webp",
+    "pos": "40% 20%",
+    "alt": "Unghie bordeaux con brillantini"
    }
-  ]
+  ],
+  "trio": true
  },
  "badge": {
   "ring": "Beauty Place · Bellinzona",
@@ -363,5 +361,20 @@
   "text": "Prenota online vedendo gli orari liberi, oppure manda una richiesta su WhatsApp: Francesca ti risponde per confermare.",
   "todo": "verifichiamo insieme gli orari, che su Google e Treatwell sono diversi."
  },
- "doveTitle": "Piazza Indipendenza <em>6</em>"
+ "doveTitle": "Piazza Indipendenza <em>6</em>",
+ "sig": "script",
+ "sigText": "Beauty Place",
+ "sigMono": "FG",
+ "stats": [
+  [
+   "4,9",
+   "80 recensioni su Treatwell",
+   1
+  ],
+  [
+   "5,0",
+   "47 recensioni per Francesca",
+   1
+  ]
+ ]
 }
