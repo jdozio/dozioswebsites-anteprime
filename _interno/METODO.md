@@ -222,3 +222,4 @@ Riferimento di livello: jungle-club-lugano. Mai consegnare siti "ordinati ma ugu
 4. Controllo prima di consegnare: sito ONLINE, scorso tutto su mobile (e desktop), ogni foto guardata nel suo riquadro, inquadrature, modulo prenotazione con voci sensate, nessun errore JS.
 5. Se una richiesta di Jacopo è ambigua ("il primo", "quello"): una domanda veloce, non indovinare.
 6. Modello salone v2 (_modelli/salone): trio di archi (hero.trio), firme D.sig = lines | peony | script | polish, D.stats, D.apptOnly, D.bookChips.
+7. Hamburgerie / street food: usare LEFTY (lefty-lugano/) come riferimento. Oggi è un sito unico, non ancora un modello: alla prima nuova hamburgeria trasformarlo in _modelli/hamburgeria (template + dati JSON), mantenendo stile e qualità.
