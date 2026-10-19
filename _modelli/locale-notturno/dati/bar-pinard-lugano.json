@@ -13,13 +13,13 @@
  "email": "info@barpinard.ch",
  "acc": "#8E2C3E",
  "acc2": "#C46A7A",
- "logoImg": "foto/pinard.webp",
+ "logoImg": "foto/pinard-v2.webp",
  "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S2Mhc7WxVYpIHrSQVsoO0sxootwWMlSX6fi7mrC_ycXCD43JEaIs93Eo6bMNPU84cOZU5vKhF1nMeDfCHkgpnbj2K6_9bF0kTfoyEOzgON3oWom_ZarC2BgARD9RBGQn9KYK23jA=w1200-h630-p-k-no",
  "art": {
-  "empty": "foto/bottiglie-vuote.webp",
-  "full": "foto/bottiglie.webp",
-  "word": "foto/pinard.webp",
-  "alt": "Due bottiglie e un calice ad acquerello, il disegno del logo di Pinard",
+  "empty": "foto/disegno-vuoto.webp",
+  "full": "foto/disegno.webp",
+  "word": "foto/pinard-v2.webp",
+  "alt": "Due bottiglie, un calice di rosato, sardine e pane: il disegno ad acquerello di Pinard",
   "stamp": "89",
   "stampSub": "punti",
   "stampRing": "Falstaff · wine bar · Lugano · "
