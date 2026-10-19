@@ -3,6 +3,16 @@
 Questo file descrive ESATTAMENTE come lavorare. Va seguito ogni notte, senza eccezioni.
 La cartella `_interno/` non viene pubblicata come pagina del sito (GitHub Pages ignora le cartelle che iniziano con `_`).
 
+
+## 0. CRITERI AGGIORNATI (Jacopo, 19.10.2026) — valgono sopra tutto il resto
+Dopo giorni senza risposte (club, locali lontani, numeri senza WhatsApp, saluti senza nome):
+1. Solo Ticino, al massimo il Varesotto (l'aggancio "ragazzo ticinese" funziona solo lì).
+2. Solo attività piccole con il titolare che risponde di persona (estetiste, parrucchieri, artigiani, negozi). Niente club, catene, agenzie dietro.
+3. Cellulare E nome del titolare obbligatori (da recensioni o Instagram). Se manca uno dei due: scartare.
+4. Meglio ancora se è un'attività nuova (aperta da poco): non obbligatorio, ma ha la precedenza.
+5. Prima si manda a Jacopo una lista di 8–10 candidati con il motivo; i siti si fanno solo per quelli che sceglie lui.
+6. Consigli d'invio: in settimana 9–11 o 14–16; promemoria breve dopo 3–4 giorni.
+
 ## Obiettivo
 Jacopo vende siti web a piccole attività. Ogni notte prepari da **3 a 5** anteprime di sito
 (minimo 3, massimo 5) per attività che NON hanno un sito o ce l'hanno scarso/rotto, più il
