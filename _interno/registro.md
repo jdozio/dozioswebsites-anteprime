@@ -101,3 +101,4 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 - NAIL AND MORE di Giusi Vasile, Viale Portone 15, Bellinzona. 079 251 14 42. 4,9/29. Solo Instagram.
 - Beauty Place di Francesca Gori, Piazza Indipendenza 6, Bellinzona. 078 327 03 89. 5,0/2 (nuova). Solo Treatwell.
 - Scartate: DAMA Wellness Lugano (team, nessun nome titolare), Beauty Line Chiasso (nome titolare da trovare), Tiaré (fisso).
+- Bar Pinard | Piazza Molino Nuovo 5, Lugano | wine bar | anteprima fatta 20.10 (variante vino del modello locale notturno), 4,8/63, Falstaff 89 punti, sito attuale = solo immagine del logo; solo fisso 091 921 04 59 + info@barpinard.ch, contatto diretto lo ha Jacopo | 2026-10-20 | /bar-pinard-lugano/
