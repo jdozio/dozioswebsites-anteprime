@@ -57,7 +57,7 @@
   ],
   "6": null
  },
- "slotStep": 15,
+ "slotStep": 30,
  "draftNote": "listino, foto e orari dalla pagina Treatwell, recensioni da Treatwell e Google, testi da completare insieme",
  "hero": {
   "title": "Il tuo posto<br><em>di bellezza</em>.",
@@ -376,5 +376,16 @@
    "47 recensioni per Francesca",
    1
   ]
+ ],
+ "bookChips": [
+  "Viso",
+  "Laminazione ciglia",
+  "Extension ciglia",
+  "Sopracciglia",
+  "Manicure",
+  "Pedicure",
+  "Massaggio",
+  "Ceretta",
+  "Trucco"
  ]
 }
