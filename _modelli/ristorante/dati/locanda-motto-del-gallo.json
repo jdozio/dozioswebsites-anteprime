@@ -98,12 +98,6 @@
     "p": "49 CHF"
    },
    {
-    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RVynDo76KT52V1nAvwzBKddtJLgfXlQ1lTx68j0cHuFuOFZ2leF1WRZA24pxXPYytFLDjZc_2RNivGSjU1Xz--cPEIZywI0SEhYcdWEiK2IZQCNPchtm6jFontrg0nZMAI4L3WxdxPboSa=s1200",
-    "n": "Galletto ruspante",
-    "d": "Svizzero, cotto alla brace nel Josper.",
-    "p": "30 CHF / 500 g"
-   },
-   {
     "img": "foto/amatriciana.webp",
     "n": "All'amatriciana",
     "d": "Con il rigatone del Pastificio Mancini, e anche in versione senza glutine.",
@@ -379,7 +373,7 @@
  },
  "rooms": {
   "title": "Quattro camere <span class=\"sc\">per la notte</span>",
-  "text": "Dopo cena non serve guidare: sopra la locanda ci sono quattro camere, ognuna con bagno privato.",
+  "text": "Dopo cena non serve guidare: alla locanda ci sono quattro camere, ognuna con bagno privato.",
   "list": [
    "4 camere",
    "Bagno privato",
