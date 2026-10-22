@@ -6,12 +6,12 @@
  "embers": true,
  "desc": "Grotto San Salvatore a Pazzallo: dal 2016 puntine alla griglia, pasta e gnocchi fatti in casa, polenta e ossobuco. Banchetti, matrimoni e cene aziendali.",
  "fonts": {
-  "url": "https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@500;700&family=Nunito:ital,wght@0,400;0,600;1,400&display=swap",
-  "h": "'Amatic SC',cursive",
+  "url": "https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Caveat:wght@500;700&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap",
+  "h": "'Nunito',system-ui,sans-serif",
   "s": "'Caveat',cursive",
   "b": "'Nunito',system-ui,sans-serif"
  },
- "bodyClass": "amatic",
+ "bodyClass": "chalkh",
  "theme": {
   "bg": "#F6F0E1",
   "bg2": "#EFE6D1",
@@ -33,7 +33,7 @@
   "dcta": "#F2C14E",
   "dctx": "#262D2A"
  },
- "logo": "foto/scritta.png",
+ "logo": "foto/scritta-chiara.png",
  "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rl_YdHMevMdI_6wlWy59BhHsnhTBZaAkItY5n7fEqYVqcEwX680OjoUT38ok1ZrcWUJYcY7WCNNYGx42V-nqINwnlVjPqpwQ8w2YzSulDib1-inhpYV2_tKG9eyMukvbT74Z6g=w1200-h630-p-k-no",
  "mascot": {
   "img": "foto/capra.png",

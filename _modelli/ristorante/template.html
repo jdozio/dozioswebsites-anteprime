@@ -216,6 +216,8 @@ footer img{height:38px;margin:0 auto 14px}
 
 
 /* varianti */
+body.chalkh h1,body.chalkh h2{font-family:'Cabin Sketch',var(--fh);font-weight:700;letter-spacing:.01em}
+body.chalkh h1{font-size:clamp(46px,7.4vw,96px);line-height:1}
 .logo .lt{font:400 30px/1 var(--fs);color:var(--dtx);white-space:nowrap}
 footer .lt{font:400 34px/1 var(--fs);color:var(--dacc)}
 body.noup h1,body.noup h2,body.noup h3,body.noup .mi b,body.noup .cuts div{text-transform:none;letter-spacing:-.01em}
@@ -261,7 +263,7 @@ body.noup h1{font-weight:600}
 .bocce.go .ball.g{animation:roll2 2.6s cubic-bezier(.15,.7,.3,1) 1.6s forwards}
 @keyframes roll1{to{left:calc(72% - 58px);transform:rotate(980deg)}}
 @keyframes roll2{to{left:calc(72% + 24px);transform:rotate(1120deg)}}
-@media (max-width:640px){.wheel{top:92px;bottom:auto;right:-86px;width:230px;opacity:.7}.mascot{width:132px;left:-4px;bottom:-10px}body.hasmascot .hero .wrap{padding-bottom:150px}.bocce{height:90px}}
+@media (max-width:640px){.wheel{top:92px;bottom:auto;right:-86px;width:230px;opacity:.7}.mascot{width:118px;left:auto;right:8px;bottom:auto;top:96px;transform:translateY(-140%) rotate(-8deg)}.mascot.in{transform:rotate(-4deg)}.mascot .bub{left:auto;right:78%;top:8%;transform-origin:100% 100%;font-size:16px}.bocce{height:90px}}
 .logo .lt,footer .lt{text-decoration:none;display:inline-block}.logo:has(.lt){text-decoration:none}
 
 @media (max-width:980px){
