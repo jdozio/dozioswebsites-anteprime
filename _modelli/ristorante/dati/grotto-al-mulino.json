@@ -1,0 +1,257 @@
+{
+ "name": "Grotto al Mulino",
+ "short": "Al Mulino",
+ "city": "Bidogno",
+ "sig": "mulino",
+ "desc": "Grotto al Mulino a Bidogno: cucina di Robert, gnocchi fatti in casa, costine e polenta, accanto al ruscello con vista sui Denti della Vecchia.",
+ "fonts": {
+  "url": "https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap",
+  "h": "'Fraunces',Georgia,serif",
+  "s": "'Caveat',cursive",
+  "b": "'Source Sans 3',system-ui,sans-serif"
+ },
+ "bodyClass": "noup",
+ "theme": {
+  "bg": "#F2EEE4",
+  "bg2": "#E9E3D4",
+  "bg3": "#DFD7C4",
+  "tx": "#1F2620",
+  "tx2": "#5E6559",
+  "acc": "#A8622F",
+  "acc2": "#2F5A3F",
+  "line": "#D4CCB8",
+  "cta": "#A8622F",
+  "ctx": "#FFF8EE",
+  "dbg": "#17271E",
+  "dbg2": "#111E17",
+  "dbg3": "#1F3528",
+  "dtx": "#EFE9D9",
+  "dtx2": "#BABDA9",
+  "dacc": "#DD9A60",
+  "dline": "#2D4637",
+  "dcta": "#DD9A60",
+  "dctx": "#17271E"
+ },
+ "logo": "",
+ "logoText": "al Mulino",
+ "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RoO-boO6pmrZJP0VZSkSTGAYxIoGgfSi9qccYicZs2u1Viy4XRUfsEhL91hVQTZKDiz4kZtEdcns338LB8S3X4qe4SacY7jOTjhXDk_vWkzqXvnTAN74zJ0C0cCr-pp_SwHLNi0K77Gq_B=w1200-h630-p-k-no",
+ "phone": "+41919308716",
+ "phoneLabel": "091 930 87 16",
+ "email": "",
+ "instagram": "",
+ "address": "Via Monte Bar 58, 6958 Bidogno",
+ "mapsQuery": "Grotto al Mulino, Via Monte Bar 58, 6958 Bidogno",
+ "nav": [
+  [
+   "#menu",
+   "Menu"
+  ],
+  [
+   "#stagione",
+   "Il posto"
+  ],
+  [
+   "#prenota",
+   "Prenota"
+  ],
+  [
+   "#dove",
+   "Dove siamo"
+  ]
+ ],
+ "hero": {
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RoO-boO6pmrZJP0VZSkSTGAYxIoGgfSi9qccYicZs2u1Viy4XRUfsEhL91hVQTZKDiz4kZtEdcns338LB8S3X4qe4SacY7jOTjhXDk_vWkzqXvnTAN74zJ0C0cCr-pp_SwHLNi0K77Gq_B=s2400",
+  "alt": "La terrazza del Grotto al Mulino nel bosco",
+  "kicker": "Grotto · Bidogno, Capriasca",
+  "title": "Si mangia <span class=\"sc\">accanto al ruscello</span>",
+  "sub": "La cucina di Robert, il rumore dell'acqua e la vista sui Denti della Vecchia."
+ },
+ "ticker": [
+  "Gnocchi fatti in casa",
+  "Costine",
+  "Polenta e brasato",
+  "Funghi",
+  "Hamburger di fassona",
+  "Roast-beef con salsa speciale",
+  "Tagliere"
+ ],
+ "story": {
+  "kicker": "Il grotto",
+  "title": "Robert in cucina, <span class=\"sc\">il bosco intorno</span>",
+  "text": "Al Mulino si viene per mangiare bene senza fretta: gnocchi fatti in casa, costine, polenta e brasato, preparati da Robert, titolare e cuoco. Fuori il giardino e il ruscello, dentro una sala riscaldata per le sere fredde. I cani sono benvenuti, i bambini anche.",
+  "imgs": [
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RPQ9Nm4FvNzKgfFKsp7qpIsqw1ZDVGKbz-d3Bs9qZKC7lg2D840yQNq9wOOwmrCkFIem4Cvg-4pjOMt3T_UtQCDbxSoTeYY6-F4OiQ0BF6bJNpJrujJzs4ohPBOjJ7XHuqCMseRUij7Mw=s1600",
+    "alt": "Il Grotto al Mulino"
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Racw2TDiACT_xMCV19O6qbnPaNDg3Zc2DZQBTv9wa7mcB1SKrorA53AEIETly42gFFjzkedFGFW5aTqJLu62GjTX1GSiwGe8SrezYsTUgaOkn-CPa0k3HJfZMqr-VkrWh1Gb09COtreC8B=s1600",
+    "alt": "La sala interna"
+   }
+  ],
+  "facts": [
+   [
+    "4,8 ★",
+    "95 recensioni su Google"
+   ],
+   [
+    "Robert",
+    "titolare e cuoco"
+   ],
+   [
+    "Cani",
+    "benvenuti"
+   ]
+  ]
+ },
+ "dishes": {
+  "kicker": "Dalla cucina",
+  "title": "Piatti <span class=\"sc\">di casa</span>",
+  "items": [
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q1h89G1LxDZp0j605MNJG9OXgPwOPdjsYM9CtQw_H91vkEDuEorxke_3Zv4dgq0Hkhu2eVhF0v8o5dJShz1y9aGG9e_gmLvW3qgdMi0tWUfyGR_U2KW4FHNYQhq-uIgYupTECy=s1600",
+    "n": "Gnocchi fatti in casa",
+    "d": "Impastati in cucina, come si deve."
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SN1N98kOcepAaI1WlqM2zlYauCUMKB8aAF3nl1yXFe0CSCKhS3NQSNVpBKdmfxsq7FkOdOM3EEyoqXVX83sn4C0FsKW1ZbJWIUYhFMPtSgg-QKG-hUsiDCXzuQ5nFDdgx3_xu9AfpgYp0=s1600",
+    "n": "Costine",
+    "d": "Uno dei piatti più chiesti del grotto."
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QV6TYJOrFHuPVBBYvtnncI0qQ4B7cIk7dPRChjNR9ET2dleGpbNTkg_daDjIPKQziph0pSroCNHfuJMuqCTdgwueroh6naCciuCY4oydtU4baOdBD7NXrWh3-nm_WH9iKDVAgzC7pL2jTm=s1600",
+    "n": "Tagliere",
+    "d": "Da dividere in compagnia, per cominciare."
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R8eRFLv_QDtutx6yIYpo6dAafuH6kdnjhLlV0zCAZCuBaNEEhptD5PK8W0LP22HmVZ6HIZ91aokrOMUan1OS46SZ8gEKfHUdQMA7UhV4xg7uZn2ptvR680kH8ttJjDhEM9OH4=s1600",
+    "n": "Dalla griglia",
+    "d": "Carne cotta con calma, servita calda al tavolo."
+   }
+  ]
+ },
+ "menu": {
+  "title": "Il menu <span class=\"sc\">di Robert</span>",
+  "text": "I piatti che gli ospiti ricordano di più. Il resto cambia con la stagione.",
+  "tabs": [
+   {
+    "t": "Cucina",
+    "items": [
+     {
+      "n": "Gnocchi fatti in casa"
+     },
+     {
+      "n": "Polenta e brasato"
+     },
+     {
+      "n": "Costine"
+     },
+     {
+      "n": "Funghi",
+      "d": "in stagione"
+     }
+    ]
+   },
+   {
+    "t": "Carne",
+    "items": [
+     {
+      "n": "Hamburger di fassona"
+     },
+     {
+      "n": "Roast-beef con salsa speciale"
+     }
+    ]
+   },
+   {
+    "t": "Per cominciare",
+    "items": [
+     {
+      "n": "Tagliere"
+     }
+    ]
+   }
+  ],
+  "note": "Prezzi e piatti del giorno da completare insieme"
+ },
+ "season": {
+  "kicker": "Il posto",
+  "title": "Il ruscello, <span class=\"sc\">il giardino</span>",
+  "text": "Il grotto è accanto al ruscello, con il giardino e la vista sui Denti della Vecchia. D'estate si mangia fuori, d'inverno nella sala riscaldata.",
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QXT-3bvwGAmtzBwuDixmEs8_vcN4nt4G66AO4gLAN6ipAgciVdNd5rascvjgrm5uEfT6PyJ-Yxzs5zGJ5_4-ivrma23EKSWBvk-hzvbYztERBkQh5b3zufsKKW62FCOqiA47z9Ug=s1600",
+  "alt": "Il ruscello accanto al grotto",
+  "tag": "Bidogno",
+  "items": [
+   "Ruscello",
+   "Vista sui Denti della Vecchia",
+   "Giardino",
+   "Sala riscaldata",
+   "Cani benvenuti",
+   "Bambini benvenuti"
+  ]
+ },
+ "orto": {
+  "kicker": "La sera",
+  "title": "Quando si <span class=\"sc\">accendono le luci</span>",
+  "text": "Aperti fino a mezzanotte, la domenica dalle dieci del mattino. Il martedì il grotto riposa.",
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QLtk8HuXVAoi4MUwjAOUfKodXDQx4E--Sn3XjIdelIne2osia0OOjnZ8igre1O6cXOERUl9zhWpWBWvqfYqmDdiWVmGfgjtFnu9rrnkyQbXMyywdeVSA2Sh_ujaFtho9t2eNA0ww=s1600",
+  "alt": "Il grotto la sera"
+ },
+ "reviews": {
+  "rating": "4,8",
+  "count": 95,
+  "list": []
+ },
+ "hours": {
+  "0": [
+   [
+    "10:00",
+    "00:00"
+   ]
+  ],
+  "1": [
+   [
+    "17:00",
+    "00:00"
+   ]
+  ],
+  "3": [
+   [
+    "17:00",
+    "00:00"
+   ]
+  ],
+  "4": [
+   [
+    "17:00",
+    "00:00"
+   ]
+  ],
+  "5": [
+   [
+    "17:00",
+    "00:00"
+   ]
+  ],
+  "6": [
+   [
+    "17:00",
+    "00:00"
+   ]
+  ]
+ },
+ "book": {
+  "mode": "call",
+  "text": "Al Mulino si prenota per telefono. Scegli giorno, ora e quanti siete: ti prepariamo il riepilogo da dire a Robert.",
+  "types": [
+   [
+    "tavolo",
+    "Un tavolo"
+   ]
+  ],
+  "callNote": "Si prenota per telefono: ecco il riepilogo da dire a Robert.",
+  "todo": "se volete, aggiungiamo una prenotazione via email o WhatsApp."
+ },
+ "doveTitle": "Venite <span class=\"sc\">a trovarci</span>",
+ "infoTodo": ""
+}

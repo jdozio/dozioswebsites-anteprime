@@ -22,6 +22,8 @@ for f in sorted(glob.glob(os.path.join(B,'dati','*.json'))):
     s=T.replace('{{TITLE}}',e(D['name']+' · '+D['city'])).replace('{{DESC}}',e(D['desc']))
     md='<meta name="description" content="'+e(D['desc'])+'">'
     s=s.replace(md,md+og,1)
+    F=D.get('fonts',{'url':'https://fonts.googleapis.com/css2?family=Damion&family=Oswald:wght@300;400;500;600&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap','h':"'Oswald',sans-serif",'s':"'Damion',cursive",'b':"'Open Sans',system-ui,sans-serif"})
+    s=s.replace('{{FONTURL}}',e(F['url'])).replace('{{FH}}',F['h']).replace('{{FS}}',F['s']).replace('{{FB}}',F['b'])
     for k,v in D['theme'].items(): s=s.replace('{{'+k.upper()+'}}',v)
     s=s.replace('{{DATA}}',json.dumps(D,ensure_ascii=False).replace('</','<\\/'))
     os.makedirs(os.path.join(ROOT,slug),exist_ok=True)
