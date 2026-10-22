@@ -77,7 +77,8 @@
   "cta2": [
    "#menu",
    "La lavagna"
-  ]
+  ],
+  "pos": "50% 80%"
  },
  "ticker": [
   "Puntine alla griglia",
@@ -184,8 +185,8 @@
  },
  "season": {
   "kicker": "Fuori",
-  "title": "La terrazza <span class=\"sc\">e le farfalle</span>",
-  "text": "Ombrelloni gialli d'estate, il camino d'inverno. E le farfalle che girano tra i tavoli.",
+  "title": "Sotto <span class=\"sc\">gli alberi</span>",
+  "text": "Terrazza all'ombra d'estate, il camino d'inverno. E le farfalle che girano tra i tavoli.",
   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RNKyJ7Xqgsu9Xev4U0LqxSiPf0FiVwPqxzQyWP9u81avEZRCQWVIUmNMB9cB-XCKp4152jmFKaffKjno481f5L_qVnsVBvBH7XUERZFIy1XUd3NZFHlkquUZxsQWON2vguljLG7gmrdIy0=s1600",
   "alt": "Il grotto da fuori",
   "items": [
