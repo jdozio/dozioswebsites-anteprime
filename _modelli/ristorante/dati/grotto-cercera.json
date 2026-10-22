@@ -33,7 +33,7 @@
  },
  "logo": "",
  "logoText": "Cercera",
- "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QtakZHvFNLZ8qcYzdh2RiuevK_TeB282sd73qmyYUGvDR4Z-lcMCwZc5N8IFxZnRHt-dsZ7WUfduqZGrfRMA2tM4bq-9fwHpw4E3t0E9tGTWrjrAijX6DOP3FYnQK6IeAhbe5b=w1200-h630-p-k-no",
+ "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TLn0g-Ie9FG9GGD0ACvH5rj0b-jdSMj-NAKQygAgIwCZ3x90TSxv45nWaYBVkNR-ixBjgjGlnjov4zhKYcHKUmNdvN7MaxWl18e35JQYrPKl1grrGxN-HKXiBhtUnxewhY2ZWB=w1200-h630-p-k-no",
  "phone": "+41916301930",
  "phoneLabel": "091 630 19 30",
  "email": "",
@@ -60,15 +60,16 @@
   ]
  ],
  "hero": {
-  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QtakZHvFNLZ8qcYzdh2RiuevK_TeB282sd73qmyYUGvDR4Z-lcMCwZc5N8IFxZnRHt-dsZ7WUfduqZGrfRMA2tM4bq-9fwHpw4E3t0E9tGTWrjrAijX6DOP3FYnQK6IeAhbe5b=s2400",
-  "alt": "La terrazza coperta del Grotto Cercera",
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TLn0g-Ie9FG9GGD0ACvH5rj0b-jdSMj-NAKQygAgIwCZ3x90TSxv45nWaYBVkNR-ixBjgjGlnjov4zhKYcHKUmNdvN7MaxWl18e35JQYrPKl1grrGxN-HKXiBhtUnxewhY2ZWB=s2400",
+  "alt": "Pizza del Grotto Cercera",
   "kicker": "Grotto · Rancate",
   "title": "Pizza, grotto <span class=\"sc\">e una partita a bocce</span>",
-  "sub": "Pizza leggera e digeribile, piatti di grotto e la terrazza coperta, nel verde sopra Mendrisio.",
+  "sub": "Pizza leggera e digeribile, piatti di grotto, terrazza coperta e giardino. A Rancate, nel Mendrisiotto.",
   "cta2": [
    "#piatti",
    "I piatti"
-  ]
+  ],
+  "pos": "50% 45%"
  },
  "ticker": [
   "Pizza leggera",
@@ -109,14 +110,9 @@
   ]
  },
  "dishes": {
-  "kicker": "Dal forno e dalla cucina",
-  "title": "Pizza <span class=\"sc\">e non solo</span>",
+  "kicker": "Dalla cucina",
+  "title": "Non solo <span class=\"sc\">pizza</span>",
   "items": [
-   {
-    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TLn0g-Ie9FG9GGD0ACvH5rj0b-jdSMj-NAKQygAgIwCZ3x90TSxv45nWaYBVkNR-ixBjgjGlnjov4zhKYcHKUmNdvN7MaxWl18e35JQYrPKl1grrGxN-HKXiBhtUnxewhY2ZWB=s1600",
-    "n": "Pizza",
-    "d": "Leggera e digeribile: è quella che si nomina di più."
-   },
    {
     "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TLZOw6dhsLd7XDS_6HtHBw850UeHbhcLpTAeRqc9gc8lkiySm5NrMZy3-VrLGzp3GQoosm_UiEPSCnjcgGNv6PUI0bQ3XdFqlLSCR2JRNDxAsfHf1JreST-13kHqaoczqrf8p-QQ=s1600",
     "n": "Pappardelle ai funghi",
@@ -125,17 +121,17 @@
    {
     "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SxtnkOmdD3I82-Rxymwqc_RUwDPNb35MdePdbZ4sfaFcfQg_E2_lz0n0SjQh3_VFcRctn1hf1lDNnpIbKdoHcOKzsp7RBcZBelDHQMjVJrbAiCSSOxsSXS7Uo5aLIV9VZcSmST=s1600",
     "n": "La carne",
-    "d": "Filetto al pepe, cordon bleu e piatti dalla cucina."
+    "d": "Carne alla griglia con patate e verdure."
    },
    {
     "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RqYd8XPbXIKwdE_PPLF29dH3OPCS6lNmJ287mdQEPvbODF4DhzIwIFCaAo5IIz9dTrX9QrWjLUzvd7abOpbpPzULIDdyWyxmXN5qdhDwUlvvteZqHb203b0f7VpHiOl3fLxfEV=s1600",
-    "n": "Spaghetti alle vongole",
-    "d": "Per chi la sera non vuole la pizza."
+    "n": "Spaghetti ai frutti di mare",
+    "d": "Cozze e vongole, per chi la sera non vuole la pizza."
    },
    {
     "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SlXDpfxpX0OQaiMcDEoWOWujbSuuqkJqnI2vWX6A8xRz7Ea9VhgMyAOLb5EvXTI-f8VLvZXAsomHmbMKXMhYQ73y_6Sl9QhxccORkVbxWHhmK2YSKgzzeVaDC7zGpzitV7Bhk=s1600",
-    "n": "Frittura",
-    "d": "Croccante, da dividere."
+    "n": "Frittura di mare",
+    "d": "Calamari e gamberi, da dividere."
    }
   ]
  },
