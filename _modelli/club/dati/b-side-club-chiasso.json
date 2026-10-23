@@ -18,7 +18,7 @@
   "alt": "La sala del B-Side con le luci blu",
   "pos": "50% 50%",
   "tag": "Chiasso · Via Carlo Pasta 2",
-  "title": "<span class=\"wmw\"><img class=\"wm\" src=\"foto/logo.png\" alt=\"B-Side Club\"></span><span class=\"neon\">Lounge Bar</span>",
+  "title": "<img class=\"wmn\" src=\"foto/logo-neon.webp\" alt=\"B-Side Club · Lounge Bar · Chiasso\">",
   "sub": "DJ set, vocalist e privé a Chiasso, vicino al Palapenz. Il venerdì e il sabato, dalle 23 fino all'alba."
  },
  "facts": [
@@ -123,7 +123,7 @@
   "Festa"
  ],
  "instagram": "",
- "heroExtra": "<svg class=\"tri\" viewBox=\"0 0 200 180\" aria-hidden=\"true\"><path d=\"M100 8 L192 172 L8 172 Z\"/></svg>",
- "css": "\n.hero h1{font-size:clamp(40px,9vw,120px);line-height:1}\n.wmw{position:relative;display:block;width:min(92%,760px);overflow:hidden;padding:.08em 0}\n.wm{display:block;width:100%;height:auto;filter:drop-shadow(0 0 18px rgba(122,60,255,.55))}\n.wmw::after{content:\"\";position:absolute;inset:.08em 0;background:linear-gradient(105deg,transparent 42%,#fff 49%,#FF2BD6 52%,transparent 60%) no-repeat;background-size:300% 100%;background-position:150% 0;animation:cutsweep 4.8s cubic-bezier(.6,0,.3,1) 1.2s infinite;-webkit-mask:url(foto/logo.png) center/100% 100% no-repeat;mask:url(foto/logo.png) center/100% 100% no-repeat}\n@keyframes cutsweep{0%{background-position:150% 0}35%,100%{background-position:-50% 0}}\n.neon{display:inline-block;margin-top:.28em;font:400 clamp(30px,6.4vw,74px)/1 'Monoton','Rubik Mono One',var(--fd);letter-spacing:.06em;color:#FFE6FA;text-transform:uppercase;text-shadow:0 0 4px #fff,0 0 12px #FF2BD6,0 0 26px #FF2BD6,0 0 48px #7A3CFF;animation:flick 7s linear infinite}\n@keyframes flick{0%,18%,22%,25%,53%,57%,100%{opacity:1}20%,24%,55%{opacity:.35}}\n.tri{position:absolute;z-index:1;right:-6%;top:12%;width:min(62vw,520px);fill:none;stroke:#2DE2FF;stroke-width:2.2;opacity:.75;filter:drop-shadow(0 0 8px #2DE2FF) drop-shadow(0 0 22px #2D8CFF);animation:trispin 26s linear infinite;pointer-events:none}\n@keyframes trispin{to{transform:rotate(360deg)}}\n.hero .wrap{position:relative;z-index:3}\n@media(max-width:700px){.tri{right:-30%;top:6%;width:90vw;opacity:.55}}\n@media (prefers-reduced-motion:reduce){.wmw::after,.neon,.tri{animation:none}}\n\n#logo img.mk{height:20px!important;width:auto}",
- "headLogo": "foto/logo.png"
+ "heroExtra": "",
+ "css": "\n.hero h1{margin-bottom:14px;line-height:0}\n.wmn{display:block;width:min(92%,540px);height:auto;mix-blend-mode:screen;animation:nflick 8s linear infinite}\n@keyframes nflick{0%,17%,21%,24%,61%,64%,100%{filter:brightness(1.05)}19%,22.5%,62.5%{filter:brightness(.55)}}\n.hero .wrap{position:relative;z-index:3}\n#logo img.mk{height:42px!important;width:auto;mix-blend-mode:screen}\n@media (prefers-reduced-motion:reduce){.wmn{animation:none}}\n",
+ "headLogo": "foto/icon.png"
 }
