@@ -1,0 +1,93 @@
+{
+ "name": "Salone HairPassion",
+ "short": "HairPassion",
+ "logoTag": "Castione",
+ "city": "Castione",
+ "kind": "beauty",
+ "fonts": "classico",
+ "walkin": false,
+ "theme": {"dark": false, "bg": "#FFF6F1", "bg2": "#FFFFFF", "bg3": "#F6DDD3", "ink": "#2A1715", "ink2": "#7C5E58", "acc": "#B3262E", "acc2": "#F2C1AE", "on": "#FFFFFF", "line": "#EFD9D0"},
+ "desc": "Salone HairPassion di Alessandra Mantello, Via Cantonale 24a a Castione. Taglio donna, uomo e bambino, colore, mèches, shatush, cheratina, permanente e acconciature. Tel. 076 367 15 88.",
+ "ogImage": "https://jdozio.github.io/dozioswebsites-anteprime/salone-hairpassion-castione/og.jpg",
+ "phone": "+41 76 367 15 88",
+ "phoneLabel": "076 367 15 88",
+ "whatsapp": true,
+ "instagram": "salone_hairpassion",
+ "address": "Via Cantonale 24a, 6532 Castione",
+ "mapsQuery": "Salone HairPassion, Via Cantonale 24a, Castione",
+ "slotStep": 30,
+ "draftNote": "foto da inserire, testi e listino da completare insieme",
+ "hours": {"2": [["08:00","18:00"]], "3": [["08:00","18:00"]], "4": [["08:00","18:00"]], "5": [["08:00","18:00"]], "6": [["08:00","15:00"]]},
+ "hero": {
+  "title": "Sempre più giovane<br><em>e innovativo</em>.",
+  "sub": "Taglio, colore, shatush, cheratina e acconciature per donna, uomo e bambino. Da Alessandra a Castione, sulla Cantonale, sempre aggiornata sulle ultime novità.",
+  "trio": true,
+  "imgs": [
+   {"img": "foto/hero-1.svg", "foto": "hero-1: uno shatush o mèches finite", "alt": "Shatush", "pos": "50% 50%"},
+   {"img": "foto/hero-2.svg", "foto": "hero-2: Alessandra al lavoro", "alt": "Alessandra al lavoro", "pos": "50% 50%"},
+   {"img": "foto/hero-3.svg", "foto": "hero-3: una piega o acconciatura", "alt": "Piega", "pos": "50% 50%"}
+  ]
+ },
+ "badge": {"ring": "Salone HairPassion · Castione", "text": "Taglio e colore"},
+ "facts": [["Sposa e festa", "acconciature su misura"], ["Castione", "Via Cantonale 24a"], ["5,0 su 5", "10 valutazioni su local.ch"]],
+ "marquee": ["Taglio donna", "Taglio uomo", "Taglio bambino", "Colore", "Piega", "Mèches", "Shatush", "Cheratina", "Permanente", "Acconciature"],
+ "servTitle": "Tutto quello<br><em>che fa Alessandra</em>.",
+ "servTxt": "I servizi del salone, dalla pagina local.ch. Durate e prezzi li inseriamo insieme.",
+ "services": [
+  {"group": "Taglio", "tag": "Per tutti", "items": [
+   {"n": "Taglio donna", "d": "Su capelli corti, medi e lunghi."},
+   {"n": "Taglio uomo", "d": "Classico o di tendenza."},
+   {"n": "Taglio bambino", "d": "Anche per i più piccoli."},
+   {"n": "Lavaggio, taglio e asciugatura", "d": "Il servizio completo."}
+  ]},
+  {"group": "Colore", "tag": "Sfumature", "items": [
+   {"n": "Colore", "d": "Copertura, ravvivante o cambio di look."},
+   {"n": "Mèches", "d": "Luce dove serve."},
+   {"n": "Shatush", "d": "La sfumatura morbida, dalle radici scure alle punte chiare."}
+  ]},
+  {"group": "Forma e cura", "tag": "Trattamenti", "items": [
+   {"n": "Cheratina", "d": "Capelli più lisci, lucidi e facili da gestire."},
+   {"n": "Permanente", "d": "Onde e volume che durano."}
+  ]},
+  {"group": "Piega e acconciature", "tag": "Occasioni", "items": [
+   {"n": "Piega", "d": "Per tutti i giorni."},
+   {"n": "Acconciature da sposa e da festa", "d": "Per il matrimonio, una cerimonia o una serata."}
+  ]}
+ ],
+ "servTodo": "il listino con durate e prezzi, ed eventuali novità o promozioni da mettere in evidenza.",
+ "galTitle": "Le ultime <em>novità</em>.",
+ "galTxt": "Tagli, colori e acconciature usciti dal salone. Qui andranno le foto vere dei lavori di Alessandra.",
+ "gallery": [
+  {"img": "foto/lavoro-1.svg", "foto": "lavoro-1: shatush visto da dietro", "cap": "Shatush", "h": "4/5"},
+  {"img": "foto/lavoro-2.svg", "foto": "lavoro-2: taglio corto donna", "cap": "Taglio donna", "h": "1/1"},
+  {"img": "foto/lavoro-3.svg", "foto": "lavoro-3: acconciatura da sposa o da festa", "cap": "Acconciatura", "h": "3/4"},
+  {"img": "foto/lavoro-4.svg", "foto": "lavoro-4: colore", "cap": "Colore", "h": "1/1"},
+  {"img": "foto/lavoro-5.svg", "foto": "lavoro-5: capelli dopo la cheratina", "cap": "Cheratina", "h": "4/5"},
+  {"img": "foto/lavoro-6.svg", "foto": "lavoro-6: taglio uomo o bambino", "cap": "Taglio uomo", "h": "3/4"}
+ ],
+ "galTodo": "6 foto dei lavori (meglio verticali e nitide) e, se c'è, una foto del salone.",
+ "why": {
+  "img": "foto/salone.svg",
+  "foto": "salone: l'interno del salone o Alessandra con una cliente",
+  "alt": "Il salone",
+  "title": "La passione<br><em>è nel nome</em>.",
+  "text": "Il salone HairPassion è lieto di accogliervi: così si presenta Alessandra. Un salone di quartiere sulla Cantonale, per tutta la famiglia, che tiene il passo con le ultime novità per offrirle alle sue clienti.",
+  "points": [
+   ["Sempre aggiornato", "Nuove tecniche e tendenze, portate in salone appena arrivano."],
+   ["Per tutta la famiglia", "Donna, uomo e bambino, su capelli corti, medi e lunghi."],
+   ["Comodo", "Sulla Cantonale a Castione, vicino ai mezzi pubblici."]
+  ],
+  "todo": "la storia del salone in poche righe: da quando c'è, come è nata la passione di Alessandra."
+ },
+ "sig": "ciocca",
+ "sigColors": ["#3A1F17", "#8C4A2F", "#E3A86A"],
+ "stats": [["5,0", "10 valutazioni su local.ch", 1]],
+ "revLink": ["Leggi le valutazioni su local.ch", "https://www.local.ch/it/d/castione/6532/parrucchiere/salone-hairpassion-blZhFBmWW7SKrtPHUQyDaw"],
+ "book": {
+  "title": "Scegli il servizio,<br><em>poi il giorno</em>.",
+  "text": "La richiesta arriva ad Alessandra su WhatsApp già scritta. Ti risponde lei per confermare l'orario.",
+  "todo": "gli orari in cui prendete appuntamenti, se diversi da quelli di apertura."
+ },
+ "doveTitle": "Via Cantonale <em>24a</em>",
+ "bookChips": ["Taglio donna", "Taglio uomo", "Taglio bambino", "Colore", "Mèches / shatush", "Cheratina", "Permanente", "Acconciatura"]
+}
