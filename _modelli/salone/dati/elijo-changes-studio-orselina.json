@@ -1,0 +1,274 @@
+{
+ "kind": "barber",
+ "slotStep": 30,
+ "whatsapp": true,
+ "instagram": "",
+ "draftNote": "foto e recensioni dalla scheda Google · testi e listino da completare insieme",
+ "name": "Elijo Changes Studio",
+ "short": "Elijo",
+ "logoTag": "Changes Studio",
+ "city": "Orselina",
+ "fonts": "classico",
+ "walkin": false,
+ "theme": {
+  "dark": true,
+  "bg": "#0E0E0E",
+  "bg2": "#161616",
+  "bg3": "#202020",
+  "ink": "#F2F2F0",
+  "ink2": "#A3A3A0",
+  "acc": "#C6F05A",
+  "acc2": "#2E3A14",
+  "on": "#0E0E0E",
+  "line": "#2A2A2A"
+ },
+ "desc": "Elijo Changes Studio, Via Consiglio Mezzano 31 a Orselina, sopra Locarno. Fade, tagli su misura e disegni. Prenotazione online. Tel. 078 205 83 44.",
+ "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SuOlcVB9d0P6OmpOKr0TMKeIl6h0gCTWGnNNRuyM_xq9r0PefMHKXv42OMLWNdueTmtpdsa3sEj_2z9BDoLEcvo7lPrnQ6W_oYb6VAdnR6qv5-xtKwEB8V0XfBm0RSY-gS1u3mhA=w1200-h630-p-k-no",
+ "phone": "+41 78 205 83 44",
+ "phoneLabel": "078 205 83 44",
+ "bookUrl": "https://elijo.reservio.com",
+ "address": "Via Consiglio Mezzano 31, 6633 Orselina",
+ "mapsQuery": "Elijo Changes Studio, Via Consiglio Mezzano 31, Orselina",
+ "hours": {
+  "1": [
+   [
+    "10:00",
+    "18:00"
+   ]
+  ],
+  "2": [
+   [
+    "10:00",
+    "18:00"
+   ]
+  ],
+  "3": [
+   [
+    "10:00",
+    "18:00"
+   ]
+  ],
+  "4": [
+   [
+    "10:00",
+    "18:00"
+   ]
+  ],
+  "5": [
+   [
+    "10:00",
+    "18:00"
+   ]
+  ],
+  "6": [
+   [
+    "10:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hero": {
+  "title": "Non un taglio.<br>Un <em>cambiamento</em>.",
+  "sub": "Fade, tagli su misura e disegni a Orselina, sopra Locarno. Si parte dalla forma del viso e dal tuo stile, poi si lavora di precisione.",
+  "trio": true,
+  "imgs": [
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qp4nboTyZ7zD17YjpnGqeUnN-VUr4IlgSIPJh8zo8K4MEoH5j1ATGACBS9SDh-OU2REEAYC7P8fWRbLsE29EnT3-PfbbrsUW408L1vKaiTkfbD3LfvjEP-xAZW0GRHqjmUp8MUxg=s1600",
+    "alt": "Taglio con linee disegnate sulla nuca",
+    "pos": "50% 40%"
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SuOlcVB9d0P6OmpOKr0TMKeIl6h0gCTWGnNNRuyM_xq9r0PefMHKXv42OMLWNdueTmtpdsa3sEj_2z9BDoLEcvo7lPrnQ6W_oYb6VAdnR6qv5-xtKwEB8V0XfBm0RSY-gS1u3mhA=s1600",
+    "alt": "Mid fade con frangia",
+    "pos": "45% 40%"
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QPkrwLHDl3AcXItZn1lmo0NJgLgDwn9P2I4PBgkmYwOR_CMf9XREERhV2NVHDhxmVDpuFT6W9o4Lf8xoQFUd1ALYJpiMFs1g1in2IkGwhfnBl9rBBzvvQum0LVtltdwkqOU3_9=s1600",
+    "alt": "Taglio con sfumatura sulla nuca",
+    "pos": "50% 40%"
+   }
+  ]
+ },
+ "badge": {
+  "ring": "Elijo · Changes Studio",
+  "text": "Fade e disegni"
+ },
+ "facts": [
+  [
+   "Lun – Sab",
+   "10:00 – 18:00"
+  ],
+  [
+   "Online",
+   "prenoti in un minuto"
+  ],
+  [
+   "5,0 su 5",
+   "14 recensioni su Google"
+  ]
+ ],
+ "marquee": [
+  "Low fade",
+  "Mid fade",
+  "Taper",
+  "Disegni",
+  "Curly",
+  "Orselina",
+  "Prenota online"
+ ],
+ "servTitle": "Il taglio <em>giusto per te</em>.",
+ "servTxt": "Quello che si vede nei lavori e che i clienti raccontano. Prezzi e durate sono sulla pagina di prenotazione.",
+ "services": [
+  {
+   "group": "Fade",
+   "tag": "Precisione",
+   "items": [
+    {
+     "n": "Low, mid e high fade",
+     "d": "Sfumature pulite, dalla pelle alla lunghezza."
+    },
+    {
+     "n": "Taper",
+     "d": "La sfumatura discreta, solo su nuca e basette."
+    }
+   ]
+  },
+  {
+   "group": "Stile",
+   "tag": "Su misura",
+   "items": [
+    {
+     "n": "Consulenza",
+     "d": "Il taglio scelto in base alla forma del viso e al tuo stile."
+    },
+    {
+     "n": "Disegni",
+     "d": "Linee incise a mano sulla sfumatura."
+    },
+    {
+     "n": "Ricci e texture",
+     "d": "Tagli pensati per i capelli mossi e ricci."
+    }
+   ]
+  },
+  {
+   "group": "Lo studio",
+   "tag": "Sempre",
+   "items": [
+    {
+     "n": "Prenotazione online",
+     "d": "Scegli giorno e ora, senza telefonare."
+    },
+    {
+     "n": "Moderno e pulito",
+     "d": "Uno studio accogliente, a Orselina."
+    }
+   ]
+  }
+ ],
+ "servTodo": "i servizi da mettere in primo piano (barba? colore?), se diversi da quelli sulla pagina di prenotazione.",
+ "galTitle": "Prima <em>e dopo</em> non serve.",
+ "galTxt": "Bastano i lavori.",
+ "gallery": [
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QMzSJPcJt6HVk3RieoOQhd4HdzAwYcr0yrQEh6OwBACw-lODTlVdoYAiGammzqnt2NhA3FBRZ9al_AkqZWMiZ7Nx-iPJMXXZbWHcYD4gkMfPWmFn1mk1qv_OD6JdDQFoJvmpUhFA=s1600",
+   "cap": "Ricci con sfumatura",
+   "h": "3/4",
+   "pos": "50% 35%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QgAymZt5YsKWzwee3t51sIO2hzsYORJsJV9ei8VGC2MVtgdmCIaFMPXJ3dCtgzJf-yzjLeJrxYyH7KvVGTwKCQylJkIAa6cRhIYlgb1gkly9odxO49hffzSJ7d92jM95DXJzRZ=s1600",
+   "cap": "Mid fade",
+   "h": "3/4",
+   "pos": "50% 40%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rbvxtrl2QMDOiUgfrsqJ3gv6AJToUCavChJZowLoVxCm5IB0jDPJxbeH2l3g4kEAAT5bsyvpYaCFjODtKlrjYUnEN-TZskMrk39Rhe8IhlXxs37kupZ_SwU_euzvaRdD0m1nmf=s1600",
+   "cap": "Taper e frangia",
+   "h": "3/4",
+   "pos": "50% 35%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tf_xSWUUJ0GKeIf9tSxc4vlBtCjqfCjOn_sOh-z2PxEsmpUsDOmiFKRdjh0LRzHEzG1AZmGQiAXtjgT4ZaYPe3EeXYW5xL27tyEFWdA6nkOzCIDSDyxhG1mrSYIxld0qFaCfhLfQ=s1600",
+   "cap": "Platino",
+   "h": "3/4",
+   "pos": "50% 35%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ss0Qlmyd31jQ4tRgBSejymggSfAcUIMDiSMgaWHLUyfAlAJKgcpNv-0BAYeZwJYGDk3lrRL1smZrWNN_nd4MvAzh2qvlz3UEgoxmKGQ6g9mLjiabDsjyoc1cifeXtorDsGXYAS=s1600",
+   "cap": "Frangia texture",
+   "h": "3/4",
+   "pos": "50% 30%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QRb_Qib9sas9ZV3vnbviThGvtuODtdK8892OAhYTfIsRKaPNTMGStVWXPhINCwIrfnKnmXslnz3YlS4CP6uzgKLuzn10cVQbaXKoXx8SuOa49mYtaZe7bEK8hewzMtSdwfCG_A=s1600",
+   "cap": "Pompadour",
+   "h": "3/4",
+   "pos": "50% 30%"
+  }
+ ],
+ "galTodo": "",
+ "sig": "lines",
+ "why": {
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SJaY1HYZ3m4mtjVOkAoz8AWWu1bGyDCb9YuaE5zG4bnHwubMnWPBDFq70WPCKTSkubKxDXfLWG2R4Rocsbi5NJMwZdzarFh20opJAiMfqI1etiazvsSwTLpwk_WJ49guMtNJ6n=s1600",
+  "alt": "Sfumatura nello studio",
+  "pos": "50% 40%",
+  "title": "Si parte<br><em>dal tuo viso</em>.",
+  "text": "Chi è passato da Elijo racconta la stessa cosa: prima ascolta, poi consiglia il taglio giusto per la forma del viso e lo stile, e lo esegue con una precisione rara.",
+  "points": [
+   [
+    "Consiglio vero",
+    "Il taglio scelto insieme, non a caso."
+   ],
+   [
+    "Preciso e veloce",
+    "Sfumature pulite senza perdere tempo."
+   ],
+   [
+    "Prenoti online",
+    "Orari liberi sempre visibili."
+   ]
+  ],
+  "todo": ""
+ },
+ "stats": [
+  [
+   "5,0",
+   "14 recensioni su Google",
+   1
+  ]
+ ],
+ "revLink": [
+  "Leggi le recensioni su Google",
+  "https://www.google.com/maps/search/?api=1&query=Elijo+Changes+Studio+Orselina"
+ ],
+ "reviews": [
+  [
+   "Mi ha consigliato il taglio migliore per la forma del mio viso e il mio stile. Ambiente moderno, pulito e accogliente.",
+   "Atanas M.",
+   5
+  ],
+  [
+   "Vengo qui da anni ed esco sempre soddisfatto. Competente, professionale e soprattutto preparato.",
+   "Nikola G.",
+   5
+  ],
+  [
+   "Impeccabile: un taglio preciso e veloce. Studio moderno, pulito e accogliente.",
+   "Dance M.",
+   5
+  ]
+ ],
+ "book": {
+  "title": "Prenota online,<br><em>in un minuto</em>.",
+  "text": "Vedi gli orari liberi e scegli il tuo. Oppure manda una richiesta su WhatsApp.",
+  "todo": ""
+ },
+ "bookChips": [
+  "Taglio",
+  "Fade",
+  "Taglio e disegno",
+  "Ricci"
+ ],
+ "doveTitle": "Via Consiglio Mezzano <em>31</em>"
+}

@@ -1,0 +1,220 @@
+{
+ "kind": "barber",
+ "slotStep": 30,
+ "whatsapp": true,
+ "instagram": "",
+ "draftNote": "foto e recensioni dalla scheda Google · testi e listino da completare insieme",
+ "name": "Gimmy Barber",
+ "short": "Gimmy",
+ "logoTag": "Barber · Locarno",
+ "city": "Locarno",
+ "fonts": "classico",
+ "walkin": false,
+ "theme": {
+  "dark": true,
+  "bg": "#0F1418",
+  "bg2": "#151C21",
+  "bg3": "#1D262C",
+  "ink": "#EEF2F4",
+  "ink2": "#9FB0BA",
+  "acc": "#F2B544",
+  "acc2": "#24405A",
+  "on": "#111111",
+  "line": "#26323A"
+ },
+ "desc": "Gimmy Barber, Via Serafino Balestra 40 a Locarno. Fade, tagli puliti e barba. Tel. 076 594 47 33.",
+ "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T_QzksscNmyplVggPO_5hyZcTtksbPlB52ctfGovb7GgBXE2sVRriGEPGAbWCnvnqqRhQGovIhDW-ien3yjaUcXajMEbmtEYP2OqZVp4uVAJmOOPMOjLnVqiiGA-16j0deZfKo=w1200-h630-p-k-no",
+ "phone": "+41 76 594 47 33",
+ "phoneLabel": "076 594 47 33",
+ "address": "Via Serafino Balestra 40, 6600 Locarno",
+ "mapsQuery": "Gimmy Barber, Via Serafino Balestra 40, Locarno",
+ "hours": {
+  "2": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "3": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "4": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "5": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "6": [
+   [
+    "08:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hero": {
+  "title": "La sfumatura,<br><em>pulita</em>.",
+  "sub": "Fade, tagli e barba in Via Serafino Balestra a Locarno. Il sabato apriamo già alle 8.",
+  "trio": true,
+  "imgs": [
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q2zg8b_soAQe6aikHsbqj0OLiOX5umbqPdu0C5NOje6SEnoYxr1bC-424EBjiOATQNdjjFGTJxDhB7elnhxAfe_WsK3-DQEiST-7jKTprKaHxYcFNwZXLv6FelROwlKu_3bDq3qA=s1600",
+    "alt": "Sfumatura vista di lato",
+    "pos": "50% 40%"
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RkDTUD8sJjQN4A_69cSVMD0P3LY9qDKvytNmZgJZH03FqjP8jkB_k2_vTUv9UD9SMt8uaKgm7Ffz6adtNfGi3mVAIoKkwETi1nxaxxDvwhKbv5gig2gwjqO9LDUdXQOXz3WDom=s1600",
+    "alt": "Fade con riga",
+    "pos": "50% 40%"
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S-rdXVOJ3Oqoe0QMZ4Ih_7ZB8ppj8Wmj1BccDIgPoyhEgLU5DP3sQAdgvjprWnAXOeBZKKeaPsllC2SSs5NK_8LV-DntSNDwP3o0iFrF-EeYDHB7qb4nZJQwWVwe2_89x9A0jj=s1600",
+    "alt": "Taglio corto con sfumatura",
+    "pos": "50% 40%"
+   }
+  ]
+ },
+ "badge": {
+  "ring": "Gimmy Barber · Locarno",
+  "text": "Fade e barba"
+ },
+ "facts": [
+  [
+   "Mar – Ven",
+   "9:00 – 19:00"
+  ],
+  [
+   "Sabato",
+   "8:00 – 17:00"
+  ],
+  [
+   "5,0 su 5",
+   "6 recensioni su Google"
+  ]
+ ],
+ "marquee": [
+  "Skin fade",
+  "Taper",
+  "Taglio uomo",
+  "Barba",
+  "Via Serafino Balestra 40",
+  "Locarno"
+ ],
+ "servTitle": "Sfumature <em>fatte bene</em>.",
+ "servTxt": "Quello che si vede nei lavori. Durate e prezzi li inseriamo insieme.",
+ "services": [
+  {
+   "group": "Capelli",
+   "tag": "Uomo",
+   "items": [
+    {
+     "n": "Skin fade",
+     "d": "Dalla pelle alla lunghezza, senza stacchi."
+    },
+    {
+     "n": "Taper",
+     "d": "Sfumatura bassa e discreta su nuca e basette."
+    },
+    {
+     "n": "Taglio con riga",
+     "d": "Una riga netta per chi la vuole."
+    }
+   ]
+  },
+  {
+   "group": "Barba",
+   "tag": "Rifinitura",
+   "items": [
+    {
+     "n": "Barba",
+     "d": "Contorni puliti, abbinati al taglio."
+    }
+   ]
+  }
+ ],
+ "servTodo": "il listino con durate e prezzi, e se lavorate anche senza appuntamento.",
+ "galTitle": "Dalla <em>poltrona</em>.",
+ "galTxt": "Alcuni lavori del negozio.",
+ "gallery": [
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qodg8T2F5a1TXb_msXkg97-zRj6ZGDpfzP-ErpsVLdiFrm6tVZoaGFQnCw63NNZDgkQCKZzKldKOzGB2JfrQExXh9xwutpL0gUJnYcNsXpae3KW3seWYLL_AbAp2hBwAHn68w=s1600",
+   "cap": "Fade e ciuffo",
+   "h": "3/4",
+   "pos": "50% 40%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TWvOHeXKfRL49C4iOQFV0zaQWb-xO_KIaHF2hmkz57rtafXZDfytfTWgDQpJSidN2NxXvm8NDrVW_O8ndL_-TFf23UykcQdObOyNASilZjop8AvOvP15Ufacv9xIHyGi0gxn0J=s1600",
+   "cap": "Taglio corto",
+   "h": "3/4",
+   "pos": "50% 35%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SxzMuAfZt6YQ9lPIpiI-ALrQPC9dmMY545hfWwcLlaz9xsP0MzdyRycpOd-QgC3fTgmml9vBwxX-ZJEWG0MVWJh-bmrTHuyCCOrMgWSbnyU6M8jPvi9QZ3mDy9tVzSA95cnZJM=s1600",
+   "cap": "Sfumatura alta",
+   "h": "3/4",
+   "pos": "50% 40%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T1tYE9t7TX_30Cn88rKHwoi8IJ_5NcQUWjzGaUIVX0t5pQhn7H9Q0Q1QPMZsN62kZu_qDDdojyVKwp4l_jKuR9HaMuob142OJI__HByv21n9R8FSHHKipOelo3wE0NEdQeXyM8EQ=s1600",
+   "cap": "Il negozio",
+   "h": "3/4",
+   "pos": "50% 50%"
+  }
+ ],
+ "galTodo": "con qualche foto in più dei vostri lavori questa parte diventa il vostro biglietto da visita.",
+ "sig": "rasoio",
+ "why": {
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T_QzksscNmyplVggPO_5hyZcTtksbPlB52ctfGovb7GgBXE2sVRriGEPGAbWCnvnqqRhQGovIhDW-ien3yjaUcXajMEbmtEYP2OqZVp4uVAJmOOPMOjLnVqiiGA-16j0deZfKo=s1600",
+  "alt": "L'interno del negozio",
+  "pos": "50% 50%",
+  "title": "Un negozio <em>curato</em>,<br>un taglio preciso.",
+  "text": "Poltrone, specchi e i prodotti in vetrina: un barbiere di quartiere a Locarno, dove la sfumatura si fa con calma e precisione.",
+  "points": [
+   [
+    "Precisione",
+    "Sfumature pulite, senza stacchi."
+   ],
+   [
+    "Il sabato dalle 8",
+    "Per chi lavora durante la settimana."
+   ],
+   [
+    "Facile da raggiungere",
+    "In Via Serafino Balestra, in centro."
+   ]
+  ],
+  "todo": "due righe su di te e su come è nato il negozio."
+ },
+ "stats": [
+  [
+   "5,0",
+   "6 recensioni su Google",
+   1
+  ]
+ ],
+ "revLink": [
+  "Leggi le recensioni su Google",
+  "https://www.google.com/maps/search/?api=1&query=Gimmy+Barber+Via+Serafino+Balestra+40+Locarno"
+ ],
+ "reviews": [],
+ "book": {
+  "title": "Scegli il giorno,<br><em>poi l'ora</em>.",
+  "text": "La richiesta arriva su WhatsApp già scritta. Ti rispondiamo per confermare.",
+  "todo": ""
+ },
+ "bookChips": [
+  "Taglio",
+  "Fade",
+  "Taglio e barba",
+  "Barba"
+ ],
+ "doveTitle": "Via S. Balestra <em>40</em>"
+}

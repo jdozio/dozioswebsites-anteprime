@@ -1,0 +1,279 @@
+{
+ "kind": "barber",
+ "slotStep": 30,
+ "whatsapp": true,
+ "instagram": "",
+ "draftNote": "foto e recensioni dalla scheda Google · testi e listino da completare insieme",
+ "name": "Lele Barberia",
+ "short": "Lele",
+ "logoTag": "Barberia · Locarno",
+ "city": "Locarno",
+ "fonts": "elegante",
+ "walkin": false,
+ "theme": {
+  "dark": true,
+  "bg": "#1A0F10",
+  "bg2": "#231517",
+  "bg3": "#2E1C1F",
+  "ink": "#F4EADB",
+  "ink2": "#BFA99A",
+  "acc": "#D9A35B",
+  "acc2": "#7A1E26",
+  "on": "#1A0F10",
+  "line": "#3A2528"
+ },
+ "desc": "Lele Barberia, Via Borghese 15 nella città vecchia di Locarno. Taglio e barba in un ambiente vintage anni Sessanta. Tel. 079 444 07 04.",
+ "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SjMsUzBqOyns4sIAAroKZjhUSo3t2uJHuEFKjlgWMxjZS3M66vpS2YZ67ZnTPgMCENvlbBgHdvtuwyOlW9quXM7USCojOgDQXq-K0yoMcN-R6PAIZQO_pFvIxu6esHQ-95HAecJg=w1200-h630-p-k-no",
+ "phone": "+41 79 444 07 04",
+ "phoneLabel": "079 444 07 04",
+ "address": "Via Borghese 15, 6600 Locarno",
+ "mapsQuery": "Lele Barberia, Via Borghese 15, Locarno",
+ "hours": {
+  "2": [
+   [
+    "10:00",
+    "19:00"
+   ]
+  ],
+  "3": [
+   [
+    "10:00",
+    "19:00"
+   ]
+  ],
+  "4": [
+   [
+    "10:00",
+    "19:00"
+   ]
+  ],
+  "5": [
+   [
+    "10:00",
+    "19:00"
+   ]
+  ],
+  "6": [
+   [
+    "10:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hero": {
+  "title": "Barba e capelli,<br>come <em>una volta</em>.",
+  "sub": "Una barberia vintage nel cuore della città vecchia di Locarno, tra cornici, specchi e poltrone anni Sessanta. Da Lele ci si siede, si chiacchiera, si esce in ordine.",
+  "trio": true,
+  "imgs": [
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T2ADPyrll6rWXGZBgFzTBb4xf9wyclEJS9HqxxB4EdbojCgcXv3hwTklkM6hZdk_dwunTPSQpxsMGZfmcg8i-hmhplWyU-7980ha_kKPGEfEFz1rQmBNt-gIWql154lNfvHtcv=s1600",
+    "alt": "La parete rossa con le cornici",
+    "pos": "50% 50%"
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SytytvqBqO9eIiTPofLNR33zylPY5p1ALmjbDu0qhKEV0eqITFCsjALg2z4klnWYcnk2-ubY00-j5f6ey8VgJ7_vWaeIQsbd4Gwz0Cvi40ed7f7Bx1HWIxJ43NDG3yAviW2DEC=s1600",
+    "alt": "Rasoio, forbici e pennello",
+    "pos": "50% 50%"
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R49Yi4_MG7qViD6_TeiOJnZNyuEu-9eJaTFeUw5qzWZJOEehw2AGbrvjtYGMLOjcgpZpoJg6M-JoozH36B93bBz_pEd2gaW50OREGASh0OqPNygb582A0S4O_8Bu-ICl_pMLjkyg=s1600",
+    "alt": "Barba curata",
+    "pos": "50% 30%"
+   }
+  ]
+ },
+ "badge": {
+  "ring": "Lele Barberia · Locarno",
+  "text": "Barba e capelli"
+ },
+ "plaque": [
+  "Barba e capelli",
+  "Lele Barberia · Città vecchia",
+  "Via Borghese 15 · Locarno"
+ ],
+ "facts": [
+  [
+   "Città vecchia",
+   "Via Borghese 15"
+  ],
+  [
+   "Barba",
+   "rifinita a mano"
+  ],
+  [
+   "4,8 su 5",
+   "24 recensioni su Google"
+  ]
+ ],
+ "marquee": [
+  "Barba",
+  "Taglio uomo",
+  "Rasoio",
+  "Città vecchia",
+  "Via Borghese 15",
+  "Vintage anni Sessanta",
+  "Locarno"
+ ],
+ "servTitle": "Il <em>mestiere</em>, fatto con calma.",
+ "servTxt": "Quello che si vede nei lavori e che i clienti raccontano. Durate e prezzi li inseriamo insieme.",
+ "services": [
+  {
+   "group": "Capelli",
+   "tag": "Uomo",
+   "items": [
+    {
+     "n": "Taglio",
+     "d": "Forbice e macchinetta, rifinito con calma."
+    },
+    {
+     "n": "Sfumatura",
+     "d": "Pulita e precisa, dalla nuca alle tempie."
+    }
+   ]
+  },
+  {
+   "group": "Barba",
+   "tag": "Rasoio",
+   "items": [
+    {
+     "n": "Barba",
+     "d": "Disegnata, sfoltita e rifinita, per chi la porta da anni e per chi comincia."
+    },
+    {
+     "n": "Rasatura",
+     "d": "Con il rasoio, come si faceva una volta."
+    }
+   ]
+  },
+  {
+   "group": "La casa",
+   "tag": "Sempre",
+   "items": [
+    {
+     "n": "Un ambiente rilassante",
+     "d": "Cornici, specchi e poltrone d'epoca: un posto dove prendersi il tempo."
+    },
+    {
+     "n": "Due parole in dialetto",
+     "d": "Durante il taglio si chiacchiera, anche in ticinese."
+    }
+   ]
+  }
+ ],
+ "servTodo": "il listino con durate e prezzi, e se si lavora su appuntamento o anche senza.",
+ "galTitle": "La parete <em>di Lele</em>.",
+ "galTxt": "Come le cornici appese in barberia: i lavori, uno per uno.",
+ "gallery": [
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RAF1J4ajouqeadcPMDOoUcAyurl8KHA8j_bZW33A9T9bezs5NZHIWnfhP-ojBW95NLOpm8jdmOjt3FSOfvxo-UM9PjmE82lA9sxcLV2eDJguxfH2B78X6_a45Tc8WaLx7tFLwq=s1600",
+   "cap": "Barba e taglio",
+   "lab": "Barba lunga",
+   "h": "3/4",
+   "pos": "50% 35%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T7AtgZoHsU0QGwYYzkwtpmk6zXKYC5Jze0U_MvZuUEGz9yAMBxcYNaiI_ZLQ6QwOf8gK9HR4lKkK-Mc642JF1MI4U1bzowwJe_XNvsjccu63cOZJqEog5EAC8nITF-L2BAGqtuSQ=s1600",
+   "cap": "In giacca",
+   "lab": "Barba corta",
+   "h": "1/1",
+   "pos": "50% 30%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TPqDQFaCgpOigHt2JfwO5xrB7fGi5ypnEjs0Dn2U8Ia7vBioh8fT10q-0pMEmPWwlzYxHxBuczdBeFjXOVk99YHebo8dITuJgDjvMq-lqlxuBRzBK-t0SoU-IWq48VZFFvbsAdxA=s1600",
+   "cap": "Barba bianca",
+   "lab": "Barba piena",
+   "h": "3/4",
+   "pos": "50% 30%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rm9SD1FSH0L6ul4dfrapr_7X5JJV3Hcm17d35H7OLBeLmpjeKt_d9kw94WWpuNCd4nbKyq9bVfVR6qaZGqlltgO0QlNfUiOqsFd_05G-AT4Hu3p0sFmVfsaAVau6iI42B4rM9R=s1600",
+   "cap": "In bianco e nero",
+   "lab": "Barba e baffi",
+   "h": "1/1",
+   "pos": "50% 40%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TNop1uBfJryN3wqqrs5t9ZjP61WIcUZX2QFOJNHwGaXxZDPvdFzEONeRr_UEoxOUDl2u8w9OAG0FKV0L6BNBrDomOpY6yHKO22ggp6vOqR3QzkoQJXCYlsLcy0KP_-GHBNFcpDfA=s1600",
+   "cap": "Taglio",
+   "lab": "Sfumatura",
+   "h": "3/4",
+   "pos": "50% 30%"
+  },
+  {
+   "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QjBOFESrCDgRIGO9To4eE0rEzkQpYmsGGlw-oty6tN2N08r1wAOoubvzkMXaT7bxce7Nb8YlS4FcuJi6-hH4NoqcRBirH9z9YdpCo1pGDpBT1SzP-_7RFkCSGbeAgUDq1KViCnAS16ltc=s1600",
+   "cap": "La barberia",
+   "lab": "Via Borghese 15",
+   "h": "1/1",
+   "pos": "50% 50%"
+  }
+ ],
+ "galTodo": "",
+ "sig": "galleria",
+ "why": {
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SjMsUzBqOyns4sIAAroKZjhUSo3t2uJHuEFKjlgWMxjZS3M66vpS2YZ67ZnTPgMCENvlbBgHdvtuwyOlW9quXM7USCojOgDQXq-K0yoMcN-R6PAIZQO_pFvIxu6esHQ-95HAecJg=s1600",
+  "alt": "La barberia vista dalla porta, nella città vecchia",
+  "pos": "50% 50%",
+  "title": "Vintage anni Sessanta,<br><em>cura di oggi</em>.",
+  "text": "I clienti la descrivono così: un posto elegante e accogliente, a metà tra il vintage e il lusso degli anni Sessanta, dove Lele lavora con precisione e attenzione ai dettagli.",
+  "points": [
+   [
+    "Precisione",
+    "Competente, preciso e attento ai dettagli, anche sulle barbe più impegnative."
+   ],
+   [
+    "Un posto curato",
+    "Arredi raffinati e un ambiente che rilassa."
+   ],
+   [
+    "Nel cuore di Locarno",
+    "In Via Borghese, nella città vecchia, a due passi da Piazza Grande."
+   ]
+  ],
+  "todo": "la storia della barberia in poche righe: da quando c'è e come è nata."
+ },
+ "stats": [
+  [
+   "4,8",
+   "24 recensioni su Google",
+   1
+  ]
+ ],
+ "revLink": [
+  "Leggi le recensioni su Google",
+  "https://www.google.com/maps/search/?api=1&query=Lele+Barberia+Via+Borghese+15+Locarno"
+ ],
+ "reviews": [
+  [
+   "Porto la barba da molti anni e ho provato diverse barberie: qui ho trovato un vero professionista, competente, preciso e attento ai dettagli.",
+   "Sait C.",
+   5
+  ],
+  [
+   "Professionalità, gentilezza, classe e stile in un ambiente accogliente ed elegantissimo. Lele è una vera maestra!",
+   "Lorenzo G. B.",
+   5
+  ],
+  [
+   "La migliore barberia della zona Locarno-Bellinzona: un posto molto piacevole, tra vintage e lusso anni Sessanta.",
+   "Filippo P.",
+   5
+  ],
+  [
+   "Gentile, preparata e professionale. Sempre un'esperienza rilassante.",
+   "Ingo B.",
+   5
+  ]
+ ],
+ "book": {
+  "title": "Scegli il giorno,<br><em>scrivi a Lele</em>.",
+  "text": "La richiesta arriva su WhatsApp già scritta. Lele ti risponde per confermare l'orario.",
+  "todo": "se si lavora solo su appuntamento o anche senza."
+ },
+ "bookChips": [
+  "Taglio",
+  "Barba",
+  "Taglio e barba",
+  "Rasatura"
+ ],
+ "doveTitle": "Via Borghese <em>15</em>"
+}

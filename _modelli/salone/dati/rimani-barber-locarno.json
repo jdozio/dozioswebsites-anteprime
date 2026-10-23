@@ -1,0 +1,257 @@
+{
+ "kind": "barber",
+ "slotStep": 30,
+ "whatsapp": true,
+ "instagram": "",
+ "draftNote": "foto e recensioni dalla scheda Google · testi e listino da completare insieme",
+ "name": "Rimani Barber Shop",
+ "short": "Rimani",
+ "logoTag": "Barber Shop · Locarno",
+ "city": "Locarno",
+ "fonts": "elegante",
+ "walkin": false,
+ "theme": {
+  "dark": true,
+  "bg": "#121110",
+  "bg2": "#1A1917",
+  "bg3": "#23211E",
+  "ink": "#F1ECE2",
+  "ink2": "#ABA393",
+  "acc": "#C9A14A",
+  "acc2": "#4A3A1A",
+  "on": "#121110",
+  "line": "#2E2B26"
+ },
+ "desc": "Rimani Barber Shop, Via Stefano Franscini 27 a Locarno. Taglio e barba, aperto anche la domenica mattina. Tel. 079 216 49 50.",
+ "ogImage": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1200&q=75&auto=format&fit=crop",
+ "phone": "+41 79 216 49 50",
+ "phoneLabel": "079 216 49 50",
+ "address": "Via Stefano Franscini 27, 6600 Locarno",
+ "mapsQuery": "Rimani Barber Shop, Via Stefano Franscini 27, Locarno",
+ "hours": {
+  "1": [
+   [
+    "09:00",
+    "19:30"
+   ]
+  ],
+  "2": [
+   [
+    "09:00",
+    "19:30"
+   ]
+  ],
+  "3": [
+   [
+    "09:00",
+    "19:30"
+   ]
+  ],
+  "4": [
+   [
+    "09:00",
+    "19:30"
+   ]
+  ],
+  "5": [
+   [
+    "09:00",
+    "19:30"
+   ]
+  ],
+  "6": [
+   [
+    "09:00",
+    "19:30"
+   ]
+  ],
+  "0": [
+   [
+    "10:00",
+    "14:00"
+   ]
+  ]
+ },
+ "hero": {
+  "title": "Entri cliente,<br>esci <em>amico</em>.",
+  "sub": "Taglio e barba in Via Stefano Franscini a Locarno, con impegno e dedizione. Aperto tutti i giorni, anche la domenica mattina.",
+  "trio": true,
+  "stock": true,
+  "imgs": [
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RuvOIjT0PImQrmQlo4jWh4ak35Ib1WsLlMFLMmIc1WHDDS8-zIi4oHlPFjA35tFFarZSeDS2k8edxbB3ZNTmobrlBUZJrJlqdfPmceOGldI3CruCzQ6aE2XUjvN_Z0UDg8iRvA6pDvbWqu=s1600",
+    "alt": "L'insegna di Rimani Barber",
+    "pos": "50% 18%"
+   },
+   {
+    "img": "https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?w=1200&q=75&auto=format&fit=crop",
+    "alt": "Taglio con sfumatura",
+    "pos": "50% 50%"
+   },
+   {
+    "img": "https://images.unsplash.com/photo-1532710093739-9470acff878f?w=1200&q=75&auto=format&fit=crop",
+    "alt": "Barba",
+    "pos": "50% 50%"
+   }
+  ]
+ },
+ "badge": {
+  "ring": "Rimani Barber Shop · Locarno",
+  "text": "Anche la domenica"
+ },
+ "facts": [
+  [
+   "Tutti i giorni",
+   "anche domenica 10 – 14"
+  ],
+  [
+   "Taglio e barba",
+   "con dedizione"
+  ],
+  [
+   "5,0 su 5",
+   "5 recensioni su Google"
+  ]
+ ],
+ "marquee": [
+  "Taglio uomo",
+  "Barba",
+  "Sfumatura",
+  "Aperto la domenica",
+  "Via Stefano Franscini 27",
+  "Locarno"
+ ],
+ "servTitle": "Taglio e barba,<br><em>con dedizione</em>.",
+ "servTxt": "Durate e prezzi li inseriamo insieme.",
+ "services": [
+  {
+   "group": "Capelli",
+   "tag": "Uomo",
+   "items": [
+    {
+     "n": "Taglio",
+     "d": "Capelli sempre in ordine, curati nei dettagli."
+    },
+    {
+     "n": "Sfumatura",
+     "d": "Pulita, dalla nuca alle tempie."
+    }
+   ]
+  },
+  {
+   "group": "Barba",
+   "tag": "Rifinitura",
+   "items": [
+    {
+     "n": "Barba",
+     "d": "Disegnata e rifinita."
+    }
+   ]
+  },
+  {
+   "group": "Orari",
+   "tag": "Comodo",
+   "items": [
+    {
+     "n": "Sette giorni su sette",
+     "d": "Dal lunedì al sabato fino alle 19:30, la domenica mattina dalle 10 alle 14."
+    }
+   ]
+  }
+ ],
+ "servTodo": "il listino con durate e prezzi.",
+ "galTitle": "I <em>lavori</em>.",
+ "galTxt": "Per ora sono foto di esempio: qui andranno i vostri tagli.",
+ "gallery": [
+  {
+   "img": "https://images.unsplash.com/photo-1772442088712-df1780cbb709?w=1200&q=75&auto=format&fit=crop",
+   "cap": "Sfumatura",
+   "h": "3/4",
+   "stock": true
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1599011176306-4a96f1516d4d?w=1200&q=75&auto=format&fit=crop",
+   "cap": "Barba",
+   "h": "1/1",
+   "stock": true
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1621607505833-616916c46a25?w=1200&q=75&auto=format&fit=crop",
+   "cap": "Gli attrezzi",
+   "h": "3/4",
+   "stock": true
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1621645582931-d1d3e6564943?w=1200&q=75&auto=format&fit=crop",
+   "cap": "La poltrona",
+   "h": "1/1",
+   "stock": true
+  }
+ ],
+ "galTodo": "sostituire le foto di esempio con 4-6 foto dei vostri tagli e del negozio.",
+ "sig": "script",
+ "sigText": "Rimani",
+ "sigMono": "RB",
+ "why": {
+  "img": "https://images.unsplash.com/photo-1781455793310-8427c96454c7?w=1200&q=75&auto=format&fit=crop",
+  "alt": "Interno di una barberia",
+  "stock": true,
+  "pos": "50% 50%",
+  "title": "Un barbiere<br><em>che ci mette il cuore</em>.",
+  "text": "Chi è passato da Rimani parla di un barbiere gentile e simpatico, che ci mette impegno e dedizione, e di capelli sempre perfetti.",
+  "points": [
+   [
+    "Gentile e simpatico",
+    "Ti senti a tuo agio dal primo minuto."
+   ],
+   [
+    "Capelli sempre perfetti",
+    "Impegno e dedizione in ogni taglio."
+   ],
+   [
+    "Anche la domenica",
+    "Dalle 10 alle 14, quando gli altri sono chiusi."
+   ]
+  ],
+  "todo": "due righe su di te e su da quando c'è il negozio."
+ },
+ "stats": [
+  [
+   "5,0",
+   "5 recensioni su Google",
+   1
+  ]
+ ],
+ "revLink": [
+  "Leggi le recensioni su Google",
+  "https://www.google.com/maps/search/?api=1&query=Rimani+Barber+Shop+Via+Stefano+Franscini+27+Locarno"
+ ],
+ "reviews": [
+  [
+   "Un vero amico, capelli sempre perfetti: ci mette impegno e dedizione.",
+   "Antonio P.",
+   5
+  ],
+  [
+   "Il barbiere è stato gentilissimo e simpatico, ha fatto un ottimo lavoro. Lo consiglio.",
+   "Basil Z.",
+   5
+  ],
+  [
+   "Bel taglio. Gentile.",
+   "Nils W.",
+   5
+  ]
+ ],
+ "book": {
+  "title": "Scegli il giorno,<br><em>poi l'ora</em>.",
+  "text": "La richiesta arriva su WhatsApp già scritta. Ti rispondiamo per confermare.",
+  "todo": "gli orari: sull'insegna sono diversi da quelli su Google, quali sono quelli giusti?"
+ },
+ "bookChips": [
+  "Taglio",
+  "Barba",
+  "Taglio e barba"
+ ],
+ "doveTitle": "Via S. Franscini <em>27</em>"
+}
