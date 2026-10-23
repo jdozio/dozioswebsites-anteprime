@@ -379,6 +379,7 @@ $('draftName').textContent='Anteprima di sito preparata per '+D.name;$('logo').t
 $('mCall').href='tel:+'+tel;
 $('heroBg').innerHTML='<img src="'+D.hero.img+'" alt="'+esc(D.hero.alt)+'" style="object-position:'+(D.hero.pos||'50% 50%')+'">';
 $('heroTag').textContent=D.hero.tag;$('heroTitle').innerHTML=D.hero.title;$('heroSub').textContent=D.hero.sub;
+if(D.css){var xs=document.createElement('style');xs.textContent=D.css;document.head.appendChild(xs)}if(D.heroExtra)document.querySelector('.hero').insertAdjacentHTML('beforeend',D.heroExtra);
 $('facts').innerHTML=D.facts.map(function(f){return '<div><b>'+esc(f[0])+'</b>'+esc(f[1])+'</div>'}).join('');
 $('belt').innerHTML=D.marquee.concat(D.marquee).map(function(x){return '<span>'+esc(x)+'</span>'}).join('');
 $('serateTxt').textContent=D.serateTxt;$('serateTodo').innerHTML='<b>Da completare insieme:</b> '+esc(D.serateTodo);
