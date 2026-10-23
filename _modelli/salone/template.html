@@ -266,14 +266,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 
 /* firma: rasoio */
 .raz{position:relative;display:inline-block}
-.raz .cut{position:absolute;left:0;right:0;bottom:-.02em;height:.07em;border-radius:2px;background:linear-gradient(90deg,transparent,var(--acc) 30%,var(--acc));transform:scaleX(0);transform-origin:left}
+.raz .cut{position:absolute;left:0;right:0;bottom:-.02em;height:.09em;border-radius:2px;background:linear-gradient(90deg,transparent,var(--acc) 30%,var(--acc));transform:scaleX(0);transform-origin:left}
 .raz .rz{position:absolute;left:-.2em;bottom:-.34em;width:1.15em;opacity:0;pointer-events:none}
 .raz .rz svg{width:100%;overflow:visible;filter:drop-shadow(0 4px 8px rgba(0,0,0,.35))}
 .raz .rz .bl{fill:#E9EEF2;stroke:#9AA6AE;stroke-width:1.5}.raz .rz .eg{stroke:#fff;stroke-width:1.4}.raz .rz .hd{fill:var(--acc2)}.raz .rz .pv{fill:var(--acc)}
 .raz.go .cut{animation:rzcut 1.5s cubic-bezier(.6,.05,.25,1) forwards}
 .raz.go .rz{animation:rzgo 1.5s cubic-bezier(.6,.05,.25,1) forwards}
 @keyframes rzcut{to{transform:scaleX(1)}}
-@keyframes rzgo{0%{opacity:0;left:-.2em;transform:rotate(-8deg)}12%{opacity:1}85%{opacity:1}100%{opacity:0;left:calc(100% - .6em);transform:rotate(4deg)}}
+@keyframes rzgo{0%{opacity:0;left:-.2em;transform:rotate(-8deg)}12%{opacity:1}85%{opacity:1}100%{opacity:1;left:calc(100% + .02em);transform:rotate(-14deg)}}
 /* listino elegante */
 body.beauty .sgrid{grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:26px}
 body.beauty .si{align-items:baseline;padding:16px 0}
@@ -312,8 +312,8 @@ body.galleria .mas figure{padding:12px 12px 0;background:#FFFDF7;border:8px soli
 body.galleria .mas figure::before{content:"";position:absolute;left:10%;right:10%;top:-30px;height:60px;background:radial-gradient(ellipse at 50% 0,rgba(255,240,200,.75),transparent 70%);opacity:0;transition:opacity .6s;pointer-events:none;z-index:2}
 body.galleria .mas figure:hover::before{opacity:1}
 body.galleria .mas figure img{border-radius:1px}
-body.galleria .mas figcaption{position:static;opacity:1;transform:none;background:none;color:var(--ink);padding:12px 2px 12px;font-size:19px;line-height:1.2}
-body.galleria .mas figcaption small{color:var(--acc)}
+body.galleria .mas figcaption{position:static;opacity:1;transform:none;background:none;color:#2B2220;padding:12px 2px 12px;font-size:19px;line-height:1.2}
+body.galleria .mas figcaption small{color:#8E5A1E}
 @media (min-width:981px){.sgrid.two{grid-template-columns:repeat(2,1fr)!important}}
 @media (max-width:640px){body.galleria .stage.t .badge{display:none}}
 @media (max-width:640px){.lily.l1{width:170px!important;height:170px!important;right:-34px!important;top:-80px!important}.lily.l2{display:none}.sig .hs{opacity:.35}body.galleria .mas figure{padding:7px 7px 0;border-width:6px}body.galleria .mas figcaption{font-size:15px;padding:9px 1px 9px}.plaque{margin-top:26px;padding:10px 14px}.plaque b{font-size:18px}}
