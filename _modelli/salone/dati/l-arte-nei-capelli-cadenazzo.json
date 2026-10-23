@@ -6,9 +6,20 @@
  "kind": "beauty",
  "fonts": "elegante",
  "walkin": false,
- "theme": {"dark": false, "bg": "#F7F2EA", "bg2": "#FFFDF8", "bg3": "#EADFCB", "ink": "#2B2220", "ink2": "#76675E", "acc": "#8E2F3C", "acc2": "#E3C987", "on": "#FFFFFF", "line": "#E4D8C6"},
+ "theme": {
+  "dark": false,
+  "bg": "#F7F2EA",
+  "bg2": "#FFFDF8",
+  "bg3": "#EADFCB",
+  "ink": "#2B2220",
+  "ink2": "#76675E",
+  "acc": "#8E2F3C",
+  "acc2": "#E3C987",
+  "on": "#FFFFFF",
+  "line": "#E4D8C6"
+ },
  "desc": "L'Arte nei Capelli di Katia Pellencini, Via Monte Ceneri 10 a Cadenazzo. Taglio, colore, balayage, permanente e cura del cuoio capelluto per donna, uomo e bambino. Tel. 079 421 46 33.",
- "ogImage": "https://jdozio.github.io/dozioswebsites-anteprime/l-arte-nei-capelli-cadenazzo/og.jpg",
+ "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TcMfvKXtJKFlkjMCNOmDr8hHQ55_EhSFLzkccDtxgRFOmdhEnQipymzG-vnZcOZq49eOKRYb8oC6nyIlpSq3LXtN_seDxtttG2nM9XM2i4v_G_4yXn1yFP5sHTW0BrkH7XfTE=w1200-h630-p-k-no",
  "phone": "+41 79 421 46 33",
  "phoneLabel": "079 421 46 33",
  "whatsapp": true,
@@ -16,78 +27,263 @@
  "address": "Via Monte Ceneri 10, 6593 Cadenazzo",
  "mapsQuery": "L'Arte nei Capelli, Via Monte Ceneri 10, Cadenazzo",
  "slotStep": 30,
- "draftNote": "foto da inserire, testi e listino da completare insieme",
- "hours": {"2": [["09:00","18:30"]], "3": [["09:00","12:00"]], "4": [["09:00","18:30"]], "5": [["09:00","18:30"]], "6": [["07:30","16:00"]]},
+ "draftNote": "le foto con l'etichetta sono di esempio · testi e listino da completare insieme",
+ "hours": {
+  "2": [
+   [
+    "09:00",
+    "18:30"
+   ]
+  ],
+  "3": [
+   [
+    "09:00",
+    "12:00"
+   ]
+  ],
+  "4": [
+   [
+    "09:00",
+    "18:30"
+   ]
+  ],
+  "5": [
+   [
+    "09:00",
+    "18:30"
+   ]
+  ],
+  "6": [
+   [
+    "07:30",
+    "16:00"
+   ]
+  ]
+ },
  "hero": {
   "title": "Ogni testa<br>è <em>un'opera</em>.",
   "sub": "Taglio, colore e cura del cuoio capelluto per donna, uomo e bambino. Da Katia a Cadenazzo, a due passi dalla stazione, con più di vent'anni di esperienza.",
   "trio": true,
   "imgs": [
-   {"img": "foto/hero-1.svg", "foto": "hero-1: un lavoro di colore o balayage", "alt": "Lavoro di colore", "pos": "50% 50%"},
-   {"img": "foto/hero-2.svg", "foto": "hero-2: Katia al lavoro o il salone", "alt": "Il salone", "pos": "50% 50%"},
-   {"img": "foto/hero-3.svg", "foto": "hero-3: un taglio o una piega finita", "alt": "Taglio e piega", "pos": "50% 50%"}
-  ]
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TcMfvKXtJKFlkjMCNOmDr8hHQ55_EhSFLzkccDtxgRFOmdhEnQipymzG-vnZcOZq49eOKRYb8oC6nyIlpSq3LXtN_seDxtttG2nM9XM2i4v_G_4yXn1yFP5sHTW0BrkH7XfTE=s1600",
+    "alt": "Il salone",
+    "pos": "50% 50%"
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q2FEEShwM79bx_3BHNfpXf1DkpfEhbrFouBqYKZG-CIDweT3BOI5U8NN6xbq4ZVank9lOeeZC56Bfm6Qp_d8MsR6HVlrKv8GeMs0dzWiVf6MF225S0rzPa18PfoOdZz-o-gDM=s1600",
+    "alt": "I lavatesta",
+    "pos": "50% 50%"
+   },
+   {
+    "img": "https://images.unsplash.com/photo-1605980766335-d3a41c7332a1?w=1200&q=75&auto=format&fit=crop",
+    "alt": "Balayage",
+    "pos": "50% 50%"
+   }
+  ],
+  "stock": true
  },
- "plaque": ["Ogni testa è un'opera", "Taglio, colore e piega · Katia Pellencini", "Sala unica · Via Monte Ceneri 10"],
- "badge": {"ring": "L'Arte nei Capelli · Cadenazzo", "text": "Taglio e colore"},
- "facts": [["Più di 20 anni", "di esperienza"], ["Consulenza", "gratuita, sulla forma del viso"], ["A due passi", "dalla stazione, con parcheggio"]],
- "marquee": ["Taglio", "Colore", "Balayage", "Mèches", "Color play", "Permanente", "Acconciature da sposa", "Ossigenoterapia", "Extension"],
+ "plaque": [
+  "Ogni testa è un'opera",
+  "Taglio, colore e piega · Katia Pellencini",
+  "Sala unica · Via Monte Ceneri 10"
+ ],
+ "badge": {
+  "ring": "L'Arte nei Capelli · Cadenazzo",
+  "text": "Taglio e colore"
+ },
+ "facts": [
+  [
+   "Più di 20 anni",
+   "di esperienza"
+  ],
+  [
+   "Consulenza",
+   "gratuita, sulla forma del viso"
+  ],
+  [
+   "A due passi",
+   "dalla stazione, con parcheggio"
+  ]
+ ],
+ "marquee": [
+  "Taglio",
+  "Colore",
+  "Balayage",
+  "Mèches",
+  "Color play",
+  "Permanente",
+  "Acconciature da sposa",
+  "Ossigenoterapia",
+  "Extension"
+ ],
  "servTitle": "La tavolozza<br><em>di Katia</em>.",
  "servTxt": "Quello che fa il salone, dalla pagina local.ch. Durate e prezzi li inseriamo insieme.",
  "services": [
-  {"group": "Taglio e piega", "tag": "Forma", "items": [
-   {"n": "Consulenza personalizzata", "d": "Si parte da te: la forma del viso, il tipo di capello, come vivi i capelli ogni giorno. È gratuita."},
-   {"n": "Taglio donna, uomo e bambino", "d": "Lavaggio, taglio e asciugatura, per tutta la famiglia."},
-   {"n": "Piega e acconciature", "d": "Per tutti i giorni, per una festa o per il matrimonio."}
-  ]},
-  {"group": "Colore", "tag": "Tecnica", "items": [
-   {"n": "Colorazione", "d": "Il colore pieno, scelto insieme."},
-   {"n": "Balayage e mèches", "d": "Luce dipinta a mano, dove serve."},
-   {"n": "Color play", "d": "Per chi ha voglia di osare."}
-  ]},
-  {"group": "Forma e volume", "tag": "Movimento", "items": [
-   {"n": "Permanente classica e moderna", "d": "Onde e ricci che durano."},
-   {"n": "Extension e parrucche", "d": "Più lunghezza, più volume, o una soluzione su misura."}
-  ]},
-  {"group": "Cura", "tag": "Benessere", "items": [
-   {"n": "Trattamenti del cuoio capelluto", "d": "Anche con l'ossigenoterapia, per una cute sana."},
-   {"n": "Ricostruzione del capello", "d": "Per capelli stressati da colore e piastra."},
-   {"n": "Prodotti professionali", "d": "Ti consigliamo quelli giusti da usare a casa."}
-  ]}
+  {
+   "group": "Taglio e piega",
+   "tag": "Forma",
+   "items": [
+    {
+     "n": "Consulenza personalizzata",
+     "d": "Si parte da te: la forma del viso, il tipo di capello, come vivi i capelli ogni giorno. È gratuita."
+    },
+    {
+     "n": "Taglio donna, uomo e bambino",
+     "d": "Lavaggio, taglio e asciugatura, per tutta la famiglia."
+    },
+    {
+     "n": "Piega e acconciature",
+     "d": "Per tutti i giorni, per una festa o per il matrimonio."
+    }
+   ]
+  },
+  {
+   "group": "Colore",
+   "tag": "Tecnica",
+   "items": [
+    {
+     "n": "Colorazione",
+     "d": "Il colore pieno, scelto insieme."
+    },
+    {
+     "n": "Balayage e mèches",
+     "d": "Luce dipinta a mano, dove serve."
+    },
+    {
+     "n": "Color play",
+     "d": "Per chi ha voglia di osare."
+    }
+   ]
+  },
+  {
+   "group": "Forma e volume",
+   "tag": "Movimento",
+   "items": [
+    {
+     "n": "Permanente classica e moderna",
+     "d": "Onde e ricci che durano."
+    },
+    {
+     "n": "Extension e parrucche",
+     "d": "Più lunghezza, più volume, o una soluzione su misura."
+    }
+   ]
+  },
+  {
+   "group": "Cura",
+   "tag": "Benessere",
+   "items": [
+    {
+     "n": "Trattamenti del cuoio capelluto",
+     "d": "Anche con l'ossigenoterapia, per una cute sana."
+    },
+    {
+     "n": "Ricostruzione del capello",
+     "d": "Per capelli stressati da colore e piastra."
+    },
+    {
+     "n": "Prodotti professionali",
+     "d": "Ti consigliamo quelli giusti da usare a casa."
+    }
+   ]
+  }
  ],
  "servTodo": "il listino con durate e prezzi, e quali servizi mettere in primo piano.",
  "galTitle": "La <em>galleria</em>.",
- "galTxt": "Ogni lavoro con la sua tecnica, come in una mostra. Qui andranno le foto vere dei lavori di Katia.",
+ "galTxt": "Ogni lavoro con la sua tecnica, come in una mostra. Per ora sono foto di esempio: qui andranno i lavori di Katia.",
  "gallery": [
-  {"img": "foto/opera-1.svg", "foto": "opera-1: balayage visto da dietro", "cap": "Opera n. 1", "lab": "Tecnica: balayage", "h": "4/5"},
-  {"img": "foto/opera-2.svg", "foto": "opera-2: taglio corto donna", "cap": "Opera n. 2", "lab": "Tecnica: taglio", "h": "1/1"},
-  {"img": "foto/opera-3.svg", "foto": "opera-3: acconciatura da sposa o da festa", "cap": "Opera n. 3", "lab": "Tecnica: acconciatura", "h": "3/4"},
-  {"img": "foto/opera-4.svg", "foto": "opera-4: colore pieno o color play", "cap": "Opera n. 4", "lab": "Tecnica: colore", "h": "1/1"},
-  {"img": "foto/opera-5.svg", "foto": "opera-5: permanente / ricci", "cap": "Opera n. 5", "lab": "Tecnica: permanente", "h": "4/5"},
-  {"img": "foto/opera-6.svg", "foto": "opera-6: taglio uomo o bambino", "cap": "Opera n. 6", "lab": "Tecnica: taglio uomo", "h": "3/4"}
+  {
+   "img": "https://images.unsplash.com/photo-1554519934-e32b1629d9ee?w=1200&q=75&auto=format&fit=crop",
+   "cap": "Opera n. 1",
+   "lab": "Tecnica: balayage",
+   "h": "4/5",
+   "stock": true
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1580663232236-5d18d5b02c5a?w=1200&q=75&auto=format&fit=crop",
+   "cap": "Opera n. 2",
+   "lab": "Tecnica: taglio",
+   "h": "1/1",
+   "stock": true
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1549236177-77e8271c34b6?w=1200&q=75&auto=format&fit=crop",
+   "cap": "Opera n. 3",
+   "lab": "Tecnica: acconciatura",
+   "h": "3/4",
+   "stock": true
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1659348448223-e0d51c69d43e?w=1200&q=75&auto=format&fit=crop",
+   "cap": "Opera n. 4",
+   "lab": "Tecnica: colore",
+   "h": "1/1",
+   "stock": true
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1785456283212-338f5bc44d50?w=1200&q=75&auto=format&fit=crop",
+   "cap": "Opera n. 5",
+   "lab": "Tecnica: permanente",
+   "h": "4/5",
+   "stock": true
+  },
+  {
+   "img": "https://images.unsplash.com/photo-1783908688260-0c47404926f3?w=1200&q=75&auto=format&fit=crop",
+   "cap": "Opera n. 6",
+   "lab": "Tecnica: taglio uomo",
+   "h": "3/4",
+   "stock": true
+  }
  ],
- "galTodo": "6 foto dei lavori (meglio verticali e nitide) e, se c'è, una foto del salone.",
+ "galTodo": "sostituire le foto di esempio con 6 lavori di Katia (meglio verticali e nitidi).",
  "why": {
-  "img": "foto/salone.svg",
-  "foto": "salone: l'interno del salone o Katia con una cliente",
-  "alt": "Il salone",
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q2FEEShwM79bx_3BHNfpXf1DkpfEhbrFouBqYKZG-CIDweT3BOI5U8NN6xbq4ZVank9lOeeZC56Bfm6Qp_d8MsR6HVlrKv8GeMs0dzWiVf6MF225S0rzPa18PfoOdZz-o-gDM=s1600",
+  "alt": "I lavatesta del salone",
   "title": "Passione, professionalità<br><em>e creatività</em>.",
   "text": "Sono le tre parole con cui il salone si presenta. Un ambiente rilassato e attento alle tendenze, dove si ascolta prima di tagliare, e dove si insegna il mestiere anche agli apprendisti.",
   "points": [
-   ["Si parte dal viso", "La consulenza guarda la forma del viso e il tipo di capello, ed è gratuita."],
-   ["La cute prima di tutto", "Trattamenti del cuoio capelluto e ricostruzione, anche con l'ossigenoterapia."],
-   ["Comodo da raggiungere", "Al centro di Cadenazzo, vicino alla stazione, con parcheggio e posto per disabili."]
+   [
+    "Si parte dal viso",
+    "La consulenza guarda la forma del viso e il tipo di capello, ed è gratuita."
+   ],
+   [
+    "La cute prima di tutto",
+    "Trattamenti del cuoio capelluto e ricostruzione, anche con l'ossigenoterapia."
+   ],
+   [
+    "Comodo da raggiungere",
+    "Al centro di Cadenazzo, vicino alla stazione, con parcheggio e posto per disabili."
+   ]
   ],
   "todo": "la storia del salone in poche righe: quando ha aperto, come è nata la passione di Katia, chi lavora con lei."
  },
  "sig": "galleria",
- "stats": [["4,6", "8 valutazioni su local.ch", 1]],
- "revLink": ["Leggi le valutazioni su local.ch", "https://www.local.ch/d/N_EB5hUVa95FHbQakmD9ng"],
+ "stats": [
+  [
+   "4,9",
+   "17 recensioni su Google",
+   1
+  ]
+ ],
+ "revLink": [
+  "Leggi le recensioni su Google",
+  "https://www.google.com/maps/search/?api=1&query=L%27Arte+nei+Capelli+Via+Monte+Ceneri+10+Cadenazzo"
+ ],
  "book": {
   "title": "Scegli il servizio,<br><em>poi il giorno</em>.",
   "text": "La richiesta arriva a Katia su WhatsApp già scritta. Ti risponde lei per confermare l'orario.",
   "todo": "gli orari in cui prendete appuntamenti, se diversi da quelli di apertura."
  },
  "doveTitle": "Via Monte Ceneri <em>10</em>",
- "bookChips": ["Consulenza", "Taglio e piega", "Colore", "Balayage / mèches", "Permanente", "Acconciatura", "Trattamento cute", "Taglio bambino"]
+ "bookChips": [
+  "Consulenza",
+  "Taglio e piega",
+  "Colore",
+  "Balayage / mèches",
+  "Permanente",
+  "Acconciatura",
+  "Trattamento cute",
+  "Taglio bambino"
+ ]
 }
