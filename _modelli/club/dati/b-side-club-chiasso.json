@@ -18,7 +18,7 @@
   "alt": "La sala del B-Side con le luci blu",
   "pos": "50% 50%",
   "tag": "Chiasso · Via Carlo Pasta 2",
-  "title": "<img class=\"wmn\" src=\"foto/logo-neon.webp\" alt=\"B-Side Club · Lounge Bar · Chiasso\">",
+  "title": "<img class=\"wmn\" src=\"foto/logo-neon.png\" alt=\"B-Side Club · Lounge Bar · Chiasso\">",
   "sub": "DJ set, vocalist e privé a Chiasso, vicino al Palapenz. Il venerdì e il sabato, dalle 23 fino all'alba."
  },
  "facts": [
@@ -124,6 +124,6 @@
  ],
  "instagram": "",
  "heroExtra": "",
- "css": "\n.hero h1{margin-bottom:14px;line-height:0}\n.wmn{display:block;width:min(92%,540px);height:auto;mix-blend-mode:screen;animation:nflick 8s linear infinite}\n@keyframes nflick{0%,17%,21%,24%,61%,64%,100%{filter:brightness(1.05)}19%,22.5%,62.5%{filter:brightness(.55)}}\n.hero .wrap{position:relative;z-index:3}\n#logo img.mk{height:42px!important;width:auto;mix-blend-mode:screen}\n@media (prefers-reduced-motion:reduce){.wmn{animation:none}}\n",
+ "css": "\n.hero h1{margin-bottom:14px;line-height:0}\n.wmn{display:block;width:min(92%,540px);height:auto;animation:nflick 8s linear infinite}\n@keyframes nflick{0%,17%,21%,24%,61%,64%,100%{filter:brightness(1.05)}19%,22.5%,62.5%{filter:brightness(.55)}}\n.hero .wrap{position:relative;z-index:3}\n#logo img.mk{height:42px!important;width:auto}\n@media (prefers-reduced-motion:reduce){.wmn{animation:none}}\n",
  "headLogo": "foto/icon.png"
 }
