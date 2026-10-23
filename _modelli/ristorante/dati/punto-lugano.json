@@ -1,0 +1,261 @@
+{
+ "name": "Punto Lugano",
+ "short": "Punto",
+ "city": "Lugano",
+ "tz": "Europe/Zurich",
+ "sig": "punto",
+ "desc": "Punto Lugano, Via Trevano 38: ristorante e bar dalla colazione alla cena. Cucina curata, aperitivo e pasticceria, con Margherita e Piero. Tel. 078 224 58 54.",
+ "fonts": {
+  "url": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Caveat:wght@500;700&family=Inter:wght@400;600&display=swap",
+  "h": "'Fraunces',Georgia,serif",
+  "s": "'Fraunces',Georgia,serif",
+  "b": "'Inter',system-ui,sans-serif"
+ },
+ "bodyClass": "noup",
+ "theme": {
+  "bg": "#F6F4EF",
+  "bg2": "#EEEBE3",
+  "bg3": "#E4E0D5",
+  "tx": "#1C1F1D",
+  "tx2": "#5F635E",
+  "acc": "#2F5D50",
+  "acc2": "#C2683A",
+  "line": "#DCD7CB",
+  "cta": "#2F5D50",
+  "ctx": "#F6F4EF",
+  "dbg": "#17201C",
+  "dbg2": "#111916",
+  "dbg3": "#1F2B26",
+  "dtx": "#F1EEE6",
+  "dtx2": "#B8BDB4",
+  "dacc": "#E08A5A",
+  "dline": "#2C3A34",
+  "dcta": "#E08A5A",
+  "dctx": "#17201C"
+ },
+ "logo": "",
+ "logoText": "Punto",
+ "ogImage": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QPM73yPGfUwKmZ7lDm3IPtyAMDqSBIvkDPy1N1QvECZ9fLRXTiS930BPIfzqtYVGKPPdbesxlbDD0RREhwHbdEWjRkpQAHK-kiVNaWm-waez0qIkBTUQtgw7WTjbFVRXnTfoMEjw=w1200-h630-p-k-no",
+ "phone": "+41782245854",
+ "phoneLabel": "078 224 58 54",
+ "email": "",
+ "instagram": "",
+ "address": "Via Trevano 38, 6900 Lugano",
+ "mapsQuery": "Punto Lugano, Via Trevano 38, Lugano",
+ "parking": "Parcheggio sul retro",
+ "nav": [
+  [
+   "#piatti",
+   "La cucina"
+  ],
+  [
+   "#menu",
+   "Dalla mattina alla sera"
+  ],
+  [
+   "#prenota",
+   "Prenota"
+  ],
+  [
+   "#dove",
+   "Dove siamo"
+  ]
+ ],
+ "hero": {
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QPM73yPGfUwKmZ7lDm3IPtyAMDqSBIvkDPy1N1QvECZ9fLRXTiS930BPIfzqtYVGKPPdbesxlbDD0RREhwHbdEWjRkpQAHK-kiVNaWm-waez0qIkBTUQtgw7WTjbFVRXnTfoMEjw=s2400",
+  "alt": "Aperitivo con tagliere, spritz e birra",
+  "pos": "50% 60%",
+  "kicker": "Ristorante e bar · Via Trevano 38",
+  "title": "Dalla colazione alla cena, <span class=\"sc\">al punto giusto</span>",
+  "sub": "Un locale rinnovato in Via Trevano: brioche al mattino, pranzo di lavoro, aperitivo e cena. Con Margherita e Piero.",
+  "cta2": [
+   "#piatti",
+   "La cucina"
+  ]
+ },
+ "ticker": [
+  "Colazione",
+  "Pranzo di lavoro",
+  "Aperitivo",
+  "Cena",
+  "Pasticceria",
+  "Parcheggio sul retro"
+ ],
+ "story": {
+  "kicker": "Il locale",
+  "title": "Margherita e Piero, <span class=\"sc\">la vostra cucina in Via Trevano</span>",
+  "text": "Punto è un locale rinnovato, elegante e contemporaneo, dove si può venire a qualsiasi ora: il caffè con la brioche, il pranzo di lavoro, l'aperitivo con gli amici, la cena. In cucina piatti curati e ingredienti di qualità; in sala l'accoglienza di Margherita e Piero.",
+  "imgs": [
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TnBtyWxau-VIvq92c9eTR5Jx7pWlI_7PkTQhiFdUAnoNX_yCcSZRb5Q6X_kGe23H1AHTJnZLr8ZMdZMxtazNlWAcDsyEXZ4BwvL81kjq6gB7PmTGw0IvP-L2bem_OU8O1kUeFk=s1600",
+    "alt": "Brioche e panini in vetrina"
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S28vxntEKRMGFy_D5oHobrAVKH5PNnctblcrYNbBGHmpXzMFRAf2EVFxr1vhl7lmn1d5Be0aUSn1P6TfMTUIJ5g3VoYVSKIPXjCYEUkBmME6P6TCV6IYcEamyah2B53ecYIYc=s1600",
+    "alt": "Burrata e salumi"
+   }
+  ],
+  "facts": [
+   [
+    "4,9 ★",
+    "56 recensioni su Google"
+   ],
+   [
+    "Lun – Ven",
+    "7:00 – 22:00"
+   ],
+   [
+    "Parcheggio",
+    "sul retro"
+   ]
+  ]
+ },
+ "dishes": {
+  "kicker": "Dalla cucina",
+  "title": "Piatti <span class=\"sc\">curati</span>",
+  "items": [
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QmGabERirBP0xZLqsMDgxm4JovP8bOd2HgnLJY-ohoq2pPFFmuLu2wInS-ksOpHWbOGmM_3Oy0yQ3vl8dHQY9vo1L2FXCR7_rBo-Fpm5naBo_8bSrrCIp_4G8sy1BWhyXDIgrK=s1600",
+    "n": "Spaghetti alle vongole",
+    "d": "Un classico, fatto come si deve."
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SCahR5XJW4AkYYJ0ZbOb4zkmDxvhHoqEUWfnt0Kx3_zhpVud8kBUKvvpmdZSS3E_rM0iccwLLDaGnHTZGDMY23aJEQxNXPAJ7VWSxYkaocxgadBIQ0hzPFZfxggMiTCi96oWwxLsB2-_2p=s1600",
+    "n": "Tartare di manzo",
+    "d": "Con crostini di pane tostato."
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SCCFN7H-fAqzqthk_kv7OmWmJ06TI7ZbUtVBi0Z0jUygNhaoUzk_mUG7tEhWjjK0uCpzHx1H7ccSFO8oZrwmo3vBl0soDuTQSMfU7acDipaaZMWvSsSELffvx0PgLbzDhPfEddeC1dFlg=s1600",
+    "n": "Polpo e patate",
+    "d": "Leggero, per il pranzo o la cena."
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tl85Aeue6ET82BXRkklA4HfpnNOmWy55W5WuFtQUWRuzvq1SU60TQgPj77Dv6PnBWdFgwwcG1Aebq-yKtuuyyJ1Po7mdhvikcodJV7lrlSE8wQDz-3ROhNELGp9P3lJ6Af8pbx=s1600",
+    "n": "Risotto",
+    "d": "Servito in padella, mantecato al momento."
+   },
+   {
+    "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QlyABFKwujibPzvHcIN7KDQATdIhgCNqFJcSgpGy-cXv3p86oCB_xNuS7owA2fJwg_jmt71BGqjMRVNhM6o0HDRdrs2ND5RhzdM0Xf5CgLJ-QqrKawlklJZ_jyj7cUc2axvUqa3g=s1600",
+    "n": "Dal forno",
+    "d": "Da gustare caldo."
+   }
+  ]
+ },
+ "menu": {
+  "title": "Dalla mattina <span class=\"sc\">alla sera</span>",
+  "text": "Il locale cambia con le ore del giorno.",
+  "tabs": [
+   {
+    "t": "Mattina",
+    "items": [
+     {
+      "n": "Colazione",
+      "d": "Caffè e brioche, dalle 7 in settimana."
+     },
+     {
+      "n": "Pasticceria",
+      "d": "Dolci e brioche in vetrina."
+     }
+    ]
+   },
+   {
+    "t": "Pranzo",
+    "items": [
+     {
+      "n": "Pranzo di lavoro",
+      "d": "Primi e secondi in un ambiente tranquillo e climatizzato."
+     }
+    ]
+   },
+   {
+    "t": "Aperitivo",
+    "items": [
+     {
+      "n": "Tagliere e spritz",
+      "d": "Salumi, formaggi e stuzzichini, con lo spritz o una birra."
+     }
+    ]
+   },
+   {
+    "t": "Cena",
+    "items": [
+     {
+      "n": "La cucina di sera",
+      "d": "Fino alle 22, dal lunedì al sabato."
+     }
+    ]
+   }
+  ],
+  "note": "Il menu completo e i prezzi li inseriamo insieme"
+ },
+ "season": {
+  "kicker": "L'aperitivo",
+  "title": "Quando <span class=\"sc\">si stacca</span>",
+  "text": "Tagliere di salumi e formaggi, stuzzichini dal forno e uno spritz: l'aperitivo di Punto, da fare con calma.",
+  "img": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_q3al6qzcIn4swf5iF-cG-Rr34tOQ42MIH7rNnpiIT6rRHCtjCDc_NiiAmJoz_ElpDOQNp75rGDzX-JWj7FzdWEkOBcQjIlENh6SNDWKDeyyVYk34btpCqO2jiPXRCxDi1JxI_w=s1600",
+  "alt": "Aperitivo con taglieri e spritz",
+  "items": [
+   "Spritz",
+   "Birra",
+   "Taglieri",
+   "Stuzzichini"
+  ]
+ },
+ "reviews": {
+  "rating": "4,9",
+  "count": 56,
+  "list": []
+ },
+ "hours": {
+  "1": [
+   [
+    "07:00",
+    "22:00"
+   ]
+  ],
+  "2": [
+   [
+    "07:00",
+    "22:00"
+   ]
+  ],
+  "3": [
+   [
+    "07:00",
+    "22:00"
+   ]
+  ],
+  "4": [
+   [
+    "07:00",
+    "22:00"
+   ]
+  ],
+  "5": [
+   [
+    "07:00",
+    "22:00"
+   ]
+  ],
+  "6": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ]
+ },
+ "book": {
+  "mode": "call",
+  "text": "Per un tavolo a pranzo o a cena basta una telefonata o un messaggio. Scegli giorno, ora e quanti siete: ti prepariamo il riepilogo.",
+  "types": [
+   [
+    "tavolo",
+    "Un tavolo"
+   ]
+  ],
+  "callNote": "Ecco il riepilogo da dire al telefono (o da mandare su WhatsApp).",
+  "todo": "colleghiamo il pulsante direttamente a WhatsApp, con il messaggio già scritto."
+ },
+ "doveTitle": "Via Trevano <span class=\"sc\">38</span>",
+ "infoTodo": ""
+}
