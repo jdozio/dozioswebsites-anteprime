@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>kitArte · creazioni fatte a mano da Justine</title>
+<meta name="description" content="kitArte: bottiglie vestite all'uncinetto, angeli di legno dipinti, fiori e legni levigati dall'acqua. Creazioni fatte a mano, una per una, da Justine.">
+<meta property="og:title" content="kitArte · fatto a mano da Justine">
+<meta property="og:description" content="Creare è la mia passione. Uncinetto, legno dipinto, fiori.">
+<meta property="og:image" content="foto/og.jpg">
+<meta name="theme-color" content="#FAF4EC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Caveat:wght@500;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAF4EC; --paper2:#F3E9DC; --ink:#3B2620; --ink2:#6E5A50;
+  --rose:#E7BDB8; --rose2:#C77D7E; --sage:#A3AE95; --sage2:#6F7D63;
+  --twine:#A9C688; --wood:#C8A27C; --line:rgba(59,38,32,.14);
+  --fh:'Fraunces',Georgia,serif; --fs:'Caveat',cursive; --fb:'DM Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--fb);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+/* carta: grana leggera */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.35;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .25 0 0 0 0 .2 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+main,header,footer{position:relative;z-index:1}
+.wrap{width:min(1160px,100% - 40px);margin:0 auto}
+.hand{font-family:var(--fs);font-weight:500}
+
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:20;transition:background .3s,box-shadow .3s}
+header.on{background:rgba(250,244,236,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 1px 0 var(--line)}
+.hbar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.hbar .lg{height:34px;opacity:0;transform:translateY(-6px);transition:.35s}
+header.on .hbar .lg{opacity:1;transform:none}
+.hbar nav{display:flex;gap:26px;font-size:15px}
+.hbar nav a{text-decoration:none;color:var(--ink2)}
+.hbar nav a:hover{color:var(--ink)}
+.ig-btn{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:99px;background:var(--ink);color:var(--paper)!important;text-decoration:none;font-size:14px;font-weight:500}
+.ig-btn svg{width:16px;height:16px}
+@media(max-width:760px){.hbar nav a:not(.ig-btn){display:none}}
+
+.draft{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:30;background:var(--ink);color:var(--paper);font-size:12px;padding:7px 14px;border-radius:99px;letter-spacing:.02em;transition:opacity .4s,transform .4s;white-space:nowrap}
+.draft.hide{opacity:0;transform:translate(-50%,12px);pointer-events:none}
+
+/* HERO */
+.hero{min-height:100svh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;padding:90px 0 60px}
+.hero h1{font:300 clamp(44px,6.4vw,86px)/1 var(--fh);letter-spacing:-.02em;font-variation-settings:"SOFT" 100,"WONK" 1}
+.hero h1 em{font-style:italic;color:var(--rose2)}
+.hero .kick{font-family:var(--fs);font-size:30px;color:var(--sage2);margin-bottom:14px;display:block;transform:rotate(-2deg);transform-origin:left}
+.hero p.lead{margin:26px 0 34px;max-width:30em;color:var(--ink2);font-size:18px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:99px;text-decoration:none;font-weight:500;font-size:16px;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.dark{background:var(--ink);color:var(--paper)}
+.btn.ghost{border:1.5px solid var(--ink);}
+.btn svg{width:18px;height:18px}
+
+/* il cartellino: elemento firma */
+.tagstage{position:relative;height:min(78vh,640px);display:flex;justify-content:center}
+.swing{position:absolute;top:-90px;transform-origin:50% 0;animation:sw 6s ease-in-out infinite;will-change:transform}
+@keyframes sw{0%,100%{transform:rotate(3.2deg)}50%{transform:rotate(-3.2deg)}}
+.twine{display:block;margin:0 auto;width:40px;height:250px;overflow:visible}
+.nail{display:block;width:16px;height:16px;margin:0 auto -6px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#d9cfc4,#7a6a60);box-shadow:0 2px 3px rgba(0,0,0,.3);position:relative;z-index:1}
+@media(min-width:861px){.swing{top:-10px}.twine{height:150px}}
+.tag{position:relative;width:min(370px,74vw);aspect-ratio:1/1;margin-top:-14px;border-radius:6px;
+  background:
+    radial-gradient(120% 90% at 70% 75%,rgba(255,255,255,.75),transparent 55%),
+    radial-gradient(60% 50% at 30% 30%,rgba(231,189,184,.35),transparent 70%),
+    linear-gradient(160deg,#F6EBDD,#EFDCC6);
+  box-shadow:0 1px 0 rgba(255,255,255,.7) inset,0 28px 50px -24px rgba(59,38,32,.45),0 6px 14px -8px rgba(59,38,32,.3);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18% 9% 9%}
+.tag::before{content:"";position:absolute;top:7%;left:50%;width:26px;height:26px;margin-left:-13px;border-radius:50%;background:var(--paper);box-shadow:inset 0 2px 4px rgba(59,38,32,.35)}
+.tag .rose{position:absolute;inset:0;border-radius:6px;opacity:.22;pointer-events:none;
+  background:repeating-radial-gradient(circle at 68% 72%,transparent 0 9px,rgba(200,160,120,.5) 10px 11px,transparent 12px 22px)}
+.tag img{width:100%;position:relative}
+.tag .at{position:relative;margin-top:auto;font:500 12px/1 var(--fb);letter-spacing:.22em;color:var(--ink2);text-transform:uppercase}
+.knot{position:absolute;top:-6px;left:50%;width:34px;height:30px;margin-left:-17px}
+.hero .note{position:absolute;bottom:2%;right:4%;font-family:var(--fs);font-size:24px;color:var(--ink2);transform:rotate(-5deg)}
+.hero .note svg{width:60px;height:40px;display:inline-block;vertical-align:middle;margin-left:4px;transform:scaleX(-1) rotate(30deg)}
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr;gap:0;padding-top:70px;text-align:left}
+  .tagstage{order:-1;height:430px}
+  .swing{top:-110px}
+  .twine{height:220px}
+  .tag{width:min(290px,72vw)}
+  .hero .note{display:none}
+}
+
+/* punto a uncinetto: divisore cucito */
+.stitch{height:28px;width:100%;display:block;color:var(--sage2);opacity:.75}
+.stitch path{stroke-dasharray:8 7;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
+
+/* sezioni */
+section{padding:clamp(70px,10vw,130px) 0}
+.eyebrow{font-family:var(--fs);font-size:26px;color:var(--rose2);display:block;margin-bottom:8px}
+h2{font:300 clamp(36px,4.8vw,62px)/1.04 var(--fh);letter-spacing:-.015em;font-variation-settings:"SOFT" 100,"WONK" 1}
+h2 em{font-style:italic}
+.sub{color:var(--ink2);max-width:34em;margin-top:18px}
+
+/* stagioni */
+.seasons{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.chip{position:relative;padding:12px 20px 12px 38px;border-radius:99px;background:#fff;border:1.5px dashed var(--line);font-weight:500;font-size:15px}
+.chip::before{content:"";position:absolute;left:16px;top:50%;width:12px;height:12px;margin-top:-6px;border-radius:50%;background:var(--c,var(--rose))}
+.chip.now{border:1.5px solid var(--ink);background:var(--ink);color:var(--paper)}
+.chip.now::after{content:"adesso";position:absolute;top:-22px;right:4px;font-family:var(--fs);font-size:20px;color:var(--rose2);transform:rotate(-6deg)}
+.chip.next::after{content:"in arrivo";position:absolute;top:-22px;right:4px;font-family:var(--fs);font-size:20px;color:var(--sage2);transform:rotate(-6deg);white-space:nowrap}
+
+/* bottiglie: il filato si sceglie */
+.bott{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.frame{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/5;background:var(--paper2);box-shadow:0 30px 60px -30px rgba(59,38,32,.45)}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity .7s,transform 1.2s}
+.frame img.on{opacity:1;transform:none}
+.yarn{display:flex;gap:14px;margin:30px 0 8px;flex-wrap:wrap}
+.yarn button{all:unset;cursor:pointer;display:flex;align-items:center;gap:10px;padding:8px 16px 8px 8px;border-radius:99px;border:1.5px solid var(--line);font-size:15px;transition:border-color .2s,background .2s}
+.yarn button:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.yarn button[aria-pressed=true]{border-color:var(--ink);background:#fff}
+.ball{width:34px;height:34px;border-radius:50%;background:var(--y);position:relative;overflow:hidden;box-shadow:inset -4px -5px 8px rgba(0,0,0,.18)}
+.ball::before,.ball::after{content:"";position:absolute;inset:-30%;border-radius:50%;border:2px solid rgba(255,255,255,.35);transform:rotate(30deg) scaleX(.45)}
+.ball::after{transform:rotate(-40deg) scaleX(.35);border-color:rgba(0,0,0,.12)}
+.labels{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.leather{font:500 20px/1 var(--fs);padding:10px 18px;border-radius:50%/60%;background:linear-gradient(160deg,#E9C99C,#D2AA74);color:#5A3A22;box-shadow:inset 0 0 0 2px rgba(255,255,255,.25),0 4px 10px -6px rgba(59,38,32,.6);position:relative}
+.leather::before,.leather::after{content:"";position:absolute;top:50%;width:5px;height:5px;margin-top:-2px;border-radius:50%;background:rgba(90,58,34,.45)}
+.leather::before{left:6px}.leather::after{right:6px}
+.leather sub{font-size:.7em;vertical-align:-.2em}
+.quote{margin-top:26px;font-family:var(--fs);font-size:28px;line-height:1.2;color:var(--ink)}
+@media(max-width:860px){.bott{grid-template-columns:1fr}.frame{aspect-ratio:4/4.6}}
+
+/* angeli */
+.angels{background:linear-gradient(#F3E9DC,#F7EFE4);border-radius:28px;overflow:hidden;display:grid;grid-template-columns:.9fr 1.1fr;align-items:stretch}
+.angels .ph{position:relative;min-height:520px}
+.angels .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 30%}
+.angels .tx{padding:clamp(34px,6vw,80px);display:flex;flex-direction:column;justify-content:center}
+.angels .tx ul{list-style:none;margin-top:24px;display:grid;gap:12px}
+.angels .tx li{padding-left:28px;position:relative}
+.angels .tx li::before{content:"";position:absolute;left:0;top:.55em;width:14px;height:2px;background:var(--rose2);border-radius:2px}
+.snow{position:absolute;inset:0;pointer-events:none}
+@media(max-width:860px){.angels{grid-template-columns:1fr}.angels .ph{min-height:420px}}
+
+/* fiori */
+.flowers{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin-top:46px}
+.card{position:relative;border-radius:16px;overflow:hidden;background:var(--paper2);cursor:zoom-in}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform 1s}
+.card:hover img{transform:scale(1.03)}
+.card figcaption{position:absolute;left:12px;bottom:12px;background:rgba(250,244,236,.94);padding:6px 14px 4px;border-radius:4px;font-family:var(--fs);font-size:22px;line-height:1.1;transform:rotate(-1.5deg);box-shadow:0 4px 12px -6px rgba(59,38,32,.5)}
+.f1{grid-column:span 5;grid-row:span 2;aspect-ratio:auto}
+.f2{grid-column:span 7;aspect-ratio:16/10}
+.f3{grid-column:span 4;aspect-ratio:4/5}
+.f4{grid-column:span 3;aspect-ratio:4/5}
+@media(max-width:860px){.flowers{grid-template-columns:1fr 1fr;gap:12px}.f1{grid-column:span 2;grid-row:auto;aspect-ratio:4/5}.f2{grid-column:span 2}.f3,.f4{grid-column:span 1}}
+
+/* borsette */
+.bags{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;padding:clamp(30px,5vw,60px);border:1.5px dashed rgba(59,38,32,.3);border-radius:28px}
+.bags svg{width:150px;height:150px}
+@media(max-width:700px){.bags{grid-template-columns:1fr;gap:16px}.bags svg{width:110px;height:110px}}
+
+/* come nasce */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:46px;counter-reset:s}
+.step{position:relative;padding:34px 28px 30px;background:#fff;border-radius:6px;box-shadow:0 18px 34px -24px rgba(59,38,32,.45);counter-increment:s}
+.step:nth-child(1){transform:rotate(-1.2deg)}.step:nth-child(2){transform:rotate(.8deg)}.step:nth-child(3){transform:rotate(-.5deg)}
+.step::before{content:counter(s);font:300 56px/1 var(--fh);color:var(--rose);position:absolute;top:14px;right:20px}
+.step h3{font:500 22px/1.2 var(--fh);margin-bottom:8px;padding-right:40px}
+.step p{color:var(--ink2);font-size:16px}
+.step .pin{position:absolute;top:-9px;left:50%;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:var(--sage2);box-shadow:0 3px 5px rgba(0,0,0,.25)}
+@media(max-width:860px){.steps{grid-template-columns:1fr}}
+
+/* contatto */
+.contact{text-align:center}
+.contact .tagsm{width:170px;margin:0 auto 26px;transform:rotate(-4deg)}
+.contact h2{max-width:14em;margin:0 auto}
+.contact .sub{margin:18px auto 34px}
+.contact .btns{justify-content:center}
+.handle{display:block;margin-top:22px;font-family:var(--fs);font-size:26px;color:var(--ink2)}
+
+footer{padding:40px 0 90px;text-align:center;font-size:14px;color:var(--ink2)}
+footer img{height:40px;margin:0 auto 10px;opacity:.85}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:40;background:rgba(40,26,22,.92);display:none;align-items:center;justify-content:center;padding:20px}
+.lb.open{display:flex}
+.lb img{max-height:88vh;max-width:min(92vw,900px);border-radius:10px}
+.lb button{position:absolute;top:16px;right:16px;all:unset;cursor:pointer;color:#fff;font-size:34px;line-height:1;padding:10px}
+.lb button{position:absolute}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.swing{animation:none}.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap hbar">
+    <a href="#top" aria-label="kitArte"><img class="lg" src="foto/logo.png" alt="kitArte"></a>
+    <nav>
+      <a href="#bottiglie">Bottiglie</a>
+      <a href="#angeli">Angeli</a>
+      <a href="#fiori">Fiori</a>
+      <a href="#su-misura">Su misura</a>
+      <a class="ig-btn" href="https://www.instagram.com/homemade_justy/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Scrivimi</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="wrap hero">
+    <div class="rv">
+      <span class="kick">ciao, sono Justine</span>
+      <h1>Creare è la mia <em>passione.</em></h1>
+      <p class="lead">Ogni pezzo kitArte nasce dalle mie mani: bottiglie vestite all'uncinetto, angeli di legno dipinti, fiori raccolti in legni levigati dall'acqua. Nessuno è uguale all'altro.</p>
+      <div class="btns">
+        <a class="btn dark" href="#bottiglie">Guarda le creazioni</a>
+        <a class="btn ghost" href="https://www.instagram.com/homemade_justy/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>@homemade_justy</a>
+      </div>
+    </div>
+    <div class="tagstage">
+      <div class="swing" id="swing">
+        <span class="nail" aria-hidden="true"></span>
+        <svg class="twine" viewBox="0 0 40 250" aria-hidden="true">
+          <path d="M20 0 C17 60 23 120 20 250" stroke="#8FAE6E" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M20 0 C17 60 23 120 20 250" stroke="#C3DAA6" stroke-width="5" fill="none" stroke-dasharray="3 5" stroke-linecap="round"/>
+        </svg>
+        <div class="tag">
+          <svg class="knot" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 2c-9 3-12 12-5 16 6 3 13-2 10-8-3-5-11-1-9 6 2 6 9 9 12 14M17 18c-4 3-7 7-10 10" stroke="#8FAE6E" stroke-width="4.5" fill="none" stroke-linecap="round"/><path d="M17 2c-9 3-12 12-5 16 6 3 13-2 10-8" stroke="#C3DAA6" stroke-width="4.5" fill="none" stroke-dasharray="3 5" stroke-linecap="round"/></svg>
+          <div class="rose"></div>
+          <img src="foto/logo.png" alt="kitArte, il logo scritto a mano con un cuore">
+          <span class="at">@homemade_justy</span>
+        </div>
+      </div>
+      <span class="note">il mio cartellino <svg viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 30C18 10 38 6 54 12M54 12l-9-6M54 12l-7 8"/></svg></span>
+    </div>
+  </div>
+
+  <svg class="stitch" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 Q 150 2 300 14 T 600 14 T 900 14 T 1200 14"/></svg>
+
+  <!-- STAGIONI -->
+  <section id="stagioni">
+    <div class="wrap rv">
+      <span class="eyebrow">un anno di creazioni</span>
+      <h2>Ogni stagione ha <em>le sue.</em></h2>
+      <p class="sub">Su Instagram le raccolgo per tema, stagione dopo stagione: dall'autunno al Natale, da Pasqua all'estate.</p>
+      <div class="seasons" id="seasons">
+        <span class="chip" data-m="9,10" style="--c:#C8875A">Autunno</span>
+        <span class="chip" data-m="11,0" style="--c:#B85450">Natale</span>
+        <span class="chip" data-m="2,3" style="--c:#E6C66A">Pasqua</span>
+        <span class="chip" data-m="" style="--c:#E7BDB8">Fiori</span>
+        <span class="chip" data-m="5,6,7" style="--c:#7FB3C4">Estate</span>
+        <span class="chip" data-m="" style="--c:#C77D7E">Cuori</span>
+        <span class="chip" data-m="" style="--c:#A3AE95">Stoffa</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTIGLIE -->
+  <section id="bottiglie" style="padding-top:0">
+    <div class="wrap bott">
+      <div class="frame rv" id="frame">
+        <img class="on" data-y="crema" src="foto/calma-piatta.webp" alt="Due bottiglie con il vestito all'uncinetto color crema e le etichette Bolle libere e Calma piatta">
+        <img data-y="salvia" src="foto/bottiglie-salvia.webp" alt="Bottiglie con il vestito all'uncinetto verde salvia, etichette CO2 e H2O, a bordo piscina" loading="lazy">
+        <img data-y="rosa" src="foto/bottiglie-rosa.webp" alt="Bottiglie con il vestito all'uncinetto rosa antico, etichette CO2 e H2O" loading="lazy">
+      </div>
+      <div class="rv">
+        <span class="eyebrow">all'uncinetto</span>
+        <h2>Bolle libere,<br><em>calma piatta.</em></h2>
+        <p class="sub">Bottiglie per l'acqua, con le bollicine e senza. Ognuna ha il suo vestito lavorato a mano e un'etichetta che dice cosa c'è dentro.</p>
+        <div class="yarn" role="group" aria-label="Scegli il filato">
+          <button aria-pressed="true" data-y="crema"><span class="ball" style="--y:#EDE3CF"></span>Crema</button>
+          <button aria-pressed="false" data-y="salvia"><span class="ball" style="--y:#A3AE95"></span>Salvia</button>
+          <button aria-pressed="false" data-y="rosa"><span class="ball" style="--y:#D9A3A2"></span>Rosa antico</button>
+        </div>
+        <div class="labels">
+          <span class="leather">CO<sub>2</sub></span>
+          <span class="leather">H<sub>2</sub>O</span>
+          <span class="leather">Bolle libere</span>
+          <span class="leather">Calma piatta</span>
+        </div>
+        <p class="quote">Un altro colore, un'altra scritta?<br>Chiedimelo e ne parliamo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANGELI -->
+  <section id="angeli" style="padding-top:0">
+    <div class="wrap">
+      <div class="angels rv">
+        <div class="ph">
+          <img src="foto/angeli.webp" alt="Angeli di legno dipinti a mano con i capelli morbidi e un alberello di metallo appeso" loading="lazy">
+          <canvas class="snow" id="snow" aria-hidden="true"></canvas>
+        </div>
+        <div class="tx">
+          <span class="eyebrow">legno dipinto · Natale</span>
+          <h2>Gli angeli <em>sono tornati.</em></h2>
+          <p class="sub">Sagome di legno dipinte una per una: guance rosa, capelli morbidi, un alberello appeso alla mano. Stanno bene sulla porta, sull'albero o dentro un regalo.</p>
+          <ul>
+            <li>Ognuno ha il suo viso, disegnato a mano</li>
+            <li>Arrivano con il cartellino kitArte</li>
+            <li>Per Natale meglio scrivermi per tempo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIORI -->
+  <section id="fiori" style="padding-top:0">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow">fiori è dolcezza</span>
+        <h2>Fiori, legni <em>e qualche gommino.</em></h2>
+        <p class="sub">Composizioni da regalare: per un compleanno, per dire grazie, o solo per portare un po' di primavera in casa. Fiori freschi in legni levigati dall'acqua e vasetti pieni di dolcetti.</p>
+      </div>
+      <div class="flowers">
+        <figure class="card f1 rv"><img src="foto/fiori-lago.webp" alt="Fiori di campo in un vaso di legni levigati dall'acqua, con il lago sullo sfondo" loading="lazy"><figcaption>fiori di campo, vista lago</figcaption></figure>
+        <figure class="card f2 rv"><img src="foto/giacinti.webp" alt="Giacinti rosa in un vaso di legni levigati, legato con un foulard colorato" loading="lazy"><figcaption>giacinti nei legni</figcaption></figure>
+        <figure class="card f3 rv"><img src="foto/fiori-dolcezza.webp" alt="Composizione di rose e bacche con un vasetto di gommini e una targhetta incisa" loading="lazy"><figcaption>per un compleanno</figcaption></figure>
+        <figure class="card f4 rv"><img src="foto/bottiglie-crema.webp" alt="Bottiglie con il vestito crema all'uncinetto ed etichette CO2 e H2O" loading="lazy"><figcaption>un regalo da tavola</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- BORSETTE -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="bags rv">
+        <svg viewBox="0 0 150 150" fill="none" stroke="#3B2620" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M52 52c0-18 10-28 23-28s23 10 23 28"/>
+          <path d="M28 56h94l-8 70H36z" fill="#F3E9DC"/>
+          <path d="M56 90c8-14 22-14 26 0 4 12 16 10 20-2" stroke="#C77D7E" stroke-width="3.5"/>
+          <circle cx="62" cy="104" r="4" fill="#A3AE95" stroke="none"/><circle cx="94" cy="78" r="3" fill="#E6C66A" stroke="none"/>
+          <path d="M112 20l14-14M118 26l-10-10" stroke="#6F7D63"/><path d="M108 30c-4 4-10 6-12 3s2-7 6-9" fill="#C77D7E" stroke="#C77D7E"/>
+        </svg>
+        <div>
+          <span class="eyebrow">dipinte a mano</span>
+          <h2 style="font-size:clamp(30px,3.6vw,46px)">E poi ci sono <em>le borsette.</em></h2>
+          <p class="sub">Borsette in pelle, anche vintage, e in similpelle, dipinte a mano. Hai in mente un disegno o dei colori? Scrivimi e ne parliamo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="stitch" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 Q 150 26 300 14 T 600 14 T 900 14 T 1200 14"/></svg>
+
+  <!-- SU MISURA -->
+  <section id="su-misura">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow">su misura</span>
+        <h2>Hai un'idea? <em>La facciamo insieme.</em></h2>
+      </div>
+      <div class="steps">
+        <div class="step rv"><span class="pin"></span><h3>Mi scrivi</h3><p>Un messaggio su Instagram: per chi è, per quale occasione, che colori ti piacciono.</p></div>
+        <div class="step rv"><span class="pin"></span><h3>Scegliamo i dettagli</h3><p>Filato, fiori, scritte sul cartellino. Ne parliamo bene prima di iniziare.</p></div>
+        <div class="step rv"><span class="pin"></span><h3>Lo creo a mano</h3><p>Pezzo per pezzo, con calma. Quando è pronto ti avviso e ci mettiamo d'accordo.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATTO -->
+  <section class="contact" id="contatto" style="padding-top:20px">
+    <div class="wrap rv">
+      <div class="tagsm"><div class="tag" style="width:170px;padding:22% 10% 10%"><img src="foto/logo.png" alt=""></div></div>
+      <h2>Ti è piaciuto qualcosa? <em>Scrivimi.</em></h2>
+      <p class="sub">Rispondo io, di persona. Raccontami cosa cerchi.</p>
+      <div class="btns">
+        <a class="btn dark" href="https://ig.me/m/homemade_justy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Scrivimi su Instagram</a>
+        <a class="btn ghost" href="https://www.instagram.com/homemade_justy/" target="_blank" rel="noopener">Guarda tutte le creazioni</a>
+      </div>
+      <span class="handle">@homemade_justy</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <img src="foto/logo.png" alt="kitArte">
+  <div>kitArte · love for Art · fatto a mano da Justine</div>
+</footer>
+
+<div class="draft" id="draft">Bozza del sito · preparata da Jacopo Dozio</div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ingrandita"><button aria-label="Chiudi">×</button><img alt=""></div>
+
+<script>
+(function(){
+  var hd=document.getElementById('hd'),dr=document.getElementById('draft');
+  function sc(){var y=scrollY;hd.classList.toggle('on',y>60);dr.classList.toggle('hide',y>300)}
+  addEventListener('scroll',sc,{passive:true});sc();
+
+  // reveal
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+
+  // stagione in corso
+  var m=new Date().getMonth(),chips=[].slice.call(document.querySelectorAll('#seasons .chip'));
+  var now=chips.filter(function(c){return c.dataset.m&&c.dataset.m.split(',').indexOf(String(m))>-1})[0];
+  if(now){now.classList.add('now');var i=chips.indexOf(now);for(var k=1;k<chips.length;k++){var n=chips[(i+k)%chips.length];if(n.dataset.m){n.classList.add('next');break}}}
+
+  // filato
+  var btns=document.querySelectorAll('.yarn button'),imgs=document.querySelectorAll('#frame img');
+  btns.forEach(function(b){b.addEventListener('click',function(){var y=b.dataset.y;btns.forEach(function(x){x.setAttribute('aria-pressed',x===b)});imgs.forEach(function(im){im.classList.toggle('on',im.dataset.y===y)})})});
+
+  // il cartellino risponde al dito / al mouse
+  var sw=document.getElementById('swing');
+  function nudge(){sw.style.animation='none';void sw.offsetWidth;sw.style.animation='sw 6s ease-in-out infinite';sw.animate([{transform:'rotate(-9deg)'},{transform:'rotate(7deg)'},{transform:'rotate(-4deg)'},{transform:'rotate(3.2deg)'}],{duration:1600,easing:'ease-out'})}
+  sw.addEventListener('pointerenter',nudge);sw.addEventListener('click',nudge);
+
+  // neve leggera sugli angeli
+  var cv=document.getElementById('snow'),cx=cv.getContext('2d'),fl=[],run=false;
+  function rs(){cv.width=cv.offsetWidth*devicePixelRatio;cv.height=cv.offsetHeight*devicePixelRatio}
+  for(var j=0;j<40;j++)fl.push({x:Math.random(),y:Math.random(),r:Math.random()*2+1,s:Math.random()*.0012+.0006,d:Math.random()*6});
+  function draw(t){if(!run)return;cx.clearRect(0,0,cv.width,cv.height);cx.fillStyle='rgba(255,255,255,.85)';fl.forEach(function(f){f.y+=f.s;if(f.y>1.02)f.y=-.02;var x=(f.x+Math.sin(t/1800+f.d)*.015)*cv.width;cx.beginPath();cx.arc(x,f.y*cv.height,f.r*devicePixelRatio,0,7);cx.fill()});requestAnimationFrame(draw)}
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){new IntersectionObserver(function(es){run=es[0].isIntersecting;if(run){rs();requestAnimationFrame(draw)}}).observe(cv);addEventListener('resize',rs)}
+
+  // lightbox
+  var lb=document.getElementById('lb'),li=lb.querySelector('img');
+  document.querySelectorAll('.card').forEach(function(c){c.addEventListener('click',function(){var im=c.querySelector('img');li.src=im.src;li.alt=im.alt;lb.classList.add('open')})});
+  lb.addEventListener('click',function(){lb.classList.remove('open')});
+  addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('open')});
+})();
+</script>
+</body>
+</html>

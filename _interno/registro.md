@@ -122,3 +122,9 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 - Bar Arena | Via al Fiume 1, 6962 Viganello | bar caffè con terrazza (scheda Google del 2025) | anteprima fatta 23.10 (ristorante, firma lavagna), 4,7/15, nessun sito, cell. 078 368 22 92, nessuna foto su Google → tutte di esempio | 2026-10-23 | /bar-arena-viganello/
 - B-Side Club | Via Carlo Pasta 2, 6830 Chiasso | lounge bar & club ven-sab 23-05 (riaperture 2022-2023 dai volantini) | anteprima fatta 23.10 (modello club, fx vinyl), 4,3/20, sito = pagina local.ch, cell. 076 347 67 99 (info e privé), foto Maps | 2026-10-23 | /b-side-club-chiasso/
 - Antonioli Lugano (Antonioli Boutique SA, presidente Laura Luisa-Conte) | Via Nassa 29 (Donna + Lightroom) e 66 (Uomo), Lugano | multibrand moda d'avanguardia | anteprima su misura 23.10 (NON da modello: pagina unica editoriale, intro con la A disegnata a mano che diventa il logo come il GIF di antonioli.eu, pianta di Via Nassa, 3 capitoli Uomo/Donna/Lightroom, indice designer, IT/EN), foto da antonioli.eu/pages/boutiques + Google Maps, tel. 091 923 88 80/81/82, info@antoniolishop.ch, contatto diretto lo ha Jacopo | 2026-10-23 | /antonioli-lugano/
+
+## 25.10.2026 — kitArte (Justine, @homemade_justy) — PRIMO CLIENTE
+- Sito: /kitarte/ — su misura (non da modello). Firma: il cartellino kitArte appeso allo spago verde che oscilla (risponde al dito), filato selezionabile sulle bottiglie (crema/salvia/rosa), stagioni con "adesso/in arrivo" automatiche, neve sugli angeli.
+- Foto tutte sue da Instagram (post + fotogrammi dei reel 720p), ritagliate per togliere la scritta "kitArte" sovrapposta. Escluse borsette con personaggi Disney/Tom&Jerry (copyright).
+- Logo: estratto dal suo cartellino (foto/logo.png). Contatto: solo Instagram DM (ig.me/m/homemade_justy).
+- Da chiedere: WhatsApp/telefono, zona (ritiro/spedizione), eventuali prezzi, foto senza scritta, foto borsette senza personaggi.
