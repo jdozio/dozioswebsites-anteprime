@@ -9,6 +9,8 @@
 <meta property="og:description" content="Creare è la mia passione. Uncinetto, legno dipinto, fiori.">
 <meta property="og:image" content="foto/og.jpg">
 <meta name="theme-color" content="#FAF4EC">
+<link rel="icon" href="foto/favicon.png">
+<link rel="apple-touch-icon" href="foto/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Caveat:wght@500;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
@@ -35,7 +37,8 @@ main,header,footer{position:relative;z-index:1}
 header{position:fixed;top:0;left:0;right:0;z-index:20;transition:background .3s,box-shadow .3s}
 header.on{background:rgba(250,244,236,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 1px 0 var(--line)}
 .hbar{display:flex;align-items:center;justify-content:space-between;height:64px}
-.hbar .lg{height:34px;opacity:0;transform:translateY(-6px);transition:.35s}
+.hbar .lg{display:flex;align-items:center;gap:8px;opacity:0;transform:translateY(-6px);transition:.35s}
+.hbar .lg img:first-child{height:40px}.hbar .lg img:last-child{height:30px}
 header.on .hbar .lg{opacity:1;transform:none}
 .hbar nav{display:flex;gap:26px;font-size:15px}
 .hbar nav a{text-decoration:none;color:var(--ink2)}
@@ -62,8 +65,17 @@ header.on .hbar .lg{opacity:1;transform:none}
 
 /* il cartellino: elemento firma */
 .tagstage{position:relative;height:min(78vh,640px);display:flex;justify-content:center}
-.swing{position:absolute;top:-90px;transform-origin:50% 0;animation:sw 6s ease-in-out infinite;will-change:transform}
-@keyframes sw{0%,100%{transform:rotate(3.2deg)}50%{transform:rotate(-3.2deg)}}
+.swing{position:absolute;top:-90px;transform-origin:50% 0;animation:enter 4.2s both,sw 10s 4.2s ease-in-out infinite;will-change:transform}
+@keyframes sw{0%,100%{transform:rotate(6deg)}50%{transform:rotate(-6deg)}}
+@keyframes enter{
+  0%{transform:translateY(-60px) rotate(20deg);opacity:0;animation-timing-function:cubic-bezier(.3,0,.5,1)}
+  12%{opacity:1}
+  30%{transform:translateY(0) rotate(-13deg);animation-timing-function:cubic-bezier(.45,0,.55,1)}
+  55%{transform:rotate(10deg);animation-timing-function:cubic-bezier(.45,0,.55,1)}
+  78%{transform:rotate(-7deg);animation-timing-function:cubic-bezier(.45,0,.55,1)}
+  100%{transform:rotate(6deg)}}
+.tag{animation:sw2 6.5s ease-in-out infinite;transform-origin:50% 0}
+@keyframes sw2{0%,100%{transform:rotate(-1.6deg)}50%{transform:rotate(1.6deg)}}
 .twine{display:block;margin:0 auto;width:40px;height:250px;overflow:visible}
 .nail{display:block;width:16px;height:16px;margin:0 auto -6px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#d9cfc4,#7a6a60);box-shadow:0 2px 3px rgba(0,0,0,.3);position:relative;z-index:1}
 @media(min-width:861px){.swing{top:-10px}.twine{height:150px}}
@@ -78,6 +90,7 @@ header.on .hbar .lg{opacity:1;transform:none}
 .tag .rose{position:absolute;inset:0;border-radius:6px;opacity:.22;pointer-events:none;
   background:repeating-radial-gradient(circle at 68% 72%,transparent 0 9px,rgba(200,160,120,.5) 10px 11px,transparent 12px 22px)}
 .tag img{width:100%;position:relative}
+.tag .hl{position:relative;width:62%;margin-top:6%}
 .tag .at{position:relative;margin-top:auto;font:500 12px/1 var(--fb);letter-spacing:.22em;color:var(--ink2);text-transform:uppercase}
 .knot{position:absolute;top:-6px;left:50%;width:34px;height:30px;margin-left:-17px}
 .hero .note{position:absolute;bottom:2%;right:4%;font-family:var(--fs);font-size:24px;color:var(--ink2);transform:rotate(-5deg)}
@@ -170,7 +183,7 @@ h2 em{font-style:italic}
 
 /* contatto */
 .contact{text-align:center}
-.contact .tagsm{width:170px;margin:0 auto 26px;transform:rotate(-4deg)}
+.contact .logosq{width:min(340px,80vw);margin:-20px auto 0}
 .contact h2{max-width:14em;margin:0 auto}
 .contact .sub{margin:18px auto 34px}
 .contact .btns{justify-content:center}
@@ -189,14 +202,14 @@ footer img{height:40px;margin:0 auto 10px;opacity:.85}
 /* reveal */
 .rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
 .rv.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.swing{animation:none}.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media(prefers-reduced-motion:reduce){.swing,.tag{animation:none}.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 
 <header id="hd">
   <div class="wrap hbar">
-    <a href="#top" aria-label="kitArte"><img class="lg" src="foto/logo.png" alt="kitArte"></a>
+    <a href="#top" aria-label="kitArte" class="lg"><img src="foto/tag-icon.png" alt=""><img src="foto/wordmark.png" alt="kitArte"></a>
     <nav>
       <a href="#bottiglie">Bottiglie</a>
       <a href="#angeli">Angeli</a>
@@ -229,7 +242,7 @@ footer img{height:40px;margin:0 auto 10px;opacity:.85}
         <div class="tag">
           <svg class="knot" viewBox="0 0 34 30" aria-hidden="true"><path d="M17 2c-9 3-12 12-5 16 6 3 13-2 10-8-3-5-11-1-9 6 2 6 9 9 12 14M17 18c-4 3-7 7-10 10" stroke="#8FAE6E" stroke-width="4.5" fill="none" stroke-linecap="round"/><path d="M17 2c-9 3-12 12-5 16 6 3 13-2 10-8" stroke="#C3DAA6" stroke-width="4.5" fill="none" stroke-dasharray="3 5" stroke-linecap="round"/></svg>
           <div class="rose"></div>
-          <img src="foto/logo.png" alt="kitArte, il logo scritto a mano con un cuore">
+          <img src="foto/wordmark.png" alt="kitArte, il logo scritto a mano"><svg class="hl" viewBox="0 0 220 24" aria-hidden="true"><path d="M8 15c30-3 55-4 80-3M132 12c25-1 50 0 80 3" stroke="#A3AE95" stroke-width="3" stroke-linecap="round" fill="none"/><path d="M110 21c-9-6-14-10-14-14 0-3 2-5 5-5 4 0 6 3 9 6 3-3 5-6 9-6 3 0 5 2 5 5 0 4-5 8-14 14z" fill="#D58C88"/></svg>
           <span class="at">@homemade_justy</span>
         </div>
       </div>
@@ -364,7 +377,7 @@ footer img{height:40px;margin:0 auto 10px;opacity:.85}
   <!-- CONTATTO -->
   <section class="contact" id="contatto" style="padding-top:20px">
     <div class="wrap rv">
-      <div class="tagsm"><div class="tag" style="width:170px;padding:22% 10% 10%"><img src="foto/logo.png" alt=""></div></div>
+      <img class="logosq" src="foto/logo-kitarte.webp" alt="Logo kitArte: cartellino di legno con un fiore all'uncinetto e lo spago verde" loading="lazy">
       <h2>Ti è piaciuto qualcosa? <em>Scrivimi.</em></h2>
       <p class="sub">Rispondo io, di persona. Raccontami cosa cerchi.</p>
       <div class="btns">
@@ -377,7 +390,7 @@ footer img{height:40px;margin:0 auto 10px;opacity:.85}
 </main>
 
 <footer>
-  <img src="foto/logo.png" alt="kitArte">
+  <img src="foto/wordmark.png" alt="kitArte">
   <div>kitArte · love for Art · fatto a mano da Justine</div>
 </footer>
 
@@ -405,7 +418,8 @@ footer img{height:40px;margin:0 auto 10px;opacity:.85}
 
   // il cartellino risponde al dito / al mouse
   var sw=document.getElementById('swing');
-  function nudge(){sw.style.animation='none';void sw.offsetWidth;sw.style.animation='sw 6s ease-in-out infinite';sw.animate([{transform:'rotate(-9deg)'},{transform:'rotate(7deg)'},{transform:'rotate(-4deg)'},{transform:'rotate(3.2deg)'}],{duration:1600,easing:'ease-out'})}
+  var busy=false,ready=false;setTimeout(function(){ready=true},4200);
+  function nudge(){if(busy||!ready)return;busy=true;var cur=getComputedStyle(sw).transform;sw.style.animation='none';sw.style.transform=cur;var e='cubic-bezier(.45,0,.55,1)';var a=sw.animate([{transform:cur,easing:e},{transform:'rotate(-15deg)',easing:e,offset:.18},{transform:'rotate(11deg)',easing:e,offset:.42},{transform:'rotate(-8deg)',easing:e,offset:.66},{transform:'rotate(6deg)',easing:e,offset:1}],{duration:5200,easing:'linear'});a.onfinish=function(){sw.style.transform='';sw.style.animation='sw 10s ease-in-out infinite';busy=false}}
   sw.addEventListener('pointerenter',nudge);sw.addEventListener('click',nudge);
 
   // neve leggera sugli angeli
