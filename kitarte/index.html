@@ -119,6 +119,8 @@ h2 em{font-style:italic}
 .seasons{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 .chip{position:relative;padding:12px 20px 12px 38px;border-radius:99px;background:#fff;border:1.5px dashed var(--line);font-weight:500;font-size:15px}
 .chip::before{content:"";position:absolute;left:16px;top:50%;width:12px;height:12px;margin-top:-6px;border-radius:50%;background:var(--c,var(--rose))}
+.chip.ic{padding-left:48px}
+.chip.ic::before{left:8px;width:34px;height:34px;margin-top:-17px;background:#FAF4ED var(--i) center/86% no-repeat}
 .chip.now{border:1.5px solid var(--ink);background:var(--ink);color:var(--paper)}
 .chip.now::after{content:"adesso";position:absolute;top:-22px;right:4px;font-family:var(--fs);font-size:20px;color:var(--rose2);transform:rotate(-6deg)}
 .chip.next::after{content:"in arrivo";position:absolute;top:-22px;right:4px;font-family:var(--fs);font-size:20px;color:var(--sage2);transform:rotate(-6deg);white-space:nowrap}
@@ -146,7 +148,7 @@ h2 em{font-style:italic}
 /* angeli */
 .angels{background:linear-gradient(#F3E9DC,#F7EFE4);border-radius:28px;overflow:hidden;display:grid;grid-template-columns:.9fr 1.1fr;align-items:stretch}
 .angels .ph{position:relative;min-height:520px}
-.angels .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 30%}
+.angels .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
 .angels .tx{padding:clamp(34px,6vw,80px);display:flex;flex-direction:column;justify-content:center}
 .angels .tx ul{list-style:none;margin-top:24px;display:grid;gap:12px}
 .angels .tx li{padding-left:28px;position:relative}
@@ -161,15 +163,17 @@ h2 em{font-style:italic}
 .card:hover img{transform:scale(1.03)}
 .card figcaption{position:absolute;left:12px;bottom:12px;background:rgba(250,244,236,.94);padding:6px 14px 4px;border-radius:4px;font-family:var(--fs);font-size:22px;line-height:1.1;transform:rotate(-1.5deg);box-shadow:0 4px 12px -6px rgba(59,38,32,.5)}
 .f1{grid-column:span 5;grid-row:span 2;aspect-ratio:auto}
-.f2{grid-column:span 7;aspect-ratio:16/10}
-.f3{grid-column:span 4;aspect-ratio:4/5}
-.f4{grid-column:span 3;aspect-ratio:4/5}
+.f2{grid-column:span 7;aspect-ratio:1/1}
+.f3{grid-column:span 4;aspect-ratio:3/4.6}
+.f4{grid-column:span 3}
 @media(max-width:860px){.flowers{grid-template-columns:1fr 1fr;gap:12px}.f1{grid-column:span 2;grid-row:auto;aspect-ratio:4/5}.f2{grid-column:span 2}.f3,.f4{grid-column:span 1}}
 
 /* borsette */
 .bags{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;padding:clamp(30px,5vw,60px);border:1.5px dashed rgba(59,38,32,.3);border-radius:28px}
-.bags svg{width:150px;height:150px}
-@media(max-width:700px){.bags{grid-template-columns:1fr;gap:16px}.bags svg{width:110px;height:110px}}
+.bagill{position:relative;width:260px;border-radius:20px;overflow:hidden;background:#FAF4ED}
+.bagill img{width:100%}
+.bagill figcaption{position:absolute;left:10px;bottom:8px;font-size:11px;letter-spacing:.06em;color:var(--ink2);background:rgba(250,244,237,.9);padding:2px 8px;border-radius:99px}
+@media(max-width:700px){.bags{grid-template-columns:1fr;gap:16px}.bagill{width:min(300px,100%);margin:0 auto}}
 
 /* come nasce */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:46px;counter-reset:s}
@@ -259,13 +263,13 @@ footer img{height:40px;margin:0 auto 10px;opacity:.85}
       <h2>Ogni stagione ha <em>le sue.</em></h2>
       <p class="sub">Su Instagram le raccolgo per tema, stagione dopo stagione: dall'autunno al Natale, da Pasqua all'estate.</p>
       <div class="seasons" id="seasons">
-        <span class="chip" data-m="9,10" style="--c:#C8875A">Autunno</span>
-        <span class="chip" data-m="11,0" style="--c:#B85450">Natale</span>
-        <span class="chip" data-m="2,3" style="--c:#E6C66A">Pasqua</span>
-        <span class="chip" data-m="" style="--c:#E7BDB8">Fiori</span>
+        <span class="chip ic" data-m="9,10" style="--i:url(foto/ic-autunno.webp)">Autunno</span>
+        <span class="chip ic" data-m="11,0" style="--i:url(foto/ic-natale.webp)">Natale</span>
+        <span class="chip ic" data-m="2,3" style="--i:url(foto/ic-pasqua.webp)">Pasqua</span>
+        <span class="chip ic" data-m="" style="--i:url(foto/tag-icon.png)">Fiori</span>
         <span class="chip" data-m="5,6,7" style="--c:#7FB3C4">Estate</span>
-        <span class="chip" data-m="" style="--c:#C77D7E">Cuori</span>
-        <span class="chip" data-m="" style="--c:#A3AE95">Stoffa</span>
+        <span class="chip ic" data-m="" style="--i:url(foto/ic-cuori.webp)">Cuori</span>
+        <span class="chip ic" data-m="" style="--i:url(foto/ic-stoffa.webp)">Stoffa</span>
       </div>
     </div>
   </section>
@@ -341,13 +345,7 @@ footer img{height:40px;margin:0 auto 10px;opacity:.85}
   <section style="padding-top:0">
     <div class="wrap">
       <div class="bags rv">
-        <svg viewBox="0 0 150 150" fill="none" stroke="#3B2620" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M52 52c0-18 10-28 23-28s23 10 23 28"/>
-          <path d="M28 56h94l-8 70H36z" fill="#F3E9DC"/>
-          <path d="M56 90c8-14 22-14 26 0 4 12 16 10 20-2" stroke="#C77D7E" stroke-width="3.5"/>
-          <circle cx="62" cy="104" r="4" fill="#A3AE95" stroke="none"/><circle cx="94" cy="78" r="3" fill="#E6C66A" stroke="none"/>
-          <path d="M112 20l14-14M118 26l-10-10" stroke="#6F7D63"/><path d="M108 30c-4 4-10 6-12 3s2-7 6-9" fill="#C77D7E" stroke="#C77D7E"/>
-        </svg>
+        <figure class="bagill"><img src="foto/borsetta-illustrazione.webp" alt="Illustrazione di una borsetta color crema dipinta con rose e un pennello" loading="lazy"><figcaption>illustrazione</figcaption></figure>
         <div>
           <span class="eyebrow">dipinte a mano</span>
           <h2 style="font-size:clamp(30px,3.6vw,46px)">E poi ci sono <em>le borsette.</em></h2>
