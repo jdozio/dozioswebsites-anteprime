@@ -128,3 +128,7 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 - Foto tutte sue da Instagram (post + fotogrammi dei reel 720p), ritagliate per togliere la scritta "kitArte" sovrapposta. Escluse borsette con personaggi Disney/Tom&Jerry (copyright).
 - Logo: estratto dal suo cartellino (foto/logo.png). Contatto: solo Instagram DM (ig.me/m/homemade_justy).
 - Da chiedere: WhatsApp/telefono, zona (ritiro/spedizione), eventuali prezzi, foto senza scritta, foto borsette senza personaggi.
+
+## 26.10.2026 — risposte
+- Lele Barberia (Locarno): NO, "non sono interessato". Chiuso, nessun promemoria.
+- Elijo Changes Studio (Orselina): cortese ma non ora ("ti contatterò se fosse necessario"). Tiepido: niente insistenza; eventuale ripresa leggera tra qualche settimana.
