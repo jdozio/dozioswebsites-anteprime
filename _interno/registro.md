@@ -135,3 +135,15 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 
 ## 29.10.2026 — risposta
 - Al Giglio Hair Spa (Giubiasco): NO, hanno già il sito algigliohairspa.ch (WordPress, aggiornato 2026). Errore nostro: il sito non compariva su Maps. Chiuso.
+
+## 29.10.2026 — CONTROLLO SITI ESISTENTI (tutte le anteprime, Google + DuckDuckGo)
+Hanno GIÀ un sito proprio (non risultava da Maps):
+- L'Angolo di Ros (Mendrisio): angolodiros.ch (+ vecchio esteticaros5.wixsite.com)
+- Barbiere Rana (Chiasso): barbiererana.ch
+- B-Side Club (Chiasso): bsideclub.ch
+- Grotto Cercera (Rancate): cercera.ch
+- Duck Dive Pub (Varese): duckdive.surf/pub (sito del marchio Duck Dive)
+- Downtown Milano: downtown-milano.it
+- Al Giglio Hair Spa (Giubiasco): algigliohairspa.ch — già chiuso
+Sito noto e voluto (categoria rotto/scadente): Bar Pinard (solo logo), Motto del Gallo (WordPress), Grotto San Salvatore (Wix gratuito), LEFTY (rotto), Pizza Mania (digitalone).
+Nessun sito trovato per tutte le altre. "The Jungle Club" (thejungleclub.ch) è un locale di Zurigo, non Lugano.
