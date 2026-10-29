@@ -132,3 +132,6 @@ Formato: Nome | Località | Settore | Stato | Data | Note
 ## 26.10.2026 — risposte
 - Lele Barberia (Locarno): NO, "non sono interessato". Chiuso, nessun promemoria.
 - Elijo Changes Studio (Orselina): cortese ma non ora ("ti contatterò se fosse necessario"). Tiepido: niente insistenza; eventuale ripresa leggera tra qualche settimana.
+
+## 29.10.2026 — risposta
+- Al Giglio Hair Spa (Giubiasco): NO, hanno già il sito algigliohairspa.ch (WordPress, aggiornato 2026). Errore nostro: il sito non compariva su Maps. Chiuso.
