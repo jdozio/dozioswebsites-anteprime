@@ -1,0 +1,53 @@
+name: fetch-assets
+on:
+  workflow_dispatch:
+    inputs:
+      pages:
+        description: "space-separated page URLs to scrape for wp-content images"
+        required: false
+        default: ""
+      urls:
+        description: "space-separated image URLs to download"
+        required: false
+        default: ""
+      dir:
+        description: "target folder under _fetch"
+        required: true
+        default: "misc"
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: download
+        env:
+          PAGES: ${{ github.event.inputs.pages }}
+          URLS: ${{ github.event.inputs.urls }}
+          DIR: ${{ github.event.inputs.dir }}
+        run: |
+          set -u
+          out="_fetch/$DIR"; mkdir -p "$out"
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36"
+          : > "$out/_list.txt"
+          for p in $PAGES; do
+            curl -sL -A "$UA" "$p" | grep -oE 'https?://[^"'"'"' )]+wp-content/uploads/[^"'"'"' )]+\.(jpe?g|png|webp)' >> "$out/_list.txt" || true
+          done
+          # also original size variants (strip -WxH)
+          sed -E 's/-[0-9]+x[0-9]+\.(jpe?g|png|webp)$/.\1/' "$out/_list.txt" >> "$out/_list.txt"
+          for u in $URLS; do echo "$u" >> "$out/_list.txt"; done
+          sort -u "$out/_list.txt" -o "$out/_list.txt"
+          i=0
+          while read -r u; do
+            [ -z "$u" ] && continue
+            i=$((i+1)); name=$(echo "$u" | sed -E 's#.*/##; s/[?].*//' | cut -c1-80)
+            case "$name" in *.jpg|*.jpeg|*.png|*.webp) ;; *) name="$name.jpg";; esac
+            curl -sfL -A "$UA" -o "$out/$(printf %03d $i)-$name" "$u" || rm -f "$out/$(printf %03d $i)-$name"
+          done < "$out/_list.txt"
+          ls -la "$out" | head -200
+      - name: commit
+        run: |
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add _fetch; git commit -m "fetch assets" || exit 0
+          git pull --rebase; git push
