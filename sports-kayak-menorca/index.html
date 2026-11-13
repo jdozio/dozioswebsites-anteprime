@@ -7,7 +7,7 @@
 <meta name="description" content="Excursiones en kayak, kayak transparente, paddle surf, alquiler de barcas con y sin licencia, bicicletas y la vuelta a Menorca en kayak. Desde Cala Torret – Binibeca, Menorca.">
 <meta property="og:title" content="Sports & Kayak Menorca">
 <meta property="og:description" content="Kayak, paddle surf, barcas y bicis desde Cala Torret, Menorca.">
-<meta property="og:image" content="img/logo.png">
+<meta property="og:image" content="img/hero.webp">
 <meta name="theme-color" content="#0B2B45">
 <link rel="icon" href="img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -384,7 +384,7 @@ footer{background:#071D30;color:rgba(255,255,255,.7);padding:40px 0 90px;font-si
 
 <main id="top">
   <section class="hero">
-    <div class="bg"><img src="https://www.sportskayak.es/wp-content/uploads/2024/04/alquiler-kayak-en-pareja-1024x769.webp" alt="" onerror="this.remove()"></div>
+    <div class="bg"><img src="img/hero.webp" alt="Cala de Menorca con kayaks en la orilla" fetchpriority="high"></div>
     <div class="wrap in">
       <div class="hero-logo"><img src="img/logo.png" alt="Sports & Kayak Menorca"></div><br>
       <span class="eyebrow" style="color:#fff" data-t="heroEy">Cala Torret · Binibeca · Menorca</span>
@@ -475,7 +475,7 @@ footer{background:#071D30;color:rgba(255,255,255,.7);padding:40px 0 90px;font-si
 
   <!-- VUELTA -->
   <section class="vuelta" id="vuelta">
-    <div class="bgimg"><img src="https://www.sportskayak.es/wp-content/uploads/2024/03/vuelta-a-menorca-en-pareja1.webp" alt="" onerror="this.remove()"></div>
+    <div class="bgimg"><img src="img/propia.webp" alt="" loading="lazy"></div>
     <div class="wrap">
       <div class="rv">
         <span class="eyebrow" style="color:var(--sun)" data-t="vEy">Vuelta a Menorca</span>
@@ -640,79 +640,79 @@ const BRING={es:['Ropa y calzado que se puedan mojar','Cinta para las gafas de s
 
 /* activities: p = pricing model for estimator */
 const A=[
-{id:'cuevas',cat:'exc',who:['fam','par','fri','emp'],ico:'kayak',g:['#0F8EA6','#0B2B45'],img:IMG+'2024/04/alquiler-kayak-en-pareja-1024x769.webp',spot:'torret',
+{id:'cuevas',cat:'exc',who:['fam','par','fri','emp'],img:'img/cuevas.webp',ico:'kayak',g:['#0F8EA6','#0B2B45'],spot:'torret',
  n:{es:'Kayak Cuevas & Snorkel',en:'Kayak Caves & Snorkel'},s:{es:'Cuevas marinas, piscinas naturales y el pueblo blanco de Binibeca Vell, remando con guía.',en:'Sea caves, natural pools and the white village of Binibeca Vell, paddling with a guide.'},
  dur:'3 h',times:['10:30','15:00'],season:{es:'Abril – septiembre',en:'April – September'},meet:'Cala Torret',ages:{es:'Todas las edades',en:'All ages'},
  price:{ad:40,ch:30,chA:'8–12',free:'4–7'},p:'pp',
  route:{es:["Cova d'es Pont y otras cuevas","Piscina natural para hacer snorkel","Binibeca Vell, el pueblo de pescadores","Las «ollas»: snorkel entre peces"],en:["Cova d'es Pont and other caves","Natural pool for snorkelling","Binibeca Vell fishing village","The «ollas»: snorkelling among fish"]},incl:'k',bring:1},
-{id:'sunset',cat:'exc',who:['par','fri','fam'],ico:'sun',g:['#F6B70F','#C2410C'],spot:'torret',
+{id:'sunset',cat:'exc',who:['par','fri','fam'],img:'img/sunset.webp',ico:'sun',g:['#F6B70F','#C2410C'],spot:'torret',
  n:{es:'Kayak al atardecer',en:'Sunset kayak'},s:{es:'Grupos reducidos, baño y snorkel mientras el sol cae sobre la costa sur.',en:'Small groups, a swim and snorkelling as the sun sets over the south coast.'},
  dur:'2,5 h',times:['18:30'],season:{es:'Junio – septiembre',en:'June – September'},meet:'Cala Torret',ages:{es:'Todas las edades',en:'All ages'},
  price:{ad:40,ch:30,chA:'8–12',free:'4–7'},p:'pp',schedTxt:'18:30 – 21:00',
  route:{es:['Remada por la costa de Cala Torret','Baño y snorkel','Puesta de sol desde el agua'],en:['Paddle along the Cala Torret coast','Swim and snorkel','Sunset from the water']},incl:'k',bring:1},
-{id:'transparente',cat:'exc',who:['fam','par','fri'],ico:'fish',g:['#16AFC4','#0F6E8A'],img:IMG+'2023/04/GOPR3903-b-scaled.jpg',spot:'addaia',
+{id:'transparente',cat:'exc',who:['fam','par','fri'],img:'img/transparente.webp',ico:'fish',g:['#16AFC4','#0F6E8A'],spot:'addaia',
  n:{es:'Kayak transparente',en:'Clear kayak'},s:{es:'Ves el fondo bajo tus pies: peces, posidonia y estrellas de mar en la bahía de Addaia.',en:'See the seabed beneath you: fish, posidonia and starfish in Addaia bay.'},
  dur:'2 h',times:['10:00','12:00'],season:{es:'Junio – septiembre',en:'June – September'},meet:{es:'Bahía de Addaia',en:'Addaia bay'},ages:{es:'Todas las edades',en:'All ages'},
  price:{ad:50,ch:40,chA:'5–12'},p:'pp',
  route:{es:['Bahía de Addaia','Praderas de posidonia','Snorkel con peces de colores y, con suerte, algún pulpo'],en:['Addaia bay','Posidonia meadows','Snorkelling with colourful fish and, with luck, an octopus']},incl:'k',bring:1},
-{id:'montgofre',cat:'exc',who:['fri','par','fam','emp'],ico:'kayak',g:['#2E8B57','#0B2B45'],spot:'mongofre',
+{id:'montgofre',cat:'exc',who:['fri','par','fam','emp'],img:'img/montgofre.webp',ico:'kayak',g:['#2E8B57','#0B2B45'],spot:'mongofre',
  n:{es:'Parque Natural Mongofre',en:'Mongofre Natural Park'},s:{es:'Costa protegida y playas a las que solo se llega por mar, saliendo de Addaia.',en:'Protected coastline and beaches you can only reach by sea, leaving from Addaia.'},
  dur:'3 h',times:['10:30','15:00'],season:{es:'Junio – septiembre',en:'June – September'},meet:{es:'Puerto de Addaia',en:'Addaia harbour'},ages:{es:'Todas las edades',en:'All ages'},
  price:{ad:40,ch:30,chA:'8–12',free:'4–7'},p:'pp',
  route:{es:['Explicación en tierra: técnica y seguridad','Zona protegida hasta la «olla» del islote','Playas de Mongofre y s\'Enclusa','Baño, descanso y snorkel'],en:['Briefing on land: technique and safety','Protected area to the islet\'s «olla»','Mongofre and s\'Enclusa beaches','Swim, rest and snorkel']},
  extra:{es:'Si el mar no acompaña, la ruta se hace dentro de la bahía de Addaia.',en:'If the sea is rough, the route stays inside Addaia bay.'},incl:'k',bring:1},
-{id:'supexc',cat:'exc',who:['fri','emp','fam','par'],ico:'sup',g:['#0F8EA6','#16AFC4'],img:IMG+'2024/03/alquiler-sup-con-amigos-scaled-1-scaled.webp',spot:'torret',
+{id:'supexc',cat:'exc',who:['fri','emp','fam','par'],img:'img/sup-arco.webp',ico:'sup',g:['#0F8EA6','#16AFC4'],spot:'torret',
  n:{es:'Paddle surf Cala Torret – Binibeca',en:'Paddle board Cala Torret – Binibeca'},s:{es:'De pie sobre la tabla hasta Binibeca, con cuevas, piscina natural y snorkel.',en:'Stand-up paddling to Binibeca, with caves, a natural pool and snorkelling.'},
  dur:'2,5 h',times:['16:30'],schedTxt:'16:30 – 19:00',season:{es:'Junio – septiembre',en:'June – September'},meet:'Cala Torret',ages:{es:'Desde 5 años',en:'From age 5'},
  price:{ad:40,ch:30,chA:'5–12'},p:'pp',
  route:{es:['Explicación en tierra y práctica en la bahía','Sa Cova des Pont','Piscina natural y otras cuevas','Paradas de snorkel y vuelta a Cala Torret'],en:['Land briefing and practice in the bay','Sa Cova des Pont','Natural pool and other caves','Snorkel stops and back to Cala Torret']},
  inclL:{es:['Tabla y remo de SUP','Bolsa estanca 5 L','Snorkel','Fotos','Seguro'],en:['SUP board and paddle','5 L dry bag','Snorkel','Photos','Insurance']},bring:1},
-{id:'patron',cat:'boat',who:['fam','par','fri','emp'],ico:'boat',g:['#123C5E','#0F8EA6'],img:IMG+'2024/03/kayak-transparente1-con-amigos-scaled.webp',spot:'torret',
+{id:'patron',cat:'boat',who:['fam','par','fri','emp'],img:'img/patron.webp',ico:'boat',g:['#123C5E','#0F8EA6'],spot:'torret',
  n:{es:'Excursión en barca con patrón',en:'Skippered boat trip'},s:{es:'Quicksilver 675 con patrón: calas escondidas, snorkel y paddle surf sin preocuparte de nada.',en:'Quicksilver 675 with a skipper: hidden coves, snorkelling and paddle boarding, no worries.'},
  dur:{es:'Medio día · Día completo · Sunset',en:'Half day · Full day · Sunset'},season:{es:'Temporada',en:'Season'},meet:{es:'Cala Torret o Puerto de Mahón',en:'Cala Torret or Mahón harbour'},ages:{es:'6–8 personas',en:'6–8 people'},
  price:{boat:350},p:'boat',opts:{es:['Medio día','Día completo','Sunset'],en:['Half day','Full day','Sunset']},
  route:{es:['Cala Rafalet','Isla del Aire','Es Caló Blanc','Sa Mesquida e Illa d\'en Colom'],en:['Cala Rafalet','Illa de l\'Aire','Es Caló Blanc','Sa Mesquida and Illa d\'en Colom']},
  inclL:{es:['Patrón con experiencia','Snorkel','Bebidas (y snacks en día completo)','Paddle surf en día completo'],en:['Experienced skipper','Snorkel gear','Drinks (and snacks on full day)','Paddle board on full day']}},
-{id:'voraz',cat:'boat',who:['fam','par','fri'],ico:'boat',g:['#0F8EA6','#123C5E'],spot:'torret',
+{id:'voraz',cat:'boat',who:['fam','par','fri'],img:'img/voraz.webp',ico:'boat',g:['#0F8EA6','#123C5E'],spot:'torret',
  n:{es:'Barca sin licencia · Voraz 400',en:'No-licence boat · Voraz 400'},s:{es:'4 m y 15 CV: fácil de llevar, ideal para descubrir las calas cercanas a tu aire.',en:'4 m and 15 HP: easy to handle, ideal for exploring nearby coves your way.'},
  dur:{es:'Mañana · Tarde · Sunset',en:'Morning · Afternoon · Sunset'},season:{es:'Temporada',en:'Season'},meet:'Cala Torret',ages:{es:'Hasta 4 personas',en:'Up to 4 people'},
  price:{boat:140},p:'boat',opts:{es:['Mañana 10:00–14:00','Tarde 14:30–18:30','Sunset 19:00–21:00'],en:['Morning 10:00–14:00','Afternoon 14:30–18:30','Sunset 19:00–21:00']},
  route:{es:['Binibeca','Cala Biniparratx','Caló Blanc','Es Caló Roig'],en:['Binibeca','Cala Biniparratx','Caló Blanc','Es Caló Roig']},
  inclL:{es:['Toldo, escalera de baño y nevera','Solárium','Chalecos, botiquín y equipo de seguridad','Seguro de RC y ocupantes','Formación antes de salir'],en:['Canopy, swim ladder and cool box','Sun pad','Life jackets, first-aid kit and safety gear','Liability and passenger insurance','Briefing before departure']},
  notL:{es:['Gasolina (según consumo)','Fianza 300 €','Snorkel (opcional)'],en:['Fuel (by consumption)','€300 deposit','Snorkel (optional)']}},
-{id:'trimarchi',cat:'boat',who:['fam','fri','par'],ico:'boat',g:['#0B2B45','#16AFC4'],spot:'torret',
+{id:'trimarchi',cat:'boat',who:['fam','fri','par'],img:'img/trimarchi.webp',ico:'boat',g:['#0B2B45','#16AFC4'],spot:'torret',
  n:{es:'Barca con licencia · Trimarchi S 53',en:'Licence boat · Trimarchi S 53'},s:{es:'5,30 m y 60 CV para 6 personas, con ducha, mesa y altavoz Bluetooth.',en:'5.30 m and 60 HP for 6 people, with shower, table and Bluetooth speaker.'},
  dur:{es:'Medio día · Día completo · Sunset',en:'Half day · Full day · Sunset'},season:{es:'Junio – septiembre',en:'June – September'},meet:'Cala Torret',ages:{es:'Hasta 6 personas · titulación náutica',en:'Up to 6 people · boating licence'},
  price:{boat:250},p:'boat',opts:{es:['Medio día 10:00–14:00','Medio día 14:30–18:30','Día completo 10:00–18:00','Sunset 19:00–21:00'],en:['Half day 10:00–14:00','Half day 14:30–18:30','Full day 10:00–18:00','Sunset 19:00–21:00']},
  inclL:{es:['Toldo, escalera de baño y nevera','Mesa desmontable y dos soláriums','Ducha de agua dulce','Radio y altavoz Bluetooth','Chalecos y equipo de seguridad completo'],en:['Canopy, swim ladder and cool box','Folding table and two sun pads','Fresh-water shower','Radio and Bluetooth speaker','Life jackets and full safety gear']},
  notL:{es:['Gasolina (según consumo)','Fianza 300 €','Snorkel y bebidas'],en:['Fuel (by consumption)','€300 deposit','Snorkel and drinks']}},
-{id:'quicksilver',cat:'boat',who:['fri','emp','fam'],ico:'boat',g:['#123C5E','#0B2B45'],spot:'torret',
+{id:'quicksilver',cat:'boat',who:['fri','emp','fam'],img:'img/quicksilver.webp',ico:'boat',g:['#123C5E','#0B2B45'],spot:'torret',
  n:{es:'Barca con licencia · Quicksilver 675',en:'Licence boat · Quicksilver 675'},s:{es:'7 m y 150 CV para hasta 8 personas: la más amplia, para un día entero en el mar.',en:'7 m and 150 HP for up to 8 people: the roomiest, for a full day at sea.'},
  dur:{es:'Día completo 10:00–18:00',en:'Full day 10:00–18:00'},season:{es:'Temporada',en:'Season'},meet:'Cala Torret',ages:{es:'Hasta 8 personas · titulación náutica',en:'Up to 8 people · boating licence'},
  price:{boat:500},p:'boat',opts:{es:['Día completo 10:00–18:00'],en:['Full day 10:00–18:00']},
  notL:{es:['Gasolina (según consumo)','Fianza 300 €'],en:['Fuel (by consumption)','€300 deposit']}},
-{id:'kayakrent',cat:'rent',who:['fam','par','fri'],ico:'kayak',g:['#16AFC4','#0B2B45'],spot:'torret',walk:1,
+{id:'kayakrent',cat:'rent',who:['fam','par','fri'],img:'img/kayak-rent.webp',ico:'kayak',g:['#16AFC4','#0B2B45'],spot:'torret',walk:1,
  n:{es:'Alquiler de kayak',en:'Kayak rental'},s:{es:'Kayak abierto individual o doble, por horas o por día, desde Cala Torret.',en:'Sit-on-top single or double kayak, by the hour or day, from Cala Torret.'},
  dur:{es:'1 h – 1 día',en:'1 h – 1 day'},season:{es:'Temporada',en:'Season'},meet:'Cala Torret',ages:{es:'Todas las edades',en:'All ages'},
  price:{from:20},p:'table',tab:'kayak'},
-{id:'suprent',cat:'rent',who:['fam','par','fri','emp'],ico:'sup',g:['#0F8EA6','#16AFC4'],img:IMG+'2024/03/alquiler-sup-con-amigos-scaled-1-scaled.webp',spot:'torret',
+{id:'suprent',cat:'rent',who:['fam','par','fri','emp'],img:'img/sup.webp',ico:'sup',g:['#0F8EA6','#16AFC4'],spot:'torret',
  n:{es:'Alquiler paddle surf y Jumbo SUP',en:'Paddle board & Jumbo SUP rental'},s:{es:'Tablas individuales o la Jumbo gigante para hasta 6 adultos (u 8–9 niños).',en:'Single boards or the giant Jumbo for up to 6 adults (or 8–9 kids).'},
  dur:{es:'1 h – 1 día',en:'1 h – 1 day'},season:{es:'Temporada',en:'Season'},meet:'Cala Torret',ages:{es:'Todas las edades',en:'All ages'},
  price:{from:20},p:'table',tab:'sup'},
-{id:'bikes',cat:'rent',who:['fam','par','fri','emp','esc'],ico:'bike',g:['#2E8B57','#123C5E'],img:IMG+'2024/03/bicis_cabecera_resized.webp',spot:'torret',
+{id:'bikes',cat:'rent',who:['fam','par','fri','emp','esc'],img:'img/bike.webp',ico:'bike',g:['#2E8B57','#123C5E'],spot:'torret',
  n:{es:'Bicicletas, e-bike y patinete',en:'Bikes, e-bikes and scooters'},s:{es:'BTT, bicis eléctricas y patinetes, con entrega en toda la isla bajo petición.',en:'Mountain bikes, e-bikes and e-scooters, with island-wide delivery on request.'},
  dur:{es:'2 h – 7 días',en:'2 h – 7 days'},season:{es:'Todo el año (consultar)',en:'All year (ask us)'},meet:'Cala Torret',ages:{es:'Adultos y niños',en:'Adults and kids'},
  price:{from:15},p:'table',tab:'bike'},
-{id:'propia',cat:'multi',who:['fri','par','esc'],ico:'tent',g:['#0B2B45','#2E8B57'],img:IMG+'2024/03/vuelta-a-menorca-en-pareja1.webp',spot:'vuelta',
+{id:'propia',cat:'multi',who:['fri','par','esc'],img:'img/propia.webp',ico:'tent',g:['#0B2B45','#2E8B57'],spot:'vuelta',
  n:{es:'Tu propia ruta en kayak',en:'Self-guided kayak trip'},s:{es:'Kayak de travesía, material y kit de acampada para dar la vuelta a tu aire.',en:'Sea kayak, gear and camping kit to paddle round the island your way.'},
  dur:{es:'1 – 7+ días',en:'1 – 7+ days'},season:{es:'Temporada',en:'Season'},meet:'Cala Torret',ages:{es:'Con experiencia en kayak',en:'Kayaking experience needed'},
  price:{from:50},p:'table',tab:'travesia'},
-{id:'ruta4',cat:'multi',who:['fri','par','esc','emp'],ico:'tent',g:['#123C5E','#F6B70F'],img:IMG+'2024/03/vuelta-a-menorca-en-pareja1.webp',spot:'vuelta',
+{id:'ruta4',cat:'multi',who:['fri','par','esc','emp'],img:'img/ruta4.webp',ico:'tent',g:['#123C5E','#F6B70F'],spot:'vuelta',
  n:{es:'Ruta guiada 4 días',en:'4-day guided route'},s:{es:'La esencia de la travesía: kayak, calas vírgenes y noches bajo las estrellas, con guía.',en:'The essence of sea kayaking: wild coves and nights under the stars, with a guide.'},
  dur:{es:'4 días',en:'4 days'},season:{es:'Temporada (consultar fechas)',en:'Season (ask for dates)'},meet:{es:'Recogida en el aeropuerto',en:'Airport pick-up'},ages:{es:'Con algo de experiencia',en:'Some experience'},
  price:{ad:435},p:'ppOnly',
  inclL:{es:['Material de kayak','Comida y bebida (adaptada a tu dieta)','Logística para dormir y cocinar en la playa','Transporte en furgoneta y recogida en aeropuerto','Camiseta, reportaje fotográfico y seguro'],en:['Kayak gear','Food and drinks (adapted to your diet)','Beach sleeping and cooking logistics','Van transport and airport pick-up','T-shirt, photo report and insurance']}},
-{id:'ruta8',cat:'multi',who:['fri','par','emp'],ico:'tent',g:['#0B2B45','#0F8EA6'],img:IMG+'2024/03/vuelta-a-menorca-en-pareja1.webp',spot:'vuelta',
+{id:'ruta8',cat:'multi',who:['fri','par','emp'],img:'img/ruta8.webp',ico:'tent',g:['#0B2B45','#0F8EA6'],spot:'vuelta',
  n:{es:'Ruta guiada 8 días',en:'8-day guided route'},s:{es:'La vuelta completa: 8 días y 7 noches, cuevas marinas, snorkel y calas aisladas.',en:'The full loop: 8 days, 7 nights, sea caves, snorkelling and remote coves.'},
  dur:{es:'8 días · 7 noches',en:'8 days · 7 nights'},season:{es:'Temporada (consultar fechas)',en:'Season (ask for dates)'},meet:{es:'Recogida en el aeropuerto',en:'Airport pick-up'},ages:{es:'Buena forma física',en:'Good fitness'},
  price:{ad:745},p:'ppOnly',
@@ -721,18 +721,18 @@ const A=[
 
 /* rental tables */
 const RT={
-kayak:{ico:'kayak',img:IMG+'2024/04/alquiler-kayak-en-pareja-1024x769.webp',g:['#16AFC4','#0B2B45'],
+kayak:{ico:'kayak',img:'img/kayak-pareja.webp',g:['#16AFC4','#0B2B45'],
  h:{es:'Kayak abierto',en:'Sit-on-top kayak'},p:{es:'Kayaks estables y cómodos, con respaldo, reposapiés y elásticos en cubierta. Perfectos para explorar las calas de alrededor.',en:'Stable, comfortable kayaks with backrest, footrests and deck bungees. Perfect for exploring the coves nearby.'},
  cols:{es:['','Individual','Doble'],en:['','Single','Double']},rows:[['1 h',20,30],['2 h',30,40],['4 h',40,50],['day',50,70]],
  mini:{es:'Sin reserva previa: los kayaks abiertos se alquilan según disponibilidad en el centro. Pregúntanos por WhatsApp.',en:'No advance booking: sit-on-top kayaks are rented subject to availability on site. Ask us on WhatsApp.'}},
-sup:{ico:'sup',img:IMG+'2024/03/alquiler-sup-con-amigos-scaled-1-scaled.webp',g:['#0F8EA6','#16AFC4'],
+sup:{ico:'sup',img:'img/sup2.webp',g:['#0F8EA6','#16AFC4'],
  h:{es:'Paddle surf',en:'Paddle board'},p:{es:'Tablas fáciles de manejar para todos los niveles. La Jumbo gigante es para grupos: mínimo 3 personas, hasta 6 adultos u 8–9 niños.',en:'Easy boards for every level. The giant Jumbo is for groups: minimum 3 people, up to 6 adults or 8–9 kids.'},
  cols:{es:['','Tabla individual','Jumbo (grupo)'],en:['','Single board','Jumbo (group)']},rows:[['1 h',20,50],['2 h',25,75],['3 h',30,null],['4 h',35,null],['day',50,null]]},
-bike:{ico:'bike',img:IMG+'2024/04/E-BIKE-cami-de-cavalls.webp',g:['#2E8B57','#123C5E'],
+bike:{ico:'bike',img:'img/bike2.webp',g:['#2E8B57','#123C5E'],
  h:{es:'Bicicletas y patinetes',en:'Bikes and scooters'},p:{es:'BTT con casco y candado (en varios días, también kit de reparación). E-bike desde 40 €/día con casco, mochila, guantes, luces, funda estanca para el móvil e inflador.',en:'Mountain bikes with helmet and lock (repair kit on multi-day rentals). E-bikes from €40/day with helmet, backpack, gloves, lights, waterproof phone case and pump.'},
  cols:{es:['','BTT','Patinete'],en:['','Mountain bike','Scooter']},rows:[['2 h',15,15],['half',20,20],['day',24,25],['2d',39,38],['3d',51,null],['4d',62,null],['5d',72,null],['6d',81,null],['7d',89,null],['xd',9,null]],
  mini:{es:'Fianza e-bike y patinete: 200 €. Entrega o recogida en toda la isla: 40 € · entrega + recogida: 60 € (bajo petición).',en:'E-bike and scooter deposit: €200. Island-wide delivery or pick-up: €40 · both: €60 (on request).'}},
-travesia:{ico:'tent',img:IMG+'2024/03/vuelta-a-menorca-en-pareja1.webp',g:['#0B2B45','#2E8B57'],
+travesia:{ico:'tent',img:'img/vuelta.webp',g:['#0B2B45','#2E8B57'],
  h:{es:'Kayak de travesía',en:'Sea touring kayak'},p:{es:'Para tu propia ruta: kayak con compartimentos estancos, pala, chaleco, faldón y bolsa estanca por persona, guía aérea de la costa y previsión del tiempo diaria por WhatsApp.',en:'For your own route: kayak with watertight hatches, paddle, life jacket, spray skirt and dry bag per person, aerial coast guide and daily weather forecast on WhatsApp.'},
  cols:{es:['','Individual','Doble','Kit acampada'],en:['','Single','Double','Camping kit']},rows:[['1d',50,80,null],['2d',75,130,20],['3d',95,170,29],['4d',115,210,38],['5d',135,240,46],['6d',150,270,53],['7d',165,300,59],['xd',20,35,6]],
  mini:{es:'En rutas de 7+ días para 2 o más personas recogemos el material en cualquier punto accesible de la costa (según disponibilidad).',en:'On 7+ day routes for 2 or more people we collect the gear from any accessible point on the coast (subject to availability).'}}
