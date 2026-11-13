@@ -43,10 +43,15 @@ section{padding:clamp(64px,9vw,110px) 0}
 /* header */
 header{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s}
 header.on{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
-.hbar{display:flex;align-items:center;gap:22px;height:72px}
-.hlogo{display:flex;align-items:center;background:#fff;border-radius:12px;padding:6px 10px;box-shadow:0 6px 18px -10px rgba(0,0,0,.35)}
+.hbar{display:flex;align-items:center;gap:22px;height:80px}
+.hlogo{display:flex;align-items:center;background:#fff;border-radius:14px;padding:6px 12px;box-shadow:0 6px 18px -10px rgba(0,0,0,.35);opacity:0;transform:translateY(-8px);transition:opacity .35s,transform .35s;pointer-events:none}
+header.on .hlogo{opacity:1;transform:none;pointer-events:auto}
 header.on .hlogo{box-shadow:none;padding:6px 0}
-.hlogo img{height:40px;width:auto}
+.hlogo img{height:54px;width:auto}
+@media(max-width:600px){.hlogo img{height:44px}}
+.hero-logo{display:inline-block;background:#fff;border-radius:24px;padding:16px 26px;margin-bottom:26px;box-shadow:0 24px 50px -24px rgba(0,0,0,.6);animation:lg 1s cubic-bezier(.2,.8,.2,1) both}
+.hero-logo img{width:clamp(260px,34vw,460px);height:auto}
+@keyframes lg{from{opacity:0;transform:translateY(20px) scale(.96)}}
 .hnav{display:flex;gap:4px;margin-left:auto}
 .hnav a{padding:8px 12px;border-radius:99px;text-decoration:none;font-weight:600;font-size:14.5px;color:#fff;transition:background .2s}
 header.on .hnav a{color:var(--ink)}
@@ -62,7 +67,7 @@ header.on .lang button[aria-pressed=true]{background:var(--navy);color:#fff}
 .burger{display:none;width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.18);color:#fff}
 header.on .burger{background:var(--aqua);color:var(--navy)}
 .burger svg{width:22px;height:22px;margin:auto}
-@media(max-width:1020px){.hnav{display:none}.burger{display:flex;margin-left:auto}.hbook{display:none}}
+@media(max-width:1020px){.hnav{display:none}.lang{margin-left:auto}.burger{display:flex;margin-left:4px}.hbook{display:none}}
 .mnav{position:fixed;inset:0;z-index:60;background:var(--navy);color:#fff;padding:90px 24px 30px;display:flex;flex-direction:column;gap:6px;transform:translateY(-100%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
 .mnav.open{transform:none}
 .mnav a{font:900 italic 34px/1.25 var(--fh);text-decoration:none}
@@ -75,7 +80,7 @@ header.on .burger{background:var(--aqua);color:var(--navy)}
 .hero .bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);animation:kb 18s ease-out forwards}
 @keyframes kb{to{transform:scale(1)}}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,43,69,.55) 0%,rgba(11,43,69,.15) 40%,rgba(11,43,69,.85) 100%)}
-.hero .in{position:relative;z-index:2;padding:120px 0 40px}
+.hero .in{position:relative;z-index:2;padding:110px 0 40px}
 .hero h1{font-size:clamp(46px,8.4vw,112px);font-weight:900;font-style:italic;font-stretch:108%;line-height:.92;max-width:11ch}
 .hero h1 em{color:var(--sun);font-style:italic}
 .hero p.lead{font-size:clamp(17px,1.6vw,20px);max-width:34em;margin:22px 0 28px;color:rgba(255,255,255,.92)}
@@ -257,7 +262,7 @@ details p{padding:0 0 18px;color:var(--ink2)}
 footer{background:#071D30;color:rgba(255,255,255,.7);padding:40px 0 90px;font-size:14px}
 .fgrid{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
 .flogo{background:#fff;border-radius:14px;padding:10px 14px}
-.flogo img{height:44px}
+.flogo img{height:64px}
 .fbadges{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
 .fbadges .bio{background:#fff;border-radius:10px;padding:6px 10px;color:var(--navy);font-weight:700;font-size:12px;display:flex;gap:8px;align-items:center}
 .fbadges .bio svg{width:22px;height:22px;color:#2E8B57}
@@ -381,6 +386,7 @@ footer{background:#071D30;color:rgba(255,255,255,.7);padding:40px 0 90px;font-si
   <section class="hero">
     <div class="bg"><img src="https://www.sportskayak.es/wp-content/uploads/2024/04/alquiler-kayak-en-pareja-1024x769.webp" alt="" onerror="this.remove()"></div>
     <div class="wrap in">
+      <div class="hero-logo"><img src="img/logo.png" alt="Sports & Kayak Menorca"></div><br>
       <span class="eyebrow" style="color:#fff" data-t="heroEy">Cala Torret · Binibeca · Menorca</span>
       <h1 data-t="heroH" data-html>Menorca, <em>desde el agua.</em></h1>
       <p class="lead" data-t="heroP">Excursiones en kayak y paddle surf, barcas con y sin licencia, bicis y la vuelta a la isla en kayak. Todo desde nuestra base en Cala Torret.</p>
