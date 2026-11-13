@@ -147,3 +147,10 @@ Hanno GIÀ un sito proprio (non risultava da Maps):
 - Al Giglio Hair Spa (Giubiasco): algigliohairspa.ch — già chiuso
 Sito noto e voluto (categoria rotto/scadente): Bar Pinard (solo logo), Motto del Gallo (WordPress), Grotto San Salvatore (Wix gratuito), LEFTY (rotto), Pizza Mania (digitalone).
 Nessun sito trovato per tutte le altre. "The Jungle Club" (thejungleclub.ch) è un locale di Zurigo, non Lugano.
+
+## 13.11.2026 — Sports & Kayak Menorca (CLIENTE, nuova gestione) — BOZZA
+- Sito: /sports-kayak-menorca/ — su misura, ES/EN (rileva lingua, scelta salvata). Logo nuovo (fornito da Jacopo) reso trasparente.
+- Struttura: hero · filtro "¿Qué buscas? / ¿Con quién?" (sostituisce le 25 pagine "A medida") · 15 attività in schede con dettaglio a cassetto (orari, prezzi, percorso, incluso, cosa portare) · mappa di Menorca con punti (firma) · barche (Voraz/Trimarchi/con patrón + Quicksilver) · noleggi con tab e tabelle prezzi · Vuelta a Menorca · come funziona + FAQ + condizioni · gruppi · contatti + mappa.
+- Prenotazione: modulo → WhatsApp +34 616 338 393 con messaggio già compilato e prezzo orientativo.
+- Prezzi dal sito attuale (confermati da Jacopo). FOTO: per ora collegate dal loro sito (wp-content) senza verifica; da scegliere/scaricare appena torna il collegamento al Mac.
+- Da confermare: Quicksilver 675 (500 €/giorno vs 490 €, 150 vs 225 CV); prezzi Trimarchi per mese (250/325/340/300?); Voraz 140 € per quale fascia; prezzi patrón per opzione; punto di partenza kayak transparente; date Vuelta guidata; team nuovo/storia.

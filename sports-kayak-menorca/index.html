@@ -1,0 +1,892 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sports &amp; Kayak Menorca · Kayak, paddle surf, barcas y bicis en Cala Torret</title>
+<meta name="description" content="Excursiones en kayak, kayak transparente, paddle surf, alquiler de barcas con y sin licencia, bicicletas y la vuelta a Menorca en kayak. Desde Cala Torret – Binibeca, Menorca.">
+<meta property="og:title" content="Sports & Kayak Menorca">
+<meta property="og:description" content="Kayak, paddle surf, barcas y bicis desde Cala Torret, Menorca.">
+<meta property="og:image" content="img/logo.png">
+<meta name="theme-color" content="#0B2B45">
+<link rel="icon" href="img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,700..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B2B45; --navy2:#123C5E; --teal:#0F8EA6; --teal2:#16AFC4; --aqua:#DDF3F6;
+  --sun:#F6B70F; --sand:#F7F3EC; --paper:#FFFFFF; --ink:#0B2B45; --ink2:#4C6378; --line:#E2E8EE;
+  --r:18px; --fh:'Archivo',system-ui,sans-serif; --fb:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:80px}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--fb);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.wrap{width:min(1200px,100% - 32px);margin:0 auto}
+h1,h2,h3{font-family:var(--fh);letter-spacing:-.01em;line-height:1.02}
+h2{font-size:clamp(32px,4.6vw,56px);font-weight:900;font-style:italic;font-stretch:105%}
+h2 span{color:var(--teal)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font:700 12px/1 var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
+.eyebrow::before{content:"";width:22px;height:3px;border-radius:2px;background:var(--sun)}
+.sub{color:var(--ink2);max-width:40em;margin-top:14px;font-size:17px}
+section{padding:clamp(64px,9vw,110px) 0}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:99px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .2s,background .2s,box-shadow .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn.sun{background:var(--sun);color:var(--navy);box-shadow:0 10px 24px -10px rgba(246,183,15,.8)}
+.btn.navy{background:var(--navy);color:#fff}
+.btn.ghost{border:1.5px solid currentColor}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* header */
+header{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s}
+header.on{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+.hbar{display:flex;align-items:center;gap:22px;height:72px}
+.hlogo{display:flex;align-items:center;background:#fff;border-radius:12px;padding:6px 10px;box-shadow:0 6px 18px -10px rgba(0,0,0,.35)}
+header.on .hlogo{box-shadow:none;padding:6px 0}
+.hlogo img{height:40px;width:auto}
+.hnav{display:flex;gap:4px;margin-left:auto}
+.hnav a{padding:8px 12px;border-radius:99px;text-decoration:none;font-weight:600;font-size:14.5px;color:#fff;transition:background .2s}
+header.on .hnav a{color:var(--ink)}
+.hnav a:hover{background:rgba(255,255,255,.18)}
+header.on .hnav a:hover{background:var(--aqua)}
+.lang{display:flex;border:1.5px solid rgba(255,255,255,.6);border-radius:99px;overflow:hidden;font:700 12px/1 var(--fb)}
+header.on .lang{border-color:var(--line)}
+.lang button{padding:8px 10px;color:#fff}
+header.on .lang button{color:var(--ink2)}
+.lang button[aria-pressed=true]{background:#fff;color:var(--navy)}
+header.on .lang button[aria-pressed=true]{background:var(--navy);color:#fff}
+.hbook{padding:11px 18px}
+.burger{display:none;width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.18);color:#fff}
+header.on .burger{background:var(--aqua);color:var(--navy)}
+.burger svg{width:22px;height:22px;margin:auto}
+@media(max-width:1020px){.hnav{display:none}.burger{display:flex;margin-left:auto}.hbook{display:none}}
+.mnav{position:fixed;inset:0;z-index:60;background:var(--navy);color:#fff;padding:90px 24px 30px;display:flex;flex-direction:column;gap:6px;transform:translateY(-100%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mnav.open{transform:none}
+.mnav a{font:900 italic 34px/1.25 var(--fh);text-decoration:none}
+.mnav .btn{margin-top:20px;align-self:flex-start;font:600 16px var(--fb)}
+.mnav .x{position:absolute;top:16px;right:16px;width:44px;height:44px;color:#fff;font-size:30px}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:linear-gradient(160deg,#0B2B45 0%,#0F6E8A 55%,#16AFC4 100%)}
+.hero .bg{position:absolute;inset:0}
+.hero .bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);animation:kb 18s ease-out forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,43,69,.55) 0%,rgba(11,43,69,.15) 40%,rgba(11,43,69,.85) 100%)}
+.hero .in{position:relative;z-index:2;padding:120px 0 40px}
+.hero h1{font-size:clamp(46px,8.4vw,112px);font-weight:900;font-style:italic;font-stretch:108%;line-height:.92;max-width:11ch}
+.hero h1 em{color:var(--sun);font-style:italic}
+.hero p.lead{font-size:clamp(17px,1.6vw,20px);max-width:34em;margin:22px 0 28px;color:rgba(255,255,255,.92)}
+.hero .btns{display:flex;flex-wrap:wrap;gap:12px}
+.hero .facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.25);font-size:14px;color:rgba(255,255,255,.9)}
+.hero .facts b{font:900 italic 22px/1 var(--fh);color:#fff;display:block;margin-bottom:4px}
+.waves{position:absolute;left:0;right:0;bottom:-1px;z-index:3;height:60px;pointer-events:none}
+.waves path{animation:wv 9s ease-in-out infinite alternate}
+.waves path:nth-child(2){animation-duration:13s;animation-direction:alternate-reverse}
+@keyframes wv{to{transform:translateX(-60px)}}
+.draft{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:70;background:var(--navy);color:#fff;font-size:12px;padding:7px 14px;border-radius:99px;transition:opacity .4s,transform .4s;white-space:nowrap;box-shadow:0 8px 20px -10px rgba(0,0,0,.5)}
+.draft.hide{opacity:0;transform:translate(-50%,12px);pointer-events:none}
+
+/* finder */
+.finder{position:relative;z-index:5;margin-top:-1px;background:#fff}
+.finder .box{background:#fff;border-radius:24px;box-shadow:0 30px 60px -30px rgba(11,43,69,.35);border:1px solid var(--line);padding:22px;display:grid;gap:16px;transform:translateY(-50%)}
+.frow{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.frow .lb{font:700 12px/1 var(--fb);letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);width:110px}
+.chip{padding:10px 16px;border-radius:99px;border:1.5px solid var(--line);font-weight:600;font-size:14.5px;display:inline-flex;align-items:center;gap:8px;transition:.2s}
+.chip:hover{border-color:var(--teal)}
+.chip[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip .n{font-size:12px;opacity:.6}
+@media(max-width:760px){.finder .box{transform:translateY(-34px);padding:16px}.frow .lb{width:100%}.frow{gap:6px}.chip{padding:9px 13px;font-size:14px}}
+
+/* activities grid */
+#actividades{padding-top:0}
+.gridhead{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px}
+.count{color:var(--ink2);font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px}
+.card{position:relative;border-radius:var(--r);overflow:hidden;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;cursor:pointer;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;text-align:left}
+.card:hover{transform:translateY(-6px);box-shadow:0 26px 50px -28px rgba(11,43,69,.45)}
+.card.hid{display:none}
+.ph{position:relative;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(150deg,var(--g1,#0F8EA6),var(--g2,#0B2B45))}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.card:hover .ph img{transform:scale(1.06)}
+.ph .ico{position:absolute;inset:0;display:grid;place-items:center;color:rgba(255,255,255,.85)}
+.ph .ico svg{width:72px;height:72px}
+.ph .tag{position:absolute;left:12px;top:12px;z-index:2;background:rgba(255,255,255,.95);color:var(--navy);font:700 11.5px/1 var(--fb);letter-spacing:.06em;text-transform:uppercase;padding:7px 10px;border-radius:99px}
+.ph .price{position:absolute;right:12px;bottom:12px;z-index:2;background:var(--sun);color:var(--navy);font:900 italic 18px/1 var(--fh);padding:8px 12px;border-radius:12px}
+.ph .price small{font:600 11px var(--fb);display:block;margin-bottom:2px;font-style:normal}
+.card .bd{padding:18px 18px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:23px;font-weight:900;font-style:italic}
+.card p{color:var(--ink2);font-size:15px}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.meta span{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;background:var(--sand);padding:6px 10px;border-radius:99px}
+.meta svg{width:14px;height:14px;color:var(--teal)}
+.more{display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid var(--line);font-weight:700;font-size:14px;color:var(--teal)}
+.more svg{width:18px;height:18px;transition:transform .3s}
+.card:hover .more svg{transform:translateX(4px)}
+.empty{display:none;padding:40px;text-align:center;color:var(--ink2);border:1.5px dashed var(--line);border-radius:var(--r)}
+
+/* map (signature) */
+.mapsec{background:var(--navy);color:#fff;overflow:hidden}
+.mapsec .sub{color:rgba(255,255,255,.8)}
+.mapgrid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;margin-top:30px}
+.mapbox{position:relative}
+#map{width:100%;height:auto;overflow:visible}
+#map .sea{fill:none}
+#map .isl{fill:#F3E9D2;stroke:#fff;stroke-width:1.5}
+#map .islS{fill:#E7D9B8}
+#map .route{fill:none;stroke:var(--sun);stroke-width:2.2;stroke-dasharray:6 7;stroke-linecap:round;opacity:.9}
+#map .ring{fill:none;stroke:rgba(255,255,255,.12);stroke-width:1}
+#map .lbl{font:700 11px var(--fb);fill:#0B2B45}
+#map .lblw{font:700 12px var(--fb);fill:#fff;letter-spacing:.06em}
+.pin{cursor:pointer}
+.pin circle.c{fill:var(--teal2);stroke:#fff;stroke-width:2.5;transition:r .3s}
+.pin circle.p{fill:var(--teal2);opacity:.4;animation:pl 2.4s ease-out infinite;transform-box:fill-box;transform-origin:center}
+.pin.base circle.c{fill:var(--sun)}
+.pin.base circle.p{fill:var(--sun)}
+.pin.on circle.c{r:11}
+@keyframes pl{0%{transform:scale(.6);opacity:.6}100%{transform:scale(2.6);opacity:0}}
+.spots{display:grid;gap:10px}
+.spot{display:flex;gap:14px;align-items:flex-start;padding:14px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);cursor:pointer;transition:.25s;text-align:left}
+.spot:hover,.spot.on{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.35)}
+.spot .d{width:12px;height:12px;border-radius:50%;background:var(--teal2);margin-top:6px;flex:none;box-shadow:0 0 0 4px rgba(22,175,196,.25)}
+.spot.base .d{background:var(--sun);box-shadow:0 0 0 4px rgba(246,183,15,.25)}
+.spot b{display:block;font-size:15.5px}
+.spot small{color:rgba(255,255,255,.72);font-size:13.5px}
+@media(max-width:900px){.mapgrid{grid-template-columns:1fr}}
+
+/* boats */
+.boats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
+.boat{border-radius:var(--r);border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column;background:#fff}
+.boat .ph{aspect-ratio:16/10}
+.boat .bd{padding:20px;display:flex;flex-direction:column;gap:12px;flex:1}
+.lic{align-self:flex-start;font:700 11.5px/1 var(--fb);text-transform:uppercase;letter-spacing:.06em;padding:7px 10px;border-radius:99px;background:var(--aqua);color:var(--navy)}
+.lic.y{background:#FFF1C9}
+.boat h3{font-size:26px;font-weight:900;font-style:italic}
+.specs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.specs div{background:var(--sand);border-radius:12px;padding:10px;text-align:center}
+.specs b{display:block;font:900 italic 20px/1 var(--fh)}
+.specs small{font-size:11.5px;color:var(--ink2);font-weight:600}
+.boat ul{list-style:none;display:grid;gap:6px;font-size:14.5px;color:var(--ink2)}
+.boat li{padding-left:22px;position:relative}
+.boat li::before{content:"";position:absolute;left:2px;top:.55em;width:10px;height:6px;border-left:2px solid var(--teal);border-bottom:2px solid var(--teal);transform:rotate(-45deg)}
+.boat .foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:14px;border-top:1px solid var(--line)}
+.boat .from{font:900 italic 26px/1 var(--fh)}
+.boat .from small{display:block;font:600 12px var(--fb);color:var(--ink2);font-style:normal;margin-bottom:4px}
+@media(max-width:980px){.boats{grid-template-columns:1fr}}
+.note{margin-top:22px;font-size:14px;color:var(--ink2);display:flex;gap:10px;align-items:flex-start;background:var(--sand);padding:14px 16px;border-radius:14px}
+.note svg{width:20px;height:20px;color:var(--teal);flex:none;margin-top:1px}
+
+/* rentals: tabs + price tables */
+.rent{background:var(--sand)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 22px}
+.tabs button{padding:12px 18px;border-radius:99px;background:#fff;font-weight:700;font-size:15px;border:1.5px solid var(--line);display:inline-flex;gap:8px;align-items:center}
+.tabs button svg{width:18px;height:18px;color:var(--teal)}
+.tabs button[aria-selected=true]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.tabs button[aria-selected=true] svg{color:var(--sun)}
+.panel{display:none;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:start;animation:fi .5s ease}
+.panel.on{display:grid}
+@keyframes fi{from{opacity:0;transform:translateY(10px)}}
+.panel .ph{border-radius:var(--r);aspect-ratio:4/3.4}
+.ptx h3{font-size:30px;font-weight:900;font-style:italic;margin-bottom:8px}
+.ptx p{color:var(--ink2)}
+table.pt{width:100%;border-collapse:separate;border-spacing:0;margin-top:18px;background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--line);font-size:15px}
+.pt th,.pt td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line)}
+.pt th{font:700 12px/1.2 var(--fb);letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);background:#FBFAF7}
+.pt td:not(:first-child),.pt th:not(:first-child){text-align:right}
+.pt td:not(:first-child){font-weight:700}
+.pt tr:last-child td{border-bottom:0}
+.pt caption{caption-side:top;text-align:left;font:800 italic 17px var(--fh);padding:0 0 8px}
+.ptx .btn{margin-top:18px}
+.mini{font-size:13.5px;color:var(--ink2);margin-top:10px}
+@media(max-width:900px){.panel{grid-template-columns:1fr}}
+
+/* vuelta */
+.vuelta{position:relative;color:#fff;overflow:hidden;background:linear-gradient(135deg,#0B2B45,#0F6E8A)}
+.vuelta .bgimg{position:absolute;inset:0;opacity:.28}
+.vuelta .bgimg img{width:100%;height:100%;object-fit:cover}
+.vuelta .wrap{position:relative}
+.vuelta .sub{color:rgba(255,255,255,.85)}
+.vcards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.vc{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:12px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);cursor:pointer;transition:.3s;text-align:left;color:#fff}
+.vc:hover{background:rgba(255,255,255,.15);transform:translateY(-4px)}
+.vc .days{font:900 italic 64px/.9 var(--fh);color:var(--sun)}
+.vc .days small{font:700 14px var(--fb);color:#fff;font-style:normal;margin-left:6px}
+.vc h3{font-size:22px;font-weight:900;font-style:italic}
+.vc p{color:rgba(255,255,255,.8);font-size:15px}
+.vc .pr{margin-top:auto;font:900 italic 24px var(--fh)}
+.vc .pr small{font:600 12px var(--fb);font-style:normal;opacity:.8}
+@media(max-width:900px){.vcards{grid-template-columns:1fr}}
+
+/* how / faq */
+.how{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px;counter-reset:s}
+.how div{position:relative;padding:22px;border-radius:var(--r);background:var(--sand);counter-increment:s}
+.how div::before{content:counter(s);font:900 italic 44px/1 var(--fh);color:var(--teal);display:block;margin-bottom:10px}
+.how b{display:block;font-size:17px;margin-bottom:4px}
+.how p{color:var(--ink2);font-size:14.5px}
+@media(max-width:900px){.how{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.how{grid-template-columns:1fr}}
+.faqgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;margin-top:70px}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:18px 40px 18px 0;font-weight:700;font-size:17px;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font:400 28px/1 var(--fb);color:var(--teal);transition:transform .3s}
+details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+details p{padding:0 0 18px;color:var(--ink2)}
+@media(max-width:900px){.faqgrid{grid-template-columns:1fr;gap:10px}}
+
+/* groups strip */
+.groups{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;background:var(--aqua);border-radius:28px;padding:clamp(26px,5vw,56px);margin-top:60px}
+.groups ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.groups li{background:#fff;border-radius:99px;padding:8px 14px;font-weight:600;font-size:14px}
+@media(max-width:900px){.groups{grid-template-columns:1fr}}
+
+/* contact */
+.contact{background:var(--navy);color:#fff}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:30px}
+.clist{display:grid;gap:12px}
+.clist a,.clist div{display:flex;gap:14px;align-items:center;padding:16px;border-radius:14px;background:rgba(255,255,255,.07);text-decoration:none;border:1px solid rgba(255,255,255,.1);transition:.2s}
+.clist a:hover{background:rgba(255,255,255,.14)}
+.clist svg{width:22px;height:22px;color:var(--sun);flex:none}
+.clist b{display:block;font-size:16px}
+.clist small{color:rgba(255,255,255,.7)}
+.mapfr{border-radius:var(--r);overflow:hidden;min-height:380px;background:#123C5E}
+.mapfr iframe{width:100%;height:100%;min-height:380px;border:0;filter:saturate(.9)}
+@media(max-width:900px){.cgrid{grid-template-columns:1fr}}
+footer{background:#071D30;color:rgba(255,255,255,.7);padding:40px 0 90px;font-size:14px}
+.fgrid{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+.flogo{background:#fff;border-radius:14px;padding:10px 14px}
+.flogo img{height:44px}
+.fbadges{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.fbadges .bio{background:#fff;border-radius:10px;padding:6px 10px;color:var(--navy);font-weight:700;font-size:12px;display:flex;gap:8px;align-items:center}
+.fbadges .bio svg{width:22px;height:22px;color:#2E8B57}
+.flinks{display:flex;gap:16px;flex-wrap:wrap}
+.flinks a{text-decoration:none}
+.flinks a:hover{color:#fff}
+
+/* drawer (activity detail) */
+.ov{position:fixed;inset:0;z-index:80;background:rgba(7,29,48,.55);opacity:0;pointer-events:none;transition:opacity .3s}
+.ov.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;z-index:90;width:min(620px,100%);background:#fff;transform:translateX(102%);transition:transform .45s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;box-shadow:-30px 0 60px -30px rgba(0,0,0,.4)}
+.drawer.open{transform:none}
+.dhead{position:relative;flex:none}
+.dhead .ph{aspect-ratio:16/9}
+.dclose{position:absolute;top:14px;right:14px;z-index:3;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.95);display:grid;place-items:center;font-size:24px;color:var(--navy)}
+.dbody{overflow-y:auto;padding:24px 24px 120px;-webkit-overflow-scrolling:touch}
+.dbody h3{font-size:34px;font-weight:900;font-style:italic;margin:6px 0 10px}
+.dbody h4{font:800 italic 18px var(--fh);margin:26px 0 10px}
+.dbody p{color:var(--ink2)}
+.kv{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:18px}
+.kv div{background:var(--sand);border-radius:12px;padding:12px 14px}
+.kv small{display:block;font:700 11px var(--fb);letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);margin-bottom:4px}
+.kv b{font-size:15px}
+.dlist{list-style:none;display:grid;gap:8px}
+.dlist li{padding-left:24px;position:relative;color:var(--ink2)}
+.dlist li::before{content:"";position:absolute;left:3px;top:.55em;width:10px;height:6px;border-left:2px solid var(--teal);border-bottom:2px solid var(--teal);transform:rotate(-45deg)}
+.dlist.x li::before{border-color:#C2410C;width:10px;height:10px;border:0;background:linear-gradient(45deg,transparent 45%,#C2410C 45% 55%,transparent 55%),linear-gradient(-45deg,transparent 45%,#C2410C 45% 55%,transparent 55%);transform:none;top:.45em}
+.route{counter-reset:r;list-style:none;display:grid;gap:0;border-left:2px dashed var(--teal);margin-left:8px;padding-left:20px}
+.route li{position:relative;padding:6px 0;color:var(--ink2)}
+.route li::before{content:"";position:absolute;left:-27px;top:12px;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid var(--teal)}
+.dfoot{position:absolute;left:0;right:0;bottom:0;padding:14px 24px;background:rgba(255,255,255,.97);border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px}
+.dfoot .from{font:900 italic 26px/1 var(--fh)}
+.dfoot .from small{display:block;font:600 12px var(--fb);font-style:normal;color:var(--ink2);margin-bottom:3px}
+
+/* booking modal */
+.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:16px;opacity:0;pointer-events:none;transition:opacity .3s}
+.modal.open{opacity:1;pointer-events:auto}
+.mbox{position:relative;width:min(560px,100%);max-height:calc(100svh - 32px);overflow-y:auto;background:#fff;border-radius:24px;padding:26px;box-shadow:0 40px 80px -30px rgba(0,0,0,.5);transform:translateY(20px) scale(.98);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.modal.open .mbox{transform:none}
+.mbox h3{font-size:30px;font-weight:900;font-style:italic}
+.mbox .x{position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:50%;background:var(--sand);font-size:22px}
+.fgrid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.fld{display:flex;flex-direction:column;gap:6px}
+.fld.full{grid-column:1/-1}
+.fld label{font:700 12px var(--fb);letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
+.fld select,.fld input,.fld textarea{font:500 16px var(--fb);padding:12px 14px;border-radius:12px;border:1.5px solid var(--line);background:#fff;color:var(--ink);width:100%;appearance:none;-webkit-appearance:none}
+.fld select{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%230B2B45' stroke-width='2' fill='none'/%3E%3C/svg%3E") no-repeat right 14px center;padding-right:36px}
+.fld select:focus,.fld input:focus,.fld textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 4px rgba(15,142,166,.15)}
+.step{display:flex;align-items:center;border:1.5px solid var(--line);border-radius:12px;overflow:hidden}
+.step button{width:44px;height:46px;font-size:20px;color:var(--teal);font-weight:700}
+.step input{border:0;text-align:center;padding:0;width:100%;font-weight:700}
+.est{margin-top:16px;padding:14px 16px;border-radius:14px;background:var(--aqua);display:flex;justify-content:space-between;align-items:center;gap:10px}
+.est b{font:900 italic 26px var(--fh)}
+.est small{color:var(--ink2);font-size:13px}
+.mbox .btn{width:100%;justify-content:center;margin-top:16px;font-size:16px;padding:16px}
+.wa{background:#1FAF55;color:#fff}
+.err{color:#C2410C;font-size:13px;margin-top:8px;display:none}
+.slotnote{font-size:13px;color:var(--ink2)}
+@media(max-width:520px){.fgrid2{grid-template-columns:1fr}.mbox{padding:22px 18px}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+.fab{position:fixed;right:16px;bottom:16px;z-index:65;width:56px;height:56px;border-radius:50%;background:#1FAF55;color:#fff;display:grid;place-items:center;box-shadow:0 12px 26px -10px rgba(0,0,0,.5);transform:scale(0);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.fab.on{transform:scale(1)}
+.fab svg{width:28px;height:28px}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9.5" r="2.5" fill="currentColor"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2.5 20c.8-3.6 3.5-5.5 6.5-5.5s5.7 1.9 6.5 5.5M16 4.8a3.5 3.5 0 0 1 0 6.4M18.5 14.8c1.6.8 2.7 2.4 3 5.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v6M12 7.5v.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-kayak" viewBox="0 0 64 64"><path d="M6 38c10 6 42 6 52 0-10-4-42-4-52 0z" fill="currentColor" opacity=".9"/><path d="M14 18l36 30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M10 14l6 6M48 46l6 6" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><circle cx="32" cy="27" r="4" fill="currentColor"/></symbol>
+  <symbol id="i-sup" viewBox="0 0 64 64"><path d="M8 48c12 4 36 4 48 0" stroke="currentColor" stroke-width="5" stroke-linecap="round" fill="none"/><circle cx="32" cy="14" r="4" fill="currentColor"/><path d="M32 19v16M32 35l-5 11M32 35l5 11M32 24l9-4" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none"/><path d="M42 8v38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-boat" viewBox="0 0 64 64"><path d="M6 40h52l-8 10H14z" fill="currentColor"/><path d="M18 40V28h18l8 12" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/><path d="M4 56c6 3 10 3 16 0s10-3 16 0 10 3 16 0 8-2 10-1" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="i-bike" viewBox="0 0 64 64"><circle cx="16" cy="42" r="10" fill="none" stroke="currentColor" stroke-width="3.5"/><circle cx="48" cy="42" r="10" fill="none" stroke="currentColor" stroke-width="3.5"/><path d="M16 42l10-16h16l6 16M26 26l8 16h14M38 20h8" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-tent" viewBox="0 0 64 64"><path d="M6 50L32 12l26 38z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/><path d="M32 12v38M24 50l8-14 8 14" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 64 64"><circle cx="32" cy="36" r="12" fill="currentColor"/><path d="M4 50h56M12 56h40M32 10v8M12 18l6 6M52 18l-6 6" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-fish" viewBox="0 0 64 64"><path d="M8 32c10-12 30-14 42 0-12 14-32 12-42 0z" fill="currentColor"/><path d="M50 32l10-8v16z" fill="currentColor"/><circle cx="20" cy="30" r="2.5" fill="#0B2B45"/></symbol>
+</svg>
+
+<header id="hd">
+  <div class="wrap hbar">
+    <a class="hlogo" href="#top" aria-label="Sports & Kayak Menorca"><img src="img/logo.png" alt="Sports & Kayak Menorca"></a>
+    <nav class="hnav" aria-label="Menú">
+      <a href="#actividades" data-t="nav1">Actividades</a>
+      <a href="#mapa" data-t="nav2">Dónde</a>
+      <a href="#barcas" data-t="nav3">Barcas</a>
+      <a href="#alquiler" data-t="nav4">Alquiler</a>
+      <a href="#vuelta" data-t="nav5">Vuelta a Menorca</a>
+      <a href="#info" data-t="nav6">Info</a>
+      <a href="#contacto" data-t="nav7">Contacto</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Idioma"><button data-l="es" aria-pressed="true">ES</button><button data-l="en" aria-pressed="false">EN</button></div>
+    <button class="btn sun hbook" data-book="" data-t="book">Reservar</button>
+    <button class="burger" id="burger" aria-label="Menú"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Menú móvil">
+  <button class="x" id="mclose" aria-label="Cerrar">×</button>
+  <a href="#actividades" data-t="nav1">Actividades</a>
+  <a href="#mapa" data-t="nav2">Dónde</a>
+  <a href="#barcas" data-t="nav3">Barcas</a>
+  <a href="#alquiler" data-t="nav4">Alquiler</a>
+  <a href="#vuelta" data-t="nav5">Vuelta a Menorca</a>
+  <a href="#info" data-t="nav6">Info</a>
+  <a href="#contacto" data-t="nav7">Contacto</a>
+  <button class="btn sun" data-book="" data-t="book">Reservar</button>
+</nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="bg"><img src="https://www.sportskayak.es/wp-content/uploads/2024/04/alquiler-kayak-en-pareja-1024x769.webp" alt="" onerror="this.remove()"></div>
+    <div class="wrap in">
+      <span class="eyebrow" style="color:#fff" data-t="heroEy">Cala Torret · Binibeca · Menorca</span>
+      <h1 data-t="heroH" data-html>Menorca, <em>desde el agua.</em></h1>
+      <p class="lead" data-t="heroP">Excursiones en kayak y paddle surf, barcas con y sin licencia, bicis y la vuelta a la isla en kayak. Todo desde nuestra base en Cala Torret.</p>
+      <div class="btns">
+        <a class="btn sun" href="#actividades"><span data-t="heroB1">Ver actividades</span><svg><use href="#i-arrow"/></svg></a>
+        <a class="btn ghost" href="https://wa.me/34616338393" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+      </div>
+      <div class="facts">
+        <div><b>550+</b><span data-t="f1">reseñas Google · Excelente</span></div>
+        <div><b>TA 0007 ME</b><span data-t="f2">Empresa de Turismo Activo</span></div>
+        <div><b data-t="f3b">Abr – Sep</b><span data-t="f3">temporada de excursiones</span></div>
+      </div>
+    </div>
+    <svg class="waves" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30 C 180 0 360 60 540 30 S 900 0 1080 30 S 1440 60 1620 30 V60 H0Z" fill="rgba(255,255,255,.35)"/><path d="M0 40 C 200 15 400 60 600 38 S 1000 15 1200 40 S 1500 55 1600 40 V60 H0Z" fill="#fff"/></svg>
+  </section>
+
+  <!-- FINDER -->
+  <div class="finder">
+    <div class="wrap">
+      <div class="box rv" id="finder">
+        <div class="frow" id="fcat">
+          <span class="lb" data-t="fWhat">¿Qué buscas?</span>
+        </div>
+        <div class="frow" id="fwho">
+          <span class="lb" data-t="fWho">¿Con quién?</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACTIVIDADES -->
+  <section id="actividades">
+    <div class="wrap">
+      <div class="gridhead rv">
+        <div>
+          <span class="eyebrow" data-t="aEy">Actividades</span>
+          <h2 data-t="aH" data-html>Elige tu <span>plan.</span></h2>
+        </div>
+        <span class="count" id="count"></span>
+      </div>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" data-t="empty">No hay actividades con estos filtros. Prueba otra combinación o escríbenos.</div>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="mapsec" id="mapa">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow" style="color:var(--teal2)" data-t="mEy">Dónde estamos</span>
+        <h2 data-t="mH" data-html>Una base, <span style="color:var(--sun)">toda la isla.</span></h2>
+        <p class="sub" data-t="mP">Salimos desde Cala Torret, en la costa sur. Algunas excursiones parten de Addaia, al norte, y la vuelta a Menorca rodea toda la isla.</p>
+      </div>
+      <div class="mapgrid">
+        <div class="mapbox rv"><svg id="map" viewBox="-20 -10 920 700" role="img" aria-label="Mapa de Menorca"></svg></div>
+        <div class="spots rv" id="spots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BARCAS -->
+  <section id="barcas">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow" data-t="bEy">Barcas</span>
+        <h2 data-t="bH" data-html>Tu barca, <span>con o sin licencia.</span></h2>
+        <p class="sub" data-t="bP">Sin licencia, con titulación náutica o con patrón: elige cómo quieres descubrir las calas del sur.</p>
+      </div>
+      <div class="boats" id="boats"></div>
+      <div class="note rv"><svg><use href="#i-info"/></svg><span data-t="bNote">Gasolina según consumo y fianza de 300 € no incluidas en el alquiler. Sin licencia: máximo 15 CV y 5 m de eslora, navegación costera y con buen tiempo; antes de salir te explicamos todo.</span></div>
+    </div>
+  </section>
+
+  <!-- ALQUILER -->
+  <section class="rent" id="alquiler">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow" data-t="rEy">Alquiler</span>
+        <h2 data-t="rH" data-html>Sal por tu cuenta, <span>a tu ritmo.</span></h2>
+        <p class="sub" data-t="rP">Kayaks, tablas de paddle surf y bicicletas. Precios claros, sin sorpresas.</p>
+      </div>
+      <div class="tabs rv" role="tablist" id="tabs"></div>
+      <div id="panels"></div>
+    </div>
+  </section>
+
+  <!-- VUELTA -->
+  <section class="vuelta" id="vuelta">
+    <div class="bgimg"><img src="https://www.sportskayak.es/wp-content/uploads/2024/03/vuelta-a-menorca-en-pareja1.webp" alt="" onerror="this.remove()"></div>
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow" style="color:var(--sun)" data-t="vEy">Vuelta a Menorca</span>
+        <h2 data-t="vH" data-html>Dormir en calas vírgenes, <span style="color:var(--sun)">llegar remando.</span></h2>
+        <p class="sub" data-t="vP">Rutas de varios días en kayak de travesía: con guía, comida y logística incluidas, o por tu cuenta con todo el material.</p>
+      </div>
+      <div class="vcards" id="vcards"></div>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section id="info">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow" data-t="iEy">Cómo funciona</span>
+        <h2 data-t="iH" data-html>Reservar es <span>fácil.</span></h2>
+      </div>
+      <div class="how rv">
+        <div><b data-t="h1b">Elige</b><p data-t="h1p">Actividad, día, horario y número de personas.</p></div>
+        <div><b data-t="h2b">Escríbenos</b><p data-t="h2p">La solicitud nos llega por WhatsApp con todos los datos.</p></div>
+        <div><b data-t="h3b">Confirmamos</b><p data-t="h3p">Te respondemos con la disponibilidad y cómo pagar.</p></div>
+        <div><b data-t="h4b">¡Al agua!</b><p data-t="h4p">Ven a Cala Torret 15 minutos antes. Nosotros ponemos el material.</p></div>
+      </div>
+
+      <div class="faqgrid">
+        <div class="rv">
+          <span class="eyebrow" data-t="qEy">Preguntas frecuentes</span>
+          <h2 style="font-size:clamp(28px,3.4vw,42px)" data-t="qH">Lo que nos preguntáis siempre.</h2>
+        </div>
+        <div class="rv" id="faq"></div>
+      </div>
+
+      <div class="groups rv">
+        <div>
+          <span class="eyebrow" data-t="gEy">Grupos a medida</span>
+          <h2 style="font-size:clamp(28px,3.4vw,42px)" data-t="gH">Empresas, escuelas y grupos grandes.</h2>
+          <p class="sub" data-t="gP">Preparamos excursiones de kayak y paddle surf, rutas guiadas de varios días, bicicletas para grupos de más de 10 personas y la escuela de verano. Cuéntanos qué necesitas.</p>
+          <ul id="glist"></ul>
+        </div>
+        <div><a class="btn navy" id="gbtn" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span data-t="gB">Pedir propuesta</span></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="wrap">
+      <div class="rv">
+        <span class="eyebrow" style="color:var(--teal2)" data-t="cEy">Contacto</span>
+        <h2 data-t="cH" data-html>Te esperamos en <span style="color:var(--sun)">Cala Torret.</span></h2>
+      </div>
+      <div class="cgrid">
+        <div class="clist rv">
+          <a href="https://wa.me/34616338393" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span><b>+34 616 338 393</b><small>WhatsApp</small></span></a>
+          <a href="tel:+34971150658"><svg><use href="#i-phone"/></svg><span><b>+34 971 150 658</b><small data-t="cTel">Teléfono</small></span></a>
+          <a href="mailto:info@sportskayak.es"><svg><use href="#i-mail"/></svg><span><b>info@sportskayak.es</b><small>Email</small></span></a>
+          <a href="https://maps.google.com/?q=Passeig+dels+Porxos+19,+Cala+Torret,+Sant+Llu%C3%ADs,+Menorca" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><span><b>Passeig dels Porxos 19</b><small>Cala Torret – Binibeca Nou · 07710 Sant Lluís, Menorca</small></span></a>
+        </div>
+        <div class="mapfr rv"><iframe title="Mapa Cala Torret" loading="lazy" src="https://maps.google.com/maps?q=Passeig%20dels%20Porxos%2019%2C%20Cala%20Torret%2C%20Sant%20Llu%C3%ADs%2C%20Menorca&z=15&output=embed"></iframe></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <div class="flogo"><img src="img/logo.png" alt="Sports & Kayak Menorca"></div>
+    <div class="fbadges">
+      <span class="bio"><svg viewBox="0 0 24 24"><path d="M12 3c-4 5-6 8-6 11a6 6 0 0 0 12 0c0-3-2-6-6-11z" fill="currentColor"/></svg><span data-t="bio">Menorca, Reserva de la Biosfera</span></span>
+      <span>Deportes de Aventura Menorca S.L. · B-06784797 · TA 0007 ME</span>
+    </div>
+    <div class="flinks">
+      <a href="https://www.instagram.com/sportskayak/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/kayakmenorca" target="_blank" rel="noopener">Facebook</a>
+      <a href="#info" data-t="cond">Condiciones de reserva</a>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" id="fab" href="https://wa.me/34616338393" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a>
+<div class="draft" id="draft">Borrador del sitio · preparado por Jacopo Dozio</div>
+
+<!-- drawer -->
+<div class="ov" id="ov"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="dhead"><div class="ph" id="dph"></div><button class="dclose" id="dclose" aria-label="Cerrar">×</button></div>
+  <div class="dbody" id="dbody"></div>
+  <div class="dfoot"><div class="from" id="dfrom"></div><button class="btn sun" id="dbook"><span data-t="book">Reservar</span><svg><use href="#i-arrow"/></svg></button></div>
+</aside>
+
+<!-- booking -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mtitle">
+  <div class="mbox">
+    <button class="x" id="mx" aria-label="Cerrar">×</button>
+    <span class="eyebrow" data-t="mbEy">Solicitud de reserva</span>
+    <h3 id="mtitle" data-t="mbH">¿Qué quieres reservar?</h3>
+    <form id="bform" novalidate>
+      <div class="fgrid2">
+        <div class="fld full"><label for="bAct" data-t="lAct">Actividad</label><select id="bAct" required></select></div>
+        <div class="fld full" id="wOpt"><label for="bOpt" data-t="lOpt">Opción</label><select id="bOpt"></select></div>
+        <div class="fld"><label for="bDate" data-t="lDate">Fecha</label><input id="bDate" type="date" required></div>
+        <div class="fld" id="wTime"><label for="bTime" data-t="lTime">Horario</label><select id="bTime"></select></div>
+        <div class="fld" id="wAd"><label id="lAd" data-t="lAd">Adultos</label><div class="step"><button type="button" data-s="bAd" data-d="-1">−</button><input id="bAd" type="number" min="0" value="2" inputmode="numeric"><button type="button" data-s="bAd" data-d="1">+</button></div></div>
+        <div class="fld" id="wCh"><label id="lCh" data-t="lCh">Niños</label><div class="step"><button type="button" data-s="bCh" data-d="-1">−</button><input id="bCh" type="number" min="0" value="0" inputmode="numeric"><button type="button" data-s="bCh" data-d="1">+</button></div></div>
+        <div class="fld full"><label for="bName" data-t="lName">Nombre</label><input id="bName" type="text" autocomplete="name" required></div>
+        <div class="fld full"><label for="bNote" data-t="lNote">Comentarios (opcional)</label><textarea id="bNote" rows="2"></textarea></div>
+      </div>
+      <p class="slotnote" id="slotnote"></p>
+      <div class="est"><div><small data-t="est">Precio orientativo</small><br><small id="estd"></small></div><b id="estp">—</b></div>
+      <p class="err" id="err" data-t="err">Completa actividad, fecha y nombre.</p>
+      <button class="btn wa" type="submit"><svg><use href="#i-wa"/></svg><span data-t="send">Enviar por WhatsApp</span></button>
+      <p class="mini" data-t="mbNote">No se cobra nada ahora: te confirmamos disponibilidad y precio final por WhatsApp.</p>
+    </form>
+  </div>
+</div>
+
+<script>
+/* ============ DATOS ============ */
+const IMG='https://www.sportskayak.es/wp-content/uploads/';
+const T={
+es:{nav1:'Actividades',nav2:'Dónde',nav3:'Barcas',nav4:'Alquiler',nav5:'Vuelta a Menorca',nav6:'Info',nav7:'Contacto',book:'Reservar',
+heroEy:'Cala Torret · Binibeca · Menorca',heroH:'Menorca, <em>desde el agua.</em>',heroP:'Excursiones en kayak y paddle surf, barcas con y sin licencia, bicis y la vuelta a la isla en kayak. Todo desde nuestra base en Cala Torret.',heroB1:'Ver actividades',
+f1:'reseñas Google · Excelente',f2:'Empresa de Turismo Activo',f3:'temporada de excursiones',f3b:'Abr – Sep',fWhat:'¿Qué buscas?',fWho:'¿Con quién?',
+aEy:'Actividades',aH:'Elige tu <span>plan.</span>',empty:'No hay actividades con estos filtros. Prueba otra combinación o escríbenos.',count:n=>n+(n==1?' actividad':' actividades'),
+mEy:'Dónde estamos',mH:'Una base, <span style="color:var(--sun)">toda la isla.</span>',mP:'Salimos desde Cala Torret, en la costa sur. Algunas excursiones parten de Addaia, al norte, y la vuelta a Menorca rodea toda la isla.',
+bEy:'Barcas',bH:'Tu barca, <span>con o sin licencia.</span>',bP:'Sin licencia, con titulación náutica o con patrón: elige cómo quieres descubrir las calas del sur.',bNote:'Gasolina según consumo y fianza de 300 € no incluidas en el alquiler. Sin licencia: máximo 15 CV y 5 m de eslora, navegación costera y con buen tiempo; antes de salir te explicamos todo.',
+rEy:'Alquiler',rH:'Sal por tu cuenta, <span>a tu ritmo.</span>',rP:'Kayaks, tablas de paddle surf y bicicletas. Precios claros, sin sorpresas.',
+vEy:'Vuelta a Menorca',vH:'Dormir en calas vírgenes, <span style="color:var(--sun)">llegar remando.</span>',vP:'Rutas de varios días en kayak de travesía: con guía, comida y logística incluidas, o por tu cuenta con todo el material.',
+iEy:'Cómo funciona',iH:'Reservar es <span>fácil.</span>',h1b:'Elige',h1p:'Actividad, día, horario y número de personas.',h2b:'Escríbenos',h2p:'La solicitud nos llega por WhatsApp con todos los datos.',h3b:'Confirmamos',h3p:'Te respondemos con la disponibilidad y cómo pagar.',h4b:'¡Al agua!',h4p:'Ven a Cala Torret 15 minutos antes. Nosotros ponemos el material.',
+qEy:'Preguntas frecuentes',qH:'Lo que nos preguntáis siempre.',gEy:'Grupos a medida',gH:'Empresas, escuelas y grupos grandes.',gP:'Preparamos excursiones de kayak y paddle surf, rutas guiadas de varios días, bicicletas para grupos de más de 10 personas y la escuela de verano. Cuéntanos qué necesitas.',gB:'Pedir propuesta',
+glist:['Empresas','Grupos escolares','Escuela de verano','Despedidas y cumpleaños','Grupos de bici (10+)'],
+cEy:'Contacto',cH:'Te esperamos en <span style="color:var(--sun)">Cala Torret.</span>',cTel:'Teléfono',bio:'Menorca, Reserva de la Biosfera',cond:'Condiciones de reserva',
+mbEy:'Solicitud de reserva',mbH:'¿Qué quieres reservar?',lAct:'Actividad',lOpt:'Opción',lDate:'Fecha',lTime:'Horario',lAd:'Adultos',lCh:'Niños',lName:'Nombre',lNote:'Comentarios (opcional)',est:'Precio orientativo',err:'Completa actividad, fecha y nombre.',send:'Enviar por WhatsApp',mbNote:'No se cobra nada ahora: te confirmamos disponibilidad y precio final por WhatsApp.',
+from:'desde',pp:'por persona',pb:'por barca',free:'gratis',dur:'Duración',sched:'Horario',season:'Temporada',meet:'Salida',ages:'Edades',incl:'Incluye',bring:'Qué traer',route:'Recorrido',notincl:'No incluido',prices:'Precios',more:'Ver detalles',
+chOf:a=>'Niños '+a,adult:'Adulto',child:'Niño',chFree:'4–7 años gratis (asiento central)',swim:'Imprescindible saber nadar',
+waHello:'¡Hola Sports & Kayak! Quiero solicitar una reserva:',waAct:'Actividad',waOpt:'Opción',waDate:'Fecha',waTime:'Horario',waPpl:'Personas',waName:'Nombre',waNote:'Comentarios',waEst:'Precio orientativo',waGroup:'¡Hola! Somos un grupo y queremos una propuesta a medida.',
+estNone:'a consultar',estDet:'Precio final confirmado por WhatsApp',walk:'Sin reserva previa: según disponibilidad en el centro',tel:'Teléfono',
+cat:{all:'Todo',exc:'Excursiones guiadas',boat:'Barcas',rent:'Alquiler',multi:'Varios días'},
+who:{all:'Todos',fam:'En familia',par:'En pareja',fri:'Con amigos',emp:'Empresas',esc:'Escuelas'}},
+en:{nav1:'Activities',nav2:'Where',nav3:'Boats',nav4:'Rentals',nav5:'Round Menorca',nav6:'Info',nav7:'Contact',book:'Book',
+heroEy:'Cala Torret · Binibeca · Menorca',heroH:'Menorca, <em>from the water.</em>',heroP:'Kayak and paddle board tours, boats with or without a licence, bikes and the round-the-island kayak trip. All from our base in Cala Torret.',heroB1:'See activities',
+f1:'Google reviews · Excellent',f2:'Licensed active tourism company',f3:'tour season',f3b:'Apr – Sep',fWhat:'Looking for',fWho:'Who with',
+aEy:'Activities',aH:'Pick your <span>plan.</span>',empty:'No activities match these filters. Try another combination or message us.',count:n=>n+(n==1?' activity':' activities'),
+mEy:'Where we are',mH:'One base, <span style="color:var(--sun)">the whole island.</span>',mP:'We start from Cala Torret on the south coast. Some tours leave from Addaia in the north, and the round-Menorca trip circles the whole island.',
+bEy:'Boats',bH:'Your own boat, <span>licence or not.</span>',bP:'No licence, with a boating licence or with a skipper: choose how you want to discover the southern coves.',bNote:'Fuel (charged by consumption) and the €300 deposit are not included in rentals. Without a licence: max 15 HP and 5 m, coastal sailing in good weather only; we brief you before you set off.',
+rEy:'Rentals',rH:'Head out on your own, <span>at your pace.</span>',rP:'Kayaks, paddle boards and bikes. Clear prices, no surprises.',
+vEy:'Round Menorca',vH:'Sleep in wild coves, <span style="color:var(--sun)">arrive by paddle.</span>',vP:'Multi-day sea kayak trips: guided with food and logistics included, or self-guided with all the gear.',
+iEy:'How it works',iH:'Booking is <span>easy.</span>',h1b:'Choose',h1p:'Activity, day, time and number of people.',h2b:'Message us',h2p:'Your request reaches us on WhatsApp with all the details.',h3b:'We confirm',h3p:'We reply with availability and how to pay.',h4b:'Into the water!',h4p:'Come to Cala Torret 15 minutes early. We provide the gear.',
+qEy:'FAQ',qH:'What everyone asks us.',gEy:'Tailor-made groups',gH:'Companies, schools and large groups.',gP:'We organise kayak and paddle board tours, guided multi-day routes, bikes for groups of 10+ and our summer school. Tell us what you need.',gB:'Ask for a proposal',
+glist:['Companies','School groups','Summer school','Parties & birthdays','Bike groups (10+)'],
+cEy:'Contact',cH:'See you in <span style="color:var(--sun)">Cala Torret.</span>',cTel:'Phone',bio:'Menorca, Biosphere Reserve',cond:'Booking conditions',
+mbEy:'Booking request',mbH:'What would you like to book?',lAct:'Activity',lOpt:'Option',lDate:'Date',lTime:'Time',lAd:'Adults',lCh:'Children',lName:'Name',lNote:'Comments (optional)',est:'Estimated price',err:'Please fill in activity, date and name.',send:'Send via WhatsApp',mbNote:'Nothing is charged now: we confirm availability and final price on WhatsApp.',
+from:'from',pp:'per person',pb:'per boat',free:'free',dur:'Duration',sched:'Times',season:'Season',meet:'Starts at',ages:'Ages',incl:'Included',bring:'What to bring',route:'Route',notincl:'Not included',prices:'Prices',more:'See details',
+chOf:a=>'Children '+a,adult:'Adult',child:'Child',chFree:'Ages 4–7 free (middle seat)',swim:'Must be able to swim',
+waHello:'Hi Sports & Kayak! I would like to request a booking:',waAct:'Activity',waOpt:'Option',waDate:'Date',waTime:'Time',waPpl:'People',waName:'Name',waNote:'Comments',waEst:'Estimated price',waGroup:'Hi! We are a group and would like a tailor-made proposal.',
+estNone:'on request',estDet:'Final price confirmed on WhatsApp',walk:'No advance booking: subject to availability on site',tel:'Phone',
+cat:{all:'All',exc:'Guided tours',boat:'Boats',rent:'Rentals',multi:'Multi-day'},
+who:{all:'Everyone',fam:'Family',par:'Couples',fri:'Friends',emp:'Companies',esc:'Schools'}}
+};
+const INCL_K={es:['Kayak individual o doble','Pala, chaleco y bolsa estanca','Guía-monitor','Equipo de snorkel','Fotos de la excursión','Seguro de RC y accidentes'],en:['Single or double kayak','Paddle, life jacket and dry bag','Guide-instructor','Snorkel gear','Photos of the tour','Liability and accident insurance']};
+const BRING={es:['Ropa y calzado que se puedan mojar','Cinta para las gafas de sol','Crema solar ecológica','Gorra, toalla y agua'],en:['Clothes and shoes that can get wet','Strap for your sunglasses','Reef-safe sunscreen','Cap, towel and water']};
+
+/* activities: p = pricing model for estimator */
+const A=[
+{id:'cuevas',cat:'exc',who:['fam','par','fri','emp'],ico:'kayak',g:['#0F8EA6','#0B2B45'],img:IMG+'2024/04/alquiler-kayak-en-pareja-1024x769.webp',spot:'torret',
+ n:{es:'Kayak Cuevas & Snorkel',en:'Kayak Caves & Snorkel'},s:{es:'Cuevas marinas, piscinas naturales y el pueblo blanco de Binibeca Vell, remando con guía.',en:'Sea caves, natural pools and the white village of Binibeca Vell, paddling with a guide.'},
+ dur:'3 h',times:['10:30','15:00'],season:{es:'Abril – septiembre',en:'April – September'},meet:'Cala Torret',ages:{es:'Todas las edades',en:'All ages'},
+ price:{ad:40,ch:30,chA:'8–12',free:'4–7'},p:'pp',
+ route:{es:["Cova d'es Pont y otras cuevas","Piscina natural para hacer snorkel","Binibeca Vell, el pueblo de pescadores","Las «ollas»: snorkel entre peces"],en:["Cova d'es Pont and other caves","Natural pool for snorkelling","Binibeca Vell fishing village","The «ollas»: snorkelling among fish"]},incl:'k',bring:1},
+{id:'sunset',cat:'exc',who:['par','fri','fam'],ico:'sun',g:['#F6B70F','#C2410C'],spot:'torret',
+ n:{es:'Kayak al atardecer',en:'Sunset kayak'},s:{es:'Grupos reducidos, baño y snorkel mientras el sol cae sobre la costa sur.',en:'Small groups, a swim and snorkelling as the sun sets over the south coast.'},
+ dur:'2,5 h',times:['18:30'],season:{es:'Junio – septiembre',en:'June – September'},meet:'Cala Torret',ages:{es:'Todas las edades',en:'All ages'},
+ price:{ad:40,ch:30,chA:'8–12',free:'4–7'},p:'pp',schedTxt:'18:30 – 21:00',
+ route:{es:['Remada por la costa de Cala Torret','Baño y snorkel','Puesta de sol desde el agua'],en:['Paddle along the Cala Torret coast','Swim and snorkel','Sunset from the water']},incl:'k',bring:1},
+{id:'transparente',cat:'exc',who:['fam','par','fri'],ico:'fish',g:['#16AFC4','#0F6E8A'],img:IMG+'2023/04/GOPR3903-b-scaled.jpg',spot:'addaia',
+ n:{es:'Kayak transparente',en:'Clear kayak'},s:{es:'Ves el fondo bajo tus pies: peces, posidonia y estrellas de mar en la bahía de Addaia.',en:'See the seabed beneath you: fish, posidonia and starfish in Addaia bay.'},
+ dur:'2 h',times:['10:00','12:00'],season:{es:'Junio – septiembre',en:'June – September'},meet:{es:'Bahía de Addaia',en:'Addaia bay'},ages:{es:'Todas las edades',en:'All ages'},
+ price:{ad:50,ch:40,chA:'5–12'},p:'pp',
+ route:{es:['Bahía de Addaia','Praderas de posidonia','Snorkel con peces de colores y, con suerte, algún pulpo'],en:['Addaia bay','Posidonia meadows','Snorkelling with colourful fish and, with luck, an octopus']},incl:'k',bring:1},
+{id:'montgofre',cat:'exc',who:['fri','par','fam','emp'],ico:'kayak',g:['#2E8B57','#0B2B45'],spot:'mongofre',
+ n:{es:'Parque Natural Mongofre',en:'Mongofre Natural Park'},s:{es:'Costa protegida y playas a las que solo se llega por mar, saliendo de Addaia.',en:'Protected coastline and beaches you can only reach by sea, leaving from Addaia.'},
+ dur:'3 h',times:['10:30','15:00'],season:{es:'Junio – septiembre',en:'June – September'},meet:{es:'Puerto de Addaia',en:'Addaia harbour'},ages:{es:'Todas las edades',en:'All ages'},
+ price:{ad:40,ch:30,chA:'8–12',free:'4–7'},p:'pp',
+ route:{es:['Explicación en tierra: técnica y seguridad','Zona protegida hasta la «olla» del islote','Playas de Mongofre y s\'Enclusa','Baño, descanso y snorkel'],en:['Briefing on land: technique and safety','Protected area to the islet\'s «olla»','Mongofre and s\'Enclusa beaches','Swim, rest and snorkel']},
+ extra:{es:'Si el mar no acompaña, la ruta se hace dentro de la bahía de Addaia.',en:'If the sea is rough, the route stays inside Addaia bay.'},incl:'k',bring:1},
+{id:'supexc',cat:'exc',who:['fri','emp','fam','par'],ico:'sup',g:['#0F8EA6','#16AFC4'],img:IMG+'2024/03/alquiler-sup-con-amigos-scaled-1-scaled.webp',spot:'torret',
+ n:{es:'Paddle surf Cala Torret – Binibeca',en:'Paddle board Cala Torret – Binibeca'},s:{es:'De pie sobre la tabla hasta Binibeca, con cuevas, piscina natural y snorkel.',en:'Stand-up paddling to Binibeca, with caves, a natural pool and snorkelling.'},
+ dur:'2,5 h',times:['16:30'],schedTxt:'16:30 – 19:00',season:{es:'Junio – septiembre',en:'June – September'},meet:'Cala Torret',ages:{es:'Desde 5 años',en:'From age 5'},
+ price:{ad:40,ch:30,chA:'5–12'},p:'pp',
+ route:{es:['Explicación en tierra y práctica en la bahía','Sa Cova des Pont','Piscina natural y otras cuevas','Paradas de snorkel y vuelta a Cala Torret'],en:['Land briefing and practice in the bay','Sa Cova des Pont','Natural pool and other caves','Snorkel stops and back to Cala Torret']},
+ inclL:{es:['Tabla y remo de SUP','Bolsa estanca 5 L','Snorkel','Fotos','Seguro'],en:['SUP board and paddle','5 L dry bag','Snorkel','Photos','Insurance']},bring:1},
+{id:'patron',cat:'boat',who:['fam','par','fri','emp'],ico:'boat',g:['#123C5E','#0F8EA6'],img:IMG+'2024/03/kayak-transparente1-con-amigos-scaled.webp',spot:'torret',
+ n:{es:'Excursión en barca con patrón',en:'Skippered boat trip'},s:{es:'Quicksilver 675 con patrón: calas escondidas, snorkel y paddle surf sin preocuparte de nada.',en:'Quicksilver 675 with a skipper: hidden coves, snorkelling and paddle boarding, no worries.'},
+ dur:{es:'Medio día · Día completo · Sunset',en:'Half day · Full day · Sunset'},season:{es:'Temporada',en:'Season'},meet:{es:'Cala Torret o Puerto de Mahón',en:'Cala Torret or Mahón harbour'},ages:{es:'6–8 personas',en:'6–8 people'},
+ price:{boat:350},p:'boat',opts:{es:['Medio día','Día completo','Sunset'],en:['Half day','Full day','Sunset']},
+ route:{es:['Cala Rafalet','Isla del Aire','Es Caló Blanc','Sa Mesquida e Illa d\'en Colom'],en:['Cala Rafalet','Illa de l\'Aire','Es Caló Blanc','Sa Mesquida and Illa d\'en Colom']},
+ inclL:{es:['Patrón con experiencia','Snorkel','Bebidas (y snacks en día completo)','Paddle surf en día completo'],en:['Experienced skipper','Snorkel gear','Drinks (and snacks on full day)','Paddle board on full day']}},
+{id:'voraz',cat:'boat',who:['fam','par','fri'],ico:'boat',g:['#0F8EA6','#123C5E'],spot:'torret',
+ n:{es:'Barca sin licencia · Voraz 400',en:'No-licence boat · Voraz 400'},s:{es:'4 m y 15 CV: fácil de llevar, ideal para descubrir las calas cercanas a tu aire.',en:'4 m and 15 HP: easy to handle, ideal for exploring nearby coves your way.'},
+ dur:{es:'Mañana · Tarde · Sunset',en:'Morning · Afternoon · Sunset'},season:{es:'Temporada',en:'Season'},meet:'Cala Torret',ages:{es:'Hasta 4 personas',en:'Up to 4 people'},
+ price:{boat:140},p:'boat',opts:{es:['Mañana 10:00–14:00','Tarde 14:30–18:30','Sunset 19:00–21:00'],en:['Morning 10:00–14:00','Afternoon 14:30–18:30','Sunset 19:00–21:00']},
+ route:{es:['Binibeca','Cala Biniparratx','Caló Blanc','Es Caló Roig'],en:['Binibeca','Cala Biniparratx','Caló Blanc','Es Caló Roig']},
+ inclL:{es:['Toldo, escalera de baño y nevera','Solárium','Chalecos, botiquín y equipo de seguridad','Seguro de RC y ocupantes','Formación antes de salir'],en:['Canopy, swim ladder and cool box','Sun pad','Life jackets, first-aid kit and safety gear','Liability and passenger insurance','Briefing before departure']},
+ notL:{es:['Gasolina (según consumo)','Fianza 300 €','Snorkel (opcional)'],en:['Fuel (by consumption)','€300 deposit','Snorkel (optional)']}},
+{id:'trimarchi',cat:'boat',who:['fam','fri','par'],ico:'boat',g:['#0B2B45','#16AFC4'],spot:'torret',
+ n:{es:'Barca con licencia · Trimarchi S 53',en:'Licence boat · Trimarchi S 53'},s:{es:'5,30 m y 60 CV para 6 personas, con ducha, mesa y altavoz Bluetooth.',en:'5.30 m and 60 HP for 6 people, with shower, table and Bluetooth speaker.'},
+ dur:{es:'Medio día · Día completo · Sunset',en:'Half day · Full day · Sunset'},season:{es:'Junio – septiembre',en:'June – September'},meet:'Cala Torret',ages:{es:'Hasta 6 personas · titulación náutica',en:'Up to 6 people · boating licence'},
+ price:{boat:250},p:'boat',opts:{es:['Medio día 10:00–14:00','Medio día 14:30–18:30','Día completo 10:00–18:00','Sunset 19:00–21:00'],en:['Half day 10:00–14:00','Half day 14:30–18:30','Full day 10:00–18:00','Sunset 19:00–21:00']},
+ inclL:{es:['Toldo, escalera de baño y nevera','Mesa desmontable y dos soláriums','Ducha de agua dulce','Radio y altavoz Bluetooth','Chalecos y equipo de seguridad completo'],en:['Canopy, swim ladder and cool box','Folding table and two sun pads','Fresh-water shower','Radio and Bluetooth speaker','Life jackets and full safety gear']},
+ notL:{es:['Gasolina (según consumo)','Fianza 300 €','Snorkel y bebidas'],en:['Fuel (by consumption)','€300 deposit','Snorkel and drinks']}},
+{id:'quicksilver',cat:'boat',who:['fri','emp','fam'],ico:'boat',g:['#123C5E','#0B2B45'],spot:'torret',
+ n:{es:'Barca con licencia · Quicksilver 675',en:'Licence boat · Quicksilver 675'},s:{es:'7 m y 150 CV para hasta 8 personas: la más amplia, para un día entero en el mar.',en:'7 m and 150 HP for up to 8 people: the roomiest, for a full day at sea.'},
+ dur:{es:'Día completo 10:00–18:00',en:'Full day 10:00–18:00'},season:{es:'Temporada',en:'Season'},meet:'Cala Torret',ages:{es:'Hasta 8 personas · titulación náutica',en:'Up to 8 people · boating licence'},
+ price:{boat:500},p:'boat',opts:{es:['Día completo 10:00–18:00'],en:['Full day 10:00–18:00']},
+ notL:{es:['Gasolina (según consumo)','Fianza 300 €'],en:['Fuel (by consumption)','€300 deposit']}},
+{id:'kayakrent',cat:'rent',who:['fam','par','fri'],ico:'kayak',g:['#16AFC4','#0B2B45'],spot:'torret',walk:1,
+ n:{es:'Alquiler de kayak',en:'Kayak rental'},s:{es:'Kayak abierto individual o doble, por horas o por día, desde Cala Torret.',en:'Sit-on-top single or double kayak, by the hour or day, from Cala Torret.'},
+ dur:{es:'1 h – 1 día',en:'1 h – 1 day'},season:{es:'Temporada',en:'Season'},meet:'Cala Torret',ages:{es:'Todas las edades',en:'All ages'},
+ price:{from:20},p:'table',tab:'kayak'},
+{id:'suprent',cat:'rent',who:['fam','par','fri','emp'],ico:'sup',g:['#0F8EA6','#16AFC4'],img:IMG+'2024/03/alquiler-sup-con-amigos-scaled-1-scaled.webp',spot:'torret',
+ n:{es:'Alquiler paddle surf y Jumbo SUP',en:'Paddle board & Jumbo SUP rental'},s:{es:'Tablas individuales o la Jumbo gigante para hasta 6 adultos (u 8–9 niños).',en:'Single boards or the giant Jumbo for up to 6 adults (or 8–9 kids).'},
+ dur:{es:'1 h – 1 día',en:'1 h – 1 day'},season:{es:'Temporada',en:'Season'},meet:'Cala Torret',ages:{es:'Todas las edades',en:'All ages'},
+ price:{from:20},p:'table',tab:'sup'},
+{id:'bikes',cat:'rent',who:['fam','par','fri','emp','esc'],ico:'bike',g:['#2E8B57','#123C5E'],img:IMG+'2024/03/bicis_cabecera_resized.webp',spot:'torret',
+ n:{es:'Bicicletas, e-bike y patinete',en:'Bikes, e-bikes and scooters'},s:{es:'BTT, bicis eléctricas y patinetes, con entrega en toda la isla bajo petición.',en:'Mountain bikes, e-bikes and e-scooters, with island-wide delivery on request.'},
+ dur:{es:'2 h – 7 días',en:'2 h – 7 days'},season:{es:'Todo el año (consultar)',en:'All year (ask us)'},meet:'Cala Torret',ages:{es:'Adultos y niños',en:'Adults and kids'},
+ price:{from:15},p:'table',tab:'bike'},
+{id:'propia',cat:'multi',who:['fri','par','esc'],ico:'tent',g:['#0B2B45','#2E8B57'],img:IMG+'2024/03/vuelta-a-menorca-en-pareja1.webp',spot:'vuelta',
+ n:{es:'Tu propia ruta en kayak',en:'Self-guided kayak trip'},s:{es:'Kayak de travesía, material y kit de acampada para dar la vuelta a tu aire.',en:'Sea kayak, gear and camping kit to paddle round the island your way.'},
+ dur:{es:'1 – 7+ días',en:'1 – 7+ days'},season:{es:'Temporada',en:'Season'},meet:'Cala Torret',ages:{es:'Con experiencia en kayak',en:'Kayaking experience needed'},
+ price:{from:50},p:'table',tab:'travesia'},
+{id:'ruta4',cat:'multi',who:['fri','par','esc','emp'],ico:'tent',g:['#123C5E','#F6B70F'],img:IMG+'2024/03/vuelta-a-menorca-en-pareja1.webp',spot:'vuelta',
+ n:{es:'Ruta guiada 4 días',en:'4-day guided route'},s:{es:'La esencia de la travesía: kayak, calas vírgenes y noches bajo las estrellas, con guía.',en:'The essence of sea kayaking: wild coves and nights under the stars, with a guide.'},
+ dur:{es:'4 días',en:'4 days'},season:{es:'Temporada (consultar fechas)',en:'Season (ask for dates)'},meet:{es:'Recogida en el aeropuerto',en:'Airport pick-up'},ages:{es:'Con algo de experiencia',en:'Some experience'},
+ price:{ad:435},p:'ppOnly',
+ inclL:{es:['Material de kayak','Comida y bebida (adaptada a tu dieta)','Logística para dormir y cocinar en la playa','Transporte en furgoneta y recogida en aeropuerto','Camiseta, reportaje fotográfico y seguro'],en:['Kayak gear','Food and drinks (adapted to your diet)','Beach sleeping and cooking logistics','Van transport and airport pick-up','T-shirt, photo report and insurance']}},
+{id:'ruta8',cat:'multi',who:['fri','par','emp'],ico:'tent',g:['#0B2B45','#0F8EA6'],img:IMG+'2024/03/vuelta-a-menorca-en-pareja1.webp',spot:'vuelta',
+ n:{es:'Ruta guiada 8 días',en:'8-day guided route'},s:{es:'La vuelta completa: 8 días y 7 noches, cuevas marinas, snorkel y calas aisladas.',en:'The full loop: 8 days, 7 nights, sea caves, snorkelling and remote coves.'},
+ dur:{es:'8 días · 7 noches',en:'8 days · 7 nights'},season:{es:'Temporada (consultar fechas)',en:'Season (ask for dates)'},meet:{es:'Recogida en el aeropuerto',en:'Airport pick-up'},ages:{es:'Buena forma física',en:'Good fitness'},
+ price:{ad:745},p:'ppOnly',
+ inclL:{es:['Material de kayak','Comida y bebida (menús acordados por email)','Logística para dormir y cocinar en la playa','Transporte en furgoneta, recogida y traslado (Mahón)','Camiseta, reportaje fotográfico y seguro'],en:['Kayak gear','Food and drinks (menus agreed by email)','Beach sleeping and cooking logistics','Van transport, pick-up and drop-off (Mahón)','T-shirt, photo report and insurance']}}
+];
+
+/* rental tables */
+const RT={
+kayak:{ico:'kayak',img:IMG+'2024/04/alquiler-kayak-en-pareja-1024x769.webp',g:['#16AFC4','#0B2B45'],
+ h:{es:'Kayak abierto',en:'Sit-on-top kayak'},p:{es:'Kayaks estables y cómodos, con respaldo, reposapiés y elásticos en cubierta. Perfectos para explorar las calas de alrededor.',en:'Stable, comfortable kayaks with backrest, footrests and deck bungees. Perfect for exploring the coves nearby.'},
+ cols:{es:['','Individual','Doble'],en:['','Single','Double']},rows:[['1 h',20,30],['2 h',30,40],['4 h',40,50],['day',50,70]],
+ mini:{es:'Sin reserva previa: los kayaks abiertos se alquilan según disponibilidad en el centro. Pregúntanos por WhatsApp.',en:'No advance booking: sit-on-top kayaks are rented subject to availability on site. Ask us on WhatsApp.'}},
+sup:{ico:'sup',img:IMG+'2024/03/alquiler-sup-con-amigos-scaled-1-scaled.webp',g:['#0F8EA6','#16AFC4'],
+ h:{es:'Paddle surf',en:'Paddle board'},p:{es:'Tablas fáciles de manejar para todos los niveles. La Jumbo gigante es para grupos: mínimo 3 personas, hasta 6 adultos u 8–9 niños.',en:'Easy boards for every level. The giant Jumbo is for groups: minimum 3 people, up to 6 adults or 8–9 kids.'},
+ cols:{es:['','Tabla individual','Jumbo (grupo)'],en:['','Single board','Jumbo (group)']},rows:[['1 h',20,50],['2 h',25,75],['3 h',30,null],['4 h',35,null],['day',50,null]]},
+bike:{ico:'bike',img:IMG+'2024/04/E-BIKE-cami-de-cavalls.webp',g:['#2E8B57','#123C5E'],
+ h:{es:'Bicicletas y patinetes',en:'Bikes and scooters'},p:{es:'BTT con casco y candado (en varios días, también kit de reparación). E-bike desde 40 €/día con casco, mochila, guantes, luces, funda estanca para el móvil e inflador.',en:'Mountain bikes with helmet and lock (repair kit on multi-day rentals). E-bikes from €40/day with helmet, backpack, gloves, lights, waterproof phone case and pump.'},
+ cols:{es:['','BTT','Patinete'],en:['','Mountain bike','Scooter']},rows:[['2 h',15,15],['half',20,20],['day',24,25],['2d',39,38],['3d',51,null],['4d',62,null],['5d',72,null],['6d',81,null],['7d',89,null],['xd',9,null]],
+ mini:{es:'Fianza e-bike y patinete: 200 €. Entrega o recogida en toda la isla: 40 € · entrega + recogida: 60 € (bajo petición).',en:'E-bike and scooter deposit: €200. Island-wide delivery or pick-up: €40 · both: €60 (on request).'}},
+travesia:{ico:'tent',img:IMG+'2024/03/vuelta-a-menorca-en-pareja1.webp',g:['#0B2B45','#2E8B57'],
+ h:{es:'Kayak de travesía',en:'Sea touring kayak'},p:{es:'Para tu propia ruta: kayak con compartimentos estancos, pala, chaleco, faldón y bolsa estanca por persona, guía aérea de la costa y previsión del tiempo diaria por WhatsApp.',en:'For your own route: kayak with watertight hatches, paddle, life jacket, spray skirt and dry bag per person, aerial coast guide and daily weather forecast on WhatsApp.'},
+ cols:{es:['','Individual','Doble','Kit acampada'],en:['','Single','Double','Camping kit']},rows:[['1d',50,80,null],['2d',75,130,20],['3d',95,170,29],['4d',115,210,38],['5d',135,240,46],['6d',150,270,53],['7d',165,300,59],['xd',20,35,6]],
+ mini:{es:'En rutas de 7+ días para 2 o más personas recogemos el material en cualquier punto accesible de la costa (según disponibilidad).',en:'On 7+ day routes for 2 or more people we collect the gear from any accessible point on the coast (subject to availability).'}}
+};
+const DL={es:{day:'1 día','half':'½ día','2d':'2 días','3d':'3 días','4d':'4 días','5d':'5 días','6d':'6 días','7d':'7 días','1d':'1 día',xd:'Día extra'},en:{day:'1 day','half':'½ day','2d':'2 days','3d':'3 days','4d':'4 days','5d':'5 days','6d':'6 days','7d':'7 days','1d':'1 day',xd:'Extra day'}};
+
+const FAQ={
+es:[['¿Hace falta experiencia?','No para las excursiones guiadas ni para el alquiler por horas: antes de salir te explicamos la técnica y la seguridad. Sí es imprescindible saber nadar. Para la ruta por tu cuenta en kayak de travesía pedimos experiencia.'],
+['¿Pueden venir niños?','Sí. En las excursiones en kayak los niños de 4 a 7 años van gratis en el asiento central de un kayak doble; de 8 a 12 años pagan tarifa infantil. Kayak transparente y paddle surf: desde 5 años.'],
+['¿Qué pasa si hace mal tiempo?','La seguridad va primero: si el mar no permite salir, te proponemos otro día o otra ruta (por ejemplo, dentro de la bahía de Addaia) o cancelamos sin coste.'],
+['¿Cómo se cancela?','Excursiones: gratis hasta 24 h antes. Barcas a motor: gratis hasta 48 h antes. Kayak de travesía: gratis hasta 15 días antes, 50 % entre 15 y 7 días, después se puede cobrar el total.'],
+['¿Necesito licencia para la barca?','La Voraz 400 no requiere licencia ni experiencia (máx. 15 CV). Trimarchi S 53 y Quicksilver 675 requieren titulación náutica en vigor, o puedes elegir la excursión con patrón.'],
+['¿Puedo llevar comida y bebida en la barca?','Sí, puedes llevar comida, bebida y hielo. Las barcas tienen nevera y espacio para un picnic.'],
+['¿Cómo se paga?','Al confirmar la reserva te indicamos cómo pagar. Para garantizarla se solicita tarjeta de crédito. Si necesitas factura, pídela a info@sportskayak.es.']],
+en:[['Do I need experience?','Not for guided tours or hourly rentals: we explain technique and safety before you start. You must be able to swim. For self-guided sea kayak trips we ask for previous experience.'],
+['Can children come?','Yes. On kayak tours children aged 4–7 go free in the middle seat of a double kayak; ages 8–12 pay the child rate. Clear kayak and paddle board: from age 5.'],
+['What if the weather is bad?','Safety first: if the sea doesn\'t allow it, we offer another day or route (for example inside Addaia bay) or cancel at no cost.'],
+['How do cancellations work?','Tours: free up to 24 h before. Motorboats: free up to 48 h before. Touring kayaks: free up to 15 days before, 50% between 15 and 7 days, after that the full amount may be charged.'],
+['Do I need a licence for the boat?','The Voraz 400 needs no licence or experience (max 15 HP). The Trimarchi S 53 and Quicksilver 675 need a valid boating licence, or choose the skippered trip.'],
+['Can I bring food and drinks on the boat?','Yes, you can bring food, drinks and ice. The boats have a cool box and room for a picnic.'],
+['How do I pay?','When we confirm your booking we tell you how to pay. A credit card is required to guarantee it. For an invoice, write to info@sportskayak.es.']]};
+
+/* map spots (lon,lat) */
+const SPOTS=[
+{id:'torret',base:1,ll:[4.247,39.823],n:{es:'Cala Torret · nuestra base',en:'Cala Torret · our base'},d:{es:'Kayak, paddle surf, barcas y bicis. Passeig dels Porxos 19.',en:'Kayaks, paddle boards, boats and bikes. Passeig dels Porxos 19.'}},
+{id:'binibeca',ll:[4.230,39.826],n:{es:'Binibeca Vell y Cova d\'es Pont',en:'Binibeca Vell and Cova d\'es Pont'},d:{es:'Cuevas, piscina natural y el pueblo blanco.',en:'Caves, natural pool and the white village.'}},
+{id:'aire',ll:[4.293,39.802],n:{es:'Isla del Aire',en:'Illa de l\'Aire'},d:{es:'Parada de la excursión con patrón.',en:'Stop on the skippered boat trip.'}},
+{id:'mahon',ll:[4.268,39.889],n:{es:'Puerto de Mahón',en:'Mahón harbour'},d:{es:'Salida alternativa de la barca con patrón.',en:'Alternative departure for the skippered boat.'}},
+{id:'addaia',ll:[4.205,40.012],n:{es:'Addaia',en:'Addaia'},d:{es:'Kayak transparente y salida a Mongofre.',en:'Clear kayak and start of the Mongofre tour.'}},
+{id:'mongofre',ll:[4.232,40.000],n:{es:'Mongofre · Parque Natural',en:'Mongofre · Natural Park'},d:{es:'Playas a las que solo se llega por mar.',en:'Beaches only reachable by sea.'}},
+{id:'vuelta',ll:[3.86,40.03],n:{es:'Vuelta a Menorca',en:'Round Menorca'},d:{es:'Toda la costa en kayak, 4 a 8 días.',en:'The whole coast by kayak, 4 to 8 days.'}}
+];
+/* simplified Menorca coastline (lon,lat), clockwise from Ciutadella */
+const COAST=[[3.832,39.998],[3.818,39.965],[3.823,39.925],[3.860,39.922],[3.900,39.925],[3.940,39.930],[3.975,39.928],[4.010,39.918],[4.050,39.910],[4.085,39.902],[4.120,39.878],[4.160,39.860],[4.195,39.845],[4.225,39.828],[4.250,39.820],[4.275,39.812],[4.292,39.822],[4.300,39.842],[4.296,39.862],[4.306,39.872],[4.325,39.878],[4.312,39.887],[4.285,39.890],[4.262,39.893],[4.272,39.905],[4.290,39.925],[4.282,39.955],[4.255,39.985],[4.230,40.005],[4.205,40.020],[4.180,40.030],[4.150,40.050],[4.125,40.060],[4.095,40.078],[4.080,40.090],[4.050,40.070],[4.010,40.060],[3.970,40.058],[3.930,40.055],[3.890,40.050],[3.855,40.045],[3.836,40.030]];
+
+/* ============ STATE ============ */
+let L='es';try{const s=localStorage.getItem('sk-lang');if(s==='en'||s==='es')L=s;else if((navigator.language||'').slice(0,2)!=='es'&&(navigator.language||'').slice(0,2)!=='ca')L='en'}catch(e){}
+let fc='all',fw='all',curA=null;
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const tx=v=>v==null?'':(typeof v==='object'&&!Array.isArray(v)?(v[L]??v.es):v);
+const eur=n=>L==='es'?n+' €':'€'+n;
+const icon=(n,c='')=>`<svg class="${c}"><use href="#i-${n}"/></svg>`;
+function ph(o,extraTag=''){return `<div class="ph" style="--g1:${o.g?o.g[0]:'#0F8EA6'};--g2:${o.g?o.g[1]:'#0B2B45'}"><div class="ico">${icon(o.ico)}</div>${o.img?`<img src="${o.img}" alt="${tx(o.n||o.h)}" loading="lazy" onerror="this.remove()">`:''}${extraTag}</div>`}
+function fromPrice(a){const p=a.price;const v=p.ad??p.boat??p.from;return v}
+function priceLbl(a){const t=T[L];if(a.p==='boat')return `<small>${t.from}</small>${eur(a.price.boat)}`;if(a.p==='ppOnly')return `<small>${t.pp}</small>${eur(a.price.ad)}`;return `<small>${t.from}</small>${eur(fromPrice(a))}`}
+
+/* ============ RENDER ============ */
+function renderI18n(){document.documentElement.lang=L;$$('[data-t]').forEach(el=>{const k=el.dataset.t;const v=T[L][k];if(typeof v!=='string')return;if(el.hasAttribute('data-html'))el.innerHTML=v;else el.textContent=v});
+ $$('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===L));
+ $('#draft').textContent=L==='es'?'Borrador del sitio · preparado por Jacopo Dozio':'Website draft · prepared by Jacopo Dozio';
+ $('#glist').innerHTML=T[L].glist.map(x=>`<li>${x}</li>`).join('');
+ $('#gbtn').href='https://wa.me/34616338393?text='+encodeURIComponent(T[L].waGroup);
+}
+function renderFilters(){const t=T[L];
+ const mk=(box,obj,cur,key)=>{box.querySelectorAll('.chip').forEach(c=>c.remove());Object.entries(obj).forEach(([k,v])=>{const n=k==='all'?A.length:A.filter(a=>key==='cat'?a.cat===k:a.who.includes(k)).length;const b=document.createElement('button');b.className='chip';b.dataset.k=k;b.setAttribute('aria-pressed',k===cur);b.innerHTML=`${v} <span class="n">${n}</span>`;b.onclick=()=>{if(key==='cat')fc=k;else fw=k;renderFilters();applyFilter()};box.appendChild(b)})};
+ mk($('#fcat'),t.cat,fc,'cat');mk($('#fwho'),t.who,fw,'who');}
+function renderGrid(){const t=T[L];$('#grid').innerHTML=A.map(a=>`<button class="card rv" data-id="${a.id}" data-cat="${a.cat}" data-who="${a.who.join(' ')}">${ph(a,`<span class="tag">${t.cat[a.cat]}</span><span class="price">${priceLbl(a)}</span>`)}<div class="bd"><h3>${tx(a.n)}</h3><p>${tx(a.s)}</p><div class="meta"><span>${icon('clock')}${tx(a.dur)}</span><span>${icon('pin')}${tx(a.meet)}</span></div><div class="more">${t.more}${icon('arrow')}</div></div></button>`).join('');
+ $$('#grid .card').forEach(c=>c.onclick=()=>openDrawer(c.dataset.id));applyFilter();observe();}
+function applyFilter(){let n=0;$$('#grid .card').forEach(c=>{const ok=(fc==='all'||c.dataset.cat===fc)&&(fw==='all'||c.dataset.who.split(' ').includes(fw));c.classList.toggle('hid',!ok);if(ok){n++;c.classList.add('in')}});$('#count').textContent=T[L].count(n);$('#empty').style.display=n?'none':'block'}
+function renderBoats(){const t=T[L];const B=['voraz','trimarchi','patron'].map(id=>A.find(a=>a.id===id));
+ const sp={voraz:['4 m','15 CV','4'],trimarchi:['5,3 m','60 CV','6'],patron:['7 m','150 CV','6–8']};
+ const lic={voraz:[L==='es'?'Sin licencia':'No licence',''],trimarchi:[L==='es'?'Con licencia':'Licence needed','y'],patron:[L==='es'?'Con patrón':'With skipper','']};
+ const capL=L==='es'?['eslora','motor','pers.']:['length','engine','people'];
+ $('#boats').innerHTML=B.map(a=>`<article class="boat rv">${ph(a)}<div class="bd"><span class="lic ${lic[a.id][1]}">${lic[a.id][0]}</span><h3>${tx(a.n).split('·').pop().trim()}</h3><p style="color:var(--ink2)">${tx(a.s)}</p><div class="specs">${sp[a.id].map((v,i)=>`<div><b>${v}</b><small>${capL[i]}</small></div>`).join('')}</div><ul>${(tx(a.inclL)||[]).slice(0,4).map(x=>`<li>${x}</li>`).join('')}</ul><div class="foot"><div class="from"><small>${t.from} · ${t.pb}</small>${eur(a.price.boat)}</div><button class="btn navy" data-open="${a.id}">${t.more}</button></div></div></article>`).join('')
+;
+ const q=A.find(a=>a.id==='quicksilver');$('#boats').insertAdjacentHTML('beforeend',`<article class="boat rv" style="grid-column:1/-1"><div class="bd" style="flex-direction:row;flex-wrap:wrap;align-items:center;gap:16px"><span class="lic y">${L==='es'?'Con licencia':'Licence needed'}</span><div style="flex:1;min-width:220px"><h3 style="font-size:22px">Quicksilver 675 Open</h3><p style="color:var(--ink2)">${tx(q.s)}</p></div><div class="from" style="font:900 italic 24px var(--fh)"><small style="display:block;font:600 12px var(--fb);color:var(--ink2);font-style:normal">${t.from} · ${L==='es'?'por día':'per day'}</small>${eur(500)}</div><button class="btn navy" data-open="quicksilver">${t.more}</button></div></article>`);
+ $$('[data-open]').forEach(b=>b.onclick=()=>openDrawer(b.dataset.open));observe();}
+function tableHTML(k){const r=RT[k];const c=tx(r.cols);return `<table class="pt"><thead><tr>${c.map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${r.rows.map(row=>`<tr><td>${DL[L][row[0]]||row[0]}</td>${row.slice(1).map(v=>`<td>${v==null?'—':eur(v)}</td>`).join('')}</tr>`).join('')}</tbody></table>`}
+function renderRent(){const keys=['kayak','sup','bike','travesia'];const cur=$('#tabs [aria-selected=true]')?.dataset.k||'kayak';
+ $('#tabs').innerHTML=keys.map(k=>`<button role="tab" data-k="${k}" aria-selected="${k===cur}">${icon(RT[k].ico)}${tx(RT[k].h)}</button>`).join('');
+ const actFor={kayak:'kayakrent',sup:'suprent',bike:'bikes',travesia:'propia'};
+ $('#panels').innerHTML=keys.map(k=>{const r=RT[k];return `<div class="panel ${k===cur?'on':''}" data-k="${k}" role="tabpanel">${ph(r)}<div class="ptx"><h3>${tx(r.h)}</h3><p>${tx(r.p)}</p>${tableHTML(k)}${r.mini?`<p class="mini">${tx(r.mini)}</p>`:''}<button class="btn sun" data-book="${actFor[k]}">${k==='kayak'?(L==='es'?'Preguntar disponibilidad':'Check availability'):T[L].book}${icon('arrow')}</button></div></div>`}).join('');
+ $$('#tabs button').forEach(b=>b.onclick=()=>{$$('#tabs button').forEach(x=>x.setAttribute('aria-selected',x===b));$$('.panel').forEach(p=>p.classList.toggle('on',p.dataset.k===b.dataset.k))});bindBook();}
+function renderVuelta(){const t=T[L];const V=['ruta4','ruta8','propia'].map(id=>A.find(a=>a.id===id));const d={ruta4:'4',ruta8:'8',propia:'1–7+'};
+ $('#vcards').innerHTML=V.map(a=>`<button class="vc rv" data-id="${a.id}"><div class="days">${d[a.id]}<small>${L==='es'?'días':'days'}</small></div><h3>${tx(a.n)}</h3><p>${tx(a.s)}</p><div class="pr">${a.p==='ppOnly'?`${eur(a.price.ad)} <small>${t.pp}</small>`:`<small>${t.from}</small> ${eur(a.price.from)} <small>${L==='es'?'/ día':'/ day'}</small>`}</div></button>`).join('');
+ $$('.vc').forEach(c=>c.onclick=()=>openDrawer(c.dataset.id));observe();}
+function renderFaq(){$('#faq').innerHTML=FAQ[L].map(([q,a],i)=>`<details${i===0?' open':''}><summary>${q}</summary><p>${a}</p></details>`).join('')}
+
+/* map */
+function proj([lon,lat]){return [(lon-3.79)*1580,(40.11-lat)*2060]}
+function smooth(pts){let d=`M${pts[0][0].toFixed(1)} ${pts[0][1].toFixed(1)}`;const n=pts.length;for(let i=0;i<n;i++){const p0=pts[(i-1+n)%n],p1=pts[i],p2=pts[(i+1)%n],p3=pts[(i+2)%n];const c1=[p1[0]+(p2[0]-p0[0])/6,p1[1]+(p2[1]-p0[1])/6],c2=[p2[0]-(p3[0]-p1[0])/6,p2[1]-(p3[1]-p1[1])/6];d+=` C${c1[0].toFixed(1)} ${c1[1].toFixed(1)} ${c2[0].toFixed(1)} ${c2[1].toFixed(1)} ${p2[0].toFixed(1)} ${p2[1].toFixed(1)}`}return d+'Z'}
+function renderMap(){const P=COAST.map(proj);const ctr=P.reduce((a,p)=>[a[0]+p[0]/P.length,a[1]+p[1]/P.length],[0,0]);
+ const R=P.map(p=>{const dx=p[0]-ctr[0],dy=p[1]-ctr[1],l=Math.hypot(dx,dy);return [p[0]+dx/l*22,p[1]+dy/l*22]});
+ const air=proj([4.293,39.800]);
+ let s=`<defs><radialGradient id="sea" cx="50%" cy="50%" r="70%"><stop offset="0" stop-color="#145a80"/><stop offset="1" stop-color="#0B2B45"/></radialGradient></defs>`;
+ for(let i=1;i<=3;i++){const RR=P.map(p=>{const dx=p[0]-ctr[0],dy=p[1]-ctr[1],l=Math.hypot(dx,dy);return [p[0]+dx/l*(22+i*26),p[1]+dy/l*(22+i*26)]});s+=`<path class="ring" d="${smooth(RR)}"/>`}
+ s+=`<path class="isl islS" d="${smooth(P)}" transform="translate(6 8)" opacity=".35" style="fill:#000;stroke:none"/><path class="isl" d="${smooth(P)}"/><ellipse class="isl" cx="${air[0]}" cy="${air[1]}" rx="9" ry="5"/>`;
+ s+=`<path class="route" id="vroute" d="${smooth(R)}"/>`;
+ s+=`<text class="lbl" x="${proj([3.86,39.995])[0]}" y="${proj([3.86,39.995])[1]}">Ciutadella</text><text class="lbl" x="${proj([4.17,39.885])[0]}" y="${proj([4.17,39.885])[1]}">Maó</text><text class="lbl" x="${proj([4.07,40.03])[0]}" y="${proj([4.07,40.03])[1]}">Fornells</text><text class="lblw" x="${proj([3.95,39.86])[0]}" y="${proj([3.95,39.86])[1]}">MAR MEDITERRÀNIA</text>`;
+ SPOTS.forEach(sp=>{const [x,y]=proj(sp.ll);s+=`<g class="pin${sp.base?' base':''}" data-s="${sp.id}" transform="translate(${x.toFixed(1)} ${y.toFixed(1)})"><circle class="p" r="8"/><circle class="c" r="${sp.base?9:7}"/></g>`});
+ $('#map').innerHTML=s;
+ $('#spots').innerHTML=SPOTS.map(sp=>`<button class="spot${sp.base?' base':''}" data-s="${sp.id}"><span class="d"></span><span><b>${tx(sp.n)}</b><small>${tx(sp.d)}</small></span></button>`).join('');
+ const hl=id=>{$$('.pin,.spot').forEach(e=>e.classList.toggle('on',e.dataset.s===id))};
+ $$('.spot,.pin').forEach(e=>{e.onmouseenter=()=>hl(e.dataset.s);e.onclick=()=>{hl(e.dataset.s);fc='all';fw='all';const ids=A.filter(a=>a.spot===e.dataset.s).map(a=>a.id);if(ids.length===1)openDrawer(ids[0]);else{renderFilters();applyFilter();$$('#grid .card').forEach(c=>c.classList.toggle('hid',ids.length&&!ids.includes(c.dataset.id)));$('#count').textContent=T[L].count(ids.length||A.length);$('#actividades').scrollIntoView()}}});
+ // animate route draw
+ const r=$('#vroute');const len=r.getTotalLength();r.style.strokeDasharray='6 7';r.animate([{strokeDashoffset:len},{strokeDashoffset:0}],{duration:60000,iterations:Infinity});
+}
+
+/* drawer */
+function openDrawer(id){const a=A.find(x=>x.id===id);if(!a)return;curA=a;const t=T[L];
+ $('#dph').outerHTML=ph(a).replace('class="ph"','class="ph" id="dph"');
+ const kv=[[t.dur,tx(a.dur)],[t.sched,a.schedTxt||(a.times?a.times.join(' · '):(a.opts?tx(a.opts).length+' '+(L==='es'?'opciones':'options'):'—'))],[t.season,tx(a.season)],[t.meet,tx(a.meet)],[t.ages,tx(a.ages)]];
+ let h=`<span class="eyebrow">${t.cat[a.cat]}</span><h3>${tx(a.n)}</h3><p>${tx(a.s)}</p><div class="kv">${kv.map(([k,v])=>`<div><small>${k}</small><b>${v}</b></div>`).join('')}</div>`;
+ // prices
+ h+=`<h4>${t.prices}</h4>`;
+ if(a.p==='pp'){h+=`<table class="pt"><tbody><tr><td>${t.adult}</td><td>${t.from} ${eur(a.price.ad)}</td></tr><tr><td>${t.chOf(a.price.chA)}</td><td>${t.from} ${eur(a.price.ch)}</td></tr>${a.price.free?`<tr><td>${t.chOf(a.price.free)}</td><td>${t.free}</td></tr>`:''}</tbody></table><p class="mini">${t.swim}.${a.price.free?' '+t.chFree+'.':''}</p>`}
+ else if(a.p==='ppOnly'){h+=`<table class="pt"><tbody><tr><td>${t.pp}</td><td>${eur(a.price.ad)}</td></tr></tbody></table>`}
+ else if(a.p==='boat'){h+=`<table class="pt"><tbody>${tx(a.opts).map(o=>`<tr><td>${o}</td><td>${t.from} ${eur(a.price.boat)}</td></tr>`).join('')}</tbody></table><p class="mini">${L==='es'?'Precio por barca. El precio final depende de la opción y del mes.':'Price per boat. Final price depends on option and month.'}</p>`}
+ else if(a.p==='table'){h+=tableHTML(a.tab)+(RT[a.tab].mini?`<p class="mini">${tx(RT[a.tab].mini)}</p>`:'')}
+ if(a.route){h+=`<h4>${t.route}</h4><ol class="route">${tx(a.route).map(x=>`<li>${x}</li>`).join('')}</ol>`}
+ if(a.extra)h+=`<p class="mini">${tx(a.extra)}</p>`;
+ const incl=a.incl==='k'?INCL_K[L]:tx(a.inclL);if(incl)h+=`<h4>${t.incl}</h4><ul class="dlist">${incl.map(x=>`<li>${x}</li>`).join('')}</ul>`;
+ if(a.notL)h+=`<h4>${t.notincl}</h4><ul class="dlist x">${tx(a.notL).map(x=>`<li>${x}</li>`).join('')}</ul>`;
+ if(a.bring)h+=`<h4>${t.bring}</h4><ul class="dlist">${BRING[L].map(x=>`<li>${x}</li>`).join('')}</ul>`;
+ $('#dbody').innerHTML=h;$('#dbody').scrollTop=0;$('#dfrom').innerHTML=priceLbl(a).replace('<small>',`<small>`);
+ $('#dbook').querySelector('span').textContent=a.walk?(L==='es'?'Preguntar':'Ask us'):t.book;
+ $('#drawer').classList.add('open');$('#ov').classList.add('open');$('#drawer').setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+function closeDrawer(){$('#drawer').classList.remove('open');$('#ov').classList.remove('open');$('#drawer').setAttribute('aria-hidden','true');document.body.style.overflow=''}
+$('#dclose').onclick=closeDrawer;$('#ov').onclick=closeDrawer;$('#dbook').onclick=()=>{const id=curA&&curA.id;closeDrawer();openBook(id)};
+
+/* booking */
+function fillActs(){$('#bAct').innerHTML=Object.entries(T[L].cat).filter(([k])=>k!=='all').map(([k,v])=>`<optgroup label="${v}">${A.filter(a=>a.cat===k).map(a=>`<option value="${a.id}">${tx(a.n)}</option>`).join('')}</optgroup>`).join('')}
+function optsFor(a){if(a.opts)return tx(a.opts);if(a.p==='table'){const r=RT[a.tab];const c=tx(r.cols).slice(1);const o=[];r.rows.forEach(row=>row.slice(1).forEach((v,i)=>{if(v!=null&&row[0]!=='xd')o.push({l:`${c[i]} · ${DL[L][row[0]]||row[0]}`,v})}));return o}return null}
+function syncForm(){const a=A.find(x=>x.id===$('#bAct').value);const t=T[L];const o=optsFor(a);
+ $('#wOpt').style.display=o?'':'none';if(o)$('#bOpt').innerHTML=o.map((x,i)=>`<option value="${i}">${typeof x==='string'?x:`${x.l} — ${eur(x.v)}`}</option>`).join('');
+ $('#wTime').style.display=a.times?'':'none';if(a.times)$('#bTime').innerHTML=a.times.map(x=>`<option>${x}</option>`).join('');
+ $('#wCh').style.display=a.p==='pp'?'':'none';$('#lCh').textContent=a.p==='pp'?t.chOf(a.price.chA):t.lCh;
+ $('#lAd').textContent=a.p==='pp'||a.p==='ppOnly'?t.adult+(L==='es'?'s':'s'):(L==='es'?'Personas':'People');
+ const sn=[];if(a.walk)sn.push(t.walk);if(a.p==='pp')sn.push(t.swim+(a.price.free?' · '+t.chFree:''));$('#slotnote').textContent=sn.join(' · ');
+ calc();}
+function calc(){const a=A.find(x=>x.id===$('#bAct').value);const t=T[L];const ad=+$('#bAd').value||0,ch=+$('#bCh').value||0;let p=null,d='';
+ if(a.p==='pp'){p=ad*a.price.ad+ch*a.price.ch;d=`${ad} × ${eur(a.price.ad)}`+(ch?` + ${ch} × ${eur(a.price.ch)}`:'')}
+ else if(a.p==='ppOnly'){p=ad*a.price.ad;d=`${ad} × ${eur(a.price.ad)}`}
+ else if(a.p==='boat'){p=a.price.boat;d=(L==='es'?'desde, por barca':'from, per boat')}
+ else if(a.p==='table'){const o=optsFor(a)[+$('#bOpt').value||0];if(o){const per=/Jumbo|kit/i.test(o.l)?1:Math.max(1,ad);p=o.v*per;d=/Jumbo|kit/i.test(o.l)?o.l:`${per} × ${eur(o.v)}`}}
+ $('#estp').textContent=p?(a.p==='boat'?t.from+' '+eur(p):eur(p)):t.estNone;$('#estd').textContent=d?d+' · '+t.estDet:t.estDet;return {p,d}}
+function openBook(id){fillActs();if(id)$('#bAct').value=id;const dt=$('#bDate');const tm=new Date();tm.setDate(tm.getDate()+1);dt.min=new Date().toISOString().slice(0,10);if(!dt.value)dt.value=tm.toISOString().slice(0,10);$('#err').style.display='none';syncForm();$('#modal').classList.add('open');document.body.style.overflow='hidden';setTimeout(()=>$('#bAct').focus(),300)}
+function closeBook(){$('#modal').classList.remove('open');document.body.style.overflow=''}
+$('#mx').onclick=closeBook;$('#modal').onclick=e=>{if(e.target.id==='modal')closeBook()};
+$('#bAct').onchange=syncForm;$('#bOpt').onchange=calc;['bAd','bCh'].forEach(i=>$('#'+i).oninput=calc);
+$$('.step button').forEach(b=>b.onclick=()=>{const i=$('#'+b.dataset.s);i.value=Math.max(0,(+i.value||0)+ +b.dataset.d);calc()});
+function bindBook(){$$('[data-book]').forEach(b=>b.onclick=e=>{e.preventDefault();$('#mnav').classList.remove('open');openBook(b.dataset.book||null)})}
+$('#bform').onsubmit=e=>{e.preventDefault();const t=T[L];const a=A.find(x=>x.id===$('#bAct').value);const name=$('#bName').value.trim(),date=$('#bDate').value;
+ if(!a||!date||!name){$('#err').style.display='block';return}
+ const {p}=calc();const o=$('#wOpt').style.display!=='none'?$('#bOpt').selectedOptions[0].textContent:'';
+ const dd=new Date(date+'T12:00').toLocaleDateString(L==='es'?'es-ES':'en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+ const ppl=a.p==='pp'?`${$('#bAd').value} ${t.adult.toLowerCase()}${L==='es'?'s':'s'}`+(+$('#bCh').value?` + ${$('#bCh').value} ${t.chOf(a.price.chA).toLowerCase()}`:''):$('#bAd').value;
+ const lines=[t.waHello,'',`• ${t.waAct}: ${tx(a.n)}`,o?`• ${t.waOpt}: ${o}`:'',`• ${t.waDate}: ${dd}`,$('#wTime').style.display!=='none'?`• ${t.waTime}: ${$('#bTime').value}`:'',`• ${t.waPpl}: ${ppl}`,p?`• ${t.waEst}: ${$('#estp').textContent}`:'',`• ${t.waName}: ${name}`,$('#bNote').value.trim()?`• ${t.waNote}: ${$('#bNote').value.trim()}`:''].filter(Boolean);
+ window.open('https://wa.me/34616338393?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener');};
+
+/* ============ GLOBAL ============ */
+function renderAll(){renderI18n();renderFilters();renderGrid();renderBoats();renderRent();renderVuelta();renderFaq();renderMap();bindBook()}
+$$('.lang button').forEach(b=>b.onclick=()=>{L=b.dataset.l;try{localStorage.setItem('sk-lang',L)}catch(e){}renderAll()});
+const hd=$('#hd'),dr=$('#draft'),fab=$('#fab');
+function sc(){const y=scrollY;hd.classList.toggle('on',y>40);dr.classList.toggle('hide',y>300);fab.classList.toggle('on',y>innerHeight*.8)}
+addEventListener('scroll',sc,{passive:true});sc();
+$('#burger').onclick=()=>$('#mnav').classList.add('open');$('#mclose').onclick=()=>$('#mnav').classList.remove('open');$$('#mnav a').forEach(a=>a.onclick=()=>$('#mnav').classList.remove('open'));
+addEventListener('keydown',e=>{if(e.key==='Escape'){closeDrawer();closeBook();$('#mnav').classList.remove('open')}});
+let io;function observe(){io=io||new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08,rootMargin:'0px 0px -30px 0px'});$$('.rv:not(.in)').forEach(el=>io.observe(el))}
+renderAll();observe();
+</script>
+</body>
+</html>
