@@ -34,14 +34,18 @@ jobs:
           for p in $PAGES; do
             curl -sL -A "$UA" "$p" | grep -oE 'https?://[^"'"'"' )]+wp-content/uploads/[^"'"'"' )]+\.(jpe?g|png|webp)' >> "$out/_list.txt" || true
           done
+          for p in $PAGES; do
+            case "$p" in *unsplash.com*) curl -sL -A "$UA" "$p" | grep -oE 'https://images\.unsplash\.com/photo-[A-Za-z0-9-]+' | sort -u | head -24 | sed 's/$/?w=900\&q=70\&fm=jpg/' >> "$out/_list.txt";; esac
+          done
+          grep -v unsplash "$out/_list.txt" > /tmp/l.txt || true; grep unsplash "$out/_list.txt" > /tmp/u.txt || true
           # also original size variants (strip -WxH)
-          sed -E 's/-[0-9]+x[0-9]+\.(jpe?g|png|webp)$/.\1/' "$out/_list.txt" >> "$out/_list.txt"
+          sed -E 's/-[0-9]+x[0-9]+\.(jpe?g|png|webp)$/.\1/' /tmp/l.txt >> "$out/_list.txt"
           for u in $URLS; do echo "$u" >> "$out/_list.txt"; done
           sort -u "$out/_list.txt" -o "$out/_list.txt"
           i=0
           while read -r u; do
             [ -z "$u" ] && continue
-            i=$((i+1)); name=$(echo "$u" | sed -E 's#.*/##; s/[?].*//' | cut -c1-80)
+            i=$((i+1)); name=$(echo "$u" | sed -E 's#.*/##; s/[?].*//' | cut -c1-80); [ "$i" -gt 400 ] && break
             case "$name" in *.jpg|*.jpeg|*.png|*.webp) ;; *) name="$name.jpg";; esac
             curl -sfL -A "$UA" -o "$out/$(printf %03d $i)-$name" "$u" || rm -f "$out/$(printf %03d $i)-$name"
           done < "$out/_list.txt"
