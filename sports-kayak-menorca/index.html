@@ -20,6 +20,7 @@
   --r:18px; --fh:'Archivo',system-ui,sans-serif; --fb:'Inter',system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:80px}
 body{background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--fb);overflow-x:hidden}
 img{display:block;max-width:100%}
@@ -319,6 +320,22 @@ footer{background:#071D30;color:rgba(255,255,255,.7);padding:40px 0 90px;font-si
 .est small{color:var(--ink2);font-size:13px}
 .mbox .btn{width:100%;justify-content:center;margin-top:16px;font-size:16px;padding:16px}
 .wa{background:#1FAF55;color:#fff}
+.est.dep{background:#FFF4D1;margin-top:8px}
+.est.dep b{font-size:22px}
+#done{text-align:left;animation:fi .4s ease}
+.okic{width:56px;height:56px;border-radius:50%;background:#1FAF55;color:#fff;display:grid;place-items:center;margin-bottom:14px}
+.okic svg{width:30px;height:30px}
+.dsteps{counter-reset:d;list-style:none;display:grid;gap:10px;margin:18px 0}
+.dsteps li{counter-increment:d;display:flex;gap:12px;align-items:flex-start;color:var(--ink2)}
+.dsteps li::before{content:counter(d);flex:none;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font:800 13px/26px var(--fb);text-align:center}
+.dsteps b{color:var(--ink)}
+.pol{background:var(--sand);border-radius:14px;padding:14px 16px;font-size:14.5px}
+.pol ul{list-style:none;display:grid;gap:6px;margin-top:8px;color:var(--ink2)}
+.pol li{padding-left:18px;position:relative}
+.pol li::before{content:"";position:absolute;left:2px;top:.6em;width:7px;height:7px;border-radius:50%;background:var(--teal)}
+.dbtns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.dbtns .btn{margin-top:10px;font-size:14.5px;padding:13px}
+@media(max-width:520px){.dbtns{grid-template-columns:1fr}}
 .err{color:#C2410C;font-size:13px;margin-top:8px;display:none}
 .slotnote{font-size:13px;color:var(--ink2)}
 @media(max-width:520px){.fgrid2{grid-template-columns:1fr}.mbox{padding:22px 18px}}
@@ -585,16 +602,28 @@ footer{background:#071D30;color:rgba(255,255,255,.7);padding:40px 0 90px;font-si
       </div>
       <p class="slotnote" id="slotnote"></p>
       <div class="est"><div><small data-t="est">Precio orientativo</small><br><small id="estd"></small></div><b id="estp">—</b></div>
+      <div class="est dep"><div><small id="depl">Señal para reservar (35 %)</small></div><b id="depp">—</b></div>
       <p class="err" id="err" data-t="err">Completa actividad, fecha y nombre.</p>
       <button class="btn wa" type="submit"><svg><use href="#i-wa"/></svg><span data-t="send">Enviar por WhatsApp</span></button>
-      <p class="mini" data-t="mbNote">No se cobra nada ahora: te confirmamos disponibilidad y precio final por WhatsApp.</p>
+      <p class="mini" data-t="mbNote">No se cobra nada ahora. Cuando te confirmemos la plaza por WhatsApp, pagas una señal del 35 % con tarjeta.</p>
     </form>
+    <div id="done" hidden>
+      <div class="okic"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h3 id="dT"></h3><p class="mini" id="dSub" style="margin-top:4px"></p>
+      <ol class="dsteps" id="dSteps"></ol>
+      <div class="pol"><b id="polT"></b><ul id="polL"></ul></div>
+      <a class="btn sun" id="payBtn" target="_blank" rel="noopener" hidden></a>
+      <p class="mini" id="payLater" hidden></p>
+      <div class="dbtns"><a class="btn ghost" id="againBtn" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span></span></a><button class="btn ghost" id="newBtn" type="button"></button></div>
+    </div>
   </div>
 </div>
 
 <script>
 /* ============ DATOS ============ */
 const IMG='https://www.sportskayak.es/wp-content/uploads/';
+/* Señal: 35 %. Pegar aquí el Stripe Payment Link (precio libre) cuando lo tengan */
+const DEP=0.35, PAY_LINK='';
 const T={
 es:{nav1:'Actividades',nav2:'Dónde',nav3:'Barcas',nav4:'Alquiler',nav5:'Vuelta a Menorca',nav6:'Info',nav7:'Contacto',book:'Reservar',
 heroEy:'Cala Torret · Binibeca · Menorca',heroH:'Menorca, <em>desde el agua.</em>',heroP:'Excursiones en kayak y paddle surf, barcas con y sin licencia, bicis y la vuelta a la isla en kayak. Todo desde nuestra base en Cala Torret.',heroB1:'Ver actividades',
@@ -604,15 +633,15 @@ mEy:'Dónde estamos',mH:'Una base, <span style="color:var(--sun)">toda la isla.<
 bEy:'Barcas',bH:'Tu barca, <span>con o sin licencia.</span>',bP:'Sin licencia, con titulación náutica o con patrón: elige cómo quieres descubrir las calas del sur.',bNote:'Gasolina según consumo y fianza de 300 € no incluidas en el alquiler. Sin licencia: máximo 15 CV y 5 m de eslora, navegación costera y con buen tiempo; antes de salir te explicamos todo.',
 rEy:'Alquiler',rH:'Sal por tu cuenta, <span>a tu ritmo.</span>',rP:'Kayaks, tablas de paddle surf y bicicletas. Precios claros, sin sorpresas.',
 vEy:'Vuelta a Menorca',vH:'Dormir en calas vírgenes, <span style="color:var(--sun)">llegar remando.</span>',vP:'Rutas de varios días en kayak de travesía: con guía, comida y logística incluidas, o por tu cuenta con todo el material.',
-iEy:'Cómo funciona',iH:'Reservar es <span>fácil.</span>',h1b:'Elige',h1p:'Actividad, día, horario y número de personas.',h2b:'Escríbenos',h2p:'La solicitud nos llega por WhatsApp con todos los datos.',h3b:'Confirmamos',h3p:'Te respondemos con la disponibilidad y cómo pagar.',h4b:'¡Al agua!',h4p:'Ven a Cala Torret 15 minutos antes. Nosotros ponemos el material.',
+iEy:'Cómo funciona',iH:'Reservar es <span>fácil.</span>',h1b:'Elige',h1p:'Actividad, día, horario y número de personas.',h2b:'Escríbenos',h2p:'La solicitud nos llega por WhatsApp con todos los datos.',h3b:'Confirmamos',h3p:'Te confirmamos la plaza y pagas una señal del 35 % con tarjeta.',h4b:'¡Al agua!',h4p:'Ven a Cala Torret 15 minutos antes. Nosotros ponemos el material.',
 qEy:'Preguntas frecuentes',qH:'Lo que nos preguntáis siempre.',gEy:'Grupos a medida',gH:'Empresas, escuelas y grupos grandes.',gP:'Preparamos excursiones de kayak y paddle surf, rutas guiadas de varios días, bicicletas para grupos de más de 10 personas y la escuela de verano. Cuéntanos qué necesitas.',gB:'Pedir propuesta',
 glist:['Empresas','Grupos escolares','Escuela de verano','Despedidas y cumpleaños','Grupos de bici (10+)'],
 cEy:'Contacto',cH:'Te esperamos en <span style="color:var(--sun)">Cala Torret.</span>',cTel:'Teléfono',bio:'Menorca, Reserva de la Biosfera',cond:'Condiciones de reserva',
-mbEy:'Solicitud de reserva',mbH:'¿Qué quieres reservar?',lAct:'Actividad',lOpt:'Opción',lDate:'Fecha',lTime:'Horario',lAd:'Adultos',lCh:'Niños',lName:'Nombre',lNote:'Comentarios (opcional)',est:'Precio orientativo',err:'Completa actividad, fecha y nombre.',send:'Enviar por WhatsApp',mbNote:'No se cobra nada ahora: te confirmamos disponibilidad y precio final por WhatsApp.',
+mbEy:'Solicitud de reserva',mbH:'¿Qué quieres reservar?',lAct:'Actividad',lOpt:'Opción',lDate:'Fecha',lTime:'Horario',lAd:'Adultos',lCh:'Niños',lName:'Nombre',lNote:'Comentarios (opcional)',est:'Precio orientativo',err:'Completa actividad, fecha y nombre.',send:'Enviar por WhatsApp',mbNote:'No se cobra nada ahora. Cuando te confirmemos la plaza por WhatsApp, pagas una señal del 35 % con tarjeta.',
 from:'desde',pp:'por persona',pb:'por barca',free:'gratis',dur:'Duración',sched:'Horario',season:'Temporada',meet:'Salida',ages:'Edades',incl:'Incluye',bring:'Qué traer',route:'Recorrido',notincl:'No incluido',prices:'Precios',more:'Ver detalles',
 chOf:a=>'Niños '+a,adult:'Adulto',child:'Niño',chFree:'4–7 años gratis (asiento central)',swim:'Imprescindible saber nadar',
 waHello:'¡Hola Sports & Kayak! Quiero solicitar una reserva:',waAct:'Actividad',waOpt:'Opción',waDate:'Fecha',waTime:'Horario',waPpl:'Personas',waName:'Nombre',waNote:'Comentarios',waEst:'Precio orientativo',waGroup:'¡Hola! Somos un grupo y queremos una propuesta a medida.',
-estNone:'a consultar',estDet:'Precio final confirmado por WhatsApp',walk:'Sin reserva previa: según disponibilidad en el centro',tel:'Teléfono',
+estNone:'a consultar',dep:'Señal para reservar (35 %)',depNone:'Sin señal: alquiler en el centro',waDep:'Señal (35 %)',dTitle:'¡Solicitud enviada!',dSub:'Revisa WhatsApp: te escribimos lo antes posible.',dS1:'Te confirmamos la disponibilidad por WhatsApp.',dS2:x=>'Pagas la señal de <b>'+x+'</b> con tarjeta para garantizar tu plaza.',dS2n:'Pagas la señal del 35 % con tarjeta (te enviamos el enlace).',dS3:'El resto, el día de la actividad.',polT:'Cancelación',pol:['Más de 24 h antes: te devolvemos la señal entera.','Menos de 24 h antes o si no te presentas: la señal no se devuelve.','Si cancelamos por mal tiempo: devolución total.'],payB:x=>'Pagar señal '+x,payLater:'El enlace de pago te llega por WhatsApp junto con la confirmación.',again:'Abrir WhatsApp de nuevo',newB:'Nueva solicitud',estDet:'Precio final confirmado por WhatsApp',walk:'Sin reserva previa: según disponibilidad en el centro',tel:'Teléfono',
 cat:{all:'Todo',exc:'Excursiones guiadas',boat:'Barcas',rent:'Alquiler',multi:'Varios días'},
 who:{all:'Todos',fam:'En familia',par:'En pareja',fri:'Con amigos',emp:'Empresas',esc:'Escuelas'}},
 en:{nav1:'Activities',nav2:'Where',nav3:'Boats',nav4:'Rentals',nav5:'Round Menorca',nav6:'Info',nav7:'Contact',book:'Book',
@@ -623,15 +652,15 @@ mEy:'Where we are',mH:'One base, <span style="color:var(--sun)">the whole island
 bEy:'Boats',bH:'Your own boat, <span>licence or not.</span>',bP:'No licence, with a boating licence or with a skipper: choose how you want to discover the southern coves.',bNote:'Fuel (charged by consumption) and the €300 deposit are not included in rentals. Without a licence: max 15 HP and 5 m, coastal sailing in good weather only; we brief you before you set off.',
 rEy:'Rentals',rH:'Head out on your own, <span>at your pace.</span>',rP:'Kayaks, paddle boards and bikes. Clear prices, no surprises.',
 vEy:'Round Menorca',vH:'Sleep in wild coves, <span style="color:var(--sun)">arrive by paddle.</span>',vP:'Multi-day sea kayak trips: guided with food and logistics included, or self-guided with all the gear.',
-iEy:'How it works',iH:'Booking is <span>easy.</span>',h1b:'Choose',h1p:'Activity, day, time and number of people.',h2b:'Message us',h2p:'Your request reaches us on WhatsApp with all the details.',h3b:'We confirm',h3p:'We reply with availability and how to pay.',h4b:'Into the water!',h4p:'Come to Cala Torret 15 minutes early. We provide the gear.',
+iEy:'How it works',iH:'Booking is <span>easy.</span>',h1b:'Choose',h1p:'Activity, day, time and number of people.',h2b:'Message us',h2p:'Your request reaches us on WhatsApp with all the details.',h3b:'We confirm',h3p:'We confirm your spot and you pay a 35% deposit by card.',h4b:'Into the water!',h4p:'Come to Cala Torret 15 minutes early. We provide the gear.',
 qEy:'FAQ',qH:'What everyone asks us.',gEy:'Tailor-made groups',gH:'Companies, schools and large groups.',gP:'We organise kayak and paddle board tours, guided multi-day routes, bikes for groups of 10+ and our summer school. Tell us what you need.',gB:'Ask for a proposal',
 glist:['Companies','School groups','Summer school','Parties & birthdays','Bike groups (10+)'],
 cEy:'Contact',cH:'See you in <span style="color:var(--sun)">Cala Torret.</span>',cTel:'Phone',bio:'Menorca, Biosphere Reserve',cond:'Booking conditions',
-mbEy:'Booking request',mbH:'What would you like to book?',lAct:'Activity',lOpt:'Option',lDate:'Date',lTime:'Time',lAd:'Adults',lCh:'Children',lName:'Name',lNote:'Comments (optional)',est:'Estimated price',err:'Please fill in activity, date and name.',send:'Send via WhatsApp',mbNote:'Nothing is charged now: we confirm availability and final price on WhatsApp.',
+mbEy:'Booking request',mbH:'What would you like to book?',lAct:'Activity',lOpt:'Option',lDate:'Date',lTime:'Time',lAd:'Adults',lCh:'Children',lName:'Name',lNote:'Comments (optional)',est:'Estimated price',err:'Please fill in activity, date and name.',send:'Send via WhatsApp',mbNote:'Nothing is charged now. Once we confirm your spot on WhatsApp, you pay a 35% deposit by card.',
 from:'from',pp:'per person',pb:'per boat',free:'free',dur:'Duration',sched:'Times',season:'Season',meet:'Starts at',ages:'Ages',incl:'Included',bring:'What to bring',route:'Route',notincl:'Not included',prices:'Prices',more:'See details',
 chOf:a=>'Children '+a,adult:'Adult',child:'Child',chFree:'Ages 4–7 free (middle seat)',swim:'Must be able to swim',
 waHello:'Hi Sports & Kayak! I would like to request a booking:',waAct:'Activity',waOpt:'Option',waDate:'Date',waTime:'Time',waPpl:'People',waName:'Name',waNote:'Comments',waEst:'Estimated price',waGroup:'Hi! We are a group and would like a tailor-made proposal.',
-estNone:'on request',estDet:'Final price confirmed on WhatsApp',walk:'No advance booking: subject to availability on site',tel:'Phone',
+estNone:'on request',dep:'Deposit to book (35%)',depNone:'No deposit: rented on site',waDep:'Deposit (35%)',dTitle:'Request sent!',dSub:'Check WhatsApp: we will reply as soon as possible.',dS1:'We confirm availability on WhatsApp.',dS2:x=>'You pay the <b>'+x+'</b> deposit by card to secure your spot.',dS2n:'You pay the 35% deposit by card (we send you the link).',dS3:'The rest is paid on the day.',polT:'Cancellation',pol:['More than 24 h before: full refund of the deposit.','Less than 24 h before or no-show: the deposit is not refunded.','If we cancel due to bad weather: full refund.'],payB:x=>'Pay deposit '+x,payLater:'The payment link comes on WhatsApp with your confirmation.',again:'Open WhatsApp again',newB:'New request',estDet:'Final price confirmed on WhatsApp',walk:'No advance booking: subject to availability on site',tel:'Phone',
 cat:{all:'All',exc:'Guided tours',boat:'Boats',rent:'Rentals',multi:'Multi-day'},
 who:{all:'Everyone',fam:'Family',par:'Couples',fri:'Friends',emp:'Companies',esc:'Schools'}}
 };
@@ -743,17 +772,17 @@ const FAQ={
 es:[['¿Hace falta experiencia?','No para las excursiones guiadas ni para el alquiler por horas: antes de salir te explicamos la técnica y la seguridad. Sí es imprescindible saber nadar. Para la ruta por tu cuenta en kayak de travesía pedimos experiencia.'],
 ['¿Pueden venir niños?','Sí. En las excursiones en kayak los niños de 4 a 7 años van gratis en el asiento central de un kayak doble; de 8 a 12 años pagan tarifa infantil. Kayak transparente y paddle surf: desde 5 años.'],
 ['¿Qué pasa si hace mal tiempo?','La seguridad va primero: si el mar no permite salir, te proponemos otro día o otra ruta (por ejemplo, dentro de la bahía de Addaia) o cancelamos sin coste.'],
-['¿Cómo se cancela?','Excursiones: gratis hasta 24 h antes. Barcas a motor: gratis hasta 48 h antes. Kayak de travesía: gratis hasta 15 días antes, 50 % entre 15 y 7 días, después se puede cobrar el total.'],
+['¿Cómo se cancela?','Para reservar pagas una señal del 35 % del total. Si cancelas con más de 24 h de antelación, te la devolvemos entera. Si cancelas en las últimas 24 h o no te presentas, la señal no se devuelve. Si cancelamos nosotros por mal tiempo, te devolvemos todo.'],
 ['¿Necesito licencia para la barca?','La Voraz 400 no requiere licencia ni experiencia (máx. 15 CV). Trimarchi S 53 y Quicksilver 675 requieren titulación náutica en vigor, o puedes elegir la excursión con patrón.'],
 ['¿Puedo llevar comida y bebida en la barca?','Sí, puedes llevar comida, bebida y hielo. Las barcas tienen nevera y espacio para un picnic.'],
-['¿Cómo se paga?','Al confirmar la reserva te indicamos cómo pagar. Para garantizarla se solicita tarjeta de crédito. Si necesitas factura, pídela a info@sportskayak.es.']],
+['¿Cómo se paga?','Reservas por WhatsApp y, cuando te confirmamos la plaza, pagas la señal del 35 % con tarjeta, Apple Pay o Google Pay a través de un enlace seguro. El resto se paga el día de la actividad. Si necesitas factura, pídela a info@sportskayak.es.']],
 en:[['Do I need experience?','Not for guided tours or hourly rentals: we explain technique and safety before you start. You must be able to swim. For self-guided sea kayak trips we ask for previous experience.'],
 ['Can children come?','Yes. On kayak tours children aged 4–7 go free in the middle seat of a double kayak; ages 8–12 pay the child rate. Clear kayak and paddle board: from age 5.'],
 ['What if the weather is bad?','Safety first: if the sea doesn\'t allow it, we offer another day or route (for example inside Addaia bay) or cancel at no cost.'],
-['How do cancellations work?','Tours: free up to 24 h before. Motorboats: free up to 48 h before. Touring kayaks: free up to 15 days before, 50% between 15 and 7 days, after that the full amount may be charged.'],
+['How do cancellations work?','To book you pay a 35% deposit. Cancel more than 24 h before and we refund it in full. Cancel within the last 24 h or don\'t show up and the deposit is not refunded. If we cancel due to bad weather, you get everything back.'],
 ['Do I need a licence for the boat?','The Voraz 400 needs no licence or experience (max 15 HP). The Trimarchi S 53 and Quicksilver 675 need a valid boating licence, or choose the skippered trip.'],
 ['Can I bring food and drinks on the boat?','Yes, you can bring food, drinks and ice. The boats have a cool box and room for a picnic.'],
-['How do I pay?','When we confirm your booking we tell you how to pay. A credit card is required to guarantee it. For an invoice, write to info@sportskayak.es.']]};
+['How do I pay?','You book on WhatsApp and, once we confirm your spot, you pay the 35% deposit by card, Apple Pay or Google Pay through a secure link. The rest is paid on the day. For an invoice, write to info@sportskayak.es.']]};
 
 /* map spots (lon,lat) */
 const SPOTS=[
@@ -868,8 +897,10 @@ function calc(){const a=A.find(x=>x.id===$('#bAct').value);const t=T[L];const ad
  else if(a.p==='ppOnly'){p=ad*a.price.ad;d=`${ad} × ${eur(a.price.ad)}`}
  else if(a.p==='boat'){p=a.price.boat;d=(L==='es'?'desde, por barca':'from, per boat')}
  else if(a.p==='table'){const o=optsFor(a)[+$('#bOpt').value||0];if(o){const per=/Jumbo|kit/i.test(o.l)?1:Math.max(1,ad);p=o.v*per;d=/Jumbo|kit/i.test(o.l)?o.l:`${per} × ${eur(o.v)}`}}
- $('#estp').textContent=p?(a.p==='boat'?t.from+' '+eur(p):eur(p)):t.estNone;$('#estd').textContent=d?d+' · '+t.estDet:t.estDet;return {p,d}}
-function openBook(id){fillActs();if(id)$('#bAct').value=id;const dt=$('#bDate');const tm=new Date();tm.setDate(tm.getDate()+1);dt.min=new Date().toISOString().slice(0,10);if(!dt.value)dt.value=tm.toISOString().slice(0,10);$('#err').style.display='none';syncForm();$('#modal').classList.add('open');document.body.style.overflow='hidden';setTimeout(()=>$('#bAct').focus(),300)}
+ $('#estp').textContent=p?(a.p==='boat'?t.from+' '+eur(p):eur(p)):t.estNone;$('#estd').textContent=d?d+' · '+t.estDet:t.estDet;
+ const dep=a.walk||!p?null:Math.round(p*DEP*100)/100;$('#depl').textContent=a.walk?t.depNone:t.dep;$('#depp').textContent=dep?(a.p==='boat'?t.from+' ':'')+eur(fmt(dep)):'—';return {p,d,dep}}
+function fmt(n){return Number.isInteger(n)?n:n.toFixed(2).replace('.',L==='es'?',':'.')}
+function openBook(id){fillActs();if(id)$('#bAct').value=id;const dt=$('#bDate');const tm=new Date();tm.setDate(tm.getDate()+1);dt.min=new Date().toISOString().slice(0,10);if(!dt.value)dt.value=tm.toISOString().slice(0,10);$('#err').style.display='none';$('#done').hidden=true;$('#bform').hidden=false;$('#mtitle').hidden=false;$('.mbox .eyebrow').hidden=false;syncForm();$('#modal').classList.add('open');document.body.style.overflow='hidden';setTimeout(()=>$('#bAct').focus(),300)}
 function closeBook(){$('#modal').classList.remove('open');document.body.style.overflow=''}
 $('#mx').onclick=closeBook;$('#modal').onclick=e=>{if(e.target.id==='modal')closeBook()};
 $('#bAct').onchange=syncForm;$('#bOpt').onchange=calc;['bAd','bCh'].forEach(i=>$('#'+i).oninput=calc);
@@ -877,11 +908,21 @@ $$('.step button').forEach(b=>b.onclick=()=>{const i=$('#'+b.dataset.s);i.value=
 function bindBook(){$$('[data-book]').forEach(b=>b.onclick=e=>{e.preventDefault();$('#mnav').classList.remove('open');openBook(b.dataset.book||null)})}
 $('#bform').onsubmit=e=>{e.preventDefault();const t=T[L];const a=A.find(x=>x.id===$('#bAct').value);const name=$('#bName').value.trim(),date=$('#bDate').value;
  if(!a||!date||!name){$('#err').style.display='block';return}
- const {p}=calc();const o=$('#wOpt').style.display!=='none'?$('#bOpt').selectedOptions[0].textContent:'';
+ const {p,dep}=calc();const o=$('#wOpt').style.display!=='none'?$('#bOpt').selectedOptions[0].textContent:'';
  const dd=new Date(date+'T12:00').toLocaleDateString(L==='es'?'es-ES':'en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
  const ppl=a.p==='pp'?`${$('#bAd').value} ${t.adult.toLowerCase()}${L==='es'?'s':'s'}`+(+$('#bCh').value?` + ${$('#bCh').value} ${t.chOf(a.price.chA).toLowerCase()}`:''):$('#bAd').value;
- const lines=[t.waHello,'',`• ${t.waAct}: ${tx(a.n)}`,o?`• ${t.waOpt}: ${o}`:'',`• ${t.waDate}: ${dd}`,$('#wTime').style.display!=='none'?`• ${t.waTime}: ${$('#bTime').value}`:'',`• ${t.waPpl}: ${ppl}`,p?`• ${t.waEst}: ${$('#estp').textContent}`:'',`• ${t.waName}: ${name}`,$('#bNote').value.trim()?`• ${t.waNote}: ${$('#bNote').value.trim()}`:''].filter(Boolean);
- window.open('https://wa.me/34616338393?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener');};
+ const lines=[t.waHello,'',`• ${t.waAct}: ${tx(a.n)}`,o?`• ${t.waOpt}: ${o}`:'',`• ${t.waDate}: ${dd}`,$('#wTime').style.display!=='none'?`• ${t.waTime}: ${$('#bTime').value}`:'',`• ${t.waPpl}: ${ppl}`,p?`• ${t.waEst}: ${$('#estp').textContent}`:'',dep?`• ${t.waDep}: ${$('#depp').textContent}`:'',`• ${t.waName}: ${name}`,$('#bNote').value.trim()?`• ${t.waNote}: ${$('#bNote').value.trim()}`:''].filter(Boolean);
+ const wa='https://wa.me/34616338393?text='+encodeURIComponent(lines.join('\n'));window.open(wa,'_blank','noopener');showDone(a,dep,wa,name,date);};
+function showDone(a,dep,wa,name,date){const t=T[L];const ds=dep?$('#depp').textContent:'';
+ $('#dT').textContent=t.dTitle;$('#dSub').textContent=t.dSub;
+ $('#dSteps').innerHTML=[t.dS1,a.walk?'':(dep?t.dS2(ds):t.dS2n),t.dS3].filter(Boolean).map(x=>`<li><span>${x}</span></li>`).join('');
+ $('#polT').textContent=t.polT;$('#polL').innerHTML=t.pol.map(x=>`<li>${x}</li>`).join('');
+ const pb=$('#payBtn'),pl=$('#payLater');
+ if(PAY_LINK&&dep&&!a.walk){pb.hidden=false;pl.hidden=true;pb.innerHTML=`<svg viewBox="0 0 24 24" style="width:18px;height:18px"><rect x="2.5" y="5" width="19" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2.5 10h19" stroke="currentColor" stroke-width="2"/></svg>${t.payB(ds)}`;pb.href=PAY_LINK+(PAY_LINK.includes('?')?'&':'?')+'client_reference_id='+encodeURIComponent((a.id+'_'+date+'_'+name).replace(/[^A-Za-z0-9_-]/g,'').slice(0,190))}
+ else{pb.hidden=true;pl.hidden=!!a.walk;pl.textContent=t.payLater}
+ $('#againBtn').href=wa;$('#againBtn').querySelector('span').textContent=t.again;$('#newBtn').textContent=t.newB;
+ $('#bform').hidden=true;$('#done').hidden=false;$('.mbox').scrollTop=0;$('#mtitle').hidden=true;$('.mbox .eyebrow').hidden=true}
+$('#newBtn').onclick=()=>{$('#done').hidden=true;$('#bform').hidden=false;$('#mtitle').hidden=false;$('.mbox .eyebrow').hidden=false;$('#bName').value='';$('#bNote').value=''};
 
 /* ============ GLOBAL ============ */
 function renderAll(){renderI18n();renderFilters();renderGrid();renderBoats();renderRent();renderVuelta();renderFaq();renderMap();bindBook()}
