@@ -1,3 +1,0 @@
-https://github.com/google/fonts/raw/main/ofl/cinzel/Cinzel%5Bwght%5D.ttf
-https://github.com/google/fonts/raw/main/ofl/sourcesans3/SourceSans3%5Bwght%5D.ttf
-https://github.com/google/fonts/raw/main/ofl/sourceserif4/SourceSerif4%5Bopsz,wght%5D.ttf

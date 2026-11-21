@@ -1,0 +1,41 @@
+<!--
+  UVARARA · Conferma "Aggiunto al carrello" + barra fissa del carrello
+  Da incollare UNA volta in un'area HTML/JS globale del sito (footer o "codice personalizzato").
+  Non tocca il carrello: ascolta i clic sui pulsanti "Nel carrello" esistenti
+  (a[data-itemtype="cart"]) e poi rilegge il numero di articoli dal mini-carrello.
+  Va provato sul sito (ambiente di test se c'è): i selettori del mini-carrello vanno verificati.
+-->
+<style>
+#uvx-toast{position:fixed;top:90px;right:20px;z-index:99999;width:min(380px,calc(100% - 40px));background:#fff;border:1px solid #E3DFD5;border-radius:14px;box-shadow:0 30px 60px -20px rgba(0,0,0,.4);padding:18px;font:17px/1.4 inherit;transform:translateX(120%);visibility:hidden;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+#uvx-toast.on{transform:none;visibility:visible}
+#uvx-toast b{display:block;font-size:18px;color:#214B2B;margin-bottom:12px}
+#uvx-toast .r{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#uvx-toast .r a,#uvx-toast .r button{min-height:50px;border-radius:10px;font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center;text-decoration:none;cursor:pointer}
+#uvx-toast .r a{background:#BF2031;color:#fff}
+#uvx-toast .r button{background:#fff;border:2px solid #E3DFD5;color:#242424}
+#uvx-bar{position:fixed;left:0;right:0;bottom:0;z-index:99998;background:#17361F;color:#fff;transform:translateY(110%);visibility:hidden;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+#uvx-bar.on{transform:none;visibility:visible}
+#uvx-bar .i{max-width:1180px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;font-size:19px;font-weight:600}
+#uvx-bar a{background:#BF2031;color:#fff;text-decoration:none;font-weight:700;padding:15px 24px;border-radius:10px;white-space:nowrap}
+@media(max-width:600px){#uvx-toast{top:auto;bottom:90px}#uvx-bar .i{font-size:17px}}
+</style>
+<div id="uvx-toast" role="status" aria-live="polite"><b>✓ Aggiunto al carrello</b><div class="r"><button type="button" id="uvx-close">Continua</button><a href="/basket/">Vai al carrello</a></div></div>
+<div id="uvx-bar"><div class="i"><span id="uvx-txt">Articoli nel carrello</span><a href="/basket/">Vai al carrello →</a></div></div>
+<script>
+(function(){
+  var de=location.pathname.indexOf('/de/')===0;
+  if(de){document.querySelector('#uvx-toast b').textContent='✓ In den Warenkorb gelegt';document.getElementById('uvx-close').textContent='Weiter einkaufen';
+    document.querySelectorAll('#uvx-toast a,#uvx-bar a').forEach(function(a){a.href='/de/basket/';a.textContent=a.parentNode.id==='uvx-bar'||a.closest('#uvx-bar')?'Zum Warenkorb →':'Zum Warenkorb'})}
+  var t=document.getElementById('uvx-toast'),bar=document.getElementById('uvx-bar'),h;
+  function count(){ // numero articoli: legge il contatore del carrello nell'header (DA VERIFICARE il selettore)
+    var el=document.querySelector('[class*="cart"] [class*="count"], .basket-count, .cart-count, [data-cart-count]');
+    var n=el?parseInt(el.textContent,10):NaN; return isNaN(n)?null:n }
+  function show(){var n=count();
+    document.getElementById('uvx-txt').textContent=n?(de?n+' Artikel im Warenkorb':'Nel carrello: '+n+(n==1?' articolo':' articoli')):(de?'Artikel im Warenkorb':'Articoli nel carrello');
+    t.classList.add('on');bar.classList.add('on');clearTimeout(h);h=setTimeout(function(){t.classList.remove('on')},6000)}
+  document.addEventListener('click',function(e){var b=e.target.closest('a[data-itemtype="cart"]');if(b)setTimeout(show,1200)},true);
+  document.getElementById('uvx-close').onclick=function(){t.classList.remove('on')};
+  try{if(sessionStorage.getItem('uvx-has')==='1')bar.classList.add('on')}catch(e){}
+  document.addEventListener('click',function(e){if(e.target.closest('a[data-itemtype="cart"]'))try{sessionStorage.setItem('uvx-has','1')}catch(_){}} ,true);
+})();
+</script>

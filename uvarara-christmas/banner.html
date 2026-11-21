@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><title>Banner</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&family=Source+Sans+3:wght@600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#111}
+.b{position:relative;width:1600px;height:750px;overflow:hidden;background:#120d08;color:#fff;font-family:'Source Sans 3',sans-serif}
+.b .bg{position:absolute;inset:0;background:url(img/cantina.jpg) 50% 62%/cover;opacity:.55}
+.b::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,13,8,.96) 0%,rgba(18,13,8,.82) 40%,rgba(18,13,8,.15) 75%,rgba(18,13,8,.35) 100%)}
+.tx{position:absolute;z-index:2;left:100px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;width:760px}
+.k{font:600 22px/1 'Cinzel',serif;letter-spacing:.24em;color:#C9A55A}
+h1{font:600 84px/1.02 'Cinzel',serif;margin:22px 0 10px;letter-spacing:.01em}
+h1 em{font-style:normal;color:#C9A55A}
+.sub{font:400 30px/1.4 'Source Serif 4',serif;color:rgba(255,255,255,.88)}
+.row{display:flex;align-items:center;gap:28px;margin-top:40px}
+.cta{background:#BF2031;color:#fff;font:700 28px/1 'Source Sans 3';padding:24px 38px;border-radius:12px;box-shadow:0 18px 34px -14px rgba(191,32,49,.9)}
+.pr{font:600 26px/1.2 'Cinzel',serif;color:#fff}
+.pr small{display:block;font:600 17px 'Source Sans 3';letter-spacing:.12em;color:rgba(255,255,255,.7);text-transform:uppercase}
+.bot{position:absolute;z-index:2;right:90px;bottom:0;top:40px;display:flex;align-items:flex-end;gap:26px}
+.bot div{display:flex;flex-direction:column;align-items:center;height:100%}
+.bot img{height:calc(100% - 64px);filter:drop-shadow(0 30px 30px rgba(0,0,0,.65))}
+.bot .s{height:86%}
+.m{margin:14px 0 26px;font:700 17px/1 'Cinzel',serif;letter-spacing:.12em;background:linear-gradient(135deg,#F1D58C,#C9A55A);color:#1a1207;padding:10px 14px;border-radius:99px}
+.glow{position:absolute;right:60px;bottom:40px;width:620px;height:420px;background:radial-gradient(closest-side,rgba(201,165,90,.35),transparent);z-index:1}
+.lace{position:absolute;z-index:3;left:0;right:0;top:0;height:10px;background:repeating-linear-gradient(90deg,#BF2031 0 40px,#214B2B 40px 80px)}
+/* mobile 1080x1350 */
+.mb{width:1080px;height:1350px}
+.mb::after{background:linear-gradient(180deg,rgba(18,13,8,.25) 0%,rgba(18,13,8,.7) 45%,rgba(18,13,8,.97) 72%)}
+.mb .tx{left:70px;right:70px;width:auto;top:auto;bottom:80px;justify-content:flex-end}
+.mb h1{font-size:76px}
+.mb .bot{left:0;right:0;top:60px;bottom:auto;height:640px;justify-content:center}
+.mb .glow{left:50%;transform:translateX(-50%);top:120px;bottom:auto}
+</style></head><body>
+<div class="b" id="d">
+  <div class="bg"></div><div class="lace"></div><div class="glow"></div>
+  <div class="tx">
+    <span class="k">Uvarara Christmas Box</span>
+    <h1>Tenta la <em>fortuna</em> a Natale</h1>
+    <p class="sub">Tre vini selezionati in ogni box.<br>E tre grandi premi da vincere.</p>
+    <div class="row"><span class="cta">Scegli la tua box →</span><span class="pr"><small>Ogni box</small>CHF 149.–</span></div>
+  </div>
+  <div class="bot">
+    <div class="s"><img src="img/arnoux.png"><span class="m">2° PREMIO</span></div>
+    <div><img src="img/monfortino.png"><span class="m">1° PREMIO</span></div>
+    <div class="s"><img src="img/marroneto.png"><span class="m">3° PREMIO</span></div>
+  </div>
+</div>
+<br>
+<div class="b mb" id="m">
+  <div class="bg"></div><div class="lace"></div><div class="glow"></div>
+  <div class="bot">
+    <div class="s"><img src="img/arnoux.png"><span class="m">2° PREMIO</span></div>
+    <div><img src="img/monfortino.png"><span class="m">1° PREMIO</span></div>
+    <div class="s"><img src="img/marroneto.png"><span class="m">3° PREMIO</span></div>
+  </div>
+  <div class="tx">
+    <span class="k">Uvarara Christmas Box</span>
+    <h1>Tenta la <em>fortuna</em> a Natale</h1>
+    <p class="sub">Tre vini selezionati in ogni box.<br>E tre grandi premi da vincere.</p>
+    <div class="row"><span class="cta">Scegli la tua box →</span><span class="pr"><small>Ogni box</small>CHF 149.–</span></div>
+  </div>
+</div>
+</body></html>
