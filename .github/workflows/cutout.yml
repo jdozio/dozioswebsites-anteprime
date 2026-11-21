@@ -1,0 +1,52 @@
+name: cutout
+on:
+  workflow_dispatch:
+    inputs:
+      items:
+        description: "space-separated name|url ; url may be a Shopify product .json"
+        required: true
+      model:
+        required: false
+        default: "birefnet-general"
+permissions:
+  contents: write
+jobs:
+  c:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -q "rembg[cpu]" pillow
+      - name: run
+        env:
+          ITEMS: ${{ github.event.inputs.items }}
+          MODEL: ${{ github.event.inputs.model }}
+        run: |
+          python3 - <<'PY'
+          import os,json,urllib.request,io
+          from PIL import Image
+          from rembg import remove,new_session
+          UA={'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36','Accept':'*/*'}
+          out='_fetch/cut'; os.makedirs(out,exist_ok=True)
+          sess=new_session(os.environ['MODEL'])
+          log=[]
+          for it in os.environ['ITEMS'].split():
+              name,url=it.split('|',1)
+              try:
+                  if url.endswith('.json') or '.json?' in url:
+                      d=json.load(urllib.request.urlopen(urllib.request.Request(url,headers=UA),timeout=30))
+                      p=d.get('product',d); imgs=[i['src'] for i in p.get('images',[])]
+                      log.append(f"{name} json images: {imgs[:4]}")
+                      url=imgs[0].split('?')[0]
+                  b=urllib.request.urlopen(urllib.request.Request(url,headers=UA),timeout=60).read()
+                  im=Image.open(io.BytesIO(b)).convert('RGB'); im.save(f'{out}/{name}_src.jpg',quality=92)
+                  o=remove(im,session=sess); o=o.crop(o.getchannel('A').point(lambda v:255 if v>30 else 0).getbbox())
+                  o.save(f'{out}/{name}.png'); log.append(f"{name} OK {im.size} -> {o.size} from {url}")
+              except Exception as e: log.append(f"{name} ERR {url} {e}")
+          open(f'{out}/_log.txt','a').write('\n'.join(log)+'\n'); print('\n'.join(log))
+          PY
+      - run: |
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add _fetch; git commit -m "cutout" || exit 0
+          git pull --rebase; git push
