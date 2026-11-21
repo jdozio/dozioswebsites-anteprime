@@ -1,0 +1,65 @@
+name: grab-pages
+on:
+  workflow_dispatch:
+    inputs:
+      pages:
+        required: true
+      dir:
+        required: true
+permissions:
+  contents: write
+jobs:
+  g:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: grab
+        env:
+          PAGES: ${{ github.event.inputs.pages }}
+          DIR: ${{ github.event.inputs.dir }}
+        run: |
+          out="_fetch/$DIR"; mkdir -p "$out/pages" "$out/img" "$out/css"
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36"
+          python3 - "$out" $PAGES <<'PY'
+          import sys,re,os,urllib.request,urllib.parse,hashlib,ssl
+          out=sys.argv[1]; pages=sys.argv[2:]
+          UA={'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36','Accept-Language':'it-CH,it;q=0.9'}
+          def get(u):
+              r=urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=30); return r.read(),r.headers.get('content-type','')
+          imgs=set(); csss=set()
+          for i,p in enumerate(pages):
+              try: b,ct=get(p)
+              except Exception as e: print('ERR',p,e); continue
+              name=re.sub(r'[^A-Za-z0-9._-]','_',p.split('://',1)[1])[:120]
+              open(f'{out}/pages/{i:02d}_{name}.html','wb').write(b)
+              h=b.decode('utf-8','ignore')
+              for m in re.findall(r'(?:src|data-src|data-original|data-lazy|href)=["\']([^"\']+\.(?:jpe?g|png|webp|gif|svg)(?:\?[^"\']*)?)["\']',h,re.I): imgs.add(urllib.parse.urljoin(p,m))
+              for m in re.findall(r'srcset=["\']([^"\']+)["\']',h,re.I):
+                  for part in m.split(','):
+                      u=part.strip().split(' ')[0]
+                      if u: imgs.add(urllib.parse.urljoin(p,u))
+              for m in re.findall(r'url\(["\']?([^"\')]+\.(?:jpe?g|png|webp|gif|svg))',h,re.I): imgs.add(urllib.parse.urljoin(p,m))
+              for m in re.findall(r'href=["\']([^"\']+\.css[^"\']*)["\']',h,re.I): csss.add(urllib.parse.urljoin(p,m))
+          for c in list(csss)[:20]:
+              try:
+                  b,_=get(c); fn=re.sub(r'[^A-Za-z0-9._-]','_',c.split('/')[-1].split('?')[0])[:80]; open(f'{out}/css/{fn}','wb').write(b)
+                  for m in re.findall(r'url\(["\']?([^"\')]+\.(?:jpe?g|png|webp|svg))',b.decode('utf-8','ignore'),re.I): imgs.add(urllib.parse.urljoin(c,m))
+              except Exception as e: print('ERRcss',c,e)
+          open(f'{out}/_imgs.txt','w').write('\n'.join(sorted(imgs)))
+          n=0
+          for u in sorted(imgs):
+              if n>=250: break
+              try:
+                  b,_=get(u)
+                  if len(b)<300: continue
+                  fn=re.sub(r'[^A-Za-z0-9._-]','_',urllib.parse.urlparse(u).path.split('/')[-1])[:70]
+                  fn=hashlib.md5(u.encode()).hexdigest()[:6]+'_'+fn
+                  open(f'{out}/img/{fn}','wb').write(b); n+=1
+              except Exception as e: print('ERRimg',u,e)
+          print('pages',len(pages),'imgs',n)
+          PY
+      - name: commit
+        run: |
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add _fetch; git commit -m "grab pages" || exit 0
+          git pull --rebase; git push
