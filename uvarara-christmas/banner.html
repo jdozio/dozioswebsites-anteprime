@@ -5,8 +5,8 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#111}
 .b{position:relative;width:1600px;height:750px;overflow:hidden;background:#120d08;color:#fff;font-family:'Source Sans 3',sans-serif}
-.b .bg{position:absolute;inset:0;background:url(img/cantina.jpg) 50% 62%/cover;opacity:.55}
-.b::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,13,8,.96) 0%,rgba(18,13,8,.82) 40%,rgba(18,13,8,.15) 75%,rgba(18,13,8,.35) 100%)}
+.b .bg{position:absolute;inset:0;background:url(img/sfondo-natale.jpg) 50% 50%/cover}
+.b::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,24,14,.75) 0%,rgba(8,24,14,.35) 45%,transparent 75%);box-shadow:inset 0 0 0 14px rgba(8,24,14,.0),inset 0 0 0 16px rgba(201,165,90,.55)}
 .tx{position:absolute;z-index:2;left:100px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;width:760px}
 .k{font:600 22px/1 'Cinzel',serif;letter-spacing:.24em;color:#C9A55A}
 h1{font:600 84px/1.02 'Cinzel',serif;margin:22px 0 10px;letter-spacing:.01em}
@@ -22,10 +22,10 @@ h1 em{font-style:normal;color:#C9A55A}
 .bot .s{height:86%}
 .m{margin:14px 0 26px;font:700 17px/1 'Cinzel',serif;letter-spacing:.12em;background:linear-gradient(135deg,#F1D58C,#C9A55A);color:#1a1207;padding:10px 14px;border-radius:99px}
 .glow{position:absolute;right:60px;bottom:40px;width:620px;height:420px;background:radial-gradient(closest-side,rgba(201,165,90,.35),transparent);z-index:1}
-.lace{position:absolute;z-index:3;left:0;right:0;top:0;height:10px;background:repeating-linear-gradient(90deg,#BF2031 0 40px,#214B2B 40px 80px)}
+.lace{display:none}
 /* mobile 1080x1350 */
 .mb{width:1080px;height:1350px}
-.mb::after{background:linear-gradient(180deg,rgba(18,13,8,.25) 0%,rgba(18,13,8,.7) 45%,rgba(18,13,8,.97) 72%)}
+.mb::after{background:linear-gradient(180deg,transparent 0%,rgba(8,24,14,.55) 50%,rgba(8,24,14,.9) 75%);box-shadow:inset 0 0 0 16px rgba(201,165,90,.55)}
 .mb .tx{left:70px;right:70px;width:auto;top:auto;bottom:80px;justify-content:flex-end}
 .mb h1{font-size:76px}
 .mb .bot{left:0;right:0;top:60px;bottom:auto;height:640px;justify-content:center}
