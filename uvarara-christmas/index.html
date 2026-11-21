@@ -1,12 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="it">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Lucky Christmas Box · Uvarara (bozza)</title>
-<meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title data-de="Lucky Christmas Box · Uvarara (Entwurf)" data-it="Lucky Christmas Box · Uvarara (bozza)">Lucky Christmas Box · Uvarara (bozza)</title>
+<meta content="noindex" name="robots"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{--green:#214B2B;--green2:#17361F;--red:#BF2031;--red2:#9E1A28;--gold:#C9A55A;--cream:#F8F7F3;--paper:#FFFFFF;--ink:#242424;--ink2:#555;--line:#E3DFD5;
 --fh:'Cinzel',Georgia,serif;--fs:'Source Serif 4',Georgia,serif;--fb:'Source Sans 3',system-ui,sans-serif}
@@ -29,9 +30,13 @@ section{padding:clamp(64px,8vw,104px) 0}
 .shopbar .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .brand img{height:50px}
-@media(max-width:520px){.brand b{font-size:16px}.brand small{font-size:9px}.brand img{height:40px}.topcart{padding:8px 12px;font-size:15px}.topcart .tl{display:none}}
+@media(max-width:520px){.brand b{font-size:16px}.brand small{font-size:9px}.brand img{height:40px}.topcart{padding:8px 12px;font-size:15px}.topcart .tl{display:none}.lang button{padding:10px 9px;min-width:38px;font-size:14px}.shopbar .wrap>.lang{margin-right:8px}}
 .brand b{font:600 20px/1 var(--fh);letter-spacing:.14em;color:#6b6b6b}
 .brand small{display:block;font:600 11px/1 var(--fh);letter-spacing:.3em;color:#9a9a9a;margin-top:4px}
+.shopbar .wrap>.lang{margin-left:auto;margin-right:12px}
+.lang{display:flex;border:1.5px solid var(--line);border-radius:99px;overflow:hidden;font:700 15px/1 var(--fb)}
+.lang button{padding:12px 14px;color:var(--ink2);min-width:48px}
+.lang button[aria-pressed=true]{background:var(--green);color:#fff}
 .topcart{display:flex;align-items:center;gap:10px;font-weight:600;font-size:17px;text-decoration:none;padding:10px 16px;border-radius:99px;border:1.5px solid var(--line)}
 .topcart svg{width:24px;height:24px}
 .badge{min-width:26px;height:26px;border-radius:99px;background:var(--red);color:#fff;font:700 14px/26px var(--fb);text-align:center;padding:0 7px;transition:transform .3s}
@@ -206,154 +211,143 @@ footer{background:#fff;border-top:1px solid var(--line);padding:30px 0 120px;fon
 </style>
 </head>
 <body>
-<div class="draft">Bozza di riprogettazione · preparata da Jacopo Dozio · i prodotti nel carrello sono una simulazione</div>
+<div class="draft" data-de="Neugestaltungs-Entwurf · vorbereitet von Jacopo Dozio · der Warenkorb ist eine Simulation" data-it="Bozza di riprogettazione · preparata da Jacopo Dozio · i prodotti nel carrello sono una simulazione">Bozza di riprogettazione · preparata da Jacopo Dozio · i prodotti nel carrello sono una simulazione</div>
 <header class="shopbar">
-  <div class="wrap">
-    <a class="brand" href="https://www.uvarara.ch/"><img src="img/logo-faccia.png" alt=""><span><b>UVARARA</b><small>VINI RARI</small></span></a>
-    <a href="de/" style="margin-left:auto;margin-right:14px;font-weight:600;font-size:16px;text-decoration:none;color:#6b6b6b">DE</a><a class="topcart" href="#" id="topcart" aria-label="Il vostro carrello"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="tl">Carrello</span> <span class="badge" id="badge">0</span></a>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="bg"><img src="img/sfondo-natale.jpg" alt=""></div>
-  <div class="wrap">
-    <div>
-      <span class="k">Uvarara Christmas 2026</span>
-      <h1>Tre selezioni. Tre grandi premi. <span>La fortuna farà il resto.</span></h1>
-      <p>Scegli la tua Christmas Box: tre vini selezionati da Uvarara per le feste. Ogni box acquistata partecipa all'estrazione di uno dei tre grandi premi.</p>
-      <div class="cta">
-        <a class="btn red" href="#box">Scegli la tua box<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
-        <a class="btn line" href="#come">Come funziona</a>
-      </div>
-      <div class="count" id="count" aria-live="polite"><span class="lbl">Ultimo giorno per acquistare: 16 dicembre</span></div>
-    </div>
-    <div class="podium" aria-label="I tre premi in palio">
-      <div class="glow"></div>
-      <div class="pb p2"><img src="img/arnoux.png" alt="Arnoux-Lachaux Nuits-Saint-Georges 1er Cru Clos des Corvées Pagets 2018"><span class="medal">2° PREMIO</span></div>
-      <div class="pb p1"><img src="img/monfortino.png" alt="Giacomo Conterno Barolo Riserva Monfortino 2019"><span class="medal">1° PREMIO</span></div>
-      <div class="pb p3"><img src="img/marroneto.png" alt="Il Marroneto Brunello di Montalcino Madonna delle Grazie 2020"><span class="medal">3° PREMIO</span></div>
-    </div>
-  </div>
-</section>
-
-<div class="facts">
-  <div class="wrap">
-    <div><b>CHF 149</b><span>per box, IVA inclusa</span></div>
-    <div><b>3 vini</b><span>bollicina, bianco e rosso</span></div>
-    <div><b>Spedizione</b><span>inclusa</span></div>
-    <div><b>Solo 99</b><span>box disponibili</span></div>
-  </div>
+<div class="wrap">
+<a class="brand" href="https://www.uvarara.ch/"><img alt="" src="img/logo-faccia.png"/><span><b>UVARARA</b><small>VINI RARI</small></span></a>
+<div class="lang" role="group" aria-label="Lingua / Sprache"><button type="button" data-l="it" aria-pressed="true">IT</button><button type="button" data-l="de" aria-pressed="false">DE</button></div><a aria-label="Il vostro carrello" class="topcart" data-de='&lt;svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"&gt;&lt;path d="M6 7h12l-1 13H7z"&gt;&lt;/path&gt;&lt;path d="M9 7a3 3 0 0 1 6 0"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;span class="tl"&gt;Warenkorb&lt;/span&gt; &lt;span class="badge" id="badge"&gt;0&lt;/span&gt;' data-de-aria-label="Ihr Warenkorb" data-it='&lt;svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"&gt;&lt;path d="M6 7h12l-1 13H7z"&gt;&lt;/path&gt;&lt;path d="M9 7a3 3 0 0 1 6 0"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;span class="tl"&gt;Carrello&lt;/span&gt; &lt;span class="badge" id="badge"&gt;0&lt;/span&gt;' data-it-aria-label="Il vostro carrello" href="#" id="topcart"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7z"></path><path d="M9 7a3 3 0 0 1 6 0"></path></svg><span class="tl">Carrello</span> <span class="badge" id="badge">0</span></a>
 </div>
-
+</header>
+<section class="hero">
+<div class="bg"><img alt="" src="img/sfondo-natale.jpg"/></div>
+<div class="wrap">
+<div>
+<span class="k">Uvarara Christmas 2026</span>
+<h1 data-de="Drei Selektionen. Drei grosse Preise. &lt;span&gt;Den Rest erledigt das Glück.&lt;/span&gt;" data-it="Tre selezioni. Tre grandi premi. &lt;span&gt;La fortuna farà il resto.&lt;/span&gt;">Tre selezioni. Tre grandi premi. <span>La fortuna farà il resto.</span></h1>
+<p data-de="Wählen Sie Ihre Christmas Box: drei von Uvarara ausgewählte Weine für die Festtage. Jede gekaufte Box nimmt an der Verlosung eines der drei grossen Preise teil." data-it="Scegli la tua Christmas Box: tre vini selezionati da Uvarara per le feste. Ogni box acquistata partecipa all'estrazione di uno dei tre grandi premi.">Scegli la tua Christmas Box: tre vini selezionati da Uvarara per le feste. Ogni box acquistata partecipa all'estrazione di uno dei tre grandi premi.</p>
+<div class="cta">
+<a class="btn red" data-de='Box auswählen&lt;svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.4" viewBox="0 0 24 24"&gt;&lt;path d="M12 5v14M6 13l6 6 6-6"&gt;&lt;/path&gt;&lt;/svg&gt;' data-it='Scegli la tua box&lt;svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.4" viewBox="0 0 24 24"&gt;&lt;path d="M12 5v14M6 13l6 6 6-6"&gt;&lt;/path&gt;&lt;/svg&gt;' href="#box">Scegli la tua box<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.4" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"></path></svg></a>
+<a class="btn line" data-de="So funktioniert es" data-it="Come funziona" href="#come">Come funziona</a>
+</div>
+<div aria-live="polite" class="count" data-de='&lt;span class="lbl"&gt;Letzter Bestelltag: 16. Dezember&lt;/span&gt;' data-it='&lt;span class="lbl"&gt;Ultimo giorno per acquistare: 16 dicembre&lt;/span&gt;' id="count"><span class="lbl">Ultimo giorno per acquistare: 16 dicembre</span></div>
+</div>
+<div aria-label="I tre premi in palio" class="podium" data-de-aria-label="Die drei Preise" data-it-aria-label="I tre premi in palio">
+<div class="glow"></div>
+<div class="pb p2"><img alt="Arnoux-Lachaux Nuits-Saint-Georges 1er Cru Clos des Corvées Pagets 2018" src="img/arnoux.png"/><span class="medal" data-de="2. PREIS" data-it="2° PREMIO">2° PREMIO</span></div>
+<div class="pb p1"><img alt="Giacomo Conterno Barolo Riserva Monfortino 2019" src="img/monfortino.png"/><span class="medal" data-de="1. PREIS" data-it="1° PREMIO">1° PREMIO</span></div>
+<div class="pb p3"><img alt="Il Marroneto Brunello di Montalcino Madonna delle Grazie 2020" src="img/marroneto.png"/><span class="medal" data-de="3. PREIS" data-it="3° PREMIO">3° PREMIO</span></div>
+</div>
+</div>
+</section>
+<div class="facts">
+<div class="wrap">
+<div data-de="&lt;b&gt;CHF 149&lt;/b&gt;&lt;span&gt;pro Box, inkl. MwSt.&lt;/span&gt;" data-it="&lt;b&gt;CHF 149&lt;/b&gt;&lt;span&gt;per box, IVA inclusa&lt;/span&gt;"><b>CHF 149</b><span>per box, IVA inclusa</span></div>
+<div data-de="&lt;b&gt;3 Weine&lt;/b&gt;&lt;span&gt;Schaumwein, Weiss und Rot&lt;/span&gt;" data-it="&lt;b&gt;3 vini&lt;/b&gt;&lt;span&gt;bollicina, bianco e rosso&lt;/span&gt;"><b>3 vini</b><span>bollicina, bianco e rosso</span></div>
+<div data-de="&lt;b&gt;Versand&lt;/b&gt;&lt;span&gt;inklusive&lt;/span&gt;" data-it="&lt;b&gt;Spedizione&lt;/b&gt;&lt;span&gt;inclusa&lt;/span&gt;"><b>Spedizione</b><span>inclusa</span></div>
+<div data-de="&lt;b&gt;Nur 99&lt;/b&gt;&lt;span&gt;Boxen verfügbar&lt;/span&gt;" data-it="&lt;b&gt;Solo 99&lt;/b&gt;&lt;span&gt;box disponibili&lt;/span&gt;"><b>Solo 99</b><span>box disponibili</span></div>
+</div>
+</div>
 <section id="box">
-  <div class="wrap">
-    <div class="center rv">
-      <span class="k" style="color:var(--red)">Le nostre selezioni</span>
-      <h2 style="margin-top:12px">Scegli la tua Christmas Box</h2>
-      <p class="lead">Tre proposte differenti, ciascuna con una bollicina, un bianco e un rosso. Tutte le box hanno le stesse possibilità di vincita.</p>
-    </div>
-    <div class="boxes" id="boxes"></div>
-  </div>
+<div class="wrap">
+<div class="center rv">
+<span class="k" data-de="Unsere Selektionen" data-it="Le nostre selezioni" style="color:var(--red)">Le nostre selezioni</span>
+<h2 data-de="Wählen Sie Ihre Christmas Box" data-it="Scegli la tua Christmas Box" style="margin-top:12px">Scegli la tua Christmas Box</h2>
+<p class="lead" data-de="Drei verschiedene Zusammenstellungen, jede mit einem Schaumwein, einem Weisswein und einem Rotwein. Alle Boxen haben die gleichen Gewinnchancen." data-it="Tre proposte differenti, ciascuna con una bollicina, un bianco e un rosso. Tutte le box hanno le stesse possibilità di vincita.">Tre proposte differenti, ciascuna con una bollicina, un bianco e un rosso. Tutte le box hanno le stesse possibilità di vincita.</p>
+</div>
+<div class="boxes" id="boxes"></div>
+</div>
 </section>
-
 <section class="how" id="come">
-  <div class="wrap">
-    <div class="center rv">
-      <span class="k" style="color:var(--red)">La tua occasione</span>
-      <h2 style="margin-top:12px">Come funziona?</h2>
-      <p class="lead">Tre vini garantiti. E la possibilità di ricevere qualcosa di ancora più speciale.</p>
-    </div>
-    <div class="steps">
-      <div class="step rv"><div class="ic"><i>1</i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="1.5"/><path d="M3 12h18M12 8v13M12 8c-2-4-6-4-6-1.5S10 8 12 8zm0 0c2-4 6-4 6-1.5S14 8 12 8z"/></svg></div><h3>Scegli</h3><p>Scopri le tre selezioni e acquista quella che preferisci.</p></div>
-      <div class="step rv"><div class="ic"><i>2</i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16v4a2 2 0 0 0 0 4v4H4v-4a2 2 0 0 0 0-4z"/><path d="M10 7v12" stroke-dasharray="2 2.5"/></svg></div><h3>Partecipa</h3><p>Ogni box acquistata dà diritto a una partecipazione all'estrazione.</p></div>
-      <div class="step rv"><div class="ic"><i>3</i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17M3.5 12h17M6 6l12 12M18 6L6 18"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg></div><h3>L'estrazione</h3><p>A fine iniziativa i premi vengono assegnati con un'estrazione casuale.</p></div>
-      <div class="step rv"><div class="ic"><i>4</i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg></div><h3>La sorpresa</h3><p>I premi si aggiungono ai vini: i vincitori lo scoprono aprendo la box.</p></div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="center rv">
+<span class="k" data-de="Ihre Chance" data-it="La tua occasione" style="color:var(--red)">La tua occasione</span>
+<h2 data-de="Wie funktioniert es?" data-it="Come funziona?" style="margin-top:12px">Come funziona?</h2>
+<p class="lead" data-de="Drei Weine garantiert. Und die Chance auf etwas ganz Besonderes." data-it="Tre vini garantiti. E la possibilità di ricevere qualcosa di ancora più speciale.">Tre vini garantiti. E la possibilità di ricevere qualcosa di ancora più speciale.</p>
+</div>
+<div class="steps">
+<div class="step rv"><div class="ic"><i>1</i><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><rect height="13" rx="1.5" width="18" x="3" y="8"></rect><path d="M3 12h18M12 8v13M12 8c-2-4-6-4-6-1.5S10 8 12 8zm0 0c2-4 6-4 6-1.5S14 8 12 8z"></path></svg></div><h3 data-de="Auswählen" data-it="Scegli">Scegli</h3><p data-de="Entdecken Sie die drei Selektionen und kaufen Sie Ihre Lieblingsbox." data-it="Scopri le tre selezioni e acquista quella che preferisci.">Scopri le tre selezioni e acquista quella che preferisci.</p></div>
+<div class="step rv"><div class="ic"><i>2</i><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 7h16v4a2 2 0 0 0 0 4v4H4v-4a2 2 0 0 0 0-4z"></path><path d="M10 7v12" stroke-dasharray="2 2.5"></path></svg></div><h3 data-de="Teilnehmen" data-it="Partecipa">Partecipa</h3><p data-de="Jede gekaufte Box berechtigt zu einer Teilnahme an der Verlosung." data-it="Ogni box acquistata dà diritto a una partecipazione all'estrazione.">Ogni box acquistata dà diritto a una partecipazione all'estrazione.</p></div>
+<div class="step rv"><div class="ic"><i>3</i><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17M3.5 12h17M6 6l12 12M18 6L6 18"></path><circle cx="12" cy="12" fill="currentColor" r="2"></circle></svg></div><h3 data-de="Die Verlosung" data-it="L'estrazione">L'estrazione</h3><p data-de="Am Ende der Aktion werden die Preise per Zufallsziehung vergeben." data-it="A fine iniziativa i premi vengono assegnati con un'estrazione casuale.">A fine iniziativa i premi vengono assegnati con un'estrazione casuale.</p></div>
+<div class="step rv"><div class="ic"><i>4</i><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"></path></svg></div><h3 data-de="Die Überraschung" data-it="La sorpresa">La sorpresa</h3><p data-de="Die Preise kommen zu den Weinen dazu: Die Gewinner entdecken sie beim Öffnen der Box." data-it="I premi si aggiungono ai vini: i vincitori lo scoprono aprendo la box.">I premi si aggiungono ai vini: i vincitori lo scoprono aprendo la box.</p></div>
+</div>
+</div>
 </section>
-
 <section class="prizes" id="premi">
-  <div class="wrap">
-    <div class="center rv">
-      <span class="k">I tre premi</span>
-      <h2 style="margin-top:12px">E se fossi uno dei fortunati?</h2>
-      <p class="lead">Tre grandi espressioni dell'enologia europea. Tre bottiglie che non hanno bisogno di presentazioni.</p>
-    </div>
-    <div class="prize rv">
-      <div class="bt"><img src="img/monfortino.png" alt="Giacomo Conterno Barolo Riserva Monfortino 2019" loading="lazy"></div>
-      <div>
-        <div class="rank"><span class="m">1°</span><span>PRIMO PREMIO</span></div>
-        <h3>Giacomo Conterno<small>Barolo Riserva Monfortino DOCG 2019</small></h3>
-        <p>Una leggenda delle Langhe e uno dei Barolo più ambiti al mondo. Prodotto soltanto nelle annate migliori, il Monfortino rappresenta una delle massime espressioni del Nebbiolo, capace di coniugare potenza, eleganza e straordinaria longevità.</p>
-        <div class="scores"><span>100 punti Robert Parker</span><span>98 punti James Suckling</span></div>
-        <span class="val">Valore CHF 762.–</span>
-      </div>
-    </div>
-    <div class="prize rv">
-      <div class="bt"><img src="img/arnoux.png" alt="Arnoux-Lachaux Nuits-Saint-Georges 1er Cru 2018" loading="lazy"></div>
-      <div>
-        <div class="rank r2"><span class="m">2°</span><span>SECONDO PREMIO</span></div>
-        <h3>Arnoux-Lachaux<small>Nuits-Saint-Georges 1er Cru Clos des Corvées Pagets AOC 2018</small></h3>
-        <p>Dalla Côte de Nuits, un Pinot Noir raro e ricercatissimo, firmato da Charles Lachaux. Da una piccola parcella di appena 0,55 ettari, questo Premier Cru esprime tutta la raffinatezza della grande Borgogna.</p>
-        <div class="scores"><span>94 punti Robert Parker</span></div>
-        <span class="val">Valore CHF 379.–</span>
-      </div>
-    </div>
-    <div class="prize rv">
-      <div class="bt"><img src="img/marroneto.png" alt="Il Marroneto Brunello di Montalcino Madonna delle Grazie 2020" loading="lazy"></div>
-      <div>
-        <div class="rank r3"><span class="m">3°</span><span>TERZO PREMIO</span></div>
-        <h3>Il Marroneto<small>Brunello di Montalcino Madonna delle Grazie DOCG 2020</small></h3>
-        <p>Uno dei Brunello più celebrati e ricercati di Montalcino, simbolo del lavoro di Alessandro Mori. Nato dalla storica vigna Madonna delle Grazie, unisce profondità, potenza e straordinaria eleganza.</p>
-        <div class="scores"><span>99 punti James Suckling</span><span>98 punti Robert Parker</span></div>
-        <span class="val">Valore CHF 325.–</span>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="center rv">
+<span class="k" data-de="Die drei Preise" data-it="I tre premi">I tre premi</span>
+<h2 data-de="Gehören Sie zu den Glücklichen?" data-it="E se fossi uno dei fortunati?" style="margin-top:12px">E se fossi uno dei fortunati?</h2>
+<p class="lead" data-de="Drei grosse Namen des europäischen Weinbaus. Drei Flaschen, die keiner Vorstellung bedürfen." data-it="Tre grandi espressioni dell'enologia europea. Tre bottiglie che non hanno bisogno di presentazioni.">Tre grandi espressioni dell'enologia europea. Tre bottiglie che non hanno bisogno di presentazioni.</p>
+</div>
+<div class="prize rv">
+<div class="bt"><img alt="Giacomo Conterno Barolo Riserva Monfortino 2019" loading="lazy" src="img/monfortino.png"/></div>
+<div>
+<div class="rank" data-de='&lt;span class="m"&gt;1.&lt;/span&gt;&lt;span&gt;ERSTER PREIS&lt;/span&gt;' data-it='&lt;span class="m"&gt;1°&lt;/span&gt;&lt;span&gt;PRIMO PREMIO&lt;/span&gt;'><span class="m">1°</span><span>PRIMO PREMIO</span></div>
+<h3>Giacomo Conterno<small>Barolo Riserva Monfortino DOCG 2019</small></h3>
+<p data-de="Eine Legende aus den Langhe und einer der begehrtesten Barolo der Welt. Nur in den besten Jahrgängen erzeugt, gilt der Monfortino als eine der höchsten Ausdrucksformen des Nebbiolo: Kraft, Eleganz und aussergewöhnliche Langlebigkeit." data-it="Una leggenda delle Langhe e uno dei Barolo più ambiti al mondo. Prodotto soltanto nelle annate migliori, il Monfortino rappresenta una delle massime espressioni del Nebbiolo, capace di coniugare potenza, eleganza e straordinaria longevità.">Una leggenda delle Langhe e uno dei Barolo più ambiti al mondo. Prodotto soltanto nelle annate migliori, il Monfortino rappresenta una delle massime espressioni del Nebbiolo, capace di coniugare potenza, eleganza e straordinaria longevità.</p>
+<div class="scores" data-de="&lt;span&gt;100 Punkte Robert Parker&lt;/span&gt;&lt;span&gt;98 Punkte James Suckling&lt;/span&gt;" data-it="&lt;span&gt;100 punti Robert Parker&lt;/span&gt;&lt;span&gt;98 punti James Suckling&lt;/span&gt;"><span>100 punti Robert Parker</span><span>98 punti James Suckling</span></div>
+<span class="val" data-de="Wert CHF 762.–" data-it="Valore CHF 762.–">Valore CHF 762.–</span>
+</div>
+</div>
+<div class="prize rv">
+<div class="bt"><img alt="Arnoux-Lachaux Nuits-Saint-Georges 1er Cru 2018" loading="lazy" src="img/arnoux.png"/></div>
+<div>
+<div class="rank r2" data-de='&lt;span class="m"&gt;2.&lt;/span&gt;&lt;span&gt;ZWEITER PREIS&lt;/span&gt;' data-it='&lt;span class="m"&gt;2°&lt;/span&gt;&lt;span&gt;SECONDO PREMIO&lt;/span&gt;'><span class="m">2°</span><span>SECONDO PREMIO</span></div>
+<h3>Arnoux-Lachaux<small>Nuits-Saint-Georges 1er Cru Clos des Corvées Pagets AOC 2018</small></h3>
+<p data-de="Aus der Côte de Nuits: ein seltener, äusserst gesuchter Pinot Noir von Charles Lachaux. Von einer kleinen Parzelle mit nur 0,55 Hektar zeigt dieser Premier Cru die ganze Raffinesse des grossen Burgunds." data-it="Dalla Côte de Nuits, un Pinot Noir raro e ricercatissimo, firmato da Charles Lachaux. Da una piccola parcella di appena 0,55 ettari, questo Premier Cru esprime tutta la raffinatezza della grande Borgogna.">Dalla Côte de Nuits, un Pinot Noir raro e ricercatissimo, firmato da Charles Lachaux. Da una piccola parcella di appena 0,55 ettari, questo Premier Cru esprime tutta la raffinatezza della grande Borgogna.</p>
+<div class="scores" data-de="&lt;span&gt;94 Punkte Robert Parker&lt;/span&gt;" data-it="&lt;span&gt;94 punti Robert Parker&lt;/span&gt;"><span>94 punti Robert Parker</span></div>
+<span class="val" data-de="Wert CHF 379.–" data-it="Valore CHF 379.–">Valore CHF 379.–</span>
+</div>
+</div>
+<div class="prize rv">
+<div class="bt"><img alt="Il Marroneto Brunello di Montalcino Madonna delle Grazie 2020" loading="lazy" src="img/marroneto.png"/></div>
+<div>
+<div class="rank r3" data-de='&lt;span class="m"&gt;3.&lt;/span&gt;&lt;span&gt;DRITTER PREIS&lt;/span&gt;' data-it='&lt;span class="m"&gt;3°&lt;/span&gt;&lt;span&gt;TERZO PREMIO&lt;/span&gt;'><span class="m">3°</span><span>TERZO PREMIO</span></div>
+<h3>Il Marroneto<small>Brunello di Montalcino Madonna delle Grazie DOCG 2020</small></h3>
+<p data-de="Einer der gefeiertsten und gesuchtesten Brunello aus Montalcino, Sinnbild der Arbeit von Alessandro Mori. Aus dem historischen Weinberg Madonna delle Grazie, vereint er Tiefe, Kraft und aussergewöhnliche Eleganz." data-it="Uno dei Brunello più celebrati e ricercati di Montalcino, simbolo del lavoro di Alessandro Mori. Nato dalla storica vigna Madonna delle Grazie, unisce profondità, potenza e straordinaria eleganza.">Uno dei Brunello più celebrati e ricercati di Montalcino, simbolo del lavoro di Alessandro Mori. Nato dalla storica vigna Madonna delle Grazie, unisce profondità, potenza e straordinaria eleganza.</p>
+<div class="scores" data-de="&lt;span&gt;99 Punkte James Suckling&lt;/span&gt;&lt;span&gt;98 Punkte Robert Parker&lt;/span&gt;" data-it="&lt;span&gt;99 punti James Suckling&lt;/span&gt;&lt;span&gt;98 punti Robert Parker&lt;/span&gt;"><span>99 punti James Suckling</span><span>98 punti Robert Parker</span></div>
+<span class="val" data-de="Wert CHF 325.–" data-it="Valore CHF 325.–">Valore CHF 325.–</span>
+</div>
+</div>
+</div>
 </section>
-
 <section>
-  <div class="wrap">
-    <div class="center rv">
-      <span class="k" style="color:var(--red)">Il Natale si avvicina</span>
-      <h2 style="margin-top:12px">Le date da ricordare</h2>
-    </div>
-    <div class="dates">
-      <div class="date rv"><b>16</b><strong>DICEMBRE</strong><p>Ultimo giorno per acquistare la tua box.</p></div>
-      <div class="date rv"><b>17</b><strong>DICEMBRE</strong><p>Estrazione dei premi e spedizione di tutte le box, lo stesso giorno.</p></div>
-      <div class="date rv"><b>99</b><strong>BOX IN TOTALE</strong><p>L'iniziativa termina prima se le box finiscono.</p></div>
-    </div>
-
-    <div class="help rv">
-      <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></div>
-      <div><h3>Preferisce ordinare per telefono?</h3><p>Siamo a disposizione dal lunedì al venerdì, 8.30–12.00 e 13.30–17.00.</p></div>
-      <a class="btn green" href="tel:+41919401987">091 940 19 87</a>
-    </div>
-
-    <div style="margin-top:60px" class="rv">
-      <h2 style="font-size:30px">Regolamento in breve</h2>
-      <details open><summary>Chi può partecipare</summary><div><ul><li>Maggiorenni (18 anni compiuti).</li><li>La partecipazione è automatica per ogni box regolarmente acquistata e pagata.</li><li>Tutte le box hanno le stesse possibilità.</li></ul></div></details>
-      <details><summary>Durata ed estrazione</summary><div><ul><li>Dal 16 novembre al 16 dicembre 2026, o fino a esaurimento delle 99 box.</li><li>Estrazione casuale il 17 dicembre 2026.</li><li>I premi sono aggiuntivi rispetto ai tre vini della box.</li></ul></div></details>
-      <details><summary>Premi e spedizione</summary><div><ul><li>Spedizione inclusa: tutte le box partono lo stesso giorno.</li><li>I premi non sono convertibili in denaro né sostituibili.</li><li>Prezzo CHF 149.– IVA inclusa, non cumulabile con altri sconti.</li></ul></div></details>
-      <a class="rlink" href="https://www.uvarara.ch/lucky-christmas-box">Consulta il regolamento completo →</a>
-    </div>
-  </div>
+<div class="wrap">
+<div class="center rv">
+<span class="k" data-de="Weihnachten naht" data-it="Il Natale si avvicina" style="color:var(--red)">Il Natale si avvicina</span>
+<h2 data-de="Die wichtigsten Daten" data-it="Le date da ricordare" style="margin-top:12px">Le date da ricordare</h2>
+</div>
+<div class="dates">
+<div class="date rv"><b data-de="16." data-it="16">16</b><strong data-de="DEZEMBER" data-it="DICEMBRE">DICEMBRE</strong><p data-de="Letzter Tag, um Ihre Box zu kaufen." data-it="Ultimo giorno per acquistare la tua box.">Ultimo giorno per acquistare la tua box.</p></div>
+<div class="date rv"><b data-de="17." data-it="17">17</b><strong data-de="DEZEMBER" data-it="DICEMBRE">DICEMBRE</strong><p data-de="Verlosung der Preise und Versand aller Boxen am selben Tag." data-it="Estrazione dei premi e spedizione di tutte le box, lo stesso giorno.">Estrazione dei premi e spedizione di tutte le box, lo stesso giorno.</p></div>
+<div class="date rv"><b>99</b><strong data-de="BOXEN INSGESAMT" data-it="BOX IN TOTALE">BOX IN TOTALE</strong><p data-de="Die Aktion endet früher, wenn alle Boxen verkauft sind." data-it="L'iniziativa termina prima se le box finiscono.">L'iniziativa termina prima se le box finiscono.</p></div>
+</div>
+<div class="help rv">
+<div class="ph"><svg fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"></path></svg></div>
+<div><h3 data-de="Möchten Sie lieber telefonisch bestellen?" data-it="Preferisce ordinare per telefono?">Preferisce ordinare per telefono?</h3><p data-de="Wir sind von Montag bis Freitag für Sie da, 8.30–12.00 und 13.30–17.00 Uhr." data-it="Siamo a disposizione dal lunedì al venerdì, 8.30–12.00 e 13.30–17.00.">Siamo a disposizione dal lunedì al venerdì, 8.30–12.00 e 13.30–17.00.</p></div>
+<a class="btn green" href="tel:+41919401987">091 940 19 87</a>
+</div>
+<div class="rv" style="margin-top:60px">
+<h2 data-de="Teilnahmebedingungen in Kürze" data-it="Regolamento in breve" style="font-size:30px">Regolamento in breve</h2>
+<details open=""><summary data-de="Wer kann teilnehmen" data-it="Chi può partecipare">Chi può partecipare</summary><div><ul><li data-de="Volljährige Personen (ab 18 Jahren)." data-it="Maggiorenni (18 anni compiuti).">Maggiorenni (18 anni compiuti).</li><li data-de="Die Teilnahme erfolgt automatisch mit jeder gekauften und bezahlten Box." data-it="La partecipazione è automatica per ogni box regolarmente acquistata e pagata.">La partecipazione è automatica per ogni box regolarmente acquistata e pagata.</li><li data-de="Alle Boxen haben die gleichen Chancen." data-it="Tutte le box hanno le stesse possibilità.">Tutte le box hanno le stesse possibilità.</li></ul></div></details>
+<details><summary data-de="Dauer und Verlosung" data-it="Durata ed estrazione">Durata ed estrazione</summary><div><ul><li data-de="Vom 16. November bis 16. Dezember 2026 oder solange die 99 Boxen reichen." data-it="Dal 16 novembre al 16 dicembre 2026, o fino a esaurimento delle 99 box.">Dal 16 novembre al 16 dicembre 2026, o fino a esaurimento delle 99 box.</li><li data-de="Zufallsziehung am 17. Dezember 2026." data-it="Estrazione casuale il 17 dicembre 2026.">Estrazione casuale il 17 dicembre 2026.</li><li data-de="Die Preise kommen zusätzlich zu den drei Weinen der Box." data-it="I premi sono aggiuntivi rispetto ai tre vini della box.">I premi sono aggiuntivi rispetto ai tre vini della box.</li></ul></div></details>
+<details><summary data-de="Preise und Versand" data-it="Premi e spedizione">Premi e spedizione</summary><div><ul><li data-de="Versand inklusive: Alle Boxen werden am selben Tag verschickt." data-it="Spedizione inclusa: tutte le box partono lo stesso giorno.">Spedizione inclusa: tutte le box partono lo stesso giorno.</li><li data-de="Die Preise können nicht in bar ausbezahlt oder umgetauscht werden." data-it="I premi non sono convertibili in denaro né sostituibili.">I premi non sono convertibili in denaro né sostituibili.</li><li data-de="Preis CHF 149.– inkl. MwSt., nicht mit anderen Rabatten kumulierbar." data-it="Prezzo CHF 149.– IVA inclusa, non cumulabile con altri sconti.">Prezzo CHF 149.– IVA inclusa, non cumulabile con altri sconti.</li></ul></div></details>
+<a class="rlink" data-de="Vollständige Teilnahmebedingungen →" data-de-href="https://www.uvarara.ch/de/lucky-christmas-box" data-it="Consulta il regolamento completo →" data-it-href="https://www.uvarara.ch/lucky-christmas-box" href="https://www.uvarara.ch/lucky-christmas-box">Consulta il regolamento completo →</a>
+</div>
+</div>
 </section>
-
 <footer>Uvarara SA · Via Ponteggia 21 · 6814 Cadempino · info@uvarara.ch</footer>
-
-<div class="toast" id="toast" role="status" aria-live="polite">
-  <div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
-  <div><b id="tT">Aggiunta al carrello</b><small id="tS"></small></div>
-  <div class="tb"><button type="button" id="tClose">Continua</button><a href="#" class="go">Vai al carrello</a></div>
+<div aria-live="polite" class="toast" id="toast" role="status">
+<div class="ok"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></div>
+<div data-de='&lt;b id="tT"&gt;In den Warenkorb gelegt&lt;/b&gt;&lt;small id="tS"&gt;&lt;/small&gt;' data-it='&lt;b id="tT"&gt;Aggiunta al carrello&lt;/b&gt;&lt;small id="tS"&gt;&lt;/small&gt;'><b id="tT">Aggiunta al carrello</b><small id="tS"></small></div>
+<div class="tb"><button data-de="Weiter einkaufen" data-it="Continua" id="tClose" type="button">Continua</button><a class="go" data-de="Zum Warenkorb" data-it="Vai al carrello" href="#">Vai al carrello</a></div>
 </div>
 <div class="cartbar" id="cartbar">
-  <div class="wrap">
-    <div class="info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><div><b id="cbT"></b><small>Spedizione inclusa · estrazione il 17 dicembre</small></div></div>
-    <a class="btn red go" href="#">Vai al carrello<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-  </div>
+<div class="wrap">
+<div class="info"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7z"></path><path d="M9 7a3 3 0 0 1 6 0"></path></svg><div data-de='&lt;b id="cbT"&gt;&lt;/b&gt;&lt;small&gt;Versand inklusive · Verlosung am 17. Dezember&lt;/small&gt;' data-it='&lt;b id="cbT"&gt;&lt;/b&gt;&lt;small&gt;Spedizione inclusa · estrazione il 17 dicembre&lt;/small&gt;'><b id="cbT"></b><small>Spedizione inclusa · estrazione il 17 dicembre</small></div></div>
+<a class="btn red go" data-de='Zum Warenkorb&lt;svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.4" viewBox="0 0 24 24"&gt;&lt;path d="M5 12h14M13 6l6 6-6 6"&gt;&lt;/path&gt;&lt;/svg&gt;' data-it='Vai al carrello&lt;svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.4" viewBox="0 0 24 24"&gt;&lt;path d="M5 12h14M13 6l6 6-6 6"&gt;&lt;/path&gt;&lt;/svg&gt;' href="#">Vai al carrello<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.4" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
 </div>
-
+</div>
 <script>
 const BOX=[
  {n:1,art:4781,img:['b1-sermiers','b1-montmain','b1-fenocchio'],w:[['Bollicina','François Secondé','Sermiers 1er Cru Blanc de Blancs AOC'],['Bianco','Pinson','Chablis 1er Cru Montmain AOC 2021'],['Rosso','Giacomo Fenocchio','Barolo DOCG 2019']]},
@@ -361,36 +355,57 @@ const BOX=[
  {n:3,art:4783,img:['b3-integral','b3-chardonnay','b3-gradassi'],w:[['Bollicina','François Secondé','Intégral Zéro Dosage Grand Cru AOC'],['Bianco','Möhr-Niggli','Chardonnay AOC 2022'],['Rosso','Domaine Jérôme Gradassi','Châteauneuf-du-Pape AOC 2023']]}];
 const SIL='<svg class="sil" viewBox="0 0 60 230" aria-label="Foto in arrivo"><path d="M24 4h12v40c0 10 18 20 18 42v134a6 6 0 0 1-6 6H12a6 6 0 0 1-6-6V86c0-22 18-32 18-42z" fill="#1f3a26" stroke="#C9A55A" stroke-width="1.5"/><path d="M23 4h14v26H23z" fill="#C9A55A" opacity=".85"/><rect x="11" y="120" width="38" height="56" rx="2" fill="#F8F7F3"/><text x="30" y="143" text-anchor="middle" font-family="Cinzel,serif" font-size="7" fill="#214B2B">GUIBORAT</text><text x="30" y="156" text-anchor="middle" font-family="Georgia,serif" font-size="6" font-style="italic" fill="#555">Téthys.22</text></svg><span class="soon">Foto della bottiglia in arrivo</span>';
 const cart={};let total=0;
+let L='it';try{const q=new URLSearchParams(location.search).get('lang');const st=localStorage.getItem('uv-lang');L=q==='de'||q==='it'?q:(st==='de'||st==='it'?st:((navigator.language||'').slice(0,2)==='de'?'de':'it'))}catch(e){}
+const TX={it:{bol:'Bollicina',bia:'Bianco',ros:'Rosso',sel:'Selezione',bt:'3 bottiglie · 0,75 L<br>Disponibilità limitata',less:'Meno',more:'Più',add:'Aggiungi al carrello',go:'Vai al carrello',done:'✓ Aggiunta',again:'Aggiungi ancora',inc:n=>`Nel carrello: ${n} box`,box:n=>`${n} box`,tot:' in totale',bar:n=>`Nel carrello: ${n} box`,alert:'Sul sito vero questo pulsante apre il carrello (/basket/).',left:'Mancano',d:'giorni',h:'ore',m:'minuti',end:'Iniziativa conclusa'},
+de:{bol:'Schaumwein',bia:'Weisswein',ros:'Rotwein',sel:'Selektion',bt:'3 Flaschen · 0,75 L<br>Begrenzte Verfügbarkeit',less:'Weniger',more:'Mehr',add:'In den Warenkorb',go:'Zum Warenkorb',done:'✓ Hinzugefügt',again:'Noch eine hinzufügen',inc:n=>`Im Warenkorb: ${n} ${n==1?'Box':'Boxen'}`,box:n=>`${n} ${n==1?'Box':'Boxen'}`,tot:' total',bar:n=>`Im Warenkorb: ${n} ${n==1?'Box':'Boxen'}`,alert:'Auf der echten Website öffnet dieser Knopf den Warenkorb (/de/basket/).',left:'Noch',d:'Tage',h:'Std.',m:'Min.',end:'Aktion beendet'}};
+const K={'Bollicina':'bol','Bianco':'bia','Rosso':'ros'};
+function renderBoxes(){const t=TX[L];
 document.getElementById('boxes').innerHTML=BOX.map(b=>`<article class="box rv" data-n="${b.n}">
  <div class="top"><span class="nr">BOX ${b.n}</span><span class="ribbon"></span>${b.img.map((s,i)=>s?`<img src="img/${s}.png" alt="${b.w[i][1]} ${b.w[i][2]}" loading="lazy">`:SIL).join('')}</div>
- <div class="bd"><h3>Selezione ${String(b.n).padStart(2,'0')}</h3>
- <ul class="wines">${b.w.map(([t,p,v])=>`<li><span class="t">${t}</span><span class="n"><b>${p}</b><br>${v}</span></li>`).join('')}</ul>
- <div class="price"><b><small>CHF</small>149.00</b><span>3 bottiglie · 0,75 L<br>Disponibilità limitata</span></div>
- <div class="buy"><div class="qty"><button type="button" data-d="-1" aria-label="Meno">−</button><output>1</output><button type="button" data-d="1" aria-label="Più">+</button></div>
- <button class="btn red add" type="button">Aggiungi al carrello</button></div>
- <div class="incart"><span></span><a href="#" class="go">Vai al carrello</a></div></div></article>`).join('');
+ <div class="bd"><h3>${t.sel} ${String(b.n).padStart(2,'0')}</h3>
+ <ul class="wines">${b.w.map(([k,p,v])=>`<li><span class="t">${t[K[k]]}</span><span class="n"><b>${p}</b><br>${v}</span></li>`).join('')}</ul>
+ <div class="price"><b><small>CHF</small>149.00</b><span>${t.bt}</span></div>
+ <div class="buy"><div class="qty"><button type="button" data-d="-1" aria-label="${t.less}">−</button><output>1</output><button type="button" data-d="1" aria-label="${t.more}">+</button></div>
+ <button class="btn red add" type="button">${cart[b.n]?t.again:t.add}</button></div>
+ <div class="incart${cart[b.n]?' on':''}"><span>${cart[b.n]?t.inc(cart[b.n]):''}</span><a href="#" class="go">${t.go}</a></div></div></article>`).join('');
 
 document.querySelectorAll('.box').forEach(el=>{const n=+el.dataset.n,out=el.querySelector('output');
  el.querySelectorAll('.qty button').forEach(b=>b.onclick=()=>{out.textContent=Math.max(1,Math.min(9,+out.textContent+ +b.dataset.d))});
  el.querySelector('.add').onclick=e=>{const q=+out.textContent;cart[n]=(cart[n]||0)+q;total+=q;const btn=e.currentTarget;
-  btn.classList.add('done');btn.textContent='✓ Aggiunta';setTimeout(()=>{btn.classList.remove('done');btn.textContent='Aggiungi ancora'},1800);
-  const ic=el.querySelector('.incart');ic.querySelector('span').textContent=`Nel carrello: ${cart[n]} ${cart[n]==1?'box':'box'}`;ic.classList.add('on');
-  update(`Box ${n} · ${q} ${q==1?'box':'box'}`)}});
-function update(msg){const bd=document.getElementById('badge');bd.textContent=total;bd.classList.add('pop');setTimeout(()=>bd.classList.remove('pop'),300);
- document.getElementById('tS').textContent=msg+' · CHF '+(149*total).toFixed(2)+' in totale';
+  btn.classList.add('done');btn.textContent=TX[L].done;setTimeout(()=>{btn.classList.remove('done');btn.textContent=TX[L].again},1800);
+  const ic=el.querySelector('.incart');ic.querySelector('span').textContent=TX[L].inc(cart[n]);ic.classList.add('on');
+  lastN=n;lastQ=q;update(`Box ${n} · ${TX[L].box(q)}`)}});
+ bindGo();observeNew()}
+let lastMsg='',lastN=0,lastQ=0;
+function update(msg){lastMsg=msg;const bd=document.getElementById('badge');bd.textContent=total;bd.classList.add('pop');setTimeout(()=>bd.classList.remove('pop'),300);
+ document.getElementById('tS').textContent=msg+' · CHF '+(149*total).toFixed(2)+TX[L].tot;
  const t=document.getElementById('toast');t.classList.add('on');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('on'),5000);
- document.getElementById('cbT').textContent=`Nel carrello: ${total} box · CHF ${(149*total).toFixed(2)}`;document.getElementById('cartbar').classList.add('on')}
+ document.getElementById('cbT').textContent=TX[L].bar(total)+` · CHF ${(149*total).toFixed(2)}`;document.getElementById('cartbar').classList.add('on')}
 document.getElementById('tClose').onclick=()=>document.getElementById('toast').classList.remove('on');
-document.querySelectorAll('.go,#topcart').forEach(a=>a.onclick=e=>{e.preventDefault();alert('Sul sito vero questo pulsante apre il carrello (/basket/).')});
+function bindGo(){document.querySelectorAll('.go,#topcart').forEach(a=>a.onclick=e=>{e.preventDefault();alert(TX[L].alert)})}
 
 // conto alla rovescia fino al 16.12.2026 23:59 (ora svizzera)
 (function(){const end=new Date('2026-12-16T23:59:59+01:00'),el=document.getElementById('count');
  function r(){let s=Math.max(0,(end-new Date())/1000);const d=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60);
-  el.innerHTML=s>0?`<span class="lbl">Mancano</span><span class="u"><b>${d}</b><small>giorni</small></span><span class="u"><b>${h}</b><small>ore</small></span><span class="u"><b>${m}</b><small>minuti</small></span>`:'<span class="lbl">Iniziativa conclusa</span>'}
- r();setInterval(r,30000)})();
+  const t=TX[L];el.innerHTML=s>0?`<span class="lbl">${t.left}</span><span class="u"><b>${d}</b><small>${t.d}</small></span><span class="u"><b>${h}</b><small>${t.h}</small></span><span class="u"><b>${m}</b><small>${t.m}</small></span>`:`<span class="lbl">${t.end}</span>`}
+ window.renderCount=r;setInterval(r,30000)})();
 
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+function observeNew(){document.querySelectorAll('.rv:not(.in)').forEach(el=>io&&io.observe(el))}
+var io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+function setLang(l){L=l;try{localStorage.setItem('uv-lang',l)}catch(e){}
+ document.documentElement.lang=l;
+ document.querySelectorAll('[data-de]').forEach(e=>{e.innerHTML=e.getAttribute('data-'+l)});
+ document.querySelectorAll('*').forEach(e=>{for(const at of ['aria-label','alt','href']){const v=e.getAttribute('data-'+l+'-'+at);if(v!=null)e.setAttribute(at,v)}});
+ document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===l));
+ renderBoxes();renderCount();
+ document.querySelectorAll('#boxes .rv').forEach(e=>e.classList.add('in'));
+ document.getElementById('badge').textContent=total;
+ if(total){lastMsg=`Box ${lastN} · ${TX[L].box(lastQ)}`;document.getElementById('cbT').textContent=TX[L].bar(total)+` · CHF ${(149*total).toFixed(2)}`;document.getElementById('tS').textContent=lastMsg+' · CHF '+(149*total).toFixed(2)+TX[L].tot}
+}
+document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+setLang(L);
 </script>
 </body>
 </html>
