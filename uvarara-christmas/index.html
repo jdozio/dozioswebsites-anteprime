@@ -29,6 +29,7 @@ section{padding:clamp(64px,8vw,104px) 0}
 .shopbar .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .brand img{height:50px}
+@media(max-width:520px){.brand b{font-size:16px}.brand small{font-size:9px}.brand img{height:40px}.topcart{padding:8px 12px;font-size:15px}.topcart .tl{display:none}}
 .brand b{font:600 20px/1 var(--fh);letter-spacing:.14em;color:#6b6b6b}
 .brand small{display:block;font:600 11px/1 var(--fh);letter-spacing:.3em;color:#9a9a9a;margin-top:4px}
 .topcart{display:flex;align-items:center;gap:10px;font-weight:600;font-size:17px;text-decoration:none;padding:10px 16px;border-radius:99px;border:1.5px solid var(--line)}
@@ -209,7 +210,7 @@ footer{background:#fff;border-top:1px solid var(--line);padding:30px 0 120px;fon
 <header class="shopbar">
   <div class="wrap">
     <a class="brand" href="https://www.uvarara.ch/"><img src="img/logo-faccia.png" alt=""><span><b>UVARARA</b><small>VINI RARI</small></span></a>
-    <a class="topcart" href="#" id="topcart" aria-label="Il vostro carrello"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>Carrello <span class="badge" id="badge">0</span></a>
+    <a href="de/" style="margin-left:auto;margin-right:14px;font-weight:600;font-size:16px;text-decoration:none;color:#6b6b6b">DE</a><a class="topcart" href="#" id="topcart" aria-label="Il vostro carrello"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="tl">Carrello</span> <span class="badge" id="badge">0</span></a>
   </div>
 </header>
 
